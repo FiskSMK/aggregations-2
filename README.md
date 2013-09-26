@@ -3,8 +3,7 @@
 ![Data Wranglers](/images/data-wrangler.jpg)
 
 Należy przygotować 4–5 aggregacji.
-
-Do aggregacji można wykorzystać kolekcje:
+Do aggregacji można wykorzystać swoje lub te kolekcje:
 
 * *census1881*
 * *zipcodes*, [przykładowe agregacje](/Aggregation-Framework-Examples-in-Javascript.md)
@@ -12,8 +11,8 @@ Do aggregacji można wykorzystać kolekcje:
 * *poland* – Open Street Data dla Polski
 * *airports* (B. Bedra)
 
-Te kolekcje zostały zaimportowane do bazy MongoDB działającej na maszynie wirtualnej.
-Do maszyny logujemy się w ten sposób:
+Kolekcje zostały zaimportowane do bazy MongoDB działającej na maszynie
+wirtualnej. Do maszyny logujemy się w ten sposób:
 
 ```sh
 mongo --username student --password sesja2013 153.19.1.202/test
