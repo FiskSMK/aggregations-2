@@ -40,7 +40,7 @@ db.census1881.findOne()
 *Uwaga:* Użytkownik *student* ma uprawnienia tylko do odczytu w bazie  *test*.
 
 
-## Nasze dane
+## Nasze agregacje
 
 1. Włodzimierz Bzyl, [Imieniny](/docs/anon.md),
    [Open Street Map Data dla Polski](/docs/osm.md),
