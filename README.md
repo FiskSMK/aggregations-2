@@ -165,7 +165,9 @@ git stash drop  stash@{0}
 
 Zobacz też:
 
-* Mark Dominus, [My Git Habits](http://blog.plover.com/prog/git-habits.html)
+* Mark Dominus
+  - [Why can't Git resolve all conflicted merges?](http://blog.plover.com/prog/git-merge.html)
+  - [My Git Habits](http://blog.plover.com/prog/git-habits.html)
 * Bert Belder, [Checkout github pull requests locally](https://gist.github.com/piscisaureus/3342247)
 * Chris Wanstrath, [hub makes git better with GitHub](http://defunkt.io/hub/)
 * Scott Chacon, [6.4 Git Tools - Rewriting History](http://git-scm.com/book/en/Git-Tools-Rewriting-History)
