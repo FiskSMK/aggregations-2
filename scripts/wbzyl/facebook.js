@@ -7,13 +7,18 @@ db.fb.drop();
 var cursor = db.facebook.find();
 
 cursor.forEach(function(x) {
-  var a = x.tags.trim().split(/\s+/);
-  delete x.tags;
-  x.tags = a;
-  x.rnd = Math.random();
+  // printjson(x.tags);
 
-  // printjson(x);
-  db.fb.insert(x);
+  if (typeof x.tags === "string") {
+    var a = x.tags.trim().split(/\s+/);
+    delete x.tags;
+    x.tags = a;
+    x.rnd = Math.random();
+
+    db.fb.insert(x);
+  } else {
+    // skip record without tags
+  }
 })
 
 var one= db.fb.findOne();
