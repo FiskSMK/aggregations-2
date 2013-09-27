@@ -25,3 +25,5 @@ var one= db.fb.findOne();
 printjson(one);
 
 db.fb.ensureIndex({"rnd": 1});
+
+// db.fb.count(); // 6_032_934
