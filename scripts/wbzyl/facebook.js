@@ -1,0 +1,22 @@
+// mongo --quiet --shell kaggle facebook.js
+
+db.fb.drop();
+
+// var cursor = db.facebook.find().limit(4);
+
+var cursor = db.facebook.find();
+
+cursor.forEach(function(x) {
+  var a = x.tags.trim().split(/\s+/);
+  delete x.tags;
+  x.tags = a;
+  x.rnd = Math.random();
+
+  // printjson(x);
+  db.fb.insert(x);
+})
+
+var one= db.fb.findOne();
+printjson(one);
+
+db.fb.ensureIndex({"rnd": 1});
