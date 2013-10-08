@@ -22,47 +22,67 @@ mongo --username student --password sesja2013 153.19.1.202/test
 
 ## Nasze agregacje
 
-1. Włodzimierz Bzyl, [Imieniny](/docs/wbzyl.md)
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
+1. Bzyl, Włodzimierz. [Imieniny](/docs/wbzyl.md).
+1. Bełcik, Jakub.
+1. Białkowski, Dominik.
+1. Brzeziński, Damian.
+1. Cała, Mariusz.
+1. Dermont, Jacek.
+1. Detlaf, Krzysztof.
+1. Dępczyk, Michał.
+1. Dobrzycki, Wojciech.
+1. Dolata, Jędrzej.
+1. Domurat, Szymon.
+1. Duwe, Oskar.
+1. Elszkowski, Adrian.
+1. Głowacki, Michał.
+1. Gniado, Bartosz.
+1. Groszek, Rafał.
+1. Januszewski, Tomasz.
+1. Jaźwiński, Robert.
+1. Karczewski, Kamil.
+1. Karwowski, Kamil.
+1. Kłeczek, Piotr.
+1. Kotłowski, Piotr.
+1. Koźmiński, Marcin.
+1. Królik, Przemysław.
+1. Kubacki, Konrad.
+1. Kwiatkowski, Mateusz.
+1. Lewandowska, Marta.
+1. Łuczun, Rafał.
+1. Malinowski, Piotr.
+1. Małecki, Maciej.
+1. Matulewski, Damian.
+1. Melzer, Grzegorz.
+1. Mieszała, Konrad.
+1. Motel, Mateusz.
+1. Motławski, Mateusz.
+1. Napiórkowski, Sebastain.
+1. Osękowski, Dominik.
+1. Ostrowski, Michał.
+1. Paczyński, Łukasz.
+1. Piasecka, Aleksandra.
+1. Pietraszuk, Bartłomiej.
+1. Pikora, Mateusz.
+1. Plichta, Oskar.
+1. Puchalski, Paweł.
+1. Rogaszewski, Piotr.
+1. Rybarczyk, Karolina.
+1. Sawicki, Paweł.
+1. Siora, Kacper.
+1. Skiba, Marek.
+1. Skowroński, Krzysztof.
+1. Smykowski, Adrian.
+1. Sott, Tomasz.
+1. Stefanowicz, Michał.
+1. Szygenda, Mateusz.
+1. Tomczak, Robert.
+1. Wąsowicz, Michał.
+1. Winsławski, Bartłomiej.
+1. Wiśniewski, Konrad.
+1. Wiśniewski, Konrad.
+1. Zdunek, Kamil.
+1. Żarkowski, Mateusz.
 
 
 ## Ściąga z Gita
