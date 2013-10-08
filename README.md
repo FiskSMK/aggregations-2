@@ -2,8 +2,7 @@
 
 ![Data Wranglers](/images/data-wrangler.jpg)
 
-Należy przygotować 4–5 aggregacji.
-Do aggregacji można wykorzystać swoje lub te kolekcje:
+Do aggregacji można wykorzystać te kolekcje:
 
 * *census1881*
 * *zipcodes*, [przykładowe agregacje](/Aggregation-Framework-Examples-in-Javascript.md)
@@ -18,33 +17,12 @@ wirtualnej. Do maszyny logujemy się w ten sposób:
 mongo --username student --password sesja2013 153.19.1.202/test
 ```
 
-Po zalogowaniu powinniśmy wykonujemy kilka poleceń. Przykładowo:
-
-```js
-db                        // test
-db.census1881.count()     // 4_277_807 rekordów
-db.zipcodes.count()       //    29_467
-db.kody_pocztowe.count()  //   140_076
-db.imieniny.count()       //       364
-db.airports.count()       //    44_980
-db.census1881.findOne()
-// {
-//   "_id": ObjectId("51630b8b31f30759f2f32061"),
-//   "last": "richard",
-//   "first": "joseph",
-//   "age": 40,
-//   "religion": "catholic"
-// }
-```
-
 *Uwaga:* Użytkownik *student* ma uprawnienia tylko do odczytu w bazie  *test*.
 
 
 ## Nasze agregacje
 
-1. Włodzimierz Bzyl, [Imieniny](/docs/anon.md),
-   [Open Street Map Data dla Polski](/docs/osm.md),
-   [GeoBytes](/docs/geobytes.md) – państwa i miasta.
+1. Włodzimierz Bzyl, [Imieniny](/docs/wbzyl.md)
 1. –
 1. –
 1. –
