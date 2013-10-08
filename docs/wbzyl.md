@@ -2,8 +2,7 @@
 
 ### *Włodzimierz Bzyl*
 
-Plik [places.json](/data/wbzyl/places.json) zawiera dane
-w następującym formacie:
+Plik [places.json](/data/wbzyl/places.json) zawiera dane w następującym formacie:
 
 ```json
 {
@@ -23,15 +22,11 @@ mongoimport --drop --collection imieniny places.json
 ```
 
 Link do skryptu [facebook.js](/scripts/wbzyl/facebook.js) – przykład
-pokazujący jak to zrobić.
+pokazujący jak dodać link do katalogu w tym repozytorium.
 
-
-### Przykładowe agregacje
-
-Opisy wszystkich agregacji.
 
 ----
 
 ## Zadanie 2
 
-Rozwiązanie + wizualizacja wyników (obrazek) lub tabelka.
+Opisy wszystkich agregacji + wizualizacja wyników (obrazek) lub tabelka.
