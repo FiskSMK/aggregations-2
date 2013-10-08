@@ -1,6 +1,8 @@
-## Zadanie 1
-
 ### *Włodzimierz Bzyl*
+
+----
+
+## Zadanie 1
 
 Plik [places.json](/data/wbzyl/places.json) zawiera dane w następującym formacie:
 
