@@ -5,14 +5,17 @@
 ##   tail -n +2 Train.csv | tr -d "\r" > Train2.csv
 ##   tail -n +2 Test.csv  | tr -d "\r" > Test2.csv
 ##
-##   ./csv2json.rb Train2.csv > train.json
-##   ./csv2json.rb Test2.csv  > test.json
+##   ./lowercase.perl < Train2.csv > Train3.csv
+##   ./lowercase.perl < Test2.csv > Test3.csv
 ##
-##   mongoimport --drop -d kaggle -c train test.json
+##   ./csv2json.rb Train3.csv > train.json
+##   ./csv2json.rb Test3.csv  > test.json
+##
+##   mongoimport --drop -d kaggle -c train train.json
 ##   mongoimport --drop -d kaggle -c test  test.json
 ##
-##   rm Train2.csv
-##   rm Test2.csv
+##?  rm Train{2,3}.csv
+##?  rm Test{2,3}.csv
 
 ## ARGF, ARGV, STDIN:
 ##   http://stackoverflow.com/questions/273262/best-practices-with-stdin-in-ruby
