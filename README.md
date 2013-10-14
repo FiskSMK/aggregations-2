@@ -35,6 +35,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Domurat, Szymon.
 1. Duwe, Oskar.
 1. Elszkowski, Adrian.
+1. Gałka, Jacek.
 1. Głowacki, Michał.
 1. Gniado, Bartosz.
 1. Groszek, Rafał.
@@ -59,6 +60,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Motławski, Mateusz.
 1. Napiórkowski, Sebastain.
 1. Osękowski, Dominik.
+1. Osiński, Miłosz.
 1. Ostrowski, Michał.
 1. Paczyński, Łukasz.
 1. Piasecka, Aleksandra.
@@ -83,8 +85,6 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Wiśniewski, Piotr.
 1. Zdunek, Kamil.
 1. Żarkowski, Mateusz.
-1. Miłosz Osiński.
-1. Jacek Gałka.
 
 
 ## Ściąga z Gita
