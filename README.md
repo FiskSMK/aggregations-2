@@ -80,9 +80,11 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Wąsowicz, Michał.
 1. Winsławski, Bartłomiej.
 1. Wiśniewski, Konrad.
-1. Wiśniewski, Konrad.
+1. Wiśniewski, Piotr.
 1. Zdunek, Kamil.
 1. Żarkowski, Mateusz.
+1. Miłosz Osiński.
+1. Jacek Gałka.
 
 
 ## Ściąga z Gita
