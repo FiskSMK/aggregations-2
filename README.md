@@ -27,7 +27,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Białkowski, Dominik.
 1. Brzeziński, Damian.
 1. Cała, Mariusz.
-1. Dermont, Jacek.
+1. Dermont, Jacek. [Zadanie1](/docs/jdermont.md).
 1. Detlaf, Krzysztof.
 1. Dępczyk, Michał.
 1. Dobrzycki, Wojciech.
