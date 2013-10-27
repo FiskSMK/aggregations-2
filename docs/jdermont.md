@@ -33,7 +33,6 @@ sys     0m22.567s
 ```
 
 ```
-> db.train.aggregate({$project:{"Tags":1}},{$unwind: "$Tags"},{$group:{"_id":"result",count:{$sum:1}}})
 {
         "result" : [
                 {
@@ -57,7 +56,7 @@ sys     0m22.567s
 ```
 
 ```
-db.slowa.aggregate([{$group: {_id:"$slowo",total:{$sum:1}}},{$sort:{total:-1}},{$limit:1},{$group:{_id:"null",total_total:{$sum:"$total"}}},{$project:{_id:1,percent:{$divide:["$total_total",{$divide:[db.slowa.count(),100]}]}}}])
+1 słowo
 {
         "result" : [
                 {
@@ -67,7 +66,7 @@ db.slowa.aggregate([{$group: {_id:"$slowo",total:{$sum:1}}},{$sort:{total:-1}},{
         ],
         "ok" : 1
 }
-db.slowa.aggregate([{$group: {_id:"$slowo",total:{$sum:1}}},{$sort:{total:-1}},{$limit:10},{$group:{_id:"null",total_total:{$sum:"$total"}}},{$project:{_id:1,percent:{$divide:["$total_total",{$divide:[db.slowa.count(),100]}]}}}])
+10 słów
 {
         "result" : [
                 {
@@ -77,7 +76,7 @@ db.slowa.aggregate([{$group: {_id:"$slowo",total:{$sum:1}}},{$sort:{total:-1}},{
         ],
         "ok" : 1
 }
-db.slowa.aggregate([{$group: {_id:"$slowo",total:{$sum:1}}},{$sort:{total:-1}},{$limit:100},{$group:{_id:"null",total_total:{$sum:"$total"}}},{$project:{_id:1,percent:{$divide:["$total_total",{$divide:[db.slowa.count(),100]}]}}}])
+100 słów
 {
         "result" : [
                 {
@@ -87,7 +86,7 @@ db.slowa.aggregate([{$group: {_id:"$slowo",total:{$sum:1}}},{$sort:{total:-1}},{
         ],
         "ok" : 1
 }
-db.slowa.aggregate([{$group: {_id:"$slowo",total:{$sum:1}}},{$sort:{total:-1}},{$limit:1000},{$group:{_id:"null",total_total:{$sum:"$total"}}},{$project:{_id:1,percent:{$divide:["$total_total",{$divide:[db.slowa.count(),100]}]}}}])
+1000 słów
 {
         "result" : [
                 {
