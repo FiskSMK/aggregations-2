@@ -352,3 +352,77 @@ Check the screens from MMS for visualization.
 ### Making points
 
 ![mms-monitoring-geo-making-points-status](../../images/mmalecki/mms-status-geo-making-points.png)
+
+# Collections stats..
+
+## Train
+
+```bash
+> db.train.stats()
+{
+  "ns" : "nosql_course.train",
+  "count" : 6034195,
+  "size" : 9379502152,
+  "avgObjSize" : 1554.3916217490485,
+  "storageSize" : 10201026544,
+  "numExtents" : 24,
+  "nindexes" : 1,
+  "lastExtentSize" : 2146426864,
+  "paddingFactor" : 1.9940000002233105,
+  "systemFlags" : 1,
+  "userFlags" : 0,
+  "totalIndexSize" : 196338464,
+  "indexSizes" : {
+    "_id_" : 196338464
+  },
+  "ok" : 1
+}
+```
+
+## text8
+
+```bash
+> db.text8.stats()
+{
+  "ns" : "nosql_course.text8",
+  "count" : 17005207,
+  "size" : 667546920,
+  "avgObjSize" : 39.25544217133023,
+  "storageSize" : 1071038464,
+  "numExtents" : 20,
+  "nindexes" : 1,
+  "lastExtentSize" : 280440832,
+  "paddingFactor" : 1,
+  "systemFlags" : 1,
+  "userFlags" : 0,
+  "totalIndexSize" : 552272448,
+  "indexSizes" : {
+    "_id_" : 552272448
+  },
+  "ok" : 1
+}
+```
+
+## Geo
+
+```bash
+> db.allstates.stats()
+{
+  "ns" : "nosql_course.allstates",
+  "count" : 6793100,
+  "size" : 7840453376,
+  "avgObjSize" : 1154.179001634011,
+  "storageSize" : 12705017808,
+  "numExtents" : 26,
+  "nindexes" : 1,
+  "lastExtentSize" : 2146426864,
+  "paddingFactor" : 1.9970000002513961,
+  "systemFlags" : 1,
+  "userFlags" : 0,
+  "totalIndexSize" : 220792880,
+  "indexSizes" : {
+    "_id_" : 220792880
+  },
+  "ok" : 1
+}
+```
