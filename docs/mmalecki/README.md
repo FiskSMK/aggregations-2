@@ -277,6 +277,18 @@ Ofcourse it is possible to re-write it and use more threads.
 
 [check number of occurration of "tops"](../../data/mmalecki/text8_percents.csv)
 
+### Show number of different words in MongoDB Shell
+
+```bash
+~/repos/aggregations-2/scripts/mmalecki (maciej-malecki)
+ $ mongo
+
+ MongoDB shell version: 2.4.7
+ connecting to: nosql_course
+ > db.text8.distinct("word").length
+ 253854
+```
+
 ## MMS Monitoring
 
 #### 1d
