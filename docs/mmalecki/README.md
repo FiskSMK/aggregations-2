@@ -1,3 +1,9 @@
+## MongoDB version
+
+```bash
+MongoDB shell version: 2.4.7
+```
+
 ## TL;DR
 
 * 1a
@@ -66,6 +72,32 @@
   $ time ruby count_words_percents.rb nosql_course text8
   ```
 
+* 1e
+
+  ```bash
+  # Get db
+
+  wget http://geonames.usgs.gov/docs/stategaz/AllStates_20131020.zip
+  ```
+
+  ```bash
+  # Early EDA
+
+  $ time bash prepare_geo_data.bash AllStates data.csv
+  ```
+
+  ```bash
+  # Import
+
+  $ time bash import_csv.bash nosql_course allstates AllStates/data.csv
+  ```
+
+  ```bash
+  # Making points from ltg/lng fields
+
+  $ time ruby make_geo_points.bash nosql_course allstates
+  ```
+
 ## Starting separated MongoDB cluster
 
 ```bash
@@ -113,7 +145,7 @@ mongod --fork --logpath path_to_logs --smallfiles --nojournal --dbpath path_to_c
 
 ![htop](../../images/mmalecki/htop.png)
 
-## Convert tags from string to array
+## Converting tags from string to array
 
 ```bash
 ~/repos/aggregations-2/scripts/mmalecki (maciej-malecki) 
@@ -256,3 +288,67 @@ Ofcourse it is possible to re-write it and use more threads.
 ##### Counting...
 
 ![mms-monitoring-text8-status](../../images/mmalecki/mms-status-text8-counting.png)
+
+# Geo...
+
+## Download and decompress the database
+
+It is small database.... it is so hard to find bigdata geo db :/
+
+```bash
+wget http://geonames.usgs.gov/docs/stategaz/AllStates_20131020.zip
+unzip AllStates_20131020
+```
+
+## Early EDA
+
+```bash
+~/repos/aggregations-2/scripts/mmalecki (maciej-malecki)
+ $ time bash prepare_geo_data.bash ../../mmalecki/data/AllStates/ data.csv
+
+ real  0m13.503s
+ user  0m17.433s
+ sys   0m1.875s
+```
+
+## Import to MongoDB
+
+```bash
+~/repos/aggregations-2/scripts/mmalecki (maciej-malecki)
+ $ time bash import_csv.bash nosql_course allstates ../../data/mmalecki/tmp/AllStates/data.csv
+
+ # check link below for output from importing
+
+ Sun Oct 27 00:11:13.198 check 9 6793101
+ Sun Oct 27 00:11:13.275 imported 6793100 objects
+
+ real  3m7.304s
+ user  1m41.477s
+ sys   0m6.826s
+```
+
+## Creating mongo points from lat/lng fields
+
+```bash
+~/repos/aggregations-2/scripts/mmalecki (maciej-malecki)
+ $ time ruby make_geo_points.bash nosql_course allstates
+
+ real  98m20.389s
+ user  73m31.141s
+ sys   9m56.322s
+```
+
+Done in parallel in 2-4 processes at the same time.
+Number of processes at the same time depend on heat
+(scale down and up manually).
+Check the screens from MMS for visualization.
+
+## MMS Monitoring
+
+### Importing
+
+![mms-monitoring-geo-status](../../images/mmalecki/mms-status-geo.png)
+
+### Making points
+
+![mms-monitoring-geo-making-points-status](../../images/mmalecki/mms-status-geo-making-points.png)
