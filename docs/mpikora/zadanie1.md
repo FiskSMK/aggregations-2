@@ -2,9 +2,12 @@
 
 ----
 
+## Uwagi wstępne
+Wszystkie operacje przeprowadziłem używając laptopa Packard Bell EasyNote LM86.
+
 ## Zadanie 1
 ### a)
-Najpierw przygotowałem plik do importu za pomocą skryptu 2unix.sh.
+Najpierw przygotowałem plik do importu za pomocą skryptu 2unix.sh. Import do bazy wykonałem poleceniem:
 
 ```
 ~/mongodb-linux/bin/mongoimport --type csv -c Train --file ./Train.csv --headerline
@@ -23,13 +26,13 @@ Otrzymałem wynik 6034195, zgodny z liczbą rekordów w pliku.
 
 ### c)
 Program konwertujący tagi na tablicę napisów napisałem w języku C. Jego kod znajduje się [tutaj](/docs/mpikora/mongo1c.c).
-Należy go skompilowac poleceniem:
+Należy go skompilowac poleceniem (po zainstalowaniu odpowiednich sterowników):
 
 ```
 gcc -Wall --std=c99 -Wall -pedantic mongo1c.c -lmongoc
 ```
 
-Czas jego działania wyniósł 1 godzinę, 8 minut i 51 sekund
+Czas jego działania wyniósł 1 godzinę, 8 minut i 51 sekund.
 
 ### d)
 
@@ -37,9 +40,9 @@ Plik przygotowałem do importu zgodnie z opisem w poleceniu. Import wykonałem p
 
 ```
 /usr/bin/time -o plik1d.txt ~/mongodb-linux/bin/mongoimport --type csv -f word -c text8 --file ./text8.txt
-``
+```
 
-Trwał on 7 minut i 57 sekund.
+Trwał on 7 minut i 57 sekund. Następnie przeprowadziłem następującą analizę danych:
 
 ``` 
 db.text8.count()
@@ -76,6 +79,7 @@ db.text8.aggregate([ {$group:{_id:"$word", count:{$sum:1}}}, {$sort: {count: -1}
 
 { "result" : [ { "_id" : null, "count" : 7998978 } ], "ok" : 1 }
 ```
+
 7998978/17005207=0.4704
 100 najczęściej występujących słów stanowi około 47% jego zawartości.
 
