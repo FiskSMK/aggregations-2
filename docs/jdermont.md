@@ -99,7 +99,7 @@ db.slowa.aggregate([{$group: {_id:"$slowo",total:{$sum:1}}},{$sort:{total:-1}},{
 }
 ```
 
-#### ciekawostki
+#### Ciekawostki
 ```
 Baza na HDD:
 time mongoimport --db baza --collection slowa < text8.json
@@ -107,7 +107,7 @@ real    11m15.649s
 user    2m8.957s
 sys     0m21.070s
 
-Baza na tmpfs (RAM)*:
+Baza na tmpfs (RAM):
 time mongoimport --db baza --collection slowa < text8.json
 real    8m11.272s
 user    1m40.533s
@@ -117,17 +117,17 @@ sys     0m16.473s
 ```
 HDD:
 time echo 'db.slowa.ensureIndex({"slowo":1})' | mongo baza --quiet
-real    1m47.142s
-user    0m0.130s
-sys     0m0.037s
-
-tmpfs (RAM)*:
-time echo 'db.slowa.ensureIndex({"slowo":1})' | mongo baza --quiet
 real    3m48.409s
 user    0m0.100s
 sys     0m0.027s
+
+tmpfs (RAM):
+time echo 'db.slowa.ensureIndex({"slowo":1})' | mongo baza --quiet
+real    1m47.142s
+user    0m0.130s
+sys     0m0.037s
 ```
 
-* - wyłączony journaling; kawałek tmpfs był na swapie
+Wyłączony journaling, kawałek tmpfs na swapie.
 
 ### e) To be continued
