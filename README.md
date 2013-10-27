@@ -65,7 +65,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Paczyński, Łukasz.
 1. Piasecka, Aleksandra.
 1. Pietraszuk, Bartłomiej.
-1. Pikora, Mateusz.
+1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
 1. Plichta, Oskar.
 1. Puchalski, Paweł.
 1. Rogaszewski, Piotr.
