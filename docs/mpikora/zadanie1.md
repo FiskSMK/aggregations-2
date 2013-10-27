@@ -25,8 +25,7 @@ db.Train.count()
 Otrzymałem wynik 6034195, zgodny z liczbą rekordów w pliku.
 
 ### c)
-Program konwertujący tagi na tablicę napisów napisałem w języku C. Jego kod znajduje się [tutaj](/docs/mpikora/mongo1c.c).
-Należy go skompilowac poleceniem (po zainstalowaniu odpowiednich sterowników):
+Program konwertujący tagi na tablicę napisów napisałem w języku C. Jego kod znajduje się [tutaj](/docs/mpikora/mongo1c.c). Należy go skompilowac poleceniem (po zainstalowaniu odpowiednich sterowników):
 
 ```
 gcc -Wall --std=c99 -Wall -pedantic mongo1c.c -lmongoc
@@ -63,6 +62,7 @@ db.text8.aggregate([ {$group:{ _id:"$word", count:{$sum:1}}}, {$sort: {count: -1
 ```
 
 1061396/17005207=0.0624
+
 Najczęściej występujące słowo w tym pliku stanowi około 6,25% jego zawartości.
 
 ```
@@ -72,6 +72,7 @@ db.text8.aggregate([ {$group:{_id:"$word", count:{$sum:1}}}, {$sort: {count: -1}
 ```
 
 4205965/17005207=0.2473
+
 10 najczęściej występujących słów stanowi około 24,73% jego zawartości.
 
 ```
@@ -81,6 +82,7 @@ db.text8.aggregate([ {$group:{_id:"$word", count:{$sum:1}}}, {$sort: {count: -1}
 ```
 
 7998978/17005207=0.4704
+
 100 najczęściej występujących słów stanowi około 47% jego zawartości.
 
 ```
@@ -90,6 +92,7 @@ db.text8.aggregate([ {$group:{_id:"$word", count:{$sum:1}}}, {$sort: {count: -1}
 ```
 
 11433354/17005207=0.6723
+
 1000 najczęściej występujących słów stanowi około 67% jego zawartości.
 
 ### e)
@@ -100,7 +103,9 @@ Do zadania użyłem danych dotyczących hrabstw w USA.Dostępne są one pod adre
 ```
 
 -77.03,38.88 (Przybliżone koordynaty miasta Waszyngton)
+
 -87.62,41.87 (Przybliżone koordynaty miasta Chicago)
+
 Przykładowe zapytania:
 
 hrabstwo, w którym znajduje się Waszyngton:
