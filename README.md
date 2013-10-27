@@ -52,7 +52,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Lewandowska, Marta.
 1. Łuczun, Rafał.
 1. Malinowski, Piotr.
-1. Małecki, Maciej.
+1. [Małecki, Maciej](/docs/mmalecki/README.md).
 1. Matulewski, Damian.
 1. Melzer, Grzegorz.
 1. Mieszała, Konrad.
