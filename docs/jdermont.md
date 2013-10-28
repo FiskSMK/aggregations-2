@@ -2,15 +2,16 @@
 
 ----
 
-## Zadanie 1
-### a)
+### Zadanie 1a
+
 Zaimportowałem bazę za pomocą:
 
-```
+```sh
 time mongoimport --db baza --collection train < train.json
 ```
 
 Wynik, który otrzymałem:
+
 ```
 Mon Oct 21 09:14:48.402 check 9 6034195
 Mon Oct 21 09:14:48.411 imported 6034195 objects
@@ -20,33 +21,36 @@ user    4m29.307s
 sys     0m22.567s
 ```
 
-### b)
-```
-> db.train.count()
+### Zadanie 1b
+
+```js
+db.train.count()
 6034195
 ```
 
-### c)
-```
-> db.train.distinct("Tags").length
+### Zadanie 1c
+
+```js
+db.train.distinct("Tags").length
 42048
 ```
 
-```
+```json
 {
-        "result" : [
-                {
-                        "_id" : "result",
-                        "count" : 17409994
-                }
-        ],
-        "ok" : 1
+  "result" : [
+     {
+        "_id" : "result",
+        "count" : 17409994
+     }
+  ],
+  "ok" : 1
 }
 ```
 
-### d)
-```
-> db.slowa.count()
+### Zadanie 1d
+
+```js
+db.slowa.count()
 17005207
 ```
 
