@@ -69,12 +69,12 @@ MongoDB version: 2.5.2
 
 #### zliczanie słów
   Ogółem:
-  ```bash
-  > db.text8.count()
+  ```js
+  db.text8.count()
   17005207
   ```
   Różnych:
-  ```bash
-  > db.text8.distinct("word").length
+  ```js
+  db.text8.distinct("word").length
   253854
   ```
