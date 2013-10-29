@@ -60,7 +60,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Motławski, Mateusz.
 1. Napiórkowski, Sebastain.
 1. Osękowski, Dominik.
-1. Osiński, Miłosz.
+1. [Osiński, Miłosz](/docs/mosinski/README.md).
 1. Ostrowski, Michał.
 1. Paczyński, Łukasz.
 1. Piasecka, Aleksandra.
