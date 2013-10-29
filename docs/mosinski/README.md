@@ -54,5 +54,27 @@ MongoDB version: 2.5.2
   ```
 #### import
   ```bash
-  $ time mongoimport < text8.json
+  $ time mongoimport --db Text --collection text8 --type json --file text8.json
+  
+  Tue Oct 29 13:40:12.979 check 9 17005207
+  Tue Oct 29 13:40:13.823 imported 17005207 objects
+
+  real	  13m17.613s
+  user	  2m11.880s
+  sys	  2m45.162s
+  ```
+  Zawsze jeden z dwóch rdzeni przy imporcie działał na 100% ilość wątków wachała się pomiędzy 2-6 wątków.
+![htop](../../images/mosinski/screen2.png)
+![htop](../../images/mosinski/screen3.png)
+
+#### zliczanie słów
+  Ogółem:
+  ```bash
+  > db.text8.count()
+  17005207
+  ```
+  Różnych:
+  ```bash
+  > db.text8.distinct("word").length
+  253854
   ```
