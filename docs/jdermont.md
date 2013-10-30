@@ -337,7 +337,7 @@ db.miasta.find(
 }
 ```
 
-[Geojson, obszar województwa małopolskiego.](../scripts/jdermont/malopolskie.geojson)
+[Geojson, obszar województwa małopolskiego.](../data/jdermont/malopolskie.geojson)
 ```sh
 mongoimport --collection wojewodztwo < malopolskie.geojson
 ```
@@ -405,33 +405,20 @@ db.miasta.find({loc: {$geoWithin:{$geometry:d}}}).sort({ludnosc:-1})
     "miasto" : "Nowy Sącz",
     "szerokosc" : 49.63
 }
+...
 {
-    "_id" : 26,
-    "dlugosc" : 19.399,
+    "_id" : 244,
+    "dlugosc" : 19.77,
     "loc" : {
         "type" : "Point",
         "coordinates" : [
-            19.399,
-            50.139
+            19.77,
+            50.39
         ]
     },
-    "ludnosc" : 38420,
-    "miasto" : "Chrzanów",
-    "szerokosc" : 50.139
-}
-{
-    "_id" : 148,
-    "dlugosc" : 19.549,
-    "loc" : {
-        "type" : "Point",
-        "coordinates" : [
-            19.549,
-            50.279
-        ]
-    },
-    "ludnosc" : 36993,
-    "miasto" : "Olkusz",
-    "szerokosc" : 50.279
+    "ludnosc" : 8926,
+    "miasto" : "Wolbrom",
+    "szerokosc" : 50.39
 }
 
 ```
