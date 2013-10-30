@@ -167,7 +167,7 @@ sys     0m0.037s
 Importowanie troszkę szybciej, CPU na 100%. Ustawianie indeksu 2x szybciej, CPU też na 100%. Dysk twardy okazał się wąskim gardłem dla CPU. CPU okazał się wąskim gardłem dla ramdysku.
 
 ### Zadanie 1e
-Znalazłem koordynaty 262 miast w Polsce, a z wikipedii ściągnąłem liczbę ludności i przerobiłem na format jsona. [Miasta](../data/jdermont/miasta.json)
+Znalazłem koordynaty 262 miast w Polsce, a z wikipedii ściągnąłem liczbę ludności i przerobiłem na format jsona. [miasta.json](../data/jdermont/miasta.json)
 
 ```json
 {
@@ -179,7 +179,7 @@ Znalazłem koordynaty 262 miast w Polsce, a z wikipedii ściągnąłem liczbę l
 }
 ```
 
-[Skrypt przerabiający na punkty](../scripts/jdermont/miasta_points.js)
+[Skrypt przerabiający na punkty.](../scripts/jdermont/miasta_points.js)
 
 ```json
 {
@@ -204,12 +204,15 @@ Uwaga: dla 2dsphere mongo przyjmuje jako pierwszy argument szerokość geografic
 db.miasta.ensureIndex({"loc" : "2dsphere"})
 ```
 
-5 miast leżących najbliżej Gdańska (oprócz Gdańska).
+5 miast leżących najbliżej Gdańska (oprócz Gdańska) + formatowanie, żeby niepotrzebnie nie było widać _id i innych rzeczy.
 
 ```js
 var d
 db.miasta.find({"miasto":"Gdańsk"}).forEach(function(input) { d = input.loc } )
-db.miasta.find({loc: {$near:{$geometry:d}}},{_id:0,miasto:1,loc:1}).skip(1).limit(5).pretty()
+db.miasta.find(
+  {loc: {$near:{$geometry:d}}},
+  {_id:0,miasto:1,loc:1}
+).skip(1).limit(5).pretty()
 ```
 ```json
 {
@@ -268,7 +271,12 @@ Ilość miast z populacją powyżej 50000 w promieniu 100km od Warszawy włączn
 
 ```js
 function km(i) { return i/111.2 } // 1 st. geograficzny = ~111.2 km
-db.miasta.find({loc: {$geoWithin: {$center: [[21.02,52.259],km(100)]}},"ludnosc":{$gte:50000}}).pretty()
+db.miasta.find(
+  {
+    loc: {$geoWithin: {$center: [[21.02,52.259],km(100)]}
+  },
+  "ludnosc": {$gte:50000}}
+).pretty()
 ```
 ```json
 {
