@@ -484,7 +484,7 @@ db.miasta.find({
 
 Przyład 6. Użycie LineString, czy linia jest w polygonie?
 ```js
-var line1 = { type : "LineString" , coordinates : [ [ 19.960 , 51.06 ] , [ 41 , 6 ] ] }
+var line1 = {type : "LineString" , coordinates : [[19.960, 51.06] , [41 , 6]]}
 db.wojewodztwa.find({loc:{$geoIntersects:{$geometry:line1}}}).count()
 1
 ```
