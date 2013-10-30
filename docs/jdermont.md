@@ -321,7 +321,7 @@ db.miasta.find(
 }
 ```
 
-[Gejoson, obszar województwa małopolskiego.](../data/jdermont/malopolskie.geojson)
+[Gejoson, obszar województwa małopolskiego.](../data/jdermont/malopolskie.geojson) (z http://global.mapit.dev.mysociety.org)
 ```sh
 mongoimport --collection wojewodztwo < malopolskie.geojson
 ```
@@ -350,11 +350,11 @@ db.miasta.find({loc: {$geoWithin:{$geometry:d}}}).sort({ludnosc:-1})
     "_id" : 88,
     "dlugosc" : 19.959,
     "loc" : {
-        "type" : "Point",
-        "coordinates" : [
-            19.959,
-            50.06
-        ]
+      "type" : "Point",
+      "coordinates" : [
+        19.959,
+        50.06
+      ]
     },
     "ludnosc" : 758463,
     "miasto" : "Kraków",
@@ -364,11 +364,11 @@ db.miasta.find({loc: {$geoWithin:{$geometry:d}}}).sort({ludnosc:-1})
     "_id" : 223,
     "dlugosc" : 20.99,
     "loc" : {
-        "type" : "Point",
-        "coordinates" : [
-            20.99,
-            50.009
-        ]
+      "type" : "Point",
+      "coordinates" : [
+        20.99,
+        50.009
+      ]
     },
     "ludnosc" : 112952,
     "miasto" : "Tarnów",
@@ -378,11 +378,11 @@ db.miasta.find({loc: {$geoWithin:{$geometry:d}}}).sort({ludnosc:-1})
     "_id" : 141,
     "dlugosc" : 20.699,
     "loc" : {
-        "type" : "Point",
-        "coordinates" : [
-            20.699,
-            49.63
-        ]
+      "type" : "Point",
+      "coordinates" : [
+        20.699,
+        49.63
+      ]
     },
     "ludnosc" : 84129,
     "miasto" : "Nowy Sącz",
@@ -393,11 +393,11 @@ db.miasta.find({loc: {$geoWithin:{$geometry:d}}}).sort({ludnosc:-1})
     "_id" : 244,
     "dlugosc" : 19.77,
     "loc" : {
-        "type" : "Point",
-        "coordinates" : [
-            19.77,
-            50.39
-        ]
+      "type" : "Point",
+      "coordinates" : [
+        19.77,
+        50.39
+      ]
     },
     "ludnosc" : 8926,
     "miasto" : "Wolbrom",
@@ -412,5 +412,8 @@ db.miasta.find({loc: {$geoWithin:{$geometry:d}}}).count()
 db.miasta.find({loc: {$geoIntersects:{$geometry:d}}}).count()
 28
 ```
+
+![100km-warszawa](../images/jdermont/mapa1.jpg)
+![malopolskie](../images/jdermont/mapa2.jpg)
 
 
