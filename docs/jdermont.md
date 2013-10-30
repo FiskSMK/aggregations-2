@@ -336,3 +336,102 @@ db.miasta.find(
     "szerokosc" : 51.399
 }
 ```
+
+[Geojson, obszar województwa małopolskiego.](../scripts/jdermont/malopolskie.geojson)
+```sh
+mongoimport --collection wojewodztwo < malopolskie.geojson
+```
+```json
+{
+  "type": "Polygon",
+  "coordinates": [
+    [ 
+      [ 21.373913, 49.432518 ],
+      [ 21.374135, 49.432555 ],
+      ...
+      [ 21.373913, 49.432518 ]
+    ]
+}
+```
+
+Miasta w województwie małopolskim, malejąco wg liczby ludności.
+
+```js
+var d
+var x = db.wojewodztwo.find()
+x.forEach(function(input){ d = input })
+db.miasta.find({loc: {$geoWithin:{$geometry:d}}}).sort({ludnosc:-1})
+```
+```json
+{
+    "_id" : 88,
+    "dlugosc" : 19.959,
+    "loc" : {
+        "type" : "Point",
+        "coordinates" : [
+            19.959,
+            50.06
+        ]
+    },
+    "ludnosc" : 758463,
+    "miasto" : "Kraków",
+    "szerokosc" : 50.06
+}
+{
+    "_id" : 223,
+    "dlugosc" : 20.99,
+    "loc" : {
+        "type" : "Point",
+        "coordinates" : [
+            20.99,
+            50.009
+        ]
+    },
+    "ludnosc" : 112952,
+    "miasto" : "Tarnów",
+    "szerokosc" : 50.009
+}
+{
+    "_id" : 141,
+    "dlugosc" : 20.699,
+    "loc" : {
+        "type" : "Point",
+        "coordinates" : [
+            20.699,
+            49.63
+        ]
+    },
+    "ludnosc" : 84129,
+    "miasto" : "Nowy Sącz",
+    "szerokosc" : 49.63
+}
+{
+    "_id" : 26,
+    "dlugosc" : 19.399,
+    "loc" : {
+        "type" : "Point",
+        "coordinates" : [
+            19.399,
+            50.139
+        ]
+    },
+    "ludnosc" : 38420,
+    "miasto" : "Chrzanów",
+    "szerokosc" : 50.139
+}
+{
+    "_id" : 148,
+    "dlugosc" : 19.549,
+    "loc" : {
+        "type" : "Point",
+        "coordinates" : [
+            19.549,
+            50.279
+        ]
+    },
+    "ludnosc" : 36993,
+    "miasto" : "Olkusz",
+    "szerokosc" : 50.279
+}
+
+```
