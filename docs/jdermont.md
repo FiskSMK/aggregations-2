@@ -415,9 +415,11 @@ db.miasta.find({loc: {$geoIntersects:{$geometry:d}}}).count()
 
 Obrazki:
 Przykład 2.
+
 ![100km-warszawa](../images/jdermont/mapa1.jpg)
 
 Przykład 3.
+
 ![malopolskie](../images/jdermont/mapa2.jpg)
 
 
