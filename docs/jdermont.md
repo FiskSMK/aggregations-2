@@ -190,7 +190,7 @@ Uwaga: dla 2dsphere mongo przyjmuje jako pierwszy argument szerokość geografic
 db.miasta.ensureIndex({"loc" : "2dsphere"})
 ```
 
-5 miast leżących najbliżej Gdańska (oprócz Gdańska) + formatowanie, żeby niepotrzebnie nie było widać _id i innych rzeczy.
+Przykład 1. 5 miast leżących najbliżej Gdańska (oprócz Gdańska) + formatowanie, żeby niepotrzebnie nie było widać _id i innych rzeczy.
 ```js
 var d
 db.miasta.find({"miasto":"Gdańsk"}).forEach(function(input) { d = input.loc } )
@@ -252,7 +252,7 @@ db.miasta.find(
 }
 ```
 
-Ilość miast z populacją powyżej 50000 w promieniu 100km od Warszawy włącznie.
+Przykład 2. Ilość miast z populacją powyżej 50000 w promieniu 100km od Warszawy włącznie.
 ```js
 function km(i) { return i/111.2 } // 1 st. geograficzny = ~111.2 km
 db.miasta.find(
@@ -338,7 +338,7 @@ mongoimport --collection wojewodztwo < malopolskie.geojson
 }
 ```
 
-Miasta w województwie małopolskim, malejąco wg liczby ludności.
+Przykład 3. Miasta w województwie małopolskim, malejąco wg liczby ludności.
 ```js
 var d
 var x = db.wojewodztwo.find()
@@ -405,7 +405,7 @@ db.miasta.find({loc: {$geoWithin:{$geometry:d}}}).sort({ludnosc:-1})
 }
 ```
 
-Przykład użycia $geoIntersects. W tym przypadku nie różni się od $geoWithin, ponieważ punkty i tak 'przecinają' (zawierają się w) wielokąt (województwo).
+Przykład 4. Przykład użycia $geoIntersects. W tym przypadku nie różni się od $geoWithin, ponieważ punkty i tak 'przecinają' (zawierają się w) wielokąt (województwo).
 ```js
 db.miasta.find({loc: {$geoWithin:{$geometry:d}}}).count()
 28
@@ -413,7 +413,11 @@ db.miasta.find({loc: {$geoIntersects:{$geometry:d}}}).count()
 28
 ```
 
+Obrazki:
+Przykład 2.
 ![100km-warszawa](../images/jdermont/mapa1.jpg)
+
+Przykład 3.
 ![malopolskie](../images/jdermont/mapa2.jpg)
 
 
