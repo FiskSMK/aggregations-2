@@ -5,13 +5,11 @@
 ### Zadanie 1a
 
 Zaimportowałem bazę za pomocą:
-
 ```sh
 time mongoimport --db baza --collection train < train.json
 ```
 
 Wynik, który otrzymałem:
-
 ```
 Mon Oct 21 09:14:48.402 check 9 6034195
 Mon Oct 21 09:14:48.411 imported 6034195 objects
@@ -31,7 +29,6 @@ db.train.count()
 ### Zadanie 1c
 
 Zamiana stringa na tablicę tagów:
-
 ```sh
 time python tags.py
 
@@ -41,14 +38,12 @@ sys   3m07.262s
 ```
 
 Ilość różnych tagów:
-
 ```js
 db.train.distinct("Tags").length
 42048
 ```
 
 Ilość wszystkich tagów:
-
 ```json
 {
   "result" : [
@@ -64,21 +59,18 @@ Ilość wszystkich tagów:
 ### Zadanie 1d
 
 Ilość wszystkich słów:
-
 ```js
 db.slowa.count()
 17005207
 ```
 
 Ilość różnych słów:
-
 ```js
 db.slowa.distinct("slowo").length
 253854
 ```
 
 Ile procent stanowi 1, 10, 100, 1000 najczęstszych słów?
-
 ```json
 {
   "result" : [
@@ -121,21 +113,18 @@ Ile procent stanowi 1, 10, 100, 1000 najczęstszych słów?
 #### HDD vs ramdysk
 Chciałem sprawdzić, czy mój dysk jest wąskim gardłem. W tym celu czasowo bazę mongodb umieściłem w tmpfs (w RAMie).
 Zamontowałem tmpfs:
-
 ```
 mkdir /tmpfs
 mount -t tmpfs -o size=4G,mode=0777 tmpfs /tmpfs
 ```
 
 Oraz zmieniłem katalog bazy danych w mongodb. Wyedytowałem /etc/mongodb.conf
-
 ```
 dbpath = /var/lib/mongodb
 nojournal = true # wylaczylem journaling bo troche zajmowal
 ```
 
 Wyniki:
-
 ```sh
 Baza na HDD:
 time mongoimport --db baza --collection slowa < text8.json
@@ -168,7 +157,6 @@ Importowanie troszkę szybciej, CPU na 100%. Ustawianie indeksu 2x szybciej, CPU
 
 ### Zadanie 1e
 Znalazłem koordynaty 262 miast w Polsce, a z wikipedii ściągnąłem liczbę ludności i przerobiłem na format jsona. [miasta.json](../data/jdermont/miasta.json)
-
 ```json
 {
   "_id" : 218,
@@ -180,7 +168,6 @@ Znalazłem koordynaty 262 miast w Polsce, a z wikipedii ściągnąłem liczbę l
 ```
 
 [Skrypt przerabiający na punkty.](../scripts/jdermont/miasta_points.js)
-
 ```json
 {
   "_id" : 218,
@@ -199,13 +186,11 @@ Znalazłem koordynaty 262 miast w Polsce, a z wikipedii ściągnąłem liczbę l
 ```
 
 Uwaga: dla 2dsphere mongo przyjmuje jako pierwszy argument szerokość geograficzną (W-E), a drugi jako długość geograficzną (N-S). Np dla współrzędnych 50N 20E, w coordinates będzie [ 20.0, 50.0 ].
-
 ```js
 db.miasta.ensureIndex({"loc" : "2dsphere"})
 ```
 
 5 miast leżących najbliżej Gdańska (oprócz Gdańska) + formatowanie, żeby niepotrzebnie nie było widać _id i innych rzeczy.
-
 ```js
 var d
 db.miasta.find({"miasto":"Gdańsk"}).forEach(function(input) { d = input.loc } )
@@ -268,7 +253,6 @@ db.miasta.find(
 ```
 
 Ilość miast z populacją powyżej 50000 w promieniu 100km od Warszawy włącznie.
-
 ```js
 function km(i) { return i/111.2 } // 1 st. geograficzny = ~111.2 km
 db.miasta.find(
@@ -337,7 +321,7 @@ db.miasta.find(
 }
 ```
 
-[Geojson, obszar województwa małopolskiego.](../data/jdermont/malopolskie.geojson)
+[Gejoson, obszar województwa małopolskiego.](../data/jdermont/malopolskie.geojson)
 ```sh
 mongoimport --collection wojewodztwo < malopolskie.geojson
 ```
@@ -355,7 +339,6 @@ mongoimport --collection wojewodztwo < malopolskie.geojson
 ```
 
 Miasta w województwie małopolskim, malejąco wg liczby ludności.
-
 ```js
 var d
 var x = db.wojewodztwo.find()
@@ -420,5 +403,14 @@ db.miasta.find({loc: {$geoWithin:{$geometry:d}}}).sort({ludnosc:-1})
     "miasto" : "Wolbrom",
     "szerokosc" : 50.39
 }
-
 ```
+
+Przykład użycia $geoIntersects. W tym przypadku nie różni się od $geoWithin, ponieważ punkty i tak 'przecinają' (zawierają się w) wielokąt (województwo).
+```js
+db.miasta.find({loc: {$geoWithin:{$geometry:d}}}).count()
+28
+db.miasta.find({loc: {$geoIntersects:{$geometry:d}}}).count()
+28
+```
+
+
