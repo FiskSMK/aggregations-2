@@ -413,7 +413,84 @@ db.miasta.find({loc: {$geoIntersects:{$geometry:d}}}).count()
 28
 ```
 
-Obrazki:
+Przykład 5. Szukamy miasta w woj. małopolskim w promieniu 25km od Krakowa.
+```js
+db.miasta.find({
+  loc:{$within:{$geometry:d}},
+  loc:{$within:
+  {
+    $center:[[19.959,50.06],km(25)]
+  }
+}}).pretty()
+```
+```json
+{
+    "_id" : 88,
+    "dlugosc" : 19.959,
+    "loc" : {
+        "type" : "Point",
+        "coordinates" : [
+            19.959,
+            50.06
+        ]
+    },
+    "ludnosc" : 758463,
+    "miasto" : "Kraków",
+    "szerokosc" : 50.06
+}
+{
+    "_id" : 240,
+    "dlugosc" : 20.09,
+    "loc" : {
+        "type" : "Point",
+        "coordinates" : [
+            20.09,
+            49.99
+        ]
+    },
+    "ludnosc" : 20988,
+    "miasto" : "Wieliczka",
+    "szerokosc" : 49.99
+}
+{
+    "_id" : 132,
+    "dlugosc" : 19.939,
+    "loc" : {
+        "type" : "Point",
+        "coordinates" : [
+            19.939,
+            49.839
+        ]
+    },
+    "ludnosc" : 18383,
+    "miasto" : "Myślenice",
+    "szerokosc" : 49.839
+}
+{
+    "_id" : 193,
+    "dlugosc" : 19.83,
+    "loc" : {
+        "type" : "Point",
+        "coordinates" : [
+            19.83,
+            49.979
+        ]
+    },
+    "ludnosc" : 24280,
+    "miasto" : "Skawina",
+    "szerokosc" : 49.979
+}
+```
+
+Przyład 6. Użycie LineString, czy linia jest w polygonie?
+```js
+var line1 = { type : "LineString" , coordinates : [ [ 19.960 , 51.06 ] , [ 41 , 6 ] ] }
+db.wojewodztwa.find({loc:{$geoIntersects:{$geometry:line1}}}).count()
+1
+```
+
+#### Obrazki:
+
 Przykład 2.
 
 ![100km-warszawa](../images/jdermont/mapa1.jpg)
