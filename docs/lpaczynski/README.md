@@ -21,9 +21,17 @@
   
 <h3><b>c)</b></h3>
 
-<p>....</p>
-
-</h3><b>d)</b></h3><br/><br/>
+<p>Skrypt konwertujący tagi na tablicę:</p>
+ ```js
+db.train.find( { "tags" : { $type : 2 } } ).snapshot().forEach(
+ function (x) {
+  if (!Array.isArray(x.tags)){
+    x.tags = x.tags.split(' ');
+    db.train.save(x);
+}});
+ ```
+Plik zliczający wszystkie słowa: [count](/scripts/lpaczynski/count)
+<h3><b>d)</b></h3>
 Przerobiłem plik do Jsona za pomocą tego [skryptu](/scripts/lpaczynski/toJson.sh)
   ```bash
   $ ./toJson.sh text8
