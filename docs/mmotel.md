@@ -477,9 +477,7 @@ Przykładowa linia z danymi:
 Wertzville|09/12/1979|01/03/2010
 ```
 
-##EDA
-
-###Przygotowanie danych
+##Przygotowanie danych
 
 ####Poprawienie pliku
 
@@ -513,7 +511,7 @@ user	0m1.392s
 sys	0m0.144s
 ```
 
-###Robimy geoJSONy
+##Robimy geoJSONy
 
 Do przygotowania obiektów `geoJSON` użyjemy prostego skryptu powłoki `Mongo`, który z pól: `FEATURE_ID` ,`FEATURE_NAME` ,`PRIM_LONG_DEC` ,`PRIM_LAT_DEC` utworzy obiekty o takiej strukturze:
 
