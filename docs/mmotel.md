@@ -304,8 +304,6 @@ Ustawiając lub wykomentowując `$limit` ustalamy ilość elementów, które otr
 ###Różnych słów
 
 ```sh
-MongoDB shell version: 2.4.7
-connecting to: text
  słów: 253854
 ilość: 17005207
 część: 100%
@@ -320,11 +318,6 @@ sys   0m0.124s
 ```
 
 ###1 słowo
-
-```sh
-MongoDB shell version: 2.4.7
-connecting to: text
-```
 
 ```json
 { "result" : [ { "_id" : "the", "count" : 1061396 } ], "ok" : 1 }
@@ -345,11 +338,6 @@ sys   0m0.012s
 ```
 
 ###10 słów
-
-```sh
-MongoDB shell version: 2.4.7
-connecting to: text
-```
 
 ```json
 {
@@ -383,11 +371,6 @@ user  0m0.056s
 sys   0m0.008s
 ```
 ###100 słów
-
-```sh
-MongoDB shell version: 2.4.7
-connecting to: text
-```
 
 ```json
 {
@@ -426,11 +409,6 @@ sys   0m0.016s
 ```
 
 ###1000 słów
-
-```sh
-MongoDB shell version: 2.4.7
-connecting to: text
-```
 
 ```json
 {
