@@ -541,7 +541,7 @@ user	0m6.484s
 sys	0m0.772s
 ```
 
-####Dodajemy indeks:
+####Dodajemy indeks
 
 ```js
 db.geony.ensureIndex({"loc" : "2dsphere"});
@@ -551,7 +551,7 @@ db.geony.ensureIndex({"loc" : "2dsphere"});
 
 ###$near
 
-####Wybrany punkt:
+####Wybrany punkt
 
 ```json
 { 
