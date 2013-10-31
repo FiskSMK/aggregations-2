@@ -301,7 +301,7 @@ coll.aggregate(
 
 Ustawiając lub wykomentowując `$limit` ustalamy ilość elementów, które otrzymamy w wyniku agregacji.
 
-####Różnych słów
+###Różnych słów
 
 ```sh
 MongoDB shell version: 2.4.7
@@ -311,7 +311,7 @@ ilość: 17005207
 część: 100%
 ```
 
-Czasy:
+####Czasy:
 
 ```sh
 real  0m18.030s
@@ -319,7 +319,7 @@ user  0m1.340s
 sys   0m0.124s
 ```
 
-####1 słowo
+###1 słowo
 
 ```sh
 MongoDB shell version: 2.4.7
@@ -344,7 +344,7 @@ user  0m0.048s
 sys   0m0.012s
 ```
 
-####10 słów
+###10 słów
 
 ```sh
 MongoDB shell version: 2.4.7
@@ -375,14 +375,14 @@ ilość: 4205965
 część: 24.733394894869555%
 ```
 
-Czasy:
+####Czasy:
 
 ```sh
 real  0m16.088s
 user  0m0.056s
 sys   0m0.008s
 ```
-####100 słów
+###100 słów
 
 ```sh
 MongoDB shell version: 2.4.7
@@ -417,7 +417,7 @@ ilość: 7998978
 część: 47.03840417820259%
 ```
 
-Czasy:
+####Czasy:
 
 ```sh
 real  0m16.055s
@@ -425,7 +425,7 @@ user  0m0.056s
 sys   0m0.016s
 ```
 
-####1000 słów
+###1000 słów
 
 ```sh
 MongoDB shell version: 2.4.7
@@ -459,7 +459,7 @@ ilość: 11433354
 część: 67.23443001899359%
 ```
 
-Czasy:
+####Czasy:
 
 ```sh
 real  0m16.109s
