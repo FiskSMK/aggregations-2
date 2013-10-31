@@ -1,3 +1,4 @@
+//run: mongo geony make-geo-jsons.js
 
 db.geony.drop();
 
@@ -11,8 +12,6 @@ cursor.forEach(function (item){
 		"name": item["FEATURE_NAME"],
 		"loc": { "type":"Point", "coordinates": [ item["PRIM_LONG_DEC"] , item["PRIM_LAT_DEC"] ] }
 	};
-
-	//print(item["FEATURE_ID"] + " : [ " + item["PRIM_LONG_DEC"] + " , " + item["PRIM_LAT_DEC"] + " ]");
 
 	db.geony.insert(geo);
 
