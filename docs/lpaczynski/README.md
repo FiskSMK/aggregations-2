@@ -24,7 +24,7 @@
 <p>....</p>
 
 </h3><b>d)<b></h3>
-<p>Przerobiłem plik do Jsona za pomocą tego [skryptu](../../scripts/lpaczynski/toJson.sh)</p>
+<p>Przerobiłem plik do Jsona za pomocą tego [skryptu](/docs/mpikora/mongo1c.c)</p>
 
   ```bash
   $ ./toJson.sh text8
