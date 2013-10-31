@@ -1,16 +1,15 @@
-
 <h1> Łukasz Paczyński </h1>
 
-<h3>Zadanie 1</h3>
+<h2>Zadanie 1</h2>
 
-<b>a)</b>
+<h3><b>a)</b></h3>
 <p>Import pliku</p>
 
   ```bash
   $ mongoimport --type csv -c Train --file ./Train2.csv --headerline
   ```  
 
-<b>b)</b>
+<h3><b>b)</b></h3>
 
   ```bash
   db.Train.count()
@@ -20,10 +19,12 @@
 ![Image](../../images/lpaczynski/zadanie1b.jpg)
 
   
-<b>c</b>
+<h3><b>c)</b></h3>
 
-<b>d<b>
-<p>Przerobiłem plik do Jsona za pomocą tego [skryptu](../../scripts/lpaczynski/toJson.sh)</p>
+<p>....</p>
+
+</h3><b>d)<b></h3>
+<p>Przerobiłem plik do Jsona za pomocą tego ![skryptu](../../scripts/lpaczynski/toJson.sh)</p>
 
   ```bash
   $ ./toJson.sh text8
