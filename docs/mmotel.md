@@ -451,6 +451,8 @@ connecting to: text
 }
 ```
 
+[Pełny wynik agregacji](./mmotel/1d-top-1000.md)
+
 ```sh
  słów: 1000
 ilość: 11433354
