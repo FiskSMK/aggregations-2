@@ -62,7 +62,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Osękowski, Dominik.
 1. [Osiński, Miłosz](/docs/mosinski/README.md).
 1. Ostrowski, Michał.
-1. Paczyński, Łukasz.
+1. [Paczyński, Łukasz](/docs/lpaczynski/README.md).
 1. Piasecka, Aleksandra.
 1. Pietraszuk, Bartłomiej.
 1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
