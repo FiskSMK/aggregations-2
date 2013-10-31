@@ -97,7 +97,7 @@ Kod skryptu: [convert-tags.js](../scripts/mmotel/1c/convert-tags.js)
 
 Do uruchowienia skryptu potrzebujemy `Node.JS` w najnowszej wersji. Instrukcja instalacji pod `Linuxem`: [link](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
 
-Instalujemy pakiety (w tym wypadku sam sterownik do mongo) zawarte w pliku `package.json`:
+Instalujemy pakiety (w tym wypadku sam sterownik do mongo) zawarte w pliku [`package.json`](../scripts/mmotel/1c/package.json):
 
 ```sh
 npm install
@@ -174,6 +174,7 @@ W ciągu `13m1.030s` wykonano `6 034 195` aktualizacji. Co średnio daje `~7 726
 ##Rozwiązanie `powłoka Mongo`
 
 Do rozwiązania zadania użyłem również skryptu `JavaScript` uruchamianego na powłoce `Mongo`. 
+
 Kod skryptu: [mongo-convert-tags.js](../scripts/mmotel/1c/mongo-convert-tags.js)
 
 ####Uruchomienie
