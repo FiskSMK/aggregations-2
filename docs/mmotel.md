@@ -574,7 +574,11 @@ var punkt = {
 	"type" : "Point", 
 	"coordinates" : [ -73.6605406,  40.9844661 ] 
 };
+```
 
+####Wykonujemy zapytanie
+
+```js
 db.geony.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 200} }).toArray()
 ```
 
