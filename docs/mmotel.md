@@ -408,7 +408,7 @@ connecting to: text
 }
 ```
 
-[Pełny wynik agregacji](./mmotel/1d-top100.md)
+[Pełny wynik agregacji](./mmotel/1d-top-100.md)
 
 
 ```sh
