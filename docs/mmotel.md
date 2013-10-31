@@ -91,7 +91,7 @@ if(item.Tags.constructor !== Array){
 
 Do rozwiązania zadania użyłem skryptu `JavaScript` uruchamianego na serwerze [`Node.JS`](http://nodejs.org/) w wersji `0.10.21`, który korzysta ze sterownika [`The Node.JS MongoDB Driver`](http://mongodb.github.io/node-mongodb-native/) w wersji `1.3.19`.
 
-Kod skryptu: [convert-tags.js](../scripts/mmotel/1c/convert-tags.js)
+Kod skryptu: [convert-tags.js](../scripts/mmotel/1c/convert-tags.js).
 
 ####Instalacja
 
@@ -175,7 +175,7 @@ W ciągu `13m1.030s` wykonano `6 034 195` aktualizacji. Co średnio daje `~7 726
 
 Do rozwiązania zadania użyłem również skryptu `JavaScript` uruchamianego na powłoce `Mongo`. 
 
-Kod skryptu: [mongo-convert-tags.js](../scripts/mmotel/1c/mongo-convert-tags.js)
+Kod skryptu: [mongo-convert-tags.js](../scripts/mmotel/1c/mongo-convert-tags.js).
 
 ####Uruchomienie
 
@@ -408,7 +408,7 @@ connecting to: text
 }
 ```
 
-[Pełny wynik agregacji](./mmotel/1d-top-100.md)
+Pełny wynik agregacji: [link](./mmotel/1d-top-100.md).
 
 
 ```sh
@@ -451,7 +451,7 @@ connecting to: text
 }
 ```
 
-[Pełny wynik agregacji](./mmotel/1d-top-1000.md)
+Pełny wynik agregacji: [link](./mmotel/1d-top-1000.md).
 
 ```sh
  słów: 1000
@@ -479,7 +479,7 @@ sys   0m0.008s
 
 Do rozwiązania zadania użyłem danych ze strony [`U.S. Geological Survey`](http://www.usgs.gov/) z działu [`United States Board on Geographic Names`](http://geonames.usgs.gov/) pt. [`Domestic and Antarctic Names`](http://geonames.usgs.gov/domestic/download_data.htm) dla stanu `Nowy Jork`.
 
-Źródło danych: [link](http://geonames.usgs.gov/docs/stategaz/NY_Features_20131020.zip)
+Źródło danych: [link](http://geonames.usgs.gov/docs/stategaz/NY_Features_20131020.zip).
 
 ####Format pliku
 
@@ -547,9 +547,9 @@ Do przygotowania obiektów `geoJSON` użyjemy prostego skryptu powłoki `Mongo`,
 }
 ```
 
-`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `ny`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](./mmotel/1e-deleted-geo-jsons.md)
+`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `ny`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](./mmotel/1e-deleted-geo-jsons.md).
 
-Kod skryptu: [make-geo-jsons.js](../scripts/mmotel/1e/make-geo-jsons.js)
+Kod skryptu: [make-geo-jsons.js](../scripts/mmotel/1e/make-geo-jsons.js).
 
 Uruchamiamy skrypt:
 
@@ -589,7 +589,7 @@ Wybrany punkt:
 }
 ```
 
-Port Chester Harbor w Google Maps: [link](http://goo.gl/maps/V2i7z)
+Port Chester Harbor w Google Maps: [link](http://goo.gl/maps/V2i7z).
 
 ![google-maps-selected-point-1](../images/mmotel/1e-selected-point-1.png)
 
@@ -646,4 +646,4 @@ db.geony.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 200} }).toArray()
 
 ![mms-results-1](../images/mmotel/1e-mms-1.png)
 
-##Ciąg dlaszy niebawem...
+##Ciąg dalszy niebawem...
