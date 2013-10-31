@@ -408,7 +408,7 @@ connecting to: text
 }
 ```
 
-Pełny wynik agregacji: [link](./mmotel/1d-top-100.md).
+Pełny wynik agregacji: [tutaj](./mmotel/1d-top-100.md).
 
 
 ```sh
@@ -451,7 +451,7 @@ connecting to: text
 }
 ```
 
-Pełny wynik agregacji: [link](./mmotel/1d-top-1000.md).
+Pełny wynik agregacji: [tutaj](./mmotel/1d-top-1000.md).
 
 ```sh
  słów: 1000
@@ -551,7 +551,7 @@ Do przygotowania obiektów `geoJSON` użyjemy prostego skryptu powłoki `Mongo`,
 
 Kod skryptu: [make-geo-jsons.js](../scripts/mmotel/1e/make-geo-jsons.js).
 
-Uruchamiamy skrypt:
+####Uruchamiamy skrypt:
 
 ```sh
 time mongo geony make-geo-jsons.js 
