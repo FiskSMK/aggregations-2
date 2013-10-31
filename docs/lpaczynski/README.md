@@ -24,8 +24,7 @@
 <p>....</p>
 
 </h3><b>d)</b></h3><br/><br/>
-Przerobiłem plik do Jsona za pomocą tego [skryptu](../../scripts/lpaczynski/toJason.sh)
-
+Przerobiłem plik do Jsona za pomocą tego [skryptu](/scripts/lpaczynski/toJson.sh)
   ```bash
   $ ./toJson.sh text8
   ```
