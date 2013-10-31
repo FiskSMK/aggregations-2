@@ -24,7 +24,7 @@
 <p>....</p>
 
 </h3><b>d)<b></h3>
-Przerobiłem plik do Jsona za pomocą tego [tutaj](/docs/mpikora/mongo1c.c)
+<p>Przerobiłem plik do Jsona za pomocą tego [tutaj](/docs/mpikora/mongo1c.c)</p>
 
   ```bash
   $ ./toJson.sh text8
