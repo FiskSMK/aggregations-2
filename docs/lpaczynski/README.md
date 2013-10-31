@@ -6,7 +6,7 @@
 <p>Import pliku</p>
 
   ```bash
-  $ mongoimport --type csv -c Train --file ./Train2.csv --headerline
+  $ mongoimport --type csv -c Train --file Train2.csv --headerline
   ```  
 
 <h3><b>b)</b></h3>
@@ -23,8 +23,8 @@
 
 <p>....</p>
 
-</h3><b>d)<b></h3>
-<p>Przerobiłem plik do Jsona za pomocą tego</p> [tutaj](/docs/mpikora/mongo1c.c)
+</h3><b>d)</b></h3><br/><br/>
+Przerobiłem plik do Jsona za pomocą tego [skryptu](../../scripts/lpaczynski/toJason.sh)
 
   ```bash
   $ ./toJson.sh text8
