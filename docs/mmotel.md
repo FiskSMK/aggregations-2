@@ -109,7 +109,7 @@ npm install
 time node convert-tags.js
 ```
 
-####Wyniki
+####Wynik
 
 ```sh
 MongoDB Połączono!
@@ -183,7 +183,7 @@ Kod skryptu: [mongo-convert-tags.js](../scripts/mmotel/1c/mongo-convert-tags.js)
 time mongo train mongo-convert-tags.js 
 ```
 
-####Wyniki
+####Wynik
 
 ```sh
 MongoDB shell version: 2.4.7
@@ -311,7 +311,7 @@ ilość: 17005207
 część: 100%
 ```
 
-####Czasy:
+####Czasy
 
 ```sh
 real  0m18.030s
@@ -336,7 +336,7 @@ ilość: 1061396
 część: 6.241594118789616%
 ```
 
-Czasy:
+Czasy
 
 ```sh
 real  0m15.979s
@@ -375,7 +375,7 @@ ilość: 4205965
 część: 24.733394894869555%
 ```
 
-####Czasy:
+####Czasy
 
 ```sh
 real  0m16.088s
@@ -417,7 +417,7 @@ ilość: 7998978
 część: 47.03840417820259%
 ```
 
-####Czasy:
+####Czasy
 
 ```sh
 real  0m16.055s
@@ -459,7 +459,7 @@ ilość: 11433354
 część: 67.23443001899359%
 ```
 
-####Czasy:
+####Czasy
 
 ```sh
 real  0m16.109s
@@ -575,7 +575,7 @@ db.geony.ensureIndex({"loc" : "2dsphere"});
 
 ###$near
 
-Wybrany punkt:
+####Wybrany punkt:
 
 ```json
 { 
