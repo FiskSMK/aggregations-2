@@ -39,7 +39,13 @@ MongoDB version: 2.5.2
 
 * 1c
   
-  wkrótce..
+  Do zamiany tagów na tablice użyłem skryptu który napisałem w ruby [tutaj](../../scripts/stringToarray.rb)
+  ```bash
+  $ ruby stringToarray.rb nosql Train
+  
+  Wszystkich tagów: 17409994
+  Różnych tagów: 42048
+  ```
 
 * 1d 
 #### przygotowanie
