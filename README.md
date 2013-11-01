@@ -77,7 +77,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Smykowski, Adrian.
 1. Sott, Tomasz.
 1. Stefanowicz, Michał.
-1. Szygenda, Mateusz.
+1. [Szygenda, Mateusz](/docs/mszygenda.md)
 1. Tomczak, Robert.
 1. Wąsowicz, Michał.
 1. Winsławski, Bartłomiej.

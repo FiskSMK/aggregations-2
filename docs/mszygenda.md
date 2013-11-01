@@ -11,8 +11,7 @@ vendor_id : GenuineIntel
 cpu family  : 6
 model   : 15
 model name  : Intel(R) Core(TM)2 Duo CPU     E4600  @ 2.40GHz
-```
-
+``` 
 4 GB pamięci RAM
 
 Dysk
@@ -72,8 +71,7 @@ Do zamiany formatu przygotowałem aplikację w języku scala.
 Driver dla języka scala casbah
 (https://github.com/mongodb/casbah)
 
-(Upgrade.scala, TrainsRepository.scala)
-
+[Upgrade.scala](../scripts/mszygenda/trainsApp/Upgrade.scala), [TrainsRepository.scala](../scripts/mszygenda/trainsApp/TrainsRepository.scala)
 **Wykresy**
 
 ![Obciążenie procesora przy zmianie formatu](../images/mszygenda/tags_migration_1.png)
@@ -82,7 +80,9 @@ Driver dla języka scala casbah
 
 **Zliczanie różnych tagów**
 
-Ponownie do zliczenia różnych tagów została wykorzystana aplikacja w języku scala (Count.scala, TrainsRepository.scala):
+Ponownie do zliczenia różnych tagów została wykorzystana aplikacja w języku scala 
+
+[Count.scala](../scripts/mszygenda/trainsApp/Count.scala), [TrainsRepository.scala](../scripts/mszygenda/trainsApp/TrainsRepository.scala)
 
 (Unique Tag Count, Total Count) = (42048,17409994)
 
@@ -165,7 +165,7 @@ Wyniki:
 > 
 ```
 
-### 1e)
+### Zadanie 1e
 
 Dane jakie wykorzystałem pochodzą ze strony 
 
@@ -173,48 +173,55 @@ http://earthquake.usgs.gov/earthquakes/search/
 
 Jest to baza zawierająca informacje o bieżących i minionych trzęsieniach ziemi. Serwis umożliwia eksport danych do formatu GeoJSON.
 
+*Ilość rekordów*
+
+```
+> db.earthquakes.count()
+10231
+```
+
 *Przykładowy rekord*
 
 ```
-{"type":"FeatureCollection",
-"metadata":
-  {"generated":1383297820000,"url":"http://comcat.cr.usgs.gov/fdsnws/event/1/query?starttime=2012-10-19%2000:00:00&minmagnitude=4&eventtype=earthquake&format=geojson&endtime=2013-10-26%2023:59:59&maxmagnitude=10&orderby=time","title":"USGS Earthquakes","status":200,"api":"1.0.12","count":10373},
-  "features":
-    [
-      {"type":"Feature",
-       "properties":
-          {"mag":4.5,
-           "place":"174km NW of Saumlaki, Indonesia",
-           "time":1382830760450,
-           "updated":1382859719128,
-           "tz":540,
-           "url":"http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000knsz",
-           "detail":"http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000knsz&format=geojson",
-           "felt":null,
-           "cdi":null,
-           "mmi":null,
-           "alert":null,
-           "status":"reviewed",
-           "tsunami":null,
-           "sig":312,
-           "net":"us",
-           "code":"c000knsz",
-           "ids":",usc000knsz,",
-           "sources":",us,",
-           "types":",cap,dyfi,general-link,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
-           "nst":null,
-           "dmin":1.573,
-           "rms":1.12,
-           "gap":90,
-           "magType":"mb",
-           "type":"earthquake",
-           "title":"M 4.5 - 174km NW of Saumlaki, Indonesia"},
-           "geometry":{
-              "type":"Point",
-              "coordinates":[130.0014,-7.0711,170.29]},
-              "id":"usc000knsz"
-           }
-        ]
+{
+  "_id" : ObjectId("526bc440a04005b8d34e42b0"),
+  "type" : "Feature",
+  "properties" : {
+    "mag" : 4.2,
+    "place" : "11km N of Estebania, Dominican Republic",
+    "time" : NumberLong("1382697296310"),
+    "updated" : NumberLong("1382724211029"),
+    "tz" : -240,
+    "url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000kmxt",
+    "detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000kmxt&format=geojson",
+    "felt" : 3,
+    "cdi" : 2.1,
+    "mmi" : null,
+    "alert" : null,
+    "status" : "reviewed",
+    "tsunami" : null,
+    "sig" : 272,
+    "net" : "us",
+    "code" : "c000kmxt",
+    "ids" : ",usc000kmxt,",
+    "sources" : ",us,",
+    "types" : ",cap,dyfi,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+    "nst" : null,
+    "dmin" : 0.295,
+    "rms" : 1.32,
+    "gap" : 92,
+    "magType" : "mb",
+    "type" : "earthquake",
+    "title" : "M 4.2 - 11km N of Estebania, Dominican Republic"
+  },
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [
+      -70.6236,
+      18.5571
+    ]
+  },
+  "id" : "usc000kmxt"
 }
 ```
 
@@ -236,12 +243,12 @@ db.earthquakes.ensureIndex({"geometry" : "2dsphere"})
 
 **Przygotowanie parametrów do zapytań**
 
-Wspólrzędne Tokyo
+**Wspólrzędne Tokyo**
 ```
 var tokyo = { type: "Point", coordinates: [ 139.697823, 35.685187] }
 ```
 
-Polygon otaczający Japonię (mniej więcej)
+**Polygon otaczający Japonię (mniej więcej)**
 ```
 var japan = { 
   "type": "Polygon",
@@ -260,14 +267,48 @@ var japan = {
 }
 ```
 
-***10 closest earthquakes to Tokyo***
+**Okrąg otaczający Australię**
+
+```
+var australiaCenterPt = { type: "Point", coordinates: [135.42627, -25.403585]  }
+var australiaRadius = 1100 / 1.6 / 3959
+var australiaCircle = [ australiaCenterPt.coordinates, australiaRadius ]
+```
+
+**Prostokąt otaczający Australię**
+
+```
+var australiaBox = [ [116.617676, -34.957995], [153.619629,-16.383391] ]
+```
+
+**10 najbliższych eventów w okolicy Tokyo***
 
 ```
 db.earthquakes.find({ geometry: { $near: {$geometry: tokyo} } }).limit(10)
 ```
 
-***Earthquakes that took place on territory of Japan***
+**Trzesienia ziemi na terytorium Japonii (polygon)**
 
 ```
 db.earthquakes.find({ geometry: { $geoWithin: { $geometry: japan } } })
+```
+
+**Obiekty które przecinają terytorium Japonii**
+
+W tym przypadku jest to ten sam zbiór danych co powyższy (Mamy tylko punkty)
+
+```
+db.earthquakes.find({ geometry: { $geoIntersects: { $geometry: japan } } })
+```
+
+**Trzęsienia ziemi na terytorium Australii (circle)**
+
+```
+db.earthquakes.find( { geometry: { $geoWithin: { $centerSphere: australiaCircle } } })
+```
+
+**Trzęsienia ziemi na terytorium Australii (box) ***
+
+```
+db.earthquakes.find( { geometry: { $geoWithin: { $box: australiaBox} } })
 ```
