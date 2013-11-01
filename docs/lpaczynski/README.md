@@ -47,9 +47,63 @@ Przerobiłem plik do Jsona za pomocą tego [skryptu](/scripts/lpaczynski/toJson.
   
   Rezultat: 17005207
   ```
-<p>Zliczanie różnych słów<p>
+<p>Zliczanie różnych słów</p>
   ```js
   db.text8.distinct("word").length
   
   Rezultat: 253854
   ```
+<p>1 najczęściej występujące słowo </p>
+ ```js
+ var start = new Date().getTime();
+
+db.text8.aggregate(
+	{$group:{ _id:"$word", count:{$sum:1}}}, 
+	{$sort: {count: -1}}, 
+	{$limit:1})
+
+  var end = new Date().getTime();
+  var time = end - start;
+  print(time);
+ ```
+ ```js
+ Rezultat: 1061396
+ Stanowi: 6,24%
+ Czas: 23 sekundy
+ ```
+<p>10 najczęściej występujących słów</p>
+ ```js
+ var start = new Date().getTime();
+
+ db.text8.aggregate(
+	 {$group:{ _id:"$word", count:{$sum:1}}}, 
+	 {$sort: {count: -1}}, 
+	 {$limit:10})
+
+ var end = new Date().getTime();
+ var time = end - start;
+ print(time);
+ ```
+ ```js
+ Rezultat: 4205965
+ Stanowi: 24,73%
+ Czas: 22 sekundy
+ ```
+<p> 100 najczęściej występujących słów</p>
+ ```js
+ var start = new Date().getTime();
+
+ db.text8.aggregate(
+	 {$group:{ _id:"$word", count:{$sum:1}}}, 
+	 {$sort: {count: -1}}, 
+	 {$limit:100})
+
+ var end = new Date().getTime();
+ var time = end - start;
+ print(time);
+ ```
+ ```js
+ Rezultat: 7998978
+ Stanowi: 47,03%
+ Czas: 22 sekundy
+ ```
