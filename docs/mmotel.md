@@ -1,4 +1,11 @@
-###Mateusz Motel
+#Mateusz Motel
+
+###Rozwiązania:
+
+* [Zadania 1a i 1b](#zadania-1a-i-1b)
+* [Zadanie 1c](#zadanie-1c)
+* [Zadanie 1d](#zadanie-1d)
+* [Zadanie 1e](#zadanie-1e)
 
 ***
 
@@ -551,7 +558,7 @@ db.geony.ensureIndex({"loc" : "2dsphere"});
 
 ##Zapytania
 
-###Przykład 1. $near
+###Przykład 1: $near
 
 ####Wybrany punkt
 
