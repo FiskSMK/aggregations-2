@@ -39,7 +39,7 @@ MongoDB version: 2.5.2
 
 * 1c
   
-  Do zamiany tagów na tablice użyłem skryptu który napisałem w ruby [tutaj](../../scripts/stringToarray.rb)
+  Do zamiany tagów na tablice użyłem skryptu który napisałem w ruby [tutaj](../../scripts/mosinski/stringToarray.rb)
   ```bash
   $ ruby stringToarray.rb nosql Train
   
@@ -49,7 +49,7 @@ MongoDB version: 2.5.2
 
 * 1d 
 #### przygotowanie
-  przygotowałem plik do jsona za pomocą tego skryptu [z tąd](../../scripts/stringTojson.sh)
+  przygotowałem plik do jsona za pomocą tego skryptu [z tąd](../../scripts/mosinski/stringTojson.sh)
 
   ```bash
   $ time bash stringTojson.sh text8.txt text8.json
@@ -84,3 +84,69 @@ MongoDB version: 2.5.2
   db.text8.distinct("word").length
   253854
   ```
+  Najbardziej popularne słowo:
+  ```js
+  db.text8.aggregate(
+    [
+      { $group : { _id : "$word" , number : { $sum : 1 } } },
+      { $sort : { number : -1 } },
+      { $limit : 1 }
+    ]
+  )
+  
+  { "result" : [ { "_id" : "the", "number" : 1061396 } ], "ok" : 1 }
+
+  Słowo "the" - 1061396 wystąpień czyli 6,24% wszystkich wyrazów
+  ```
+  10 Najbardziej popularnych słów:
+  ```js
+  db.text8.aggregate(
+    [
+      { $group : { _id : "$word" , number : { $sum : 1 } } },
+      { $sort : { number : -1 } },
+      { $limit : 10 },
+      { $group : { _id : "10 słów", count: { $sum : "$number" } } }
+    ]
+  )
+  
+  {
+	"result" : [
+		{
+			"_id" : "10 słów",
+			"count" : 4205965
+		}
+	],
+	"ok" : 1
+  }
+
+
+  10 słów - 4205965 wystąpień czyli 24,73% wszystkich wyrazów
+  ```
+  wyniki umieściłem [tutaj](../../data/mosinski/10.json)
+  
+  100 Najbardziej popularnych słów:
+  ```js
+  db.text8.aggregate(
+    [
+      { $group : { _id : "$word" , number : { $sum : 1 } } },
+      { $sort : { number : -1 } },
+      { $limit : 100 },
+      { $group : { _id : "100 słów", count : { $sum : "$number" } } }
+    ]
+  )
+  
+  {
+	"result" : [
+		{
+			"_id" : "100 słów",
+			"count" : 7998978
+		}
+	],
+	"ok" : 1
+  }
+
+
+  100 słów - 7998978 wystąpień czyli 47,04% wszystkich wyrazów
+  ```
+  wyniki umieściłem [tutaj](../../data/mosinski/100.json)
+  
