@@ -72,6 +72,7 @@ Driver dla języka scala casbah
 (https://github.com/mongodb/casbah)
 
 [Upgrade.scala](../scripts/mszygenda/trainsApp/Upgrade.scala), [TrainsRepository.scala](../scripts/mszygenda/trainsApp/TrainsRepository.scala)
+
 **Wykresy**
 
 ![Obciążenie procesora przy zmianie formatu](../images/mszygenda/tags_migration_1.png)
@@ -307,7 +308,7 @@ db.earthquakes.find({ geometry: { $geoIntersects: { $geometry: japan } } })
 db.earthquakes.find( { geometry: { $geoWithin: { $centerSphere: australiaCircle } } })
 ```
 
-**Trzęsienia ziemi na terytorium Australii (box) ***
+**Trzęsienia ziemi na terytorium Australii (box)**
 
 ```
 db.earthquakes.find( { geometry: { $geoWithin: { $box: australiaBox} } })
