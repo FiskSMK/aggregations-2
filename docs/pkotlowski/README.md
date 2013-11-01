@@ -53,15 +53,16 @@ Procentowy udział słów w bazie
     <th>Ilość</th><th>Suma</th><th>Słowo(a)</th><th>Udział procentowy</th>
   </tr>
   <tr>
-    <td>1</td><td>1061396</td><td>the</td><td>Awesome</td>
+    <td>1</td><td>1061396</td><td>the</td><td>6,25%</td>
   </tr>
   <tr>
-    <td>10</td><td>4205965</td><td>the</td><td>Nearly as awesome</td>
+    <td>10</td><td>4205965</td><td>* [klik(https://github.com/pkotlowski/aggregations-2/blob/master/docs/pkotlowski/10.md)*
+</td><td>24,73%</td>
   </tr>
  <tr>
-    <td>100</td><td>7998978</td><td>the</td><td>Nearly as awesome</td>
+    <td>100</td><td>7998978</td><td>* [klik(https://github.com/pkotlowski/aggregations-2/blob/master/docs/pkotlowski/100.md)*</td><td>47,03%</td>
   </tr>
  <tr>
-    <td>1000</td><td>11433354</td><td>the</td><td>Nearly as awesome</td>
+    <td>1000</td><td>11433354</td><td>* [klik(https://github.com/pkotlowski/aggregations-2/blob/master/docs/pkotlowski/1000.md)*</td><td>67,23%</td>
   </tr>
 </table>
