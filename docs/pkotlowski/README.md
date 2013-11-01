@@ -42,7 +42,7 @@ user	0m52.357s
 sys	0m17.396s
 ```
 Użycie zasobów:
-![img](http://tinypic.com/r/16i9swk/5)
+![img](http://tinypic.com/r/16i9swk/5.png)
 
 Zliczanie wszystkich słów za pomocą ``` db.text8.count() ``` daje rezultat ``` 17005207 ```
 
@@ -60,13 +60,13 @@ Procentowy udział słów w bazie
     <td>1</td><td>1061396</td><td>the</td><td>6,25%</td>
   </tr>
   <tr>
-    <td>10</td><td>4205965</td><td>* [klik](https://github.com/pkotlowski/aggregations-2/blob/master/docs/pkotlowski/10.md)*
+    <td>10</td><td>4205965</td><td>*[klik](https://github.com/pkotlowski/aggregations-2/blob/master/docs/pkotlowski/10.md)*
 </td><td>24,73%</td>
   </tr>
  <tr>
-    <td>100</td><td>7998978</td><td>* [klik](https://github.com/pkotlowski/aggregations-2/blob/master/docs/pkotlowski/100.md)*</td><td>47,03%</td>
+    <td>100</td><td>7998978</td><td>*[klik](https://github.com/pkotlowski/aggregations-2/blob/master/docs/pkotlowski/100.md)*</td><td>47,03%</td>
   </tr>
  <tr>
-    <td>1000</td><td>11433354</td><td>* [klik](https://github.com/pkotlowski/aggregations-2/blob/master/docs/pkotlowski/1000.md)*</td><td>67,23%</td>
+    <td>1000</td><td>11433354</td><td>*[klik](https://github.com/pkotlowski/aggregations-2/blob/master/docs/pkotlowski/1000.md)*</td><td>67,23%</td>
   </tr>
 </table>
