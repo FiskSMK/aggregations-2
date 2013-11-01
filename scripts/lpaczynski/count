@@ -16,7 +16,7 @@ for (var word in wordCounts){
       sortable.sort(function(a, b) {return a[1] - b[1]})
 }
 
-var poluparword = sortable[sortable.length - 1];
+var popularword = sortable[sortable.length - 1];
 
 function printPopularWord(){
 	var suma = 0;
@@ -32,7 +32,7 @@ function printPopularWord(){
 	print("Wszystkie powtarzające się słowa: "+procent2+"%");
 }
 
-procent = ((poluparword[1]/words_counter)*100).toFixed(2);
+procent = ((popularword[1]/words_counter)*100).toFixed(2);
 
-print("Najczestsze slowo to: "+poluparword[0]+"("+poluparword[1]+") ("+procent+"%)");
+print("Najczestsze slowo to: "+popularword[0]+"("+popularword[1]+") ("+procent+"%)");
 
