@@ -511,6 +511,8 @@ user	0m1.392s
 sys	0m0.144s
 ```
 
+W ciągu `0m4.324s` zaimportowano `77 131` słów. Co średnio daje `~17 937` insertów do bazy na sekundę.
+
 ##Robimy geoJSONy
 
 Do przygotowania obiektów `geoJSON` użyjemy prostego skryptu powłoki `Mongo`, który z pól: `FEATURE_ID` ,`FEATURE_NAME` ,`PRIM_LONG_DEC` ,`PRIM_LAT_DEC` utworzy obiekty o takiej strukturze:
@@ -523,7 +525,7 @@ Do przygotowania obiektów `geoJSON` użyjemy prostego skryptu powłoki `Mongo`,
 }
 ```
 
-`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `ny`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](./mmotel/1e-deleted-geo-jsons.md).
+`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `geony`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](./mmotel/1e-deleted-geo-jsons.md).
 
 Kod skryptu: [make-geo-jsons.js](../scripts/mmotel/1e/make-geo-jsons.js).
 
@@ -549,7 +551,7 @@ db.geony.ensureIndex({"loc" : "2dsphere"});
 
 ##Zapytania
 
-###$near
+###Przykład 1. $near
 
 ####Wybrany punkt
 
