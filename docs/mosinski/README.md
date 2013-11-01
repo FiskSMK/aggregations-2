@@ -150,3 +150,30 @@ MongoDB version: 2.5.2
   ```
   wyniki umieściłem [tutaj](../../data/mosinski/100.json)
   
+  1000 Najbardziej popularnych słów:
+  ```js
+  db.text8.aggregate(
+    [
+      { $group : { _id : "$word" , number : { $sum : 1 } } },
+      { $sort : { number : -1 } },
+      { $limit : 1000 },
+      { $group : { _id : "1000 słów", count : { $sum : "$number" } } }
+    ]
+  )
+  
+  {
+	"result" : [
+		{
+			"_id" : "1000 słów",
+			"count" : 11433354
+		}
+	],
+	"ok" : 1
+  }
+
+
+
+  1000 słów - 11433354 wystąpień czyli 67,23% wszystkich wyrazów
+  ```
+* 1e
+   wkrótce.. 
