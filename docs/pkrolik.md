@@ -68,7 +68,7 @@ sys	0m8.688s
 ###Wynik z MMS
 ![mms1d](../images/pkrolik/mms1d.png)
 ####Ilość wszystkich słów
-```
+```js
 > db.text.aggregate({$group:{_id: "$word", count:{$sum:1}}},{$group:{_id:"sumaAll",count:{$sum:1}}})
 {
 	"result" : [
