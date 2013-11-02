@@ -398,7 +398,7 @@ sys   0m0.008s
 }
 ```
 
-Pełny wynik agregacji: [tutaj](./1d-top-100.md).
+Pełny wynik agregacji: [tutaj](./1d/100words.txt).
 
 
 ```sh
@@ -436,7 +436,7 @@ sys   0m0.016s
 }
 ```
 
-Pełny wynik agregacji: [tutaj](./1d-top-1000.md).
+Pełny wynik agregacji: [tutaj](./1d/1000words.txt).
 
 ```sh
  słów: 1000
@@ -532,7 +532,7 @@ Do przygotowania obiektów `geoJSON` użyjemy prostego skryptu powłoki `Mongo`,
 }
 ```
 
-`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `geony`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](./1e-deleted-geo-jsons.md).
+`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `geony`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](./1e/make-geo-points-results.txt).
 
 Kod skryptu: [make-geo-jsons.js](../../scripts/mmotel/1e/make-geo-jsons.js).
 
@@ -689,7 +689,7 @@ db.geony.find({
 ]
 ```
 
-Pełny wynik zapytania: [tutaj](./1e-sampel-2-1-full.md).
+Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-2-1.txt).
 
 ###Przykład 2.2: $near
 
@@ -738,7 +738,7 @@ db.geony.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 10000 } }).toArra
 ]
 ```
 
-Pełny wynik zapytania: [tutaj](./1e-sampel-2-2-full.md).
+Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-2-2.txt).
 
 ###Przykład 3.1: $geoWithin 
 
@@ -798,7 +798,7 @@ db.geony.find({ loc : { $geoWithin : { $geometry : obszar } } }).toArray();
 ]
 ```
 
-Pełny wynik zapytania: [tutaj](./1e-sampel-3-full.md).
+Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-3-1.txt).
 
 ###Przykład 3.2: $geoIntersects
 
@@ -854,7 +854,7 @@ db.geony.find({ loc : { $geoIntersects : { $geometry : obszar } } }).toArray();
 ]
 ```
 
-Pełny wynik zapytania: [tutaj](./1e-sampel-3-full.md).
+Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-3-2.txt).
 
 ###Przykład 4: $geoIntersects
 

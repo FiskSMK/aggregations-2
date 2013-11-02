@@ -1,0 +1,2189 @@
+MongoDB shell version: 2.4.7
+connecting to: geony
+182
+[
+	{
+		"_id" : ObjectId("5274e857883c9f1a74854351"),
+		"id" : 206430,
+		"name" : "Converse Lake",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6520811,
+				41.1326454
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e857883c9f1a74854352"),
+		"id" : 206431,
+		"name" : "Converse Pond Brook",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6717953,
+				41.0695412
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e857883c9f1a74854353"),
+		"id" : 206783,
+		"name" : "East Branch Converse Pond Brook",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6738889,
+				41.0577778
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e857883c9f1a74854354"),
+		"id" : 206789,
+		"name" : "East Branch Mianus River",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.5887367,
+				41.1084297
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e857883c9f1a7485435a"),
+		"id" : 207966,
+		"name" : "Horseneck Brook",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6279041,
+				41.019264
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e857883c9f1a7485435f"),
+		"id" : 208857,
+		"name" : "Mianus Reservoir",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6129529,
+				41.1431772
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e857883c9f1a74854360"),
+		"id" : 208858,
+		"name" : "Mianus River",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.5892916,
+				41.0417638
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e857883c9f1a74854365"),
+		"id" : 209818,
+		"name" : "Piping Brook",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6245717,
+				41.1403738
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e857883c9f1a7485436f"),
+		"id" : 211303,
+		"name" : "Lake Susan",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.5860226,
+				41.1644372
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e857883c9f1a74854373"),
+		"id" : 211850,
+		"name" : "Water Baptist Cemetery",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6792954,
+				41.0425971
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e857883c9f1a74854375"),
+		"id" : 212165,
+		"name" : "Wilshire Pond Brook",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6537393,
+				41.1028742
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a748545bf"),
+		"id" : 942567,
+		"name" : "Armonk",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7140195,
+				41.1264849
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a7485466d"),
+		"id" : 942741,
+		"name" : "Ayers Cemetery",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6001266,
+				41.1662069
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74854750"),
+		"id" : 942968,
+		"name" : "Banksville",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6395723,
+				41.1412071
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a7485487a"),
+		"id" : 943266,
+		"name" : "Bear Gutter Creek",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7312424,
+				41.1089851
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74854b17"),
+		"id" : 943935,
+		"name" : "Big Peninsula",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7437429,
+				41.1062073
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a748550d0"),
+		"id" : 945401,
+		"name" : "Byram Lake Reservoir",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6916413,
+				41.1678988
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a748556e0"),
+		"id" : 946954,
+		"name" : "Cobamong Pond",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6705524,
+				41.1602586
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a7485585c"),
+		"id" : 947334,
+		"name" : "Converse Lake",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6481837,
+				41.1273183
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a7485588b"),
+		"id" : 947381,
+		"name" : "Cooney Hill",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7323535,
+				41.1009296
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a748558d5"),
+		"id" : 947455,
+		"name" : "Corman Hill School (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6817963,
+				41.1612067
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74855b17"),
+		"id" : 948033,
+		"name" : "Dark Hollow",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7309644,
+				41.0823188
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74855cd1"),
+		"id" : 948476,
+		"name" : "District Number 1 Central School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6784631,
+				41.1920397
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74855ed4"),
+		"id" : 948991,
+		"name" : "East Branch Byram River",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6740175,
+				41.0575969
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74855ee3"),
+		"id" : 949006,
+		"name" : "East Branch Mianus River",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.5887367,
+				41.1084297
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74855f89"),
+		"id" : 949172,
+		"name" : "East Middle Patent School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6298499,
+				41.1628736
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74856066"),
+		"id" : 949393,
+		"name" : "Edison School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6601277,
+				41.0084308
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a7485645f"),
+		"id" : 950411,
+		"name" : "Forest Lake",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7334984,
+				41.061353
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74856920"),
+		"id" : 951629,
+		"name" : "Great Island",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7373536,
+				41.0842633
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74856a68"),
+		"id" : 951957,
+		"name" : "Gutter Inlet",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7404093,
+				41.1025963
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74856b78"),
+		"id" : 952231,
+		"name" : "Harkness Home",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6759618,
+				41.0323194
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74856d85"),
+		"id" : 952756,
+		"name" : "High Point Hospital",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6937405,
+				41.0534303
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e858883c9f1a74856da1"),
+		"id" : 952784,
+		"name" : "Highland Lake",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6042111,
+				41.1657287
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a748574d7"),
+		"id" : 954640,
+		"name" : "King Street School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6679058,
+				41.0203752
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74857603"),
+		"id" : 954941,
+		"name" : "Lake Street School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7317976,
+				41.058708
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a748579c4"),
+		"id" : 955903,
+		"name" : "Long Pond",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6720492,
+				41.1449676
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74857a53"),
+		"id" : 956046,
+		"name" : "Louden Cove",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7217974,
+				41.0825966
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74857ae9"),
+		"id" : 956196,
+		"name" : "John Lyon Park",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6651279,
+				41.0134308
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74857b86"),
+		"id" : 956353,
+		"name" : "Manhattanville College",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7156857,
+				41.0323195
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74857dce"),
+		"id" : 956938,
+		"name" : "Bedford Village Memorial Park",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6462397,
+				41.1962064
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74857dda"),
+		"id" : 956950,
+		"name" : "Memorial Park",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6745727,
+				41.0056532
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74857e48"),
+		"id" : 957060,
+		"name" : "Mianus Gorge",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6159605,
+				41.1620402
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74857e49"),
+		"id" : 957061,
+		"name" : "Mianus Reservoir",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6117933,
+				41.1295406
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74857e88"),
+		"id" : 957125,
+		"name" : "Middle Patent Church",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.659851,
+				41.1559291
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74857e89"),
+		"id" : 957126,
+		"name" : "Middle Patent Rural Cemetery",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6606844,
+				41.1539847
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74857e8a"),
+		"id" : 957127,
+		"name" : "Middle Patent School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6567953,
+				41.149818
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74857f35"),
+		"id" : 957298,
+		"name" : "Miller Cemetery",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6045713,
+				41.173429
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74858539"),
+		"id" : 958839,
+		"name" : "North Lake",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6764024,
+				41.1505633
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74858709"),
+		"id" : 959306,
+		"name" : "Old Quaker Burial Ground",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.69513,
+				41.1309293
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a7485893d"),
+		"id" : 959871,
+		"name" : "Park Avenue School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6740171,
+				41.0123197
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a7485896b"),
+		"id" : 959917,
+		"name" : "Parks Cove",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7359646,
+				41.0717634
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74858ac8"),
+		"id" : 960266,
+		"name" : "Pforzheimer Memorial Bridge",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7165191,
+				41.0473193
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74858c2f"),
+		"id" : 960625,
+		"name" : "Piping Brook",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6248495,
+				41.1398182
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74858caa"),
+		"id" : 960748,
+		"name" : "Pleasantville Cove",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7404095,
+				41.1212071
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74859324"),
+		"id" : 962411,
+		"name" : "Resurrection Convent",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6901291,
+				41.0295417
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a7485937f"),
+		"id" : 962503,
+		"name" : "Ridge Street Country School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6781841,
+				41.0331528
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a7485941a"),
+		"id" : 962658,
+		"name" : "Robin Hood Lake",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6102495,
+				41.1653138
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a748595fe"),
+		"id" : 963142,
+		"name" : "Rye Bridge",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7465206,
+				41.0920408
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74859600"),
+		"id" : 963144,
+		"name" : "Rye Lake",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7259642,
+				41.07343
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74859913"),
+		"id" : 963931,
+		"name" : "Saint Marys Church",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6331835,
+				41.1734289
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a7485999f"),
+		"id" : 964071,
+		"name" : "Saint Patricks Church",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6440174,
+				41.201762
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74859b45"),
+		"id" : 964495,
+		"name" : "Sarles Cemetery",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.60096,
+				41.1687069
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74859cb3"),
+		"id" : 964863,
+		"name" : "Seven Springs Farm",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6987415,
+				41.1692622
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e859883c9f1a74859cf0"),
+		"id" : 964924,
+		"name" : "Shallow Brook",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6840189,
+				41.1981508
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485a59f"),
+		"id" : 967150,
+		"name" : "Temple Kneses Tifereth Israel",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6684614,
+				41.0184307
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485a5e0"),
+		"id" : 967215,
+		"name" : "The Cenacle",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7265203,
+				41.1623177
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485a914"),
+		"id" : 968040,
+		"name" : "Twin Lakes",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6121521,
+				41.1911585
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485aa17"),
+		"id" : 968300,
+		"name" : "Upper Ridge Road School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6826288,
+				41.0303751
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485abd9"),
+		"id" : 968751,
+		"name" : "Wampus Avenue School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7090194,
+				41.1287071
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485abda"),
+		"id" : 968752,
+		"name" : "Wampus Lake Reservoir",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7294294,
+				41.1471479
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485abdb"),
+		"id" : 968753,
+		"name" : "Wampus River",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7115194,
+				41.1145406
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485acc1"),
+		"id" : 968984,
+		"name" : "Webers Cove",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7276311,
+				41.0892632
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485b178"),
+		"id" : 970708,
+		"name" : "The Lake in the Ledges",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6233518,
+				41.1579881
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485b273"),
+		"id" : 970959,
+		"name" : "Wetzler Cove",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7295754,
+				41.0700968
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485b2cc"),
+		"id" : 971048,
+		"name" : "Whippoorwill School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.714853,
+				41.1273182
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485b432"),
+		"id" : 971407,
+		"name" : "Wilshire Pond Brook",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6537393,
+				41.1028742
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485b46f"),
+		"id" : 971468,
+		"name" : "Windmill Farm",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6809629,
+				41.1475958
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485b470"),
+		"id" : 971469,
+		"name" : "Windmill Lake",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6793141,
+				41.1446728
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485b546"),
+		"id" : 971683,
+		"name" : "Woodmans Cove",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.745965,
+				41.0770411
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485ba48"),
+		"id" : 972978,
+		"name" : "Purchase",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7145746,
+				41.0409305
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485bf57"),
+		"id" : 974320,
+		"name" : "Doral Golf Club",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.685922,
+				41.038447
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485bf70"),
+		"id" : 974345,
+		"name" : "Century Country Club",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.725964,
+				41.0384305
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485bfa9"),
+		"id" : 974402,
+		"name" : "Green Valley Country Club",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6848512,
+				41.0453749
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485bffb"),
+		"id" : 974484,
+		"name" : "Interchange 24",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7101299,
+				41.0223196
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485c000"),
+		"id" : 974489,
+		"name" : "Interchange 25",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.695407,
+				41.0234307
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485c006"),
+		"id" : 974495,
+		"name" : "Interchange 26",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6840177,
+				41.0281529
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485c00b"),
+		"id" : 974500,
+		"name" : "Interchange 27",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6754063,
+				41.0367639
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485c108"),
+		"id" : 974753,
+		"name" : "Middle Patent Golf Course",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6359612,
+				41.1492626
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485c136"),
+		"id" : 974799,
+		"name" : "Old Oaks Country Club",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7217971,
+				41.0409305
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485c163"),
+		"id" : 974844,
+		"name" : "Rockrimmon Country Club",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.5956819,
+				41.1614848
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485c4e9"),
+		"id" : 975747,
+		"name" : "Whippoorwill Country Club",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7379095,
+				41.1473179
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485cd44"),
+		"id" : 977897,
+		"name" : "Old Orchard Road Heliport",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7145751,
+				41.1148184
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485cf19"),
+		"id" : 978369,
+		"name" : "Westchester County Airport",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7063487,
+				41.0712995
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485cf1a"),
+		"id" : 978370,
+		"name" : "Safe Flight Instrument Corporation Heliport",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7162416,
+				41.0792633
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85a883c9f1a7485cfa8"),
+		"id" : 978541,
+		"name" : "WVIP-FM (Mount Kisco)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.681241,
+				41.1845398
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d28b"),
+		"id" : 979282,
+		"name" : "Town of North Castle",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6948697,
+				41.1331104
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d448"),
+		"id" : 979940,
+		"name" : "Rye Brook",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6834621,
+				41.0192641
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d758"),
+		"id" : 2060562,
+		"name" : "Wampus Lake County Park",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7290203,
+				41.1470401
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d7c8"),
+		"id" : 2060725,
+		"name" : "Byram Hills High School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6892964,
+				41.1348182
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d7cc"),
+		"id" : 2060731,
+		"name" : "Interchange 4",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6865189,
+				41.1950952
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d7f3"),
+		"id" : 2060786,
+		"name" : "H C Crittenden Middle School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7056859,
+				41.1270404
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d80f"),
+		"id" : 2060822,
+		"name" : "Davis Pond",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6806852,
+				41.1656512
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d810"),
+		"id" : 2060824,
+		"name" : "Godeman Pond",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6737405,
+				41.1659289
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d828"),
+		"id" : 2060949,
+		"name" : "Canyon Country Club",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6881854,
+				41.1492625
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d85a"),
+		"id" : 2061005,
+		"name" : "Paynes Corners",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6695737,
+				41.1639845
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d8f5"),
+		"id" : 2061960,
+		"name" : "Interchange 3",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7040191,
+				41.1245405
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d99f"),
+		"id" : 2062236,
+		"name" : "A L Ehrmann Park and Recreation Center",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.707075,
+				41.1409291
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d9a2"),
+		"id" : 2062239,
+		"name" : "Arthur W Butler Memorial Sanctuary",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6915191,
+				41.1834286
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d9a7"),
+		"id" : 2062244,
+		"name" : "Cat Rocks Park",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6517951,
+				41.1553736
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d9b2"),
+		"id" : 2062255,
+		"name" : "Eugene and Agnes Meyer Nature Preserve",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6995748,
+				41.1612067
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d9e3"),
+		"id" : 2062359,
+		"name" : "Haas Audubon Sanctuary",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7226313,
+				41.1664844
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485d9ef"),
+		"id" : 2062372,
+		"name" : "Lombardi Park",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7048526,
+				41.1317627
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485da2b"),
+		"id" : 2062448,
+		"name" : "Wampus Brook Park",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7109639,
+				41.1295404
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485da2d"),
+		"id" : 2062450,
+		"name" : "Westmoreland Sanctuary",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6712405,
+				41.1739844
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485db55"),
+		"id" : 2063101,
+		"name" : "Shallow Brook Farm",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6795743,
+				41.1964841
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485db56"),
+		"id" : 2063102,
+		"name" : "Westchester Embassy Club (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6845741,
+				41.1442625
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485db57"),
+		"id" : 2063103,
+		"name" : "Bedford Four Corners",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6781854,
+				41.1984285
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485db73"),
+		"id" : 2063145,
+		"name" : "La Roe Airport (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6473509,
+				41.1959286
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa66"),
+		"id" : 2106524,
+		"name" : "Purchase Community House",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7141667,
+				41.0405556
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa67"),
+		"id" : 2106525,
+		"name" : "Number 10 Fire Tower (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7388889,
+				41.0936111
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa68"),
+		"id" : 2106526,
+		"name" : "Westchester Aviation Country Club (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7047222,
+				41.1230556
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa69"),
+		"id" : 2106527,
+		"name" : "Westchester Green House (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6977778,
+				41.0377778
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa6a"),
+		"id" : 2106528,
+		"name" : "Presbyterian Hospital Farm (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6761111,
+				41.0322222
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa6b"),
+		"id" : 2106529,
+		"name" : "Hill Acres Farm (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6944444,
+				41.0277778
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa6c"),
+		"id" : 2106530,
+		"name" : "Little Brook Farm (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6969444,
+				41.0286111
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa6d"),
+		"id" : 2106531,
+		"name" : "Brook Farm (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7113889,
+				41.0280556
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa6e"),
+		"id" : 2106532,
+		"name" : "Reed Estate",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7180556,
+				41.0272222
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa6f"),
+		"id" : 2106533,
+		"name" : "Sky Meadow Farm (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6975,
+				41.0213889
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa70"),
+		"id" : 2106534,
+		"name" : "Elm Hill Farm (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6830556,
+				41.0188889
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa71"),
+		"id" : 2106535,
+		"name" : "Irvington School (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6636111,
+				41.0055556
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fa76"),
+		"id" : 2106540,
+		"name" : "Port Chester High School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6788889,
+				41.0116667
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fac1"),
+		"id" : 2107188,
+		"name" : "Saint Paul's Lutheran Church",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.67,
+				41.0247222
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fac2"),
+		"id" : 2107189,
+		"name" : "Parkside Assembly of God",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6647222,
+				41.0147222
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fac3"),
+		"id" : 2107190,
+		"name" : "Chinese Alliance Church",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6688889,
+				41.0088889
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fac4"),
+		"id" : 2107191,
+		"name" : "Sacred Heart of Jesus Church",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6627778,
+				41.005
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485fac9"),
+		"id" : 2107196,
+		"name" : "Purchase Elementary School",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7136111,
+				41.0361111
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85b883c9f1a7485facc"),
+		"id" : 2107199,
+		"name" : "Lake Street Full Gospel Church",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7308333,
+				41.0583333
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85c883c9f1a74860b5e"),
+		"id" : 2389150,
+		"name" : "Armonk Census Designated Place",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7137242,
+				41.1320241
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85c883c9f1a74860b6c"),
+		"id" : 2389190,
+		"name" : "Bedford Census Designated Place",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6468254,
+				41.194295
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85c883c9f1a74860ded"),
+		"id" : 2391075,
+		"name" : "Village of Port Chester",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6679715,
+				41.005229
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85c883c9f1a74860e0c"),
+		"id" : 2391107,
+		"name" : "Village of Rye Brook",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6863777,
+				41.0302026
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a7486327a"),
+		"id" : 2518814,
+		"name" : "The Flat",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7069444,
+				41.1216667
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a748636a9"),
+		"id" : 2548113,
+		"name" : "Purchase College State University of New York",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.697726,
+				41.038255
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74863749"),
+		"id" : 2548785,
+		"name" : "Clark Field",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7055556,
+				41.1308333
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a7486374d"),
+		"id" : 2548789,
+		"name" : "Coman Hills",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6772222,
+				41.1722222
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74863751"),
+		"id" : 2548793,
+		"name" : "Crawford Park",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6872222,
+				41.0144444
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74863755"),
+		"id" : 2548797,
+		"name" : "Davenport Park",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6683333,
+				41.0122222
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a7486384b"),
+		"id" : 2556183,
+		"name" : "Bear Gutter Inlet",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7402778,
+				41.1025
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74863879"),
+		"id" : 2556387,
+		"name" : "Ophir Farm (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7152778,
+				41.0305556
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a7486387c"),
+		"id" : 2556390,
+		"name" : "Burying Point",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7269444,
+				41.145
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a7486387e"),
+		"id" : 2556392,
+		"name" : "Calder Lake",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7307865,
+				41.1309953
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74863880"),
+		"id" : 2556394,
+		"name" : "Cannon Park",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6572222,
+				41.0125
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74863884"),
+		"id" : 2556398,
+		"name" : "Bates Point",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7338889,
+				41.0763889
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74863885"),
+		"id" : 2556399,
+		"name" : "Causeway Island",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7347222,
+				41.0738889
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a7486388f"),
+		"id" : 2556455,
+		"name" : "Chestnut Ridge",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6836111,
+				41.1797222
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a748638b5"),
+		"id" : 2556772,
+		"name" : "Gibses Ridge",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.5977778,
+				41.1661111
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a748638b6"),
+		"id" : 2556773,
+		"name" : "Giffords Lake",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6702778,
+				41.1391667
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a748638b8"),
+		"id" : 2556775,
+		"name" : "Glen And Haseco Park",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6677778,
+				41.0069444
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a7486391e"),
+		"id" : 2557062,
+		"name" : "Great Hill",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.5994444,
+				41.1844444
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74863929"),
+		"id" : 2557073,
+		"name" : "Halls Corners",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7105556,
+				41.1791667
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a7486392a"),
+		"id" : 2557074,
+		"name" : "Halls Hill",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6752778,
+				41.1336111
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74863930"),
+		"id" : 2557080,
+		"name" : "High Point",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7283333,
+				41.0819444
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74863976"),
+		"id" : 2557692,
+		"name" : "North Castle",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6838889,
+				41.14
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74863a09"),
+		"id" : 2558515,
+		"name" : "Merritts Corner (historical)",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7141667,
+				41.0366667
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74863b83"),
+		"id" : 2559574,
+		"name" : "Summerfield Park",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6636111,
+				41.0038889
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74864989"),
+		"id" : 2614694,
+		"name" : "King Street Home",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.668921,
+				41.0276255
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74864a43"),
+		"id" : 2614880,
+		"name" : "Byram River Bridge",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6553802,
+				41.0121527
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74864b04"),
+		"id" : 2615073,
+		"name" : "The Golf Club of Purchase",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.709588,
+				41.0539039
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74864c19"),
+		"id" : 2615350,
+		"name" : "Brae Burn Country Club",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7317595,
+				41.044757
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74864cc2"),
+		"id" : 2615519,
+		"name" : "All Souls' Parish Presbyterian Church",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6633661,
+				41.0123394
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74864fcb"),
+		"id" : 2616296,
+		"name" : "Summerfield United Methodist Church",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6637214,
+				41.0042892
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a748653f3"),
+		"id" : 2617360,
+		"name" : "North Castle Public Library",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.726597,
+				41.129903
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74865519"),
+		"id" : 2617654,
+		"name" : "North Castle Town Hall",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7132088,
+				41.1245518
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a7486552e"),
+		"id" : 2617675,
+		"name" : "Rye Brook Village Hall",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6746534,
+				41.0346964
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a748655a9"),
+		"id" : 2617798,
+		"name" : "Armonk Post Office",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7142966,
+				41.1261144
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a748656c3"),
+		"id" : 2618080,
+		"name" : "Purchase Post Office",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7136622,
+				41.0373646
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74865857"),
+		"id" : 2635192,
+		"name" : "Devonshire",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7216667,
+				41.1761111
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a74865861"),
+		"id" : 2635807,
+		"name" : "Sarosca Farm Estates",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7216667,
+				41.045
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85d883c9f1a7486599e"),
+		"id" : 2668697,
+		"name" : "Armonk Towne Center Shopping Center",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.712653,
+				41.132325
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85e883c9f1a748668dd"),
+		"id" : 2715960,
+		"name" : "Brooksville Fire House",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6595635,
+				41.0112454
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85e883c9f1a7486695b"),
+		"id" : 2716086,
+		"name" : "Purchase Fire Department",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.7039029,
+				41.0375336
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274e85e883c9f1a7486695e"),
+		"id" : 2716089,
+		"name" : "Banksville Independent Fire Company",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-73.6424369,
+				41.1449055
+			]
+		}
+	}
+]

@@ -1,0 +1,410 @@
+MongoDB shell version: 2.4.7
+connecting to: text
+{
+	"result" : [
+		{
+			"_id" : "the",
+			"count" : 1061396
+		},
+		{
+			"_id" : "of",
+			"count" : 593677
+		},
+		{
+			"_id" : "and",
+			"count" : 416629
+		},
+		{
+			"_id" : "one",
+			"count" : 411764
+		},
+		{
+			"_id" : "in",
+			"count" : 372201
+		},
+		{
+			"_id" : "a",
+			"count" : 325873
+		},
+		{
+			"_id" : "to",
+			"count" : 316376
+		},
+		{
+			"_id" : "zero",
+			"count" : 264975
+		},
+		{
+			"_id" : "nine",
+			"count" : 250430
+		},
+		{
+			"_id" : "two",
+			"count" : 192644
+		},
+		{
+			"_id" : "is",
+			"count" : 183153
+		},
+		{
+			"_id" : "as",
+			"count" : 131815
+		},
+		{
+			"_id" : "eight",
+			"count" : 125285
+		},
+		{
+			"_id" : "for",
+			"count" : 118445
+		},
+		{
+			"_id" : "s",
+			"count" : 116710
+		},
+		{
+			"_id" : "five",
+			"count" : 115789
+		},
+		{
+			"_id" : "three",
+			"count" : 114775
+		},
+		{
+			"_id" : "was",
+			"count" : 112807
+		},
+		{
+			"_id" : "by",
+			"count" : 111831
+		},
+		{
+			"_id" : "that",
+			"count" : 109510
+		},
+		{
+			"_id" : "four",
+			"count" : 108182
+		},
+		{
+			"_id" : "six",
+			"count" : 102145
+		},
+		{
+			"_id" : "seven",
+			"count" : 99683
+		},
+		{
+			"_id" : "with",
+			"count" : 95603
+		},
+		{
+			"_id" : "on",
+			"count" : 91250
+		},
+		{
+			"_id" : "are",
+			"count" : 76527
+		},
+		{
+			"_id" : "it",
+			"count" : 73334
+		},
+		{
+			"_id" : "from",
+			"count" : 72871
+		},
+		{
+			"_id" : "or",
+			"count" : 68945
+		},
+		{
+			"_id" : "his",
+			"count" : 62603
+		},
+		{
+			"_id" : "an",
+			"count" : 61925
+		},
+		{
+			"_id" : "be",
+			"count" : 61281
+		},
+		{
+			"_id" : "this",
+			"count" : 58832
+		},
+		{
+			"_id" : "which",
+			"count" : 54788
+		},
+		{
+			"_id" : "at",
+			"count" : 54576
+		},
+		{
+			"_id" : "he",
+			"count" : 53573
+		},
+		{
+			"_id" : "also",
+			"count" : 44358
+		},
+		{
+			"_id" : "not",
+			"count" : 44033
+		},
+		{
+			"_id" : "have",
+			"count" : 39712
+		},
+		{
+			"_id" : "were",
+			"count" : 39086
+		},
+		{
+			"_id" : "has",
+			"count" : 37866
+		},
+		{
+			"_id" : "but",
+			"count" : 35358
+		},
+		{
+			"_id" : "other",
+			"count" : 32433
+		},
+		{
+			"_id" : "their",
+			"count" : 31523
+		},
+		{
+			"_id" : "its",
+			"count" : 29567
+		},
+		{
+			"_id" : "first",
+			"count" : 28810
+		},
+		{
+			"_id" : "they",
+			"count" : 28553
+		},
+		{
+			"_id" : "some",
+			"count" : 28161
+		},
+		{
+			"_id" : "had",
+			"count" : 28100
+		},
+		{
+			"_id" : "all",
+			"count" : 26229
+		},
+		{
+			"_id" : "more",
+			"count" : 26223
+		},
+		{
+			"_id" : "most",
+			"count" : 25563
+		},
+		{
+			"_id" : "can",
+			"count" : 25519
+		},
+		{
+			"_id" : "been",
+			"count" : 25383
+		},
+		{
+			"_id" : "such",
+			"count" : 24413
+		},
+		{
+			"_id" : "many",
+			"count" : 24096
+		},
+		{
+			"_id" : "who",
+			"count" : 23997
+		},
+		{
+			"_id" : "new",
+			"count" : 23770
+		},
+		{
+			"_id" : "used",
+			"count" : 22737
+		},
+		{
+			"_id" : "there",
+			"count" : 22707
+		},
+		{
+			"_id" : "after",
+			"count" : 21125
+		},
+		{
+			"_id" : "when",
+			"count" : 20623
+		},
+		{
+			"_id" : "into",
+			"count" : 20484
+		},
+		{
+			"_id" : "american",
+			"count" : 20477
+		},
+		{
+			"_id" : "time",
+			"count" : 20412
+		},
+		{
+			"_id" : "these",
+			"count" : 19864
+		},
+		{
+			"_id" : "only",
+			"count" : 19463
+		},
+		{
+			"_id" : "see",
+			"count" : 19206
+		},
+		{
+			"_id" : "may",
+			"count" : 19115
+		},
+		{
+			"_id" : "than",
+			"count" : 18807
+		},
+		{
+			"_id" : "world",
+			"count" : 17949
+		},
+		{
+			"_id" : "i",
+			"count" : 17581
+		},
+		{
+			"_id" : "b",
+			"count" : 17516
+		},
+		{
+			"_id" : "would",
+			"count" : 17377
+		},
+		{
+			"_id" : "d",
+			"count" : 17236
+		},
+		{
+			"_id" : "no",
+			"count" : 16155
+		},
+		{
+			"_id" : "however",
+			"count" : 15861
+		},
+		{
+			"_id" : "between",
+			"count" : 15737
+		},
+		{
+			"_id" : "about",
+			"count" : 15574
+		},
+		{
+			"_id" : "over",
+			"count" : 15122
+		},
+		{
+			"_id" : "years",
+			"count" : 14935
+		},
+		{
+			"_id" : "states",
+			"count" : 14916
+		},
+		{
+			"_id" : "people",
+			"count" : 14696
+		},
+		{
+			"_id" : "war",
+			"count" : 14629
+		},
+		{
+			"_id" : "during",
+			"count" : 14578
+		},
+		{
+			"_id" : "united",
+			"count" : 14494
+		},
+		{
+			"_id" : "known",
+			"count" : 14437
+		},
+		{
+			"_id" : "if",
+			"count" : 14420
+		},
+		{
+			"_id" : "called",
+			"count" : 14151
+		},
+		{
+			"_id" : "use",
+			"count" : 14011
+		},
+		{
+			"_id" : "th",
+			"count" : 13380
+		},
+		{
+			"_id" : "system",
+			"count" : 13296
+		},
+		{
+			"_id" : "often",
+			"count" : 12987
+		},
+		{
+			"_id" : "state",
+			"count" : 12904
+		},
+		{
+			"_id" : "so",
+			"count" : 12722
+		},
+		{
+			"_id" : "history",
+			"count" : 12623
+		},
+		{
+			"_id" : "will",
+			"count" : 12560
+		},
+		{
+			"_id" : "up",
+			"count" : 12445
+		},
+		{
+			"_id" : "while",
+			"count" : 12363
+		},
+		{
+			"_id" : "where",
+			"count" : 12347
+		}
+	],
+	"ok" : 1
+}
+ słów: 100
+ilość: 7998978
+część: 47.03840417820259%
