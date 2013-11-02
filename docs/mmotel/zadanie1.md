@@ -689,7 +689,7 @@ db.geony.find({
 ]
 ```
 
-Pełny wynik zapytania: [tutaj]().
+Pełny wynik zapytania: [tutaj](./1e-sampel-2-1-full.md).
 
 ###Przykład 2.2: $near
 
@@ -738,7 +738,7 @@ db.geony.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 10000 } }).toArra
 ]
 ```
 
-Pełny wynik zapytania: [tutaj]().
+Pełny wynik zapytania: [tutaj](./1e-sampel-2-2-full.md).
 
 ###Przykład 3.1: $geoWithin 
 
@@ -798,7 +798,7 @@ db.geony.find({ loc : { $geoWithin : { $geometry : obszar } } }).toArray();
 ]
 ```
 
-Pełny wynik zapytania: [tutaj]().
+Pełny wynik zapytania: [tutaj](./1e-sampel-3-full.md).
 
 ###Przykład 3.2: $geoIntersects
 
@@ -854,7 +854,7 @@ db.geony.find({ loc : { $geoIntersects : { $geometry : obszar } } }).toArray();
 ]
 ```
 
-Pełny wynik zapytania: [tutaj]().
+Pełny wynik zapytania: [tutaj](./1e-sampel-3-full.md).
 
 ###Przykład 4: $geoIntersects
 
