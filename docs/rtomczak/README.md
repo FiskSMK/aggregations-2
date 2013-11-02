@@ -6,7 +6,7 @@ MongoDB version: 2.5.3
 
 ## Zadanie 1
 
-* 1a 
+* a 
   * Przygotowanie danych do importu
   
   ```bash
@@ -17,3 +17,17 @@ MongoDB version: 2.5.3
   sys	1m28.238s
   ```
 
+  * Import danych do bazy
+  
+  ```bash
+  $ mongoimport --type csv -c Train --file Train2.csv --headerline
+  ```
+  
+* b
+  
+  ```bash
+  > db.Train.count()
+  6034195
+  ```
+  
+* c
