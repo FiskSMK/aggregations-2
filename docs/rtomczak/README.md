@@ -7,7 +7,7 @@ MongoDB version: 2.5.3
 ## Zadanie 1
 
 * 1a 
-  Przygotowanie danych do importu
+  * Przygotowanie danych do importu
   ```bash
   $ time bash 2unix.sh Train.csv Train2.csv
   
