@@ -398,7 +398,7 @@ sys   0m0.008s
 }
 ```
 
-Pełny wynik agregacji: [tutaj](./mmotel/1d-top-100.md).
+Pełny wynik agregacji: [tutaj](./1d-top-100.md).
 
 
 ```sh
@@ -436,7 +436,7 @@ sys   0m0.016s
 }
 ```
 
-Pełny wynik agregacji: [tutaj](./mmotel/1d-top-1000.md).
+Pełny wynik agregacji: [tutaj](./1d-top-1000.md).
 
 ```sh
  słów: 1000
@@ -532,7 +532,7 @@ Do przygotowania obiektów `geoJSON` użyjemy prostego skryptu powłoki `Mongo`,
 }
 ```
 
-`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `geony`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](./mmotel/1e-deleted-geo-jsons.md).
+`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `geony`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](./1e-deleted-geo-jsons.md).
 
 Kod skryptu: [make-geo-jsons.js](../../scripts/mmotel/1e/make-geo-jsons.js).
 
@@ -631,8 +631,269 @@ db.geony.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 200} }).toArray()
 
 ![google-maps-example-1](../../images/mmotel/1e-sampel1.png)
 
+###Przykład 2.1: $geoWithin
+
+####Wybrany punkt
+
+```json
+{ 
+  "_id" : ObjectId("527173ea5ac806a1e7c896d9"), 
+  "id" : 212165, 
+  "name" : "Wilshire Pond Brook", 
+  "loc" : { 
+    "type" : "Point", 
+    "coordinates" : [  -73.6537393,  41.1028742 ] 
+  } 
+}
+```
+
+Wilshire Pond Brook na Google Maps: [link](http://goo.gl/maps/MUJ16)
+
+![google-maps-selected-point-2](../../images/mmotel/1e-selected-point-2.png)
+
+####Zapytanie
+
+```js
+db.geony.find({
+  loc: {$geoWithin : { $center : [ [ -73.6537393,  41.1028742 ] , 0.1 ] } } 
+}).toArray();
+```
+
+####Wynik
+
+```js
+182 //ilość obiektów
+```
+
+```json
+[
+  {
+    "_id" : ObjectId("5274e857883c9f1a74854351"),
+    "id" : 206430,
+    "name" : "Converse Lake",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.6520811, 41.1326454 ]
+    }
+  },
+  //...
+  {
+    "_id" : ObjectId("5274e85e883c9f1a7486695e"),
+    "id" : 2716089,
+    "name" : "Banksville Independent Fire Company",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.6424369, 41.1449055 ]
+    }
+  }
+]
+```
+
+Pełny wynik zapytania: [tutaj]().
+
+###Przykład 2.2: $near
+
+####Wyrabny punkty (ten sam jak w przykładzie 2.1)
+
+```js
+var punkt = { 
+  "type" : "Point", 
+  "coordinates" : [  -73.6537393,  41.1028742 ] 
+};
+```
+
+####Zapytanie
+
+```js
+db.geony.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 10000 } }).toArray();
+```
+
+####Wynik
+
+```js
+176 //ilość obiektów
+```
+
+```json
+[
+  {
+    "_id" : ObjectId("5274e85a883c9f1a7485b432"),
+    "id" : 971407,
+    "name" : "Wilshire Pond Brook",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.6537393, 41.1028742 ]
+    }
+  },
+  //...
+  {
+    "_id" : ObjectId("5274e85b883c9f1a7485fcf0"),
+    "id" : 2125385,
+    "name" : "Brace Memorial School (historical)",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.7725, 41.0980556 ]
+    }
+  }
+]
+```
+
+Pełny wynik zapytania: [tutaj]().
+
+###Przykład 3.1: $geoWithin 
+
+####Wybrany obszar
+
+```js
+var obszar = { 
+    "type" : "Polygon", 
+    "coordinates" : 
+    [ [ 
+        [ -74 , 40.75 ], 
+        [ -73 , 40.75 ], 
+        [ -73 , 40    ], 
+        [ -74 , 40    ], 
+        [ -74 , 40.75 ] 
+    ] ]
+};
+```
+
+Obszar na Google Maps:
+
+![google-maps-sampel-4](../../images/mmotel/1e-selected-polygon.png)
+
+####Zapytanie
+
+```js
+db.geony.find({ loc : { $geoWithin : { $geometry : obszar } } }).toArray();
+```
+
+####Wynik
+
+```js
+7343 //ilość obiektów
+```
+
+```json
+[
+  {
+    "_id" : ObjectId("5274e858883c9f1a74854530"),
+    "id" : 942423,
+    "name" : "Ambrose Channel",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.922195, 40.488215 ]
+    }
+  },
+  //...
+  {
+    "_id" : ObjectId("5274e85b883c9f1a7485ff64"),
+    "id" : 2358931,
+    "name" : "Gilgo Life Saving Station (historical)",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.3736111, 40.6213889 ]
+    }
+  }
+]
+```
+
+Pełny wynik zapytania: [tutaj]().
+
+###Przykład 3.2: $geoIntersects
+
+####Wybrany obszar (taki sam jak w przykładzie 3.1)
+
+```js
+var obszar = { 
+    "type" : "Polygon", 
+    "coordinates" : 
+    [ [ 
+        [ -74 , 40.75 ], 
+        [ -73 , 40.75 ], 
+        [ -73 , 40    ], 
+        [ -74 , 40    ], 
+        [ -74 , 40.75 ] 
+    ] ]
+};
+```
+
+####Zapytanie
+
+```js
+db.geony.find({ loc : { $geoIntersects : { $geometry : obszar } } }).toArray();
+```
+
+####Wynik
+
+```js
+7343 //ilość obiektów
+```
+
+```json
+[
+  {
+    "_id" : ObjectId("5274e858883c9f1a74854530"),
+    "id" : 942423,
+    "name" : "Ambrose Channel",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.922195, 40.488215 ]
+    }
+  },
+  //...
+  {
+    "_id" : ObjectId("5274e85b883c9f1a7485ff64"),
+    "id" : 2358931,
+    "name" : "Gilgo Life Saving Station (historical)",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.3736111, 40.6213889 ]
+    }
+  }
+]
+```
+
+Pełny wynik zapytania: [tutaj]().
+
+###Przykład 4: $geoIntersects
+
+####Wybrana linia
+
+```js
+var linia = { 
+  "type": "LineString", 
+  "coordinates": 
+    [
+      [ -73 , 40 ] , [ -74 , 40.75 ]
+    ]
+};
+```
+
+Wybrana linia na Google Maps:
+
+![google-maps-selected-lineString](../../images/mmotel/1e-selected-line.png)
+
+####Zapytanie
+
+```js
+db.geony.find({ loc : { $geoIntersects : { $geometry : linia } } }).toArray();
+```
+
+####Wynik
+
+```js
+0 //ilość obiektów
+```
+
+```json
+[ ]
+```
+
 ##Wyniki z MongoDB Management Service
 
 ![mms-results-1](../../images/mmotel/1e-mms-1.png)
+
+![mms-results-2](../../images/mmotel/1e-mms-2.png)
 
 ##Ciąg dalszy niebawem...
