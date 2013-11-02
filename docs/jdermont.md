@@ -185,7 +185,7 @@ Znalazłem koordynaty 262 miast w Polsce, a z wikipedii ściągnąłem liczbę l
 }
 ```
 
-Uwaga: dla 2dsphere mongo przyjmuje jako pierwszy argument szerokość geograficzną (W-E), a drugi jako długość geograficzną (N-S). Np dla współrzędnych 50N 20E, w coordinates będzie [ 20.0, 50.0 ].
+Uwaga: dla 2dsphere mongo (geojson?) przyjmuje jako pierwszy argument szerokość geograficzną (W-E), a drugi jako długość geograficzną (N-S). Np dla współrzędnych 50N 20E, w coordinates będzie [ 20.0, 50.0 ].
 ```js
 db.miasta.ensureIndex({"loc" : "2dsphere"})
 ```
@@ -252,20 +252,19 @@ db.miasta.find(
 }
 ```
 
-Przykład 2. Ilość miast z populacją powyżej 50000 w promieniu 100km od Warszawy włącznie.
+Przykład 2. Miasta z populacją powyżej 50000 w promieniu 100km od Warszawy włącznie.
 ```js
 function km(i) { return i/111.2 } // 1 st. geograficzny = ~111.2 km
 db.miasta.find(
   {
     loc: {$geoWithin: {$center: [[21.02,52.259],km(100)]}
   },
-  "ludnosc": {$gte:50000}}
+  "ludnosc": {$gte:50000}},
+  {_id:0,miasto:1,loc:1,ludnosc:1}
 ).pretty()
 ```
 ```json
 {
-    "_id" : 235,
-    "dlugosc" : 21.02,
     "loc" : {
         "type" : "Point",
         "coordinates" : [
@@ -275,11 +274,8 @@ db.miasta.find(
     },
     "ludnosc" : 1715517,
     "miasto" : "Warszawa",
-    "szerokosc" : 52.259
 }
 {
-    "_id" : 97,
-    "dlugosc" : 20.92,
     "loc" : {
         "type" : "Point",
         "coordinates" : [
@@ -289,25 +285,8 @@ db.miasta.find(
     },
     "ludnosc" : 54109,
     "miasto" : "Legionowo",
-    "szerokosc" : 52.409
 }
 {
-    "_id" : 173,
-    "dlugosc" : 20.819,
-    "loc" : {
-        "type" : "Point",
-        "coordinates" : [
-            20.819,
-            52.22
-        ]
-    },
-    "ludnosc" : 59025,
-    "miasto" : "Pruszków",
-    "szerokosc" : 52.22
-}
-{
-    "_id" : 180,
-    "dlugosc" : 21.159,
     "loc" : {
         "type" : "Point",
         "coordinates" : [
@@ -317,11 +296,10 @@ db.miasta.find(
     },
     "ludnosc" : 219703,
     "miasto" : "Radom",
-    "szerokosc" : 51.399
 }
 ```
 
-[Gejoson, obszar województwa małopolskiego.](../data/jdermont/malopolskie.geojson) (z http://global.mapit.dev.mysociety.org)
+[Geojson, obszar województwa małopolskiego.](../data/jdermont/malopolskie.geojson) (z http://global.mapit.dev.mysociety.org)
 ```sh
 mongoimport --collection wojewodztwo < malopolskie.geojson
 ```
@@ -413,20 +391,19 @@ db.miasta.find({loc: {$geoIntersects:{$geometry:d}}}).count()
 28
 ```
 
-Przykład 5. Szukamy miasta w woj. małopolskim w promieniu 25km od Krakowa.
+Przykład 5. Szukamy miast w woj. małopolskim w promieniu 25km od Krakowa.
 ```js
 db.miasta.find({
   loc:{$within:{$geometry:d}},
   loc:{$within:
   {
     $center:[[19.959,50.06],km(25)]
-  }
+  },
+  {_id:0,miasto:1,loc:1}
 }}).pretty()
 ```
 ```json
 {
-    "_id" : 88,
-    "dlugosc" : 19.959,
     "loc" : {
         "type" : "Point",
         "coordinates" : [
@@ -434,13 +411,9 @@ db.miasta.find({
             50.06
         ]
     },
-    "ludnosc" : 758463,
     "miasto" : "Kraków",
-    "szerokosc" : 50.06
 }
 {
-    "_id" : 240,
-    "dlugosc" : 20.09,
     "loc" : {
         "type" : "Point",
         "coordinates" : [
@@ -448,13 +421,9 @@ db.miasta.find({
             49.99
         ]
     },
-    "ludnosc" : 20988,
     "miasto" : "Wieliczka",
-    "szerokosc" : 49.99
 }
 {
-    "_id" : 132,
-    "dlugosc" : 19.939,
     "loc" : {
         "type" : "Point",
         "coordinates" : [
@@ -462,13 +431,9 @@ db.miasta.find({
             49.839
         ]
     },
-    "ludnosc" : 18383,
     "miasto" : "Myślenice",
-    "szerokosc" : 49.839
 }
 {
-    "_id" : 193,
-    "dlugosc" : 19.83,
     "loc" : {
         "type" : "Point",
         "coordinates" : [
@@ -476,20 +441,18 @@ db.miasta.find({
             49.979
         ]
     },
-    "ludnosc" : 24280,
     "miasto" : "Skawina",
-    "szerokosc" : 49.979
 }
 ```
 
-Przyład 6. Użycie LineString, czy linia jest w polygonie?
+Przyład 6. Użycie LineString, czy linia jest w polygonie (lub ją przecina?
 ```js
 var line1 = {type : "LineString" , coordinates : [[19.960, 51.06] , [41 , 6]]}
 db.wojewodztwa.find({loc:{$geoIntersects:{$geometry:line1}}}).count()
 1
 ```
 
-#### Obrazki:
+#### Obrazki (dzięki google maps):
 
 Przykład 2.
 
@@ -498,5 +461,3 @@ Przykład 2.
 Przykład 3.
 
 ![malopolskie](../images/jdermont/mapa2.jpg)
-
-
