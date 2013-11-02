@@ -188,7 +188,7 @@ Procentowy wynik udziału tych słów w całkowitej ilości wynosi:
 	"ok" : 1
 }
 ```
-Pełen wynik wszystkich słów dostępny [tu](/pkrolik/zad1d-100.txt).
+Pełen wynik wszystkich słów dostępny [tu](/docs/pkrolik/zad1d-100.txt).
 
 Procentowy wynik udziału tych słów w całkowitej ilości wynosi:
 ```js
@@ -229,7 +229,7 @@ Procentowy wynik udziału tych słów w całkowitej ilości wynosi:
 	"ok" : 1
 }
 ```
-Pełen wynik wszystkich słów dostępny [tu](/pkrolik/zad1d-1k.txt).
+Pełen wynik wszystkich słów dostępny [tu](/docs/pkrolik/zad1d-1k.txt).
 
 Procentowy wynik udziału tych słów w całkowitej ilości wynosi:
 ```js
@@ -376,7 +376,7 @@ Wyszukaj placówki pomiędzy Gdynią a Warszawą i podaj ilość wystąpień pla
 }
 
 ```
-Pełna lista wyników dostępna [tutaj](/pkrolik/zad1e3.txt).
+Pełna lista wyników dostępna [tutaj](/docs/pkrolik/zad1e3.txt).
 
 ####4.
 Wyszukaj placówki pomiędzy Gdynią a Warszawą które leżą w województwie Pomorskim i podaj ilość wystąpień placówek w danej gminie:
@@ -405,7 +405,7 @@ Wyszukaj placówki pomiędzy Gdynią a Warszawą które leżą w województwie P
 	"ok" : 1
 }
 ```
-Pełna lista wyników dostępna [tutaj](/pkrolik/zad1e4.txt).
+Pełna lista wyników dostępna [tutaj](/docs/pkrolik/zad1e4.txt).
 ####5.
 Sprawdzić ile mieści się placówek między Gdynią a Warszawą w województwie Pomorskim (należy zwrócić uwagę że dla $geoIntersects oraz $geoWithin będą wychodzić jednakowe wyniki gdyż punkty są zawarte całkowicie w danym rejonie):
 ```js
