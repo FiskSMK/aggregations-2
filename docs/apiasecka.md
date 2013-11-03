@@ -1,4 +1,4 @@
-#Aleksandra Piasecka
+#Aleksandra Piasecka i Karolina Rybarczyk
 
 ##Wstęp:
 parametry:
@@ -55,10 +55,17 @@ db.text.count();
 17005207
 ```
 
+Ilość różnych słów:
+```
+db.text.aggregate({$group: {_id: "$slowa", count: {$sum: 1}}}, {$group: {_id: null, count: {$sum: 1}}})
+{ "result" : [ { "_id" : null, "count" : 253854 } ], "ok" : 1 }
+```
+wynik: 253854
+
 ###top1:
 ```
 db.text.aggregate({$group: {_id: "$slowa", count: {$sum: 1}}}, {$sort: {count:-1}}, {$limit: 1})
-{"result": [{"_id": "the", "count": 1061396}], "ok": 1}
+{ "result" : [ { "_id" : "the", "count" : 1061396 } ], "ok" : 1 }
 ```
 ```
 całość: 17005207
@@ -93,3 +100,53 @@ całość: 17005207
 wynik: 7998978
 %: 47%
 ```
+
+#Zadanie 1e
+Import danych do bazy:
+```
+mongoimport -c Miasta < polska.json
+```
+żeby całość działała, musimy dodać geo-indeks
+```
+db.Miasta.ensureIndex({"loc" : "2dsphere"})
+```
+
+###pierwsze (dla point, $near)
+```
+db.Miasta.find({loc: {$near: {$geometry: {type: "Point", coordinates: [21.000366210937496, 52.231163984032676]}, $maxDistance: 90000}}}).skip(1)
+```
+
+`21.000366210937496, 52.231163984032676` - To współrzędne Warszawy. Ta komenda pokazuje wszystkie najbliższe miasta w odległości maks 90km od Warszawy. `.skip(1)` powoduje, że pierwsza wartość na liście nie zostanie wyświetlona (tą wartością jest oczywiście sama warszawa)
+
+###drugie (Polygon, $geoWithin)
+```
+db.Miasta.find({loc: {$geoWithin: {$geometry: {type: "Polygon", coordinates: [[[19.259033203125, 52.3923633970718], [18.1768798828125, 51.17589926990911], 
+[19.7259521484375, 50.86144411058924], [20.5059814453125, 51.50532341149335], [20.23681640625, 52.1166256737882], [19.259033203125, 52.3923633970718]]]}}}})
+```
+Współrzędne w tym Polygonie to mniej więcej kształt województwa łodzkiego
+
+###trzecie (LineString, $geoIntersects)
+```
+db.Miasta.find({loc: {$geoIntersects: {$geometry: {type: "LineString", coordinates: [[19.010467529296875, -90],[19.010467529296875, 90]]}}}})
+```
+`$geoIntersects` sprawdza interakcje miedzy dwoma obiektami. Tutaj szuka tego, co leży na południku `19.010467529296875` (niestety, maxDistance tu nie działa, a miara musi być dokładna, żeby cokolwiek znalazł, na tym południku leżą Katowice)
+
+###czwarte (dla point, $near)
+```
+db.Miasta.find({loc: {$near: {$geometry: {type: "Point", coordinates: [19.28, 52.04]}}}}).limit(3)
+```
+Podane współrzędne to geometryczny środek polski. Wyszukujemy 3 najbliższe mu miasta.
+
+###piąte (Polygon + $geoIntersects)
+```
+db.Miasta.find({loc: {$geoIntersects: {$geometry: {type: "Polygon", coordinates: [[[19.259033203125, 52.3923633970718], [18.1768798828125, 51.17589926990911], 
+[19.7259521484375, 50.86144411058924], [20.5059814453125, 51.50532341149335], [20.23681640625, 52.1166256737882], [19.259033203125, 52.3923633970718]]]}}}})
+```
+Wychodzi na to samo co w wersji z `$geoWithin`, czyli do wyszukania tych samych informacji można wykorzystać różne metody - tutaj szukamy teoretycznie nie tego, co jest w polygonie, a co zachodzi z nim w interakcje - czyli wychodzi na to samo w ostatecznym rozrachunku
+
+###szóste 
+```
+db.Miasta.find({loc: {$geoIntersects: {$geometry: {type: "LineString", coordinates: [ [18.56586456298828, 54.4448910398684], [19.948768615722656, 49.29803885147804]]}}}})
+```
+
+sprawdzamy, czy coś leży między Sopotem a Zakopanym (w linii prostej)
