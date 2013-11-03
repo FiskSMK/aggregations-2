@@ -1,11 +1,11 @@
 ### *Michał Dępczyk*
 
 ----
-
+```
 MongoDB shell version: 2.4.7
-
+```
 Parametry komputera:
-
+```
 -Computer-
 Processor		: 8x Intel(R) Core(TM) i7-2670QM CPU @ 2.20GHz
 Memory		: 8086MB
@@ -13,7 +13,7 @@ Memory		: 8086MB
 -SCSI Disks-
 ATA SAMSUNG HN-M101M
 Slimtype BD E DS6E2SH
-
+```
 ### Zadanie 1a
 
 Przygotowanie pliku za pomocą skryptu 2unix:
