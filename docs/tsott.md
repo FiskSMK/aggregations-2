@@ -24,7 +24,7 @@ Czas importu danych:*
 	user	1m50.560s
 	sys	0m14.668s
 
-* system na dysku zewnętrznym (ATA 7200 rpm) podłączonym pod port USB 2.0 
+\* system na dysku zewnętrznym (ATA 7200 rpm) podłączonym pod port USB 2.0 
 
 
 Zadanie 1b. Zliczyć liczbę zaimportowanych rekordów (Odpowiedź: imported 6_034_195 objects).
@@ -34,6 +34,6 @@ Zaimportowano 6034195 rekordów:
 	2013-11-02T13:04:41.156+0100 imported 6034195 objects
 
 Sprawdzenie ilości rekordów w bazie train:
-	> db.train.count()
+	db.train.count()
 	6034195
 
