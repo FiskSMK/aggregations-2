@@ -144,6 +144,7 @@ MongoDB version: 2.5.2
 
   ```
 * 1e
+#### import
   Do obróbki użyłem bazy listy [Stacji Orlen](../../data/mosinski/Stacje_paliw_Orlen.csv) tutaj zaimportowałem poleceniem:
   ```bash
   $ time mongoimport -d GeoOrlen -c stacje --type csv --file Stacje_paliw_Orlen.csv --headerline
