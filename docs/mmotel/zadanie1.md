@@ -325,6 +325,12 @@ sys   0m0.124s
 
 ###1 słowo
 
+Kod skryptu: [top-1-word.js](../../scripts/mmotel/1d/top-1-word.js)
+
+```sh
+time mongo text top-1-word.js
+```
+
 ```json
 { "result" : [ { "_id" : "the", "count" : 1061396 } ], "ok" : 1 }
 ```
