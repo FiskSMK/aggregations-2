@@ -22,7 +22,7 @@ MongoDB version: 2.5.3
     ```bash
     $ mongoimport --type csv -c Train --file Train2.csv --headerline
     ```
-    ![Zdjecie_z_importu_danych](/images/rtomczak/Czas_zaimportowania.png "Zaimportowanie  Train'a")
+    ![Zdjecie_z_importu_danych](../../images/rtomczak/Czas_zaimportowania.png "Zaimportowanie  Train'a")
   
 * b
     #### Obliczanie ilosci rekordow
@@ -47,4 +47,4 @@ MongoDB version: 2.5.3
     ```
     
     * #####Import danych do bazy
-        ![Zdjecie_import_danych](/images/rtomczak/zaimportowanie_text.png "Zaimportowanie text8.json")
+        ![Zdjecie_import_danych](../../images/rtomczak/zaimportowanie_text.png "Zaimportowanie text8.json")
