@@ -118,12 +118,6 @@ część: 24.7%
 
 
 ```json
-
-    { "_id" : "the",     "count" : 1061396 },
-    { "_id" : "of",      "count" : 593677  },
-    { "_id" : "and",     "count" : 416629  },
-    { "_id" : "one",     "count" : 411764  },
-    { "_id" : "in",      "count" : 372201  },
     //...
     { "_id" : "history", "count" : 12623   },
     { "_id" : "will",    "count" : 12560   },
@@ -141,12 +135,6 @@ część: 47.0%
 ###1000 słów
 
 ```json
-
-    { "_id" : "the",     "count" : 1061396 },
-    { "_id" : "of",      "count" : 593677  },
-    { "_id" : "and",     "count" : 416629  },
-    { "_id" : "one",     "count" : 411764  },
-    { "_id" : "in",      "count" : 372201  },
     //...
     { "_id" : "child",   "count" : 1789    },
     { "_id" : "element", "count" : 1787    },
