@@ -46,7 +46,7 @@ user        0m46.171s
 sys        0m5.532s
 ```
 
-Ilość wszystkich słów:
+###Ilość wszystkich słów:
 ```
 wc -l text8.txt
 17005207 text8.txt
@@ -57,7 +57,7 @@ db.text.count();
 17005207
 ```
 
-Ilość różnych słów:
+###Ilość różnych słów:
 ```
 db.text.aggregate({$group: {_id: "$slowa", count: {$sum: 1}}}, {$group: {_id: null, count: {$sum: 1}}})
 { "result" : [ { "_id" : null, "count" : 253854 } ], "ok" : 1 }
