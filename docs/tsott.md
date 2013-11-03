@@ -3,11 +3,11 @@ Zadanie 1a polega na zaimportowaniu, do systemów baz danych uruchomionych na sw
     MongoDB
     PostgreSQL – opcjonalnie dla znających fanów SQL
 
-Naprawienie pliku Train.csv i usuniecie zbednych znakow nowej linii:
+Naprawienie pliku Train.csv i usunięcie zbędnych znaków nowej linii:
 
 	cat Train.csv | tr "\n" " " | tr "\r" "\n" | head -n 6034196 > Train_prepared.csv
 
-Ustawienie sciezki do folderu z baza danych:
+Ustawienie ścieżki do folderu z bazą danych:
 	mongod --dbpath /media/FAKE_PATH/db
 
 Import danych z pliku csv do bazy danych train, kolekcji train:
@@ -24,16 +24,16 @@ Czas importu danych:*
 	user	1m50.560s
 	sys	0m14.668s
 
-* system na dysku zewnetrznym (ATA 7200 rpm) podlaczonym pod port USB 2.0 
+* system na dysku zewnętrznym (ATA 7200 rpm) podłączonym pod port USB 2.0 
 
 
 Zadanie 1b. Zliczyć liczbę zaimportowanych rekordów (Odpowiedź: imported 6_034_195 objects).
 
-Zaimportowano 6034195 rekordow:
+Zaimportowano 6034195 rekordów:
 	
 	2013-11-02T13:04:41.156+0100 imported 6034195 objects
 
-Sprawdzenie ilosci rekordow w bazie train:
+Sprawdzenie ilości rekordów w bazie train:
 	> db.train.count()
 	6034195
 
