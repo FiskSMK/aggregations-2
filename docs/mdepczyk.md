@@ -5,6 +5,7 @@
 MongoDB shell version: 2.4.7
 
 Parametry komputera:
+
 -Computer-
 Processor		: 8x Intel(R) Core(TM) i7-2670QM CPU @ 2.20GHz
 Memory		: 8086MB
