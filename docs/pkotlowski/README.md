@@ -48,6 +48,10 @@ Zliczanie wszystkich słów za pomocą ``` db.text8.count() ``` daje rezultat ``
 
 Zliczanie wszystkich unikalnych słów za pomocą ``` db.text8.distinct("word").length ``` daje rezultat ``` 253854 ```
 
+Zliczanie 1/10/100/1000 najczęściej występujących słów:
+```
+db.text8.aggregate([ {$group:{_id:"$word", count:{$sum:1}}}, {$sort: {count: -1}}, {$limit:ZADANA_ILOSC}, {$group:{_id: null, count:{$sum:"$count"}}} ])
+```
 
 Procentowy udział słów w bazie
 -------------
@@ -60,13 +64,13 @@ Procentowy udział słów w bazie
     <td>1</td><td>1061396</td><td>the</td><td>6,25%</td>
   </tr>
   <tr>
-    <td>10</td><td>4205965</td><td>[klik!](/docs/pkotlowski/10.md)</td><td>24,73%</td>
+    <td>10</td><td>4205965</td><td> [klik](/docs/pkotlowski/10.md) </td><td>24,73%</td>
   </tr>
  <tr>
-    <td>100</td><td>7998978</td><td>[klik!](/docs/pkotlowski/100.md)</td><td>47,03%</td>
+    <td>100</td><td>7998978</td><td> [klik](/docs/pkotlowski/100.md) </td><td>47,03%</td>
   </tr>
  <tr>
-    <td>1000</td><td>11433354</td><td>[klik!](/docs/pkotlowski/1000.md)</td><td>67,23%</td>
+    <td>1000</td><td>11433354</td><td> [klik](/docs/pkotlowski/1000.md) </td><td>67,23%</td>
   </tr>
 </table>
 
@@ -92,10 +96,12 @@ Użycie zasobów:
 
 Zaimportowano ```2251155``` rekordów
 
-Następnie należy oczyścić bazę z rekordów w niewłaściwym formacie. Służy do tego skrypt [JavaScript!](/docs/pkotlowski/remove-geo.js)
+Następnie wybrałem najbardziej interesujące mnie dane takie jak: Nazwa, typ, wysokość oraz współżędne geograficzne. Reszta rekordów została usunięta. Wykorzystałem do tego [Skrypt](/docs/pkotlowski/geo.js). Działa on na zasadzie kopiowania z kolekcji geo wybranych atrybutów do kolekcji geo_points
 
+Następnie należy oczyścić bazę z rekordów w niewłaściwym formacie. Służy do tego skrypt [JavaScript](/docs/pkotlowski/remove-geo.js)
+```deleted 587 records```
 Zapytanie 1: Wszystkie obiekty w odległości 3000m od współżędnych -109.4784394,  36.4611122 
-```db.geo.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 3000} }).toArray()```
+```db.geo_points.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 3000} }).toArray()```
 ```json
 Agua Sal Creek
 Stream
@@ -119,8 +125,8 @@ Valley
 -----------
 ```
 
-Zapytanie 2: 10 najwyższych szczytów o wysokości co najmniej 1000m od współżędnych ```-110.3795443,  33.4794988 ```
-```db.geo.find({ loc: {$near: {$geometry: punkt}}, type:"Summit", height: {$gt:1000} }).sort({height: -1}).limit(10)```
+Zapytanie 2: 10 najwyższych szczytów o wysokości co najmniej 1000m najbliżej punktu -110.3795443,  33.4794988 
+```db.geo_points.find({ loc: {$near: {$geometry: punkt}}, type:"Summit", height: {$gt:1000} }).sort({height: -1}).limit(10)```
 ```json
 Churchill Peaks
 Summit
@@ -176,7 +182,7 @@ Summit
 
 Zapytanie 3: Wszystkie lotniska między Nebraska, Omaha, Indianapolis oraz Chicago
 ```
-db.geo.find( { loc :
+db.geo_points.find( { loc :
                   { $geoWithin :
                     { $geometry :
                       { type : "Polygon" ,
@@ -187,16 +193,16 @@ db.geo.find( { loc :
 
 Rezultat: [klik!](/docs/pkotlowski/lotniska.md)
 
-Zapytanie 4: Wszystkie obiekty między Churchil Peaks a Mount Saint Elias
+Zapytanie 4: Wszystkie obiekty w linii prostej między Churchil Peaks a Mount Saint Elias
 ```
-db.geo.find( {loc: 
+db.geo_points.find( {loc: 
 	{$geoIntersects: 
 		{$geometry: 
 			{type: "LineString", coordinates: [ [ -140.928976, 60.293754], [-151.0060501, 63.0693461] ]}}}})
 ```
 Zapytanie 5: Wszystkie kopalnie leżące do 50km od Las Vegas położone na wysokości co najmniej 2000m
 ```
-db.geo.find({ loc: 
+db.geo_points.find({ loc: 
 	{$near: 
 		{$geometry: 
 			{type: "Point", coordinates: [-115.1522,36.0800]}}, 
@@ -228,4 +234,14 @@ Mine
 2446
 -----------
 
+```
+Zapytanie 6: Ilość szkoł leżących 3000m od centrum Chicago.
+```
+db.geo_points.find({ loc: {$near: {$geometry: {
+          type: "Point", coordinates: [-87.6278,41.8819]
+          }}, $maxDistance: 3000},
+          type:"School" }).count()
+```
+```json
+202
 ```
