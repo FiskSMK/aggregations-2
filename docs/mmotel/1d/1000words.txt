@@ -1,6 +1,5 @@
-#Zadanie 1d: top 1000 słów
-
-```json
+MongoDB shell version: 2.4.7
+connecting to: text
 {
 	"result" : [
 		{
@@ -4006,10 +4005,6 @@
 	],
 	"ok" : 1
 }
-```
-
-```sh
  słów: 1000
 ilość: 11433354
 część: 67.23443001899359%
-```

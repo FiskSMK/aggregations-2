@@ -19,14 +19,7 @@ Plik `Train.csv` zawiera znaki nowej linii (`\n`) w polach . Należy to naprawi�
 cat Train.csv | tr "\n" " " | tr "\r" "\n" | head -n 6034196 > Train_prepared.csv
 ```
 
-Plik powinien zawierać `6 034 196` linii. Jak można sprawdzić wykonująć:
-
-```sh
-wc -l Train_prepared.csv
-6043196 Train_prepared.csv
-```
-
-Jest ok. Gdy mamy już poprawny plik `.csv` robimy import do bazy.
+Gdy mamy już poprawny plik `.csv` robimy import do bazy.
 
 ##Import
 
@@ -72,7 +65,7 @@ switched to db train
 
 ###Wyniki z MongoDB Management Service
 
-![mms-results](../images/mmotel/1a-import-mms.png)
+![mms-results](../../images/mmotel/1a-import-mms.png)
 
 ***
 
@@ -98,13 +91,13 @@ if(item.Tags.constructor !== Array){
 
 Do rozwiązania zadania użyłem skryptu `JavaScript` uruchamianego na serwerze [`Node.JS`](http://nodejs.org/) w wersji `0.10.21`, który korzysta ze sterownika [`The Node.JS MongoDB Driver`](http://mongodb.github.io/node-mongodb-native/) w wersji `1.3.19`.
 
-Kod skryptu: [convert-tags.js](../scripts/mmotel/1c/convert-tags.js).
+Kod skryptu: [convert-tags.js](../../scripts/mmotel/1c/convert-tags.js).
 
 ####Instalacja
 
 Do uruchowienia skryptu potrzebujemy `Node.JS` w najnowszej wersji. Instrukcja instalacji pod `Linuxem`: [link](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
 
-Instalujemy pakiety (w tym wypadku sam sterownik do mongo) zawarte w pliku [`package.json`](../scripts/mmotel/1c/package.json):
+Instalujemy pakiety (w tym wypadku sam sterownik do mongo) zawarte w pliku [`package.json`](../../scripts/mmotel/1c/package.json):
 
 ```sh
 npm install
@@ -175,14 +168,14 @@ W ciągu `13m1.030s` wykonano `6 034 195` aktualizacji. Co średnio daje `~7 726
 
 `**` Czerwona linia oznacza wykonanie restartu bazy danych.
 
-![mms-results1](../images/mmotel/1c-converting-tags-mms2.png)
+![mms-results1](../../images/mmotel/1c-converting-tags-mms2.png)
 
 
 ##Rozwiązanie `powłoka Mongo`
 
 Do rozwiązania zadania użyłem również skryptu `JavaScript` uruchamianego na powłoce `Mongo`. 
 
-Kod skryptu: [mongo-convert-tags.js](../scripts/mmotel/1c/mongo-convert-tags.js).
+Kod skryptu: [mongo-convert-tags.js](../../scripts/mmotel/1c/mongo-convert-tags.js).
 
 ####Uruchomienie
 
@@ -237,13 +230,13 @@ W ciągu `18m46.243s` wykonano `6 034 195` aktualizacji. Co średnio daje `~5 35
 
 ####Wyniki z MongoDB Management Service
 
-![mms-results2](../images/mmotel/1c-converting-tags-mms.png)
+![mms-results2](../../images/mmotel/1c-converting-tags-mms.png)
 
 ***
 
 #Zadanie 1d
 
-Do rozwiązania zadania użyłem skryptu `JavaScript` uruchamianego na powłoce `Mongo`.
+Do rozwiązania zadania użyłem [skryptów](../../scripts/mmotel/1d/) `JavaScript` uruchamianych na powłoce `Mongo`.
 
 ##Import
 
@@ -290,7 +283,7 @@ switched to db text
 
 ###Wyniki z MongoDB Management Service
 
-![mms-results](../images/mmotel/1d-import-mms.png)
+![mms-results](../../images/mmotel/1d-import-mms.png)
 
 ##Zliczanie słów
 
@@ -310,13 +303,23 @@ Ustawiając lub wykomentowując `$limit` ustalamy ilość elementów, które otr
 
 ###Różnych słów
 
+Kod skryptu: [count-words.js](../../scripts/mmotel/1d/count-words.js)
+
+######Uruchomienie
+
+```sh
+time mongo text count-words.js
+```
+
+######Wynik
+
 ```sh
  słów: 253854
 ilość: 17005207
 część: 100%
 ```
 
-####Czasy
+######Czasy
 
 ```sh
 real  0m18.030s
@@ -325,6 +328,16 @@ sys   0m0.124s
 ```
 
 ###1 słowo
+
+Kod skryptu: [top-1-word.js](../../scripts/mmotel/1d/top-1-word.js)
+
+######Uruchomienie
+ 
+```sh
+time mongo text top-1-word.js
+```
+
+######Wynik
 
 ```json
 { "result" : [ { "_id" : "the", "count" : 1061396 } ], "ok" : 1 }
@@ -336,7 +349,7 @@ ilość: 1061396
 część: 6.241594118789616%
 ```
 
-Czasy
+######Czasy
 
 ```sh
 real  0m15.979s
@@ -345,6 +358,16 @@ sys   0m0.012s
 ```
 
 ###10 słów
+
+Kod skryptu: [top-10-words.js](../../scripts/mmotel/1d/top-10-words.js)
+
+######Uruchomienie
+ 
+```sh
+time mongo text top-10-words.js
+```
+
+######Wynik
 
 ```json
 {
@@ -370,7 +393,7 @@ ilość: 4205965
 część: 24.733394894869555%
 ```
 
-####Czasy
+######Czasy
 
 ```sh
 real  0m16.088s
@@ -378,6 +401,16 @@ user  0m0.056s
 sys   0m0.008s
 ```
 ###100 słów
+
+Kod skryptu: [top-100-words.js](../../scripts/mmotel/1d/top-100-words.js)
+
+######Uruchomienie
+ 
+```sh
+time mongo text top-100-words.js
+```
+
+######Wynik
 
 ```json
 {
@@ -398,16 +431,15 @@ sys   0m0.008s
 }
 ```
 
-Pełny wynik agregacji: [tutaj](./mmotel/1d-top-100.md).
-
-
 ```sh
  słów: 100
 ilość: 7998978
 część: 47.03840417820259%
 ```
 
-####Czasy
+Pełny wynik agregacji: [tutaj](./1d/100words.txt).
+
+######Czasy
 
 ```sh
 real  0m16.055s
@@ -416,6 +448,16 @@ sys   0m0.016s
 ```
 
 ###1000 słów
+
+Kod skryptu: [top-1000-words.js](../../scripts/mmotel/1d/top-1000-words.js)
+
+######Uruchomienie
+
+```sh
+time mongo text top-1000-words.js
+```
+
+######Wynik
 
 ```json
 {
@@ -435,16 +477,15 @@ sys   0m0.016s
   "ok" : 1
 }
 ```
-
-Pełny wynik agregacji: [tutaj](./mmotel/1d-top-1000.md).
-
 ```sh
  słów: 1000
 ilość: 11433354
 część: 67.23443001899359%
 ```
 
-####Czasy
+Pełny wynik agregacji: [tutaj](./1d/1000words.txt).
+
+######Czasy
 
 ```sh
 real  0m16.109s
@@ -454,7 +495,7 @@ sys   0m0.008s
 
 ##Wyniki z MongoDB Management Service
 
-![mms-results](../images/mmotel/1d-counting-words.png)
+![mms-results](../../images/mmotel/1d-counting-words.png)
 
 ***
 
@@ -532,9 +573,9 @@ Do przygotowania obiektów `geoJSON` użyjemy prostego skryptu powłoki `Mongo`,
 }
 ```
 
-`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `geony`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](./mmotel/1e-deleted-geo-jsons.md).
+`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `geony`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](./1e/make-geo-points-results.txt).
 
-Kod skryptu: [make-geo-jsons.js](../scripts/mmotel/1e/make-geo-jsons.js).
+Kod skryptu: [make-geo-jsons.js](../../scripts/mmotel/1e/make-geo-jsons.js).
 
 ####Uruchamiamy skrypt:
 
@@ -576,7 +617,7 @@ db.geony.ensureIndex({"loc" : "2dsphere"});
 
 Port Chester Harbor w Google Maps: [link](http://goo.gl/maps/V2i7z).
 
-![google-maps-selected-point-1](../images/mmotel/1e-selected-point-1.png)
+![google-maps-selected-point-1](../../images/mmotel/1e-selected-point-1.png)
 
 ```js
 var punkt = { 
@@ -629,10 +670,269 @@ db.geony.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 200} }).toArray()
 
 `1` - Port Chester Harbor (wybrany punkt), `2` - Manursing Island Reef, `3` - Port Chester Harbor ("id" : 977393).
 
-![google-maps-example-1](../images/mmotel/1e-sampel1.png)
+![google-maps-example-1](../../images/mmotel/1e-sampel1.png)
+
+###Przykład 2.1: $geoWithin
+
+####Wybrany punkt
+
+```json
+{ 
+  "_id" : ObjectId("527173ea5ac806a1e7c896d9"), 
+  "id" : 212165, 
+  "name" : "Wilshire Pond Brook", 
+  "loc" : { 
+    "type" : "Point", 
+    "coordinates" : [  -73.6537393,  41.1028742 ] 
+  } 
+}
+```
+
+Wilshire Pond Brook na Google Maps: [link](http://goo.gl/maps/MUJ16)
+
+![google-maps-selected-point-2](../../images/mmotel/1e-selected-point-2.png)
+
+####Zapytanie
+
+```js
+db.geony.find({
+  loc: {$geoWithin : { $center : [ [ -73.6537393,  41.1028742 ] , 0.1 ] } } 
+}).toArray();
+```
+
+####Wynik
+
+```js
+182 //ilość obiektów
+```
+
+```json
+[
+  {
+    "_id" : ObjectId("5274e857883c9f1a74854351"),
+    "id" : 206430,
+    "name" : "Converse Lake",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.6520811, 41.1326454 ]
+    }
+  },
+  //...
+  {
+    "_id" : ObjectId("5274e85e883c9f1a7486695e"),
+    "id" : 2716089,
+    "name" : "Banksville Independent Fire Company",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.6424369, 41.1449055 ]
+    }
+  }
+]
+```
+
+Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-2-1.txt).
+
+###Przykład 2.2: $near
+
+####Wyrabny punkty (ten sam jak w przykładzie 2.1)
+
+```js
+var punkt = { 
+  "type" : "Point", 
+  "coordinates" : [  -73.6537393,  41.1028742 ] 
+};
+```
+
+####Zapytanie
+
+```js
+db.geony.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 10000 } }).toArray();
+```
+
+####Wynik
+
+```js
+176 //ilość obiektów
+```
+
+```json
+[
+  {
+    "_id" : ObjectId("5274e85a883c9f1a7485b432"),
+    "id" : 971407,
+    "name" : "Wilshire Pond Brook",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.6537393, 41.1028742 ]
+    }
+  },
+  //...
+  {
+    "_id" : ObjectId("5274e85b883c9f1a7485fcf0"),
+    "id" : 2125385,
+    "name" : "Brace Memorial School (historical)",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.7725, 41.0980556 ]
+    }
+  }
+]
+```
+
+Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-2-2.txt).
+
+###Przykład 3.1: $geoWithin 
+
+####Wybrany obszar
+
+```js
+var obszar = { 
+    "type" : "Polygon", 
+    "coordinates" : 
+    [ [ 
+        [ -74 , 40.75 ], 
+        [ -73 , 40.75 ], 
+        [ -73 , 40    ], 
+        [ -74 , 40    ], 
+        [ -74 , 40.75 ] 
+    ] ]
+};
+```
+
+Obszar na Google Maps:
+
+![google-maps-sampel-4](../../images/mmotel/1e-selected-polygon.png)
+
+####Zapytanie
+
+```js
+db.geony.find({ loc : { $geoWithin : { $geometry : obszar } } }).toArray();
+```
+
+####Wynik
+
+```js
+7343 //ilość obiektów
+```
+
+```json
+[
+  {
+    "_id" : ObjectId("5274e858883c9f1a74854530"),
+    "id" : 942423,
+    "name" : "Ambrose Channel",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.922195, 40.488215 ]
+    }
+  },
+  //...
+  {
+    "_id" : ObjectId("5274e85b883c9f1a7485ff64"),
+    "id" : 2358931,
+    "name" : "Gilgo Life Saving Station (historical)",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.3736111, 40.6213889 ]
+    }
+  }
+]
+```
+
+Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-3-1.txt).
+
+###Przykład 3.2: $geoIntersects
+
+####Wybrany obszar (taki sam jak w przykładzie 3.1)
+
+```js
+var obszar = { 
+    "type" : "Polygon", 
+    "coordinates" : 
+    [ [ 
+        [ -74 , 40.75 ], 
+        [ -73 , 40.75 ], 
+        [ -73 , 40    ], 
+        [ -74 , 40    ], 
+        [ -74 , 40.75 ] 
+    ] ]
+};
+```
+
+####Zapytanie
+
+```js
+db.geony.find({ loc : { $geoIntersects : { $geometry : obszar } } }).toArray();
+```
+
+####Wynik
+
+```js
+7343 //ilość obiektów
+```
+
+```json
+[
+  {
+    "_id" : ObjectId("5274e858883c9f1a74854530"),
+    "id" : 942423,
+    "name" : "Ambrose Channel",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.922195, 40.488215 ]
+    }
+  },
+  //...
+  {
+    "_id" : ObjectId("5274e85b883c9f1a7485ff64"),
+    "id" : 2358931,
+    "name" : "Gilgo Life Saving Station (historical)",
+    "loc" : {
+      "type" : "Point",
+      "coordinates" : [ -73.3736111, 40.6213889 ]
+    }
+  }
+]
+```
+
+Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-3-2.txt).
+
+###Przykład 4: $geoIntersects
+
+####Wybrana linia
+
+```js
+var linia = { 
+  "type": "LineString", 
+  "coordinates": 
+    [
+      [ -73 , 40 ] , [ -74 , 40.75 ]
+    ]
+};
+```
+
+Wybrana linia na Google Maps:
+
+![google-maps-selected-lineString](../../images/mmotel/1e-selected-line.png)
+
+####Zapytanie
+
+```js
+db.geony.find({ loc : { $geoIntersects : { $geometry : linia } } }).toArray();
+```
+
+####Wynik
+
+```js
+0 //ilość obiektów
+```
+
+```json
+[ ]
+```
 
 ##Wyniki z MongoDB Management Service
 
-![mms-results-1](../images/mmotel/1e-mms-1.png)
+![mms-results-1](../../images/mmotel/1e-mms-1.png)
 
-##Ciąg dalszy niebawem...
+![mms-results-2](../../images/mmotel/1e-mms-2.png)

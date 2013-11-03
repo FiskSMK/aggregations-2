@@ -1,6 +1,5 @@
-#Zadanie 1e: odrzucone niepoprawne obiekty `geoJSON`
-
-```json
+MongoDB shell version: 2.4.7
+connecting to: geony
 {
 	"_id" : ObjectId("527173ec5ac806a1e7c8ebc6"),
 	"id" : 963754,
@@ -193,4 +192,4 @@
 		]
 	}
 }
-```
+16
