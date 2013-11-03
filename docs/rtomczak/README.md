@@ -36,7 +36,7 @@ MongoDB version: 2.5.3
     #### Zmiana ciagu tagow w tablice tagow za pomocą [tego](https://github.com/roberttomczak/aggregations-2/blob/master/scripts/rtomczak/tagi.py "Program") skryptu
 
 * d
-    * #### Przygotowanie danych do importu za pomoca [tego](https://github.com/roberttomczak/aggregations-2/blob/master/scripts/rtomczak/StringToJSON.sh "Program") skryptu
+    * #####Przygotowanie danych do importu za pomoca [tego](https://github.com/roberttomczak/aggregations-2/blob/master/scripts/rtomczak/StringToJSON.sh "Program") skryptu
 
     ```bash
     $ time bash StringToJSON.sh text8 text8.json
@@ -46,5 +46,5 @@ MongoDB version: 2.5.3
     sys     0m58.584s
     ```
     
-    * #### Import danych do bazy
+    * #####Import danych do bazy
         ![Zdjecie_import_danych](/images/rtomczak/zaimportowanie_text.png "Zaimportowanie text8.json")
