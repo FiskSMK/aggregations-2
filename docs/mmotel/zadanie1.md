@@ -236,7 +236,7 @@ W ciągu `18m46.243s` wykonano `6 034 195` aktualizacji. Co średnio daje `~5 35
 
 #Zadanie 1d
 
-Do rozwiązania zadania użyłem skryptu `JavaScript` uruchamianego na powłoce `Mongo`.
+Do rozwiązania zadania użyłem [skryptów](../../scripts/mmotel/1d/) `JavaScript` uruchamianych na powłoce `Mongo`.
 
 ##Import
 
@@ -437,6 +437,7 @@ Kod skryptu: [top-1000-words.js](../../scripts/mmotel/1d/top-1000-words.js)
 
 ```sh
 time mongo text top-1000-words.js
+```
 
 ```json
 {
