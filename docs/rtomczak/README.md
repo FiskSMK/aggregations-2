@@ -35,4 +35,12 @@ MongoDB version: 2.5.3
     #### Zmiana ciagu tagow w tablice tagow za pomocą [tego](https://github.com/roberttomczak/aggregations-2/blob/master/scripts/rtomczak/tagi.py "Program") skryptu
 
 * d
-    #### Przygotowanie danych do importu
+    #### Przygotowanie danych do importu za pomoca [tego](https://github.com/roberttomczak/aggregations-2/blob/master/scripts/rtomczak/StringToJSON.sh "Program") skryptu
+
+    ```bash
+    $ time bash StringToJSON.sh text8 text8.json
+
+    real    1m34.271s
+    user    0m20.201s
+    sys 0m58.584s
+    ```
