@@ -445,3 +445,27 @@ db.geoal.find({ loc: { $geoWithin: {$geometry : pole} } }).toArray()
 ###Wynik
 
 `4359`
+
+### LineString
+
+```js
+db.geoal.find({ loc: { type : "LineString", coordinates : [ [-87, 33], [-88, 31] ] } } ).toArray()
+```
+
+###Wynik
+
+`0`
+
+
+### Intersects
+
+```js
+var pole = { "type" : "Polygon", "coordinates" : [ [ [-88, 33.80], [-87, 33.80], [-87, 33 ], [-88, 33], [-88, 33.80] ]] };
+```
+
+```js
+db.geoal.find({ loc: { $geoIntersects: {$geometry : pole} } }).toArray()
+```
+###Wynik
+
+`4359`
