@@ -72,7 +72,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Rybarczyk, Karolina.
 1. Sawicki, Paweł.
 1. Siora, Kacper.
-1. Skiba, Marek.
+1. [Skiba, Marek](/docs/mskiba/README.md).
 1. Skowroński, Krzysztof.
 1. Smykowski, Adrian.
 1. Sott, Tomasz.
