@@ -51,7 +51,11 @@ Zadanie 1d polega na zapisaniu słów w bazie MongoDB i zliczeniu:
 - Ile procent całego pliku stanowi najczęściej występujące słowo w tym pliku
 - Ile procent całego pliku stanowi 10, 100, 1000 najczęściej występujących słów
 
+Import pliku
 
+```sh
+mongoimport --type csv -f word -d text8 -c text8 --file text8.txt
+```
 
 
 ### Zadanie 1e
