@@ -46,7 +46,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Kłeczek, Piotr.
 1. Kotłowski, Piotr.
 1. Koźmiński, Marcin.
-1. Królik, Przemysław.
+1. [Królik, Przemysław](/docs/pkrolik.md).
 1. Kubacki, Konrad.
 1. Kwiatkowski, Mateusz.
 1. Lewandowska, Marta.
