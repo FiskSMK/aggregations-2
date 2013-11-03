@@ -32,6 +32,8 @@ db.Train.count();
 ```
 
 #Zadanie 1d
+Na początku plik został przygotowany według wskazówek do zadania.
+
 Import do bazy:
 ```
 time mongoimport --type csv --fields 'slowa' --collection text  --port 12121 < text8.txt 
@@ -67,6 +69,7 @@ wynik: 253854
 db.text.aggregate({$group: {_id: "$slowa", count: {$sum: 1}}}, {$sort: {count:-1}}, {$limit: 1})
 { "result" : [ { "_id" : "the", "count" : 1061396 } ], "ok" : 1 }
 ```
+najczęściej tystępuje słowo `THE`
 ```
 całość: 17005207
 wynik: 1061396
@@ -91,7 +94,7 @@ wynik: 4205965
 ```
 db.text.aggregate(	{$group: {_id: "$slowa", count: {$sum: 1}}}, 
 					{$sort: {count:-1}}, 
-					{$limit: 10}, 
+					{$limit: 100}, 
 					{ $group: {_id: null, suma: {$sum: "$count"}}})
 { "result" : [ { "_id" : null, "suma" : 7998978 } ], "ok" : 1 }
 ```
@@ -99,6 +102,20 @@ db.text.aggregate(	{$group: {_id: "$slowa", count: {$sum: 1}}},
 całość: 17005207
 wynik: 7998978
 %: 47%
+```
+
+###top1000:
+```
+db.text.aggregate(	{$group: {_id: "$slowa", count: {$sum: 1}}}, 
+					{$sort: {count:-1}}, 
+					{$limit: 1000}, 
+					{ $group: {_id: null, suma: {$sum: "$count"}}})
+{ "result" : [ { "_id" : null, "suma" : 11433354 } ], "ok" : 1 }
+```
+```
+całość: 17005207
+wynik: 11433354
+%: 67,2%
 ```
 
 #Zadanie 1e
@@ -111,42 +128,42 @@ mongoimport -c Miasta < polska.json
 db.Miasta.ensureIndex({"loc" : "2dsphere"})
 ```
 
-###pierwsze (dla point, $near)
+##Przykłady
+###1 (dla point, $near)
 ```
 db.Miasta.find({loc: {$near: {$geometry: {type: "Point", coordinates: [21.000366210937496, 52.231163984032676]}, $maxDistance: 90000}}}).skip(1)
 ```
 
 `21.000366210937496, 52.231163984032676` - To współrzędne Warszawy. Ta komenda pokazuje wszystkie najbliższe miasta w odległości maks 90km od Warszawy. `.skip(1)` powoduje, że pierwsza wartość na liście nie zostanie wyświetlona (tą wartością jest oczywiście sama warszawa)
 
-###drugie (Polygon, $geoWithin)
+###2 (Polygon, $geoWithin)
 ```
 db.Miasta.find({loc: {$geoWithin: {$geometry: {type: "Polygon", coordinates: [[[19.259033203125, 52.3923633970718], [18.1768798828125, 51.17589926990911], 
 [19.7259521484375, 50.86144411058924], [20.5059814453125, 51.50532341149335], [20.23681640625, 52.1166256737882], [19.259033203125, 52.3923633970718]]]}}}})
 ```
 Współrzędne w tym Polygonie to mniej więcej kształt województwa łodzkiego
 
-###trzecie (LineString, $geoIntersects)
+###3 (LineString, $geoIntersects)
 ```
 db.Miasta.find({loc: {$geoIntersects: {$geometry: {type: "LineString", coordinates: [[19.010467529296875, -90],[19.010467529296875, 90]]}}}})
 ```
 `$geoIntersects` sprawdza interakcje miedzy dwoma obiektami. Tutaj szuka tego, co leży na południku `19.010467529296875` (niestety, maxDistance tu nie działa, a miara musi być dokładna, żeby cokolwiek znalazł, na tym południku leżą Katowice)
 
-###czwarte (dla point, $near)
+###4 (dla point, $near)
 ```
 db.Miasta.find({loc: {$near: {$geometry: {type: "Point", coordinates: [19.28, 52.04]}}}}).limit(3)
 ```
 Podane współrzędne to geometryczny środek polski. Wyszukujemy 3 najbliższe mu miasta.
 
-###piąte (Polygon + $geoIntersects)
+###5 (Polygon + $geoIntersects)
 ```
 db.Miasta.find({loc: {$geoIntersects: {$geometry: {type: "Polygon", coordinates: [[[19.259033203125, 52.3923633970718], [18.1768798828125, 51.17589926990911], 
 [19.7259521484375, 50.86144411058924], [20.5059814453125, 51.50532341149335], [20.23681640625, 52.1166256737882], [19.259033203125, 52.3923633970718]]]}}}})
 ```
 Wychodzi na to samo co w wersji z `$geoWithin`, czyli do wyszukania tych samych informacji można wykorzystać różne metody - tutaj szukamy teoretycznie nie tego, co jest w polygonie, a co zachodzi z nim w interakcje - czyli wychodzi na to samo w ostatecznym rozrachunku
 
-###szóste 
+###6 
 ```
 db.Miasta.find({loc: {$geoIntersects: {$geometry: {type: "LineString", coordinates: [ [18.56586456298828, 54.4448910398684], [19.948768615722656, 49.29803885147804]]}}}})
 ```
-
 sprawdzamy, czy coś leży między Sopotem a Zakopanym (w linii prostej)
