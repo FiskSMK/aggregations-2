@@ -79,7 +79,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Stefanowicz, Michał.
 1. [Szygenda, Mateusz](/docs/mszygenda.md)
 1. Tomczak, Robert.
-1. Wąsowicz, Michał.
+1. [Wąsowicz, Michał](/docs/mwasowicz.md).
 1. Winsławski, Bartłomiej.
 1. Wiśniewski, Konrad.
 1. Wiśniewski, Piotr.
