@@ -399,6 +399,257 @@ Number of processes at the same time depend on heat
 (scale down and up manually).
 Check the screens from MMS for visualization.
 
+Additionaly script removes docs with incorrect coordinates.
+
+## Adding indexes
+
+```bash
+~/repos/aggregations-2/scripts/mmalecki (maciej-malecki)
+ $ mongo nosql_course
+MongoDB shell version: 2.4.8
+connecting to: nosql_course
+> db.allstates.ensureIndex({'loc' : '2dsphere'})
+```
+
+## Geo queries
+
+### Unfortunately in db exists duplicated docs!
+
+ToDo: remove them!
+
+### Near:
+
+Point near the coordinates
+
+```bash
+> db.allstates.findOne(
+  {
+    loc :
+    { $near :
+      { $geometry :
+        {
+          type : "Point",
+          coordinates : [-147.7209857, 64.8391607]
+        }
+      },
+      $maxDistance : 1
+    }
+  })
+```
+
+```json
+{
+  "COUNTY_NAME" : "Fairbanks North Star",
+  "COUNTY_NUMERIC" : 90,
+  "DATE_CREATED" : "12/21/2012",
+  "DATE_EDITED" : "01/08/2013",
+  "ELEV_IN_FT" : 443,
+  "ELEV_IN_M" : 135,
+  "FEATURE_CLASS" : "Building",
+  "FEATURE_ID" : 2721761,
+  "FEATURE_NAME" : "Fairbanks Police Department",
+  "MAP_NAME" : "Fairbanks D-2",
+  "PRIMARY_LAT_DMS" : "645021N",
+  "PRIM_LAT_DEC" : 64.8391607,
+  "PRIM_LONG_DEC" : -147.7209857,
+  "PRIM_LONG_DMS" : "1474316W",
+  "SOURCE_LAT_DEC" : "",
+  "SOURCE_LAT_DMS" : "",
+  "SOURCE_LONG_DEC" : "",
+  "SOURCE_LONG_DMS" : "",
+  "STATE_ALPHA" : "AK",
+  "STATE_NUMERIC" : 2,
+  "_id" : ObjectId("526d0d817c0652b0b3a4c51b"),
+  "loc" : {
+    "type" : "Point",
+    "coordinates" : [
+      -147.7209857,
+      64.8391607
+    ]
+  }
+}
+```
+
+### geoWithin
+
+#### Circle
+
+Three building in circle
+
+```bash
+> db.allstates.find({
+  loc :
+    { $geoWithin :
+      { $center :
+        [[-147.7209857, 64.8391607], 1]
+      }
+    },
+    'FEATURE_CLASS' : "Building"
+  },
+  {
+    loc: 1,
+    FEATURE_NAME:1
+  }).limit(3).pretty()
+```
+
+```json
+{
+  "FEATURE_NAME" : "Ester Dome Observatory",
+  "_id" : ObjectId("526d0d807c0652b0b3a44c54"),
+  "loc" : {
+    "type" : "Point",
+    "coordinates" : [
+      -148.0527778,
+      64.8794444
+    ]
+  }
+}
+{
+  "FEATURE_NAME" : "George C. Thomas Memorial Library",
+  "_id" : ObjectId("526d0d807c0652b0b3a4bae0"),
+  "loc" : {
+    "type" : "Point",
+    "coordinates" : [
+      -147.7280556,
+      64.8447222
+    ]
+  }
+}
+{
+  "FEATURE_NAME" : "Fairbanks Fire Department Station 1",
+  "_id" : ObjectId("526d0d817c0652b0b3a4be80"),
+  "loc" : {
+    "type" : "Point",
+    "coordinates" : [
+      -147.717982,
+      64.8381587
+    ]
+  }
+}
+```
+
+#### Area
+
+Buildings in given area
+
+```bash
+ db.allstates.find(
+  {loc : 
+    { $geoWithin :
+      { $geometry :
+        {
+          type : 'Polygon',
+          coordinates : [[
+            [-147, 76],
+            [-146, 76],
+            [-146, 63],
+            [-147, 63],
+            [-147, 76]]]
+        }
+      }
+    },
+    'FEATURE_CLASS' : "Building"
+  },
+  {
+    loc: 1,
+    FEATURE_NAME:1
+  }).pretty()
+```
+
+```json
+{
+  "FEATURE_NAME" : "Council of Athabascan Tribal Governments Myra Roberts Clinic",
+  "_id" : ObjectId("526d0db67c0652b0b3c53365"),
+  "loc" : {
+    "type" : "Point",
+    "coordinates" : [
+      -146.4242909,
+      67.0173144
+    ]
+  }
+}
+{
+  "FEATURE_NAME" : "Venetie Volunteer Fire Department",
+  "_id" : ObjectId("526d0d817c0652b0b3a4bf71"),
+  "loc" : {
+    "type" : "Point",
+    "coordinates" : [
+      -146.4042317,
+      67.0150036
+    ]
+  }
+}
+{
+  "FEATURE_NAME" : "Salcha Fire and Rescue Station 2",
+  "_id" : ObjectId("526d0d817c0652b0b3a4bf4f"),
+  "loc" : {
+    "type" : "Point",
+    "coordinates" : [
+      -146.9213961,
+      64.4606792
+    ]
+  }
+}
+```
+### Intersects
+
+Buildings in given area (intersects)
+
+```bash
+ db.allstates.find(
+  {loc : 
+    { $geoIntersects :
+      { $geometry :
+        {
+          type : 'Polygon',
+          coordinates : [[
+            [-147, 76],
+            [-146, 76],
+            [-146, 63],
+            [-147, 63],
+            [-147, 76]]]
+        }
+      }
+    },
+    'FEATURE_CLASS' : "Building"
+  },
+  {
+    loc: 1,
+    FEATURE_NAME:1
+  }).pretty()
+```
+
+```json
+{
+  "FEATURE_NAME" : "Salcha Fire and Rescue Station 2",
+  "_id" : ObjectId("526d0d817c0652b0b3a4bf4f"),
+  "loc" : {
+    "type" : "Point",
+    "coordinates" : [
+      -146.9213961,
+      64.4606792
+    ]
+  }
+}
+```
+
+### LineString
+
+```bash
+> db.allstates.find({
+  loc :
+    { type :
+      "LineString",
+      coordinates : 
+        [[-146.9213961,64.4606792], [-136.9213961,54.4606792]]
+    }
+  })
+```
+
+```json
+# no results !
+```
+
 ## MMS Monitoring
 
 ### Importing
@@ -465,19 +716,20 @@ Check the screens from MMS for visualization.
 > db.allstates.stats()
 {
   "ns" : "nosql_course.allstates",
-  "count" : 6793100,
-  "size" : 7840453376,
-  "avgObjSize" : 1154.179001634011,
+  "count" : 6585884,
+  "size" : 7605870336,
+  "avgObjSize" : 1154.874628219993,
   "storageSize" : 12705017808,
   "numExtents" : 26,
-  "nindexes" : 1,
+  "nindexes" : 2,
   "lastExtentSize" : 2146426864,
-  "paddingFactor" : 1.9970000002513961,
-  "systemFlags" : 1,
+  "paddingFactor" : 1.000000000251506,
+  "systemFlags" : 0,
   "userFlags" : 0,
-  "totalIndexSize" : 220792880,
+  "totalIndexSize" : 445060560,
   "indexSizes" : {
-    "_id_" : 220792880
+    "_id_" : 218806112,
+    "loc_2dsphere" : 226254448
   },
   "ok" : 1
 }
