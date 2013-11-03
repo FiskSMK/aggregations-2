@@ -390,6 +390,12 @@ sys   0m0.008s
 ```
 ###100 słów
 
+Kod skryptu: [top-100-words.js](../../scripts/mmotel/1d/top-100-words.js)
+
+```sh
+time mongo text top-100-words.js
+```
+
 ```json
 {
   "result" : [
