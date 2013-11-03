@@ -132,11 +132,13 @@ Dwa sposoby radzenia sobie z taką sytuacją:
 Sposób 1:
 
 ```sh
-git remote add pjz90 git://github.com/pjz90/aggregation-2.git
-git fetch pjz90
-git merge pjz90/master
+git remote add miotla007 git://github.com/miotla007/aggregations-2.git
+git fetch miotla007
+git merge miotla007/master
   .. edycja .. rozwiązywanie konfliktów
-git remote rm pjz90
+git push origin master
+
+git remote rm miotla007
 ```
 
 Sposób 2 (sugerowany przez GitHub Team):
