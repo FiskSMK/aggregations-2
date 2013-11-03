@@ -127,7 +127,7 @@ ile jest różnych akcji?
   [niekompletne tłumaczenie na język polski](http://git-scm.com/book/pl).
 
 Dwa sposoby radzenia sobie z taką sytuacją:
-**This pull request can not be automatically merged**.
+**We can’t automatically merge this pull request.**
 
 Sposób 1:
 
@@ -142,12 +142,13 @@ git remote rm pjz90
 Sposób 2 (sugerowany przez GitHub Team):
 
 ```sh
-git checkout -b bbedra-master master
-git pull git://github.com/bbedra/aggregation-2.git master
+git checkout -b miotla007-master master
+git pull git://github.com/miotla007/aggregations-2.git master
 git checkout master
-git merge bbedra-master
+git merge miotla007-master
 git push origin master
-git branch -d bedra-master
+
+git branch -d miotla007-master
 ```
 
 Undo różnych rzeczy:
