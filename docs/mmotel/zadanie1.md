@@ -305,9 +305,13 @@ Ustawiając lub wykomentowując `$limit` ustalamy ilość elementów, które otr
 
 Kod skryptu: [count-words.js](../../scripts/mmotel/1d/count-words.js)
 
+####Uruchomienie
+
 ```sh
 time mongo text count-words.js
 ```
+
+####Wynik
 
 ```sh
  słów: 253854
@@ -327,9 +331,13 @@ sys   0m0.124s
 
 Kod skryptu: [top-1-word.js](../../scripts/mmotel/1d/top-1-word.js)
 
+####Uruchomienie
+ 
 ```sh
 time mongo text top-1-word.js
 ```
+
+####Wynik
 
 ```json
 { "result" : [ { "_id" : "the", "count" : 1061396 } ], "ok" : 1 }
@@ -353,9 +361,13 @@ sys   0m0.012s
 
 Kod skryptu: [top-10-words.js](../../scripts/mmotel/1d/top-10-words.js)
 
+####Uruchomienie
+ 
 ```sh
 time mongo text top-10-words.js
 ```
+
+####Wynik
 
 ```json
 {
@@ -392,9 +404,13 @@ sys   0m0.008s
 
 Kod skryptu: [top-100-words.js](../../scripts/mmotel/1d/top-100-words.js)
 
+####Uruchomienie
+ 
 ```sh
 time mongo text top-100-words.js
 ```
+
+####Wynik
 
 ```json
 {
@@ -435,9 +451,13 @@ sys   0m0.016s
 
 Kod skryptu: [top-1000-words.js](../../scripts/mmotel/1d/top-1000-words.js)
 
+####Uruchomienie
+
 ```sh
 time mongo text top-1000-words.js
 ```
+
+####Wynik
 
 ```json
 {
