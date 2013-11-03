@@ -305,13 +305,13 @@ Ustawiając lub wykomentowując `$limit` ustalamy ilość elementów, które otr
 
 Kod skryptu: [count-words.js](../../scripts/mmotel/1d/count-words.js)
 
-####Uruchomienie
+######Uruchomienie
 
 ```sh
 time mongo text count-words.js
 ```
 
-####Wynik
+######Wynik
 
 ```sh
  słów: 253854
@@ -319,7 +319,7 @@ ilość: 17005207
 część: 100%
 ```
 
-####Czasy
+######Czasy
 
 ```sh
 real  0m18.030s
@@ -331,13 +331,13 @@ sys   0m0.124s
 
 Kod skryptu: [top-1-word.js](../../scripts/mmotel/1d/top-1-word.js)
 
-####Uruchomienie
+######Uruchomienie
  
 ```sh
 time mongo text top-1-word.js
 ```
 
-####Wynik
+######Wynik
 
 ```json
 { "result" : [ { "_id" : "the", "count" : 1061396 } ], "ok" : 1 }
@@ -349,7 +349,7 @@ ilość: 1061396
 część: 6.241594118789616%
 ```
 
-Czasy
+######Czasy
 
 ```sh
 real  0m15.979s
@@ -361,13 +361,13 @@ sys   0m0.012s
 
 Kod skryptu: [top-10-words.js](../../scripts/mmotel/1d/top-10-words.js)
 
-####Uruchomienie
+######Uruchomienie
  
 ```sh
 time mongo text top-10-words.js
 ```
 
-####Wynik
+######Wynik
 
 ```json
 {
@@ -393,7 +393,7 @@ ilość: 4205965
 część: 24.733394894869555%
 ```
 
-####Czasy
+######Czasy
 
 ```sh
 real  0m16.088s
@@ -404,13 +404,13 @@ sys   0m0.008s
 
 Kod skryptu: [top-100-words.js](../../scripts/mmotel/1d/top-100-words.js)
 
-####Uruchomienie
+######Uruchomienie
  
 ```sh
 time mongo text top-100-words.js
 ```
 
-####Wynik
+######Wynik
 
 ```json
 {
@@ -439,7 +439,7 @@ część: 47.03840417820259%
 
 Pełny wynik agregacji: [tutaj](./1d/100words.txt).
 
-####Czasy
+######Czasy
 
 ```sh
 real  0m16.055s
@@ -451,13 +451,13 @@ sys   0m0.016s
 
 Kod skryptu: [top-1000-words.js](../../scripts/mmotel/1d/top-1000-words.js)
 
-####Uruchomienie
+######Uruchomienie
 
 ```sh
 time mongo text top-1000-words.js
 ```
 
-####Wynik
+######Wynik
 
 ```json
 {
@@ -485,7 +485,7 @@ część: 67.23443001899359%
 
 Pełny wynik agregacji: [tutaj](./1d/1000words.txt).
 
-####Czasy
+######Czasy
 
 ```sh
 real  0m16.109s
