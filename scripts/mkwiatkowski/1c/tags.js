@@ -1,5 +1,4 @@
 var mongo = require('mongodb');
-var mongo2 = require('mongodb');
 
 var db = new mongo.Db('train', new mongo.Server('localhost', 27017), {safe: true});
 
