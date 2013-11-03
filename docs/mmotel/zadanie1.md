@@ -303,6 +303,12 @@ Ustawiając lub wykomentowując `$limit` ustalamy ilość elementów, które otr
 
 ###Różnych słów
 
+Kod skryptu: [count-words.js](../../scripts/mmotel/1d/count-words.js)
+
+```sh
+time mongo text count-words.js
+```
+
 ```sh
  słów: 253854
 ilość: 17005207
