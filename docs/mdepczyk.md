@@ -474,6 +474,131 @@ Wynik:
 ```
 db.geo.find({ loc: {$near: {$geometry: ptk}} }).skip(1).limit(10).toArray()
 ```
+Wynik:
+```
+[
+	{
+		"_id" : ObjectId("5274f6b659756053c6350833"),
+		"id" : 1859730,
+		"name" : "Soil Conservation Service Site 19 Reservoir",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-98.8689226,
+				31.7599604
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274f6b359756053c63424c2"),
+		"id" : 1335046,
+		"name" : "Eastlawn Cemetery",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-98.9050492,
+				31.7568178
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274f6b459756053c6343399"),
+		"id" : 1338847,
+		"name" : "Jones Chapel Cemetery",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-98.9100494,
+				31.7620954
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274f6b759756053c63550f3"),
+		"id" : 2014787,
+		"name" : "Pioneer Memorial Library",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-98.8728263,
+				31.7523734
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274f6b959756053c635bd91"),
+		"id" : 2675765,
+		"name" : "Flying S Air Ranch Airport",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-98.9090467,
+				31.783621
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274f6b659756053c634cca8"),
+		"id" : 1378204,
+		"name" : "Delaware Junction",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-98.8689383,
+				31.7865392
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274f6b459756053c6343398"),
+		"id" : 1338846,
+		"name" : "Jones Chapel",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-98.9114381,
+				31.7551512
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274f6b359756053c6341679"),
+		"id" : 1331380,
+		"name" : "Brownwood Lateral Watershed Number 20",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-98.8530432,
+				31.7488501
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274f6b759756053c6351ece"),
+		"id" : 1889805,
+		"name" : "Jenkins Cemetery",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-98.8611594,
+				31.7412628
+			]
+		}
+	},
+	{
+		"_id" : ObjectId("5274f6b459756053c634330b"),
+		"id" : 1338705,
+		"name" : "Jenkings Spring",
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				-98.8575483,
+				31.7426516
+			]
+		}
+	}
+]
+```
 ```
 db.geo.find( {loc:  {$geoIntersects:  {$geometry: { type: "LineString", coordinates:  [[98.887939453125,31.77020763186669 ], [98.227939453125,31.72420763186669 ], [98.884569453125,31.33330763186669 ], [99.887939453125,31.76020763186669 ]]}}}}).count()
 ```
