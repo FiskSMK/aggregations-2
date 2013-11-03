@@ -132,7 +132,7 @@ Dwa sposoby radzenia sobie z taką sytuacją:
 Sposób 1:
 
 ```sh
-git remote add pjz90 git://github.com/pjz90/data-refine.git
+git remote add pjz90 git://github.com/pjz90/aggregation-2.git
 git fetch pjz90
 git merge pjz90/master
   .. edycja .. rozwiązywanie konfliktów
@@ -143,7 +143,7 @@ Sposób 2 (sugerowany przez GitHub Team):
 
 ```sh
 git checkout -b bbedra-master master
-git pull git://github.com/bbedra/data-refine.git master
+git pull git://github.com/bbedra/aggregation-2.git master
 git checkout master
 git merge bbedra-master
 git push origin master
