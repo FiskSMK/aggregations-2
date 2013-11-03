@@ -1,8 +1,18 @@
+# System info
+
 ## MongoDB version
 
 ```bash
 MongoDB shell version: 2.4.7
 ```
+
+## Drive
+
+SSD Sata III drive was used during the tests.
+
+# Table of content
+
+@@TOC@@
 
 ## TL;DR
 
