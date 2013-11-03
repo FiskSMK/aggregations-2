@@ -60,13 +60,13 @@ Procentowy udział słów w bazie
     <td>1</td><td>1061396</td><td>the</td><td>6,25%</td>
   </tr>
   <tr>
-    <td>10</td><td>4205965</td><td>[klik](/docs/pkotlowski/10.md)</td><td>24,73%</td>
+    <td>10</td><td>4205965</td><td>[klik!](/docs/pkotlowski/10.md)</td><td>24,73%</td>
   </tr>
  <tr>
-    <td>100</td><td>7998978</td><td>[klik](/docs/pkotlowski/100.md)</td><td>47,03%</td>
+    <td>100</td><td>7998978</td><td>[klik!](/docs/pkotlowski/100.md)</td><td>47,03%</td>
   </tr>
  <tr>
-    <td>1000</td><td>11433354</td><td>[klik](/docs/pkotlowski/1000.md)</td><td>67,23%</td>
+    <td>1000</td><td>11433354</td><td>[klik!](/docs/pkotlowski/1000.md)</td><td>67,23%</td>
   </tr>
 </table>
 
@@ -92,9 +92,9 @@ Użycie zasobów:
 
 Zaimportowano ```2251155``` rekordów
 
-Następnie należy oczyścić bazę z rekordów w niewłaściwym formacie:
+Następnie należy oczyścić bazę z rekordów w niewłaściwym formacie. Służy do tego skrypt [JavaScript!](/docs/pkotlowski/remove-geo.js)
 
-Zapytanie 1: Wszystkie obiekty w odległości ```3000``` od współżędnych ```-109.4784394,  36.4611122 ```
+Zapytanie 1: Wszystkie obiekty w odległości 3000m od współżędnych -109.4784394,  36.4611122 
 ```db.geo.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 3000} }).toArray()```
 ```json
 Agua Sal Creek
@@ -175,7 +175,8 @@ Summit
 ```
 
 Zapytanie 3: Wszystkie lotniska między Nebraska, Omaha, Indianapolis oraz Chicago
-```db.geo.find( { loc :
+```
+db.geo.find( { loc :
                   { $geoWithin :
                     { $geometry :
                       { type : "Polygon" ,
@@ -184,16 +185,18 @@ Zapytanie 3: Wszystkie lotniska między Nebraska, Omaha, Indianapolis oraz Chica
 			type: "Airport"} )
 ```
 
-Rezultat: [klik](/docs/pkotlowski/lotniska.md
+Rezultat: [klik!](/docs/pkotlowski/lotniska.md)
 
 Zapytanie 4: Wszystkie obiekty między Churchil Peaks a Mount Saint Elias
-```db.geo.find( {loc: 
+```
+db.geo.find( {loc: 
 	{$geoIntersects: 
 		{$geometry: 
 			{type: "LineString", coordinates: [ [ -140.928976, 60.293754], [-151.0060501, 63.0693461] ]}}}})
 ```
 Zapytanie 5: Wszystkie kopalnie leżące do 50km od Las Vegas położone na wysokości co najmniej 2000m
-```db.geo.find({ loc: 
+```
+db.geo.find({ loc: 
 	{$near: 
 		{$geometry: 
 			{type: "Point", coordinates: [-115.1522,36.0800]}}, 
