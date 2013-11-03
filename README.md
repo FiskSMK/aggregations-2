@@ -127,7 +127,7 @@ ile jest różnych akcji?
   [niekompletne tłumaczenie na język polski](http://git-scm.com/book/pl).
 
 Dwa sposoby radzenia sobie z taką sytuacją:
-**This pull request can be automatically merged**.
+**This pull request can not be automatically merged**.
 
 Sposób 1:
 
