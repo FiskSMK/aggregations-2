@@ -139,3 +139,9 @@ db.text8.aggregate(
  
  Rezultat: 235
  ```
+ <p>Wszystkie szkoły wyższe znajdujące się w Gdańsku</p>
+ ```bash
+ db.schools.find({miasto: /Gda/}, {_id: 0}).count()
+ 
+ Rezultat: 10
+ ```
