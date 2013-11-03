@@ -351,6 +351,12 @@ sys   0m0.012s
 
 ###10 słów
 
+Kod skryptu: [top-10-words.js](../../scripts/mmotel/1d/top-10-words.js)
+
+```sh
+time mongo text top-10-words.js
+```
+
 ```json
 {
   "result" : [
