@@ -311,7 +311,41 @@ Ofcourse it is possible to re-write it and use more threads.
 
 ![mms-monitoring-text8-status](../../images/mmalecki/mms-status-text8-counting.png)
 
-# Geo...
+# Geo data
+
+## Info
+
+This is database of "Domestic and Antarctic Names - State and Topical Gazetteer"
+provided by usgs.gov.
+
+### Sample document (after EDA)
+
+```json
+{
+  "COUNTY_NAME" : "Fairbanks North Star",
+  "COUNTY_NUMERIC" : 90,
+  "DATE_CREATED" : "01/01/2000",
+  "DATE_EDITED" : "",
+  "ELEV_IN_FT" : 440,
+  "ELEV_IN_M" : 134,
+  "FEATURE_CLASS" : "School",
+  "FEATURE_ID" : 1397645,
+  "FEATURE_NAME" : "Barnette School",
+  "MAP_NAME" : "Fairbanks D-2",
+  "PRIMARY_LAT_DMS" : "645019N",
+  "PRIM_LAT_DEC" : 64.8386111,
+  "PRIM_LONG_DEC" : -147.7275,
+  "PRIM_LONG_DMS" : "1474339W",
+  "SOURCE_LAT_DEC" : "",
+  "SOURCE_LAT_DMS" : "",
+  "SOURCE_LONG_DEC" : "",
+  "SOURCE_LONG_DMS" : "",
+  "STATE_ALPHA" : "AK",
+  "STATE_NUMERIC" : 2,
+  "_id" : ObjectId("526d0d807c0652b0b3a43c4d")
+  }
+}
+```
 
 ## Download and decompress the database
 
