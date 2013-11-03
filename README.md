@@ -100,7 +100,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
   "displayName": "",
   "title": "The Dark Knight",
   "timestamp": "2008-10-28T16:47:31Z",
-  "image": "http://ia.media-imdb.com/images/M/MV5BMTIzMDc4MzA2Ml5BMl5BanBnXkFtZTcwODU0MzA3MQ@@._V1._SX94_SY140_.jpg",
+  "image": "http://ia.media-imdb.com/images/...@@._V1._SX94_SY140_.jpg",
   "userId": "sippey",
   "private": "false",
   "director": "Christopher Nolan",
