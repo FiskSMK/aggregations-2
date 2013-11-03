@@ -12,9 +12,44 @@ SSD Sata III drive was used during the tests.
 
 # Table of content
 
-@@TOC@@
+- [System info](#system-info)
+    - [MongoDB version](#mongodb-version)
+    - [Drive](#drive)
+- [TL;DR](#tldr)
+- [Train](#train)
+    - [Preparing data](#preparing-data)
+    - [Importing prepared data from csv to mongodb](#importing-prepared-data-from-csv-to-mongodb)
+    - [Converting tags from string to array](#converting-tags-from-string-to-array)
+    - [Counting tags](#counting-tags)
+    - [MMS Monitoring](#mms-monitoring)
+- [Text8](#text8)
+    - [Early EDA:](#early-eda)
+    - [Import to MongoDB](#import-to-mongodb)
+    - [Counting words](#counting-words)
+    - [Counting "percents of"](#counting-percents-of)
+    - [MMS Monitoring](#mms-monitoring)
+- [Geo data](#geo-data)
+    - [Info](#info)
+        - [Sample document (after EDA)](#sample-document-after-eda)
+    - [Download and decompress the database](#download-and-decompress-the-database)
+    - [Early EDA](#early-eda)
+    - [Import to MongoDB](#import-to-mongodb)
+    - [Creating mongo points from lat/lng fields](#creating-mongo-points-from-latlng-fields)
+    - [Adding indexes](#adding-indexes)
+    - [Geo queries](#geo-queries)
+        - [Near:](#near)
+        - [geoWithin](#geowithin)
+            - [Circle](#circle)
+            - [Area](#area)
+        - [Intersects](#intersects)
+        - [LineString](#linestring)
+    - [MMS Monitoring](#mms-monitoring)
+- [Collections stats..](#collections-stats)
+    - [Train](#train)
+    - [text8](#text8)
+    - [Geo](#geo)
 
-## TL;DR
+# TL;DR
 
 * 1a
 
