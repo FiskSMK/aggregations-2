@@ -107,3 +107,21 @@ db.text8.aggregate(
  Stanowi: 47,03%
  Czas: 22 sekundy
  ```
+<p> 1000 najczęściej występujących słów</p>
+ ```js
+ var start = new Date().getTime();
+
+ db.text8.aggregate(
+	 {$group:{ _id:"$word", count:{$sum:1}}}, 
+	 {$sort: {count: -1}}, 
+	 {$limit:1000})
+
+ var end = new Date().getTime();
+ var time = end - start;
+ print(time);
+ ```
+ ```js
+ Rezultat: 11433354
+ Stanowi: 67,23%
+ Czas: 25 sekundy
+ ```
