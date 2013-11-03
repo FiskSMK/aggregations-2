@@ -415,14 +415,13 @@ time mongo text top-100-words.js
 }
 ```
 
-Pełny wynik agregacji: [tutaj](./1d/100words.txt).
-
-
 ```sh
  słów: 100
 ilość: 7998978
 część: 47.03840417820259%
 ```
+
+Pełny wynik agregacji: [tutaj](./1d/100words.txt).
 
 ####Czasy
 
@@ -433,6 +432,11 @@ sys   0m0.016s
 ```
 
 ###1000 słów
+
+Kod skryptu: [top-1000-words.js](../../scripts/mmotel/1d/top-1000-words.js)
+
+```sh
+time mongo text top-1000-words.js
 
 ```json
 {
@@ -452,14 +456,13 @@ sys   0m0.016s
   "ok" : 1
 }
 ```
-
-Pełny wynik agregacji: [tutaj](./1d/1000words.txt).
-
 ```sh
  słów: 1000
 ilość: 11433354
 część: 67.23443001899359%
 ```
+
+Pełny wynik agregacji: [tutaj](./1d/1000words.txt).
 
 ####Czasy
 
