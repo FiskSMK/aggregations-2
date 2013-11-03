@@ -27,3 +27,11 @@ $time ./2unix.sh Train.csv NewTrain.csv
   user  2m1.447s
   sys   0m16.141s
 ```  
+
+* b) 
+
+##### Zliczyć liczbę zaimportowanych rekordów
+```
+db.questions.count()
+6034195
+```
