@@ -1,1 +1,1 @@
-[Zadanie 1] (/docs/tsott.md)
+[Zadanie 1] (https://github.com/tsott/aggregations-2/blob/master/docs/tsott.md)
