@@ -72,7 +72,7 @@ switched to db train
 
 ###Wyniki z MongoDB Management Service
 
-![mms-results](../../../../images/mmotel/1a-import-mms.png)
+![mms-results](../../images/mmotel/1a-import-mms.png)
 
 ***
 
@@ -98,13 +98,13 @@ if(item.Tags.constructor !== Array){
 
 Do rozwiązania zadania użyłem skryptu `JavaScript` uruchamianego na serwerze [`Node.JS`](http://nodejs.org/) w wersji `0.10.21`, który korzysta ze sterownika [`The Node.JS MongoDB Driver`](http://mongodb.github.io/node-mongodb-native/) w wersji `1.3.19`.
 
-Kod skryptu: [convert-tags.js](../../../../scripts/mmotel/1c/convert-tags.js).
+Kod skryptu: [convert-tags.js](../../scripts/mmotel/1c/convert-tags.js).
 
 ####Instalacja
 
 Do uruchowienia skryptu potrzebujemy `Node.JS` w najnowszej wersji. Instrukcja instalacji pod `Linuxem`: [link](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
 
-Instalujemy pakiety (w tym wypadku sam sterownik do mongo) zawarte w pliku [`package.json`](../../../../scripts/mmotel/1c/package.json):
+Instalujemy pakiety (w tym wypadku sam sterownik do mongo) zawarte w pliku [`package.json`](../../scripts/mmotel/1c/package.json):
 
 ```sh
 npm install
@@ -175,14 +175,14 @@ W ciągu `13m1.030s` wykonano `6 034 195` aktualizacji. Co średnio daje `~7 726
 
 `**` Czerwona linia oznacza wykonanie restartu bazy danych.
 
-![mms-results1](../../../../images/mmotel/1c-converting-tags-mms2.png)
+![mms-results1](../../images/mmotel/1c-converting-tags-mms2.png)
 
 
 ##Rozwiązanie `powłoka Mongo`
 
 Do rozwiązania zadania użyłem również skryptu `JavaScript` uruchamianego na powłoce `Mongo`. 
 
-Kod skryptu: [mongo-convert-tags.js](../../../../scripts/mmotel/1c/mongo-convert-tags.js).
+Kod skryptu: [mongo-convert-tags.js](../../scripts/mmotel/1c/mongo-convert-tags.js).
 
 ####Uruchomienie
 
