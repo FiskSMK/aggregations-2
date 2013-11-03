@@ -19,14 +19,7 @@ Plik `Train.csv` zawiera znaki nowej linii (`\n`) w polach . Należy to naprawi�
 cat Train.csv | tr "\n" " " | tr "\r" "\n" | head -n 6034196 > Train_prepared.csv
 ```
 
-Plik powinien zawierać `6 034 196` linii. Jak można sprawdzić wykonująć:
-
-```sh
-wc -l Train_prepared.csv
-6043196 Train_prepared.csv
-```
-
-Jest ok. Gdy mamy już poprawny plik `.csv` robimy import do bazy.
+Gdy mamy już poprawny plik `.csv` robimy import do bazy.
 
 ##Import
 
