@@ -3,7 +3,7 @@
 ----
 
 ## Zadanie 1
-### a)
+### a) Import danych z pliku CSV do bazy danych
 Import za pomocą:
 ```
 time mongoimport -d zadanie -c zadanie -type csv -file ~/Pulpit/Train.csv --headerline
@@ -18,7 +18,7 @@ sys	0m34.514s
 ```
 Użycie zasobów:
 ![img](http://i44.tinypic.com/4tn5li.png)
-### b)
+### b) Zliczanie ilośći zaimportowanych rekordów
 ```
 db.zadanie.count();
 ```
@@ -26,9 +26,21 @@ rezultat:
 ```
 6034195
 ```
-### c)
+### c) Zamienić string z tagami na tablice stringów
 
-### d)
+[Skrypt](/docs/pkotlowski/fix_train.js) do zamieniania stringów na tablice
+
+Wynik:
+```
+Razem tagów: 17408733
+Unikalnych tagów: 42048
+
+real    18m4.539s
+user    3m12.759s
+sys 0m35.100s
+```
+
+### d) Import z pliku do bazy danych
 Import za pomocą:
 ```
 time mongoimport --type csv -f word -d text8 -c text8 --file ./text8.txt
@@ -74,8 +86,10 @@ Procentowy udział słów w bazie
   </tr>
 </table>
 
-### e)
+### e) Import geoJSON'ów do bazy danych.
 Dane pochodzą z http://geonames.usgs.gov/docs/stategaz/NationalFile_20131020.zip
+
+Na początek należy zamienić ```|``` na ```,```. Wykorzystałem do tego leafpada ```find and replace```
 
 Import za pomocą:
 ```
