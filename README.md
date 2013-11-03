@@ -57,7 +57,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Melzer, Grzegorz.
 1. Mieszała, Konrad.
 1. [Motel, Mateusz](/docs/mmotel.md).
-1. Motławski, Mateusz.
+1. [Motławski, Mateusz](/docs/mmotlawski/README.md).
 1. Napiórkowski, Sebastain.
 1. Osękowski, Dominik.
 1. [Osiński, Miłosz](/docs/mosinski/README.md).
