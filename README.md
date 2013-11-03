@@ -2,8 +2,7 @@
 
 ![Data Wranglers](/images/data-wrangler.jpg)
 
-Należy przygotować 4–5 aggregacji.
-Do aggregacji można wykorzystać swoje lub te kolekcje:
+Do aggregacji można wykorzystać te kolekcje:
 
 * *census1881*
 * *zipcodes*, [przykładowe agregacje](/Aggregation-Framework-Examples-in-Javascript.md)
@@ -18,73 +17,108 @@ wirtualnej. Do maszyny logujemy się w ten sposób:
 mongo --username student --password sesja2013 153.19.1.202/test
 ```
 
-Po zalogowaniu powinniśmy wykonujemy kilka poleceń. Przykładowo:
-
-```js
-db                        // test
-db.census1881.count()     // 4_277_807 rekordów
-db.zipcodes.count()       //    29_467
-db.kody_pocztowe.count()  //   140_076
-db.imieniny.count()       //       364
-db.airports.count()       //    44_980
-db.census1881.findOne()
-// {
-//   "_id": ObjectId("51630b8b31f30759f2f32061"),
-//   "last": "richard",
-//   "first": "joseph",
-//   "age": 40,
-//   "religion": "catholic"
-// }
-```
-
 *Uwaga:* Użytkownik *student* ma uprawnienia tylko do odczytu w bazie  *test*.
 
 
 ## Nasze agregacje
 
-1. Włodzimierz Bzyl, [Imieniny](/docs/anon.md),
-   [Open Street Map Data dla Polski](/docs/osm.md),
-   [GeoBytes](/docs/geobytes.md) – państwa i miasta.
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
-1. –
+1. Bzyl, Włodzimierz. [Imieniny](/docs/wbzyl.md).
+1. Bełcik, Jakub.
+1. Białkowski, Dominik.
+1. Brzeziński, Damian.
+1. Cała, Mariusz.
+1. [Dermont, Jacek](/docs/jdermont.md).
+1. Detlaf, Krzysztof.
+1. Dępczyk, Michał.
+1. Dobrzycki, Wojciech.
+1. Dolata, Jędrzej.
+1. Domurat, Szymon.
+1. Duwe, Oskar.
+1. Elszkowski, Adrian.
+1. Gałka, Jacek.
+1. Głowacki, Michał.
+1. Gniado, Bartosz.
+1. Groszek, Rafał.
+1. Januszewski, Tomasz.
+1. Jaźwiński, Robert.
+1. Karczewski, Kamil.
+1. [Karwowski, Kamil](/docs/kkarwowski.md).
+1. Kłeczek, Piotr.
+1. Kotłowski, Piotr.
+1. Koźmiński, Marcin.
+1. [Królik, Przemysław](/docs/pkrolik.md).
+1. Kubacki, Konrad.
+1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md)
+1. Lewandowska, Marta.
+1. Łuczun, Rafał.
+1. Malinowski, Piotr.
+1. [Małecki, Maciej](/docs/mmalecki/README.md).
+1. Matulewski, Damian.
+1. Melzer, Grzegorz.
+1. Mieszała, Konrad.
+1. [Motel, Mateusz](/docs/mmotel/zadanie1.md).
+1. Motławski, Mateusz.
+1. Napiórkowski, Sebastain.
+1. Osękowski, Dominik.
+1. [Osiński, Miłosz](/docs/mosinski/README.md).
+1. Ostrowski, Michał.
+1. [Paczyński, Łukasz](/docs/lpaczynski/README.md).
+1. Piasecka, Aleksandra.
+1. Pietraszuk, Bartłomiej.
+1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
+1. Plichta, Oskar.
+1. [Puchalski, Paweł](/docs/ppuchalski/README.md).
+1. Rogaszewski, Piotr.
+1. Rybarczyk, Karolina.
+1. Sawicki, Paweł.
+1. Siora, Kacper.
+1. [Skiba, Marek](/docs/mskiba/README.md).
+1. Skowroński, Krzysztof.
+1. Smykowski, Adrian.
+1. Sott, Tomasz.
+1. Stefanowicz, Michał.
+1. [Szygenda, Mateusz](/docs/mszygenda.md)
+1. Tomczak, Robert.
+1. Wąsowicz, Michał.
+1. Winsławski, Bartłomiej.
+1. Wiśniewski, Konrad.
+1. Wiśniewski, Piotr.
+1. Zdunek, Kamil.
+1. Żarkowski, Mateusz.
+
+
+## BigData
+
+[GetGlue and Timestamped Event Data](http://getglue-data.s3.amazonaws.com/getglue_sample.tar.gz)
+(ok. 11 GB, 19_831_300 json-ów, próbka 100 jsonów [getglue101](/data/wbzyl/getglue101.json)):
+
+```json
+{
+  "_id": ObjectId("5276918832cf3c2b84540440"),
+  "comment": "",
+  "modelName": "movies",
+  "displayName": "",
+  "title": "The Dark Knight",
+  "timestamp": "2008-10-28T16:47:31Z",
+  "image": "http://ia.media-imdb.com/images/...@@._V1._SX94_SY140_.jpg",
+  "userId": "sippey",
+  "private": "false",
+  "director": "Christopher Nolan",
+  "source": "http://www.imdb.com/title/tt0468569/",
+  "version": "1",
+  "link": "http://www.imdb.com/title/tt0468569/",
+  "lastModified": "2011-12-16T19:39:33Z",
+  "action": "Liked",
+  "lctitle": "the dark knight",
+  "objectKey": "movies/dark_knight/christopher_nolan"
+}
+```
+
+Dane z lat 2007–2012, tylko filmy i przedstawienia TV.
+
+Przykładowe aggregacje i zliczania: ilu jest różnych użytkowników
+w danych? jakie jest 10 najpopularniejszych filmów i przedstawień TV?
+ile jest różnych akcji?
 
 
 ## Ściąga z Gita
@@ -93,27 +127,30 @@ db.census1881.findOne()
   [niekompletne tłumaczenie na język polski](http://git-scm.com/book/pl).
 
 Dwa sposoby radzenia sobie z taką sytuacją:
-**This pull request can be automatically merged**.
+**We can’t automatically merge this pull request.**
 
 Sposób 1:
 
 ```sh
-git remote add pjz90 git://github.com/pjz90/data-refine.git
-git fetch pjz90
-git merge pjz90/master
+git remote add miotla007 git://github.com/miotla007/aggregations-2.git
+git fetch miotla007
+git merge miotla007/master
   .. edycja .. rozwiązywanie konfliktów
-git remote rm pjz90
+git push origin master
+
+git remote rm miotla007
 ```
 
 Sposób 2 (sugerowany przez GitHub Team):
 
 ```sh
-git checkout -b bbedra-master master
-git pull git://github.com/bbedra/data-refine.git master
+git checkout -b miotla007-master master
+git pull git://github.com/miotla007/aggregations-2.git master
 git checkout master
-git merge bbedra-master
+git merge miotla007-master
 git push origin master
-git branch -d bedra-master
+
+git branch -d miotla007-master
 ```
 
 Undo różnych rzeczy:

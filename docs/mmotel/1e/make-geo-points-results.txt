@@ -1,0 +1,195 @@
+MongoDB shell version: 2.4.7
+connecting to: geony
+{
+	"_id" : ObjectId("527173ec5ac806a1e7c8ebc6"),
+	"id" : 963754,
+	"name" : "Saint Joseph's College",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			40.6906585,
+			"0735805W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ec5ac806a1e7c8f00e"),
+	"id" : 964854,
+	"name" : "Saint Joseph's College",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			40.77583,
+			"0730131W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ed5ac806a1e7c91884"),
+	"id" : 975804,
+	"name" : "Wellsville Municipal Airport",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			42.1114775,
+			"0775929W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ed5ac806a1e7c92efd"),
+	"id" : 2063208,
+	"name" : "Monica A and Charles A Heinbold",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			40.9344444,
+			"0735046W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ed5ac806a1e7c93859"),
+	"id" : 2076672,
+	"name" : "Long Island Museum of American Art",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			40.9116667,
+			"0730830W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ed5ac806a1e7c93c4b"),
+	"id" : 2080375,
+	"name" : "Math",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			"0734446W",
+			"404154N"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ed5ac806a1e7c93d4f"),
+	"id" : 2080738,
+	"name" : "New York Studio School of Drawing",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			40.7322222,
+			"0735950W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ed5ac806a1e7c93e6b"),
+	"id" : 2081503,
+	"name" : "Saint Paul's",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			"0735938W",
+			"404115N"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ed5ac806a1e7c93f78"),
+	"id" : 2082146,
+	"name" : "High School of Enterprise",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			40.7119444,
+			"0735619W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ed5ac806a1e7c94061"),
+	"id" : 2082828,
+	"name" : "High School for Mathmatics",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			40.8161111,
+			"0735701W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ee5ac806a1e7c94501"),
+	"id" : 2092015,
+	"name" : "Science",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			40.6494444,
+			"0735725W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ee5ac806a1e7c95529"),
+	"id" : 2367532,
+	"name" : "Columbia Secondary School For Math",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			40.8105556,
+			"0735721W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ee5ac806a1e7c95531"),
+	"id" : 2367630,
+	"name" : "Archimedes Academy For Math",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			40.8152778,
+			"0735123W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ee5ac806a1e7c958ca"),
+	"id" : 2374231,
+	"name" : "University at Albany",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			42.6861111,
+			"0734925W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173ee5ac806a1e7c96aa4"),
+	"id" : 2419912,
+	"name" : "Bridge 8",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			42.8504,
+			"0735316W"
+		]
+	}
+}
+{
+	"_id" : ObjectId("527173f05ac806a1e7c9b34e"),
+	"id" : 2712491,
+	"name" : "New York Public Library Science",
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			40.7480556,
+			"0735859W"
+		]
+	}
+}
+16
