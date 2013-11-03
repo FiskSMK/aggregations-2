@@ -53,5 +53,4 @@ MongoDB version: 2.5.3
     * #### Zliczanie slow
     ```bash
         >db.text8.count()
-    
     ```
