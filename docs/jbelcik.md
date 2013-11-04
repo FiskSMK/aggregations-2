@@ -42,16 +42,14 @@ z pliku Train.csv bazy:
 	* PostgreSQL – opcjonalnie dla znających fanów SQL
 ```
 
-Aby plik Train.csv został poprawnie zaimportowany do bazy danych trzeba usunąć znaki nowej linii. Zrobi do za nas skrypt dostępny w repozytorium prowadzącego.
+Aby plik Train.csv został poprawnie zaimportowany do bazy danych trzeba usunąć znaki nowej linii. Zrobi to za nas [skrypt](../scripts/wbzyl/2unix.sh) dostępny w repozytorium prowadzącego.
 ```sh
 $ time ./2unix.sh Train.csv trainProper.csv
 
 real    11m30.359s
 user    2m47.605s
 sys     1m43.721s
-```
 
-```sh
 $ time mongoimport -d dataBase -c train --type csv --file trainProper.csv --headerline
 
 real    15m50.589s
@@ -73,7 +71,6 @@ MongoDB shell version: 2.4.7
 connecting to: dataBase
 
 > db.train.count()
-
 6034195
 ```
 
@@ -94,6 +91,40 @@ liczbę różnych słów w tym pliku. Ile procent całego pliku stanowi:
 
 	* najczęściej występujące słowo w tym pliku
 	* 10, 100, 1000 najczęściej występujących słów w tym pliku
+```
+
+```sh
+$ tr --delete '[:alnum:][:blank:]' < text8 > deleted.txt
+
+$ ls -l deleted.txt
+-rw-r--r-- 1 froggman None 0 11-04 19:55 deleted.txt
+
+$ rm deleted.txt
+
+$ wc text8
+        0  17005207 100000000 text8
+
+$ tr --squeeze-repeats '[:blank:]' '\n' < text8 > text8.txt
+
+$ wc text8.txt
+ 17005207  17005207 100000000 text8.txt
+ 
+$ time mongoimport -d text8 -c text8 -f word --type csv --file text8.txt
+
+real    6m8.782s
+user    0m0.000s
+sys     0m0.015s
+
+$ mongo
+
+MongoDB shell version: 2.4.7
+connecting to: text8
+
+> db.text8.count()
+17005207
+
+> db.text8.distinct("word").length
+253854
 ```
 
 ---
