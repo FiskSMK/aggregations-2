@@ -1,5 +1,3 @@
-Zadania
-
 ![Data Wranglers](/images/data-wrangler.jpg)
 
 Do aggregacji można wykorzystać te kolekcje:
