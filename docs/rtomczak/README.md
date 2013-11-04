@@ -99,3 +99,9 @@ MongoDB version: 2.5.3
     > top1000Percent
     67.23443001899359 
     ```
+    
+* e
+
+    #### GeoJSON
+    
+    Obiekty do bazy z użyciem GeoJSON'ow pobrałem ze strony [usgs](http://geonames.usgs.gov/domestic/download_data.htm)
