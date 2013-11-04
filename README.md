@@ -49,7 +49,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Królik, Przemysław](/docs/pkrolik.md).
 1. Kubacki, Konrad.
 1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md)
-1. Lewandowska, Marta.
+1. [Lewandowska, Marta] (/docs/mlewandowska.md)
 1. Łuczun, Rafał.
 1. Malinowski, Piotr.
 1. [Małecki, Maciej](/docs/mmalecki/README.md).
