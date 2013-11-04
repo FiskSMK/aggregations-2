@@ -33,7 +33,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Dobrzycki, Wojciech.
 1. Dolata, Jędrzej.
 1. Domurat, Szymon.
-1. Duwe, Oskar.
+1. [Duwe, Oskar](/docs/oduwe.md).
 1. Elszkowski, Adrian.
 1. Gałka, Jacek.
 1. Głowacki, Michał.
