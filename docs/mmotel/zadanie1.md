@@ -84,6 +84,7 @@ if(item.Tags.constructor !== Array){
   } else {
     tagsSplited.push(item.Tags);
   }
+  item.Tags = tagsSplited;
 }
 ```
 
