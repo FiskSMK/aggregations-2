@@ -165,12 +165,6 @@ sys   0m10.816s
 
 W ciągu `13m1.030s` wykonano `6 034 195` aktualizacji. Co średnio daje `~7 726` aktualizacji na sekundę.
 
-####Wyniki z MongoDB Management Service
-
-`**` Czerwona linia oznacza wykonanie restartu bazy danych.
-
-![mms-results1](../../images/mmotel/1c-converting-tags-mms2.png)
-
 
 ##Rozwiązanie `powłoka Mongo`
 
@@ -228,8 +222,21 @@ sys   0m14.732s
 
 W ciągu `18m46.243s` wykonano `6 034 195` aktualizacji. Co średnio daje `~5 358` aktualizacji na sekundę.
 
+##Zlicznone tagi
 
-####Wyniki z MongoDB Management Service
+Surowy wynik: [tutaj](./1c/raw-tags.txt)
+
+Posortowany wynik: [tutaj](./1c/sorted-tags.txt)
+
+##Wyniki z MongoDB Management Service
+
+####`Node.JS`
+
+`**` Czerwona linia oznacza wykonanie restartu bazy danych.
+
+![mms-results1](../../images/mmotel/1c-converting-tags-mms2.png)
+
+####`Powłoka Mongo`
 
 ![mms-results2](../../images/mmotel/1c-converting-tags-mms.png)
 
