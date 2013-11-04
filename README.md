@@ -73,7 +73,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Sawicki, Paweł.
 1. [Siora, Kacper](/docs/ksiora/README.md).
 1. [Skiba, Marek](/docs/mskiba/README.md).
-1. Skowroński, Krzysztof.
+1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md).
 1. Smykowski, Adrian.
 1. Sott, Tomasz.
 1. Stefanowicz, Michał.
