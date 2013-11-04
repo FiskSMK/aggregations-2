@@ -40,4 +40,14 @@ sys     0m24.430s
 ```
 Po zaimportowaniu pliku, folder gdzie MongoDB trzyma bazy (*/var/lib/mongodb*), urusł z 3,3GB do 16GB
 
-![1a_mms.png](../../images/mskiba/1a_mms.png)
+![Wykresy z MMS po wykonaniu zadania 1a](../../images/mskiba/1a_mms.png)
+
+#### Zadanie 1b) Liczba zaimportowanych rekordów
+Odpowiedź: 6 034 195
+```sh
+$ mongo
+MongoDB shell version: 2.4.8
+connecting to: test
+> db.Train.count()
+6034195
+```
