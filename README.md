@@ -17,7 +17,7 @@ wirtualnej. Do maszyny logujemy się w ten sposób:
 mongo --username student --password sesja2013 153.19.1.202/test
 ```
 
-*Uwaga:* Użytkownik *student* ma uprawnienia tylko do odczytu w bazie  *test*.
+*Uwaga:* Użytkownik *student* ma uprawnienia tylko do odczytu w bazie  *test*.
 
 
 ## Nasze agregacje
@@ -90,7 +90,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 ## BigData (+1M)
 
 [GetGlue and Timestamped Event Data](http://getglue-data.s3.amazonaws.com/getglue_sample.tar.gz)
-(ok. 11 GB, 19_831_300 json-ów, próbka 100 jsonów [getglue101](/data/wbzyl/getglue101.json)):
+(ok. 11 GB, 19_831_300 json-ów, próbka 100 jsonów [getglue101](/data/wbzyl/getglue101.json)):
 
 ```json
 {
@@ -117,7 +117,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 Dane z lat 2007–2012, tylko filmy i przedstawienia TV.
 
 Przykładowe aggregacje i zliczania: ilu jest różnych użytkowników
-w danych? jakie jest 10 najpopularniejszych filmów i przedstawień TV?
+w danych? jakie jest 10 najpopularniejszych filmów i przedstawień TV?
 ile jest różnych akcji?
 
 
