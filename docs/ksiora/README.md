@@ -4,7 +4,7 @@ Intel i5-430M 2,26 GHz 4 rdzenie
 4 GB RAM
 MongoDB shell version: 2.4.8
 ```
-Do mierzenia czasu użyłem pliku wsadowego [timer.cmd](https://github.com/nosql/aggregations-2/blob/master/scripts/ksiora/timer.cmd).
+Do mierzenia czasu użyłem pliku wsadowego [timer.cmd](https://github.com/Siorski/aggregations-2/blob/master/scripts/ksiora/timer.cmd).
 
 ## 1a
 Do przygotowania pliku train.csv użyłem skrtyptu [2unix.bash](https://github.com/nosql/aggregations-2/blob/master/scripts/wbzyl/2unix.sh).
@@ -30,7 +30,7 @@ Rezultat:
 ```
 
 ## 1c
-Użyłem skryptu [convert.js](https://github.com/nosql/aggregations-2/blob/master/scripts/ksiora/convert.js).
+Użyłem skryptu [convert.js](https://github.com/Siorski/aggregations-2/blob/master/scripts/ksiora/convert.js).
 
 ![img](http://i42.tinypic.com/mc9dox.png)
 
