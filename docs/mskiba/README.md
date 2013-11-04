@@ -40,4 +40,4 @@ sys     0m24.430s
 ```
 Po zaimportowaniu pliku, folder gdzie MongoDB trzyma bazy (*/var/lib/mongodb*), urusł z 3,3GB do 16GB
 
-![1a_mms.png](../images/mskiba/1a_mms.png)
+![1a_mms.png](../../images/mskiba/1a_mms.png)
