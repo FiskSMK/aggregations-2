@@ -1,6 +1,15 @@
 ### *Jakub Bełcik*
 
-----
+---
+
+[Dane techniczne](#dane-techniczne)
+[Zadanie 1a](#zadanie-1a)
+[Zadanie 1b](#zadanie-1b)
+[Zadanie 1c](#zadanie-1c)
+[Zadanie 1d](#zadanie-1d)
+[Zadanie 1e](#zadanie-1e)
+
+---
 
 ### Dane Techniczne
 
@@ -32,7 +41,7 @@ Zadanie 1a polega na zaimportowaniu, do systemów baz danych uruchomionych na sw
     PostgreSQL – opcjonalnie dla znających fanów SQL
 ```
 
-Aby plik Train.csv został poprawnie zaimportowany do bazy danych trzeba usunąć znaki nowej linii. Zrobi do za nas skrypt dostępny w repozytorium prowadzącego
+Aby plik Train.csv został poprawnie zaimportowany do bazy danych trzeba usunąć znaki nowej linii. Zrobi do za nas skrypt dostępny w repozytorium prowadzącego.
 ```sh
 $ time ./2unix.sh Train.csv trainProper.csv
 
@@ -66,3 +75,15 @@ connecting to: dataBase
 
 6034195
 ```
+
+---
+
+### Zadanie 1c
+
+---
+
+### Zadanie 1d
+
+---
+
+### Zadanie 1e
