@@ -21,6 +21,7 @@ sys 	0m11.820s
 zaimportowało 6034195 obiektów
 
 * zadanie 1b
+
 ```sh
 db.train.count()
 ```
