@@ -35,10 +35,11 @@ Baza Danych:
 
 ### Zadanie 1a
 ```
-Zadanie 1a polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych z pliku Train.csv bazy:
+Zadanie 1a polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych
+z pliku Train.csv bazy:
 
-    MongoDB
-    PostgreSQL – opcjonalnie dla znających fanów SQL
+	* MongoDB
+	* PostgreSQL – opcjonalnie dla znających fanów SQL
 ```
 
 Aby plik Train.csv został poprawnie zaimportowany do bazy danych trzeba usunąć znaki nowej linii. Zrobi do za nas skrypt dostępny w repozytorium prowadzącego.
@@ -79,11 +80,28 @@ connecting to: dataBase
 ---
 
 ### Zadanie 1c
+```
+(Zamiana formatu danych.) Zamienić string zawierający tagi na tablicę napisów z tagami następnie zliczyć
+wszystkie tagi i wszystkie różne tagi. Napisać program, który to zrobi korzystając z jednego ze sterowników.
+```
 
 ---
 
 ### Zadanie 1d
+```
+Ściągnąć plik text8.zip, zapisać wszystkie słowa w bazie MongoDB. Następnie zliczyć liczbę słów oraz
+liczbę różnych słów w tym pliku. Ile procent całego pliku stanowi:
+
+	* najczęściej występujące słowo w tym pliku
+	* 10, 100, 1000 najczęściej występujących słów w tym pliku
+```
 
 ---
 
 ### Zadanie 1e
+```
+Wyszukać w sieci dane zawierające obiekty GeoJSON. Zapisać dane w bazie MongoDB. Dla zapisanych
+danych przygotować 6–9 różnych Geospatial Queries (co najmniej po jednym dla obiektów Point,
+LineString i Polygon). W przykładach należy użyć każdego z tych operatorów: $geoWithin, $geoIntersect,
+$near.
+```
