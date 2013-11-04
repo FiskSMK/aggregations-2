@@ -17,7 +17,7 @@ $time ./2unix.sh Train.csv NewTrain.csv
 ```
 
 #### Proces importu:
-
+![img](../../images/dbrzezinski/import_newtrain.png)
 ```
   $ time mongoimport --db train --collection questions --headerline  --stopOnError --drop --type csv --file NewTrain.csv
 
@@ -27,11 +27,39 @@ $time ./2unix.sh Train.csv NewTrain.csv
   user  2m1.447s
   sys   0m16.141s
 ```  
-
+![img](../../images/dbrzezinski/procesory_import.png)
 * b) 
 
 ##### Zliczyć liczbę zaimportowanych rekordów
+![img](../../images/dbrzezinski/count_kolekcji.png)
 ```
 db.questions.count()
 6034195
 ```
+
+* c)
+
+##### (Zamiana formatu danych.) Zamienić string zawierający tagi na tablicę napisów z tagami następnie zliczyć wszystkie tagi i wszystkie różne tagi.
+
+Do rozwiązania tego zadania użyłem skryptu, kod: [s_to_a.rb](../../scripts/dbrzezinski/s_to_a.rb)
+
+```
+  $ time ruby s_to_a.rb
+  ```
+  
+  Zamiana na tablice:
+  ```
+real	65m44.771s
+user	26m42.980s
+sys	    5m38.396s
+```
+Wynik agregacji i czas:
+```
+All tags: 17409994
+Different tags: 42048
+
+real	5m19.629s
+user	0m0.432s
+sys	    0m0.128s
+```
+![img](../../images/dbrzezinski/proc_string_array.png)
