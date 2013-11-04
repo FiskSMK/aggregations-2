@@ -4,7 +4,11 @@
 
 ### Zadanko 1a
 
-Zadanie 1a polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych z pliku Train.csv bazy MongoDB.
+polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych z pliku Train.csv bazy:
+
+MongoDB
+PostgreSQL – opcjonalnie dla znających fanów SQL
+
 Wcześniej jednak należy przygotować plik Train.csv poleceniem:
 
 ```sh
@@ -19,7 +23,7 @@ mongoimport --type csv -c Train --file Train2.csv --headerline
 
 
 ### Zadanko 1b
-Zadanie 1b polega na zliczeniu zaimportowanych rekordów
+Zliczyć liczbę zaimportowanych rekordów (Odpowiedź: imported 6_034_195 objects).
 
 ```sh
 db.train.count()
@@ -28,10 +32,9 @@ db.train.count()
 
 ### Zadanko 1c
 
-Zadanie 1c polega na zamianie formatu danych.
-Należy zamienić string zawierający tagi na tablicę napisów z tagami, następnie zliczyć wszystkie tagi i wszystkie różne tagi.
+(Zamiana formatu danych.) Zamienić string zawierający tagi na tablicę napisów z tagami następnie zliczyć wszystkie tagi i wszystkie różne tagi. 
 
-Skrypt dla Mongo
+Przygotowany skrypt dla mongo
 ```js
 db.train.find( { "tags" : { $type : 2 } } ).snapshot().forEach(
  function (x) {
