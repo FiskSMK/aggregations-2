@@ -48,7 +48,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Koźmiński, Marcin.
 1. [Królik, Przemysław](/docs/pkrolik.md).
 1. Kubacki, Konrad.
-1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md)
+1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md).
 1. [Lewandowska, Marta](/docs/mlewandowska.md).
 1. [Łuczun, Rafał](/docs/rluczun/README.md).
 1. Malinowski, Piotr.
@@ -77,10 +77,10 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Smykowski, Adrian.
 1. Sott, Tomasz.
 1. Stefanowicz, Michał.
-1. [Szygenda, Mateusz](/docs/mszygenda.md)
+1. [Szygenda, Mateusz](/docs/mszygenda.md).
 1. Tomczak, Robert.
 1. [Wąsowicz, Michał](/docs/mwasowicz.md).
-1. Winsławski, Bartłomiej.
+1. [Winsławski, Bartłomiej](/docs/bwinslawski.md).
 1. Wiśniewski, Konrad.(/docs/kwisniewski/kwisniewski.md).
 1. Wiśniewski, Piotr.
 1. Zdunek, Kamil.
