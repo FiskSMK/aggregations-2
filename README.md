@@ -126,7 +126,7 @@ ile jest różnych akcji?
 * Scott Chacon, [Pro Git](http://git-scm.com/book);
   [niekompletne tłumaczenie na język polski](http://git-scm.com/book/pl).
 
-Dwa sposoby radzenia sobie z taką sytuacją:
+Trzy sposoby radzenia sobie z taką sytuacją:
 **We can’t automatically merge this pull request.**
 
 Sposób 1:
@@ -152,6 +152,23 @@ git push origin master
 
 git branch -d miotla007-master
 ```
+
+Sposób 3
+
+```sh
+# dociaganie zmian z oryginalnego repozytorium
+# https://help.github.com/articles/fork-a-repo#step-3-configure-remotes
+git pull upstream
+
+# rebasing naszego brancha
+git checkout my-branch
+git rebase upstream
+  # rozwiązywanie konfliktów jeżeli zajdzie potrzeba
+  # (instrukcje pojawią się na ekranie)
+```
+
+Dużym plusem tego sposobu jest brak commita z mergem
+(porządek w historii repozytorium).
 
 Undo różnych rzeczy:
 
