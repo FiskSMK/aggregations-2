@@ -14,3 +14,12 @@ Baze zaimporotwalem za pomoca
 ```
 
 Czas importu wyniosl okolo 30 minut.
+
+### Zadanie 1b
+
+Dane zliczyłem za pomocą:
+
+```js
+db.train.count()
+6034195
+```
