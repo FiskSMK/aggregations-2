@@ -583,7 +583,7 @@ Do przygotowania obiektów `geoJSON` użyjemy prostego skryptu powłoki `Mongo`,
 }
 ```
 
-`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `geony`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](./1e/make-geo-points-results.txt).
+`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `geony`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](../../data/mmotel/1e/make-geo-points-results.json).
 
 Kod skryptu: [make-geo-jsons.js](../../scripts/mmotel/1e/make-geo-jsons.js).
 
@@ -740,7 +740,7 @@ db.geony.find({
 ]
 ```
 
-Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-2-1.txt).
+Pełny wynik zapytania: [tutaj](../../data/mmotel/1e/geo-special-sampel-2-1.json).
 
 ###Przykład 2.2: $near
 
@@ -789,7 +789,7 @@ db.geony.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 10000 } }).toArra
 ]
 ```
 
-Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-2-2.txt).
+Pełny wynik zapytania: [tutaj](../../data/mmotel/1e/geo-special-sampel-2-2.json).
 
 ###Przykład 3.1: $geoWithin 
 
@@ -849,8 +849,6 @@ db.geony.find({ loc : { $geoWithin : { $geometry : obszar } } }).toArray();
 ]
 ```
 
-Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-3-1.txt).
-
 ###Przykład 3.2: $geoIntersects
 
 ####Wybrany obszar (taki sam jak w przykładzie 3.1)
@@ -904,8 +902,6 @@ db.geony.find({ loc : { $geoIntersects : { $geometry : obszar } } }).toArray();
   }
 ]
 ```
-
-Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-3-2.txt).
 
 ###Przykład 4: $geoIntersects
 
