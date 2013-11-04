@@ -147,11 +147,11 @@ MongoDB version: 2.5.2
 #### import
   Do obróbki użyłem bazy listy [Stacji Orlen](../../data/mosinski/Stacje_paliw_Orlen.csv) tutaj zaimportowałem poleceniem:
   ```bash
-  $ time mongoimport -d GeoOrlen -c stacje --type csv --file Stacje_paliw_Orlen.csv --headerline
+  $ time mongoimport -d GeoOrlen -c stacje  < Stacje_paliw_Orlen.json
   
   connected to: 127.0.0.1
-  Sun Nov  3 23:25:53.503 check 9 1246
-  Sun Nov  3 23:25:53.558 imported 1245 objects
+  Mon Nov  4 22:56:14.360 check 9 1245
+  Mon Nov  4 22:56:14.360 imported 1245 objects
 
   real	  0m0.284s
   user	  0m0.024s
@@ -159,13 +159,18 @@ MongoDB version: 2.5.2
   ```
   przykładowy rekord:
   ```js
-  db.stacje.findOne()
+  db.geoJson.findOne()
   {
-	"_id" : ObjectId("5276cc3097c07e417dc6a3b6"),
-	"x" : 20.021194,
-	"y" : 49.453218,
-	"nazwa" : "Stacje paliw Orlen",
-	"miasto" : "Nowy Targ"
+	"_id" : ObjectId("527817fe644839d19fd136b5"),
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			20.021194,
+			49.453218
+		]
+	},
+	"name" : "Stacje paliw Orlen",
+	"city" : "Nowy Targ"
   }
   ```
   reszta wkrótce..
