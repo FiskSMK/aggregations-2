@@ -2,12 +2,12 @@
 
 ---
 
-[Dane techniczne](#dane-techniczne)
-[Zadanie 1a](#zadanie-1a)
-[Zadanie 1b](#zadanie-1b)
-[Zadanie 1c](#zadanie-1c)
-[Zadanie 1d](#zadanie-1d)
-[Zadanie 1e](#zadanie-1e)
+* [Dane techniczne](#dane-techniczne)
+* [Zadanie 1a](#zadanie-1a)
+* [Zadanie 1b](#zadanie-1b)
+* [Zadanie 1c](#zadanie-1c)
+* [Zadanie 1d](#zadanie-1d)
+* [Zadanie 1e](#zadanie-1e)
 
 ---
 
