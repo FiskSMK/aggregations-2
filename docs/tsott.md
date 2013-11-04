@@ -8,8 +8,8 @@ Naprawienie pliku Train.csv i usunięcie zbędnych znaków nowej linii:
 
 	cat Train.csv | tr "\n" " " | tr "\r" "\n" | head -n 6034196 > Train_prepared.csv
 
-Ustawienie ścieżki do folderu z bazą danych:
-	mongod --dbpath /media/FAKE_PATH/db
+Ustawienie ścieżki do folderu z bazą danych:<br />
+mongod --dbpath /media/FAKE_PATH/db
 
 Import danych z pliku csv do bazy danych train, kolekcji train:
 
@@ -20,10 +20,10 @@ Import danych z pliku csv do bazy danych train, kolekcji train:
 	2013-11-02T13:04:40.951+0100 check 9 6034196
 	2013-11-02T13:04:41.156+0100 imported 6034195 objects
 
-Czas importu danych:*
-	real	48m31.579s
-	user	1m50.560s
-	sys	0m14.668s
+Czas importu danych:*<br />
+	real	48m31.579s<br />
+	user	1m50.560s<br />
+	sys	0m14.668s<br />
 
 \* system na dysku zewnętrznym (ATA 7200 rpm) podłączonym pod port USB 2.0 
 
@@ -69,7 +69,7 @@ Import danych z pliku text8.txt do bazy danych text, kolekcji text:
 
 	2013-11-04T00:32:39.383+0100 imported 17005207 objects
 
-Czas importu danych:
-	real	21m56.624s
-	user	0m42.900s
-	sys	0m11.592s
+Czas importu danych:<br />
+	real	21m56.624s<br />
+	user	0m42.900s<br />
+	sys	0m11.592s<br />
