@@ -224,9 +224,9 @@ W ciągu `18m46.243s` wykonano `6 034 195` aktualizacji. Co średnio daje `~5 35
 
 ##Zlicznone tagi
 
-Surowy wynik: [tutaj](../../data/mmotel/1c/raw-tags.txt)
+Surowy wynik: [tutaj](../../data/mmotel/1c/raw-tags.json)
 
-Posortowany wynik: [tutaj](../../data/mmotel/1c/sorted-tags.txt)
+Posortowany wynik: [tutaj](../../data/mmotel/1c/sorted-tags.json)
 
 ##Wyniki z MongoDB Management Service
 
