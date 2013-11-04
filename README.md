@@ -44,7 +44,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Karczewski, Kamil.
 1. [Karwowski, Kamil](/docs/kkarwowski.md).
 1. Kłeczek, Piotr.
-1. Kotłowski, Piotr.
+1. [Kotłowski, Piotr](docs/pkotlowski/README.md).
 1. Koźmiński, Marcin.
 1. [Królik, Przemysław](/docs/pkrolik.md).
 1. [Kubacki, Konrad](/docs/kkubacki/README.md).
