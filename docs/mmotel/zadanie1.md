@@ -289,10 +289,6 @@ switched to db text
 17005207
 ```
 
-###Wyniki z MongoDB Management Service
-
-![mms-results](../../images/mmotel/1d-import-mms.png)
-
 ##Zliczanie słów
 
 ####Agregacja
@@ -502,6 +498,12 @@ sys   0m0.008s
 ```
 
 ##Wyniki z MongoDB Management Service
+
+####Import
+
+![mms-results](../../images/mmotel/1d-import-mms.png)
+
+####Zliczanie słów
 
 ![mms-results](../../images/mmotel/1d-counting-words.png)
 
@@ -941,6 +943,10 @@ db.geony.find({ loc : { $geoIntersects : { $geometry : linia } } }).toArray();
 
 ##Wyniki z MongoDB Management Service
 
+####Import oraz przykład 1
+
 ![mms-results-1](../../images/mmotel/1e-mms-1.png)
+
+####Przykłady 2-4
 
 ![mms-results-2](../../images/mmotel/1e-mms-2.png)
