@@ -36,7 +36,7 @@ Na początku plik został przygotowany według wskazówek do zadania.
 
 Import do bazy:
 ```
-time mongoimport --type csv --fields 'slowa' --collection text  --port 12121 < text8.txt 
+time mongoimport --type csv --fields 'slowa' --collection text < text8.txt 
 ```
 
 ```
@@ -62,14 +62,14 @@ db.text.count();
 db.text.aggregate({$group: {_id: "$slowa", count: {$sum: 1}}}, {$group: {_id: null, count: {$sum: 1}}})
 { "result" : [ { "_id" : null, "count" : 253854 } ], "ok" : 1 }
 ```
-wynik: 253854
+wynik: `253854`
 
 ###top1:
 ```
 db.text.aggregate({$group: {_id: "$slowa", count: {$sum: 1}}}, {$sort: {count:-1}}, {$limit: 1})
 { "result" : [ { "_id" : "the", "count" : 1061396 } ], "ok" : 1 }
 ```
-najczęściej tystępuje słowo `THE`
+najczęściej występujące słowo - `THE`
 ```
 całość: 17005207
 wynik: 1061396
@@ -123,7 +123,7 @@ Import danych do bazy:
 ```
 mongoimport -c Miasta < polska.json
 ```
-żeby całość działała, musimy dodać geo-indeks
+żeby całość działała, musimy dodać `geo-indeks`
 ```
 db.Miasta.ensureIndex({"loc" : "2dsphere"})
 ```
@@ -166,4 +166,4 @@ Wychodzi na to samo co w wersji z `$geoWithin`, czyli do wyszukania tych samych 
 ```
 db.Miasta.find({loc: {$geoIntersects: {$geometry: {type: "LineString", coordinates: [ [18.56586456298828, 54.4448910398684], [19.948768615722656, 49.29803885147804]]}}}})
 ```
-sprawdzamy, czy coś leży między Sopotem a Zakopanym (w linii prostej)
+Sprawdzamy, czy coś leży między Sopotem a Zakopanym (w linii prostej)
