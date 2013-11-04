@@ -28,7 +28,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Brzeziński, Damian.
 1. Cała, Mariusz.
 1. [Dermont, Jacek](/docs/jdermont.md).
-1. Detlaf, Krzysztof.
+1. [Detlaf, Krzysztof](/docs/kdetlaf.md).
 1. [Dępczyk, Michał](/docs/mdepczyk.md).
 1. Dobrzycki, Wojciech.
 1. Dolata, Jędrzej.
