@@ -53,16 +53,16 @@ db.text8.aggregate([ {$group:{_id:"$word", count:{$sum:1}}}, {$sort: {count: -1}
 ```
 Ilość wszystkich słów: 17005207.
 ``` db.text8.count() ```
-<pre>
+
 Udział procentowy wygląda następująco:
 ```  1 1061396/17005207 = 0.0624 *100% ~ 6.24%  ```
 ``` 10 4205965/17005207 = 0.2473 *100% ~  24.73% ```
 ``` 100 7998978/17005207=0.4704 *100% ~ 47% ```
 ``` 1000  11433354/17005207=0.6723 * 100% ~ 67% ```
-</pre>
+
 
 ### d) Zadanie z GeoJson
-<pre>
+
 Bazę można znaleść pod następującym linkiem:  http://geonames.usgs.gov/docs/stategaz/NationalFile_2013102
 Plik należy oczyścić przez zamianę znaku ``` | ``` na ``` , ``` możemy zrobić to polecenien tr 
 ``` tr '|' ',' < Geojson1 > geoPoprawiony.txt ```
@@ -73,33 +73,53 @@ Rezultat:
 Następnie musimy przeczyścić naszą bazę danych przez wykorzystanie dwóch skryptów: [Fix1](/docs/kkubacki/GeoFix1) [Fix1](/docs/kkubacki/GeoFix2)
 Aby móc korzystać z poleceń Geospatial Queries musimy odpowiednio przygotować naszą bazę danych przez uruchomienie nestępującej komendy:
  ``` db.geo_points.ensureIndex({"loc" : "2dsphere"}) ``` 
-</pre>
+ 
+przykładowy punkt:  ``` var punkt = {type: "Point", coordinates: [0,0]} ```
 
+zapytanie 1 Wszystkie obiekty w odległości 5000m od  punktu o współrzędnych -108.4147341, 35.4114147
+``` db.geo_points.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 5000} }) ```
 
+zapytanie 2: znajdź  lotniska pomiędzy Nebraska, Omaha, Indianapolis oraz Chicago
+```
+db.geo_points.find( { loc :
+                  { $geoWithin :
+                    { $geometry :
+                      { type : "Polygon" ,
+                        coordinates: [ [ [ -95.9979,41.2524 ] , [ -98.0000,38.5000, ] , [ - 86.1480,39.7910] , [ -87.6279,41.8819 ],[ -95.9979,41.2524 ] ] ]
+                } } },
+            type: "Airport"} )
 
+```
 
+zapytanie 3:  Znajdź 5 najwyższych szczytów o wysokości co najmniej 800m najbliżej punktu -108.4295458, 32.4184978
+``` db.geo_points.find({ loc: {$near: {$geometry: punkt}}, type:"Summit", height: {$gt:800} }).sort({height: -1}).limit(5) ```
 
+Zapytanie 4: Znajdź wszystkie obiekty w linii prostej między Sakramento  a Carson city	 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+db.geo_points.find( {loc: 
+    {$geoIntersects: 
+        {$geometry: 
+            {type: "LineString", coordinates: [ [ 38.555556, -121.468889], [33.839722, -118.259722] ]}}}})
+```
+Zapytanie 5: Ilość szpitali leżących 5000m od Sakramento.
+```
+db.geo_points.find({ loc: {$near: {$geometry: {
+          type: "Point", coordinates: [38.555556, -121.468889]
+          }}, $maxDistance: 3000},
+          type:"Hospital" }).count()
+```
+Znajdź wszystkie kopalnie leżące maksymalnie 100km od Las Vegas położone na wysokości co najmwyżej 3000m
+```
+db.geo_points.find({ loc: 
+    {$near: 
+        {$geometry: 
+            {type: "Point", coordinates: [-115.1522,36.0800]}}, 
+                $maxDistance : 100000  },
+    type: "Mine",
+    height: {$le:3000} })
+```
+			
 
 
 
