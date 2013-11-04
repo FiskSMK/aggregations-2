@@ -22,6 +22,8 @@ System operacyjny:
 Baza Danych:
 	MongoDB 2.4.7 x64
 
+---
+
 ### Zadanie 1a
 ```
 Zadanie 1a polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych z pliku Train.csv bazy:
@@ -30,6 +32,7 @@ Zadanie 1a polega na zaimportowaniu, do systemów baz danych uruchomionych na sw
     PostgreSQL – opcjonalnie dla znających fanów SQL
 ```
 
+Aby plik Train.csv został poprawnie zaimportowany do bazy danych trzeba usunąć znaki nowej linii. Zrobi do za nas skrypt dostępny w repozytorium prowadzącego
 ```sh
 $ time ./2unix.sh Train.csv trainProper.csv
 
