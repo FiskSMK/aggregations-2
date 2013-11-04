@@ -1,6 +1,7 @@
 ## Zadanie 1
 
 * zadanie 1a
+
 wstępne "oczyszczenie" pliku wykonałem korzystając ze skryptu [2unix.sh] (/scripts/wbzyl/2unix.sh)
 
 ```sh
