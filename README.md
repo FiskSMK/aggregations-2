@@ -1,4 +1,4 @@
-# Agregacje 2
+﻿# Agregacje 2
 
 ![Data Wranglers](/images/data-wrangler.jpg)
 
@@ -81,7 +81,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Tomczak, Robert.
 1. [Wąsowicz, Michał](/docs/mwasowicz.md).
 1. Winsławski, Bartłomiej.
-1. Wiśniewski, Konrad.
+1. Wiśniewski, Konrad.(/docs/kwisniewski/kwisniewski.md).
 1. Wiśniewski, Piotr.
 1. Zdunek, Kamil.
 1. Żarkowski, Mateusz.
