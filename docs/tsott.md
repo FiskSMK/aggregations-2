@@ -1,3 +1,4 @@
+<h1>Zadanie1a</h1>
 Zadanie 1a polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych z pliku Train.csv bazy:
 
     MongoDB
@@ -26,8 +27,8 @@ Czas importu danych:*
 
 \* system na dysku zewnętrznym (ATA 7200 rpm) podłączonym pod port USB 2.0 
 
-
-Zadanie 1b. Zliczyć liczbę zaimportowanych rekordów (Odpowiedź: imported 6_034_195 objects).
+<h1>Zadanie1b</h1>
+Zliczyć liczbę zaimportowanych rekordów (Odpowiedź: imported 6_034_195 objects).
 
 Zaimportowano 6034195 rekordów:
 	
@@ -37,7 +38,8 @@ Sprawdzenie ilości rekordów w bazie train:
 	db.train.count()
 	6034195
 
-Zadanie 1d. Ściągnąć plik text8.zip ze strony Matt Mahoney (po rozpakowaniu 100MB):
+<h1>Zadanie1d</h1>
+Ściągnąć plik text8.zip ze strony Matt Mahoney (po rozpakowaniu 100MB):
 
 wget http://mattmahoney.net/dc/text8.zip -O text8.gz
 
