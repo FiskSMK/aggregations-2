@@ -441,7 +441,7 @@ ilość: 7998978
 część: 47.03840417820259%
 ```
 
-Pełny wynik agregacji: [tutaj](./1d/100words.txt).
+Pełny wynik agregacji: [tutaj](../../data/mmotel/1d/100words.json).
 
 ######Czasy
 
@@ -487,7 +487,7 @@ ilość: 11433354
 część: 67.23443001899359%
 ```
 
-Pełny wynik agregacji: [tutaj](./1d/1000words.txt).
+Pełny wynik agregacji: [tutaj](../../data/mmotel/1d/1000words.json).
 
 ######Czasy
 
