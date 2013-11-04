@@ -18,6 +18,8 @@ $time ./2unix.sh Train.csv NewTrain.csv
 
 #### Proces importu:
 
+![img](../../images/dbrzezinski/import_newtrain.png)
+
 ```
   $ time mongoimport --db train --collection questions --headerline  --stopOnError --drop --type csv --file NewTrain.csv
 
@@ -27,10 +29,11 @@ $time ./2unix.sh Train.csv NewTrain.csv
   user  2m1.447s
   sys   0m16.141s
 ```  
-
+![img](../../images/dbrzezinski/procesory_import.png)
 * b) 
 
 ##### Zliczyć liczbę zaimportowanych rekordów
+![img](../../images/dbrzezinski/count_kolekcji.png)
 ```
 db.questions.count()
 6034195
