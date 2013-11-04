@@ -34,6 +34,7 @@ Baza Danych:
 ---
 
 ### Zadanie 1a
+
 ```
 Zadanie 1a polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych
 z pliku Train.csv bazy:
@@ -42,7 +43,7 @@ z pliku Train.csv bazy:
 	* PostgreSQL – opcjonalnie dla znających fanów SQL
 ```
 
-Aby plik Train.csv został poprawnie zaimportowany do bazy danych trzeba usunąć znaki nowej linii. Zrobi to za nas [skrypt](../scripts/wbzyl/2unix.sh) dostępny w repozytorium prowadzącego.
+Aby plik Train.csv został poprawnie zaimportowany do bazy danych, trzeba usunąć znaki nowej linii. Zrobi to za nas [skrypt](../scripts/wbzyl/2unix.sh) dostępny w repozytorium prowadzącego.
 ```sh
 $ time ./2unix.sh Train.csv trainProper.csv
 
@@ -60,16 +61,12 @@ sys     0m0.031s
 ---
 
 ### Zadanie 1b
+
 ```
 Zliczyć liczbę zaimportowanych rekordów (Odpowiedź: imported 6_034_195 objects).
 ```
 
-```sh
-$ mongo
-
-MongoDB shell version: 2.4.7
-connecting to: dataBase
-
+```
 > db.train.count()
 6034195
 ```
@@ -77,6 +74,7 @@ connecting to: dataBase
 ---
 
 ### Zadanie 1c
+
 ```
 (Zamiana formatu danych.) Zamienić string zawierający tagi na tablicę napisów z tagami następnie zliczyć
 wszystkie tagi i wszystkie różne tagi. Napisać program, który to zrobi korzystając z jednego ze sterowników.
@@ -85,6 +83,7 @@ wszystkie tagi i wszystkie różne tagi. Napisać program, który to zrobi korzy
 ---
 
 ### Zadanie 1d
+
 ```
 Ściągnąć plik text8.zip, zapisać wszystkie słowa w bazie MongoDB. Następnie zliczyć liczbę słów oraz
 liczbę różnych słów w tym pliku. Ile procent całego pliku stanowi:
@@ -92,6 +91,8 @@ liczbę różnych słów w tym pliku. Ile procent całego pliku stanowi:
 	* najczęściej występujące słowo w tym pliku
 	* 10, 100, 1000 najczęściej występujących słów w tym pliku
 ```
+
+Sprawdzamy, czy plik text8 zawiera wyłącznie znaki alfanumeryczne i białe oraz znaki puste zastępujemy znakiem nowej linii.
 
 ```sh
 $ tr --delete '[:alnum:][:blank:]' < text8 > deleted.txt
@@ -114,22 +115,85 @@ $ time mongoimport -d text8 -c text8 -f word --type csv --file text8.txt
 real    6m8.782s
 user    0m0.000s
 sys     0m0.015s
+```
 
-$ mongo
+Ilość wszystkich słów:
 
-MongoDB shell version: 2.4.7
-connecting to: text8
-
+```
 > db.text8.count()
 17005207
+```
 
+Ilość różnych słów:
+
+```
 > db.text8.distinct("word").length
 253854
+```
+
+Najpopularniejsze słowo, jego ilość wystąpień oraz udział procentowy w całym pliku:
+
+```
+> db.text8.aggregate([
+> 	{$group: {_id: "$word", count: {$sum: 1}}},
+> 	{$sort: {count: -1}},
+> 	{$limit: 1}
+> ])
+{ "result" : [ { "_id" : "the", "count" : 1061396 } ], "ok" : 1 }
+
+> 1061396 / 17005207 * 100
+6.241594118789616
+```
+
+Ilość wystąpień 10 najpopularniejszych słów oraz udział procentowy w całym pliku:
+
+```
+> db.text8.aggregate([
+> 	{$group: {_id: "$word", count: {$sum: 1}}},
+> 	{$sort: {count: -1}},
+> 	{$limit: 10},
+> 	{$group: {_id: null, count: {$sum: "$count"}}}
+> ])
+{ "result" : [ { "_id" : null, "count" : 4205965 } ], "ok" : 1 }
+
+> 4205965 / 17005207 * 100
+24.733394894869555
+```
+
+Ilość wystąpień 100 najpopularniejszych słów oraz udział procentowy w całym pliku:
+
+```
+db.text8.aggregate([
+	{$group: {_id: "$word", count: {$sum: 1}}},
+	{$sort: {count: -1}},
+	{$limit: 100},
+	{$group: {_id: null, count: {$sum: "$count"}}},
+])
+{ "result" : [ { "_id" : null, "count" : 7998978 } ], "ok" : 1 }
+
+> 7998978 / 17005207 * 100
+47.03840417820259
+```
+
+Ilość wystąpień 1000 najpopularniejszych słów oraz udział procentowy w całym pliku:
+
+```
+db.text8.aggregate([
+	{$group: {_id: "$word", count: {$sum: 1}}},
+	{$sort: {count: -1}},
+	{$limit: 1000},
+	{$group: {_id: null, count: {$sum: "$count"}}}
+])
+{ "result" : [ { "_id" : null, "count" : 11433354 } ], "ok" : 1 }
+
+> 11433354 / 17005207 * 100
+67.23443001899359
 ```
 
 ---
 
 ### Zadanie 1e
+
 ```
 Wyszukać w sieci dane zawierające obiekty GeoJSON. Zapisać dane w bazie MongoDB. Dla zapisanych
 danych przygotować 6–9 różnych Geospatial Queries (co najmniej po jednym dla obiektów Point,
