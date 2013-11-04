@@ -21,6 +21,7 @@ sys 	0m11.820s
 zaimportowało 6034195 obiektów
 
 * zadanie 1b
+
 polecenie wprowadzone w konsoli mongoDB
 
 ```sh
