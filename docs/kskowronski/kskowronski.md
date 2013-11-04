@@ -15,6 +15,8 @@ $ mongo --version
 MongoDB shell version: 2.4.7
 ```
 
+Do liczenia czasu w systemie windows użyłem timecmd.bat
+
 ### Zadanie 1a
 
 Plik Train.csv przygotowałem przy pomocy 2unix.sh
@@ -40,7 +42,7 @@ Ilość zaimportowanych rekordów
 
 **Zamiana stringa "Tags" na tablice i zliczanie tagów** 
 
-Do zmiany formatu danych i liczeniu tagów napisałem program w javascript na node.js przy użyciu drivera mongodb.
+Do zmiany formatu danych i liczeniu tagów napisałem program (mongo.js) w javascript na node.js przy użyciu drivera mongodb.
 
 Podczas pobierania rekordów z bazy procesor był obciążony w 50% (na wszystkich rdzeniach) a przy zapisywaniu zmian do bazy oscylował w okolicach 15% (na wszystkich rdzeniach)
 
