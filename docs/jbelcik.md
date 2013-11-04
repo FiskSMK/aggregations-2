@@ -40,7 +40,6 @@ sys     1m43.721s
 
 ```sh
 $ time mongoimport -d dataBase -c train --type csv --file trainProper.csv --headerline
-```
 
 real    15m50.589s
 user    0m0.000s
