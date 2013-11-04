@@ -308,6 +308,50 @@ sys	0m0.153s
 ```
 
 
+# Geo-Stuff
+
+I found a csv-file from the [Geographic Names Information System](https://geonames.usgs.gov/domestic/download_data.htm) with Geo-Coordinates in it, after failing to find a a bigger pure geojson file.
+
+After importing it as usual I will create a new collection with the attributes:
+```
+["FEATURE_ID", "FEATURE_NAME", "FEATURE_CLASS", "STATE_ALPHA", "COUNTY_NAME", "ELEV_IN_M"]
+```
+and the coordinates of this point of interest with this [script](geo_usa_trans.py).
+
+After transforming the entries and filtering the interesting fields we have 2179100 Geo-Entries to work with.
+
+```
+> db.geo_usa2.count()
+2179100
+```
+
+One entry looks like this:
+
+```javascript
+> db.geo_usa2.findOne()
+{
+	"_id" : ObjectId("52772fc800d0b0afd0f5b4f6"),
+	"ELEV_IN_M" : 1645,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-109.4784394,
+			36.4611122
+		]
+	},
+	"FEATURE_CLASS" : "Stream",
+	"FEATURE_ID" : 399,
+	"FEATURE_NAME" : "Agua Sal Creek",
+	"COUNTY_NAME" : "Apache",
+	"STATE_ALPHA" : "AZ"
+}
+```
+
+
+
+
+
+
 
 
 
