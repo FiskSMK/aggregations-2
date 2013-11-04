@@ -50,7 +50,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Kubacki, Konrad.
 1. Kwiatkowski, Mateusz.
 1. Lewandowska, Marta.
-1. Łuczun, Rafał.
+1. [Łuczun, Rafał](/docs/rluczun/README.md).
 1. Malinowski, Piotr.
 1. [Małecki, Maciej](/docs/mmalecki/README.md).
 1. Matulewski, Damian.
