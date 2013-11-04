@@ -53,11 +53,29 @@ db.text8.aggregate([ {$group:{_id:"$word", count:{$sum:1}}}, {$sort: {count: -1}
 ```
 Ilość wszystkich słów: 17005207.
 ``` db.text8.count() ```
+<pre>
 Udział procentowy wygląda następująco:
 ```  1 1061396/17005207 = 0.0624 *100% ~ 6.24%  ```
 ``` 10 4205965/17005207 = 0.2473 *100% ~  24.73% ```
 ``` 100 7998978/17005207=0.4704 *100% ~ 47% ```
 ``` 1000  11433354/17005207=0.6723 * 100% ~ 67% ```
+</pre>
+
+### d) Zadanie z GeoJson
+<pre>
+Bazę można znaleść pod następującym linkiem:  http://geonames.usgs.gov/docs/stategaz/NationalFile_2013102
+Plik należy oczyścić przez zamianę znaku ``` | ``` na ``` , ``` możemy zrobić to polecenien tr 
+``` tr '|' ',' < Geojson1 > geoPoprawiony.txt ```
+Następnie importujemy do bazy.
+``` mongoimport -d geo -c geo -type csv -file  geoPoprawiony.txt --headerline ```
+Rezultat: 
+``` imported 2251155 objects ```
+Następnie musimy przeczyścić naszą bazę danych przez wykorzystanie dwóch skryptów: [Fix1](/docs/kkubacki/GeoFix1) [Fix1](/docs/kkubacki/GeoFix2)
+Aby móc korzystać z poleceń Geospatial Queries musimy odpowiednio przygotować naszą bazę danych przez uruchomienie nestępującej komendy:
+ ``` db.geo_points.ensureIndex({"loc" : "2dsphere"}) ``` 
+</pre>
+
+
 
 
 
