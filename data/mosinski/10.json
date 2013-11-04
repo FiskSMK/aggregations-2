@@ -1,0 +1,45 @@
+{
+	"result" : [
+		{
+			"_id" : "the",
+			"number" : 1061396
+		},
+		{
+			"_id" : "of",
+			"number" : 593677
+		},
+		{
+			"_id" : "and",
+			"number" : 416629
+		},
+		{
+			"_id" : "one",
+			"number" : 411764
+		},
+		{
+			"_id" : "in",
+			"number" : 372201
+		},
+		{
+			"_id" : "a",
+			"number" : 325873
+		},
+		{
+			"_id" : "to",
+			"number" : 316376
+		},
+		{
+			"_id" : "zero",
+			"number" : 264975
+		},
+		{
+			"_id" : "nine",
+			"number" : 250430
+		},
+		{
+			"_id" : "two",
+			"number" : 192644
+		}
+	],
+	"ok" : 1
+}

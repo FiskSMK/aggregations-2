@@ -1,0 +1,37 @@
+var words_counter = 0;
+var wordCounts = { };
+var sortable = [];
+var procent = 0;
+var z = 0;
+
+db.train.find( { "word" : { $type : 2 } } ).snapshot().forEach(
+function (x) {
+    words_counter++;
+    wordCounts[x.word.toLowerCase()] = (wordCounts[x.word.toLowerCase()] || 0) + 1; 
+}
+);
+
+for (var word in wordCounts){
+      sortable.push([word, wordCounts[word]])
+      sortable.sort(function(a, b) {return a[1] - b[1]})
+}
+
+var popularword = sortable[sortable.length - 1];
+
+function printPopularWord(){
+	var suma = 0;
+	if(z>sortable.length){
+	print("Poadana iloœæ przekracza iloœæ s³ów w tablicy.");
+	return;
+	}
+	for(var i=0;i<z;i++){
+		suma += sortable[sortable.length-1-i][1];		
+		print(sortable[sortable.length-1-i]);
+	}
+	procent2 = ((suma/words_counter)*100).toFixed(2);
+	print("Wszystkie powtarzaj¹ce siê s³owa: "+procent2+"%");
+}
+
+procent = ((popularword[1]/words_counter)*100).toFixed(2);
+
+print("Najczestsze slowo to: "+popularword[0]+"("+popularword[1]+") ("+procent+"%)");
