@@ -53,31 +53,18 @@ db.Train.count()
 
 ### Zadanie 1c
 
+Link do skryptu [tutaj](../scripts/mdepczyk/c.js)
 ```
-db.Train.find( { "tags" : { $type : 2 } } ).snapshot().forEach(
- function (x) {
-  if (!Array.isArray(x.tags)){
-    x.tags = x.tags.split(' ');
-    db.Train.save(x);
-}});
+time mongo c.js
 ```
-Różne tagi:
+Wynik:
 ```
-db.Train.distinct("tags").length
-```
-42048
+Tags:17409994
+Distinct tags:42048
 
-Wszystkie tagi:
-```
-{
-  "result" : [
-     {
-        "_id" : "result",
-        "count" : 17409994
-     }
-  ],
-  "ok" : 1
-}
+real	8m54.731s
+user	7m14.387s
+sys	0m7.548s
 ```
 ### Zadanie 1d
 
