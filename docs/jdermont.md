@@ -42,36 +42,8 @@ Ilość różnych tagów:
 db.train.distinct("Tags").length
 42048
 ```
-### c)
-```
-> db.train.distinct("Tags").length
-42048
-```
 
-```
-db.train.aggregate({$project:{"Tags":1}},{$unwind: "$Tags"},{$group:{"_id":"result",count:{$sum:1}}})
-{
-        "result" : [
-                {
-                        "_id" : "result",
-                        "count" : 17409994
-                }
-        ],
-        "ok" : 1
-}
-```
-
-### d)
-```
-> db.slowa.count()
-17005207
-```
-
-```
-> db.slowa.distinct("slowo").length
-253854
-```
-
+Ilość wszystkich tagów:
 ```js
 db.train.aggregate(
   {
@@ -82,15 +54,15 @@ db.train.aggregate(
 )
 ```
 ```json
-
+db.train.aggregate({$project:{"Tags":1}},{$unwind: "$Tags"},{$group:{"_id":"result",count:{$sum:1}}})
 {
-  "result" : [
-     {
-        "_id" : "result",
-        "count" : 17409994
-     }
-  ],
-  "ok" : 1
+        "result" : [
+                {
+                        "_id" : "result",
+                        "count" : 17409994
+                }
+        ],
+        "ok" : 1
 }
 ```
 
