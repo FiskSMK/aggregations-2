@@ -1,7 +1,5 @@
 # *Jakub Bełcik*
 
----
-
 * [Dane techniczne](#dane-techniczne)
 * [Zadanie 1a](#zadanie-1a)
 * [Zadanie 1b](#zadanie-1b)
@@ -276,6 +274,9 @@ Dodajemy geo-indeks do kolekcji:
 ```js
 > db.miasta.ensureIndex({"loc" : "2dsphere"})
 ```
+
+
+### Zapytania
 
 
 #### Point + $geoWithin
