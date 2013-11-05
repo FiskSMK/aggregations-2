@@ -1,4 +1,4 @@
-### *Jakub Bełcik*
+# *Jakub Bełcik*
 
 ---
 
@@ -11,7 +11,7 @@
 
 ---
 
-### Dane Techniczne
+## Dane Techniczne
 
 Procesor:
 	AMD Phenom II x4 955 3.2GHz
@@ -33,7 +33,7 @@ Baza Danych:
 
 ---
 
-### Zadanie 1a
+## Zadanie 1a
 
 ```
 Zadanie 1a polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych
@@ -66,7 +66,7 @@ sys     0m0.031s
 
 ---
 
-### Zadanie 1b
+## Zadanie 1b
 
 ```
 Zliczyć liczbę zaimportowanych rekordów (Odpowiedź: imported 6_034_195 objects).
@@ -79,7 +79,7 @@ Zliczyć liczbę zaimportowanych rekordów (Odpowiedź: imported 6_034_195 objec
 
 ---
 
-### Zadanie 1c
+## Zadanie 1c
 
 ```
 (Zamiana formatu danych.) Zamienić string zawierający tagi na tablicę napisów z tagami następnie zliczyć
@@ -101,7 +101,7 @@ sys     0m0.015s
 
 ---
 
-### Zadanie 1d
+## Zadanie 1d
 
 ```
 Ściągnąć plik text8.zip, zapisać wszystkie słowa w bazie MongoDB. Następnie zliczyć liczbę słów oraz
@@ -214,7 +214,7 @@ Ilość wystąpień 1000 najpopularniejszych słów oraz udział procentowy w ca
 
 ---
 
-### Zadanie 1e
+## Zadanie 1e
 
 ```
 Wyszukać w sieci dane zawierające obiekty GeoJSON. Zapisać dane w bazie MongoDB. Dla zapisanych
@@ -278,38 +278,38 @@ Dodajemy geo-indeks do kolekcji:
 ```
 
 
-# Point + $geoWithin
+#### Point + $geoWithin
 
 
 
-# Point + $geoIntersect
+#### Point + $geoIntersect
 
 
 
-# Point + $near
+#### Point + $near
 
 
 
-# LineString + $geoWithin
+#### LineString + $geoWithin
 
 
 
-# LineString + $geoIntersect
+#### LineString + $geoIntersect
 
 
 
-# LineString + $near
+#### LineString + $near
 
 
 
-# Polygon + $geoWithin
+#### Polygon + $geoWithin
 
 
 
-# Polygon + $geoIntersect
+#### Polygon + $geoIntersect
 
 
 
-# Polygon + $near
+#### Polygon + $near
 
 
