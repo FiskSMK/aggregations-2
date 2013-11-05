@@ -32,6 +32,26 @@ wynik - 6034195 obiektów
 
 * zadanie 1c
 
+do przerobienia pola "tags" ze stringu na tablicę użyłem skryptu
+
+```sh
+db.train.find( { "tags" : { $type : 2 } } ).snapshot().forEach(
+ function (x) {
+  if (!Array.isArray(x.tags)){
+    x.tags = x.tags.split(' ');
+    db.train.save(x);
+}});
+```
+
 * zadanie 1d
+
+Plik do postaci text8 został przygotowany wg instrukcji zawartej [tutaj](http://wbzyl.inf.ug.edu.pl/nosql/zadania). Następnie został on sformatowany do postaci typu json za pomocą bashowego [skryptu](../../scripts/jgalka/stringToJson.sh) poleceniem
+
+```sh
+$ time bash stringTojson.sh text8.txt text8.json
+```
+
+
+
 
 * zadanie 1e

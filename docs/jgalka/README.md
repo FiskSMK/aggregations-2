@@ -45,4 +45,13 @@ db.train.find( { "tags" : { $type : 2 } } ).snapshot().forEach(
 
 * zadanie 1d
 
+Plik do postaci text8 został przygotowany wg instrukcji zawartej [tutaj](http://wbzyl.inf.ug.edu.pl/nosql/zadania). Następnie został on sformatowany do postaci typu json za pomocą bashowego [skryptu](../../scripts/jgalka/stringToJson.sh) poleceniem
+
+```sh
+$ time bash stringTojson.sh text8.txt text8.json
+```
+
+![text8_01](../../images/jgalka/text8_01.jpg)
+
+
 * zadanie 1e
