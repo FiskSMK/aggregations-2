@@ -48,20 +48,58 @@ db.train.find( { "tags" : { $type : 2 } } ).snapshot().forEach(
 Plik do postaci text8 został przygotowany wg instrukcji zawartej [tutaj](http://wbzyl.inf.ug.edu.pl/nosql/zadania). Następnie został on sformatowany do postaci typu json za pomocą bashowego [skryptu](../../scripts/jgalka/stringToJson.sh) poleceniem
 
 ```sh
-$ time bash stringTojson.sh text8.txt text8.json
+$ time bash stringToJ
+son.sh text8.txt text8.json
 ```
 
 ![text8_01](../../images/jgalka/text8_01.jpg)
 
-![text8_01](../../images/jgalka/text8_02.png)
+![text8_02](../../images/jgalka/text8_02.png)
 
 Jak widać system "ładnie" radził sobie z naprzemiennym obciążaniem każdego procesora osobno.
 
-Pozostało taraz zaimportować plik do kolekcji
+Pozostało teraz zaimportować plik do kolekcji
 
 ```sh
-$ time mongoimport --db test --collection text8 --type json --file text8.json
+$ time mongoimport --db text --collection text8 --type json --file text8.json
 ```
 
+![text8_03](../../images/jgalka/text8_03.png)
+
+Zliczanie wszystkich znajdujących się w bazie słów
+
+```sh
+db.text8.(count)
+
+wynik - 17005208
+```
+
+Zliczanie wszystkich unikatowych słów
+
+```sh
+db.text8.distinct("word").length
+
+wynik - 253855
+```
+
+Jedno najczęściej występujące słowo
+
+```sh
+db.text8.aggregate(
+    {$group:{ _id:"$word", count:{$sum:1}}}, 
+    {$sort: {count: -1}}, 
+    {$limit:1})
+
+wynik - "the" - 1061396
+```
+
+Dziesięć najczęściej występujących słów
+
+```sh
+ db.text8.aggregate(
+     {$group:{ _id:"$word", count:{$sum:1}}}, 
+     {$sort: {count: -1}}, 
+     {$limit:10})
+```
 
 * zadanie 1e
