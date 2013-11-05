@@ -83,7 +83,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Winsławski, Bartłomiej](/docs/bwinslawski.md).
 1. Wiśniewski, Konrad.(/docs/kwisniewski/kwisniewski.md).
 1. Wiśniewski, Piotr.
-1. Zdunek, Kamil.
+1. [Zdunek, Kamil](/docs/kzdunek/README.md).
 1. Żarkowski, Mateusz.
 
 
