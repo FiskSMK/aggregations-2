@@ -225,7 +225,7 @@ $near.
 
 Poniższe zadanie zostało wykonane opierając się o [dane współrzędnych geograficznych miejscowości w Polsce (możliwe błędy)](http://astrowiki.eu/index.php?title=Wsp%C3%B3%C5%82rz%C4%99dne_geograficzne_miejscowo%C5%9Bci_w_Polsce), które znalazłem w internecie i wstępnie obrobiłem na plik typu [csv](../../data/jbelcik/miasta.csv).
 
-```
+```sh
 $ time mongoimport -d miasta -c miasta --type csv --file miasta.csv --headerline
 connected to: 127.0.0.1
 check 9 2319
@@ -236,13 +236,37 @@ user    0m0.000s
 sys     0m0.015s
 ```
 
-Do tego zadania wykorzystałem własny [skrypt](../../scripts/jbelcik/1e.js), który znajduje każdy rekord nieodpowiadający formatowi, usuwa go i zastępuje poprawnym.
+Przykładowy rekord:
 
 ```
+> db.miasta.findOne()
+{ "_id" : 1, "miasto" : "Adamów", "szerokosc" : 22.15, "dlugosc" : 51.45 }
+```
+
+Do tego zadania wykorzystałem własny [skrypt](../../scripts/jbelcik/1e.js), który znajduje każdy rekord nieodpowiadający formatowi, usuwa go i zastępuje poprawnym.
+
+```sh
 $ time mongo 1e.js
 2318 records changed
 
 real    0m0.210s
 user    0m0.000s
 sys     0m0.015s
+```
+
+Przykładowy poprawiony rekord:
+
+```
+> db.miasta.findOne()
+{
+        "_id" : 1,
+        "miasto" : "Adamów",
+        "loc" : {
+                "type" : "Point",
+                "coordinates" : [
+                        22.15,
+                        51.45
+                ]
+        }
+}
 ```
