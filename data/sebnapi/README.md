@@ -2,13 +2,13 @@
 
 ## Preparing Raw Data
 
-```
+```bash
 cat Train.csv | tr -d "\n" | tr "\r" "\n" > train_tr.csv
 ```
 
 ## First mongoimport
 
-```
+```bash
 time mongoimport -d bzyl_nosql3 -c train  --type csv --file train_tr.csv --headerline
 ```
 
@@ -23,7 +23,7 @@ user	4m1.650s
 sys	27m56.483s
 ```
 
-```
+```js
 > db.stats()
 {
 	"db" : "bzyl_nosql3",
@@ -46,24 +46,24 @@ sys	27m56.483s
 ```
 
 ```fileSize``` : Sum of the sizes of all files allocated for this database (e.g. test.0 + test.1 etc.), in GB
-```
+```js
 > db.stats().fileSize/1024/1024/1024
 11.9326171875
 ```
 
 ```storageSize``` : dataSize plus all preallocated collection space, in GB
-```
+```js
 > db.stats().storageSize/1024/1024/1024
 7.501438140869141
 ```
 
 ```dataSize``` : Sum of all actual data (BSON objects) used by the database, in GB
-```
+```js
 > db.stats().dataSize/1024/1024/1024
 7.1510655879974365
 ```
 ```indexSize``` : Sum of all indexes used by the database, in GB
-```
+```js
 > db.stats().indexSize/1024/1024/1024
 0.1823595017194748
 ```
@@ -189,7 +189,7 @@ Total count of imported objects
 ## Changing Tags-String to a Tag-List
 
 For this work I used also a [python script](zad1c.py).
-It took 45min and shows it has 42048 distinct tags and 17409994 overall.
+It took 45min and shows there are 42048 distinct tags and 17409994 overall.
 
 ```
 time python2.7 zad1c.py 
@@ -223,7 +223,7 @@ sys	2m23.062s
 I chosed a Bucket-Data-Model to have fast query times, for our use-cases.
 Every tag is saved as an index with a quantity attribute. The import was done
 by this [python script](mattmahoney.py). This script reads the file chunk by chunk while
-upserting the tags to the database. Measueres the time and throughput.
+upserting the tags to the database and measueres the time and throughput.
 
 ```
 1 % - throughput: 0.0206674060009 MB/s
@@ -308,6 +308,8 @@ sys	0m0.153s
 ```
 
 
+
+
 # Geo-Stuff
 
 I found a csv-file from the [Geographic Names Information System](https://geonames.usgs.gov/domestic/download_data.htm) with Geo-Coordinates in it, after failing to find a a bigger pure geojson file.
@@ -347,7 +349,208 @@ One entry looks like this:
 }
 ```
 
+After creating the index for the locations:
+```js
+> db.geo_usa2.ensureIndex({"loc" : "2dsphere"})
+```
+here I tried out some geo-queries.
 
+### 1. Query Falls 1km around the Niagara Falls
+
+```js
+> db.geo_usa2.find({
+    "FEATURE_CLASS": "Falls",
+    loc: {
+        $near: {
+            $geometry: {
+                type: "Point",
+                coordinates: [ - 79.075649, 43.077822]
+            }
+        },
+        $maxDistance: 1000
+    }
+})
+```
+
+```js
+{
+    "_id": ObjectId("5277311000d0b0afd002c051"),
+    "ELEV_IN_M": 81,
+    "loc": {
+        "type": "Point",
+        "coordinates": [ - 79.074767, 43.0772778]
+    },
+    "FEATURE_CLASS": "Falls",
+    "FEATURE_ID": 953237,
+    "FEATURE_NAME": "Horseshoe Falls",
+    "COUNTY_NAME": "Niagara",
+    "STATE_ALPHA": "NY"
+}
+ {
+    "_id": ObjectId("5277311200d0b0afd002d4fd"),
+    "ELEV_IN_M": 153,
+    "loc": {
+        "type": "Point",
+        "coordinates": [ - 79.0706003, 43.0833889]
+    },
+    "FEATURE_CLASS": "Falls",
+    "FEATURE_ID": 958544,
+    "FEATURE_NAME": "Niagara Falls",
+    "COUNTY_NAME": "Niagara",
+    "STATE_ALPHA": "NY"
+}
+ {
+    "_id": ObjectId("5277310d00d0b0afd0029f14"),
+    "ELEV_IN_M": 154,
+    "loc": {
+        "type": "Point",
+        "coordinates": [ - 79.0703226, 43.0836667]
+    },
+    "FEATURE_CLASS": "Falls",
+    "FEATURE_ID": 944721,
+    "FEATURE_NAME": "Bridal Veil Falls",
+    "COUNTY_NAME": "Niagara",
+    "STATE_ALPHA": "NY"
+}
+ {
+    "_id": ObjectId("5277310d00d0b0afd002961f"),
+    "ELEV_IN_M": 154,
+    "loc": {
+        "type": "Point",
+        "coordinates": [ - 79.0689337, 43.0853334]
+    },
+    "FEATURE_CLASS": "Falls",
+    "FEATURE_ID": 942427,
+    "FEATURE_NAME": "American Falls",
+    "COUNTY_NAME": "Niagara",
+    "STATE_ALPHA": "NY"
+}
+```
+
+I found a geojson object which describes north carolina, which I uploaded [here](north_caro.js).
+After reading in the file, ```north_caro``` is the variable which holds the polygon.
+
+
+###2. Lakes in North Carolina
+
+```js
+db.geo_usa2.find({ loc :{ $geoWithin :{ $geometry : north_caro}}, "FEATURE_CLASS": "Lake"})
+```
+
+```js
+{ "_id" : ObjectId("5277312700d0b0afd0039eeb"), "ELEV_IN_M" : 348, "loc" : { "type" : "Point", "coordinates" : [  -81.7655698,  35.8034397 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 1011562, "FEATURE_NAME" : "Goodmans Lake", "COUNTY_NAME" : "Burke", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312700d0b0afd0039a86"), "ELEV_IN_M" : 600, "loc" : { "type" : "Point", "coordinates" : [  -81.6114319,  36.0755068 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 1010434, "FEATURE_NAME" : "Cones Lake", "COUNTY_NAME" : "Caldwell", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312800d0b0afd003ae74"), "ELEV_IN_M" : 1043, "loc" : { "type" : "Point", "coordinates" : [  -81.7188496,  36.1425257 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 1015550, "FEATURE_NAME" : "Sims Pond", "COUNTY_NAME" : "Watauga", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312100d0b0afd0035efc"), "ELEV_IN_M" : 253, "loc" : { "type" : "Point", "coordinates" : [  -81.2372005,  35.6238447 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 994761, "FEATURE_NAME" : "Shooks Lake", "COUNTY_NAME" : "Catawba", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277311f00d0b0afd0034725"), "ELEV_IN_M" : 824, "loc" : { "type" : "Point", "coordinates" : [  -81.0315317,  36.4419552 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 988652, "FEATURE_NAME" : "Little Glade Millpond", "COUNTY_NAME" : "Alleghany", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312200d0b0afd003650d"), "ELEV_IN_M" : 662, "loc" : { "type" : "Point", "coordinates" : [  -81.1866158,  36.3661587 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 996318, "FEATURE_NAME" : "Turkey Cove Pond", "COUNTY_NAME" : "Wilkes", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277311c00d0b0afd00326a6"), "ELEV_IN_M" : 879, "loc" : { "type" : "Point", "coordinates" : [  -81.4481792,  36.3470146 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 980320, "FEATURE_NAME" : "Lake Ashe", "COUNTY_NAME" : "Ashe", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277311d00d0b0afd00331df"), "ELEV_IN_M" : 333, "loc" : { "type" : "Point", "coordinates" : [  -80.6270094,  36.5212446 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 983200, "FEATURE_NAME" : "City Lake", "COUNTY_NAME" : "Surry", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277311d00d0b0afd003366a"), "ELEV_IN_M" : 347, "loc" : { "type" : "Point", "coordinates" : [  -80.6322311,  36.5263491 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 984366, "FEATURE_NAME" : "Dry Lake", "COUNTY_NAME" : "Surry", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312000d0b0afd0034d50"), "ELEV_IN_M" : 239, "loc" : { "type" : "Point", "coordinates" : [  -80.1674917,  36.2349431 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 990234, "FEATURE_NAME" : "Morgan Pond", "COUNTY_NAME" : "Forsyth", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312200d0b0afd003666a"), "ELEV_IN_M" : 227, "loc" : { "type" : "Point", "coordinates" : [  -80.1606518,  36.2101118 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 996669, "FEATURE_NAME" : "Waggoner Lake", "COUNTY_NAME" : "Forsyth", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312200d0b0afd0036661"), "ELEV_IN_M" : 163, "loc" : { "type" : "Point", "coordinates" : [  -79.5806546,  36.3644042 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 996660, "FEATURE_NAME" : "Lake Wade", "COUNTY_NAME" : "Rockingham", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277311e00d0b0afd0033f6a"), "ELEV_IN_M" : 222, "loc" : { "type" : "Point", "coordinates" : [  -79.740598,  36.329414 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 986671, "FEATURE_NAME" : "Hester Lake", "COUNTY_NAME" : "Rockingham", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312300d0b0afd0037692"), "ELEV_IN_M" : 245, "loc" : { "type" : "Point", "coordinates" : [  -79.9960479,  36.0182734 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 1000994, "FEATURE_NAME" : "Oak Hollow Lake", "COUNTY_NAME" : "Guilford", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277311e00d0b0afd00342a1"), "ELEV_IN_M" : 228, "loc" : { "type" : "Point", "coordinates" : [  -79.948771,  35.9347581 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 987495, "FEATURE_NAME" : "Jackson Lake", "COUNTY_NAME" : "Guilford", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312200d0b0afd003686b"), "ELEV_IN_M" : 221, "loc" : { "type" : "Point", "coordinates" : [  -79.7707178,  36.1102272 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 997182, "FEATURE_NAME" : "White Oak Lake", "COUNTY_NAME" : "Guilford", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277311d00d0b0afd003303c"), "ELEV_IN_M" : 212, "loc" : { "type" : "Point", "coordinates" : [  -79.7283615,  36.0345797 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 982781, "FEATURE_NAME" : "Causey Lake", "COUNTY_NAME" : "Guilford", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277311f00d0b0afd003447b"), "ELEV_IN_M" : 172, "loc" : { "type" : "Point", "coordinates" : [  -79.545429,  35.9451017 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 987970, "FEATURE_NAME" : "Kimesville Lake", "COUNTY_NAME" : "Guilford", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312200d0b0afd003643e"), "ELEV_IN_M" : 200, "loc" : { "type" : "Point", "coordinates" : [  -79.515594,  35.9080867 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 996110, "FEATURE_NAME" : "Timber Ridge Lake", "COUNTY_NAME" : "Alamance", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277311d00d0b0afd00333e7"), "ELEV_IN_M" : 236, "loc" : { "type" : "Point", "coordinates" : [  -80.3413042,  35.8325561 ] }, "FEATURE_CLASS" : "Lake", "FEATURE_ID" : 983721, "FEATURE_NAME" : "Craver Lake", "COUNTY_NAME" : "Davidson", "STATE_ALPHA" : "NC" }
+...
+```
+
+
+
+###3. Streams under the Sea Level in North Carolina
+
+```js
+db.geo_usa2.find({ loc :{ $geoWithin :{ $geometry : north_caro}}, "FEATURE_CLASS": "Stream", "ELEV_IN_M": {$lt:0}})
+```
+
+```js
+{ "_id" : ObjectId("5277312800d0b0afd003af2c"), "ELEV_IN_M" : -2, "loc" : { "type" : "Point", "coordinates" : [  -76.8027139,  34.725439 ] }, "FEATURE_CLASS" : "Stream", "FEATURE_ID" : 1015735, "FEATURE_NAME" : "Spooner Creek", "COUNTY_NAME" : "Carteret", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312700d0b0afd003a1bb"), "ELEV_IN_M" : -1, "loc" : { "type" : "Point", "coordinates" : [  -77.1655077,  34.784883 ] }, "FEATURE_CLASS" : "Stream", "FEATURE_ID" : 1012286, "FEATURE_NAME" : "Hunters Creek", "COUNTY_NAME" : "Jones", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277311f00d0b0afd00343e0"), "ELEV_IN_M" : -2, "loc" : { "type" : "Point", "coordinates" : [  -77.3138467,  34.6329415 ] }, "FEATURE_CLASS" : "Stream", "FEATURE_ID" : 987815, "FEATURE_NAME" : "Jumping Run", "COUNTY_NAME" : "Onslow", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277311c00d0b0afd0032cda"), "ELEV_IN_M" : -6, "loc" : { "type" : "Point", "coordinates" : [  -77.440242,  34.7346083 ] }, "FEATURE_CLASS" : "Stream", "FEATURE_ID" : 981914, "FEATURE_NAME" : "Brinson Creek", "COUNTY_NAME" : "Onslow", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277311e00d0b0afd0034292"), "ELEV_IN_M" : -1, "loc" : { "type" : "Point", "coordinates" : [  -77.0438403,  35.5368296 ] }, "FEATURE_CLASS" : "Stream", "FEATURE_ID" : 987480, "FEATURE_NAME" : "Jacks Creek", "COUNTY_NAME" : "Pitt", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312100d0b0afd0035b42"), "ELEV_IN_M" : -1, "loc" : { "type" : "Point", "coordinates" : [  -77.0393956,  35.5357186 ] }, "FEATURE_CLASS" : "Stream", "FEATURE_ID" : 993806, "FEATURE_NAME" : "Runyon Creek", "COUNTY_NAME" : "Pitt", "STATE_ALPHA" : "NC" }
+```
+
+
+###4. Police Stations in North Carolina
+
+```js
+db.geo_usa2.find({ loc :{ $geoWithin :{ $geometry : north_caro}}, "FEATURE_NAME": /.*Police.*/})
+```
+
+```js
+{ "_id" : ObjectId("527732a900d0b0afd01214f8"), "ELEV_IN_M" : 292, "loc" : { "type" : "Point", "coordinates" : [  -80.833583,  36.227712 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2086147, "FEATURE_NAME" : "Jonesville Police Department", "COUNTY_NAME" : "Lee", "STATE_ALPHA" : "VA" }
+{ "_id" : ObjectId("5277312200d0b0afd0036b32"), "ELEV_IN_M" : 202, "loc" : { "type" : "Point", "coordinates" : [  -80.9295176,  35.2054199 ] }, "FEATURE_CLASS" : "Airport", "FEATURE_ID" : 997894, "FEATURE_NAME" : "Charlotte Police Dept Airport", "COUNTY_NAME" : "Mecklenburg", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277312500d0b0afd0038eab"), "ELEV_IN_M" : 205, "loc" : { "type" : "Point", "coordinates" : [  -80.9209067,  35.16431 ] }, "FEATURE_CLASS" : "School", "FEATURE_ID" : 1007316, "FEATURE_NAME" : "Charlotte Police and Fire Academy", "COUNTY_NAME" : "Mecklenburg", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732f200d0b0afd014ed73"), "ELEV_IN_M" : 204, "loc" : { "type" : "Point", "coordinates" : [  -80.9186111,  35.1652778 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2574180, "FEATURE_NAME" : "Charlotte-Mecklenburg Police Department Steele Creek Division", "COUNTY_NAME" : "Mecklenburg", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("5277328500d0b0afd010e2a8"), "ELEV_IN_M" : 201, "loc" : { "type" : "Point", "coordinates" : [  -80.91924,  35.1640323 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 1986183, "FEATURE_NAME" : "Charlotte Mecklenburg Police Training Academy", "COUNTY_NAME" : "Mecklenburg", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd012952d"), "ELEV_IN_M" : 13, "loc" : { "type" : "Point", "coordinates" : [  -78.4969309,  33.8938757 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2130835, "FEATURE_NAME" : "Sunset Beach Police Department", "COUNTY_NAME" : "Brunswick", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd01295aa"), "ELEV_IN_M" : 4, "loc" : { "type" : "Point", "coordinates" : [  -78.43717,  33.8887731 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2130960, "FEATURE_NAME" : "Ocean Isle Beach Police Department", "COUNTY_NAME" : "Brunswick", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd01295ab"), "ELEV_IN_M" : 3, "loc" : { "type" : "Point", "coordinates" : [  -78.2709241,  33.9140309 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2130961, "FEATURE_NAME" : "Holden Beach Police Department", "COUNTY_NAME" : "Brunswick", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd0129609"), "ELEV_IN_M" : 4, "loc" : { "type" : "Point", "coordinates" : [  -78.1076713,  33.9124788 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2131055, "FEATURE_NAME" : "Oak Island Police Department", "COUNTY_NAME" : "Brunswick", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd01295bf"), "ELEV_IN_M" : 4, "loc" : { "type" : "Point", "coordinates" : [  -78.0743768,  33.9088153 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2130981, "FEATURE_NAME" : "Yaupon Police Department", "COUNTY_NAME" : "Brunswick", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd012957b"), "ELEV_IN_M" : 4, "loc" : { "type" : "Point", "coordinates" : [  -78.0724709,  33.9034357 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2130913, "FEATURE_NAME" : "Caswell Beach Police Department", "COUNTY_NAME" : "Brunswick", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd0129532"), "ELEV_IN_M" : 6, "loc" : { "type" : "Point", "coordinates" : [  -78.01946,  33.91944 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2130840, "FEATURE_NAME" : "Southport Police Department", "COUNTY_NAME" : "Brunswick", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd0129608"), "ELEV_IN_M" : 6, "loc" : { "type" : "Point", "coordinates" : [  -78.0172849,  33.9189217 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2131054, "FEATURE_NAME" : "Southport Police Department", "COUNTY_NAME" : "Brunswick", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd0129560"), "ELEV_IN_M" : 3, "loc" : { "type" : "Point", "coordinates" : [  -77.9859128,  33.8585571 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2130886, "FEATURE_NAME" : "Bald Head Island Police Department", "COUNTY_NAME" : "Brunswick", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd01295c6"), "ELEV_IN_M" : 1, "loc" : { "type" : "Point", "coordinates" : [  -75.7028477,  36.0644969 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2130988, "FEATURE_NAME" : "Kitty Hawk Police Administration", "COUNTY_NAME" : "Dare", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd01295ac"), "ELEV_IN_M" : 3, "loc" : { "type" : "Point", "coordinates" : [  -75.6661915,  36.0106533 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2130962, "FEATURE_NAME" : "Kill Devil Hills Police Department", "COUNTY_NAME" : "Dare", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd0129589"), "ELEV_IN_M" : 3, "loc" : { "type" : "Point", "coordinates" : [  -75.6125837,  35.9337136 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2130927, "FEATURE_NAME" : "Nags Head Police Department", "COUNTY_NAME" : "Dare", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd0129585"), "ELEV_IN_M" : 2, "loc" : { "type" : "Point", "coordinates" : [  -75.6742355,  35.9090037 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2130923, "FEATURE_NAME" : "Manteo Police Department", "COUNTY_NAME" : "Dare", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd01295e2"), "ELEV_IN_M" : 5, "loc" : { "type" : "Point", "coordinates" : [  -75.7142377,  36.1001207 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2131016, "FEATURE_NAME" : "Southern Shores Police Department", "COUNTY_NAME" : "Dare", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd01295e7"), "ELEV_IN_M" : 4, "loc" : { "type" : "Point", "coordinates" : [  -75.7560375,  36.1796063 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2131021, "FEATURE_NAME" : "Duck Police Department", "COUNTY_NAME" : "Dare", "STATE_ALPHA" : "NC" }
+...
+```
+
+###5. Points of Interest on one Line
+```js
+db.geo_usa2.find( {loc:{$geoIntersects: { $geometry: {type: "LineString", coordinates: [ [-75.7560375,  36.1796063], [  -78.0743768,  33.9088153 ] ]}}}} )
+```
+
+```js
+{ "_id" : ObjectId("527732b700d0b0afd01295bf"), "ELEV_IN_M" : 4, "loc" : { "type" : "Point", "coordinates" : [  -78.0743768,  33.9088153 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2130981, "FEATURE_NAME" : "Yaupon Police Department", "COUNTY_NAME" : "Brunswick", "STATE_ALPHA" : "NC" }
+{ "_id" : ObjectId("527732b700d0b0afd01295e7"), "ELEV_IN_M" : 4, "loc" : { "type" : "Point", "coordinates" : [  -75.7560375,  36.1796063 ] }, "FEATURE_CLASS" : "Building", "FEATURE_ID" : 2131021, "FEATURE_NAME" : "Duck Police Department", "COUNTY_NAME" : "Dare", "STATE_ALPHA" : "NC" }
+```
+
+###6. How many military places are there in North Carolina
+
+```js
+db.geo_usa2.find({ loc :{ $geoWithin :{ $geometry : north_caro}}, "FEATURE_CLASS": "Military"}).count()
+31
+```
+
+###7. Dams around Las Vegas in 50km radius 
+
+```js
+db.geo_usa2.find({
+    "FEATURE_CLASS": "Dam",
+    loc: {
+        $near: {
+            $geometry: {
+                type: "Point",
+                coordinates: [-115.172816, 36.114646]
+            }
+        },
+        $maxDistance: 50000
+    }
+})
+```
+
+```js
+{ "_id" : ObjectId("527730f100d0b0afd0017cb2"), "ELEV_IN_M" : 506, "loc" : { "type" : "Point", "coordinates" : [  -114.9841601,  36.0666426 ] }, "FEATURE_CLASS" : "Dam", "FEATURE_ID" : 863569, "FEATURE_NAME" : "Spent Leaching Liquor Pond Number 4 Dam", "COUNTY_NAME" : "Clark", "STATE_ALPHA" : "NV" }
+{ "_id" : ObjectId("527730f100d0b0afd0017cb4"), "ELEV_IN_M" : 506, "loc" : { "type" : "Point", "coordinates" : [  -114.9841601,  36.0666426 ] }, "FEATURE_CLASS" : "Dam", "FEATURE_ID" : 863571, "FEATURE_NAME" : "Miscellaneous Waste Pond Number 4 Dam", "COUNTY_NAME" : "Clark", "STATE_ALPHA" : "NV" }
+{ "_id" : ObjectId("527730f100d0b0afd0017cb6"), "ELEV_IN_M" : 506, "loc" : { "type" : "Point", "coordinates" : [  -114.9841601,  36.0666426 ] }, "FEATURE_CLASS" : "Dam", "FEATURE_ID" : 863573, "FEATURE_NAME" : "Miscellaneous Waste Pond Number 2 Dam", "COUNTY_NAME" : "Clark", "STATE_ALPHA" : "NV" }
+{ "_id" : ObjectId("527730f100d0b0afd0017cb3"), "ELEV_IN_M" : 506, "loc" : { "type" : "Point", "coordinates" : [  -114.9841601,  36.0666426 ] }, "FEATURE_CLASS" : "Dam", "FEATURE_ID" : 863570, "FEATURE_NAME" : "Spent Leaching Liquor Pond Number 3 Dam", "COUNTY_NAME" : "Clark", "STATE_ALPHA" : "NV" }
+{ "_id" : ObjectId("527730f100d0b0afd0017cb5"), "ELEV_IN_M" : 506, "loc" : { "type" : "Point", "coordinates" : [  -114.9841601,  36.0666426 ] }, "FEATURE_CLASS" : "Dam", "FEATURE_ID" : 863572, "FEATURE_NAME" : "Spent Caustic Liquor Pond Dam", "COUNTY_NAME" : "Clark", "STATE_ALPHA" : "NV" }
+{ "_id" : ObjectId("52772fc900d0b0afd0f5ca72"), "ELEV_IN_M" : 350, "loc" : { "type" : "Point", "coordinates" : [  -114.7375177,  36.0159558 ] }, "FEATURE_CLASS" : "Dam", "FEATURE_ID" : 5928, "FEATURE_NAME" : "Hoover Dam", "COUNTY_NAME" : "Mohave", "STATE_ALPHA" : "AZ" }
+```
 
 
 
