@@ -27,7 +27,7 @@ db.train.count()
 
 Zamiana stringa na tablicę tagów zajęła około 90 minut.
 
-[Skrypt przerabiający stringi na tagi + zliczanie ilości tagów.](docs/dmatulewski_zad1c.php)
+[Skrypt przerabiający stringi na tagi + zliczanie ilości tagów.](docs/dmatulewski_Zad1c.php)
 
 Ilośc wszystkich tagów: 17409994
 
