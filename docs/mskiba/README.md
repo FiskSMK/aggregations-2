@@ -40,7 +40,7 @@ sys     0m24.430s
 ```
 Po zaimportowaniu pliku, folder gdzie MongoDB trzyma bazy (*/var/lib/mongodb*), urusł z 3,3GB do 16GB
 
-![Wykresy z MMS po wykonaniu zadania 1a](/images/mskiba/1a_mms.png)
+![Wykresy z MMS po wykonaniu zadania 1a](../../images/mskiba/1a_mms.png)
 
 #### Zadanie 1b) Liczba zaimportowanych rekordów
 Odpowiedź: 6 034 195
@@ -53,9 +53,7 @@ connecting to: test
 ```
 
 #### Zadanie 1c) Zamiana stringa z tagami na tablice stringów
-
 [Napisałem program w JavaScript](/scripts/mskiba/zadanie_1c.js):
-
 ```javascript
 trains = db.Train.find();
 
@@ -100,6 +98,6 @@ Unikalne tagi: 42048
 
 real	20m29.142s
 user	3m9.740s
-sys	0m15.130s
+sys 	0m15.130s
 ```
-![Htop przy wykonywaniu skryptu](/images/mskiba/1c_htop.png)
+![Htop przy wykonywaniu skryptu](../../images/mskiba/1c_htop.png)
