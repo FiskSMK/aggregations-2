@@ -72,7 +72,7 @@ Następnie importujemy do bazy.
 ``` mongoimport -d geo -c geo -type csv -file  geoPoprawiony.txt --headerline ```
 Rezultat: 
 ``` imported 2251155 objects ```
-Następnie musimy przeczyścić naszą bazę danych przez wykorzystanie dwóch skryptów: [Fix1](/docs/kkubacki/GeoFix1) [Fix1](/docs/kkubacki/GeoFix2)
+Następnie musimy przeczyścić naszą bazę danych przez wykorzystanie dwóch skryptów: [Fix1](/docs/kkubacki/GeoFix1) [Fix2](/docs/kkubacki/GeoFix2)
 Aby móc korzystać z poleceń Geospatial Queries musimy odpowiednio przygotować naszą bazę danych przez uruchomienie nestępującej komendy:
  ``` db.geo_points.ensureIndex({"loc" : "2dsphere"}) ``` 
 Następnie żeby wykonywać zapytania musimy stworzyć punkt możemy to zrobić tak:
@@ -82,46 +82,52 @@ Majac ten punkt możemy wykonywać zapytania.
 
 zapytanie 1 Wszystkie obiekty w odległości 5000m od  punktu o współrzędnych -108.4147341, 35.4114147
 ``` db.geo_points.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 5000} }) ```
+Wynik zapytania: [tutaj](/docs/kkubacki/zapytania/zap1)
 
-zapytanie 2: znajdź  lotniska pomiędzy Nebraska, Omaha, Indianapolis oraz Chicago
+zapytanie 2: znajdź  doliny  pomiędzy Nebraska, Omaha, Indianapolis oraz Chicago
 ```
+var punkt =  {type: "Point", coordinates: [-108.4147341,35.4114147]}
 db.geo_points.find( { loc :
                   { $geoWithin :
                     { $geometry :
                       { type : "Polygon" ,
                         coordinates: [ [ [ -95.9979,41.2524 ] , [ -98.0000,38.5000, ] , [ - 86.1480,39.7910] , [ -87.6279,41.8819 ],[ -95.9979,41.2524 ] ] ]
                 } } },
-            type: "Airport"} )
+            type: "Valley"} )
 
 ```
+Wynik zapytania: [tutaj](/docs/kkubacki/zapytania/zap2)
 
-zapytanie 3:  Znajdź 5 najwyższych szczytów o wysokości co najmniej 800m najbliżej punktu -108.4295458, 32.4184978
-``` db.geo_points.find({ loc: {$near: {$geometry: punkt}}, type:"Summit", height: {$gt:800} }).sort({height: -1}).limit(5) ```
 
-Zapytanie 4: Znajdź wszystkie obiekty w linii prostej między Sakramento  a Carson city	 
+zapytanie 3:  Znajdź 10 dolin  najbliżej punktu -108.4295458, 32.4184978 o wysokości max 300metrów
+```  db.geo_points.find({ loc: {$near: {$geometry: punkt}}, type:"Valley", height: {$lt:300} }).limit(10) ```
+Wynik zapytania: [tutaj](/docs/kkubacki/zapytania/zap3)
+
+Zapytanie 4: Znajdź wszystkie obiekty w linii prostej między  Red Bluff a Carson city	 
 
 ```
 db.geo_points.find( {loc: 
     {$geoIntersects: 
         {$geometry: 
-            {type: "LineString", coordinates: [ [ 38.555556, -121.468889], [33.839722, -118.259722] ]}}}})
+            {type: "LineString", coordinates: [ [ -122.2358300, 40.1784900	], [-151.0060501, 63.0693461] ]}}}})
 ```
 Zapytanie 5: Ilość szpitali leżących 5000m od Sakramento.
 ```
 db.geo_points.find({ loc: {$near: {$geometry: {
-          type: "Point", coordinates: [38.555556, -121.468889]
-          }}, $maxDistance: 3000},
-          type:"Hospital" }).count()
+          type: "Point", coordinates: [-121.468889,38.555556]
+          }}, $maxDistance: 5000},
+          type:"Hospital" }).count())
 ```
-Znajdź wszystkie kopalnie leżące maksymalnie 100km od Las Vegas położone na wysokości co najmwyżej 3000m
+Rezultat:  ``` 8 ```
+Znajdź wszystkie szczyty leżące maksymalnie 100km od Las Vegas położone na wysokości co najmwyżej 3000m
 ```
 db.geo_points.find({ loc: 
     {$near: 
         {$geometry: 
             {type: "Point", coordinates: [-115.1522,36.0800]}}, 
                 $maxDistance : 100000  },
-    type: "Mine",
-    height: {$le:3000} })
+    type: "Summit",
+    height: {$lt:3000} })
 ```
 
 

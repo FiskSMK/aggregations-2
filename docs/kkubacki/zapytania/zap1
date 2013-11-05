@@ -1,0 +1,322 @@
+MongoDB shell version: 2.4.7
+connecting to: geo
+{
+	"_mongo" : connection to 127.0.0.1,
+	"_db" : geo,
+	"_collection" : geo.geo_points,
+	"_ns" : "geo.geo_points",
+	"_query" : {
+		"loc" : {
+			"$near" : {
+				"$geometry" : {
+					"type" : "Point",
+					"coordinates" : [
+						-108.4147341,
+						35.4114147
+					]
+				}
+			},
+			"$maxDistance" : 5000
+		}
+	},
+	"_fields" : null,
+	"_limit" : 0,
+	"_skip" : 0,
+	"_batchSize" : 0,
+	"_options" : 0,
+	"_cursor" : null,
+	"_numReturned" : 0,
+	"_special" : false,
+	"help" : function () {
+    print("find() modifiers")
+    print("\t.sort( {...} )")
+    print("\t.limit( n )")
+    print("\t.skip( n )")
+    print("\t.count() - total # of objects matching query, ignores skip,limit")
+    print("\t.size() - total # of objects cursor would return, honors skip,limit")
+    print("\t.explain([verbose])")
+    print("\t.hint(...)")
+    print("\t.addOption(n) - adds op_query options -- see wire protocol")
+    print("\t._addSpecial(name, value) - http://dochub.mongodb.org/core/advancedqueries#AdvancedQueries-Metaqueryoperators")
+    print("\t.batchSize(n) - sets the number of docs to return per getMore")
+    print("\t.showDiskLoc() - adds a $diskLoc field to each returned object")
+    print("\t.min(idxDoc)")
+    print("\t.max(idxDoc)")
+
+    print("\nCursor methods");
+    print("\t.toArray() - iterates through docs and returns an array of the results")
+    print("\t.forEach( func )")
+    print("\t.map( func )")
+    print("\t.hasNext()")
+    print("\t.next()")
+    print("\t.objsLeftInBatch() - returns count of docs left in current batch (when exhausted, a new getMore will be issued)")
+    print("\t.count(applySkipLimit) - runs command at server")
+    print("\t.itcount() - iterates through documents and counts them")
+},
+	"clone" : function (){
+    var q =  new DBQuery( this._mongo , this._db , this._collection , this._ns ,
+        this._query , this._fields ,
+        this._limit , this._skip , this._batchSize , this._options );
+    q._special = this._special;
+    return q;
+},
+	"_ensureSpecial" : function (){
+    if ( this._special )
+        return;
+
+    var n = { query : this._query };
+    this._query = n;
+    this._special = true;
+},
+	"_checkModify" : function (){
+    if ( this._cursor )
+        throw "query already executed";
+},
+	"_exec" : function (){
+    if ( ! this._cursor ){
+        assert.eq( 0 , this._numReturned );
+        this._cursor = this._mongo.find( this._ns , this._query , this._fields , this._limit , this._skip , this._batchSize , this._options );
+        this._cursorSeen = 0;
+    }
+    return this._cursor;
+},
+	"limit" : function ( limit ){
+    this._checkModify();
+    this._limit = limit;
+    return this;
+},
+	"batchSize" : function ( batchSize ){
+    this._checkModify();
+    this._batchSize = batchSize;
+    return this;
+},
+	"addOption" : function ( option ){
+    this._options |= option;
+    return this;
+},
+	"skip" : function ( skip ){
+    this._checkModify();
+    this._skip = skip;
+    return this;
+},
+	"hasNext" : function (){
+    this._exec();
+
+    if ( this._limit > 0 && this._cursorSeen >= this._limit )
+        return false;
+    var o = this._cursor.hasNext();
+    return o;
+},
+	"next" : function (){
+    this._exec();
+
+    var o = this._cursor.hasNext();
+    if ( o )
+        this._cursorSeen++;
+    else
+        throw "error hasNext: " + o;
+
+    var ret = this._cursor.next();
+    if ( ret.$err && this._numReturned == 0 && ! this.hasNext() )
+        throw "error: " + tojson( ret );
+
+    this._numReturned++;
+    return ret;
+},
+	"objsLeftInBatch" : function (){
+    this._exec();
+
+    var ret = this._cursor.objsLeftInBatch();
+    if ( ret.$err )
+        throw "error: " + tojson( ret );
+
+    return ret;
+},
+	"readOnly" : function (){
+    this._exec();
+    this._cursor.readOnly();
+    return this;
+},
+	"toArray" : function (){
+    if ( this._arr )
+        return this._arr;
+
+    var a = [];
+    while ( this.hasNext() )
+        a.push( this.next() );
+    this._arr = a;
+    return a;
+},
+	"count" : function ( applySkipLimit ){
+    var cmd = { count: this._collection.getName() };
+    if ( this._query ){
+        if ( this._special )
+            cmd.query = this._query.query;
+        else
+            cmd.query = this._query;
+    }
+    cmd.fields = this._fields || {};
+
+    if ( applySkipLimit ){
+        if ( this._limit )
+            cmd.limit = this._limit;
+        if ( this._skip )
+            cmd.skip = this._skip;
+    }
+
+    var res = this._db.runCommand( cmd );
+    if( res && res.n != null ) return res.n;
+    throw "count failed: " + tojson( res );
+},
+	"size" : function (){
+    return this.count( true );
+},
+	"countReturn" : function (){
+    var c = this.count();
+
+    if ( this._skip )
+        c = c - this._skip;
+
+    if ( this._limit > 0 && this._limit < c )
+        return this._limit;
+
+    return c;
+},
+	"itcount" : function (){
+    var num = 0;
+    while ( this.hasNext() ){
+        num++;
+        this.next();
+    }
+    return num;
+},
+	"length" : function (){
+    return this.toArray().length;
+},
+	"_addSpecial" : function ( name , value ){
+    this._ensureSpecial();
+    this._query[name] = value;
+    return this;
+},
+	"sort" : function ( sortBy ){
+    return this._addSpecial( "orderby" , sortBy );
+},
+	"hint" : function ( hint ){
+    return this._addSpecial( "$hint" , hint );
+},
+	"min" : function ( min ) {
+    return this._addSpecial( "$min" , min );
+},
+	"max" : function ( max ) {
+    return this._addSpecial( "$max" , max );
+},
+	"showDiskLoc" : function () {
+    return this._addSpecial( "$showDiskLoc" , true);
+},
+	"readPref" : function ( mode, tagSet ) {
+    var readPrefObj = {
+        mode: mode
+    };
+
+    if ( tagSet ){
+        readPrefObj.tags = tagSet;
+    }
+
+    return this._addSpecial( "$readPreference", readPrefObj );
+},
+	"forEach" : function ( func ){
+    while ( this.hasNext() )
+        func( this.next() );
+},
+	"map" : function ( func ){
+    var a = [];
+    while ( this.hasNext() )
+        a.push( func( this.next() ) );
+    return a;
+},
+	"arrayAccess" : function ( idx ){
+    return this.toArray()[idx];
+},
+	"comment" : function (comment) {
+    var n = this.clone();
+    n._ensureSpecial();
+    n._addSpecial("$comment", comment);
+    return this.next();
+},
+	"explain" : function (verbose) {
+    /* verbose=true --> include allPlans, oldPlan fields */
+    var n = this.clone();
+    n._ensureSpecial();
+    n._query.$explain = true;
+    n._limit = Math.abs(n._limit) * -1;
+    var e = n.next();
+
+    function cleanup(obj){
+        if (typeof(obj) != 'object'){
+            return;
+        }
+
+        delete obj.allPlans;
+        delete obj.oldPlan;
+
+        if (typeof(obj.length) == 'number'){
+            for (var i=0; i < obj.length; i++){
+                cleanup(obj[i]);
+            }
+        }
+
+        if (obj.shards){
+            for (var key in obj.shards){
+                cleanup(obj.shards[key]);
+            }
+        }
+
+        if (obj.clauses){
+            cleanup(obj.clauses);
+        }
+    }
+
+    if (!verbose)
+        cleanup(e);
+
+    return e;
+},
+	"snapshot" : function (){
+    this._ensureSpecial();
+    this._query.$snapshot = true;
+    return this;
+},
+	"pretty" : function (){
+    this._prettyShell = true;
+    return this;
+},
+	"shellPrint" : function (){
+    try {
+        var start = new Date().getTime();
+        var n = 0;
+        while ( this.hasNext() && n < DBQuery.shellBatchSize ){
+            var s = this._prettyShell ? tojson( this.next() ) : tojson( this.next() , "" , true );
+            print( s );
+            n++;
+        }
+        if (typeof _verboseShell !== 'undefined' && _verboseShell) {
+            var time = new Date().getTime() - start;
+            print("Fetched " + n + " record(s) in " + time + "ms");
+        }
+         if ( this.hasNext() ){
+            print( "Type \"it\" for more" );
+            ___it___  = this;
+        }
+        else {
+            ___it___  = null;
+        }
+   }
+    catch ( e ){
+        print( e );
+    }
+
+},
+	"toString" : function (){
+    return "DBQuery: " + this._ns + " -> " + tojson( this._query );
+}
+}
