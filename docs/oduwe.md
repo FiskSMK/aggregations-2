@@ -32,6 +32,19 @@ $ mongo
 ```
 Zgodnie z liczbą rekordów w pliku wyniosła ona 6034195.
 
+### c)
+Skorzystałem z następującego skryptu do konwersji tagów na tablicę tagów:
+```
+db.Train.find ( { "tags" : { $type : 2 } } ).snapshot().forEach(
+    function (x) {
+        if (!Array.isArray(x.tags)) {
+            x.tags = x.tags.split(' ');
+            db.train.save(x);
+        }
+    }
+);
+```
+
 ### d)
 
 Po uprzednim przygotowaniu pliku zgodnie z opisem w poleceniu zaimportowałem plik poprzez:
