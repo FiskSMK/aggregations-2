@@ -32,6 +32,17 @@ wynik - 6034195 obiektów
 
 * zadanie 1c
 
+do przerobienia pola "tags" ze stringu na tablicę użyłem skryptu
+
+```sh
+db.train.find( { "tags" : { $type : 2 } } ).snapshot().forEach(
+ function (x) {
+  if (!Array.isArray(x.tags)){
+    x.tags = x.tags.split(' ');
+    db.train.save(x);
+}});
+```
+
 * zadanie 1d
 
 * zadanie 1e
