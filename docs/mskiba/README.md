@@ -40,7 +40,7 @@ sys     0m24.430s
 ```
 Po zaimportowaniu pliku, folder gdzie MongoDB trzyma bazy (*/var/lib/mongodb*), urusł z 3,3GB do 16GB
 
-![Wykresy z MMS po wykonaniu zadania 1a](../../images/mskiba/1a_mms.png)
+![Wykresy z MMS po wykonaniu zadania 1a](/images/mskiba/1a_mms.png)
 
 #### Zadanie 1b) Liczba zaimportowanych rekordów
 Odpowiedź: 6 034 195
@@ -51,3 +51,55 @@ connecting to: test
 > db.Train.count()
 6034195
 ```
+
+#### Zadanie 1c) Zamiana stringa z tagami na tablice stringów
+
+[Napisałem program w JavaScript](/scripts/mskiba/zadanie_1c.js):
+
+```javascript
+trains = db.Train.find();
+
+var tagsUnikalne = {};
+var tagsIlosc = 0;
+
+trains.forEach(function(train){
+    var tagsArray = [];
+
+    // zamieniamy string zawierający tagi na tablicę napisów z tagami
+    if(typeof train.tags === "string") {
+        tagsArray = train.tags.split(" ");
+        db.Train.update({_id: train._id}, {$set: {tags: tagsArray}});
+    } else if(typeof train.tags === "number") {
+        // tag jest liczbą
+        tagsArray.push(train.tags.toString());
+        db.Train.update({_id: train._id}, {$set: {tags: tagsArray}});
+    } else {
+        // tag jest już tablicą
+        tagsArray = train.tags;
+    }
+
+    // zliczamy wszystkie tagi
+    tagsIlosc += tagsArray.length;
+
+    // zliczamy wszystkie różne tagi
+    tagsArray.forEach(function(tag) {
+        if(typeof tagsUnikalne[tag] === "undefined")
+            tagsUnikalne[tag] = 1;
+    });
+});
+
+print("Wszystkie tagi: " + tagsIlosc);
+print("Unikalne tagi: " + Object.keys(tagsUnikalne).length);
+```
+
+wynik skryptu:
+```sh
+$ time mongo scripts/mskiba/zadanie_1c.js
+Wszystkie tagi: 17409994
+Unikalne tagi: 42048
+
+real	20m29.142s
+user	3m9.740s
+sys	0m15.130s
+```
+![Htop przy wykonywaniu skryptu](/images/mskiba/1c_htop.png)
