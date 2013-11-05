@@ -15,4 +15,4 @@ dataBase.forEach(function (record) {
 	}
 });
 
-print(count + " updates");
+print(count + " records updated");

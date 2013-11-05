@@ -223,7 +223,7 @@ LineString i Polygon). W przykładach należy użyć każdego z tych operatorów
 $near.
 ```
 
-Poniższe zadanie zostało wykonane opierając się o [dane współrzędnych geograficznych miejscowości w Polsce (możliwe błędy)](http://astrowiki.eu/index.php?title=Wsp%C3%B3%C5%82rz%C4%99dne_geograficzne_miejscowo%C5%9Bci_w_Polsce), które znalazłem w internecie i wstępnie obrobiłem na plik typu csv(../../dane/jbelcik/miasta.csv).
+Poniższe zadanie zostało wykonane opierając się o [dane współrzędnych geograficznych miejscowości w Polsce (możliwe błędy)](http://astrowiki.eu/index.php?title=Wsp%C3%B3%C5%82rz%C4%99dne_geograficzne_miejscowo%C5%9Bci_w_Polsce), które znalazłem w internecie i wstępnie obrobiłem na plik typu [csv](../../dane/jbelcik/miasta.csv).
 
 ```
 $ time mongoimport -d miasta -c miasta --type csv --file miasta.csv --headerline
@@ -236,7 +236,7 @@ user    0m0.000s
 sys     0m0.015s
 ```
 
-Do tego zadania wykorzystałem własny [skrypt](../scripts/jbelcik/1e.js), który znajduje każdy rekord nieodpowiadający formatowi, usuwa go i zastępuje poprawnym.
+Do tego zadania wykorzystałem własny [skrypt](../../scripts/jbelcik/1e.js), który znajduje każdy rekord nieodpowiadający formatowi, usuwa go i zastępuje poprawnym.
 
 ```
 $ time mongo 1e.js
