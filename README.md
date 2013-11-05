@@ -54,7 +54,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Małecki, Maciej.
 1. Matulewski, Damian.
 1. Melzer, Grzegorz.
-1. [Mieszała, Konrad.](/docs/wbzyl.md).
+1. [Mieszała, Konrad.](/docs/kmieszala.md).
 1. Motel, Mateusz.
 1. Motławski, Mateusz.
 1. Napiórkowski, Sebastain.
