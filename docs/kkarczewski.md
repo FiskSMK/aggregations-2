@@ -9,7 +9,6 @@ A tak wyglądało polecenie:
 ./2unix.sh Train.csv Train2.csv 
 
 Polecenie importowania:
-
 time mongoimport --collection Train --type csv --file Train2.csv --headerline
 
 Dysk HDD 7200 podłączony kablem ATA - USB2.0
@@ -21,7 +20,6 @@ sys 0m13.934s
 
 Zadanie 1b.
 Zliczyć liczbę zaimportowanych rekordów.
-
 db.Train.count();     6034195
 
 
@@ -32,15 +30,13 @@ Ile procent całego pliku stanowi: najczęściej występujące słowo w tym plik
 występujących słów w tym pliku. 
 
 Ilość wszystkich słów:
+db.slowa.count()      17005207
 
-db.slowa.count()
-17005207
-
-Ilość różnych słów:
-db.slowa.distinct("slowo").length
+Ilość różnych słów:         db.slowa.distinct("slowo").length
 253854
 
 Ile procent stanowi 1, 10, 100, 1000 najczęstszych słów?
+
 {
   "result" : [
     {
