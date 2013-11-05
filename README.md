@@ -37,7 +37,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Elszkowski, Adrian.
 1. Gałka, Jacek.
 1. Głowacki, Michał.
-1. Gniado, Bartosz.
+1. [Gniado, Bartosz](/docs/bgniado/README.md).
 1. Groszek, Rafał.
 1. Januszewski, Tomasz.
 1. Jaźwiński, Robert.
