@@ -4,9 +4,12 @@ MongoDB, PostgreSQL – opcjonalnie dla znających fanów SQL
 
 Do naprawy pliku użyłem skryptu dostępnego na githubie. 
 https://github.com/nosql/aggregations-2/blob/master/scripts/wbzyl/2unix.sh
-A tak wyglądało polecenie
+A tak wyglądało polecenie:
+
 ./2unix.sh Train.csv Train2.csv 
+
 Polecenie importowania:
+
 time mongoimport --collection Train --type csv --file Train2.csv --headerline
 
 Dysk HDD 7200 podłączony kablem ATA - USB2.0
