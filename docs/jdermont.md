@@ -44,14 +44,22 @@ db.train.distinct("Tags").length
 ```
 
 Ilość wszystkich tagów:
+```js
+db.train.aggregate(
+  {
+    $project:{"Tags":1}},
+    {$unwind: "$Tags"},
+    {$group:{"_id":"result",count:{$sum:1}}
+  }
+)
+```
 ```json
 {
-  "result" : [
-     {
-        "_id" : "result",
-        "count" : 17409994
-     }
-  ],
+   "result" : [
+  {
+    "_id" : "result",
+    "count" : 17409994
+  }],
   "ok" : 1
 }
 ```
@@ -71,6 +79,19 @@ db.slowa.distinct("slowo").length
 ```
 
 Ile procent stanowi 1, 10, 100, 1000 najczęstszych słów?
+```js
+db.slowa.aggregate(
+  [
+    {
+      $group: {_id:"$slowo",total:{$sum:1}}},
+      {$sort:{total:-1}},
+      {$limit:1}, // 1, 10, 100, 1000...
+      {$group:{_id:"null",total_total:{$sum:"$total"}}},
+      {$project:{_id:1,percent:{$divide:["$total_total",{$divide:[db.slowa.count(),100]}]}}
+    }
+  ]
+)
+```
 ```json
 {
   "result" : [
@@ -445,7 +466,7 @@ db.miasta.find({
 }
 ```
 
-Przyład 6. Użycie LineString, czy linia jest w polygonie (lub ją przecina?
+Przyład 6. Użycie LineString, czy linia jest w polygonie (lub ją przecina)?
 ```js
 var line1 = {type : "LineString" , coordinates : [[19.960, 51.06] , [41 , 6]]}
 db.wojewodztwa.find({loc:{$geoIntersects:{$geometry:line1}}}).count()
