@@ -54,15 +54,13 @@ db.train.aggregate(
 )
 ```
 ```json
-db.train.aggregate({$project:{"Tags":1}},{$unwind: "$Tags"},{$group:{"_id":"result",count:{$sum:1}}})
 {
-        "result" : [
-                {
-                        "_id" : "result",
-                        "count" : 17409994
-                }
-        ],
-        "ok" : 1
+   "result" : [
+  {
+    "_id" : "result",
+    "count" : 17409994
+  }],
+  "ok" : 1
 }
 ```
 
