@@ -25,7 +25,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Bzyl, Włodzimierz. [Imieniny](/docs/wbzyl.md).
 1. Bełcik, Jakub.
 1. Białkowski, Dominik.
-1. Brzeziński, Damian.
+1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md).
 1. Cała, Mariusz.
 1. [Dermont, Jacek](/docs/jdermont.md).
 1. [Detlaf, Krzysztof](/docs/kdetlaf.md).
