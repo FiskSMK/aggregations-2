@@ -111,6 +111,8 @@ db.geo_points.find( {loc:
         {$geometry: 
             {type: "LineString", coordinates: [ [ -122.2358300, 40.1784900	], [-151.0060501, 63.0693461] ]}}}})
 ```
+Wynik zapytania: [tutaj](/docs/kkubacki/zapytania/zap4)
+
 Zapytanie 5: Ilość szpitali leżących 5000m od Sakramento.
 ```
 db.geo_points.find({ loc: {$near: {$geometry: {
@@ -129,8 +131,5 @@ db.geo_points.find({ loc:
     type: "Summit",
     height: {$lt:3000} })
 ```
-
-
-
-
+Wynik zapytania: [tutaj](/docs/kkubacki/zapytania/zap6)
 
