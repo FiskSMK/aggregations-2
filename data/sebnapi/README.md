@@ -314,6 +314,7 @@ sys	0m0.153s
 
 I found a csv-file from the [Geographic Names Information System](https://geonames.usgs.gov/domestic/download_data.htm) with Geo-Coordinates in it, after failing to find a a bigger pure geojson file.
 
+## Importing and Transforming to GeoJSON
 After importing it as usual I will create a new collection with the attributes:
 ```
 ["FEATURE_ID", "FEATURE_NAME", "FEATURE_CLASS", "STATE_ALPHA", "COUNTY_NAME", "ELEV_IN_M"]
@@ -349,6 +350,7 @@ One entry looks like this:
 }
 ```
 
+## Geo Example Queries
 After creating the index for the locations:
 ```js
 > db.geo_usa2.ensureIndex({"loc" : "2dsphere"})
