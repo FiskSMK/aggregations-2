@@ -57,6 +57,11 @@ $ time bash stringTojson.sh text8.txt text8.json
 
 Jak widać system "ładnie" radził sobie z naprzemiennym obciążaniem każdego procesora osobno.
 
+Pozostało taraz zaimportować plik do kolekcji
+
+```sh
+$ time mongoimport --db test --collection text8 --type json --file text8.json
+```
 
 
 * zadanie 1e
