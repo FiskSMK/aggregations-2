@@ -275,42 +275,129 @@ Dodajemy geo-indeks do kolekcji:
 > db.miasta.ensureIndex({"loc" : "2dsphere"})
 ```
 
+#### Zapytanie 1
 
-### Zapytania
+5 najbliższych miast w promieniu 50km od Nowego Dworu Gdańskiego.
 
+```js
+> var punkt = {
+> 	"type": "Point", 
+>	"coordinates": [19.06, 54.13] 
+> }
+> db.miasta.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 50000} }).skip(1).limit(5).toArray()
+[
+        {
+                "_id" : 1823,
+                "miasto" : "Stegna",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19.06,
+                                54.2
+                        ]
+                }
+        },
+        {
+                "_id" : 1914,
+                "miasto" : "Sztutowo",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19.1,
+                                54.2
+                        ]
+                }
+        },
+        {
+                "_id" : 1806,
+                "miasto" : "Stare Pole",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19.12,
+                                54.03
+                        ]
+                }
+        },
+        {
+                "_id" : 1267,
+                "miasto" : "Nowy Staw",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19,
+                                54.03
+                        ]
+                }
+        },
+        {
+                "_id" : 529,
+                "miasto" : "Gronowo Elbląskie",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19.18,
+                                54.05
+                        ]
+                }
+        }
+]
+```
 
-#### Point + $geoWithin
+#### Zapytanie 2
 
+Wszystkie miasta w promieniu 0.25° od Krakowa włącznie.
 
+```js
+> db.miasta.find({loc: {$geoWithin: {$center: [[19.57, 50.03], 0.25]}}}).toArray()
+[
+        {
+                "_id" : 199,
+                "miasto" : "Charsznica",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19.56,
+                                50.25
+                        ]
+                }
+        },
+        {
+                "_id" : 472,
+                "miasto" : "Gołcza",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19.55,
+                                50.21
+                        ]
+                }
+        },
+        ...
+        {
+                "_id" : 2212,
+                "miasto" : "Zabierzów",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19.48,
+                                50.07
+                        ]
+                }
+        },
+        {
+                "_id" : 2274,
+                "miasto" : "Zielonki",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19.55,
+                                50.07
+                        ]
+                }
+        }
+]
 
-#### Point + $geoIntersect
-
-
-
-#### Point + $near
-
-
-
-#### LineString + $geoWithin
-
-
-
-#### LineString + $geoIntersect
-
-
-
-#### LineString + $near
-
-
-
-#### Polygon + $geoWithin
-
-
-
-#### Polygon + $geoIntersect
-
-
-
-#### Polygon + $near
-
-
+> db.miasta.find({loc: {$geoWithin: {$center: [[19.57, 50.03], 0.25]}}}).count()
+18
+```
