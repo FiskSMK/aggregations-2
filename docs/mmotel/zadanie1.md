@@ -1,4 +1,4 @@
-#Mateusz Motel
+#*Mateusz Motel*
 
 ###Rozwiązania:
 
@@ -84,6 +84,7 @@ if(item.Tags.constructor !== Array){
   } else {
     tagsSplited.push(item.Tags);
   }
+  item.Tags = tagsSplited;
 }
 ```
 
@@ -164,12 +165,6 @@ sys   0m10.816s
 
 W ciągu `13m1.030s` wykonano `6 034 195` aktualizacji. Co średnio daje `~7 726` aktualizacji na sekundę.
 
-####Wyniki z MongoDB Management Service
-
-`**` Czerwona linia oznacza wykonanie restartu bazy danych.
-
-![mms-results1](../../images/mmotel/1c-converting-tags-mms2.png)
-
 
 ##Rozwiązanie `powłoka Mongo`
 
@@ -227,8 +222,21 @@ sys   0m14.732s
 
 W ciągu `18m46.243s` wykonano `6 034 195` aktualizacji. Co średnio daje `~5 358` aktualizacji na sekundę.
 
+##Zlicznone tagi
 
-####Wyniki z MongoDB Management Service
+Surowy wynik: [tutaj](../../data/mmotel/1c/raw-tags.json)
+
+Posortowany wynik: [tutaj](../../data/mmotel/1c/sorted-tags.json)
+
+##Wyniki z MongoDB Management Service
+
+####`Node.JS`
+
+`**` Czerwona linia oznacza wykonanie restartu bazy danych.
+
+![mms-results1](../../images/mmotel/1c-converting-tags-mms2.png)
+
+####`Powłoka Mongo`
 
 ![mms-results2](../../images/mmotel/1c-converting-tags-mms.png)
 
@@ -280,10 +288,6 @@ switched to db text
 > db.text.count()
 17005207
 ```
-
-###Wyniki z MongoDB Management Service
-
-![mms-results](../../images/mmotel/1d-import-mms.png)
 
 ##Zliczanie słów
 
@@ -437,7 +441,7 @@ ilość: 7998978
 część: 47.03840417820259%
 ```
 
-Pełny wynik agregacji: [tutaj](./1d/100words.txt).
+Pełny wynik agregacji: [tutaj](../../data/mmotel/1d/100words.json).
 
 ######Czasy
 
@@ -483,7 +487,7 @@ ilość: 11433354
 część: 67.23443001899359%
 ```
 
-Pełny wynik agregacji: [tutaj](./1d/1000words.txt).
+Pełny wynik agregacji: [tutaj](../../data/mmotel/1d/1000words.json).
 
 ######Czasy
 
@@ -494,6 +498,12 @@ sys   0m0.008s
 ```
 
 ##Wyniki z MongoDB Management Service
+
+####Import
+
+![mms-results](../../images/mmotel/1d-import-mms.png)
+
+####Zliczanie słów
 
 ![mms-results](../../images/mmotel/1d-counting-words.png)
 
@@ -573,7 +583,7 @@ Do przygotowania obiektów `geoJSON` użyjemy prostego skryptu powłoki `Mongo`,
 }
 ```
 
-`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `geony`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](./1e/make-geo-points-results.txt).
+`**` Skrypt usuwa niepoprawne obiekty geoJSON z kolekcji `geony`. Jest ich `16`. Odrzucone obiekty można zobaczyć [tutaj](../../data/mmotel/1e/make-geo-points-results.json).
 
 Kod skryptu: [make-geo-jsons.js](../../scripts/mmotel/1e/make-geo-jsons.js).
 
@@ -730,7 +740,7 @@ db.geony.find({
 ]
 ```
 
-Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-2-1.txt).
+Pełny wynik zapytania: [tutaj](../../data/mmotel/1e/geo-special-sampel-2-1.json).
 
 ###Przykład 2.2: $near
 
@@ -779,7 +789,7 @@ db.geony.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 10000 } }).toArra
 ]
 ```
 
-Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-2-2.txt).
+Pełny wynik zapytania: [tutaj](../../data/mmotel/1e/geo-special-sampel-2-2.json).
 
 ###Przykład 3.1: $geoWithin 
 
@@ -839,8 +849,6 @@ db.geony.find({ loc : { $geoWithin : { $geometry : obszar } } }).toArray();
 ]
 ```
 
-Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-3-1.txt).
-
 ###Przykład 3.2: $geoIntersects
 
 ####Wybrany obszar (taki sam jak w przykładzie 3.1)
@@ -895,8 +903,6 @@ db.geony.find({ loc : { $geoIntersects : { $geometry : obszar } } }).toArray();
 ]
 ```
 
-Pełny wynik zapytania: [tutaj](./1e/geo-special-sampel-3-2.txt).
-
 ###Przykład 4: $geoIntersects
 
 ####Wybrana linia
@@ -933,6 +939,10 @@ db.geony.find({ loc : { $geoIntersects : { $geometry : linia } } }).toArray();
 
 ##Wyniki z MongoDB Management Service
 
+####Import oraz przykład 1
+
 ![mms-results-1](../../images/mmotel/1e-mms-1.png)
+
+####Przykłady 2-4
 
 ![mms-results-2](../../images/mmotel/1e-mms-2.png)
