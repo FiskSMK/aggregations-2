@@ -119,7 +119,14 @@ db.geo_points.find({ loc:
     type: "Mine",
     height: {$le:3000} })
 ```
-			
+| Left align | Right align | Center align |
+|:-----------|------------:|:------------:|
+| This       |        This |     This     |
+| column     |      column |    column    |
+| will       |        will |     will     |
+| be         |          be |      be      |
+| left       |       right |    center    |
+| aligned    |     aligned |   aligned    |
 
 
 
