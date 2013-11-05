@@ -44,6 +44,7 @@ z pliku Train.csv bazy:
 ```
 
 Aby plik Train.csv został poprawnie zaimportowany do bazy danych, trzeba usunąć znaki nowej linii. Zrobi to za nas [skrypt](../scripts/wbzyl/2unix.sh) dostępny w repozytorium prowadzącego.
+
 ```sh
 $ time ./2unix.sh Train.csv trainProper.csv
 
@@ -57,6 +58,8 @@ real    15m50.589s
 user    0m0.000s
 sys     0m0.031s
 ```
+
+Średnio ~6348 insert'ów na sekundę
 
 ---
 
@@ -79,6 +82,19 @@ Zliczyć liczbę zaimportowanych rekordów (Odpowiedź: imported 6_034_195 objec
 (Zamiana formatu danych.) Zamienić string zawierający tagi na tablicę napisów z tagami następnie zliczyć
 wszystkie tagi i wszystkie różne tagi. Napisać program, który to zrobi korzystając z jednego ze sterowników.
 ```
+
+Do tego zadania wykorzystałem własny [skrypt](../scripts/jbelcik/1c.js)
+
+```sh
+$ time mongo 1c.js
+6032934 updates
+
+real    13m3.721s
+user    0m0.000s
+sys     0m0.015s
+```
+
+Średnio ~7698 update'ów na sekundę
 
 ---
 
@@ -117,14 +133,14 @@ user    0m0.000s
 sys     0m0.015s
 ```
 
-Ilość wszystkich słów:
+Ilość wystąpień wszystkich słów:
 
 ```
 > db.text8.count()
 17005207
 ```
 
-Ilość różnych słów:
+Ilość wystąpień różnych słów:
 
 ```
 > db.text8.distinct("word").length
@@ -163,12 +179,12 @@ Ilość wystąpień 10 najpopularniejszych słów oraz udział procentowy w cał
 Ilość wystąpień 100 najpopularniejszych słów oraz udział procentowy w całym pliku:
 
 ```
-db.text8.aggregate([
-	{$group: {_id: "$word", count: {$sum: 1}}},
-	{$sort: {count: -1}},
-	{$limit: 100},
-	{$group: {_id: null, count: {$sum: "$count"}}},
-])
+> db.text8.aggregate([
+> 	{$group: {_id: "$word", count: {$sum: 1}}},
+> 	{$sort: {count: -1}},
+> 	{$limit: 100},
+> 	{$group: {_id: null, count: {$sum: "$count"}}},
+> ])
 { "result" : [ { "_id" : null, "count" : 7998978 } ], "ok" : 1 }
 
 > 7998978 / 17005207 * 100
@@ -178,12 +194,12 @@ db.text8.aggregate([
 Ilość wystąpień 1000 najpopularniejszych słów oraz udział procentowy w całym pliku:
 
 ```
-db.text8.aggregate([
-	{$group: {_id: "$word", count: {$sum: 1}}},
-	{$sort: {count: -1}},
-	{$limit: 1000},
-	{$group: {_id: null, count: {$sum: "$count"}}}
-])
+> db.text8.aggregate([
+> 	{$group: {_id: "$word", count: {$sum: 1}}},
+> 	{$sort: {count: -1}},
+> 	{$limit: 1000},
+> 	{$group: {_id: null, count: {$sum: "$count"}}}
+> ])
 { "result" : [ { "_id" : null, "count" : 11433354 } ], "ok" : 1 }
 
 > 11433354 / 17005207 * 100
