@@ -53,5 +53,10 @@ $ time bash stringTojson.sh text8.txt text8.json
 
 ![text8_01](../../images/jgalka/text8_01.jpg)
 
+![text8_01](../../images/jgalka/text8_02.png)
+
+Jak widać system "ładnie" radził sobie z naprzemiennym obciążaniem każdego procesora osobno.
+
+
 
 * zadanie 1e
