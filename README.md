@@ -1,4 +1,4 @@
-# Agregacje 2
+﻿# Agregacje 2
 
 ![Data Wranglers](/images/data-wrangler.jpg)
 
@@ -17,7 +17,7 @@ wirtualnej. Do maszyny logujemy się w ten sposób:
 mongo --username student --password sesja2013 153.19.1.202/test
 ```
 
-*Uwaga:* Użytkownik *student* ma uprawnienia tylko do odczytu w bazie  *test*.
+*Uwaga:* Użytkownik *student* ma uprawnienia tylko do odczytu w bazie  *test*.
 
 
 ## Nasze agregacje
@@ -28,12 +28,12 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Brzeziński, Damian.
 1. Cała, Mariusz.
 1. [Dermont, Jacek](/docs/jdermont.md).
-1. Detlaf, Krzysztof.
-1. Dępczyk, Michał.
+1. [Detlaf, Krzysztof](/docs/kdetlaf.md).
+1. [Dępczyk, Michał](/docs/mdepczyk.md).
 1. Dobrzycki, Wojciech.
 1. Dolata, Jędrzej.
-1. Domurat, Szymon.
-1. Duwe, Oskar.
+1. [Domurat, Szymon](/docs/sdomurat.md).
+1. [Duwe, Oskar](/docs/oduwe.md).
 1. Elszkowski, Adrian.
 1. Gałka, Jacek.
 1. Głowacki, Michał.
@@ -44,20 +44,20 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Karczewski, Kamil.
 1. [Karwowski, Kamil](/docs/kkarwowski.md).
 1. Kłeczek, Piotr.
-1. Kotłowski, Piotr.
+1. [Kotłowski, Piotr](docs/pkotlowski/README.md).
 1. Koźmiński, Marcin.
 1. [Królik, Przemysław](/docs/pkrolik.md).
-1. Kubacki, Konrad.
-1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md)
-1. Lewandowska, Marta.
-1. Łuczun, Rafał.
+1. [Kubacki, Konrad](/docs/kkubacki/README.md).
+1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md).
+1. [Lewandowska, Marta](/docs/mlewandowska.md).
+1. [Łuczun, Rafał](/docs/rluczun/README.md).
 1. Malinowski, Piotr.
 1. [Małecki, Maciej](/docs/mmalecki/README.md).
 1. Matulewski, Damian.
 1. Melzer, Grzegorz.
 1. Mieszała, Konrad.
 1. [Motel, Mateusz](/docs/mmotel/zadanie1.md).
-1. Motławski, Mateusz.
+1. [Motławski, Mateusz](/docs/mmotlawski/README.md).
 1. Napiórkowski, Sebastain.
 1. Osękowski, Dominik.
 1. [Osiński, Miłosz](/docs/mosinski/README.md).
@@ -71,26 +71,26 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Rogaszewski, Piotr.
 1. Rybarczyk, Karolina.
 1. Sawicki, Paweł.
-1. Siora, Kacper.
+1. [Siora, Kacper](/docs/ksiora/README.md).
 1. [Skiba, Marek](/docs/mskiba/README.md).
-1. Skowroński, Krzysztof.
+1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md).
 1. Smykowski, Adrian.
 1. Sott, Tomasz.
 1. Stefanowicz, Michał.
-1. [Szygenda, Mateusz](/docs/mszygenda.md)
+1. [Szygenda, Mateusz](/docs/mszygenda.md).
 1. Tomczak, Robert.
-1. Wąsowicz, Michał.
-1. Winsławski, Bartłomiej.
-1. Wiśniewski, Konrad.
+1. [Wąsowicz, Michał](/docs/mwasowicz.md).
+1. [Winsławski, Bartłomiej](/docs/bwinslawski.md).
+1. Wiśniewski, Konrad.(/docs/kwisniewski/kwisniewski.md).
 1. Wiśniewski, Piotr.
 1. Zdunek, Kamil.
 1. Żarkowski, Mateusz.
 
 
-## BigData
+## BigData (+1M)
 
 [GetGlue and Timestamped Event Data](http://getglue-data.s3.amazonaws.com/getglue_sample.tar.gz)
-(ok. 11 GB, 19_831_300 json-ów, próbka 100 jsonów [getglue101](/data/wbzyl/getglue101.json)):
+(ok. 11 GB, 19_831_300 json-ów, próbka 100 jsonów [getglue101](/data/wbzyl/getglue101.json)):
 
 ```json
 {
@@ -117,7 +117,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 Dane z lat 2007–2012, tylko filmy i przedstawienia TV.
 
 Przykładowe aggregacje i zliczania: ilu jest różnych użytkowników
-w danych? jakie jest 10 najpopularniejszych filmów i przedstawień TV?
+w danych? jakie jest 10 najpopularniejszych filmów i przedstawień TV?
 ile jest różnych akcji?
 
 
@@ -126,7 +126,7 @@ ile jest różnych akcji?
 * Scott Chacon, [Pro Git](http://git-scm.com/book);
   [niekompletne tłumaczenie na język polski](http://git-scm.com/book/pl).
 
-Dwa sposoby radzenia sobie z taką sytuacją:
+Trzy sposoby radzenia sobie z taką sytuacją:
 **We can’t automatically merge this pull request.**
 
 Sposób 1:
@@ -152,6 +152,23 @@ git push origin master
 
 git branch -d miotla007-master
 ```
+
+Sposób 3
+
+```sh
+# dociaganie zmian z oryginalnego repozytorium
+# https://help.github.com/articles/fork-a-repo#step-3-configure-remotes
+git pull upstream
+
+# rebasing naszego brancha
+git checkout my-branch
+git rebase upstream
+  # rozwiązywanie konfliktów jeżeli zajdzie potrzeba
+  # (instrukcje pojawią się na ekranie)
+```
+
+Dużym plusem tego sposobu jest brak commita z mergem
+(porządek w historii repozytorium).
 
 Undo różnych rzeczy:
 
@@ -208,3 +225,8 @@ Zobacz też:
 * Bert Belder, [Checkout github pull requests locally](https://gist.github.com/piscisaureus/3342247)
 * Chris Wanstrath, [hub makes git better with GitHub](http://defunkt.io/hub/)
 * Scott Chacon, [6.4 Git Tools - Rewriting History](http://git-scm.com/book/en/Git-Tools-Rewriting-History)
+
+# Generowanie spisu treści
+
+Do automatycznego wygenerowania spisu treści możemy użyć narzędzia o
+nazwie [table-of-contents-preprocessor](https://github.com/aslushnikov/table-of-contents-preprocessor).

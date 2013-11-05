@@ -125,3 +125,23 @@ db.text8.aggregate(
  Stanowi: 67,23%
  Czas: 25 sekundy
  ```
+<h3><b>e)</b></h3>
+<p>Do rozwiązania zadania użyłem danych znajdujących się pod tym linkiem(http://www.poipoint.pl).</p>
+[Baza](/data/lpaczynski/Szkolywyzsze.csv) zawiera dane dotyczące szkół wyższych w Polsce.
+
+<p>Import do mongo</p>
+ ```bash
+ mongoimport -d geo -c schools --type csv --headerline --file Szkolywyzsze.csv
+ ```
+ <p>Rekordy:</p>
+ ```js
+ db.schools.count()
+ 
+ Rezultat: 235
+ ```
+ <p>Wszystkie szkoły wyższe znajdujące się w Gdańsku</p>
+ ```js
+ db.schools.find({miasto: /Gda/}, {_id: 0}).count()
+ 
+ Rezultat: 10
+ ```

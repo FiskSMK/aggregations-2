@@ -32,8 +32,9 @@ MongoDB version: 2.5.2
 
 * 1b
 
-  ```bash
+  ```js
   db.Train.count()
+  6034195
   ```
   Wynik: 6034195 czyli się zgadza
 
@@ -70,9 +71,8 @@ MongoDB version: 2.5.2
   sys	  2m45.162s
   ```
   Zawsze jeden z dwóch rdzeni przy imporcie działał na 100% ilość wątków wachała się pomiędzy 2-6 wątków.
-![htop](../../images/mosinski/screen2.png)
-![htop](../../images/mosinski/screen3.png)
-
+  ![htop](../../images/mosinski/screen2.png)
+  ![htop](../../images/mosinski/screen3.png)
 #### zliczanie słów
   Ogółem:
   ```js
@@ -84,7 +84,7 @@ MongoDB version: 2.5.2
   db.text8.distinct("word").length
   253854
   ```
-  Najbardziej popularne słowo:
+  Najbardziej popularne słowo:   <b>Słowo "the" - 1061396 wystąpień czyli 6,24% wszystkich wyrazów</b>
   ```js
   db.text8.aggregate(
     [
@@ -96,9 +96,8 @@ MongoDB version: 2.5.2
   
   { "result" : [ { "_id" : "the", "number" : 1061396 } ], "ok" : 1 }
 
-  Słowo "the" - 1061396 wystąpień czyli 6,24% wszystkich wyrazów
   ```
-  10 Najbardziej popularnych słów:
+  10 Najbardziej popularnych słów:   <b>10 słów - 4205965 wystąpień czyli 24,73% wszystkich wyrazów</b>
   ```js
   db.text8.aggregate(
     [
@@ -109,22 +108,12 @@ MongoDB version: 2.5.2
     ]
   )
   
-  {
-	"result" : [
-		{
-			"_id" : "10 słów",
-			"count" : 4205965
-		}
-	],
-	"ok" : 1
-  }
+  { "result" : [ { "_id" : "10 słów", "count" : 4205965 } ], "ok" : 1 }
 
-
-  10 słów - 4205965 wystąpień czyli 24,73% wszystkich wyrazów
   ```
   wyniki umieściłem [tutaj](../../data/mosinski/10.json)
   
-  100 Najbardziej popularnych słów:
+  100 Najbardziej popularnych słów:  <b>100 słów - 7998978 wystąpień czyli 47,04% wszystkich wyrazów</b>
   ```js
   db.text8.aggregate(
     [
@@ -135,22 +124,12 @@ MongoDB version: 2.5.2
     ]
   )
   
-  {
-	"result" : [
-		{
-			"_id" : "100 słów",
-			"count" : 7998978
-		}
-	],
-	"ok" : 1
-  }
+  { "result" : [ { "_id" : "100 słów", "count" : 7998978 } ], "ok" : 1 }
 
-
-  100 słów - 7998978 wystąpień czyli 47,04% wszystkich wyrazów
   ```
   wyniki umieściłem [tutaj](../../data/mosinski/100.json)
   
-  1000 Najbardziej popularnych słów:
+  1000 Najbardziej popularnych słów:   <b>1000 słów - 11433354 wystąpień czyli 67,23% wszystkich wyrazów</b>
   ```js
   db.text8.aggregate(
     [
@@ -161,19 +140,33 @@ MongoDB version: 2.5.2
     ]
   )
   
-  {
-	"result" : [
-		{
-			"_id" : "1000 słów",
-			"count" : 11433354
-		}
-	],
-	"ok" : 1
-  }
+  { "result" : [ { "_id" : "1000 słów", "count" : 11433354 } ], "ok" : 1 }
 
-
-
-  1000 słów - 11433354 wystąpień czyli 67,23% wszystkich wyrazów
   ```
 * 1e
-   wkrótce.. 
+#### import
+  Do obróbki użyłem bazy listy [Stacji Orlen](../../data/mosinski/Stacje_paliw_Orlen.csv) tutaj zaimportowałem poleceniem:
+  ```bash
+  $ time mongoimport -d GeoOrlen -c stacje --type csv --file Stacje_paliw_Orlen.csv --headerline
+  
+  connected to: 127.0.0.1
+  Sun Nov  3 23:25:53.503 check 9 1246
+  Sun Nov  3 23:25:53.558 imported 1245 objects
+
+  real	  0m0.284s
+  user	  0m0.024s
+  sys	  0m0.056s
+  ```
+  przykładowy rekord:
+  ```js
+  db.stacje.findOne()
+  {
+	"_id" : ObjectId("5276cc3097c07e417dc6a3b6"),
+	"x" : 20.021194,
+	"y" : 49.453218,
+	"nazwa" : "Stacje paliw Orlen",
+	"miasto" : "Nowy Targ"
+  }
+  ```
+  reszta wkrótce..
+  
