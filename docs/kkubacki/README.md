@@ -55,16 +55,18 @@ Ilość wszystkich słów: 17005207.
 ``` db.text8.count() ```
 
 Udział procentowy wygląda następująco:
-```  1 1061396/17005207 = 0.0624 *100% ~ 6.24%  ```
-``` 10 4205965/17005207 = 0.2473 *100% ~  24.73% ```
-``` 100 7998978/17005207=0.4704 *100% ~ 47% ```
-``` 1000  11433354/17005207=0.6723 * 100% ~ 67% ```
 
+|Limit       | Ilość słów  | Udział %	           |      
+|:-----------|------------:|:---------:|
+| 1          |1061396      | 6.24%     |      
+| 10         |4205965      | 24.73%    |
+| 100        |7998978      | 47%       |
+| 1000       |11433354     | 67%       |
 
 ### d) Zadanie z GeoJson
 
-Bazę można znaleść pod następującym linkiem:  http://geonames.usgs.gov/docs/stategaz/NationalFile_2013102
-Plik należy oczyścić przez zamianę znaku ``` | ``` na ``` , ``` możemy zrobić to polecenien tr 
+Bazę można znaleść pod następującym linkiem:  http://geonames.usgs.gov/docs/stategaz/NationalFile_2013102 Baza zawiera dane z hrabstw z USA.
+Plik należy oczyścić przez zamianę znaku ``` | ``` na ``` , ``` możemy zrobić to polecenien  ``` tr ``` 
 ``` tr '|' ',' < Geojson1 > geoPoprawiony.txt ```
 Następnie importujemy do bazy.
 ``` mongoimport -d geo -c geo -type csv -file  geoPoprawiony.txt --headerline ```
@@ -73,8 +75,10 @@ Rezultat:
 Następnie musimy przeczyścić naszą bazę danych przez wykorzystanie dwóch skryptów: [Fix1](/docs/kkubacki/GeoFix1) [Fix1](/docs/kkubacki/GeoFix2)
 Aby móc korzystać z poleceń Geospatial Queries musimy odpowiednio przygotować naszą bazę danych przez uruchomienie nestępującej komendy:
  ``` db.geo_points.ensureIndex({"loc" : "2dsphere"}) ``` 
+Następnie żeby wykonywać zapytania musimy stworzyć punkt możemy to zrobić tak:
  
-przykładowy punkt:  ``` var punkt = {type: "Point", coordinates: [0,0]} ```
+``` var punkt = {type: "Point", coordinates: [-95.9979,41.2524]} ```
+Majac ten punkt możemy wykonywać zapytania.
 
 zapytanie 1 Wszystkie obiekty w odległości 5000m od  punktu o współrzędnych -108.4147341, 35.4114147
 ``` db.geo_points.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 5000} }) ```
@@ -119,14 +123,7 @@ db.geo_points.find({ loc:
     type: "Mine",
     height: {$le:3000} })
 ```
-| Left align | Right align | Center align |
-|:-----------|------------:|:------------:|
-| This       |        This |     This     |
-| column     |      column |    column    |
-| will       |        will |     will     |
-| be         |          be |      be      |
-| left       |       right |    center    |
-| aligned    |     aligned |   aligned    |
+
 
 
 
