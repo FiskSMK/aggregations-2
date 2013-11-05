@@ -35,7 +35,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Domurat, Szymon](/docs/sdomurat.md).
 1. [Duwe, Oskar](/docs/oduwe.md).
 1. Elszkowski, Adrian.
-1. Gałka, Jacek.
+1. [Gałka, Jacek](/docs/jgalka/README.md).
 1. Głowacki, Michał.
 1. [Gniado, Bartosz](/docs/bgniado/README.md).
 1. Groszek, Rafał.
