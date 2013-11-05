@@ -270,3 +270,46 @@ Przykładowy poprawiony rekord:
         }
 }
 ```
+
+Dodajemy geo-indeks do kolekcji:
+
+```js
+> db.miasta.ensureIndex({"loc" : "2dsphere"})
+```
+
+
+# Point + $geoWithin
+
+
+
+# Point + $geoIntersect
+
+
+
+# Point + $near
+
+
+
+# LineString + $geoWithin
+
+
+
+# LineString + $geoIntersect
+
+
+
+# LineString + $near
+
+
+
+# Polygon + $geoWithin
+
+
+
+# Polygon + $geoIntersect
+
+
+
+# Polygon + $near
+
+
