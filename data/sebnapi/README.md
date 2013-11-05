@@ -1,3 +1,24 @@
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Train](#train)
+	- [Preparing Raw Data](#preparing-raw-data)
+	- [First mongoimport](#first-mongoimport)
+	- [Second import by python script](#second-import-by-python-script)
+	- [Changing Tags-String to a Tag-List](#changing-tags-string-to-a-tag-list)
+		- [Processor, memory, IO while changing](#processor-memory-io-while-changing)
+- [Words](#words)
+	- [Count Tags](#count-tags)
+- [Geo-Stuff](#geo-stuff)
+	- [Importing and Transforming to GeoJSON](#importing-and-transforming-to-geojson)
+	- [Geo Example Queries](#geo-example-queries)
+		- [1. Query Falls 1km around the Niagara Falls](#1-query-falls-1km-around-the-niagara-falls)
+		- [2. Lakes in North Carolina](#2-lakes-in-north-carolina)
+		- [3. Streams under the Sea Level in North Carolina](#3-streams-under-the-sea-level-in-north-carolina)
+		- [4. Police Stations in North Carolina](#4-police-stations-in-north-carolina)
+		- [5. Points of Interest on one Line](#5-points-of-interest-on-one-line)
+		- [6. How many military places are there in North Carolina](#6-how-many-military-places-are-there-in-north-carolina)
+		- [7. Dams around Las Vegas in 50km radius](#7-dams-around-las-vegas-in-50km-radius)
+
 # Train
 
 ## Preparing Raw Data
