@@ -72,7 +72,7 @@ sys     0m0.031s
 Zliczyć liczbę zaimportowanych rekordów (Odpowiedź: imported 6_034_195 objects).
 ```
 
-```
+```json
 > db.train.count()
 6034195
 ```
@@ -141,21 +141,21 @@ sys     0m0.015s
 
 Ilość wystąpień wszystkich słów:
 
-```
+```json
 > db.text8.count()
 17005207
 ```
 
 Ilość wystąpień różnych słów:
 
-```
+```json
 > db.text8.distinct("word").length
 253854
 ```
 
 Najpopularniejsze słowo, jego ilość wystąpień oraz udział procentowy w całym pliku:
 
-```
+```json
 > db.text8.aggregate([
 > 	{$group: {_id: "$word", count: {$sum: 1}}},
 > 	{$sort: {count: -1}},
@@ -169,7 +169,7 @@ Najpopularniejsze słowo, jego ilość wystąpień oraz udział procentowy w ca�
 
 Ilość wystąpień 10 najpopularniejszych słów oraz udział procentowy w całym pliku:
 
-```
+```json
 > db.text8.aggregate([
 > 	{$group: {_id: "$word", count: {$sum: 1}}},
 > 	{$sort: {count: -1}},
@@ -184,7 +184,7 @@ Ilość wystąpień 10 najpopularniejszych słów oraz udział procentowy w cał
 
 Ilość wystąpień 100 najpopularniejszych słów oraz udział procentowy w całym pliku:
 
-```
+```json
 > db.text8.aggregate([
 > 	{$group: {_id: "$word", count: {$sum: 1}}},
 > 	{$sort: {count: -1}},
@@ -199,7 +199,7 @@ Ilość wystąpień 100 najpopularniejszych słów oraz udział procentowy w ca�
 
 Ilość wystąpień 1000 najpopularniejszych słów oraz udział procentowy w całym pliku:
 
-```
+```json
 > db.text8.aggregate([
 > 	{$group: {_id: "$word", count: {$sum: 1}}},
 > 	{$sort: {count: -1}},
@@ -238,7 +238,7 @@ sys     0m0.015s
 
 Przykładowy rekord:
 
-```
+```json
 > db.miasta.findOne()
 { "_id" : 1, "miasto" : "Adamów", "szerokosc" : 22.15, "dlugosc" : 51.45 }
 ```
@@ -256,7 +256,7 @@ sys     0m0.015s
 
 Przykładowy poprawiony rekord:
 
-```
+```json
 > db.miasta.findOne()
 {
         "_id" : 1,
