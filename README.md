@@ -41,7 +41,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Groszek, Rafał.
 1. Januszewski, Tomasz.
 1. Jaźwiński, Robert.
-1. Karczewski, Kamil.
+1. [Karczewski, Kamil](/docs/kkarczewski.md).
 1. [Karwowski, Kamil](/docs/kkarwowski.md).
 1. Kłeczek, Piotr.
 1. Kotłowski, Piotr.
