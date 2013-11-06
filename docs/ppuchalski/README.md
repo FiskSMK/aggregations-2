@@ -127,7 +127,7 @@ db.text8.aggregate(
  ```
 <h3><b>e)</b></h3>
 <p>Do rozwiązania zadania użyłem danych znajdujących się pod tym linkiem(http://www.poipoint.pl).</p>
-[Baza](/data/ppuchalski/Szkolywyzsze.csv) zawiera dane dotyczące szkół wyższych w Polsce.
+[Baza](/data/lpaczynski/Szkolywyzsze.csv) zawiera dane dotyczące szkół wyższych w Polsce.
 
 <p>Import do mongo</p>
  ```bash
@@ -138,4 +138,10 @@ db.text8.aggregate(
  db.schools.count()
  
  Rezultat: 235
+ ```
+ <p>Wszystkie szkoły wyższe znajdujące się w Gdańsku</p>
+ ```js
+ db.schools.find({miasto: /Gda/}, {_id: 0}).count()
+ 
+ Rezultat: 10
  ```
