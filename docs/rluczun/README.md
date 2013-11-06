@@ -57,12 +57,8 @@ Jeśli aktualnie wszystkie tagi w bazie są już tablicami, program tylko liczy 
 Unikatowe tagi liczę szukając tagów z pojedyńczym wystąpieniem
 
 ##Obciążenie
-Obciążenie komputera podczas działania programu jest dość spore:
-![tags-memory](../../images/rluczun/tags_js_memory.png)
-![tags-hd](../../images/rluczun/tags_js_hd.png)
-
-Wykorzystanie zasobów przez program:
-![node-usage](../../images/rluczun/tags_js_usage.png)
+Obciążenie komputera podczas działania programu jest dość spore, użycie zasobów interpretera JavaScript również na wysokim poziomie:
+![usage](../../images/rluczun/tags_js_usage.png)
 
 ***
 
