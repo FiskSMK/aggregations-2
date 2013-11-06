@@ -215,6 +215,7 @@ Wypisanie wszystkich placówek w odległości max 20 km od Giżycka
 > var origin = {type: "Point", coordinates: [21.768888,  54.039166]}
 
 > db.geo.find({ loc: {$near: {$geometry: origin},$maxDistance: 20000} })
+
 { "_id" : ObjectId("527a2a1152f46a52b710d81e"), "PNI" : 239874, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "giżycki", "gmina" : "Giżycko", "nazwa" : "UP Giżycko 1", "miasto" : "Giżycko", "loc" : { "type" : "Point", "coordinates" : [  21.768888,  54.039166 ] } }
 
 { "_id" : ObjectId("527a2a1152f46a52b710d81f"), "PNI" : 744926, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "giżycki", "gmina" : "Giżycko", "nazwa" : "FUP Giżycko 1", "miasto" : "Giżycko", "loc" : { "type" : "Point", "coordinates" : [  21.786583,  54.04225 ] } }
@@ -225,5 +226,16 @@ Wypisanie wszystkich placówek w odległości max 20 km od Giżycka
 
 { "_id" : ObjectId("527a2a1152f46a52b710d870"), "PNI" : 273636, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "węgorzewski", "gmina" : "Węgorzewo", "nazwa" : "UP Węgorzewo", "miasto" : "Węgorzewo", "loc" : { "type" : "Point", "coordinates" : [  21.741583,  54.210916 ] } }
 > 
+```
+
+Wypisanie wszystkich placówek w odległości max 20 km od Giżycka które znajdują się w powiecie Giżyckim
+```js
+> var origin = {type: "Point", coordinates: [21.768888,  54.039166]}
+
+db.geo.find({ loc: {$near: {$geometry: origin},$maxDistance: 20000},powiat: "giżycki" })
+{ "_id" : ObjectId("527a2a1152f46a52b710d81e"), "PNI" : 239874, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "giżycki", "gmina" : "Giżycko", "nazwa" : "UP Giżycko 1", "miasto" : "Giżycko", "loc" : { "type" : "Point", "coordinates" : [  21.768888,  54.039166 ] } }
+{ "_id" : ObjectId("527a2a1152f46a52b710d81f"), "PNI" : 744926, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "giżycki", "gmina" : "Giżycko", "nazwa" : "FUP Giżycko 1", "miasto" : "Giżycko", "loc" : { "type" : "Point", "coordinates" : [  21.786583,  54.04225 ] } }
+{ "_id" : ObjectId("527a2a1152f46a52b710d871"), "PNI" : 275863, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "giżycki", "gmina" : "Wydminy", "nazwa" : "UP Wydminy", "miasto" : "Wydminy", "loc" : { "type" : "Point", "coordinates" : [  22.032338,  53.981961 ] } }
+{ "_id" : ObjectId("527a2a1152f46a52b710d865"), "PNI" : 263627, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "giżycki", "gmina" : "Ryn", "nazwa" : "UP Ryn", "miasto" : "Ryn", "loc" : { "type" : "Point", "coordinates" : [  21.546833,  53.937527 ] } }
 ```
 
