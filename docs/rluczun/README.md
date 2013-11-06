@@ -41,13 +41,12 @@ Do działania potrzebny jest tylko jeden dodatkowy moduł do obsługi mongodb
 ##Uruchomienie
 Plik package.json potrzebny do uruchomienia można znaleść tutaj [package.json](../../scripts/rluczun/package.json)
 Plik źródłowy ze skryptem znajdziemy tutaj [mongotrainer.js](../../scripts/rluczun/mongotrainer.js) 
-Umieszczamy je oba w jednym katalogu i wpisujemy w konsoli
 
-Następnie wpisujemy
+Umieszczamy je oba w jednym katalogu i wpisujemy w konsoli
 `npm install`
 `npm start`
 
-Program naprawia tagi, szukając odpowiedniego separatora do podziału, po naprawie tagi umieszczane są w tablicy która zostanie nadpisana na poprzednie tagi.
+Program naprawia tagi, szukając odpowiedniego separatora do podziału, po naprawie tagi umieszczane są w tablicy którą zostanie nadpisana poprzednia lista tagów.
 Zanim tagi zostaną uaktualnione, program zlicza je, a także zapisuje częstotliwość występowania tagu.
 Jeśli aktualnie wszystkie tagi w bazie są już tablicami, program tylko liczy i wypisuje rezultat.
 
@@ -73,16 +72,14 @@ time mongoimport -d test -c words -f word --type csv --file text8.txt
 
 ##Czas
 ![import-words](../../images/rluczun/import_words.png)
-Obciążenie serwera mongo
-![mongod-aggregate](../../images/rluczun/mongod_aggregate.png)
-
 
 Zadanie przygotowałem w JavaScript przy wykorzystaniu Node.js, aby uruchomić skrypt należy przenieść plik [word_counter.js](../../scripts/rluczun/word_counter.js) do folderu roboczego z poprzedniego zadania
 i wpisać `npm word_counter.js'.
 
 ##Wyniki
 ![import-words](../../images/rluczun/words_result.png)
-
-***
+---
+Obciążenie serwera mongo podczas agregacji
+![mongod-aggregate](../../images/rluczun/mongod_aggregate.png)
 
 #Zadanie 1e
