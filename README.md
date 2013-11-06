@@ -23,7 +23,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 ## Nasze agregacje
 
 1. Bzyl, Włodzimierz. [Imieniny](/docs/wbzyl.md).
-1. Bełcik, Jakub.
+1. [Bełcik, Jakub](/docs/jbelcik/README.md).
 1. Białkowski, Dominik.
 1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md).
 1. Cała, Mariusz.
