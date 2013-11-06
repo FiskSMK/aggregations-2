@@ -67,3 +67,48 @@ real    36m17.261s
 user    3m10.320s
 sys     0m20.591s
 ```
+###Zadanie 1d)
+Po pobraniu i rozpakowaniu pliku text8.gz zabrałem się za import wpisów do bazy:
+```sh
+time mongoimport -c Text --type csv --file text8.txt --fields slowo
+```
+Czas:
+```
+Wed Nov  6 10:10:34.179 			16979300	34651/second
+Wed Nov  6 10:10:34.698 check 9 17005207
+Wed Nov  6 10:10:35.329 imported 17005207 objects
+
+real	8m11.334s
+user	0m55.993s
+sys	0m11.458s
+```
+![](../images/kmieszala/screan2.JPG)
+
+Wszystkie i różne słowa:
+```sh
+konrad@Konrad:~/Pulpit$ mongo
+MongoDB shell version: 2.4.8
+connecting to: test
+> db.Text.count()
+17005207
+> db.Text.distinct("slowo").length
+253854
+```
+Najczęściej występujące słowo: było słowo *the*, które pojawiło się 1061396 razy oraz stanowi 6.24% całości. 
+```sh
+db.Text.aggregate(
+        { $group: { _id: "$slowo", count: { $sum: 1 } } } , 
+        { $sort: { count: -1 } }, 
+        { $limit: 1 })
+)
+```
+Najczęściej wystąpiło słowo 'the', stanowi 6.24% całości, co daje 1061396 wystąpień.
+
+
+
+
+
+
+
+
+
