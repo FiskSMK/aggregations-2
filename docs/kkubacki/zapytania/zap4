@@ -1,0 +1,47 @@
+MongoDB shell version: 2.4.7
+connecting to: geo
+{
+	"_id" : ObjectId("5276a31e9d0a3eb646cb57f8"),
+	"id" : 1400397,
+	"name" : "Churchill Peaks",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 6186,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-151.0060501,
+			63.0693461
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a31f9d0a3eb646cb8e1b"),
+	"id" : 1414314,
+	"name" : "Mount McKinley",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 6186,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-151.0060501,
+			63.0693461
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a3629d0a3eb646d255fa"),
+	"id" : 1884386,
+	"name" : "South Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 6186,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-151.0060501,
+			63.0693461
+		]
+	}
+}

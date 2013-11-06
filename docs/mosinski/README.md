@@ -73,6 +73,8 @@ MongoDB version: 2.5.2
   Zawsze jeden z dwóch rdzeni przy imporcie działał na 100% ilość wątków wachała się pomiędzy 2-6 wątków.
   ![htop](../../images/mosinski/screen2.png)
   ![htop](../../images/mosinski/screen3.png)
+  <b>Screen z mms-a</b>
+  ![htop](../../images/mosinski/screen.png)
 #### zliczanie słów
   Ogółem:
   ```js
@@ -147,11 +149,11 @@ MongoDB version: 2.5.2
 #### import
   Do obróbki użyłem bazy listy [Stacji Orlen](../../data/mosinski/Stacje_paliw_Orlen.csv) tutaj zaimportowałem poleceniem:
   ```bash
-  $ time mongoimport -d GeoOrlen -c stacje --type csv --file Stacje_paliw_Orlen.csv --headerline
+  $ time mongoimport -d GeoOrlen -c stacje  < Stacje_paliw_Orlen.json
   
   connected to: 127.0.0.1
-  Sun Nov  3 23:25:53.503 check 9 1246
-  Sun Nov  3 23:25:53.558 imported 1245 objects
+  Mon Nov  4 22:56:14.360 check 9 1245
+  Mon Nov  4 22:56:14.360 imported 1245 objects
 
   real	  0m0.284s
   user	  0m0.024s
@@ -159,14 +161,56 @@ MongoDB version: 2.5.2
   ```
   przykładowy rekord:
   ```js
-  db.stacje.findOne()
+  db.geoJson.findOne()
   {
-	"_id" : ObjectId("5276cc3097c07e417dc6a3b6"),
-	"x" : 20.021194,
-	"y" : 49.453218,
-	"nazwa" : "Stacje paliw Orlen",
-	"miasto" : "Nowy Targ"
+	"_id" : ObjectId("527817fe644839d19fd136b5"),
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			20.021194,
+			49.453218
+		]
+	},
+	"name" : "Stacje paliw Orlen",
+	"city" : "Nowy Targ"
   }
   ```
+#### Dodanie index
+  ```js
+  db.geoJson.ensureIndex({"loc" : "2dsphere"});
+  ```
+#### Koordynaty kilku miast w Polsce:
+  Warszawa 52.259,21.020
+  Gdańsk 54.360,18.639
+  Poznań 52.399, 16.900
+
+### Zapytania
+  Wyświetl wszystkie stacje w odległości 100 km od Warszawy:
+  ```js
+  db.geoJson.find({ 
+    loc: {$near: {
+        $geometry: punkt}, $maxDistance: 4800000} 
+  }).toArray()
+
+  ```
+  <b>wyniki:</b>
+  ```js
+  [
+	{
+		"_id" : ObjectId("527817fe644839d19fd13a63"),
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				22.56548,
+				49.42173
+			]
+		},
+		"name" : "Stacje paliw Orlen",
+		"city" : "Ustrzyki Dolne"
+	}
+  ]
+  ```
+  
+
   reszta wkrótce..
   
