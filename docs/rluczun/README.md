@@ -63,5 +63,26 @@ Obciążenie komputera podczas działania programu jest dość spore, użycie za
 ***
 
 #Zadanie 1d
+Zadanie to polegało na zaimportowaniu słow z pliku, zliczeniu ich, zliczeniu unikatów i podaniu częstotliwości ich występowania.
+Plik z którego miał nastąpić import, najpierw musiałbyć sprawdzony skryptem który był wskazówką do zadania, u mnie wszystko przebiegło sprawnie.
+
+##Import
+```sh
+time mongoimport -d test -c words -f word --type csv --file text8.txt
+```
+
+##Czas
+![import-words](../../images/rluczun/import_words.png)
+Obciążenie serwera mongo
+![mongod-aggregate](../../images/rluczun/mongod_aggregate.png)
 
 
+Zadanie przygotowałem w JavaScript przy wykorzystaniu Node.js, aby uruchomić skrypt należy przenieść plik [word_counter.js](../../scripts/rluczun/word_counter.js) do folderu roboczego z poprzedniego zadania
+i wpisać `npm word_counter.js'.
+
+##Wyniki
+![import-words](../../images/rluczun/words_result.png)
+
+***
+
+#Zadanie 1e
