@@ -72,6 +72,7 @@ Po pobraniu i rozpakowaniu pliku text8.gz zabrałem się za import wpisów do ba
 ```sh
 time mongoimport -c Text --type csv --file text8.txt --fields slowo
 ```
+![](../images/kmieszala/screan2.JPG)
 Czas:
 ```
 Wed Nov  6 10:10:34.179 			16979300	34651/second
@@ -82,8 +83,7 @@ real	8m11.334s
 user	0m55.993s
 sys	0m11.458s
 ```
-![](../images/kmieszala/screan2.JPG)
-
+![](../images/kmieszala/screan3.JPG)
 Wszystkie i różne słowa:
 ```sh
 konrad@Konrad:~/Pulpit$ mongo
@@ -103,6 +103,31 @@ db.Text.aggregate(
 )
 ```
 Najczęściej wystąpiło słowo 'the', stanowi 6.24% całości, co daje 1061396 wystąpień.
+
+10 najczęściej występujących słów stanowi łącznie 25% wszystkich słów.
+```sh
+db.Text.aggregate(
+        { $group: { _id: "$slowo", count: { $sum: 1 } } } ,
+        { $sort: { count: -1 } },
+        { $limit: 10 })
+)
+```
+100 najczęściej występujących słów stanowi 47.04% wszystkich słów.
+```sh
+db.Text.aggregate(
+        { $group: { _id: "$slowo", count: { $sum: 1 } } } ,
+        { $sort: { count: -1 } },
+        { $limit: 100 })
+)
+```
+1000 najczęściej występujących słów stanowi 67.23% wszystkich słów.
+```sh
+db.Text.aggregate(
+        { $group: { _id: "$slowo", count: { $sum: 1 } } } ,
+        { $sort: { count: -1 } },
+        { $limit: 1000 })
+)
+```
 
 
 
