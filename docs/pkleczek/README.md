@@ -8,7 +8,7 @@ Laptop Acer Extensa 5630EZ z procesorem [Intel® Pentium® Processor T4200(1M Ca
 
 System Ubuntu 12.04 LTS 64-bitowy
 
-MongoDB
+##### MongoDB
 ```sh
 $ mongo --version
 MongoDB shell version: 2.4.8
