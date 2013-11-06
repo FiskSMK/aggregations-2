@@ -441,7 +441,7 @@ Wszystkie miasta w promieniu 0.25° od Krakowa włącznie.
 
 #### Zapytanie 3
 
-Wszystkie miasta pomiędzy Warszawą, Łodzią, a Płockiem.
+Wszystkie miasta pomiędzy Bydgoszczą, Toruniem, a Inowrocławiem.
 
 ```js
 > var obszar = {
@@ -453,7 +453,7 @@ Wszystkie miasta pomiędzy Warszawą, Łodzią, a Płockiem.
 >		[18.00, 53.07]
 >	]]
 > }
- db.miasta.find({loc: {$geoWithin: {$geometry: obszar}}}).toArray()
+> db.miasta.find({loc: {$geoWithin: {$geometry: obszar}}}).toArray()
 [
         {
                 "_id" : 184,

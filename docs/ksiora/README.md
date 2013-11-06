@@ -118,7 +118,7 @@ Czas trwania poniżej 2s.
 }
 ```
 
-Aby oczyścić dane ze zbędnych rzeczy oraz utworzyć punkty ze współrzędnych geograficznych użyłem [zmiana.js](https://github.com/Siorski/aggregations2/blob/master/scripts/ksiora/zmiana.js). 
+Aby oczyścić dane ze zbędnych rzeczy oraz utworzyć punkty ze współrzędnych geograficznych użyłem [zmiana.js](https://github.com/Siorski/aggregations-2/blob/master/scripts/ksiora/zmiana.js). 
 
 ![img](http://i44.tinypic.com/208z7g3.png)
 
