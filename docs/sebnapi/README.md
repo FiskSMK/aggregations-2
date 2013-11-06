@@ -95,9 +95,9 @@ sys	27m56.483s
 But the problem was, that mongoimport imports a csv string field with digits
 in it as a Number. To be sure we don't lose tags like "007" which would be
 imported as "7" (this behaviour corresponds to the ticket https://jira.mongodb.org/browse/SERVER-3731) 
-i wrote a [python script that imports the data](../../docs/sebnapi/import_train_tr.py), measures the time and throughput.
+i wrote a [python script that imports the data](../../data/sebnapi/import_train_tr.py), measures the time and throughput.
 
-## Second import by [python script](../../docs/sebnapi/import_train_tr.py)
+## Second import by [python script](../../data/sebnapi/import_train_tr.py)
 
 ```
 1.65722188295e-05 % - throughput: 0.0140412580318 MB/s
@@ -212,7 +212,7 @@ Total count of imported objects
 
 ## Changing Tags-String to a Tag-List
 
-For this work I used also a [python script](../../docs/sebnapi/zad1c.py).
+For this work I used also a [python script](../../data/sebnapi/zad1c.py).
 It took 45min and shows there are 42048 distinct tags and 17409994 overall.
 
 ```
@@ -246,7 +246,7 @@ sys	2m23.062s
 
 I chosed a Bucket-Data-Model to have fast query times, for our use-cases.
 Every tag is saved as an index with a quantity attribute. The import was done
-by this [python script](../../docs/sebnapi/mattmahoney.py). This script reads the file chunk by chunk while
+by this [python script](../../data/sebnapi/mattmahoney.py). This script reads the file chunk by chunk while
 upserting the tags to the database and measueres the time and throughput.
 
 ```
@@ -343,7 +343,7 @@ After importing it as usual I will create a new collection with the attributes:
 ```
 ["FEATURE_ID", "FEATURE_NAME", "FEATURE_CLASS", "STATE_ALPHA", "COUNTY_NAME", "ELEV_IN_M"]
 ```
-and the coordinates of this point of interest with this [script](../../docs/sebnapi/geo_usa_trans.py).
+and the coordinates of this point of interest with this [script](../../data/sebnapi/geo_usa_trans.py).
 
 After transforming the entries and filtering the interesting fields we have 2179100 Geo-Entries to work with.
 
@@ -453,7 +453,7 @@ here I tried out some geo-queries.
 }
 ```
 
-I found a geojson object which describes north carolina, which I uploaded [here](../../docs/sebnapi/north_caro.js).
+I found a geojson object which describes north carolina, which I uploaded [here](../../data/sebnapi/north_caro.js).
 After reading in the file, ```north_caro``` is the variable which holds the polygon.
 
 
