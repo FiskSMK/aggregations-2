@@ -84,6 +84,8 @@ user	0m55.993s
 sys	0m11.458s
 ```
 ![](../images/kmieszala/screan3.JPG)
+
+
 Wszystkie i różne słowa:
 ```sh
 konrad@Konrad:~/Pulpit$ mongo
@@ -128,8 +130,9 @@ db.Text.aggregate(
         { $limit: 1000 })
 )
 ```
-
-
+###Zadanie 1e)
+Wyszukać w sieci dane zawierające obiekty GeoJSON. Zapisać dane w bazie MongoDB.
+Dla zapisanych danych przygotować 6–9 różnych Geospatial Queries (co najmniej po jednym dla obiektów Point, LineString i Polygon). W przykładach należy użyć każdego z tych operatorów: *$geoWithin*, *$geoIntersect*, *$near*.    
 
 
 
