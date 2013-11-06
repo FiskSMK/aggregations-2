@@ -54,7 +54,7 @@ Jeśli aktualnie wszystkie tagi w bazie są już tablicami, program tylko liczy 
 ##Wynik
 ![tag-result](../../images/rluczun/tags_result.png)
 
-Unikatowe tagi liczę szukając tagów z pojedyńczym wystąpieniem
+Unikatowe tagi liczę szukając tagów z pojedyńczym wystąpieniem w obiekcie z częstotliwością tagów
 
 ##Obciążenie
 Obciążenie komputera podczas działania programu jest dość spore, użycie zasobów interpretera JavaScript również na wysokim poziomie:
