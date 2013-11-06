@@ -18,12 +18,18 @@ Do mierzenia czasu w systemie windows użyłem [timer.cmd](https://github.com/kd
 Zadanie 1a polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych z pliku Train.csv bazy MongoDB.
 Wcześniej jednak plik Train.csv przygotowałem za pomocą [2unix.bash](https://github.com/nosql/aggregations-2/blob/master/scripts/wbzyl/2unix.sh).
 
+Czas konwersji:
+
+![img](https://raw.github.com/kdetlaf/mongoFiles/master/konwersja_csv.png)
+
 Import przygotowanego pliku do bazy:
 
 ```sh
 mongoimport --type csv -c Train --file C:\Users\Krzysztof\Desktop\noSQL\Train2.csv --headerline
 ```
-Czas ok. 1h 05 min
+Czas ok. 1h 05 min (I tutaj pojawia sie dziwna proporcja. W systemie trwalo to 26 min, jednak na zegarku minela 1h. Why? :))
+
+![img](https://raw.github.com/kdetlaf/mongoFiles/master/import.png)
 
 ### Zadanie 1B
 Zadanie 1b polega na zliczeniu zaimportowanych rekordów
