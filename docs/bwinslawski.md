@@ -86,7 +86,7 @@ Unikalne tagi: 42048
 
 Czas to	m30.012s
 
-```
+```sh
 
 
 #### Zadanie 1d
@@ -94,7 +94,7 @@ Statystyki z pliku text8
 
 Importowanie pliku:
 
-```sh#### Zadanie 1d) Statystyki z pliku text8
+```sh
 
 artek@Bartel:~/NOSQL/Train$ tr --delete '[:alnum:][:blank:]' < text8 > deleted.txt
 bartek@Bartel:~/NOSQL/Train$ ls -l deleted.txt
@@ -105,13 +105,13 @@ bartek@Bartel:~/NOSQL/Train$ wc text8
 bartek@Bartel:~/NOSQL/Train$ tr --squeeze-repeats '[:blank:]' '\n' < text8 > text8.txt
 bartek@Bartel:~/NOSQL/Train$ wc text8.txt
  17005207  17005207 100000000 text8.txt
-
+```sh
 
 
 
 Importowanie pliku:
 
-
+```sh
 $ time mongoimport -c Text --type csv --file text8.txt --fields slowa
 Wed Nov  2 08:22:19.075 		Progress: 99899705/100000000	99%
 Wed Nov  2 08:22:19.075 			16988400	33774/second
@@ -122,7 +122,7 @@ real	8m24.121s
 user	1m1.802s
 sys	0m12.165s
 
-```
+```sh
 
 Zliczenie wszystkich słów oraz różnych słów:
 ```sh
