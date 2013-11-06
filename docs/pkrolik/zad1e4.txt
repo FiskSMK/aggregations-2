@@ -1,0 +1,93 @@
+{
+	"result" : [
+		{
+			"_id" : "Gdańsk",
+			"suma" : 31
+		},
+		{
+			"_id" : "Gdynia",
+			"suma" : 6
+		},
+		{
+			"_id" : "Tczew",
+			"suma" : 3
+		},
+		{
+			"_id" : "Sopot",
+			"suma" : 3
+		},
+		{
+			"_id" : "Starogard Gdański",
+			"suma" : 2
+		},
+		{
+			"_id" : "Malbork",
+			"suma" : 2
+		},
+		{
+			"_id" : "Pruszcz Gdański",
+			"suma" : 2
+		},
+		{
+			"_id" : "Nowy Staw",
+			"suma" : 1
+		},
+		{
+			"_id" : "Dzierzgoń",
+			"suma" : 1
+		},
+		{
+			"_id" : "Gniew",
+			"suma" : 1
+		},
+		{
+			"_id" : "Kwidzyn",
+			"suma" : 1
+		},
+		{
+			"_id" : "Stare Pole",
+			"suma" : 1
+		},
+		{
+			"_id" : "Krynica Morska",
+			"suma" : 1
+		},
+		{
+			"_id" : "Pszczółki",
+			"suma" : 1
+		},
+		{
+			"_id" : "Ryjewo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Prabuty",
+			"suma" : 1
+		},
+		{
+			"_id" : "Nowy Dwór Gdański",
+			"suma" : 1
+		},
+		{
+			"_id" : "Pelplin",
+			"suma" : 1
+		},
+		{
+			"_id" : "Smętowo Graniczne",
+			"suma" : 1
+		},
+		{
+			"_id" : "Sztutowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Stegna",
+			"suma" : 1
+		},
+		{
+			"_id" : "Sztum",
+			"suma" : 1
+		}
+	],
+	"ok" : 1
+}
