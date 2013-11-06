@@ -86,7 +86,7 @@ Unikalne tagi: 42048
 
 Czas to	m30.012s
 
-```sh
+```
 
 
 #### Zadanie 1d
@@ -105,7 +105,7 @@ bartek@Bartel:~/NOSQL/Train$ wc text8
 bartek@Bartel:~/NOSQL/Train$ tr --squeeze-repeats '[:blank:]' '\n' < text8 > text8.txt
 bartek@Bartel:~/NOSQL/Train$ wc text8.txt
  17005207  17005207 100000000 text8.txt
-```sh
+```
 
 
 
@@ -122,9 +122,10 @@ real	8m24.121s
 user	1m1.802s
 sys	0m12.165s
 
-```sh
+```
 
 Zliczenie wszystkich słów oraz różnych słów:
+
 ```sh
 bartek@Bartel:~/NOSQL/Train$ mongo
 MongoDB shell version: 2.4.8
