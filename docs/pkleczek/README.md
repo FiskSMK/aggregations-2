@@ -17,14 +17,14 @@ MongoDB shell version: 2.4.8
 
 #### 1a) Import *Train.csv*
 
-Przygotowanie danych
+##### Przygotowanie danych
 ```sh
 $ time ./prepareData.sh Train1.csv Train.csv
 real    15m14.076s
 user    0m42.700s
 sys 	1m57.932s
 ```
-Import
+##### Import
 ```sh
 $ time mongoimport -db train -c train -type csv -file Train.csv --headerline
 Tue Nov  5 21:26:51.082 imported 6034195 objects
@@ -33,10 +33,10 @@ real    12m4.822s
 user    2m38.012s
 sys     0m25.052s
 ```
-Obciążenie podczas importu
+##### Obciążenie podczas importu
 ![htop](../../images/pkleczek/import.png)
 
-Rozmiar bazy
+##### Rozmiar bazy
 ```sh
 $ mongo
 MongoDB shell version: 2.4.8
@@ -46,7 +46,8 @@ local   0.078125GB
 train   11.9482421875GB
 ```
 
-Wykresy MMS
+##### Wykresy MMS
+
 ![MMS](../../images/pkleczek/mongostats.png)
 
 #### 1b) Liczba zaimportowanych rekordów
