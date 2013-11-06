@@ -94,8 +94,8 @@ sys	27m56.483s
 
 But the problem was, that mongoimport imports a csv string field with digits
 in it as a Number. To be sure we don't lose tags like "007" which would be
-imported as "7" (this behaviour corresponds to the ticket https://jira.mongodb.org/browse/SERVER-3731) 
-i wrote a [python script that imports the data](../../data/sebnapi/import_train_tr.py), measures the time and throughput.
+imported as "7" (this behaviour corresponds to the ticket https://jira.mongodb.org/browse/SERVER-3731). 
+I wrote a [python script that imports the data](../../data/sebnapi/import_train_tr.py) and measures the time and throughput.
 
 ## Second import by [python script](../../data/sebnapi/import_train_tr.py)
 
@@ -244,7 +244,7 @@ sys	2m23.062s
 
 # Words 
 
-I chosed a Bucket-Data-Model to have fast query times, for our use-cases.
+I chose a Bucket-Data-Model to have fast query times, for our use-cases.
 Every tag is saved as an index with a quantity attribute. The import was done
 by this [python script](../../data/sebnapi/mattmahoney.py). This script reads the file chunk by chunk while
 upserting the tags to the database and measueres the time and throughput.
@@ -336,7 +336,7 @@ sys	0m0.153s
 
 # Geo-Stuff
 
-I found a csv-file from the [Geographic Names Information System](https://geonames.usgs.gov/domestic/download_data.htm) with Geo-Coordinates in it, after failing to find a a bigger pure geojson file.
+I found a csv-file from the [Geographic Names Information System](https://geonames.usgs.gov/domestic/download_data.htm) with Geo-Coordinates in it, after failing to find a bigger pure geojson file.
 
 ## Importing and Transforming to GeoJSON
 After importing it as usual I will create a new collection with the attributes:
