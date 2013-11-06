@@ -70,7 +70,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Puchalski, Paweł](/docs/ppuchalski/README.md).
 1. Rogaszewski, Piotr.
 1. Rybarczyk, Karolina.
-1. Sawicki, Paweł.
+1. [Sawicki, Paweł](/docs/psawicki.md).
 1. [Siora, Kacper](/docs/ksiora/README.md).
 1. [Skiba, Marek](/docs/mskiba/README.md).
 1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md).
