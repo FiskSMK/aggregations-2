@@ -17,12 +17,19 @@ cat Train.csv | replace "\n" " " | replace "\r" "\n" > Train2.csv
 Czas trwania 5 min
 
 
+![Htop przy wykonywaniu skryptu](../images/bwinslawskiIMG/replace.png)
+
+
 Import:
 
 ```sh
 mongoimport --type csv -c Train --file Train2.csv --headerline
 ```
 Czas trwania 30m2.523s
+
+
+![Htop przy wykonywaniu skryptu](../images/bwinslawskiIMG/train.png)
+
 
 
 #### Zadanie 1b
@@ -137,11 +144,13 @@ connecting to: test
 
 ```
 
+
 Najczesciej wystepujace slowo
 mongo --eval "var ilosc=1" zad1d.js
 ```
 Najczęściej występujące słowo stanowi 6.24% całej kolekcji
 ```
+
 
 10 Najczesciej wystepujace slow
 mongo --eval "var ilosc=10" zad1d.js
@@ -149,11 +158,13 @@ mongo --eval "var ilosc=10" zad1d.js
 10 najczęściej występujących słów stanowi 24.73% całej kolekcji
 ```
 
+
 100 Najczesciej wystepujace slow
 mongo --eval "var ilosc=100" zad1d.js
 ```
 100 najczęściej występujących słów stanowi 47.04% całej kolekcji
 ```
+
 
 1000 Najczesciej wystepujace slow
 mongo --eval "var ilosc=1000" zad1d.js
