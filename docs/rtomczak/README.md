@@ -105,3 +105,14 @@ MongoDB version: 2.5.3
     #### GeoJSON
     
     Obiekty do bazy z użyciem GeoJSON'ow pobrałem ze strony [usgs](http://geonames.usgs.gov/domestic/download_data.htm)
+
+    #### Modyfikacja kodu (zmiana plikow txt na jeden csv)
+
+    ```bash
+    $ time bash switchtocsv.sh AllStates_20131020/ stany.csv
+
+    real	0m28.781s
+    user	0m3.512s
+    sys		0m2.168s
+    
+    ```
