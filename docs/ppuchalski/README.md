@@ -1,4 +1,21 @@
 <h1>Paweł Puchalski</h1>
+---
+* [Dane Techniczne](#dane-techniczne)
+* [zadanie a)](#a)
+* [zadanie b)](#b)
+* [zadanie c)](#c)
+* [zadanie d)](#d)
+* [zadanie e)](#e)
+
+---
+
+## Dane Techniczne
+ ```
+ Procesor: Pentium D 3.0 GHz
+ RAM: 2 GB PC 800MHz DDR2
+ Dysk: Seagate Barracuda 320 GB
+ OS: Windows 7 Professional x64 && Ubuntu 12.04 LTS
+ ```
 
 <h2>Zadanie 1</h2>
 
@@ -69,7 +86,7 @@ db.text8.aggregate(
  ```js
  Rezultat: 1061396
  Stanowi: 6,24%
- Czas: 23 sekundy
+ Czas: 23 sekund
  ```
 <p>10 najczęściej występujących słów</p>
  ```js
@@ -125,9 +142,10 @@ db.text8.aggregate(
  Stanowi: 67,23%
  Czas: 25 sekundy
  ```
+ ![Image](../../images/ppuchalski/avg.png)
 <h3><b>e)</b></h3>
 <p>Do rozwiązania zadania użyłem danych znajdujących się pod tym linkiem(http://www.poipoint.pl).</p>
-[Baza](/data/lpaczynski/Szkolywyzsze.csv) zawiera dane dotyczące szkół wyższych w Polsce.
+[Baza](/data/ppuchalski/Szkolywyzsze.csv) zawiera dane dotyczące szkół wyższych w Polsce.
 
 <p>Import do mongo</p>
  ```bash
