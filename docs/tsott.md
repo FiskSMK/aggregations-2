@@ -195,7 +195,7 @@ Zapytanie:
 	db.gotowe.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 500} }).toArray()
 	
 Wynik:
-	[
+
 		{
 			"_id" : ObjectId("527973ea5fb24c66a30d7559"),
 			"id" : 1397640,
@@ -220,7 +220,7 @@ Wynik:
 				]
 			}
 		}
-	]
+	
 
 <h3>Zapytanie $geoWithin</h3>
 
@@ -255,24 +255,7 @@ Wynik (wybrane 3 obiekty z 10):
 				"coordinates" : [
 					-146.6380556,
 					60.2844444
-		obiektów:6034195
- aktualizacji:6034195
-        tagów:17409994
-różnych tagów:42048
-{
-	"_id" : ObjectId("5274df08e29d94cee2dbf304"),
-	"Id" : 1,
-	"Title" : "How to check if an uploaded file is an image without mime type?",
-	"Body" : "<p>I'd like to check if an uploaded file is an image file (e.g png, jpg, jpeg, gif, bmp) or another file. The problem is that I'm using Uploadify to upload the files, which changes the mime type and gives a 'text/octal' or something as the mime type, no matter which file type you upload.</p>  <p>Is there a way to check if the uploaded file is an image apart from checking the file extension using PHP?</p> ",
-	"Tags" : [
-		"php",
-		"image-processing",
-		"file-upload",
-		"upload",
-		"mime-types"
-	]
-}
-		]
+				]
 			}
 		},
 		{
