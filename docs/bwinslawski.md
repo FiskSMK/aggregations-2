@@ -176,6 +176,7 @@ mongo --eval "var ilosc=1000" zad1d.js
 
 
 Zadanie 1e
+
 Znalazłem koordynaty 2147 placowek kurierskich 
 
 
@@ -193,19 +194,36 @@ sys	0m0.021s
 Tak wyglądają dane 
 ```sh
 > db.geo.find( { miasto: "Lądek-Zdrój" } )
-	{ 
-	"_id" : ObjectId("527a2a1152f46a52b710ce39"),
-	"PNI" : 249290,
-	"woj" : "DOLNOŚLĄSKIE",
-	"powiat" : "kłodzki",
-	"gmina" : "Lądek-Zdrój",
-	"nazwa" : "UP Lądek-Zdrój",
-	"miasto" : "Lądek-Zdrój",
-	"loc" : 
-		{ 
+	{ "_id" : ObjectId("527a2a1152f46a52b710ce39"),
+	 "PNI" : 249290,
+	 "woj" : "DOLNOŚLĄSKIE",
+	 "powiat" : "kłodzki",
+	 "gmina" : "Lądek-Zdrój",
+	 "nazwa" : "UP Lądek-Zdrój",
+	 "miasto" : "Lądek-Zdrój",
+	 "loc" : { 
 		"type" : "Point", 
 		"coordinates" : [  16.87675,  50.345333 ] 
 		}
 	 }
+```
+
+
+####1
+Wypisanie wszystkich placówek w odległości max 20 km od Giżycka 
+```js
+> var origin = {type: "Point", coordinates: [21.768888,  54.039166]}
+
+> db.geo.find({ loc: {$near: {$geometry: origin},$maxDistance: 20000} })
+{ "_id" : ObjectId("527a2a1152f46a52b710d81e"), "PNI" : 239874, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "giżycki", "gmina" : "Giżycko", "nazwa" : "UP Giżycko 1", "miasto" : "Giżycko", "loc" : { "type" : "Point", "coordinates" : [  21.768888,  54.039166 ] } }
+
+{ "_id" : ObjectId("527a2a1152f46a52b710d81f"), "PNI" : 744926, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "giżycki", "gmina" : "Giżycko", "nazwa" : "FUP Giżycko 1", "miasto" : "Giżycko", "loc" : { "type" : "Point", "coordinates" : [  21.786583,  54.04225 ] } }
+
+{ "_id" : ObjectId("527a2a1152f46a52b710d871"), "PNI" : 275863, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "giżycki", "gmina" : "Wydminy", "nazwa" : "UP Wydminy", "miasto" : "Wydminy", "loc" : { "type" : "Point", "coordinates" : [  22.032338,  53.981961 ] } }
+
+{ "_id" : ObjectId("527a2a1152f46a52b710d865"), "PNI" : 263627, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "giżycki", "gmina" : "Ryn", "nazwa" : "UP Ryn", "miasto" : "Ryn", "loc" : { "type" : "Point", "coordinates" : [  21.546833,  53.937527 ] } }
+
+{ "_id" : ObjectId("527a2a1152f46a52b710d870"), "PNI" : 273636, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "węgorzewski", "gmina" : "Węgorzewo", "nazwa" : "UP Węgorzewo", "miasto" : "Węgorzewo", "loc" : { "type" : "Point", "coordinates" : [  21.741583,  54.210916 ] } }
+> 
 ```
 
