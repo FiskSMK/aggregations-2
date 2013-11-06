@@ -39,8 +39,8 @@ Program napisałem przy wykorzystaniu JavaScript, a uruchomiłem przy użyciu No
 Do działania potrzebny jest tylko jeden dodatkowy moduł do obsługi mongodb
 
 ##Uruchomienie
-Plik package.json potrzebny do uruchomienia można znaleść tutaj * [package.json](../../scripts/rluczun/package.json)
-Plik źródłowy ze skryptem znajdziemy tutaj * [mongotrainer.js](../../scripts/rluczun/mongotrainer.js) 
+Plik package.json potrzebny do uruchomienia można znaleść tutaj [package.json](../../scripts/rluczun/package.json)
+Plik źródłowy ze skryptem znajdziemy tutaj [mongotrainer.js](../../scripts/rluczun/mongotrainer.js) 
 Umieszczamy je oba w jednym katalogu i wpisujemy w konsoli
 
 Następnie wpisujemy
