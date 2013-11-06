@@ -73,6 +73,8 @@ MongoDB version: 2.5.2
   Zawsze jeden z dwóch rdzeni przy imporcie działał na 100% ilość wątków wachała się pomiędzy 2-6 wątków.
   ![htop](../../images/mosinski/screen2.png)
   ![htop](../../images/mosinski/screen3.png)
+  <b>Screen z mms-a</b>
+  ![htop](../../images/mosinski/screen.png)
 #### zliczanie słów
   Ogółem:
   ```js
@@ -173,5 +175,42 @@ MongoDB version: 2.5.2
 	"city" : "Nowy Targ"
   }
   ```
+#### Dodanie index
+  ```js
+  db.geoJson.ensureIndex({"loc" : "2dsphere"});
+  ```
+#### Koordynaty kilku miast w Polsce:
+  Warszawa 52.259,21.020
+  Gdańsk 54.360,18.639
+  Poznań 52.399, 16.900
+
+### Zapytania
+  Wyświetl wszystkie stacje w odległości 100 km od Warszawy:
+  ```js
+  db.geoJson.find({ 
+    loc: {$near: {
+        $geometry: punkt}, $maxDistance: 4800000} 
+  }).toArray()
+
+  ```
+  <b>wyniki:</b>
+  ```js
+  [
+	{
+		"_id" : ObjectId("527817fe644839d19fd13a63"),
+		"loc" : {
+			"type" : "Point",
+			"coordinates" : [
+				22.56548,
+				49.42173
+			]
+		},
+		"name" : "Stacje paliw Orlen",
+		"city" : "Ustrzyki Dolne"
+	}
+  ]
+  ```
+  
+
   reszta wkrótce..
   
