@@ -6,6 +6,7 @@
 * [Zadanie 1b](#zadanie-1b)
 * [Zadanie 1c](#zadanie-1c)
 * [Zadanie 1d](#zadanie-1d)
+* [Zadanie 1e](#zadanie-1e)
 
 #Zadanie 1a
 
