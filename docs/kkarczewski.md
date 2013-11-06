@@ -22,6 +22,21 @@ Zadanie 1b.
 Zliczyć liczbę zaimportowanych rekordów.
 db.Train.count();     6034195
 
+Zadanie 1c.
+(Zamiana formatu danych.) Zamienić string zawierający tagi na tablicę napisów z tagami następnie
+zliczyć wszystkie tagi i wszystkie różne tagi. Napisać program, który to zrobi korzystając 
+z jednego ze sterowników. Lista sterowników jest na stronie MongoDB Ecosystem.
+
+Kod:
+
+db.train.find( { "tags" : { $type : 2 } } ).snapshot().forEach(
+ function (x) {
+  if (!Array.isArray(x.tags)){
+    x.tags = x.tags.split(' ');
+    db.train.save(x);
+}});
+
+
 
 Zadanie 1d. Ściągnąć plik text8.zip ze strony Matt Mahoney (po rozpakowaniu 100MB):
 wget http://mattmahoney.net/dc/text8.zip -O text8.gz
