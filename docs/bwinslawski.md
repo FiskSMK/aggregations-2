@@ -173,3 +173,25 @@ mongo --eval "var ilosc=1000" zad1d.js
 ```
 1000 najczęściej występujących słów stanowi 67.23% całej kolekcji
 ```
+
+
+Zadanie 1e
+Znalazłem koordynaty 2147 placowek kurierskich 
+
+
+Następnie importujemy cały zestaw danych do mongo:
+```sh
+time mongoimport --type csv -c Train --file Train2.csv --headerline
+
+Czas
+real	0m0.237s
+user	0m0.048s
+sys	0m0.021s
+
+```
+
+Tak wyglądają dane 
+```sh
+> db.geo.find( { miasto: "Lądek-Zdrój" } )
+{ "_id" : ObjectId("527a2a1152f46a52b710ce39"), "PNI" : 249290, "woj" : "DOLNOŚLĄSKIE", "powiat" : "kłodzki", "gmina" : "Lądek-Zdrój", "nazwa" : "UP Lądek-Zdrój", "miasto" : "Lądek-Zdrój", "loc" : { "type" : "Point", "coordinates" : [  16.87675,  50.345333 ] } }
+```
