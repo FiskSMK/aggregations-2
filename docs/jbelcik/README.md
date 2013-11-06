@@ -84,6 +84,19 @@ Zliczyć liczbę zaimportowanych rekordów (Odpowiedź: imported 6_034_195 objec
 wszystkie tagi i wszystkie różne tagi. Napisać program, który to zrobi korzystając z jednego ze sterowników.
 ```
 
+Przykładowy rekord:
+
+```js
+> db.train.findOne()
+{
+        "_id" : 9692,
+        "title" : "SQL Server 2005 question about procedure cache",
+        "body" : "<p>Server: SQL Server 2005 SP2 64 bit, 32 gigs of memory. 2 instances of SQL server running. Main instance I'm using has 20 gigs visible.</p>  <p>We have a situation where it appears every so often our entire procedure cache is cleared which in turn is forcing stored procedure (sp) recompiles. Once the sp is in the cache everything runs fast for a little while. After a couple hours, it's cleared from the cache and has to be recompiled causing things to run slow briefly.</p>  <p>I'm watching the cache using:</p>  <pre><code>SELECT cp.objtype AS PlanType, OBJECT_NAME(st.objectid,st.dbid) AS ObjectName, cp.refcounts AS ReferenceCounts, cp.usecounts AS UseCounts, st.TEXT AS SQLBatch, qp.query_plan AS QueryPlan FROM sys.dm_exec_cached_plans AS cp CROSS APPLY sys.dm_exec_query_plan(cp.plan_handle) AS qp CROSS APPLY sys.dm_exec_sql_text(cp.plan_handle) AS st GO </code></pre>  <p>DBCC FREEPROCCACHE is never called.</p>  <p>If I run DBCC MEMORYSTATUS I can see the TotalPages of the procedure cache as being around 500k pages. This comes out to be 3.9 Gigs allocated to the cache. Referencing: <a href=\"http://msdn.microsoft.com/en-us/library/ee343986.aspx\" rel=\"nofollow\">Plan Caching in SQL Server 2008</a> (The section on caching includes 2005 SP 2). It indicates the pressure limit should be 4.6 gigs. (75% of visible target memory from 0-4GB + 10% of visible target memory from 4Gb-64GB + 5% of visible target memory > 64GB... 3gigs + 1.6 gigs = 4.6 gigs)</p>  <p>This seems to indicate that we shouldn't be under cache pressure for another 700 megs. If the statistics were changing then the stored procedure should still be in the cache and recompiled when it's next run and it checks the statistics. If this was the case I would expect the cache to stay at almost constant size.</p>  <p>Any ideas what might be causing the procedure cache to empty or what else I should keep an eye on to try to find the cause?</p> ",
+        "tags" : "sql-server sql-server-2005 cache stored-procedures",
+        "rnd" : 0.5000135693699121
+}
+```
+
 Do tego zadania wykorzystałem własny [skrypt](../../scripts/jbelcik/1c.js), który rozbija 'spacjami' pole tags typu String na tablice String'ów.
 
 ```sh
@@ -96,6 +109,24 @@ sys     0m0.015s
 ```
 
 Średnio ~7698 update'ów na sekundę
+
+Przykładowy poprawiony rekord:
+
+```js
+> db.train.findOne()
+{
+        "_id" : 9692,
+        "body" : "<p>Server: SQL Server 2005 SP2 64 bit, 32 gigs of memory. 2 instances of SQL server running. Main instance I'm using has 20 gigs visible.</p>  <p>We have a situation where it appears every so often our entire procedure cache is cleared which in turn is forcing stored procedure (sp) recompiles. Once the sp is in the cache everything runs fast for a little while. After a couple hours, it's cleared from the cache and has to be recompiled causing things to run slow briefly.</p>  <p>I'm watching the cache using:</p>  <pre><code>SELECT cp.objtype AS PlanType, OBJECT_NAME(st.objectid,st.dbid) AS ObjectName, cp.refcounts AS ReferenceCounts, cp.usecounts AS UseCounts, st.TEXT AS SQLBatch, qp.query_plan AS QueryPlan FROM sys.dm_exec_cached_plans AS cp CROSS APPLY sys.dm_exec_query_plan(cp.plan_handle) AS qp CROSS APPLY sys.dm_exec_sql_text(cp.plan_handle) AS st GO </code></pre>  <p>DBCC FREEPROCCACHE is never called.</p>  <p>If I run DBCC MEMORYSTATUS I can see the TotalPages of the procedure cache as being around 500k pages. This comes out to be 3.9 Gigs allocated to the cache. Referencing: <a href=\"http://msdn.microsoft.com/en-us/library/ee343986.aspx\" rel=\"nofollow\">Plan Caching in SQL Server 2008</a> (The section on caching includes 2005 SP 2). It indicates the pressure limit should be 4.6 gigs. (75% of visible target memory from 0-4GB + 10% of visible target memory from 4Gb-64GB + 5% of visible target memory > 64GB... 3gigs + 1.6 gigs = 4.6 gigs)</p>  <p>This seems to indicate that we shouldn't be under cache pressure for another 700 megs. If the statistics were changing then the stored procedure should still be in the cache and recompiled when it's next run and it checks the statistics. If this was the case I would expect the cache to stay at almost constant size.</p>  <p>Any ideas what might be causing the procedure cache to empty or what else I should keep an eye on to try to find the cause?</p> ",
+        "rnd" : 0.5000135693699121,
+        "tags" : [
+                "sql-server",
+                "sql-server-2005",
+                "cache",
+                "stored-procedures"
+        ],
+        "title" : "SQL Server 2005 question about procedure cache"
+}
+```
 
 ---
 
@@ -221,7 +252,9 @@ LineString i Polygon). W przykładach należy użyć każdego z tych operatorów
 $near.
 ```
 
-Poniższe zadanie zostało wykonane opierając się o [dane współrzędnych geograficznych miejscowości w Polsce (możliwe błędy)](http://astrowiki.eu/index.php?title=Wsp%C3%B3%C5%82rz%C4%99dne_geograficzne_miejscowo%C5%9Bci_w_Polsce), które znalazłem w internecie i wstępnie obrobiłem na plik typu [csv](../../data/jbelcik/miasta.csv).
+Poniższe zadanie zostało wykonane opierając się o [dane współrzędnych geograficznych miejscowości w Polsce](http://astrowiki.eu/index.php?title=Wsp%C3%B3%C5%82rz%C4%99dne_geograficzne_miejscowo%C5%9Bci_w_Polsce), które znalazłem w internecie i wstępnie obrobiłem na plik typu [csv](../../data/jbelcik/miasta.csv).
+
+[Po odwzorowaniu punktów na mapie, można zauważyć, że nie jest to dość dokładna baza współrzędnych]
 
 ```sh
 $ time mongoimport -d miasta -c miasta --type csv --file miasta.csv --headerline
