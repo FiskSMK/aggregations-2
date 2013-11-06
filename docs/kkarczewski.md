@@ -73,3 +73,34 @@ Ile procent stanowi 1, 10, 100, 1000 najczęstszych słów?
   ],
   "ok" : 1
 }
+
+
+Zadanie 1e
+Wyszukać w sieci dane zawierające obiekty GeoJSON. Zapisać dane w bazie MongoDB.
+Dla zapisanych danych przygotować 6–9 różnych Geospatial Queries
+(co najmniej po jednym dla obiektów Point, LineString i Polygon).
+W przykładach należy użyć każdego z tych operatorów: $geoWithin, $geoIntersect, $near.
+
+Import danych do bazy:
+mongoimport -c Miasta < polska.json
+
+Przykłady
+1 (dla point, $near)
+
+db.Miasta.find({loc: {$near: {$geometry: {type: "Point", coordinates: [21.000366210937496, 52.231163984032676]}, $maxDistance: 50000}}}).skip(1)
+21.000366210937496, 52.231163984032676 - To współrzędne Warszawy.
+Ta komenda pokazuje wszystkie najbliższe miasta w odległości maks 50km od Warszawy.
+.skip(1) powoduje, że pierwsza wartość na liście nie zostanie wyświetlona, co jest logiczne ponieważ jest nią Warszawa.
+
+2 (Polygon, $geoWithin) - Mniej więcej województwo łódźkie:
+db.Miasta.find({loc: {$geoWithin: {$geometry: {type: "Polygon", coordinates: [[[19.259033203125, 52.3923633970718], [18.1768798828125, 51.17589926990911], 
+[19.7259521484375, 50.86144411058924], [20.5059814453125, 51.50532341149335], [20.23681640625, 52.1166256737882], [19.259033203125, 52.3923633970718]]]}}}})
+
+3 (LineString, $geoIntersects)
+db.Miasta.find({loc: {$geoIntersects: {$geometry: {type: "LineString", coordinates: [[19.010467529296875, -90],[19.010467529296875, 90]]}}}})
+$geoIntersects sprawdza interakcje miedzy dwoma obiektami. Tutaj szuka tego, co leży na południku 19.010467529296875
+(niestety nie działa tutaj przybliżenie, ani odległość od..., a miara musi być dokładna, żeby cokolwiek znalazł).
+
+4 ($geoIntersects)
+db.Miasta.find({loc: {$geoIntersects: {$geometry: {type: "LineString", coordinates: [ [18.56586456298828, 54.4448910398684], [19.948768615722656, 49.29803885147804]]}}}})
+Sprawdzamy czy coś leży w lini prostej pomiędzy Zakopanem, a Sopotem.
