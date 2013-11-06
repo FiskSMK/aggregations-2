@@ -245,3 +245,53 @@ db.geo.find({ loc: {$near: {$geometry: origin},$maxDistance: 20000},powiat: "gi�
 { "_id" : ObjectId("527a2a1152f46a52b710d865"), "PNI" : 263627, "woj" : "WARMIŃSKO-MAZURSKIE", "powiat" : "giżycki", "gmina" : "Ryn", "nazwa" : "UP Ryn", "miasto" : "Ryn", "loc" : { "type" : "Point", "coordinates" : [  21.546833,  53.937527 ] } }
 ```
 
+####3 
+Ile jest placówek w czworokącie  miedzy Olsztynem ,Dobrym Miastem , Bartoszycami i Giżyckiem 
+
+```js
+db.geo.find({loc: {$geoWithin: {$geometry: { type: "Polygon", coordinates: [[[20.502,53.740], [20.393722,  53.988222], [20.817487,  54.251284], [21.768888,  54.039166], [20.502,53.740]]]}}}}).count
+19
+```
+
+####4
+ 
+Czy jadąc linią prostą z Olsztyna do Dobrego miasta i później do Bartoszyc mine jakiś budynek kurierski 
+```js
+>db.geo.find({loc: {$geoIntersects:  {$geometry: { type: "LineString", coordinates:  [[20.502,53.740], [20.393722,  53.988222], [20.817487,  54.251284]]}}}}).count()
+>2
+```
+
+####5
+Ile jest placówek na terenie województwa WARMIŃSKO-MAZURSKIEGO. 
+
+Wypisanie wszystkich placówek w odległości max 20 km od Giżycka 
+```js
+
+> db.geo.find({woj: "WARMIŃSKO-MAZURSKIE"} }).count()
+> 116
+```
+
+####6
+
+Znalezienie 10 najbliższych placówek koło Giżycka
+
+```js
+>var kordy
+
+>db.geo.find({"miasto":"Giżycko"}).forEach(function(input) { kordy = input.loc } )
+
+> db.geo.find({loc: {$near:{$geometry:kordy}}}, {miasto:1}).skip(1).limit(10).pretty()
+
+{ "_id" : ObjectId("527a2a1152f46a52b710d81e"), "miasto" : "Giżycko" }
+{ "_id" : ObjectId("527a2a1152f46a52b710d871"), "miasto" : "Wydminy" }
+{ "_id" : ObjectId("527a2a1152f46a52b710d870"), "miasto" : "Węgorzewo" }
+{ "_id" : ObjectId("527a2a1152f46a52b710d865"), "miasto" : "Ryn" }
+{ "_id" : ObjectId("527a2a1152f46a52b710d867"), "miasto" : "Srokowo" }
+{ "_id" : ObjectId("527a2a1152f46a52b710d82c"), "miasto" : "Kętrzyn" }
+{ "_id" : ObjectId("527a2a1152f46a52b710d7ff"),	"miasto" : "Banie Mazurskie"}
+{ "_id" : ObjectId("527a2a1152f46a52b710d852"), "miasto" : "Orzysz" }
+{ "_id" : ObjectId("527a2a1152f46a52b710d868"), "miasto" : "Stare Juchy" }
+{ "_id" : ObjectId("527a2a1152f46a52b710d833"), "miasto" : "Mikołajki" }
+```
+
+
