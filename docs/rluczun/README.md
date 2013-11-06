@@ -74,7 +74,7 @@ time mongoimport -d test -c words -f word --type csv --file text8.txt
 ![import-words](../../images/rluczun/import_words.png)
 
 Zadanie przygotowałem w JavaScript przy wykorzystaniu Node.js, aby uruchomić skrypt należy przenieść plik [word_counter.js](../../scripts/rluczun/word_counter.js) do folderu roboczego z poprzedniego zadania
-i wpisać `npm word_counter.js'.
+i wpisać `npm word_counter.js`
 
 ##Wyniki
 ![import-words](../../images/rluczun/words_result.png)
