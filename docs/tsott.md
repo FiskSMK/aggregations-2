@@ -34,9 +34,10 @@ Zaimportowano 6034195 obiektów:
 	
 	2013-11-02T13:04:41.156+0100 imported 6034195 objects
 
-Sprawdzenie ilości obiektów w bazie train:
-	db.train.count()
-	6034195
+Sprawdzenie ilości obiektów w bazie train:<br />
+
+	db.train.count()<br />
+	6034195<br />
 
 <h1>Zadanie 1c</h1>
 (Zamiana formatu danych.) Zamienić string zawierający tagi na tablicę napisów z tagami następnie zliczyć wszystkie tagi i wszystkie różne tagi. 
