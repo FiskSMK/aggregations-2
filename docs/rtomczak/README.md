@@ -116,3 +116,5 @@ MongoDB version: 2.5.3
     sys		0m2.168s
     
     ```
+    #### Import do bazy danych
+    ![Czas importu do bazy](../../images/rtomczak/import_geo.png "Czas importu do bazy")
