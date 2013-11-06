@@ -125,6 +125,7 @@ db.text8.aggregate(
  Stanowi: 67,23%
  Czas: 25 sekundy
  ```
+ ![Image](../../images/lpaczynski/avg.png)
 <h3><b>e)</b></h3>
 <p>Do rozwiązania zadania użyłem danych znajdujących się pod tym linkiem(http://www.poipoint.pl).</p>
 [Baza](/data/lpaczynski/Szkolywyzsze.csv) zawiera dane dotyczące szkół wyższych w Polsce.
