@@ -344,6 +344,8 @@ Dodajemy geo-indeks do kolekcji:
 ]
 ```
 
+![1](../../images/jbelcik/zapytanie1.jpg)
+
 #### Zapytanie 2
 
 Wszystkie miasta w promieniu 0.25° od Krakowa włącznie.
@@ -401,3 +403,147 @@ Wszystkie miasta w promieniu 0.25° od Krakowa włącznie.
 > db.miasta.find({loc: {$geoWithin: {$center: [[19.57, 50.03], 0.25]}}}).count()
 18
 ```
+
+![2](../../images/jbelcik/zapytanie2.jpg)
+
+#### Zapytanie 3
+
+Wszystkie miasta pomiędzy Warszawą, Łodzią, a Płockiem.
+
+```js
+> var obszar = {
+>	"type": "Polygon",
+>	"coordinates": [[
+>		[18.00, 53.07],
+>		[18.37, 53.02],
+>		[18.15, 52.48],
+>		[18.00, 53.07]
+>	]]
+> }
+ db.miasta.find({loc: {$geoWithin: {$geometry: obszar}}}).toArray()
+[
+        {
+                "_id" : 184,
+                "miasto" : "Bydgoszcz",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                18,
+                                53.07
+                        ]
+                }
+        },
+        {
+                "_id" : 1986,
+                "miasto" : "Toruń",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                18.37,
+                                53.02
+                        ]
+                }
+        },
+        {
+                "_id" : 1770,
+                "miasto" : "Solec Kujawski",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                18.14,
+                                53.05
+                        ]
+                }
+        },
+        {
+                "_id" : 2109,
+                "miasto" : "Wielka Nieszawka",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                18.29,
+                                53
+                        ]
+                }
+        },
+        {
+                "_id" : 1605,
+                "miasto" : "Rojewo",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                18.17,
+                                52.54
+                        ]
+                }
+        },
+        {
+                "_id" : 567,
+                "miasto" : "Inowrocław",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                18.15,
+                                52.48
+                        ]
+                }
+        }
+]
+
+> db.miasta.find({loc: {$geoWithin: {$geometry: obszar}}}).count()
+6
+```
+
+![3](../../images/jbelcik/zapytanie3.jpg)
+
+#### Zapytanie 4
+
+Wszystkie miasta leżącę na linii Lębork - Sanok.
+
+```js
+> var linia = {
+>	"type": "LineString",
+>	"coordinates": [[17.45, 54.33], [22.13, 49.33]]
+> }
+> db.miasta.find({loc: {$geoIntersects: {$geometry: linia}}}).toArray()
+[
+        {
+                "_id" : 930,
+                "miasto" : "Lębork",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                17.45,
+                                54.33
+                        ]
+                }
+        },
+        {
+                "_id" : 1238,
+                "miasto" : "Nowa Wieś Lęborska",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                17.45,
+                                54.33
+                        ]
+                }
+        },
+        {
+                "_id" : 1674,
+                "miasto" : "Sanok",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                22.13,
+                                49.33
+                        ]
+                }
+        }
+]
+
+> db.miasta.find({loc: {$geoIntersects: {$geometry: linia}}}).count()
+3
+```
+
+![4](../../images/jbelcik/zapytanie4.jpg)
