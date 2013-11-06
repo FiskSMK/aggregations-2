@@ -88,7 +88,8 @@ Zapisać wszystkie słowa w bazie MongoDB. Następnie zliczyć liczbę słów or
     najczęściej występujące słowo w tym pliku
     10, 100, 1000 najczęściej występujących słów w tym pliku
 
-Wskazówka: Zaczynamy od prostego EDA. Sprawdzamy, czy plik text8 zawiera wyłącznie znaki alfanumeryczne i białe:
+Wskazówka: Zaczynamy od prostego EDA. Sprawdzamy, czy plik text8 zawiera wyłącznie znaki alfanumeryczne i białe:<br />
+
 	tr --delete '[:alnum:][:blank:]' < text8 > deleted.txt
 	ls -l deleted.txt
 	-rw------- 1 supersott supersott 0 Nov  3 23:56 deleted.txt
@@ -122,16 +123,18 @@ Dla zapisanych danych przygotować 6–9 różnych Geospatial Queries (co najmni
 
 Do zadania uzyto danych ze strony <a href="http://geonames.usgs.gov/">United States Board on Geographic Names</a> dla stanu Alaska.
 
-Naprawa danych:
+Naprawa danych:<br />
+
 	cat AK_Features_20131020.txt |tr "|" "," > AK_Features_ready.txt
 
 Import naprawionych danych do bazy baza kolekcji alaska:
+
 	time ./mongoimport -baza -c alaska -type csv --headerline -file ../../AK_Features_ready.txt
 
-Czas importu danych:
-real	0m24.097s
-user	0m2.116s
-sys	0m0.156s
+Czas importu danych:<br />
+real	0m24.097s<br />
+user	0m2.116s<br />
+sys	0m0.156s<br />
 
 Przykładowy rekord po imporcie:
 
