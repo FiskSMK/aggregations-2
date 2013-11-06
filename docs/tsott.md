@@ -28,13 +28,13 @@ Czas importu danych:* <br />
 \* system na dysku zewnętrznym (ATA 7200 rpm) podłączonym pod port USB 2.0 
 
 <h1>Zadanie 1b</h1>
-Zliczyć liczbę zaimportowanych rekordów (Odpowiedź: imported 6_034_195 objects).
+Zliczyć liczbę zaimportowanych obiektów (Odpowiedź: imported 6_034_195 objects).
 
-Zaimportowano 6034195 rekordów:
+Zaimportowano 6034195 obiektów:
 	
 	2013-11-02T13:04:41.156+0100 imported 6034195 objects
 
-Sprawdzenie ilości rekordów w bazie train:
+Sprawdzenie ilości obiektów w bazie train:
 	db.train.count()
 	6034195
 
@@ -136,7 +136,7 @@ real	0m24.097s<br />
 user	0m2.116s<br />
 sys	0m0.156s<br />
 
-Przykładowy rekord po imporcie:
+Przykładowy obiekt po imporcie:
 
 	> db.alaska.findOne()
 	{
