@@ -193,5 +193,16 @@ sys	0m0.021s
 Tak wyglądają dane 
 ```sh
 > db.geo.find( { miasto: "Lądek-Zdrój" } )
-{ "_id" : ObjectId("527a2a1152f46a52b710ce39"), "PNI" : 249290, "woj" : "DOLNOŚLĄSKIE", "powiat" : "kłodzki", "gmina" : "Lądek-Zdrój", "nazwa" : "UP Lądek-Zdrój", "miasto" : "Lądek-Zdrój", "loc" : { "type" : "Point", "coordinates" : [  16.87675,  50.345333 ] } }
+	{ "_id" : ObjectId("527a2a1152f46a52b710ce39"),
+	 "PNI" : 249290,
+	 "woj" : "DOLNOŚLĄSKIE",
+	 "powiat" : "kłodzki",
+	 "gmina" : "Lądek-Zdrój",
+	 "nazwa" : "UP Lądek-Zdrój",
+	 "miasto" : "Lądek-Zdrój",
+	 "loc" : { 
+		"type" : "Point", 
+		"coordinates" : [  16.87675,  50.345333 ] 
+		}
+	 }
 ```
