@@ -22,6 +22,7 @@ real    62m22.013s
 user    5m20.328s
 sys     1m12.556s
 ```
+![](../images/kmieszala/screan.JPG)
 ###Zadanie 1b)
 Zliczenie zaimportowanych rekordów.
 ```sh
