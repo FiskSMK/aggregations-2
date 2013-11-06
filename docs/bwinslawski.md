@@ -131,6 +131,8 @@ sys	0m12.165s
 
 ```
 
+![Htop przy wykonywaniu skryptu](../images/bwinslawskiIMG/importText.png)
+
 Zliczenie wszystkich słów oraz różnych słów:
 
 ```sh
