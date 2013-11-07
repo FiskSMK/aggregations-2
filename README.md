@@ -38,7 +38,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Gałka, Jacek](/docs/jgalka/README.md).
 1. Głowacki, Michał.
 1. [Gniado, Bartosz](/docs/bgniado/README.md).
-1. Groszek, Rafał.
+1. [Groszek, Rafał](/docs/rgroszek/README.md).
 1. Januszewski, Tomasz.
 1. Jaźwiński, Robert.
 1. [Karczewski, Kamil](/docs/kkarczewski.md).
