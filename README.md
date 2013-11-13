@@ -37,6 +37,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Karwowski, Kamil](/docs/kkarwowski.md).
 1. [Kłeczek, Piotr](/docs/pkleczek/README.md).
 1. [Kotłowski, Piotr](docs/pkotlowski/README.md).
+1. [Koźmiński, Marcin](docs/mkozminski/README.md).
 1. [Królik, Przemysław](/docs/pkrolik.md).
 1. [Kubacki, Konrad](/docs/kkubacki/README.md).
 1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md).
@@ -78,7 +79,6 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Głowacki, Michał.
 1. Januszewski, Tomasz.
 1. Jaźwiński, Robert.
-1. Koźmiński, Marcin.
 1. Malinowski, Piotr.
 1. Osękowski, Dominik.
 1. Ostrowski, Michał.
