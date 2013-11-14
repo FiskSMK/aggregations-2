@@ -85,7 +85,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Pietraszuk, Bartłomiej.
 1. Rogaszewski, Piotr.
 1. Sott, Tomasz.
-1. Tomczak, Robert.
+1. [Tomczak, Robert](/docs/rtomczak/README.md).
 1. Wiśniewski, Piotr.
 1. Żarkowski, Mateusz.
 
