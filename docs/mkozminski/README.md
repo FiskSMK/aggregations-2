@@ -154,13 +154,13 @@ Aktualnie rekord w bazie wygląda następująco:
 
 Uruchomienie skryptu do zamiany tagów:
 ```sh
-$ python scripts/mkozminski/train_tags.py 
+$ time python scripts/mkozminski/train_tags.py 
 Transforming...
 Done.
 
-real    67m14.157s
-user    21m43.841s
-sys     0m25.415s
+real    54m36.138s
+user    19m39.489s
+sys 3m50.958s
 ```
 
 Po zamianie tagów wygląda następująco
@@ -179,6 +179,23 @@ Po zamianie tagów wygląda następująco
 }
 ```
 
-#### Przemiał MongoDB ####
-Interesujące nas dane znajdują się po drugim restarcie bazy (czerwona linia).
+##### Przemiał MongoDB #####
+Interesujące nas dane znajdują się po godzinie 23:00.
 ![mongodb train tags](../../images/mkozminski/train_tags.png "mongodb train tags")
+
+#### Zliczanie tagów ####
+```sh
+$ time python scripts/mkozminski/train_count.py 
+Counting...
+Done.
+All tags: 17409994
+Unique tags: 42048
+
+real    6m16.759s
+user    1m17.499s
+sys 0m12.733s
+```
+
+##### Przemiał MongoDB #####
+![mongodb train count](../../images/mkozminski/train_count.png "mongodb train count")
+Dzwinym trafem w trakcie zliczania nie pojawił się żaden pik na wykresie MMS. Powinien się pojawić w okolicach 00:10.

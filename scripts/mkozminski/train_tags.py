@@ -6,7 +6,7 @@ client = MongoClient()
 db = client.test
 train = db.train
 
-allEntries = train.find()
+allEntries = train.find(snapshot=True)
 
 print('Transforming...')
 for entry in allEntries:
