@@ -152,6 +152,17 @@ Aktualnie rekord w bazie wygląda następująco:
 }
 ```
 
+Uruchomienie skryptu do zamiany tagów:
+```sh
+$ python scripts/mkozminski/train_tags.py 
+Transforming...
+Done.
+
+real    67m14.157s
+user    21m43.841s
+sys     0m25.415s
+```
+
 Po zamianie tagów wygląda następująco
 ```json
 {
