@@ -199,3 +199,254 @@ sys 0m12.733s
 ##### Przemiał MongoDB #####
 ![mongodb train count](../../images/mkozminski/train_count.png "mongodb train count")
 Dzwinym trafem w trakcie zliczania nie pojawił się żaden pik na wykresie MMS. Powinien się pojawić w okolicach 00:10.
+
+### Zadanie 1d ###
+Ściągnąć plik text8.zip ze strony Matt Mahoney (po rozpakowaniu 100MB):
+
+wget http://mattmahoney.net/dc/text8.zip -O text8.gz
+
+Zapisać wszystkie słowa w bazie MongoDB. Następnie zliczyć liczbę słów oraz liczbę różnych słów w tym pliku. Ile procent całego pliku stanowi:
+
+- najczęściej występujące słowo w tym pliku
+- 10, 100, 1000 najczęściej występujących słów w tym pliku
+
+Wskazówka: Zaczynamy od prostego EDA. Sprawdzamy, czy plik text8 zawiera wyłącznie znaki alfanumeryczne i białe:
+```sh
+$ tr --delete '[:alnum:][:blank:]' < text8 > deleted.txt
+$ ls -l deleted.txt
+  -rw-rw-r--. 1 wbzyl wbzyl 0 10-16 12:58 deleted.txt # rozmiar 0 -> OK
+$ rm deleted.txt
+```
+
+```sh
+$ tr --delete '[:alnum:][:blank:]' < data/mkozminski/text8 > data/mkozminski/deleted.txt
+$ ls -l data/mkozminski/deleted.txt
+-rw-r--r-- 1 viralion viralion 0 lis 17 13:23 data/mkozminski/deleted.txt
+$ rm data/mkozminski/deleted.txt
+```
+
+Dopiero teraz wykonujemy te polecenia:
+
+```sh
+wc text8
+  0         17005207 100000000 text8
+tr --squeeze-repeats '[:blank:]' '\n' < text8 > text8.txt
+wc text8.txt
+  17005207  17005207 100000000 text8.txt  # powtórzone 17005207 -> OK
+```
+
+```sh
+$ wc data/mkozminski/text8 
+        0  17005207 100000000 data/mkozminski/text8
+$ tr --squeeze-repeats '[:blank:]' '\n' < data/mkozminski/text8 > data/mkozminski/text8.txt
+$ wc data/mkozminski/text8.txt 
+ 17005207  17005207 100000000 data/mkozminski/text8.txt
+```
+
+#### Import ####
+```sh
+$ time mongoimport -c text -f word --type csv --file data/mkozminski/text8.txt
+connected to: 127.0.0.1
+Sun Nov 17 13:35:18.173         Progress: 738122/100000000  0%
+Sun Nov 17 13:35:18.173             123000  41000/second
+Sun Nov 17 13:35:21.006         Progress: 1502861/100000000 1%
+Sun Nov 17 13:35:21.006             251800  41966/second
+...
+Sun Nov 17 13:42:02.027         Progress: 98829610/100000000    98%
+Sun Nov 17 13:42:02.027             16806700    41294/second
+Sun Nov 17 13:42:05.115         Progress: 99620675/100000000    99%
+Sun Nov 17 13:42:05.115             16941900    41321/second
+Sun Nov 17 13:42:06.531 check 9 17005207
+Sun Nov 17 13:42:07.003 imported 17005207 objects
+
+real    6m51.274s
+user    0m44.427s
+sys     0m8.556s
+```
+
+##### Przemiał MongoDB #####
+![mongodb text import](../../images/mkozminski/text_import.png "mongodb text import")
+
+#### Agregacje ####
+##### Ilość rekordów #####
+```sh
+> db.text.count()
+17005207
+```
+
+##### Ilość różnych słów #####
+```sh
+> db.text.distinct("word").length
+253854
+```
+
+##### Najczęściej występujące słowo #####
+```sh
+> db.text.aggregate([
+... {$group: {_id: '$word', count: {$sum: 1}}},
+... {$sort: {count: -1}},
+... {$limit: 1}
+... ])
+{ "result" : [ { "_id" : "the", "count" : 1061396 } ], "ok" : 1 }
+```
+
+###### Procent całości ######
+```sh
+> 1061396 / db.text.count() * 100
+6.241594118789616
+```
+
+##### Top 10 #####
+```sh
+> db.text.aggregate([ {$group: {_id: '$word', count: {$sum: 1}}}, {$sort: {count: -1}}, {$limit: 10} ])
+{
+    "result" : [
+        {
+            "_id" : "the",
+            "count" : 1061396
+        },
+        {
+            "_id" : "of",
+            "count" : 593677
+        },
+        {
+            "_id" : "and",
+            "count" : 416629
+        },
+        {
+            "_id" : "one",
+            "count" : 411764
+        },
+        {
+            "_id" : "in",
+            "count" : 372201
+        },
+        {
+            "_id" : "a",
+            "count" : 325873
+        },
+        {
+            "_id" : "to",
+            "count" : 316376
+        },
+        {
+            "_id" : "zero",
+            "count" : 264975
+        },
+        {
+            "_id" : "nine",
+            "count" : 250430
+        },
+        {
+            "_id" : "two",
+            "count" : 192644
+        }
+    ],
+    "ok" : 1
+}
+```
+
+###### Procent całości ######
+```sh
+> db.text.aggregate([
+... {$group: {_id: '$word', count: {$sum: 1}}},
+... {$sort: {count: -1}},
+... {$limit: 10},
+... {$group: {_id: null, count: {$sum: '$count'}}}
+... ])
+{ "result" : [ { "_id" : null, "count" : 4205965 } ], "ok" : 1 }
+> 4205965 / db.text.count() * 100
+24.733394894869555
+```
+
+##### Top 100 #####
+```sh
+> db.text.aggregate([ {$group: {_id: '$word', count: {$sum: 1}}}, {$sort: {count: -1}}, {$limit: 100} ])
+{
+    "result" : [
+        {
+            "_id" : "the",
+            "count" : 1061396
+        },
+        {
+            "_id" : "of",
+            "count" : 593677
+        },
+...
+        {
+            "_id" : "up",
+            "count" : 12445
+        },
+        {
+            "_id" : "while",
+            "count" : 12363
+        },
+        {
+            "_id" : "where",
+            "count" : 12347
+        }
+    ],
+    "ok" : 1
+}
+```
+
+###### Procent całości ######
+```sh
+> db.text.aggregate([
+... {$group: {_id: '$word', count: {$sum: 1}}},
+... {$sort: {count: -1}},
+... {$limit: 100},
+... {$group: {_id: null, count: {$sum: '$count'}}}
+... ])
+{ "result" : [ { "_id" : null, "count" : 7998978 } ], "ok" : 1 }
+> 7998978 / db.text.count() * 100
+47.03840417820259
+```
+
+##### Top 1000 #####
+```sh
+> db.text.aggregate([ {$group: {_id: '$word', count: {$sum: 1}}}, {$sort: {count: -1}}, {$limit: 1000} ])
+{
+    "result" : [
+        {
+            "_id" : "the",
+            "count" : 1061396
+        },
+        {
+            "_id" : "of",
+            "count" : 593677
+        },
+...
+        {
+            "_id" : "element",
+            "count" : 1787
+        },
+        {
+            "_id" : "appears",
+            "count" : 1786
+        },
+        {
+            "_id" : "takes",
+            "count" : 1783
+        },
+        {
+            "_id" : "fall",
+            "count" : 1783
+        }
+    ],
+    "ok" : 1
+}
+```
+
+###### Procent całości ######
+```sh
+> db.text.aggregate([
+... {$group: {_id: '$word', count: {$sum: 1}}},
+... {$sort: {count: -1}},
+... {$limit: 1000},
+... {$group: {_id: null, count: {$sum: '$count'}}}
+... ])
+{ "result" : [ { "_id" : null, "count" : 11433354 } ], "ok" : 1 }
+> 11433354 / db.text.count() * 100
+67.23443001899359
+```
