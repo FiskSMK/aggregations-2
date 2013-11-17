@@ -1,7 +1,5 @@
 # Marcin Koźmiński #
 
-[TOC]
-
 ## Platforma testowa ##
 
 ### Procesor ###
@@ -75,14 +73,12 @@ MongoDB shell version: 2.4.8
 ### Storage ###
 Skrypty były trzymane na systemowej partycji ext4 Linuksa. Natomiast pliki z danymi, ze względu na ich duży rozmiar, na partycji "wymiany danych" z systemem plików NTFS podmontowanej za pomocą ntfs-3g.
 
-## Zadania ##
-
-### Zadanie 1a ###
+## Zadanie 1a ##
 
 Zaimportować bazę `Train.csv` to lokalnej bazy Mongo.
 
-#### Przygotowanie pliku CSV ####
-Należało poprawić znaki końca linii występujące w pliku w wersji Windowsowej (`\r\n`) na Uniksową (`\n`). Plik `Train.csv` został potraktowany skryptem `2unix.sh`.
+### Przygotowanie pliku CSV ###
+Należało poprawić znaki końca linii występujące w pliku w wersji Windowsowej (`\r\n`) na Uniksową (`\n`). Plik `Train.csv` został potraktowany skryptem [`2unix.sh`](../../scripts/mkozminski/2unix.sh).
 ```sh
 $ time ./scripts/mkozminski/2unix.sh data/mkozminski/Train.csv data/mkozminski/Train_prepared.csv 
 
@@ -91,7 +87,7 @@ user    1m0.647s
 sys     1m58.653s
 ```
 
-#### Import ####
+### Import ###
 ```sh
 $ time mongoimport -c train --type csv --headerline --file data/mkozminski/Train_prepared.csv 
 connected to: 127.0.0.1
@@ -113,10 +109,10 @@ sys     0m9.266s
 ```
 Średnia prędkość ~12663 rekordów na sekundę.
 
-##### Przemiał MongoDB #####
+#### Przemiał MongoDB ####
 ![mongodb train import](../../images/mkozminski/train_import.png "mongodb train import")
 
-#### Rozmiar bazy danych ####
+### Rozmiar bazy danych ###
 Rozmiar bazy danych przed importem:
 ```sh
 $ du -hs /var/lib/mongodb/
@@ -129,16 +125,16 @@ $ du -hs /var/lib/mongodb/
 16G     /var/lib/mongodb/
 ```
 
-### Zadanie 1b ###
+## Zadanie 1b ##
 Sprawdzić czy zaimportowano właściwą ilość rekordów.
 ```js
 > db.train.count()
 6034195
 ```
-### Zadanie 1c ###
+## Zadanie 1c ##
 Zamienić string zawierający tagi na tablicę napisów z tagami następnie zliczyć wszystkie tagi i wszystkie różne tagi. Napisać program, który to zrobi korzystając z jednego ze sterowników.
 
-#### Zamiana tagów ####
+### Zamiana tagów ###
 Aktualnie rekord w bazie wygląda następująco:
 ```json
 {
@@ -188,11 +184,11 @@ Po zamianie tagów wygląda następująco
 }
 ```
 
-##### Przemiał MongoDB #####
+#### Przemiał MongoDB ####
 Interesujące nas dane znajdują się po godzinie 23:00.
 ![mongodb train tags](../../images/mkozminski/train_tags.png "mongodb train tags")
 
-#### Zliczanie tagów ####
+### Zliczanie tagów ###
 ```sh
 $ time python scripts/mkozminski/train_count.py 
 Counting...
@@ -205,14 +201,16 @@ user    1m17.499s
 sys 0m12.733s
 ```
 
-##### Przemiał MongoDB #####
+#### Przemiał MongoDB ####
 ![mongodb train count](../../images/mkozminski/train_count.png "mongodb train count")
 Dzwinym trafem w trakcie zliczania nie pojawił się żaden pik na wykresie MMS. Powinien się pojawić w okolicach 00:10.
 
-### Zadanie 1d ###
-Ściągnąć plik text8.zip ze strony Matt Mahoney (po rozpakowaniu 100MB):
+## Zadanie 1d ##
+Ściągnąć plik text8.zip ze strony [Matt Mahoney](http://mattmahoney.net/dc/textdata.html) (po rozpakowaniu 100MB):
 
+```sh
 wget http://mattmahoney.net/dc/text8.zip -O text8.gz
+```
 
 Zapisać wszystkie słowa w bazie MongoDB. Następnie zliczyć liczbę słów oraz liczbę różnych słów w tym pliku. Ile procent całego pliku stanowi:
 
@@ -252,7 +250,7 @@ $ wc data/mkozminski/text8.txt
  17005207  17005207 100000000 data/mkozminski/text8.txt
 ```
 
-#### Import ####
+### Import ###
 ```sh
 $ time mongoimport -c text -f word --type csv --file data/mkozminski/text8.txt
 connected to: 127.0.0.1
@@ -273,23 +271,23 @@ user    0m44.427s
 sys     0m8.556s
 ```
 
-##### Przemiał MongoDB #####
+#### Przemiał MongoDB ####
 ![mongodb text import](../../images/mkozminski/text_import.png "mongodb text import")
 
-#### Agregacje ####
-##### Ilość rekordów #####
+### Agregacje ###
+#### Ilość rekordów ####
 ```js
 > db.text.count()
 17005207
 ```
 
-##### Ilość różnych słów #####
+#### Ilość różnych słów ####
 ```js
 > db.text.distinct("word").length
 253854
 ```
 
-##### Najczęściej występujące słowo #####
+#### Najczęściej występujące słowo ####
 ```js
 > db.text.aggregate([
 ... {$group: {_id: '$word', count: {$sum: 1}}},
@@ -299,13 +297,13 @@ sys     0m8.556s
 { "result" : [ { "_id" : "the", "count" : 1061396 } ], "ok" : 1 }
 ```
 
-###### Procent całości ######
+##### Procent całości #####
 ```js
 > 1061396 / db.text.count() * 100
 6.241594118789616
 ```
 
-##### Top 10 #####
+#### Top 10 ####
 ```js
 > db.text.aggregate([ {$group: {_id: '$word', count: {$sum: 1}}}, {$sort: {count: -1}}, {$limit: 10} ])
 {
@@ -355,7 +353,7 @@ sys     0m8.556s
 }
 ```
 
-###### Procent całości ######
+##### Procent całości #####
 ```js
 > db.text.aggregate([
 ... {$group: {_id: '$word', count: {$sum: 1}}},
@@ -368,7 +366,7 @@ sys     0m8.556s
 24.733394894869555
 ```
 
-##### Top 100 #####
+#### Top 100 ####
 ```js
 > db.text.aggregate([ {$group: {_id: '$word', count: {$sum: 1}}}, {$sort: {count: -1}}, {$limit: 100} ])
 {
@@ -399,7 +397,7 @@ sys     0m8.556s
 }
 ```
 
-###### Procent całości ######
+##### Procent całości #####
 ```js
 > db.text.aggregate([
 ... {$group: {_id: '$word', count: {$sum: 1}}},
@@ -412,7 +410,7 @@ sys     0m8.556s
 47.03840417820259
 ```
 
-##### Top 1000 #####
+#### Top 1000 ####
 ```js
 > db.text.aggregate([ {$group: {_id: '$word', count: {$sum: 1}}}, {$sort: {count: -1}}, {$limit: 1000} ])
 {
@@ -447,7 +445,7 @@ sys     0m8.556s
 }
 ```
 
-###### Procent całości ######
+##### Procent całości #####
 ```js
 > db.text.aggregate([
 ... {$group: {_id: '$word', count: {$sum: 1}}},
@@ -460,12 +458,12 @@ sys     0m8.556s
 67.23443001899359
 ```
 
-### Zadanie 1e ###
-Wyszukać w sieci dane zawierające obiekty GeoJSON. Zapisać dane w bazie MongoDB.
+## Zadanie 1e ##
+Wyszukać w sieci dane zawierające obiekty [GeoJSON](http://geojson.org/geojson-spec.html#examples). Zapisać dane w bazie MongoDB.
 
-Dla zapisanych danych przygotować 6–9 różnych Geospatial Queries (co najmniej po jednym dla obiektów Point, LineString i Polygon). W przykładach należy użyć każdego z tych operatorów: $geoWithin, $geoIntersect, $near.
+Dla zapisanych danych przygotować 6–9 różnych [Geospatial Queries](http://docs.mongodb.org/manual/applications/geospatial-indexes/) (co najmniej po jednym dla obiektów Point, LineString i Polygon). W przykładach należy użyć każdego z tych operatorów: **$geoWithin**, **$geoIntersect**, **$near**.
 
-#### Dane ####
+### Dane ###
 Moimi danymi jest baza współrzędnych geograficznych polskich miejscowości (czasem nawet dzielnic?) złożona z danych pobranych z [Wikipedii](http://pl.wikipedia.org/wiki/Wikipedia:Skarbnica_Wikipedii/Po%C5%82o%C5%BCenie_miejscowo%C5%9Bci). Pierwotnie doprowadzona do formatu csv ([cities.csv](../../data/mkozminski/cities.csv)). Następnie została przekształcona na odpowiednie obiekty JSON ([cities.json](../../data/mkozminski/cities.json)) za pomocą skrytpu [cities_rewrite.py](../../scripts/mkozminski/cities_rewrite.py).
 
 Przykładowy rekord CSV:
@@ -489,7 +487,7 @@ Ten sam rekord jako JSON:
 }
 ```
 
-#### Import ####
+### Import ###
 ```sh
 $ time mongoimport -c cities < data/mkozminski/cities.json 
 connected to: 127.0.0.1
@@ -501,16 +499,16 @@ user    0m0.659s
 sys     0m0.044s
 ```
 
-##### Przemiał MongoDB #####
+#### Przemiał MongoDB ####
 ![mongodb cities import](../../images/mkozminski/cities_import.png "mongodb cities import")
 
-##### Zapytania #####
+### Zapytania ###
 Najpierw należy dodać indeks:
 ```js
 > db.cities.ensureIndex({'loc': '2dsphere'})
 ```
 
-###### 50 miast wokół Włocławka w promieniu 25 kilometrów ######
+#### 50 miast wokół Włocławka w promieniu 25 kilometrów ####
 ```js
 > var point = {
 ... 'type': 'Point',
@@ -632,7 +630,7 @@ Najpierw należy dodać indeks:
 ```
 [Mapka](https://gist.github.com/anonymous/2fc6e290ee7d8cd7a7ab#file-map-geojson)
 
-###### Włocławek - Brześć Kujawski - Kowal ######
+#### Włocławek - Brześć Kujawski - Kowal ####
 ```js
 > var polygon = {
 ...     'type': 'Polygon',
