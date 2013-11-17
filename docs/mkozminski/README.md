@@ -61,7 +61,7 @@ DirectMap2M:     6137856 kB
 ```
 
 ### System ###
-```clean
+```sh
 $ uname -a
 Linux orion 3.11.0-13-generic #20-Ubuntu SMP Wed Oct 23 07:38:26 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux
 ```
@@ -131,10 +131,7 @@ $ du -hs /var/lib/mongodb/
 
 ### Zadanie 1b ###
 Sprawdzić czy zaimportowano właściwą ilość rekordów.
-```sh
-$ mongo
-MongoDB shell version: 2.4.8
-connecting to: test
+```js
 > db.train.count()
 6034195
 ```
@@ -147,7 +144,13 @@ Aktualnie rekord w bazie wygląda następująco:
 {
     "_id" : 1,
     "title" : "How to check if an uploaded file is an image without mime type?",
-    "body" : "<p>I'd like to check if an uploaded file is an image file (e.g png, jpg, jpeg, gif, bmp) or another file. The problem is that I'm using Uploadify to upload the files, which changes the mime type and gives a 'text/octal' or something as the mime type, no matter which file type you upload.</p>  <p>Is there a way to check if the uploaded file is an image apart from checking the file extension using PHP?</p> ",
+    "body" : "<p>I'd like to check if an uploaded file is an image file (e.g 
+        png, jpg, jpeg, gif, bmp) or another file. The problem is that I'm 
+        using Uploadify to upload the files, which changes the mime type and 
+        gives a 'text/octal' or something as the mime type, no matter which 
+        file type you upload.</p>  <p>Is there a way to check if the uploaded 
+        file is an image apart from checking the file extension using 
+        PHP?</p> ",
     "tags" : "php image-processing file-upload upload mime-types"
 }
 ```
@@ -167,7 +170,13 @@ Po zamianie tagów wygląda następująco
 ```json
 {
     "_id" : 1,
-    "body" : "<p>I'd like to check if an uploaded file is an image file (e.g png, jpg, jpeg, gif, bmp) or another file. The problem is that I'm using Uploadify to upload the files, which changes the mime type and gives a 'text/octal' or something as the mime type, no matter which file type you upload.</p>  <p>Is there a way to check if the uploaded file is an image apart from checking the file extension using PHP?</p> ",
+    "body" : "<p>I'd like to check if an uploaded file is an image file (e.g 
+        png, jpg, jpeg, gif, bmp) or another file. The problem is that I'm 
+        using Uploadify to upload the files, which changes the mime type and 
+        gives a 'text/octal' or something as the mime type, no matter which 
+        file type you upload.</p>  <p>Is there a way to check if the uploaded 
+        file is an image apart from checking the file extension using 
+        PHP?</p> ",
     "tags" : [
         "php",
         "image-processing",
@@ -269,19 +278,19 @@ sys     0m8.556s
 
 #### Agregacje ####
 ##### Ilość rekordów #####
-```sh
+```js
 > db.text.count()
 17005207
 ```
 
 ##### Ilość różnych słów #####
-```sh
+```js
 > db.text.distinct("word").length
 253854
 ```
 
 ##### Najczęściej występujące słowo #####
-```sh
+```js
 > db.text.aggregate([
 ... {$group: {_id: '$word', count: {$sum: 1}}},
 ... {$sort: {count: -1}},
@@ -291,13 +300,13 @@ sys     0m8.556s
 ```
 
 ###### Procent całości ######
-```sh
+```js
 > 1061396 / db.text.count() * 100
 6.241594118789616
 ```
 
 ##### Top 10 #####
-```sh
+```js
 > db.text.aggregate([ {$group: {_id: '$word', count: {$sum: 1}}}, {$sort: {count: -1}}, {$limit: 10} ])
 {
     "result" : [
@@ -347,7 +356,7 @@ sys     0m8.556s
 ```
 
 ###### Procent całości ######
-```sh
+```js
 > db.text.aggregate([
 ... {$group: {_id: '$word', count: {$sum: 1}}},
 ... {$sort: {count: -1}},
@@ -360,7 +369,7 @@ sys     0m8.556s
 ```
 
 ##### Top 100 #####
-```sh
+```js
 > db.text.aggregate([ {$group: {_id: '$word', count: {$sum: 1}}}, {$sort: {count: -1}}, {$limit: 100} ])
 {
     "result" : [
@@ -391,7 +400,7 @@ sys     0m8.556s
 ```
 
 ###### Procent całości ######
-```sh
+```js
 > db.text.aggregate([
 ... {$group: {_id: '$word', count: {$sum: 1}}},
 ... {$sort: {count: -1}},
@@ -404,7 +413,7 @@ sys     0m8.556s
 ```
 
 ##### Top 1000 #####
-```sh
+```js
 > db.text.aggregate([ {$group: {_id: '$word', count: {$sum: 1}}}, {$sort: {count: -1}}, {$limit: 1000} ])
 {
     "result" : [
@@ -439,7 +448,7 @@ sys     0m8.556s
 ```
 
 ###### Procent całości ######
-```sh
+```js
 > db.text.aggregate([
 ... {$group: {_id: '$word', count: {$sum: 1}}},
 ... {$sort: {count: -1}},
@@ -449,4 +458,33 @@ sys     0m8.556s
 { "result" : [ { "_id" : null, "count" : 11433354 } ], "ok" : 1 }
 > 11433354 / db.text.count() * 100
 67.23443001899359
+```
+
+### Zadanie 1e ###
+Wyszukać w sieci dane zawierające obiekty GeoJSON. Zapisać dane w bazie MongoDB.
+
+Dla zapisanych danych przygotować 6–9 różnych Geospatial Queries (co najmniej po jednym dla obiektów Point, LineString i Polygon). W przykładach należy użyć każdego z tych operatorów: $geoWithin, $geoIntersect, $near.
+
+#### Dane ####
+Moimi danymi jest baza polskich miejscowości złożona z danych pobranych z [Wikipedii](http://pl.wikipedia.org/wiki/Wikipedia:Skarbnica_Wikipedii/Po%C5%82o%C5%BCenie_miejscowo%C5%9Bci). Pierwotnie doprowadzona do formatu csv ([cities.csv](../../data/mkozminski/cities.csv)). Następnie została przekształcona na odpowiednie obiekty JSON ([cities.json](../../data/mkozminski/cities.json)) za pomocą skrytpu [cities_rewrite.py](../../scripts/mkozminski/cities_rewrite.py).
+
+Przykładowy rekord CSV:
+```csv
+name,lat_deg,lat_min,lon_deg,lon_min
+Abramowice Kościelne,51,12,22,35
+```
+
+Ten sam rekord jako JSON:
+```json
+{
+    "_id": 1, 
+    "loc": {
+        "coordinates": [
+            22.583333333333332, 
+            51.2
+        ], 
+        "type": "Point"
+    }, 
+    "name": "Abramowice Kościelne"
+}
 ```
