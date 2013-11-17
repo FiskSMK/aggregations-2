@@ -466,7 +466,7 @@ Wyszukać w sieci dane zawierające obiekty GeoJSON. Zapisać dane w bazie Mongo
 Dla zapisanych danych przygotować 6–9 różnych Geospatial Queries (co najmniej po jednym dla obiektów Point, LineString i Polygon). W przykładach należy użyć każdego z tych operatorów: $geoWithin, $geoIntersect, $near.
 
 #### Dane ####
-Moimi danymi jest baza polskich miejscowości złożona z danych pobranych z [Wikipedii](http://pl.wikipedia.org/wiki/Wikipedia:Skarbnica_Wikipedii/Po%C5%82o%C5%BCenie_miejscowo%C5%9Bci). Pierwotnie doprowadzona do formatu csv ([cities.csv](../../data/mkozminski/cities.csv)). Następnie została przekształcona na odpowiednie obiekty JSON ([cities.json](../../data/mkozminski/cities.json)) za pomocą skrytpu [cities_rewrite.py](../../scripts/mkozminski/cities_rewrite.py).
+Moimi danymi jest baza współrzędnych geograficznych polskich miejscowości (czasem nawet dzielnic?) złożona z danych pobranych z [Wikipedii](http://pl.wikipedia.org/wiki/Wikipedia:Skarbnica_Wikipedii/Po%C5%82o%C5%BCenie_miejscowo%C5%9Bci). Pierwotnie doprowadzona do formatu csv ([cities.csv](../../data/mkozminski/cities.csv)). Następnie została przekształcona na odpowiednie obiekty JSON ([cities.json](../../data/mkozminski/cities.json)) za pomocą skrytpu [cities_rewrite.py](../../scripts/mkozminski/cities_rewrite.py).
 
 Przykładowy rekord CSV:
 ```csv
@@ -488,3 +488,294 @@ Ten sam rekord jako JSON:
     "name": "Abramowice Kościelne"
 }
 ```
+
+#### Import ####
+```sh
+$ time mongoimport -c cities < data/mkozminski/cities.json 
+connected to: 127.0.0.1
+Sun Nov 17 17:37:53.915 check 9 38221
+Sun Nov 17 17:37:54.186 imported 38221 objects
+
+real    0m2.283s
+user    0m0.659s
+sys     0m0.044s
+```
+
+##### Przemiał MongoDB #####
+![mongodb cities import](../../images/mkozminski/cities_import.png "mongodb cities import")
+
+##### Zapytania #####
+Najpierw należy dodać indeks:
+```js
+> db.cities.ensureIndex({'loc': '2dsphere'})
+```
+
+###### 50 miast wokół Włocławka w promieniu 25 kilometrów ######
+```js
+> var point = {
+... 'type': 'Point',
+... 'coordinates': [19.033333333333335, 52.65]
+... }
+> db.cities.find({loc: {$near: {$geometry: point}, $maxDistance: 25000}}).skip(1).limit(10).toArray()
+[
+    {
+        "_id" : 19747,
+        "loc" : {
+            "coordinates" : [
+                19.033333333333335,
+                52.63333333333333
+            ],
+            "type" : "Point"
+        },
+        "name" : "Milęcin"
+    },
+    {
+        "_id" : 37079,
+        "loc" : {
+            "coordinates" : [
+                19.033333333333335,
+                52.666666666666664
+            ],
+            "type" : "Point"
+        },
+        "name" : "Zazamcze"
+    },
+    {
+        "_id" : 15752,
+        "loc" : {
+            "coordinates" : [
+                19.05,
+                52.63333333333333
+            ],
+            "type" : "Point"
+        },
+        "name" : "Krzywe Błoto"
+    },
+    {
+        "_id" : 31328,
+        "loc" : {
+            "coordinates" : [
+                19.083333333333332,
+                52.666666666666664
+            ],
+            "type" : "Point"
+        },
+        "name" : "Szpetal Dolny"
+    },
+    {
+        "_id" : 18939,
+        "loc" : {
+            "coordinates" : [
+                18.966666666666665,
+                52.65
+            ],
+            "type" : "Point"
+        },
+        "name" : "Marianki"
+    },
+    {
+        "_id" : 36040,
+        "loc" : {
+            "coordinates" : [
+                19.116666666666667,
+                52.65
+            ],
+            "type" : "Point"
+        },
+        "name" : "Zabijaki"
+    },
+    {
+        "_id" : 6902,
+        "loc" : {
+            "coordinates" : [
+                18.95,
+                52.65
+            ],
+            "type" : "Point"
+        },
+        "name" : "Dziadowo"
+    },
+    {
+        "_id" : 18374,
+        "loc" : {
+            "coordinates" : [
+                18.95,
+                52.65
+            ],
+            "type" : "Point"
+        },
+        "name" : "Machnacz"
+    },
+    {
+        "_id" : 21501,
+        "loc" : {
+            "coordinates" : [
+                19.05,
+                52.7
+            ],
+            "type" : "Point"
+        },
+        "name" : "Nowe Rumunki"
+    },
+    {
+        "_id" : 13614,
+        "loc" : {
+            "coordinates" : [
+                19.016666666666666,
+                52.7
+            ],
+            "type" : "Point"
+        },
+        "name" : "Kolonia Łęg Witoszynski"
+    }
+]
+```
+[Mapka](https://gist.github.com/anonymous/2fc6e290ee7d8cd7a7ab#file-map-geojson)
+
+###### Włocławek - Brześć Kujawski - Kowal ######
+```js
+> var polygon = {
+...     'type': 'Polygon',
+...     'coordinates': [[
+...         [19.033333333333335, 52.65],
+...         [18.9, 52.6],
+...         [19.166666666666668, 52.53333333333333],
+...         [19.033333333333335, 52.65]
+...     ]]}
+> db.cities.find({loc: {$geoWithin: {$geometry: polygon}}}).toArray()
+[
+    {
+        "_id" : 14848,
+        "loc" : {
+            "coordinates" : [
+                19.166666666666668,
+                52.53333333333333
+            ],
+            "type" : "Point"
+        },
+        "name" : "Kowal"
+    },
+    {
+        "_id" : 34536,
+        "loc" : {
+            "coordinates" : [
+                19.033333333333335,
+                52.65
+            ],
+            "type" : "Point"
+        },
+        "name" : "Włocławek"
+    },
+    {
+        "_id" : 19747,
+        "loc" : {
+            "coordinates" : [
+                19.033333333333335,
+                52.63333333333333
+            ],
+            "type" : "Point"
+        },
+        "name" : "Milęcin"
+    },
+    {
+        "_id" : 15752,
+        "loc" : {
+            "coordinates" : [
+                19.05,
+                52.63333333333333
+            ],
+            "type" : "Point"
+        },
+        "name" : "Krzywe Błoto"
+    },
+    {
+        "_id" : 33407,
+        "loc" : {
+            "coordinates" : [
+                19.083333333333332,
+                52.583333333333336
+            ],
+            "type" : "Point"
+        },
+        "name" : "Warząchewka Niemiecka"
+    },
+    {
+        "_id" : 23840,
+        "loc" : {
+            "coordinates" : [
+                19.083333333333332,
+                52.6
+            ],
+            "type" : "Point"
+        },
+        "name" : "Pinczata"
+    },
+    {
+        "_id" : 33406,
+        "loc" : {
+            "coordinates" : [
+                19.1,
+                52.583333333333336
+            ],
+            "type" : "Point"
+        },
+        "name" : "Warząchewka Królewska"
+    },
+    {
+        "_id" : 8274,
+        "loc" : {
+            "coordinates" : [
+                19.1,
+                52.56666666666667
+            ],
+            "type" : "Point"
+        },
+        "name" : "Gołaszewo Lesne"
+    },
+    {
+        "_id" : 15532,
+        "loc" : {
+            "coordinates" : [
+                19,
+                52.583333333333336
+            ],
+            "type" : "Point"
+        },
+        "name" : "Kruszyn"
+    },
+    {
+        "_id" : 29164,
+        "loc" : {
+            "coordinates" : [
+                18.966666666666665,
+                52.6
+            ],
+            "type" : "Point"
+        },
+        "name" : "Smólsk"
+    },
+    {
+        "_id" : 9568,
+        "loc" : {
+            "coordinates" : [
+                18.933333333333334,
+                52.6
+            ],
+            "type" : "Point"
+        },
+        "name" : "Guźlin"
+    },
+    {
+        "_id" : 3112,
+        "loc" : {
+            "coordinates" : [
+                18.9,
+                52.6
+            ],
+            "type" : "Point"
+        },
+        "name" : "Brześć Kujawski"
+    }
+]
+```
+[Mapka](https://gist.github.com/anonymous/05ed3927039db0b953f0#file-map-geojson)
