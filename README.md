@@ -37,6 +37,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Karwowski, Kamil](/docs/kkarwowski.md).
 1. [Kłeczek, Piotr](/docs/pkleczek/README.md).
 1. [Kotłowski, Piotr](docs/pkotlowski/README.md).
+1. [Koźmiński, Marcin](docs/mkozminski/README.md).
 1. [Królik, Przemysław](/docs/pkrolik.md).
 1. [Kubacki, Konrad](/docs/kkubacki/README.md).
 1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md).
@@ -63,6 +64,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Smykowski, Adrian](/docs/asmykowski/README.md).
 1. [Stefanowicz, Michał](/docs/mstefanowicz.md).
 1. [Szygenda, Mateusz](/docs/mszygenda.md).
+1. [Tomczak, Robert](/docs/rtomczak/README.md).
 1. [Wąsowicz, Michał](/docs/mwasowicz.md).
 1. [Winsławski, Bartłomiej](/docs/bwinslawski.md).
 1. [Wiśniewski, Konrad](/docs/kwisniewski/kwisniewski.md).
@@ -78,14 +80,12 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Głowacki, Michał.
 1. Januszewski, Tomasz.
 1. Jaźwiński, Robert.
-1. [Koźmiński, Marcin](docs/mkozminski/README.md).
 1. Malinowski, Piotr.
 1. Osękowski, Dominik.
 1. Ostrowski, Michał.
 1. Pietraszuk, Bartłomiej.
 1. Rogaszewski, Piotr.
 1. Sott, Tomasz.
-1. [Tomczak, Robert](/docs/rtomczak/README.md).
 1. Wiśniewski, Piotr.
 1. Żarkowski, Mateusz.
 
