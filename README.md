@@ -78,7 +78,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Głowacki, Michał.
 1. Januszewski, Tomasz.
 1. Jaźwiński, Robert.
-1. Koźmiński, Marcin.
+1. [Koźmiński, Marcin](docs/mkozminski/README.md).
 1. Malinowski, Piotr.
 1. Osękowski, Dominik.
 1. Ostrowski, Michał.
