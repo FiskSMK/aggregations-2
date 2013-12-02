@@ -1,0 +1,152 @@
+MongoDB shell version: 2.4.7
+connecting to: geo
+{
+	"_id" : ObjectId("5276a2bc9d0a3eb646b81271"),
+	"id" : 40498,
+	"name" : "Salt River Valley",
+	"type" : "Valley",
+	"country_name" : null,
+	"height" : 283,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-112.3129333,
+			33.3811546
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b7b00e"),
+	"id" : 10122,
+	"name" : "Red Rock Canyon",
+	"type" : "Valley",
+	"country_name" : null,
+	"height" : 227,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-112.7079434,
+			33.0561557
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b7a48d"),
+	"id" : 7164,
+	"name" : "Little Rainbow Valley",
+	"type" : "Valley",
+	"country_name" : null,
+	"height" : 216,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-112.7090564,
+			33.1750441
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b790d8"),
+	"id" : 2089,
+	"name" : "Buckeye Valley",
+	"type" : "Valley",
+	"country_name" : null,
+	"height" : 260,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-112.7221147,
+			33.3567084
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2b99d0a3eb646b78bcf"),
+	"id" : 793,
+	"name" : "Arlington Valley",
+	"type" : "Valley",
+	"country_name" : null,
+	"height" : 228,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-112.7779489,
+			33.2367104
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b7943d"),
+	"id" : 2966,
+	"name" : "Citrus Valley",
+	"type" : "Valley",
+	"country_name" : null,
+	"height" : 168,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-112.9821202,
+			33.0444907
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b79c41"),
+	"id" : 5026,
+	"name" : "Gila River Canyon",
+	"type" : "Valley",
+	"country_name" : null,
+	"height" : 165,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-113.0157329,
+			33.0767125
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b797a3"),
+	"id" : 3842,
+	"name" : "Dendora Valley",
+	"type" : "Valley",
+	"country_name" : null,
+	"height" : 157,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-113.0821238,
+			33.052546
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2bb9d0a3eb646b7c2d0"),
+	"id" : 14962,
+	"name" : "Quail Spring Wash",
+	"type" : "Valley",
+	"country_name" : null,
+	"height" : 196,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-113.068791,
+			33.1331001
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b79710"),
+	"id" : 3694,
+	"name" : "Daniels Arroyo",
+	"type" : "Valley",
+	"country_name" : null,
+	"height" : 218,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-113.2496229,
+			32.5122768
+		]
+	}
+}

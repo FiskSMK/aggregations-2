@@ -1,0 +1,2319 @@
+_id,miasto,szerokosc,dlugosc
+1,Adamów,22.15,51.45
+2,Adamów,23.10,50.36
+3,Adamówka,22.42,50.16
+4,Aleksandrów,19.59,51.16
+5,Aleksandrów Kujawski,18.42,52.53
+6,Aleksandrów Łódzki,19.19,51.49
+7,Alwernia,19.32,50.04
+8,Andrespol,19.37,51.44
+9,Andrychów,19.20,49.52
+10,Andrzejów,22.12,52.50
+11,Annopol,21.52,50.53
+12,Augustów,22.58,53.51
+13,Babiak,18.41,52.20
+14,Babice,19.26,50.04
+15,Babimost,15.50,52.09
+16,Baborów,17.59,50.09
+17,Baboszewo,20.15,52.42
+18,Baćkowice,21.14,50.48
+19,Bakałarzewo,22.39,54.06
+20,Baligród,22.17,49.21
+21,Bałtów,21.32,51.01
+22,Banie,14.38,53.06
+23,Banie Mazurskie,22.03,54.15
+24,Baranowicze,26.02,53.08
+25,Baranowo,21.18,53.11
+26,Baranów,18.00,51.16
+27,Baranów,22.09,51.34
+28,Baranów,20.28,52.07
+29,Baranów Sandomierski,21.33,50.30
+30,Barciany,21.21,54.13
+31,Barcin,17.57,52.52
+32,Barczewo,20.41,53.50
+33,Bardo,16.45,50.31
+34,Bargłów Kościelny,22.50,53.46
+35,Barlinek,15.13,52.59
+36,Bartoszyce,20.48,54.15
+37,Baruchowo,19.15,52.30
+38,Barwice,16.21,53.44
+39,Batorz,22.30,50.50
+40,Bądkowo,18.47,52.42
+41,Bedlno,19.34,52.13
+42,Bejsce,20.36,50.15
+43,Belsk Duży,20.49,51.50
+44,Bełchatów,19.22,51.22
+45,Bełżyce,22.17,51.10
+46,Bestwina,19.03,49.54
+47,Będków,19.45,51.35
+48,Będzin,19.08,50.19
+49,Będzino,15.59,54.12
+50,Biała,17.40,50.23
+51,Biała,18.27,51.16
+52,Biała Piska,22.04,53.37
+53,Biała Podlaska,23.07,52.02
+54,Biała Rawska,20.29,51.48
+55,Białaczów,20.18,51.18
+56,Białe Błota,17.55,53.06
+57,Białobrzegi,22.21,50.07
+58,Białobrzegi,20.57,51.39
+59,Białogard,15.59,54.00
+60,Białopole,23.44,50.59
+61,Białośliwie,17.07,53.06
+62,Białowieża,23.52,52.42
+63,Biały Bór,16.50,53.44
+64,Biały Dunajec,20.02,49.22
+65,Białystok,23.10,53.08
+66,Biecz,21.16,49.44
+67,Bielany,22.15,52.20
+68,Bielawa,16.37,50.42
+69,Bielawy,19.39,52.04
+70,Bielice,14.43,53.12
+71,Bieliny,20.55,50.51
+72,Bielsk,19.48,52.41
+73,Bielsk Podlaski,23.12,52.46
+74,Bielsko-Biała,19.04,49.50
+75,Bierawa,18.16,50.17
+76,Bierutów,17.33,51.07
+77,Bierzwnik,15.40,53.02
+78,Biesiekierz,16.03,54.08
+79,Bieżuń,19.52,52.57
+80,Biłgoraj,22.43,50.32
+81,Bircza,22.28,49.42
+82,Biskupice,20.07,49.58
+83,Biskupiec,19.21,53.30
+84,Biskupiec,20.57,53.52
+85,Biszcza,22.38,50.25
+86,Bisztynek,20.54,54.05
+87,Blachownia,18.58,50.47
+88,Bledzew,15.24,52.31
+89,Blizanów,18.01,51.54
+90,Bliżyn,20.45,51.06
+91,Błaszki,18.26,51.39
+92,Błażowa,22.06,49.54
+93,Błędów,20.42,51.47
+94,Błonie,20.36,52.12
+95,Bobolice,16.35,53.57
+96,Bobowa,20.57,49.43
+97,Bobrowice,15.05,51.57
+98,Bobrowniki,18.59,50.23
+99,Bobrowniki,18.58,52.46
+100,Bobrowo,19.16,53.17
+101,Bochnia,20.25,49.58
+102,Boćki,23.02,52.39
+103,Bodzanów,20.02,52.31
+104,Bodzechów,21.23,50.51
+105,Bodzentyn,20.57,50.57
+106,Bogatynia,14.57,50.54
+107,Bogdaniec,15.03,52.41
+108,Bogoria,21.15,50.39
+109,Boguchwała,21.57,49.59
+110,Boguszów-Gorce,16.12,50.46
+111,Boguty-Pianki,22.25,52.43
+112,Bojadła,15.49,51.57
+113,Bojanowo,16.45,51.42
+114,Bojanów,21.57,50.26
+115,Bolesław,20.53,50.16
+116,Bolesławiec,18.12,51.12
+117,Bolesławiec,15.34,51.16
+118,Boleszkowice,14.33,52.43
+119,Bolimów,20.10,52.05
+120,Bolków,16.06,50.55
+121,Boniewo,18.54,52.28
+122,Borek Wielkopolski,17.15,51.55
+123,Borki,22.32,51.44
+124,Borkowice,20.42,51.19
+125,Borowa,21.21,50.23
+126,Borowiczki,19.45,52.31
+127,Borowie,21.46,51.57
+128,Borów,17.00,50.53
+129,Borysław,23.27,49.16
+130,Borzechów,22.17,51.06
+131,Borzęcin,20.42,50.06
+132,Borzytuchom,17.23,54.13
+133,Branice,17.47,50.03
+134,Braniewo,19.50,54.23
+135,Brańsk,22.50,52.45
+136,Brańszczyk,21.36,52.37
+137,Brasław,27.02,55.38
+138,Brąszewice,18.27,51.30
+139,Brodnica,16.53,52.09
+140,Brodnica,19.24,53.15
+141,Brody,21.14,51.02
+142,Brody,14.45,51.45
+143,Brody,25.10,50.06
+144,Brojce,15.21,53.57
+145,Brok,21.51,52.42
+146,Brójce,19.38,51.40
+147,Brudzeń Duży,19.29,52.40
+148,Brudzew,18.36,52.06
+149,Brusy,17.44,53.53
+150,Brwinów,20.43,52.08
+151,Brzeg,17.29,50.52
+152,Brzeg Dolny,16.43,51.16
+153,Brzesko,20.37,49.58
+154,Brzeszcze,19.09,49.59
+155,Brześć Kujawski,18.53,52.37
+156,Brześć nad Bugiem,23.42,52.06
+157,Brzeziny,18.16,51.36
+158,Brzeziny,19.45,51.48
+159,Brzeźnica,19.37,49.58
+160,Brzeźnica,15.24,51.43
+161,Brzeźnio,18.38,51.30
+162,Brzeźno,15.47,53.42
+163,Brzeżany,24.56,49.27
+164,Brzostek,21.25,49.53
+165,Brzozie,19.36,53.19
+166,Brzozów,22.02,49.42
+167,Brzuze,19.15,53.03
+168,Brzyska,21.23,49.49
+169,Buczacz,25.23,49.04
+170,Buczek,19.10,51.30
+171,Budry,21.53,54.15
+172,Budzów,19.41,49.47
+173,Budzyń,16.59,52.54
+174,Buk,16.31,52.22
+175,Bukowiec,18.14,53.26
+176,Bukowina Tatrzańska,20.06,49.20
+177,Bukowno,19.26,50.16
+178,Bukowsko,22.03,49.29
+179,Bulkowo,20.07,52.33
+180,Burzenin,18.50,51.27
+181,Busko Zdrój,20.48,50.28
+182,Bychawa,22.33,51.01
+183,Byczyna,18.13,51.07
+184,Bydgoszcz,18.00,53.07
+185,Bystrzyca Kłodzka,16.38,50.18
+186,Bytnica,15.09,52.09
+187,Bytom,18.54,50.23
+188,Bytom Odrzański,15.50,51.44
+189,Bytoń,18.35,52.34
+190,Bytów,17.30,54.10
+191,Cedry Wielkie,18.51,54.15
+192,Cedynia,14.12,52.53
+193,Cegłów,21.44,52.09
+194,Cekcyn,18.01,53.35
+195,Ceków-Kolonia,18.18,51.53
+196,Celestynów,21.23,52.03
+197,Ceranów,22.14,52.38
+198,Cewice,17.44,54.27
+199,Charsznica,19.56,50.25
+200,Chąśno,19.56,52.11
+201,Chełm,23.29,51.08
+202,Chełmek,19.14,50.06
+203,Chełmiec,20.40,49.38
+204,Chełmno,18.26,53.21
+205,Chełmża,18.36,53.12
+206,Chęciny,20.27,50.48
+207,Chlewiska,20.46,51.15
+208,Chłopice,22.41,49.57
+209,Chmielnik,20.45,50.37
+210,Chmielnik Rzeszowski,22.07,49.59
+211,Chmielno,18.06,54.20
+212,Choceń,19.01,52.30
+213,Chocianów,15.54,51.25
+214,Chociwel,15.19,53.27
+215,Chocz,17.53,51.58
+216,Choczewo,17.53,54.45
+217,Chodecz,19.02,52.24
+218,Chodel,22.08,51.07
+219,Chodów,19.02,52.15
+220,Chodzież,16.55,52.59
+221,Chojna,14.25,52.58
+222,Chojnice,17.33,53.42
+223,Chojnów,15.56,51.17
+224,Choreszcz,22.59,53.09
+225,Chorkówka,21.41,49.39
+226,Choroszcz,22.59,53.09
+227,Chorzele,20.53,53.16
+228,Chorzów,18.57,50.18
+229,Choszczno,15.24,53.10
+230,Chotcza,21.45,52.14
+231,Chrostkowo,19.15,53.57
+232,Chrzanów,19.24,50.08
+233,Chrzanów,22.36,50.46
+234,Chrząstowice,18.04,50.40
+235,Chrzypsko Wielkie,16.14,52.38
+236,Chybie,18.49,49.54
+237,Chynów,21.05,51.54
+238,Ciasna,18.37,50.46
+239,Ciechanowiec,22.30,52.41
+240,Ciechanów,20.38,52.52
+241,Ciechocin,18.56,53.04
+242,Ciechocinek,18.47,52.53
+243,Cielądz,20.21,51.43
+244,Ciepielów,21.35,51.15
+245,Ciepłowody,16.55,50.41
+246,Cieplice Śląskie-Zdrój,15.41,50.52
+247,Cieszanów,23.08,50.14
+248,Cieszków,17.22,51.38
+249,Cieszyn,18.38,49.45
+250,Ciężkowice,20.58,49.48
+251,Cisek,18.13,50.17
+252,Cisna,22.20,49.13
+253,Cmolas,21.45,50.18
+254,Cybinka,14.48,52.12
+255,Cyców,23.08,51.18
+256,Czajków,18.21,51.29
+257,Czaplinek,16.14,53.33
+258,Czarna,22.41,49.19
+259,Czarna,21.15,50.04
+260,Czarna,22.12,50.07
+261,Czarna Białostocka,23.18,53.18
+262,Czarna Dąbrówka,17.34,54.22
+263,Czarne,16.56,53.42
+264,Czarnia,21.11,53.21
+265,Czarnków,16.34,52.54
+266,Czarnocin,20.31,50.21
+267,Czarnocin,19.41,51.35
+268,Czrnożyły,18.34,51.17
+269,Czarny Bór,16.07,50.46
+270,Czarny Dunajec,19.52,49.27
+271,Czastary,18.20,51.16
+272,Czchów,20.41,49.50
+273,Czechowice-Dziedzice,19.01,49.50
+274,Czemierniki,22.38,51.41
+275,Czempiń,16.45,52.08
+276,Czeremcha,23.21,52.31
+277,Czermin,21.20,50.20
+278,Czermin,17.45,51.57
+279,Czernica,17.15,51.03
+280,Czernice Borowe,20.43,53.02
+281,Czernichów,19.41,49.59
+282,Czerniejewo,17.29,52.26
+283,Czerniewice,20.10,51.39
+284,Czernikowo,18.56,52.57
+285,Czersk,17.58,53.48
+286,Czerwieńsk,15.26,52.01
+287,Czerwin,21.46,52.57
+288,Czerwińsk nad Wisłą,20.18,52.23
+289,Czerwonak,16.59,52.28
+290,Czerwonka,21.12,52.53
+291,Częstochowa,19.07,50.48
+292,Człopa,16.06,53.05
+293,Człuchów,17.21,53.41
+294,Czorsztyn,20.19,49.26
+295,Czosnów,20.43,52.24
+296,Czudec,21.51,49.57
+297,Czyże,23.26,52.47
+298,Czyżew-Osada,22.18,52.48
+299,Ćmielów,21.31,50.54
+300,Daleszyce,20.48,50.48
+301,Dalików,19.06,51.53
+302,Damasławek,17.30,52.50
+303,Damnica,17.17,54.30
+304,Darłowo,16.24,54.25
+305,Daszyna,19.11,52.09
+306,Dawidgródek,27.14,52.03
+307,Dąbie,18.49,52.05
+308,Dąbie,15.10,52.01
+309,Dąbrowa,17.45,50.41
+310,Dąbrowa,17.57,52.44
+311,Dąbrowa Białostocka,23.21,53.39
+312,Dąbrowa Biskupia,18.32,52.47
+313,Dąbrowa Chełmińska,18.18,53.11
+314,Dąbrowa Górnicza,19.16,50.19
+315,Dąbrowa Tarnowska,20.59,50.11
+316,Dąbrowa Zielona,19.33,50.51
+317,Dąbrowice,19.05,52.19
+318,Dąbrówka,21.17,52.29
+319,Dąbrówno,20.03,53.26
+320,Debrzno,17.14,53.33
+321,Deszczno,15.18,52.40
+322,Dębe Wielkie,21.26,52.12
+323,Dębica,21.25,50.03
+324,Dęblin,21.52,51.34
+325,Dębnica Kaszubska,17.10,54.23
+326,Dębno,20.43,49.58
+327,Dębno,14.42,52.44
+328,Dębowa Kłoda,23.01,51.36
+329,Dębowa Łąka,19.06,53.15
+330,Dębowiec,21.28,49.41
+331,Dębowiec,18.43,49.48
+332,Długołęka,17.12,51.10
+333,Długosiodło,21.36,52.46
+334,Dłutów,19.24,51.33
+335,Dmosin,19.45,51.55
+336,Dobczyce,20.06,49.53
+337,Dobiegniew,15.45,52.58
+338,Dobra,18.37,51.55
+339,Dobra,20.15,49.43
+340,Dobra,14.23,53.29
+341,Dobra,15.18,53.34
+342,Dobrcz,18.09,53.16
+343,Dobre,21.41,52.19
+344,Dobre,18.33,52.41
+345,Dobre Miasto,20.24,53.59
+346,Dobrodzień,18.27,50.44
+347,Dobromierz,16.15,50.55
+348,Dobromil,22.47,49.34
+349,Dobroszyce,17.21,51.16
+350,Dobryszyce,19.25,51.09
+351,Dobrzany,15.25,53.21
+352,Dobrzelin,19.37,52.14
+353,Dobrzeń Wielki,17.51,50.46
+354,Dobrzyca,17.37,51.52
+355,Dobrzyniewo Kościelne,23.03,53.12
+356,Dobrzyń nad Wisłą,19.20,52.39
+357,Dolice,15.12,53.11
+358,Dolsk,17.04,51.59
+359,Dołhobyczów,24.02,50.35
+360,Domaniewice,19.48,52.01
+361,Domaniów,17.08,50.59
+362,Domaradz,21.59,49.48
+363,Domaszowice,17.53,51.03
+364,Dominowo,17.22,52.18
+365,Dopiewo,16.40,52.21
+366,Dorohusk,23.49,51.09
+367,Doruchów,18.05,51.25
+368,Dragacz,18.44,53.30
+369,Drawno,15.45,53.13
+370,Drawsko,16.02,52.51
+371,Drawsko Pomorskie,15.48,53.32
+372,Drelów,22.53,51.55
+373,Drezdenko,15.49,52.51
+374,Drobin,19.59,52.44
+375,Drohiczyn,22.39,52.24
+376,Drohobycz,23.30,49.21
+377,Drużbice,19.24,51.27
+378,Drwinia,20.26,50.06
+379,Drzewica,20.28,51.27
+380,Drzycim,18.19,53.31
+381,Dubeninki,22.34,54.18
+382,Dubicze Cerkiewne,23.26,52.39
+383,Dubiecko,22.24,49.50
+384,Dubienka,23.53,51.03
+385,Dukla,21.41,49.33
+386,Duszniki,16.24,52.27
+387,Duszniki-Zdrój,16.23,50.24
+388,Dwikozy,21.47,50.44
+389,Dydnia,22.12,49.41
+390,Dygowo,15.43,54.08
+391,Dynów,22.14,49.49
+392,Dywity,20.29,53.50
+393,Dziadkowice,22.54,52.34
+394,Dziadowa Kłoda,17.42,51.14
+395,Działdowo,20.11,53.14
+396,Działoszyce,20.21,50.22
+397,Działoszyn,18.52,51.07
+398,Dziemiany,17.47,54.01
+399,Dzierzążnia,20.14,52.38
+400,Dzierzgoń,19.21,53.56
+401,Dzierzgowo,20.39,53.09
+402,Dzierzkowice,22.05,50.58
+403,Dzierżoniów,16.38,50.43
+404,Dziwnów,14.45,54.02
+405,Dzwola,22.35,50.42
+406,Dźwierzuty,20.58,53.42
+407,Elbląg,19.24,54.10
+408,Ełk,22.21,53.29
+409,Fabianki,19.06,52.43
+410,Fajsławice,22.57,51.06
+411,Fałków,20.06,51.08
+412,Filipów,22.37,54.11
+413,Firlej,22.31,51.34
+414,Frampol,22.41,50.41
+415,Fredropol,22.45,49.42
+416,Frombork,19.41,54.21
+417,Frysztak,21.37,49.50
+418,Gać,22.22,50.02
+419,Galewice,18.16,51.20
+420,Garbatka-Letnisko,21.37,51.30
+421,Garbów,22.21,51.21
+422,Gardeja,18.57,53.37
+423,Garwolin,21.38,51.54
+424,Gaszowice,18.26,50.07
+425,Gaworzyce,15.53,51.38
+426,Gąbin,19.43,52.24
+427,Gąsawa,17.45,52.46
+428,Gdańsk,18.38,54.22
+429,Gdów,20.12,49.54
+430,Gdynia,18.32,54.32
+431,Giby,23.22,54.02
+432,Gidle,19.28,50.58
+433,Gielniów,20.28,51.24
+434,Gierałtowice,18.43,50.13
+435,Gietrzwałd,20.15,53.45
+436,Gilowice-Ślemień,19.18,49.42
+437,Gizałki,17.47,52.03
+438,Giżycko,21.47,54.02
+439,Glinojeck,20.17,52.49
+440,Gliwice,18.40,50.17
+441,Głębokie,27.41,55.08
+442,Głogów,16.05,51.39
+443,Głogów Malopolski,21.58,50.09
+444,Głogówek,17.51,50.21
+445,Głowaczów,21.20,51.38
+446,Głowno,19.43,51.58
+447,Główczyce,17.22,54.37
+448,Głubczyce,17.50,50.12
+449,Głuchołazy,17.23,50.19
+450,Głuchów,20.04,51.47
+451,Głusk,22.36,51.12
+452,Głuszyca,16.22,50.41
+453,Gniew,18.49,53.51
+454,Gniewino,18.01,54.43
+455,Gniewkowo,18.25,52.54
+456,Gniewoszów,21.49,51.28
+457,Gniezno,17.36,52.32
+458,Gnojnik,20.36,49.54
+459,Gnojno,20.51,50.37
+460,Godkowo,19.54,54.05
+461,Godów,18.29,49.56
+462,Godzianów,20.02,51.53
+463,Godziesze Wielkie,18.11,51.39
+464,Godziszów,22.29,50.46
+465,Gogolin,18.02,50.30
+466,Golczewo,14.58,53.59
+467,Goleniów,14.49,53.33
+468,Goleszów,18.44,49.44
+469,Golina,18.06,52.15
+470,Golub-Dobrzyń,19.03,53.07
+471,Gołańcz,17.18,52.57
+472,Gołcza,19.55,50.21
+473,Gołdap,22.18,54.18
+474,Gołuchów,17.56,51.51
+475,Gołymin-Ośrodek,20.53,52.48
+476,Gomunice,19.29,51.10
+477,Goniądz,22.44,53.29
+478,Goraj,22.41,50.43
+479,Gorlice,21.10,49.40
+480,Gorzkowice,19.36,51.13
+481,Gorzków,23.00,50.56
+482,Gorzów Śląski,18.26,51.02
+483,Gorzów Wielkopolski,15.14,52.44
+484,Gorzyce,18.24,49.58
+485,Gorzyce,21.50,50.40
+486,Gostycyn,17.48,53.29
+487,Gostynin,19.28,52.25
+488,Gostyń,17.01,51.53
+489,Goszczanów,18.31,51.47
+490,Goszczyn,20.52,51.44
+491,Gościeradów,22.00,50.52
+492,Gościno,15.38,54.03
+493,Gowarczów,20.27,51.17
+494,Goworowo,21.34,52.54
+495,Gozdnica,15.06,51.26
+496,Gozdowo,19.41,52.44
+497,Góra,16.33,51.40
+498,Góra Kalwaria,21.13,51.59
+499,Góra Świętej Małgorzaty,19.19,52.03
+500,Górno,20.49,50.51
+501,Górowo Iławieckie,20.30,54.17
+502,Górzno,21.43,51.51
+503,Górzno,19.38,53.12
+504,Górzyca,14.38,52.29
+505,Gózd,21.23,51.23
+506,Grabica,19.32,51.29
+507,Grabowiec,23.33,50.49
+508,Grabowo,22.09,53.28
+509,Grabów,19.01,52.07
+510,Grabów nad Pilicą,21.14,51.44
+511,Grabów nad Prosną,18.07,51.30
+512,Grajewo,22.27,53.39
+513,Granowo,16.32,52.13
+514,Grążawy,19.34,53.15
+515,Grębków,21.55,52.16
+516,Grębocice,16.10,51.36
+517,Gręboszów,20.47,50.15
+518,Grębów,21.53,50.34
+519,Grodków,17.23,50.42
+520,Grodno,23.50,53.41
+521,Grodziczno,19.46,53.25
+522,Grodziec,18.04,52.02
+523,Grodzisk,22.45,52.35
+524,Grodzisk Mazowiecki,20.37,52.06
+525,Grodzisk Wielkopolski,16.22,52.14
+526,Grodzisko Dolne,22.28,50.10
+527,Gromadka,15.46,51.22
+528,Gromnik,20.57,49.50
+529,Gronowo Elbląskie,19.18,54.05
+530,Gródek,23.40,53.06
+531,Gródek nad Dunajcem,20.44,49.45
+532,Grójec,20.52,51.52
+533,Grudusk,20.36,53.04
+534,Grudziądz,18.46,53.29
+535,Grunwald,20.05,53.33
+536,Gruta,18.58,53.27
+537,Grybów,20.57,49.38
+538,Gryfice,15.12,53.54
+539,Gryfino,14.29,53.15
+540,Gryfów Śląski,15.25,51.02
+541,Grzegorzew,18.44,52.12
+542,Grzmiąca,16.26,53.50
+543,Gubin,14.43,51.57
+544,Gzy,20.56,52.45
+545,Haczów,21.54,49.40
+546,Hajnówka,23.35,52.45
+547,Halinów,21.21,52.14
+548,Hanna,23.31,51.43
+549,Hańsk,23.24,51.24
+550,Harasiuki,22.29,50.28
+551,Haźlach,18.37,49.48
+552,Hel,18.48,54.36
+553,Herby,18.53,50.40
+554,Horodło,24.03,50.54
+555,Horyniec,23.22,50.12
+556,Hrubieszów,23.53,50.48
+557,Huszlew,22.50,52.08
+558,Hyżne,22.11,49.55
+559,Igołomia-Wawrzeńczyce,20.18,50.06
+560,Iława,19.34,53.36
+561,Iłowa,15.12,51.30
+562,Iłowo-Osada,20.18,53.10
+563,Iłów,20.02,52.21
+564,Iłża,21.15,51.10
+565,Imielno,20.26,50.35
+566,Inowłódz,20.13,51.32
+567,Inowrocław,18.15,52.48
+568,Ińsko,15.32,53.26
+569,Irządze,19.41,50.38
+570,Istebna,18.54,49.34
+571,Iwaniska,21.16,50.44
+572,Iwanowice,19.59,50.14
+573,Iwierzyce,21.46,50.02
+574,Iwkowa,20.35,49.50
+575,Iwonicz-Zdrój,21.48,49.34
+576,Izbica,23.10,50.54
+577,Izbica Kujawska,18.46,52.25
+578,Izbicko,18.10,50.34
+579,Jabłonka,19.42,49.29
+580,Jabłonna,22.36,51.05
+581,Jabłonna,20.54,52.23
+582,Jabłonna Lacka,22.27,52.29
+583,Jabłonowo,19.04,53.24
+584,Jabłonowo Pomorskie,19.04,53.24
+585,Jabłoń,23.05,51.43
+586,Jadów,21.38,52.29
+587,Jaktorów,20.32,52.05
+588,Jakubów,21.41,52.13
+589,Janikowo,18.06,52.45
+590,Janowice Wielkie,15.55,50.53
+591,Janowiec,21.54,51.19
+592,Janowiec Kościelny,20.31,53.18
+593,Janowiec Wielkopolski,17.29,52.45
+594,Janowo,20.40,53.19
+595,Janów,19.26,50.43
+596,Janów,23.14,53.28
+597,Janów Lubelski,22.25,50.42
+598,Janów Podlaski,23.13,52.12
+599,Jaraczewo,17.18,51.58
+600,Jarczów,23.35,50.26
+601,Jarocin,22.20,50.34
+602,Jarocin,17.30,51.58
+603,Jarosław,22.42,50.02
+604,Jasienica,18.56,49.49
+605,Jasienica Rosielna,21.57,49.45
+606,Jasieniec,20.56,51.49
+607,Jasień,15.01,51.45
+608,Jasionówka,23.02,53.24
+609,Jasło,21.28,49.44
+610,Jastarnia,18.40,54.42
+611,Jastków,22.27,51.19
+612,Jastrowie,16.49,53.26
+613,Jastrząb,20.57,51.14
+614,Jastrzębia,21.12,51.28
+615,Jastrzębie-Zdrój,18.35,49.57
+616,Jaświły,22.58,53.24
+617,Jawor,16.12,51.04
+618,Jawornik Polski,22.17,49.54
+619,Jaworzno,19.16,50.13
+620,Jaworzyna Śląska,16.26,50.55
+621,Jedlicze,21.38,49.43
+622,Jedlina-Zdrój,16.21,50.43
+623,Jedlińsk,21.02,51.31
+624,Jedlnia-Letnisko,21.19,51.26
+625,Jednorożec,21.03,53.09
+626,Jedwabne,22.18,53.17
+627,Jedwabno,20.44,53.32
+628,Jelcz-Laskowice,17.19,51.01
+629,Jelenia Góra,15.44,50.54
+630,Jeleniewo,22.55,54.13
+631,Jeleśnia,19.19,49.39
+632,Jemielnica,18.23,50.33
+633,Jemielno,16.33,51.32
+634,Jerzmanowa,16.03,51.36
+635,Jerzmanowice-Przeginia,19.45,50.12
+636,Jeziora Wielkie,18.16,52.32
+637,Jeziorany,20.45,53.58
+638,Jeziorzany,22.17,51.36
+639,Jeżewo,18.29,53.31
+640,Jeżowe,22.10,50.23
+641,Jeżów,19.58,51.48
+642,Jeżów Sudecki,15.45,50.56
+643,Jędrzejów,20.18,50.39
+644,Jodłowa,21.19,49.53
+645,Jodłownik,20.14,49.47
+646,Joniec,20.35,52.36
+647,Jonkowo,20.19,53.50
+648,Jordanów,19.50,49.39
+649,Jordanów Śląski,16.52,50.52
+650,Józefów,23.04,50.29
+651,Józefów,21.51,51.02
+652,Józefów,21.14,52.09
+653,Juchnowiec Dolny,23.08,53.01
+654,Jutrosin,17.11,51.38
+655,Kaczory,16.52,53.07
+656,Kadzidło,21.28,53.14
+657,Kalety,18.54,50.34
+658,Kalinowo,22.41,53.53
+659,Kaliska,18.13,53.55
+660,Kalisz,18.06,51.46
+661,Kalisz Pomorski,15.54,53.17
+662,Kalwaria Zebrzydowska,19.40,49.53
+663,Kałuszyn,21.49,52.13
+664,Kamienica,20.21,49.34
+665,Kamienica Polska,19.09,50.41
+666,Kamieniec,16.27,52.10
+667,Kamieniec Ząbkowicki,16.52,50.32
+668,Kamienna Góra,16.02,50.47
+669,Kamiennik,17.09,50.34
+670,Kamień,22.09,50.20
+671,Kamień,23.35,51.06
+672,Kamień Koszyrski,24.58,51.38
+673,Kamień Krajeński,17.31,53.32
+674,Kamień Pomorski,14.46,53.58
+675,Kamieńsk,19.30,51.13
+676,Kamionka,22.28,51.29
+677,Kamionka Strumiłowa,24.20,50.07
+678,Kamionka Wielka,20.49,49.35
+679,Kampinos,20.28,52.16
+680,Kańczuga,22.25,49.59
+681,Karczew,21.15,52.04
+682,Karczmiska,22.01,51.14
+683,Kargowa,15.52,52.04
+684,Karlino,15.53,54.02
+685,Karnice,15.03,54.01
+686,Karniewo,20.59,52.50
+687,Karpacz,15.44,50.47
+688,Karsin,17.55,53.54
+689,Kartuzy,18.12,54.20
+690,Katowice,19.00,50.15
+691,Kawęczyn,18.32,51.54
+692,Kazanów,21.28,51.17
+693,Kazimierz Biskupi,18.10,52.19
+694,Kazimierz Dolny,21.58,51.19
+695,Kazimierza Wielka,20.29,50.16
+696,Kaźmierz,16.35,52.30
+697,Kąkolewnica Wschodnia,22.42,51.54
+698,Kąty Wrocławskie,16.46,51.02
+699,Kcynia,17.29,52.59
+700,Kędzierzyn-Koźle,18.12,50.21
+701,Kępice,16.52,54.15
+702,Kępno,17.59,51.17
+703,Kęsowo,17.34,53.34
+704,Kętrzyn,21.23,54.05
+705,Kęty,19.13,49.53
+706,Kielce,20.37,50.53
+707,Kiełczygłów,18.59,51.14
+708,Kiernozia,19.52,52.16
+709,Kietrz,18.01,50.05
+710,Kije,20.34,50.36
+711,Kijewo Królewskie,18.27,53.16
+712,Kikół,19.07,52.55
+713,Kisielice,19.15,53.36
+714,Kiszkowo,17.16,52.35
+715,Kiwerce,25.27,50.50
+716,Kiwity,20.46,54.06
+717,Kleczew,18.11,52.22
+718,Klembów,21.20,52.24
+719,Kleszczele,23.20,52.35
+720,Kleszczewo,17.10,52.20
+721,Kleszczów,19.18,51.13
+722,Klimontów,21.27,50.40
+723,Klonowa,18.26,51.25
+724,Kluczbork,18.13,50.58
+725,Klucze,19.34,50.20
+726,Kluczewsko,19.55,50.56
+727,Kluki,19.14,51.21
+728,Klukowo,22.31,52.47
+729,Klwów,20.38,51.32
+730,Kłaj,20.18,50.00
+731,Kłecko,17.26,52.37
+732,Kłobuck,18.56,50.55
+733,Kłoczew,21.58,51.44
+734,Kłodawa,18.55,52.15
+735,Kłodawa,15.12,52.47
+736,Kłodzko,16.39,50.27
+737,Kłomnice,19.22,50.56
+738,Knurów,18.41,50.13
+739,Knyszyn,22.55,53.18
+740,Kobiele Wielkie,19.37,51.02
+741,Kobierzyce,16.56,50.58
+742,Kobryń,24.21,52.13
+743,Kobyla Góra,17.51,51.23
+744,Kobylanka,14.51,53.21
+745,Kobylin,17.14,51.42
+746,Kobylin-Borzymy,22.41,53.06
+747,Kobylnica,16.59,54.27
+748,Kobyłka,21.11,52.21
+749,Kochanowice,18.45,50.43
+750,Kocierzew Południowy,20.01,52.14
+751,Kock,22.27,51.39
+752,Kocmyrzów-Luborzyca,20.06,50.08
+753,Koczała,17.04,53.54
+754,Kodeń,22.37,51.55
+755,Kodrąb,19.38,51.06
+756,Kolbudy Górne,18.27,54.16
+757,Kolbuszowa,21.47,50.14
+758,Kolno,21.56,53.24
+759,Kolno,21.00,53.59
+760,Kolonowskie,18.23,50.39
+761,Kolsko,15.58,51.57
+762,Koluszki,19.49,51.45
+763,Kołaczkowo,17.37,52.13
+764,Kołaczyce,21.26,49.48
+765,Kołaki Kościelne,22.23,53.01
+766,Kołbaskowo,14.25,53.20
+767,Kołbiel,21.29,52.04
+768,Kołczygłowy,17.14,54.14
+769,Koło,18.39,52.12
+770,Kołobrzeg,15.34,54.10
+771,Kołomyja,25.04,48.32
+772,Komańcza,22.04,49.21
+773,Komarów-Osada,23.29,50.38
+774,Komarówka Podlaska,22.57,51.48
+775,Komorniki,16.48,52.21
+776,Komprachcice,17.49,50.38
+777,Konarzyny,17.22,53.50
+778,Kondratowice,16.56,50.46
+779,Koneck,18.43,52.47
+780,Koniecpol,19.41,50.47
+781,Konin,18.16,52.13
+782,Koniusza,20.13,50.12
+783,Konopiska,19.01,50.44
+784,Konopnica,18.50,51.21
+785,Konstancin-Jeziorna,21.08,52.05
+786,Konstantynów,23.05,52.12
+787,Konstantynów Łódzki,19.20,51.45
+788,Końskie,20.25,51.12
+789,Końskowola,22.04,51.25
+790,Koprzywnica,21.35,50.36
+791,Korczew,22.37,52.22
+792,Korczyna,21.49,49.43
+793,Korfantów,17.36,50.29
+794,Koronowo,17.56,53.19
+795,Korsze,21.08,54.10
+796,Korytnica,21.51,52.25
+797,Korzenna,20.51,49.41
+798,Kosakowo,18.29,54.36
+799,Kosów Lacki,22.09,52.35
+800,Kostomłoty,16.32,51.03
+801,Kostopol,26.26,50.53
+802,Kostrzyn,17.13,52.24
+803,Kostrzyn,14.38,52.36
+804,Koszalin,16.11,54.11
+805,Koszarawa,19.24,49.38
+806,Koszęcin,18.51,50.38
+807,Koszyce,20.34,50.11
+808,Kościan,16.39,52.05
+809,Kościelec,18.34,52.11
+810,Kościerzyna,17.58,54.07
+811,Kotla,16.02,51.45
+812,Kotlin,17.39,51.55
+813,Kotuń,22.04,52.11
+814,Kowal,19.09,52.32
+815,Kowala,21.04,51.19
+816,Kowale Oleckie,22.26,54.10
+817,Kowalewo,18.54,53.10
+818,Kowalewo Pomorskie,18.54,53.10
+819,Kowary,15.49,50.48
+820,Kowel,24.41,51.14
+821,Kowiesy,20.26,51.53
+822,Koziegłowy,19.10,50.36
+823,Kozielice,14.48,53.06
+824,Kozienice,21.33,51.35
+825,Kozłowo,20.18,53.19
+826,Kozłów,20.01,50.29
+827,Kozy,19.09,49.51
+828,Koźmin,17.27,51.49
+829,Koźminek,18.21,51.48
+830,Kożuchow,15.36,51.45
+831,Kórnik,17.05,52.15
+832,Krajenka,16.59,53.23
+833,Kraków,19.57,50.03
+834,Kraków Krowodrza,19.58,50.05
+835,Kraków Nowa Huta,20.05,50.05
+836,Kraków Podgórze,19.55,50.01
+837,Kraków Śródmieście,19.58,50.04
+838,Kramsk,18.26,52.16
+839,Krapkowice,17.58,50.28
+840,Krasiczyn,22.40,49.47
+841,Krasne,22.06,50.03
+842,Krasne,20.59,52.55
+843,Krasnobród,23.14,50.33
+844,Krasnopol,23.12,54.07
+845,Krasnosielc,21.09,53.02
+846,Krasnystaw,23.11,50.59
+847,Krasocin,20.07,50.54
+848,Kraszewice,18.15,51.30
+849,Kraśniczyn,23.22,50.56
+850,Kraśnik,22.14,50.55
+851,Krempna,21.31,49.31
+852,Krobia,16.59,51.47
+853,Kroczyce,19.35,50.34
+854,Krokowa,18.10,54.46
+855,Krosno,21.46,49.42
+856,Krosno Odrzańskie,15.06,52.02
+857,Krościenko nad Dunajcem,20.25,49.26
+858,Krośnice,17.22,51.28
+859,Krośniewice,19.10,52.16
+860,Krotoszyce,16.03,51.09
+861,Krotoszyn,17.26,51.41
+862,Kruklanki,21.56,54.05
+863,Kruszwica,18.19,52.41
+864,Kruszyna,19.17,50.58
+865,Krynica,20.58,49.26
+866,Krynice,23.23,50.35
+867,Krynki,23.47,53.16
+868,Krypno,22.53,53.17
+869,Krzanowice,18.08,50.01
+870,Krzczonów,22.42,51.01
+871,Krzemieniec,25.45,50.07
+872,Krzemieniewo,16.51,51.51
+873,Krzepice,18.44,50.58
+874,Krzeszowice,19.38,50.08
+875,Krzeszów,22.21,50.25
+876,Krzeszyce,15.00,52.35
+877,Krzęcin,15.29,53.05
+878,Krzykosy,17.22,52.07
+879,Krzymów,18.27,52.12
+880,Krzynowłoga Mała,20.47,53.09
+881,Krzywcza,22.33,49.48
+882,Krzywda,22.12,51.48
+883,Krzywiń,16.49,51.58
+884,Krzyż,16.00,52.53
+885,Krzyżanowice,18.17,49.59
+886,Krzyżanów,19.28,52.11
+887,Książ Wielki,20.08,50.27
+888,Książ Wielkopolski,17.14,52.03
+889,Książki,19.04,53.20
+890,Księżpol,22.44,50.25
+891,Kuczbork-Osada,20.02,53.05
+892,Kudowa-Zdrój,16.15,50.27
+893,Kulesze Kościelne,22.31,53.01
+894,Kunice,16.15,51.14
+895,Kunów,21.17,50.58
+896,Kurów,22.12,51.24
+897,Kuryłówka,21.29,50.18
+898,Kurzętnik,19.34,53.24
+899,Kuślin,16.19,52.22
+900,Kutno,19.22,52.14
+901,Kuźnia Raciborska,18.20,50.12
+902,Kuźnica,23.39,53.31
+903,Kwidzyn,18.56,53.44
+904,Kwilcz,16.05,52.33
+905,Lanckorona,19.34,49.51
+906,Laskowa,20.27,49.46
+907,Lasowice Wielkie,18.14,50.53
+908,Laszki,22.54,50.02
+909,Latowicz,21.49,52.02
+910,Lądek,17.57,52.12
+911,Lądek-Zdrój,16.52,50.21
+912,Legionowo,20.56,52.25
+913,Legnica,16.10,51.13
+914,Legnickie Pole,16.15,51.09
+915,Lelis,21.34,53.11
+916,Lelkowo,20.14,54.19
+917,Lelów,19.37,50.41
+918,Leoncin,20.32,52.24
+919,Lesko,22.20,49.28
+920,Leszczyny,18.39,50.08
+921,Leszno,16.34,51.51
+922,Leszno,20.36,52.16
+923,Lesznowola,20.56,52.05
+924,Leśna,15.16,51.01
+925,Leśna Podlaska,23.01,52.08
+926,Leśnica,18.12,50.26
+927,Leśniowice,23.29,50.59
+928,Lewin Brzeski,17.37,50.45
+929,Leżajsk,22.26,50.16
+930,Lębork,17.45,54.33
+931,Lgota Wielka,19.19,51.09
+932,Libiąż,19.19,50.07
+933,Lichnowy,18.55,54.07
+934,Lida,25.18,53.53
+935,Lidzbark,19.49,53.16
+936,Lidzbark Warmiński,20.35,54.07
+937,Limanowa,20.25,49.43
+938,Linia,17.56,54.28
+939,Liniewo,18.14,54.04
+940,Lipce Reymontowskie,19.56,51.54
+941,Lipiany,14.52,53.00
+942,Lipie,18.48,51.01
+943,Lipinki,21.18,49.40
+944,Lipinki Łużyckie,15.00,51.38
+945,Lipka,17.15,53.30
+946,Lipno,19.10,52.51
+947,Lipnica,17.24,53.59
+948,Lipnica Murowana,20.31,49.51
+949,Lipnik,21.30,50.44
+950,Lipno,16.34,51.55
+951,Lipno,19.11,52.51
+952,Lipowa,19.05,49.41
+953,Lipowiec Kościelny,20.10,53.06
+954,Lipsk,23.24,53.44
+955,Lipsko,21.40,51.09
+956,Lipusz,17.48,54.06
+957,Lisewo,18.41,53.18
+958,Lisia Góra,21.01,50.05
+959,Lisków,18.24,51.49
+960,Liszki,19.46,50.03
+961,Liw,21.57,52.23
+962,Lniano,18.13,53.32
+963,Lubaczów,23.08,50.09
+964,Lubanie,18.56,52.45
+965,Lubań,15.18,51.07
+966,Lubartów,22.37,51.27
+967,Lubasz,16.31,52.51
+968,Lubawa,19.45,53.30
+969,Lubawka,16.00,50.42
+970,Lubenia,21.56,49.56
+971,Lubichowo,18.23,53.52
+972,Lubicz,18.46,53.03
+973,Lubień,19.58,49.43
+974,Lubień Kujawski,19.10,52.24
+975,Lubiewo,18.02,53.28
+976,Lubin,16.12,51.24
+977,Lubiszyn,14.56,52.46
+978,Lublin,22.34,51.14
+979,Lubliniec,18.41,50.40
+980,Lubniewice,15.15,52.31
+981,Lubochnia,20.03,51.37
+982,Lubomia,18.19,50.03
+983,Lubomierz,15.31,51.01
+984,Lubomino,20.15,54.04
+985,Luboml,24.01,51.14
+986,Luboń,16.53,52.21
+987,Lubowidz,19.51,53.07
+988,Lubraniec,18.50,52.33
+989,Lubrza,17.38,50.20
+990,Lubrza,14.58,51.47
+991,Lubsko,14.58,51.47
+992,Lubsza,17.31,50.55
+993,Lubycza Królewska,23.31,50.20
+994,Ludwin,22.55,51.21
+995,Lutocin,19.46,52.59
+996,Lutomiersk,19.13,51.45
+997,Lutowiska,22.42,49.16
+998,Lututów,18.26,51.22
+999,Luzino,18.07,54.34
+1000,Lwów,24.00,49.50
+1001,Lwówek,16.11,52.27
+1002,Lwówek Śląski,15.35,51.07
+1003,Lyski,18.23,50.07
+1004,Łabiszyn,17.55,52.57
+1005,Łabowa,20.51,49.32
+1006,Łabunie,23.22,50.39
+1007,Ładzice,19.21,51.05
+1008,Łagiewniki,16.51,50.48
+1009,Łagów,21.05,50.47
+1010,Łagów,15.18,52.20
+1011,Łambinowice,17.33,50.32
+1012,Łanięta,19.17,52.22
+1013,Łańcut,22.14,50.04
+1014,Łapanów,20.17,49.52
+1015,Łapsze Niżne,20.14,49.24
+1016,Łapy,22.53,52.59
+1017,Łasin,19.05,53.31
+1018,Łask,19.08,51.36
+1019,Łaskarzew,21.37,51.48
+1020,Łaszczów,23.43,50.32
+1021,Łaziska,21.53,51.09
+1022,Łazy,19.24,50.26
+1023,Łąck,19.37,50.28
+1024,Łącko,20.26,49.34
+1025,Łeba,17.33,54.47
+1026,Łęczna,22.53,51.18
+1027,Łęczyca,19.12,52.03
+1028,Łęczyce,17.52,54.36
+1029,Łęka Opatowska,18.06,51.13
+1030,Łęki Szlacheckie,19.48,51.11
+1031,Łęknica,14.44,51.33
+1032,Łobez,15.37,53.38
+1033,Łobżenica,17.15,53.16
+1034,Łochów,21.42,52.32
+1035,Łodygowice,19.09,49.43
+1036,Łomazy,23.11,51.54
+1037,Łomianki,20.53,52.20
+1038,Łomża,22.04,53.11
+1039,Łoniów,21.32,50.34
+1040,Łopiennik Górny,23.02,51.03
+1041,Łopuszno,20.15,50.57
+1042,Łosice,22.43,52.13
+1043,Łososina Dolna,20.36,49.44
+1044,Łowicz,19.56,52.06
+1045,Łódź,19.28,51.47
+1046,Łódź Bałuty,19.24,51.48
+1047,Łódź Górna,19.27,51.43
+1048,Łódź Polesie,19.23,51.46
+1049,Łódź Śródmieście,19.27,51.47
+1050,Łódź Widzew,19.33,51.46
+1051,Łubianka,18.28,53.08
+1052,Łubniany,18.00,50.47
+1053,Łubnice,21.09,50.25
+1054,Łubnice,18.17,51.10
+1055,Łubowo,17.28,52.31
+1056,Łuck,25.20,50.44
+1057,Łukowa,22.57,50.23
+1058,Łukowica,20.29,49.37
+1059,Łuków,22.23,51.56
+1060,Łukta,20.05,53.48
+1061,Łużna,21.02,49.43
+1062,Łyse,21.34,53.22
+1063,Łysomice,18.36,53.06
+1064,Łyszkowice,19.54,51.59
+1065,Maciejowice,21.34,51.42
+1066,Magnuszew,21.24,51.46
+1067,Majdan Królewski,21.45,50.23
+1068,Maków,20.03,51.57
+1069,Maków Mazowiecki,21.06,52.52
+1070,Maków Podhalański,19.39,49.44
+1071,Malanów,18.24,51.57
+1072,Malbork,19.02,54.02
+1073,Malczyce,16.29,51.13
+1074,Malechowo,16.30,54.18
+1075,Mała Wieś,20.06,52.28
+1076,Małdyty,19.44,53.55
+1077,Małkinia Górna,22.02,52.42
+1078,Małogoszcz,20.16,50.49
+1079,Małomice,15.27,51.33
+1080,Mały Płock,22.02,53.18
+1081,Manowo,16.18,54.07
+1082,Marcinowice,16.35,50.53
+1083,Marciszów,16.02,50.51
+1084,Margonin,17.05,52.58
+1085,Marianowo,15.16,53.23
+1086,Marki,21.06,52.20
+1087,Markowa,22.20,50.02
+1088,Markusy,19.22,54.03
+1089,Markuszów,22.16,51.23
+1090,Masłowice,19.47,51.07
+1091,Masłów,20.43,50.54
+1092,Maszewo,15.03,53.30
+1093,Maszewo,14.54,52.04
+1094,Medyka,22.57,49.48
+1095,Mełgiew,22.47,51.14
+1096,Męcinka,16.06,51.04
+1097,Mędrzechów,20.57,50.17
+1098,Miastko,16.58,54.00
+1099,Miastkowo,21.50,53.09
+1100,Miastków Kościelny,21.50,51.53
+1101,Miączyn,23.31,50.44
+1102,Michałowice,19.59,50.10
+1103,Michałowice,20.53,52.09
+1104,Michałowo,23.37,53.02
+1105,Michałów,20.23,50.30
+1106,Michów,22.19,51.31
+1107,Miechów,20.02,50.21
+1108,Miedziana Góra,20.33,50.56
+1109,Miedzichowo,15.57,52.23
+1110,Miedzna,22.06,52.28
+1111,Miedźna,19.04,49.59
+1112,Miedźno,18.59,50.58
+1113,Miejsce Piastowe,21.48,49.38
+1114,Miejska Górka,16.58,51.39
+1115,Mielec,21.26,50.17
+1116,Mieleszyn,17.30,52.40
+1117,Mielnik,23.03,52.20
+1118,Mielno,16.04,54.16
+1119,Mieroszów,16.11,50.40
+1120,Mierzęcice,19.08,50.27
+1121,Mieszkowice,14.29,52.47
+1122,Mieścisko,17.20,52.45
+1123,Mietków,16.39,50.59
+1124,Międzybórz,17.40,51.23
+1125,Międzychód,15.53,52.36
+1126,Międzylesie,16.41,50.09
+1127,Międzyrzecz,15.34,52.31
+1128,Międzyrzecz Podlaski,22.48,51.59
+1129,Międzyzdroje,14.26,53.56
+1130,Miękinia,16.44,51.12
+1131,Mikołajki,21.35,53.48
+1132,Mikołajki Pomorskie,19.10,53.51
+1133,Mikołów,18.54,50.10
+1134,Mikstat,17.58,51.32
+1135,Milanów,22.54,51.42
+1136,Milanówek,20.39,52.07
+1137,Milejczyce,23.08,52.32
+1138,Milejowo,19.32,54.13
+1139,Milejów,22.56,51.13
+1140,Milicz,17.17,51.32
+1141,Milówka,19.05,49.34
+1142,Miłakowo,20.05,54.01
+1143,Miłki,21.53,53.57
+1144,Miłkowice,16.04,51.16
+1145,Miłomłyn,19.50,53.46
+1146,Miłoradz,18.55,54.01
+1147,Miłosław,17.30,52.13
+1148,Mińsk Mazowiecki,21.33,52.11
+1149,Mircze,23.54,50.39
+1150,Mirosławiec,16.05,53.20
+1151,Mirów,21.03,51.11
+1152,Mirsk,15.23,50.58
+1153,Mirzec,21.03,51.08
+1154,Mława,20.23,53.07
+1155,Młodzieszyn,20.12,52.18
+1156,Młynary,19.43,54.11
+1157,Mniów,20.29,51.01
+1158,Mniszków,20.02,51.22
+1159,Mochowo,19.33,52.46
+1160,Modliborzyce,22.20,50.45
+1161,Mogielnica,20.43,51.42
+1162,Mogilany,19.53,49.56
+1163,Mogilno,17.57,52.39
+1164,Mokobody,22.07,52.16
+1165,Mokrsko,18.29,51.11
+1166,Mołodeczna,26.49,54.19
+1167,Mońki,22.48,53.25
+1168,Morawica,20.37,50.45
+1169,Morąg,19.56,53.55
+1170,Mordy,22.31,52.13
+1171,Moryń,14.22,52.51
+1172,Morzeszczyn,18.41,53.51
+1173,Mosina,16.50,52.14
+1174,Moskorzew,19.56,50.39
+1175,Moszczenica,21.06,49.44
+1176,Moszczenica,19.42,51.30
+1177,Mrągowo,21.18,53.52
+1178,Mrocza,17.36,53.15
+1179,Mrozy,21.49,52.10
+1180,Mstów,19.17,50.49
+1181,Mszana,18.32,49.58
+1182,Mszana Dolna,20.04,49.41
+1183,Mszczonów,20.31,51.59
+1184,Mściwojów,16.17,51.03
+1185,Mucharz,19.33,49.49
+1186,Murowana Goślina,17.00,52.34
+1187,Murów,17.57,50.52
+1188,Muszyna,20.55,49.21
+1189,Mycielin,18.15,51.56
+1190,Mykanów,19.11,50.56
+1191,Mysłakowice,15.47,50.51
+1192,Mysłowice,19.08,50.14
+1193,Myszków,19.20,50.35
+1194,Myszyniec,21.21,53.23
+1195,Myślenice,19.57,49.50
+1196,Myślibórz,14.51,52.55
+1197,Nadarzyn,20.48,52.06
+1198,Nagłowice-Oksa,20.06,50.40
+1199,Nakło nad Notecią,17.35,53.09
+1200,Nałęczów,22.13,51.17
+1201,Namysłów,17.43,51.04
+1202,Narew,23.32,52.55
+1203,Narewka,23.45,52.51
+1204,Narol,23.20,50.21
+1205,Naruszewo,20.21,52.32
+1206,Nasielsk,20.48,52.36
+1207,Nawojowa,20.45,49.34
+1208,Nekla,17.25,52.22
+1209,Nędza,18.19,50.10
+1210,Nidzica,20.25,53.21
+1211,Nieborów,20.04,52.04
+1212,Niebylec,21.54,49.52
+1213,Niechanowo,17.41,52.28
+1214,Niechlów,16.22,51.42
+1215,Niedrzwica Duża,22.23,51.07
+1216,Niedźwiada,22.42,51.33
+1217,Niedźwiedź,20.05,49.38
+1218,Niegosławice,15.43,51.35
+1219,Niegowa,19.29,50.38
+1220,Nielisz,23.03,50.48
+1221,Niemce,22.38,51.21
+1222,Niemcza,16.50,50.43
+1223,Niemodlin,17.37,50.38
+1224,Niepołomice,20.13,50.02
+1225,Nieporęt,21.02,52.25
+1226,Nieszawa,18.54,52.50
+1227,Nieszczyce,16.24,51.33
+1228,Nisko,22.08,50.31
+1229,Niwiska,21.38,50.13
+1230,Nowa Brzeźnica,19.11,51.05
+1231,Nowa Dęba,21.46,50.26
+1232,Nowa Karczma,18.12,54.08
+1233,Nowa Ruda,16.31,50.35
+1234,Nowa Sarzyna,22.21,50.20
+1235,Nowa Słupia,21.05,50.52
+1236,Nowa Sól,15.43,51.48
+1237,Nowa Sucha,20.11,52.09
+1238,Nowa Wieś Lęborska,17.45,54.33
+1239,Nowa Wieś Wielka,17.06,52.58
+1240,Nowe,18.43,53.38
+1241,Nowe Brzesko,20.22,50.08
+1242,Nowe Miasteczko,15.44,51.42
+1243,Nowe Miasto,20.38,52.39
+1244,Nowe Miasto Lubawskie,19.35,53.26
+1245,Nowe Miasto nad Pilicą,20.34,51.37
+1246,Nowe Miasto nad Wartą,17.25,52.05
+1247,Nowe Ostrowy,19.12,52.18
+1248,Nowe Piekuty,22.43,52.53
+1249,Nowe Skalmierzyce,18.00,51.43
+1250,Nowe Warpno,14.17,53.43
+1251,Nowinka,22.58,53.55
+1252,Nowodwór,22.05,51.39
+1253,Nowogard,15.08,53.40
+1254,Nowogrodziec,15.23,51.12
+1255,Nowogród,21.54,53.14
+1256,Nowogród Bobrzański,16.15,51.48
+1257,Nowogród Pomorski,15.01,52.54
+1258,Nowogródek,25.50,53.36
+1259,Nowosolna,19.35,51.48
+1260,Nowy Duninów,19.28,52.35
+1261,Nowy Dwór,23.33,53.38
+1262,Nowy Dwór Gdański,19.06,54.13
+1263,Nowy Dwór Mazowiecki,20.43,52.26
+1264,Nowy Kawęczyn,20.15,51.53
+1265,Nowy Korczyn,20.49,50.19
+1266,Nowy Sącz,20.42,49.37
+1267,Nowy Staw,19.00,54.03
+1268,Nowy Targ,20.02,49.29
+1269,Nowy Tomyśl,16.08,52.19
+1270,Nowy Wiśnicz,20.27,49.55
+1271,Nowy Żmigród,21.32,49.37
+1272,Nozdrzec,22.13,49.47
+1273,Nur,22.19,52.41
+1274,Nurzec-Stacja,23.05,52.28
+1275,Nysa,17.20,50.28
+1276,Oborniki,16.49,52.38
+1277,Oborniki Śląskie,16.55,51.18
+1278,Obrazów,21.39,50.41
+1279,Obrowo,18.53,51.58
+1280,Obryte,21.15,52.43
+1281,Obrzycko,16.31,52.42
+1282,Obsza,22.58,50.19
+1283,Ochotnica Dolna,20.19,49.32
+1284,Odolanów,17.40,51.34
+1285,Odrzywół,20.33,51.31
+1286,Ogrodzieniec,19.31,50.27
+1287,Ojrzeń,20.33,52.47
+1288,Okonek,16.51,53.32
+1289,Olecko,22.30,54.02
+1290,Olesno,18.25,50.53
+1291,Olesno,20.56,50.13
+1292,Oleszyce,23.02,50.10
+1293,Oleśnica,21.04,50.28
+1294,Oleśnica,17.23,51.12
+1295,Olkusz,19.04,50.17
+1296,Olszanica,22.27,49.29
+1297,Olszanka,22.40,52.09
+1298,Olszanka,17.29,50.48
+1299,Olszewo-Borki,21.31,53.04
+1300,Olszówka,18.52,52.11
+1301,Olsztyn,20.30,53.47
+1302,Olsztyn,19.16,50.45
+1303,Olsztynek,20.17,53.35
+1304,Olszyna,15.22,51.04
+1305,Oława,17.18,50.57
+1306,Opalenica,16.24,52.19
+1307,Opatowiec,20.43,50.15
+1308,Opatów,18.48,50.58
+1309,Opatów,21.25,50.49
+1310,Opatówek,18.13,51.44
+1311,Opinogóra Górna,20.43,52.55
+1312,Opoczno,20.17,51.23
+1313,Opole,17.56,50.40
+1314,Opole Lubelskie,21.59,51.09
+1315,Oporów,19.34,52.16
+1316,Orchowo,18.01,52.30
+1317,Orla,23.20,52.42
+1318,Orły,22.48,49.53
+1319,Orneta,20.08,54.07
+1320,Orońsko,20.59,51.19
+1321,Orzesze,18.45,50.09
+1322,Orzysz,21.57,53.48
+1323,Osie,18.21,53.36
+1324,Osieck,21.26,51.58
+1325,Osieczna,18.12,53.47
+1326,Osiecznica,15.25,51.20
+1327,Osiek,19.05,49.57
+1328,Osiek,18.29,53.43
+1329,Osiek,21.26,50.31
+1330,Osiek,19.23,53.10
+1331,Osiek Jasielski,21.29,49.38
+1332,Osiek Mały,18.36,52.16
+1333,Osielsko,18.04,53.11
+1334,Osięciny,18.43,52.38
+1335,Osina,15.01,53.36
+1336,Osjaków,18.48,51.18
+1337,Ostaszewo,18.57,54.13
+1338,Ostrołęka,21.35,53.05
+1339,Ostroróg,16.26,52.38
+1340,Ostrowice,15.58,53.38
+1341,Ostrowiec Świętokrzyski,21.23,50.51
+1342,Ostrowite,18.03,52.23
+1343,Ostróda,19.58,53.42
+1344,Ostróg,26.31,50.20
+1345,Ostrów,21.36,50.06
+1346,Ostrów Lubelski,22.52,51.30
+1347,Ostrów Mazowiecka,21.53,52.48
+1348,Ostrów Wielkopolski,17.49,51.38
+1349,Ostrówek,22.37,51.35
+1350,Ostrówek,18.37,51.21
+1351,Ostrzeszów,17.56,51.25
+1352,Oszmina,25.56,54.25
+1353,Ośno,14.52,52.27
+1354,Ośno Lubuskie,14.52,52.27
+1355,Oświęcim,19.08,50.02
+1356,Otmuchów,17.10,50.28
+1357,Otwock,21.15,52.07
+1358,Otyń,15.43,51.51
+1359,Ozimek,18.13,50.41
+1360,Ozorków,19.17,51.58
+1361,Ożarów,21.40,50.53
+1362,Ożarów Mazowiecki,20.48,52.13
+1363,Pabianice,19.22,51.40
+1364,Pacanów,21.02,50.24
+1365,Pacyna,19.43,52.18
+1366,Paczków,17.01,50.28
+1367,Padew Narodowa,21.31,50.26
+1368,Pajęczno,19.00,51.09
+1369,Pakosław,17.04,51.37
+1370,Pakosławice,17.22,50.32
+1371,Pakość,18.05,52.48
+1372,Panki,18.45,50.53
+1373,Papowo Biskupie,18.34,53.15
+1374,Paprotnia,22.28,52.18
+1375,Paradyż,20.06,51.19
+1376,Parchowo,17.41,54.13
+1377,Parczew,22.55,51.38
+1378,Parysów,21.42,51.58
+1379,Parzęczew,19.12,51.57
+1380,Pasłęk,19.40,54.04
+1381,Pasym,20.47,53.39
+1382,Paszowice,16.11,51.02
+1383,Pawłosiów,22.40,50.00
+1384,Pawłowice,18.43,49.58
+1385,Pawłowiczki,18.03,50.15
+1386,Pawłów,21.07,50.58
+1387,Pawonków,18.35,50.42
+1388,Pątnów,18.38,51.08
+1389,Pcim,19.58,49.45
+1390,Pelplin,18.42,53.56
+1391,Pełczyce,15.18,53.02
+1392,Perlejewo,22.34,52.34
+1393,Perzów,17.49,51.16
+1394,Pęcław,16.14,51.38
+1395,Pęczniew,18.44,51.49
+1396,Pępowo,17.07,51.46
+1397,Piaseczno,21.02,52.04
+1398,Piaski,17.04,51.53
+1399,Piaski,22.51,51.08
+1400,Piastów,20.51,52.11
+1401,Piątek,19.28,52.04
+1402,Piątnica,22.05,53.11
+1403,Piechowice,15.35,50.51
+1404,Piecki,21.20,53.45
+1405,Piekary Śląskie,18.57,50.23
+1406,Piekoszów,20.27,50.53
+1407,Pielgrzymka,15.49,51.07
+1408,Pieniężno,20.08,54.14
+1409,Pieńsk,15.02,51.15
+1410,Pierzchnica,20.44,50.42
+1411,Pieszyce,16.35,50.43
+1412,Pietrowice Wielkie,19.05,50.05
+1413,Pilawa,21.32,51.57
+1414,Pilchowice,18.34,50.13
+1415,Pilica,19.39,50.29
+1416,Pilzno,21.17,49.59
+1417,Piła,16.45,53.10
+1418,Piława Górna,16.44,50.41
+1419,Pińczów,20.32,50.32
+1420,Pińsk,26.04,52.07
+1421,Pionki,21.27,51.29
+1422,Piotrków Trybunalski,19.41,51.24
+1423,Piotrków Kujawski,18.30,52.33
+1424,Pisz,21.48,53.38
+1425,Piszczac,23.23,51.59
+1426,Piwniczna,20.42,49.26
+1427,Platerów,22.49,52.18
+1428,Platerówka,15.11,51.04
+1429,Pleszew,17.47,51.53
+1430,Pleśna,20.56,49.56
+1431,Płaska,23.16,53.54
+1432,Płock,19.42,52.33
+1433,Płoniawy-Bramura,21.04,52.59
+1434,Płońsk,20.23,52.38
+1435,Płoskinia,19.56,54.16
+1436,Płośnica,20.01,53.16
+1437,Płoty,15.16,53.48
+1438,Płużnica,18.47,53.18
+1439,Pniewy,16.16,52.31
+1440,Pniewy,20.44,51.55
+1441,Pobiedziska,17.17,52.28
+1442,Poczesna,19.09,50.43
+1443,Poddębice,18.57,51.53
+1444,Podedwórze,23.13,51.41
+1445,Podegrodzie,20.36,49.35
+1446,Podgórzyn,15.41,50.50
+1447,Podkowa Leśna,20.43,52.07
+1448,Pogorzela,17.14,51.48
+1449,Pokój,17.30,50.54
+1450,Pokrzywnica,21.01,52.38
+1451,Polanica-Zdrój,16.31,50.24
+1452,Polanów,16.41,54.07
+1453,Police,14.33,53.33
+1454,Policzna,21.38,51.27
+1455,Polkowice,16.04,51.36
+1456,Polska Cerekiew,18.09,50.14
+1457,Połajewo,16.43,52.47
+1458,Połaniec,21.17,50.26
+1459,Połczyn-Zdrój,16.06,53.45
+1460,Pomiechówek,20.44,52.28
+1461,Poniatowa,22.05,51.12
+1462,Poniec,16.48,51.46
+1463,Popielów,17.44,50.49
+1464,Popów,18.57,51.02
+1465,Poraj,19.13,50.41
+1466,Porąbka,19.13,49.49
+1467,Postomino,16.42,54.30
+1468,Poświętne,22.50,52.55
+1469,Poświętne,20.22,51.32
+1470,Poświętne,21.25,52.20
+1471,Potęgowo,17.29,54.29
+1472,Potok Górny,22.32,50.23
+1473,Potok Wielki,22.14,50.47
+1474,Potworów,20.43,51.31
+1475,Pozezdrze,21.52,54.08
+1476,Poznań,16.55,52.25
+1477,Poznań Grunwald,16.54,52.23
+1478,Poznań Jeżyce,16.47,52.27
+1479,Poznań Nowe Miasto,17.01,52.23
+1480,Poznań Stare Miasto,16.56,52.25
+1481,Poznań Wilda,16.56,52.23
+1482,Prabuty,19.12,53.46
+1483,Praszka,18.27,51.03
+1484,Prażmów,20.59,51.57
+1485,Prochowice,16.23,51.17
+1486,Promna,20.58,51.41
+1487,Prostki,22.26,53.42
+1488,Proszowice,20.17,50.12
+1489,Prószków,17.53,50.35
+1490,Pruchnik,22.32,49.54
+1491,Prudnik,17.36,50.19
+1492,Prusice,16.52,51.22
+1493,Pruszcz,18.12,53.20
+1494,Pruszcz Gdański,18.38,54.16
+1495,Pruszków,20.48,52.10
+1496,Przasnysz,20.53,53.01
+1497,Przechlewo,17.15,53.48
+1498,Przeciszów,20.22,50.00
+1499,Przecław,21.29,50.12
+1500,Przedbórz,19.52,51.06
+1501,Przedecz,18.54,52.20
+1502,Przelewice,15.05,53.06
+1503,Przemęt,16.18,52.01
+1504,Przemków,15.47,51.32
+1505,Przemyśl,22.47,49.48
+1506,Przerośl,22.39,54.15
+1507,Przesmyki,22.35,52.17
+1508,Przeworno,17.11,50.41
+1509,Przeworsk,22.29,50.03
+1510,Przewóz,14.58,51.28
+1511,Przodkowo,18.17,54.23
+1512,Przybiernów,14.46,53.45
+1513,Przygodzice,17.50,51.35
+1514,Przykona,18.37,51.58
+1515,Przyłęk,21.45,51.19
+1516,Przyrów,19.31,50.48
+1517,Przystajń,18.41,50.53
+1518,Przysucha,20.38,51.22
+1519,Przytoczna,15.40,52.35
+1520,Przytuły,22.19,53.22
+1521,Przytyk,20.55,51.28
+1522,Przywidz,18.19,54.12
+1523,Psary,19.08,50.23
+1524,Pszczew,15.46,52.28
+1525,Pszczółki,18.41,54.11
+1526,Pszczyna,18.57,49.59
+1527,Puchaczów,22.59,51.18
+1528,Puck,18.24,54.44
+1529,Puławy,21.58,51.25
+1530,Pułtusk,21.05,52.43
+1531,Puńsk,23.11,54.15
+1532,Purda,20.42,53.43
+1533,Puszcza Mariańska,20.21,51.59
+1534,Puszczykowo,16.50,52.17
+1535,Pyrzyce,14.53,53.08
+1536,Pyskowice,18.38,50.24
+1537,Pysznica,22.08,50.34
+1538,Pyzdry,17.41,52.10
+1539,Raba Wyżna,19.53,49.34
+1540,Rabka,19.57,49.37
+1541,Rachanie,23.33,50.33
+1542,Raciąż,20.07,52.47
+1543,Raciążek,18.48,52.51
+1544,Racibórz,18.14,50.05
+1545,Raciechowice,20.08,49.50
+1546,Racławice-Pałecznica,20.14,50.20
+1547,Raczki,22.47,53.59
+1548,Radecznica,22.50,50.46
+1549,Radgoszcz,21.07,50.13
+1550,Radków,19.59,50.43
+1551,Radków,16.24,50.30
+1552,Radłów,18.32,50.56
+1553,Radłów,20.51,50.05
+1554,Radom,21.10,51.24
+1555,Radomin,19.12,53.05
+1556,Radomsko,19.27,51.04
+1557,Radomyśl,21.57,50.41
+1558,Radomyśl Wielki,21.17,50.12
+1559,Radoszyce,20.16,51.04
+1560,Radowo Małe,15.27,53.40
+1561,Radymno,22.50,49.57
+1562,Radwanice,15.52,51.34
+1563,Radzanowo,19.53,52.35
+1564,Radzanów,20.05,52.57
+1565,Radziechowy-Wieprz,19.10,49.38
+1566,Radziejowice,20.33,52.01
+1567,Radziejów,18.31,52.38
+1568,Radziemnice,20.14,50.15
+1569,Radziłów,22.25,53.25
+1570,Radziwiłłówka,23.02,52.22
+1571,Radzymin,21.11,52.25
+1572,Radzyń Chełmiński,18.56,53.23
+1573,Radzyń Podlaski,22.38,51.48
+1574,Rajcza,19.06,49.30
+1575,Rajgród,22.42,53.44
+1576,Rakoniewice,16.16,52.09
+1577,Raków,21.02,50.41
+1578,Rakszawa,22.14,50.12
+1579,Raniżów,21.59,50.16
+1580,Raszków,17.44,51.43
+1581,Raszyn,20.55,52.08
+1582,Rataje,19.26,52.26
+1583,Rawa Mazowiecka,20.16,51.46
+1584,Rawa Ruska,23.37,50.14
+1585,Rawicz,16.52,51.36
+1586,Rąbino,15.56,53.52
+1587,Recz,15.33,53.15
+1588,Reda,18.20,54.37
+1589,Regimin,20.34,52.57
+1590,Rejowiec,23.18,51.06
+1591,Rejowiec Fabryczny,23.16,51.07
+1592,Reńska Wieś,18.09,50.19
+1593,Repki,22.24,52.23
+1594,Resko,15.24,53.46
+1595,Reszel,21.09,54.03
+1596,Rewal,15.00,54.04
+1597,Ręczno,19.51,51.11
+1598,Rędziny,19.13,50.52
+1599,Rogowo,17.39,52.43
+1600,Rogowo,19.23,52.58
+1601,Rogoźno,16.59,52.45
+1602,Rogów,19.53,51.49
+1603,Rogóźno,18.56,53.33
+1604,Rohatyń,24.37,49.25
+1605,Rojewo,18.17,52.54
+1606,Rokiciny,19.47,51.40
+1607,Rokietnica,16.45,52.31
+1608,Rokietnica,22.39,49.54
+1609,Rokitno,23.18,52.08
+1610,Ropczyce,21.37,50.03
+1611,Rossosz,23.09,51.52
+1612,Rościszewo,19.46,52.54
+1613,Rozdrażew,17.31,51.46
+1614,Rozogi,21.22,53.29
+1615,Rozprza,19.38,51.18
+1616,Roźwienica,22.36,49.57
+1617,Równe,26.15,50.37
+1618,Różan,21.24,52.53
+1619,Ruciane-Nida,21.34,53.39
+1620,Ruda-Huta,23.36,51.14
+1621,Ruda Maleniecka,20.13,51.19
+1622,Ruda Śląska,18.52,50.16
+1623,Rudna,16.16,51.31
+1624,Rudnik,18.12,50.08
+1625,Rudnik,22.16,50.27
+1626,Rudnik,22.59,50.53
+1627,Rudniki,18.36,51.02
+1628,Rudziniec,18.25,50.22
+1629,Ruja,16.24,51.11
+1630,Rumia,18.24,54.34
+1631,Rusiec,18.59,51.19
+1632,Rusinów,20.35,51.26
+1633,Rutka-Tartak,22.58,54.19
+1634,Rutki,22.26,53.06
+1635,Rybczewice,22.51,51.02
+1636,Rybnik,18.33,50.05
+1637,Rybno,19.56,53.23
+1638,Rychliki,19.31,53.59
+1639,Rychtal,17.51,51.09
+1640,Rychwał,18.10,52.04
+1641,Ryczywół,16.50,52.48
+1642,Rydzyna,16.40,51.48
+1643,Ryglice,21.08,49.53
+1644,Ryjewo,18.57,53.51
+1645,Ryki,21.57,51.37
+1646,Rymanów,21.53,49.34
+1647,Rymań,15.32,53.56
+1648,Ryn,21.32,53.56
+1649,Rypin,19.24,53.04
+1650,Rytwiany,21.12,50.32
+1651,Rząśnia,19.03,51.14
+1652,Rząśnik,21.21,52.43
+1653,Rzeczenica,17.06,53.46
+1654,Rzeczniów,21.27,51.08
+1655,Rzeczyca,20.18,51.36
+1656,Rzekuń,21.38,53.03
+1657,Rzepiennik Strzyżewski,21.02,49.48
+1658,Rzepin,14.49,52.21
+1659,Rzeszów,22.01,50.03
+1660,Rzewnie,21.21,52.51
+1661,Rzezawa,20.31,50.00
+1662,Rzgów,18.03,52.09
+1663,Rzgów,19.30,51.40
+1664,Sabnie,22.18,52.30
+1665,Sadki,17.27,53.10
+1666,Sadkowice,20.31,51.44
+1667,Sadlinki,18.53,53.40
+1668,Sadowie,21.23,50.51
+1669,Sadowne,21.51,52.38
+1670,Sambor,23.11,49.32
+1671,Samborzec,21.39,50.39
+1672,Sandomierz,21.45,50.41
+1673,Sanniki,19.52,52.20
+1674,Sanok,22.13,49.33
+1675,Santok,15.24,52.44
+1676,Sarnaki,22.53,52.19
+1677,Sarny,26.36,51.21
+1678,Sawin,23.27,51.16
+1679,Secemin,19.50,50.46
+1680,Sejny,23.21,54.06
+1681,Serniki,22.40,51.26
+1682,Serock,21.04,52.31
+1683,Serokomla,22.19,51.42
+1684,Sędziejowice,19.02,51.31
+1685,Sędziszów,20.04,50.35
+1686,Sędziszów Małopolski,21.42,50.04
+1687,Sękowa,21.12,49.37
+1688,Sępopol,21.01,54.16
+1689,Sępólno Krajeńskie,17.32,53.27
+1690,Sianów,16.18,54.13
+1691,Sicienko,17.47,53.13
+1692,Sidra,23.27,53.33
+1693,Sieciechów,21.45,51.33
+1694,Siedlce,22.17,52.11
+1695,Siedlec,16.00,52.03
+1696,Siedlisko,15.48,51.46
+1697,Siedliszcze,23.10,51.12
+1698,Siekierczyn,15.12,51.08
+1699,Siemianowice Śląskie,19.02,50.18
+1700,Siemiatycze,22.52,52.26
+1701,Siemiątkowo Koziebródz.,20.01,52.53
+1702,Siemień,22.36,51.38
+1703,Siemkowice,18.54,51.12
+1704,Siemyśl,15.32,54.02
+1705,Sieniawa,22.37,50.11
+1706,Siennica,21.37,52.06
+1707,Siennica Różana,23.20,51.00
+1708,Sienno,21.29,51.06
+1709,Siepraw,19.58,49.55
+1710,Sieradz,18.44,51.36
+1711,Sierakowice,17.53,54.22
+1712,Sieraków,16.05,52.39
+1713,Sieroszewice,17.59,51.38
+1714,Sierpc,19.40,52.52
+1715,Siewierz,19.14,50.28
+1716,Silnowo,16.29,53.37
+1717,Sitkówka-Nowiny,20.34,50.49
+1718,Sitno,23.23,50.45
+1719,Skalbmierz,20.24,50.20
+1720,Skała,19.51,50.14
+1721,Skarszewy,18.27,54.05
+1722,Skaryszew,21.15,51.19
+1723,Skarżysko-Kamienna,20.51,51.07
+1724,Skawina,19.49,49.59
+1725,Skąpe,15.27,52.09
+1726,Skępe,19.21,52.52
+1727,Skierbieszów,23.22,50.51
+1728,Skierniewice,20.08,51.58
+1729,Skoczów,18.43,49.48
+1730,Skoki,17.09,52.40
+1731,Skołyszyn,21.21,49.45
+1732,Skomlin,18.23,51.10
+1733,Skoroszyce,17.22,50.35
+1734,Skórcz,18.32,53.48
+1735,Skórzec,22.08,52.07
+1736,Skrwilno,19.37,53.01
+1737,Skrzeszew,20.53,52.28
+1738,Skrzyszów,21.06,49.59
+1739,Skulsk,18.20,52.29
+1740,Skwierzyna,15.29,52.36
+1741,Słaboszów,20.17,50.23
+1742,Sława,16.04,51.53
+1743,Sławatycze,23.34,51.46
+1744,Sławków,19.20,50.17
+1745,Sławno,20.09,51.23
+1746,Sławno,16.39,54.22
+1747,Sławoborze,15.42,53.53
+1748,Słomniki,20.05,50.15
+1749,Słonim,25.19,53.06
+1750,Słońsk,14.48,52.34
+1751,Słubice,14.34,52.21
+1752,Słubice,19.56,52.23
+1753,Słupca,17.53,52.17
+1754,Słupia,19.58,50.36
+1755,Słupia,19.58,51.51
+1756,Słupsk,17.02,54.28
+1757,Smętowo Graniczne,18.41,53.46
+1758,Smołdzino,17.13,54.40
+1759,Sobienie-Jeziory,21.19,51.56
+1760,Sobków,20.27,50.42
+1761,Sobolew,21.41,51.44
+1762,Sobótka,16.45,50.54
+1763,Sochaczew,20.13,52.14
+1764,Sochocin,20.28,52.42
+1765,Sokolniki,18.21,51.18
+1766,Sokołów Małopolski,22.07,50.14
+1767,Sokołów Podlaski,22.16,52.24
+1768,Sokoły,22.42,52.59
+1769,Sokółka,23.30,53.24
+1770,Solec Kujawski,18.14,53.05
+1771,Solec nad Wisłą,21.47,51.08
+1772,Solec-Zdrój,20.53,50.22
+1773,Solina,22.27,49.24
+1774,Somianka,21.17,52.33
+1775,Somonino,18.12,54.17
+1776,Sompolno,18.30,52.23
+1777,Sońsk,20.43,52.47
+1778,Sopot,18.33,54.26
+1779,Sorkwity,21.09,53.51
+1780,Sosnowica,23.05,51.31
+1781,Sosnowiec,19.08,50.17
+1782,Sosnówka,23.20,51.46
+1783,Sośnicowice,18.32,50.16
+1784,Sośnie,17.37,51.28
+1785,Sośno,17.41,53.24
+1786,Spiczyn,22.46,51.21
+1787,Spytkowice,19.30,50.00
+1788,Srokowo,21.31,54.13
+1789,Stalowa Wola,22.05,50.34
+1790,Stanin,22.12,51.53
+1791,Stanisławów,21.33,52.18
+1792,Stanisławów,24.43,48.55
+1793,Stara Biała,19.38,52.37
+1794,Stara Błotnica,20.59,51.33
+1795,Stara Dąbrowa,15.08,53.25
+1796,Stara Kamienica,15.34,50.55
+1797,Stara Kiszewa,18.10,53.59
+1798,Stara Kornica,22.57,52.11
+1799,Starachowice,21.04,51.02
+1800,Stare Babice,20.51,52.15
+1801,Stare Bogaczowice,16.11,50.52
+1802,Stare Czarnowo,14.46,53.17
+1803,Stare Juchy,22.11,53.56
+1804,Stare Kurowo,15.40,52.52
+1805,Stare Miasto,18.13,52.11
+1806,Stare Pole,19.12,54.03
+1807,Stargard Szczeciński,15.02,53.20
+1808,Starogard Gdański,18.32,53.58
+1809,Staroźreby,19.58,52.38
+1810,Stary Brus,23.18,51.29
+1811,Stary Dzierzgoń,19.25,53.51
+1812,Stary Dzikowiec,21.51,50.16
+1813,Staru Dzików,22.56,50.14
+1814,Stary Lubotyń,21.56,52.57
+1815,Stary Sącz,20.38,49.34
+1816,Stary Targ,19.10,53.56
+1817,Stary Zamość,23.11,50.49
+1818,Staszów,21.10,50.34
+1819,Stawiguda,20.24,53.39
+1820,Stawiski,22.10,53.23
+1821,Stawiszyn,18.06,51.55
+1822,Stąporków,20.33,51.09
+1823,Stegna,19.06,54.20
+1824,Stepnica,14.37,53.39
+1825,Sterdyń,22.17,52.34
+1826,Stęszew,16.41,52.17
+1827,Stężyca,17.57,54.13
+1828,Stoczek,21.54,52.33
+1829,Stoczek Łukowski,21.58,51.58
+1830,Stolno,18.30,53.19
+1831,Stopnica,20.56,50.26
+1832,Stoszowice,16.38,50.36
+1833,Strachówka,21.38,52.25
+1834,Strawczyn,20.25,50.57
+1835,Stromiec,21.06,51.39
+1836,Stronie Śląskie,16.52,50.18
+1837,Strumień,18.46,49.55
+1838,Stryj,23.51,49.16
+1839,Stryków,19.35,51.54
+1840,Stryszawa,19.32,49.43
+1841,Stryszów,19.37,49.50
+1842,Strzałkowo,17.49,52.19
+1843,Strzegom,16.21,50.58
+1844,Strzegowo-Osada,20.17,52.54
+1845,Strzelce,19.24,52.19
+1846,Strzelce Krajeńskie,15.31,52.53
+1847,Strzelce Opolskie,18.18,50.31
+1848,Strzelce Wielkie,19.08,51.08
+1849,Strzeleczki,17.51,50.28
+1850,Strzelin,17.04,50.47
+1851,Strzelno,18.10,52.38
+1852,Strzyżewice,22.27,51.03
+1853,Strzyżów,21.47,49.52
+1854,Stubno,22.58,49.53
+1855,Studzienice,17.35,54.06
+1856,Stupsk,20.27,53.01
+1857,Subkowy,18.46,54.01
+1858,Sucha Beskidzka,19.29,49.44
+1859,Suchań,15.19,53.17
+1860,Suchedniów,20.50,51.03
+1861,Suchowola,23.06,53.35
+1862,Suchożebry,22.16,52.16
+1863,Suchy Las,16.53,52.28
+1864,Sulechów,15.37,52.05
+1865,Sulejów,19.52,51.22
+1866,Sulejówek,21.16,52.13
+1867,Sulęcin,15.07,52.27
+1868,Sulęczyno,17.46,54.14
+1869,Sulików,15.04,51.04
+1870,Sulmierzyce,19.12,51.11
+1871,Sułkowice,19.48,49.52
+1872,Sułoszowa,19.44,50.17
+1873,Sułów,22.58,50.46
+1874,Supraśl,23.20,53.13
+1875,Suraż,22.57,52.57
+1876,Susiec,23.12,50.25
+1877,Susz,19.21,53.43
+1878,Suszec,18.48,50.02
+1879,Suwałki,22.56,54.06
+1880,Swarzędz,17.04,52.24
+1881,Syców,17.43,51.18
+1882,Sypniewo,21.18,53.01
+1883,Szadek,18.59,51.42
+1884,Szamocin,17.07,53.02
+1885,Szamotuły,16.34,52.36
+1886,Szastarka,22.19,50.52
+1887,Szczaniec,15.41,52.16
+1888,Szczawin Kościelny,19.37,52.23
+1889,Szczawnica,20.28,49.26
+1890,Szczawno-Zdrój,16.16,50.49
+1891,Szczebrzeszyn,22.59,50.42
+1892,Szczecin,14.34,53.26
+1893,Szczecinek,16.41,53.43
+1894,Szczekociny,19.48,50.38
+1895,Szczerców,19.07,51.20
+1896,Szczucin,21.04,50.19
+1897,Szczuczyn,22.18,53.34
+1898,Szczurowa,50.08,20.38
+1899,Szczutowo,19.34,52.56
+1900,Szczyrk,19.02,49.43
+1901,Szczytna,16.26,50.25
+1902,Szczytniki,18.20,51.41
+1903,Szczytno,20.59,53.34
+1904,Szelków,21.13,52.50
+1905,Szemud,18.14,54.29
+1906,Szepietowo,22.33,52.52
+1907,Szerzyny,21.14,49.49
+1908,Szklarska Poręba,15.32,50.50
+1909,Szlichtyngowa,16.15,51.43
+1910,Szprotawa,15.32,51.34
+1911,Szreńsk,20.07,53.01
+1912,Sztabin,23.07,53.41
+1913,Sztum,19.02,53.56
+1914,Sztutowo,19.10,54.20
+1915,Szubin,17.45,53.01
+1916,Szudziałowo,23.40,53.17
+1917,Szumowo,22.06,52.56
+1918,Szydłowiec,20.51,51.14
+1919,Szydłowo,16.36,53.10
+1920,Szydłów,21.00,50.36
+1921,Szypliszki,23.04,54.15
+1922,Ścinawa,16.26,51.25
+1923,Ślesin,18.18,52.22
+1924,Śliwice,18.10,53.43
+1925,Śmigiel,16.32,52.01
+1926,Śniadowo,21.59,53.02
+1927,Śrem,17.01,52.05
+1928,Środa Śląska,16.35,51.09
+1929,Środa Wielkopolska,17.16,52.14
+1930,Świątki,20.15,53.55
+1931,Świątniki Górne,19.58,49.56
+1932,Świdnica,16.29,50.50
+1933,Świdnica,15.25,51.53
+1934,Świdnik,22.41,51.12
+1935,Świdwin,15.47,53.47
+1936,Świebodzice,16.20,50.52
+1937,Świebodzin,15.32,52.15
+1938,Świecie,18.26,53.25
+1939,Świecie nad Osą,19.06,53.27
+1940,Świedziebnia,19.33,53.09
+1941,Świeradów-Zdrój,15.21,50.54
+1942,Świercze,20.46,52.41
+1943,Świerczów,17.46,50.58
+1944,Świerklaniec,18.56,50.26
+1945,Świerklany,18.36,50.02
+1946,Świerzawa,15.54,51.01
+1947,Świerzno,14.57,53.57
+1948,Świeszyno,16.10,54.07
+1949,Święciechowa,16.31,51.52
+1950,Święta Katarzyna,17.07,51.02
+1951,Świętajno,21.13,53.34
+1952,Świętajno,22.20,54.00
+1953,Świętochłowice,18.55,50.19
+1954,Świlcza,21.55,50.05
+1955,Świnice Warckie,18.56,52.02
+1956,Świnna,19.15,49.40
+1957,Świnoujście,14.15,53.55
+1958,Tarczyn,20.50,51.59
+1959,Tarłów,21.43,51.00
+1960,Tarnawatka,23.24,50.32
+1961,Tarnobrzeg,21.41,50.35
+1962,Tarnogród,22.45,50.21
+1963,Tarnopol,25.36,49.34
+1964,Tarnowiec,21.36,49.43
+1965,Tarnowo Podgórne,16.40,52.28
+1966,Tarnowskie Góry,18.52,50.27
+1967,Tarnów,21.00,50.02
+1968,Tarnów Opolski,18.05,50.35
+1969,Tarnówka,16.50,53.21
+1970,Tatrzańska,19.57,49.18
+1971,Tąpkowice,19.02,50.27
+1972,Tczew,18.43,54.06
+1973,Tczów,21.27,51.20
+1974,Telatyn,23.50,50.32
+1975,Teresin,20.25,52.12
+1976,Terespol,23.37,52.05
+1977,Tereszpol,22.53,50.34
+1978,Tłuchowo,19.28,52.45
+1979,Tłuszcz,21.27,52.26
+1980,Tokarnia,19.53,49.44
+1981,Tolkmicko,19.31,54.19
+1982,Tomaszów Lubelski,23.25,50.27
+1983,Tomaszów Mazowiecki,20.02,51.32
+1984,Tomice,19.29,49.54
+1985,Topólka,18.43,52.31
+1986,Toruń,18.37,53.02
+1987,Torzym,15.04,52.19
+1988,Toszek,18.31,50.28
+1989,Trawniki,23.01,51.08
+1990,Trąbki Wielkie,18.32,54.10
+1991,Trojanów,21.50,51.42
+1992,Troszyn,21.44,53.02
+1993,Tryńcza,22.33,50.10
+1994,Trzcianka,16.28,53.03
+1995,Trzcianne,22.41,53.21
+1996,Trzciel,15.52,52.22
+1997,Trzcinica,18.01,51.10
+1998,Trzcińsko-Zdrój,14.35,52.58
+1999,Trzebiatów,15.15,54.04
+2000,Trzebiechów,15.44,52.02
+2001,Trzebiel,14.49,51.38
+2002,Trzebielino,17.06,54.12
+2003,Trzebieszów,22.33,51.59
+2004,Trzebinia,19.28,50.10
+2005,Trzebnica,17.04,51.18
+2006,Trzebownisko,22.02,50.05
+2007,Trzemeszno,17.49,52.34
+2008,Trzeszczany,23.44,50.49
+2009,Trzyciąż,19.46,50.19
+2010,Trzydnik Duży,22.09,50.51
+2011,Tuchola,17.51,53.36
+2012,Tuchomie,17.20,54.07
+2013,Tuchów,21.03,49.54
+2014,Tuczępy,20.59,50.31
+2015,Tuczna,23.26,51.53
+2016,Tuczno,16.08,53.11
+2017,Tuliszków,18.18,52.04
+2018,Tułowice,20.17,52.22
+2019,Tuplice,14.49,51.40
+2020,Turawa,18.05,50.44
+2021,Turek,18.30,52.01
+2022,Turobin,22.45,50.49
+2023,Turośl,21.44,53.23
+2024,Turośń Kościelna,23.03,53.01
+2025,Tuszów Narodowy,21.28,50.22
+2026,Tuszyn,19.32,51.36
+2027,Twardogóra,17.28,51.22
+2028,Tworóg,18.43,50.33
+2029,Tychowo,16.15,53.55
+2030,Tychy,18.59,50.08
+2031,Tychy Paprocany,19.00,50.06
+2032,Tyczyn,22.02,49.58
+2033,Tykocin,22.46,53.12
+2034,Tymbark,20.19,49.44
+2035,Tyrawa Wołoska,22.22,49.34
+2036,Tyszowice,23.41,50.37
+2037,Uchanie,23.39,50.55
+2038,Udanin,16.27,51.02
+2039,Ujazd,18.21,50.24
+2040,Ujazd,19.55,51.36
+2041,Ujsoły,19.09,49.29
+2042,Ujście,16.44,53.04
+2043,Ulan-Majorat,22.29,51.48
+2044,Ulanów,22.17,50.30
+2045,Ulhówek,23.48,50.27
+2046,Ułęż,22.07,51.36
+2047,Uniejów,18.48,51.58
+2048,Unisław,18.23,53.13
+2049,Urszulin,23.12,51.24
+2050,Urzędów,22.09,51.00
+2051,Ustka,16.51,54.35
+2052,Ustronie Morskie,15.45,54.13
+2053,Ustroń,18.49,49.43
+2054,Ustrzyki Dolne,22.36,49.26
+2055,Uście Gorlickie,21.08,49.31
+2056,Uścimów,22.56,51.28
+2057,Wadowice,19.30,49.53
+2058,Wadowice Górne,21.18,50.16
+2059,Walce,18.00,50.22
+2060,Walim,16.27,50.42
+2061,Wałbrzych,16.17,50.47
+2062,Wałcz,16.27,53.16
+2063,Wapno,17.28,52.54
+2064,Warka,21.12,51.47
+2065,Warlubie,18.38,53.35
+2066,Warnice,14.59,53.15
+2067,Warszawa,21.02,52.12
+2068,Warszawa Mokotów,21.03,52.09
+2069,Warszawa Ochota,20.59,52.12
+2070,Warszawa Praga Południe,21.10,52.12
+2071,Warszawa Praga Północ,21.03,52.17
+2072,Warszawa Śródmieście,21.01,52.13
+2073,Warszawa Wola,20.56,52.14
+2074,Warszawa Żoliborz,20.56,52.16
+2075,Warta,18.38,51.42
+2076,Warta Bolesławiecka,15.39,51.14
+2077,Wartkowice,19.01,51.58
+2078,Wasilków,23.12,53.12
+2079,Waśniów,20.13,50.54
+2080,Wąbrzeźno,18.57,53.17
+2081,Wąchock,21.01,51.05
+2082,Wądroże Wielkie,16.20,51.07
+2083,Wągrowiec,17.12,52.48
+2084,Wąpielsk,19.17,53.08
+2085,Wąsewo,21.41,52.53
+2086,Wąsosz,16.41,51.34
+2087,Wąwolnica,22.09,51.17
+2088,Wejherowo,18.15,54.36
+2089,Werbkowice,23.46,50.45
+2090,Węgierska Górka,19.07,49.37
+2091,Węgliniec,15.13,51.17
+2092,Węgorzewo,21.45,54.13
+2093,Węgorzyno,15.33,53.32
+2094,Węgrów,22.01,52.24
+2095,Wiązowna,21.18,52.11
+2096,Wiązownica,22.42,50.05
+2097,Wiązów,17.17,50.49
+2098,Wicko,17.37,54.40
+2099,Widawa,18.57,51.26
+2100,Widuchowa,14.22,53.07
+2101,Wieczfnia Kościelna,20.29,53.12
+2102,Wielbark,20.56,53.24
+2103,Wieleń,16.10,52.54
+2104,Wielgie,19.16,52.45
+2105,Wielgomłyny,19.46,51.01
+2106,Wielichowo,16.21,52.07
+2107,Wieliczka,20.03,49.59
+2108,Wieliczki,22.34,53.59
+2109,Wielka Nieszawka,18.29,53.00
+2110,Wielka Wieś,19.51,50.10
+2111,Wielke Oczy,23.10,50.01
+2112,Wielopole Skrzyńskie,21.37,49.57
+2113,Wielowieś,18.37,50.31
+2114,Wieluń,18.34,51.13
+2115,Wieniawa,20.48,51.22
+2116,Wieprz,19.22,49.54
+2117,Wieruszów,18.10,51.17
+2118,Wierzbica,23.19,51.16
+2119,Wierzbica,21.05,51.15
+2120,Wierzbinek,18.31,52.26
+2121,Wierzbno,21.51,52.18
+2122,Wierzchlas,18.40,51.12
+2123,Wierzchosławice,20.52,50.02
+2124,Wierzchowo,16.06,53.27
+2125,Wietrzychowice,20.46,50.12
+2126,Więcbork,17.29,53.21
+2127,Wijewo,16.11,51.55
+2128,Wilamowice,19.09,49.55
+2129,Wilczęta,19.53,54.10
+2130,Wilczyce,21.40,50.45
+2131,Wilczyn,18.10,52.29
+2132,Wilejka,26.53,54.30
+2133,Wilga,21.23,51.52
+2134,Wilkołaz,22.21,51.01
+2135,Wilkowice,19.06,49.46
+2136,Wilków,21.53,51.16
+2137,Wilków,17.39,51.06
+2138,Wilno,25.19,54.41
+2139,Winnica,20.57,52.39
+2140,Wińsko,16.37,51.23
+2141,Wiskitki,20.23,52.05
+2142,Wisła,18.52,49.39
+2143,Wisznia Mała,17.03,51.15
+2144,Wisznice,23.13,51.48
+2145,Wiślica,20.41,50.21
+2146,Wiśniew,22.17,52.05
+2147,Wiśniewo,20.21,53.04
+2148,Wiśniowa,20.06,49.48
+2149,Wiśniowa,21.39,49.52
+2150,Witkowo,17.47,52.26
+2151,Witnica,14.53,52.41
+2152,Witonia,19.18,52.08
+2153,Wizna,22.23,53.13
+2154,Wiżajny,22.52,54.22
+2155,Wleń,15.41,51.01
+2156,Władysławowo,18.24,54.48
+2157,Władysławów,18.29,52.06
+2158,Włocławek,19.03,52.39
+2159,Włodawa,23.33,51.33
+2160,Włodowice,19.27,50.33
+2161,Włodzimierz Wołyński,24.20,50.51
+2162,Włoszakowice,16.22,51.56
+2163,Włoszczowa,19.58,50.51
+2164,Wodynie,21.57,52.02
+2165,Wodzierady,19.09,51.43
+2166,Wodzisław,20.11,50.31
+2167,Wodzisław Śląski,18.28,50.01
+2168,Wohyń,22.47,51.46
+2169,Wojaszówka,21.41,49.47
+2170,Wojciechowice,21.35,50.51
+2171,Wojciechów,22.15,51.14
+2172,Wojcieszków,22.19,51.46
+2173,Wojcieszów,15.55,50.58
+2174,Wojnicz,20.50,49.58
+2175,Wojsławice,23.33,50.55
+2176,Wola Krzysztoporska,19.35,51.21
+2177,Wola Mysłowska,21.57,51.51
+2178,Wola Uhruska,23.38,51.19
+2179,Wolanów,20.59,51.23
+2180,Wolbórz,19.50,51.31
+2181,Wolbrom,19.46,50.23
+2182,Wolin,14.31,53.50
+2183,Wolsztyn,16.07,52.07
+2184,Wołczyn,18.03,51.01
+2185,Wołkowysk,24.28,53.10
+2186,Wołomin,21.14,52.21
+2187,Wołów,16.39,51.21
+2188,Woźniki,19.04,50.35
+2189,Wólka,22.39,51.16
+2190,Wręczyca Wielka,18.55,50.50
+2191,Wrocław,17.02,51.07
+2192,Wrocław Fabryczna,16.57,51.08
+2193,Wrocław Krzyki,17.04,51.08
+2194,Wrocław Psie Pole,17.07,51.08
+2195,Wrocław Stare Miasto,17.03,51.06
+2196,Wrocław Śródmieście,17.03,51.07
+2197,Wronki,16.22,52.43
+2198,Wróblew,18.37,51.36
+2199,Września,17.35,52.20
+2200,Wschowa,16.18,51.48
+2201,Wydminy,22.02,53.59
+2202,Wymiarki,15.05,51.31
+2203,Wyryki,23.23,51.33
+2204,Wyrzysk,17.16,53.09
+2205,Wysoka,17.04,53.11
+2206,Wysokie,22.40,50.45
+2207,Wysokie Mazowieckie,22.30,52.55
+2208,Wyszki,22.59,52.51
+2209,Wyszków,21.27,52.36
+2210,Wyszogród,20.12,52.23
+2211,Wyśmierzyce,20.48,51.38
+2212,Zabierzów,19.48,50.07
+2213,Zabłudów,23.21,53.01
+2214,Zabór,15.43,51.57
+2215,Zabrodzie,21.26,52.30
+2216,Zabrze,18.47,50.18
+2217,Zadzim,18.51,51.46
+2218,Zagnańsk,20.41,50.58
+2219,Zagórów,17.54,52.10
+2220,Zagórz,22.16,49.31
+2221,Zagrodno,15.52,51.12
+2222,Zakliczyn,20.49,49.51
+2223,Zaklików,22.07,50.46
+2224,Zakopane,19.57,49.18
+2225,Zakroczym,20.37,52.26
+2226,Zakrzew,21.00,51.27
+2227,Zakrzew,22.36,50.54
+2228,Zakrzewo,17.08,53.25
+2229,Zakrzewo,18.37,52.45
+2230,Zakrzówek,22.22,50.56
+2231,Zalesie,23.23,52.02
+2232,Zaleszany,21.54,50.39
+2233,Zalewo,19.36,53.51
+2234,Załuski,20.31,52.32
+2235,Zambrów,22.15,52.59
+2236,Zamość,23.16,50.43
+2237,Zaniemyśl,17.10,52.10
+2238,Zapolice,18.53,51.32
+2239,Zaręby Kościelne,22.08,52.46
+2240,Zarszyn,49.35,22.01
+2241,Zarzecze,22.32,49.59
+2242,Zator,19.26,49.59
+2243,Zatory,21.11,52.36
+2244,Zawady,22.39,53.09
+2245,Zawadzkie,18.29,50.37
+2246,Zawichost,21.51,50.49
+2247,Zawidów,15.04,51.01
+2248,Zawidz,19.52,52.49
+2249,Zawiercie,19.25,50.30
+2250,Zawoja,19.34,49.40
+2251,Zawonia,17.12,51.19
+2252,Ząbki,21.07,52.17
+2253,Ząbkowice Śląskie,16.49,50.35
+2254,Zbąszynek,15.49,52.15
+2255,Zbąszyń,15.55,52.15
+2256,Zbiczno,19.23,53.20
+2257,Zblewo,18.20,53.56
+2258,Zbójna,21.47,53.15
+2259,Zbójno,19.09,53.00
+2260,Zbrosławice,18.45,50.25
+2261,Zbuczyn Poduchowny,22.06,52.06
+2262,Zduny,17.22,51.38
+2263,Zduny,19.48,52.09
+2264,Zduńska Wola,18.56,51.36
+2265,Zdzieszowice,18.07,50.25
+2266,Zebrzydowice,18.37,49.53
+2267,Zelów,19.13,51.28
+2268,Zembrzyce,19.36,49.46
+2269,Zębowice,18.21,50.46
+2270,Zgierz,19.25,51.52
+2271,Zgorzelec,15.01,51.09
+2272,Zielona Góra,15.30,51.56
+2273,Zielonka,21.09,52.18
+2274,Zielonki,19.55,50.07
+2275,Ziębice,17.03,50.37
+2276,Zławieś Wielka,18.20,53.06
+2277,Złocieniec,16.00,53.32
+2278,Złoczew,18.37,51.25
+2279,Złoczów,24.52,49.47
+2280,Złota,20.36,50.23
+2281,Złotniki Kujawskie,18.09,52.54
+2282,Złotoryja,15.55,51.08
+2283,Złotów,17.02,53.22
+2284,Złoty Stok,16.52,50.27
+2285,Zwierzyn,15.33,52.49
+2286,Zwierzyniec,22.58,50.37
+2287,Zwoleń,21.36,51.22
+2288,Żabia Wola,20.41,52.02
+2289,Żabno,20.53,50.07
+2290,Żagań,15.19,51.37
+2291,Żarki,19.22,50.38
+2292,Żarnowiec,19.52,50.29
+2293,Żarnów,20.11,51.15
+2294,Żarów,16.30,50.57
+2295,Żary,15.08,51.38
+2296,Żelechów,21.54,51.49
+2297,Żegocina,20.25,49.48
+2298,Żelazków,18.11,51.51
+2299,Żelechlinek,20.02,51.43
+2300,Żelechów,21.54,51.49
+2301,Żerków,17.34,52.04
+2302,Żmigród,16.54,51.28
+2303,Żmudź,23.40,51.01
+2304,Żnin,17.43,52.51
+2305,Żołynia,22.18,50.10
+2306,Żory,18.42,50.03
+2307,Żółkiewka,22.50,50.54
+2308,Żórawina,17.03,50.59
+2309,Żukowice,15.59,51.40
+2310,Żukowo,18.21,54.21
+2311,Żurawica,22.47,49.49
+2312,Żuromin,19.54,53.04
+2313,Żychlin,19.37,52.15
+2314,Żyraków,21.25,50.06
+2315,Żyrardów,20.26,52.03
+2316,Żyrzyn,22.06,51.30
+2317,Żytno,19.37,50.56
+2318,Żywiec,19.12,49.42

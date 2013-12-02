@@ -1,4 +1,21 @@
 <h1> Łukasz Paczyński </h1>
+---
+* [Dane Techniczne](#dane-techniczne)
+* [zadanie a)](#a)
+* [zadanie b)](#b)
+* [zadanie c)](#c)
+* [zadanie d)](#d)
+* [zadanie e)](#e)
+
+---
+
+## Dane Techniczne
+ ```
+ Procesor: Core 2 Duo E8500 3,16 GHz // OC: 4,10 GHz
+ RAM: Ocz 2x2GB PC 800MHz DDR2
+ Dysk: Seagate Barracuda 500 GB
+ OS: WinSHIT 7 Ultimate x64 && Ubuntu 12.04 LTS
+ ```
 
 <h2>Zadanie 1</h2>
 
@@ -106,4 +123,43 @@ db.text8.aggregate(
  Rezultat: 7998978
  Stanowi: 47,03%
  Czas: 22 sekundy
+ ```
+<p> 1000 najczęściej występujących słów</p>
+ ```js
+ var start = new Date().getTime();
+
+ db.text8.aggregate(
+	 {$group:{ _id:"$word", count:{$sum:1}}}, 
+	 {$sort: {count: -1}}, 
+	 {$limit:1000})
+
+ var end = new Date().getTime();
+ var time = end - start;
+ print(time);
+ ```
+ ```js
+ Rezultat: 11433354
+ Stanowi: 67,23%
+ Czas: 25 sekundy
+ ```
+ ![Image](../../images/lpaczynski/avg.png)
+<h3><b>e)</b></h3>
+<p>Do rozwiązania zadania użyłem danych znajdujących się pod tym linkiem(http://www.poipoint.pl).</p>
+[Baza](/data/lpaczynski/Szkolywyzsze.csv) zawiera dane dotyczące szkół wyższych w Polsce.
+
+<p>Import do mongo</p>
+ ```bash
+ mongoimport -d geo -c schools --type csv --headerline --file Szkolywyzsze.csv
+ ```
+ <p>Rekordy:</p>
+ ```js
+ db.schools.count()
+ 
+ Rezultat: 235
+ ```
+ <p>Wszystkie szkoły wyższe znajdujące się w Gdańsku</p>
+ ```js
+ db.schools.find({miasto: /Gda/}, {_id: 0}).count()
+ 
+ Rezultat: 10
  ```

@@ -1,4 +1,21 @@
 <h1>Paweł Puchalski</h1>
+---
+* [Dane Techniczne](#dane-techniczne)
+* [zadanie a)](#a)
+* [zadanie b)](#b)
+* [zadanie c)](#c)
+* [zadanie d)](#d)
+* [zadanie e)](#e)
+
+---
+
+## Dane Techniczne
+ ```
+ Procesor: Pentium D 3.0 GHz
+ RAM: 2 GB PC 800MHz DDR2
+ Dysk: Seagate Barracuda 320 GB
+ OS: Windows 7 Professional x64 && Ubuntu 12.04 LTS
+ ```
 
 <h2>Zadanie 1</h2>
 
@@ -47,9 +64,102 @@ Przerobiłem plik do Jsona za pomocą tego [skryptu](/scripts/ppuchalski/toJson.
   
   Rezultat: 17005207
   ```
-<p>Zliczanie różnych słów<p>
+<p>Zliczanie różnych słów</p>
   ```js
   db.text8.distinct("word").length
   
   Rezultat: 253854
   ```
+<p>1 najczęściej występujące słowo </p>
+ ```js
+ var start = new Date().getTime();
+
+db.text8.aggregate(
+	{$group:{ _id:"$word", count:{$sum:1}}}, 
+	{$sort: {count: -1}}, 
+	{$limit:1})
+
+  var end = new Date().getTime();
+  var time = end - start;
+  print(time);
+ ```
+ ```js
+ Rezultat: 1061396
+ Stanowi: 6,24%
+ Czas: 23 sekund
+ ```
+<p>10 najczęściej występujących słów</p>
+ ```js
+ var start = new Date().getTime();
+
+ db.text8.aggregate(
+	 {$group:{ _id:"$word", count:{$sum:1}}}, 
+	 {$sort: {count: -1}}, 
+	 {$limit:10})
+
+ var end = new Date().getTime();
+ var time = end - start;
+ print(time);
+ ```
+ ```js
+ Rezultat: 4205965
+ Stanowi: 24,73%
+ Czas: 22 sekundy
+ ```
+<p> 100 najczęściej występujących słów</p>
+ ```js
+ var start = new Date().getTime();
+
+ db.text8.aggregate(
+	 {$group:{ _id:"$word", count:{$sum:1}}}, 
+	 {$sort: {count: -1}}, 
+	 {$limit:100})
+
+ var end = new Date().getTime();
+ var time = end - start;
+ print(time);
+ ```
+ ```js
+ Rezultat: 7998978
+ Stanowi: 47,03%
+ Czas: 22 sekundy
+ ```
+<p> 1000 najczęściej występujących słów</p>
+ ```js
+ var start = new Date().getTime();
+
+ db.text8.aggregate(
+	 {$group:{ _id:"$word", count:{$sum:1}}}, 
+	 {$sort: {count: -1}}, 
+	 {$limit:1000})
+
+ var end = new Date().getTime();
+ var time = end - start;
+ print(time);
+ ```
+ ```js
+ Rezultat: 11433354
+ Stanowi: 67,23%
+ Czas: 25 sekundy
+ ```
+ ![Image](../../images/ppuchalski/avg.png)
+<h3><b>e)</b></h3>
+<p>Do rozwiązania zadania użyłem danych znajdujących się pod tym linkiem(http://www.poipoint.pl).</p>
+[Baza](/data/ppuchalski/Szkolywyzsze.csv) zawiera dane dotyczące szkół wyższych w Polsce.
+
+<p>Import do mongo</p>
+ ```bash
+ mongoimport -d geo -c schools --type csv --headerline --file Szkolywyzsze.csv
+ ```
+ <p>Rekordy:</p>
+ ```js
+ db.schools.count()
+ 
+ Rezultat: 235
+ ```
+ <p>Wszystkie szkoły wyższe znajdujące się w Gdańsku</p>
+ ```js
+ db.schools.find({miasto: /Gda/}, {_id: 0}).count()
+ 
+ Rezultat: 10
+ ```
