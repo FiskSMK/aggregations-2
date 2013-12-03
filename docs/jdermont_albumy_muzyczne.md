@@ -5,11 +5,14 @@
 ### Przeróbka bazy danych i import
 
 Bazę danych albumów muzycznych ściągnąłem z [freedb](http://ftp.freedb.org/pub/freedb/). (plik freedb-complete-20131101.tar.bz2). W środku znajduje się kilkanaście GB. Są to ponad 3 miliony małych plików, [przykład](../data/jdermont/0009e012).
+
 Za pomocą [skryptu](../scripts/jdermont/albumy_muzyczne/) przerobiłem te pliki na jeden json (można znaleźć u mnie na sigmie freedb_json.7z w public_html). Operacja trochę trwała i nie mogłem jej za bardzo przyspieszyć, bo to było dużo małych plików... Skrypt odrzucił ok. 3000 plików ze względu na wadliwe kodowanie.
 
 Import jsona:
-```
+```sh
 mongoimport --db baza --collection freedb freedb.json
+```
+```
 Tue Dec  3 15:18:51.542 check 9 3346273
 Tue Dec  3 15:18:52.082 imported 3346273 objects
 ```
@@ -50,8 +53,10 @@ Przykładowy wpis:
 ### Trochę statystyk
 
 Statystyki bazy:
-```
+```js
 > db.freedb.stats()
+```
+```json
 {
   "ns" : "baza.freedb",
   "count" : 3346273,
@@ -73,14 +78,16 @@ Statystyki bazy:
 ```
 
 Ilość albumów w kolekcji:
-```
+```js
 > db.freedb.count()
 3346273
 ```
 
 Wszystkie utwory we wszystkich albumach:
-```json
+```js
 > db.freedb.aggregate({$project:{"tracks":1}},{$unwind: "$tracks"},{$group:{"_id":"result",count:{$sum:1}}})
+```
+```json
 {
   "result" : [
     {
@@ -93,8 +100,10 @@ Wszystkie utwory we wszystkich albumach:
 ```
 
 Łączna długość utworów (w sekundach):
-```json
+```js
 > db.freedb.aggregate({$group:{_id:"result",length:{$sum: "$length"}}})
+```
+```json
 {
   "result" : [
     {
