@@ -1,0 +1,119 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.662809,  54.403565 ] }, "properties" : { "Stacja paliw Orlen" : "Gdańsk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.11751,  54.32629 ] }, "properties" : { "Stacja paliw Orlen" : "Stegna" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.10635,  54.21281 ] }, "properties" : { "Stacja paliw Orlen" : "Nowy Dwór Gdański" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.01104,  54.03809 ] }, "properties" : { "Stacja paliw Orlen" : "Malbork" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.79051,  54.08686 ] }, "properties" : { "Stacja paliw Orlen" : "Tczew" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.777407,  54.074322 ] }, "properties" : { "Stacja paliw Orlen" : "Tczew" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.68576,  54.17877 ] }, "properties" : { "Stacja paliw Orlen" : "Pszczółki" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.791383,  54.291775 ] }, "properties" : { "Stacja paliw Orlen" : "Koszwały" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.68251,  54.34847 ] }, "properties" : { "Stacja paliw Orlen" : "Gdańsk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.6406,  54.35916 ] }, "properties" : { "Stacja paliw Orlen" : "Gdańsk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.63553,  54.3334 ] }, "properties" : { "Stacja paliw Orlen" : "Gdańsk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.6079,  54.32619 ] }, "properties" : { "Stacja paliw Orlen" : "Gdańsk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.57977,  54.39451 ] }, "properties" : { "Stacja paliw Orlen" : "Gdańsk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.52994,  54.17554 ] }, "properties" : { "Stacja paliw Orlen" : "Trąbki Wielkie" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.2035,  54.24043 ] }, "properties" : { "Stacja paliw Orlen" : "Egiertowo" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.19589,  54.32905 ] }, "properties" : { "Stacja paliw Orlen" : "Kartuzy" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.2054,  54.33015 ] }, "properties" : { "Stacja paliw Orlen" : "Kartuzy" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.36004,  54.34226 ] }, "properties" : { "Stacja paliw Orlen" : "Żukowo" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.477135,  54.380675 ] }, "properties" : { "Stacja paliw Orlen" : "Gdańsk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.45373,  54.54153 ] }, "properties" : { "Stacja paliw Orlen" : "Gdynia" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.42551,  54.55045 ] }, "properties" : { "Stacja paliw Orlen" : "Gdynia" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.42266,  54.56018 ] }, "properties" : { "Stacja paliw Orlen" : "Rumia" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.37933,  54.57634 ] }, "properties" : { "Stacja paliw Orlen" : "Rumia" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.5335,  54.51339 ] }, "properties" : { "Stacja paliw Orlen" : "Gdynia" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.40589,  54.71592 ] }, "properties" : { "Stacja paliw Orlen" : "Puck" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.4054,  54.77592 ] }, "properties" : { "Stacja paliw Orlen" : "Władysławowo" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.18959,  54.61076 ] }, "properties" : { "Stacja paliw Orlen" : "Wejherowo" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.27235,  54.60235 ] }, "properties" : { "Stacja paliw Orlen" : "Wejherowo" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.79721,  54.55172 ] }, "properties" : { "Stacja paliw Orlen" : "Lębork" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.1183,  54.78674 ] }, "properties" : { "Stacja paliw Orlen" : "Odargowo" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.74315,  54.53233 ] }, "properties" : { "Stacja paliw Orlen" : "Lębork" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.889182,  54.350071 ] }, "properties" : { "Stacja paliw Orlen" : "Sierakowice" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.04061,  54.46524 ] }, "properties" : { "Stacja paliw Orlen" : "Słupsk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.02624,  54.47686 ] }, "properties" : { "Stacja paliw Orlen" : "Słupsk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.96817,  54.45112 ] }, "properties" : { "Stacja paliw Orlen" : "Kobylnica" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.99288,  54.45748 ] }, "properties" : { "Stacja paliw Orlen" : "Słupsk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.86227,  54.58068 ] }, "properties" : { "Stacja paliw Orlen" : "Ustka" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.36308,  54.61265 ] }, "properties" : { "Stacja paliw Orlen" : "Główczyce" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.55784,  54.75084 ] }, "properties" : { "Stacja paliw Orlen" : "Łeba" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.83994,  53.9016 ] }, "properties" : { "Stacja paliw Orlen" : "Biały Bór" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.48575,  54.18691 ] }, "properties" : { "Stacja paliw Orlen" : "Bytów" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.49779,  54.18072 ] }, "properties" : { "Stacja paliw Orlen" : "Bytów" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.3449,  53.6584 ] }, "properties" : { "Stacja paliw Orlen" : "Człuchów" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.584011,  53.697866 ] }, "properties" : { "Stacja paliw Orlen" : "Chojnice" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.579268,  53.707971 ] }, "properties" : { "Stacja paliw Orlen" : "Chojnice" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.98313,  53.797 ] }, "properties" : { "Stacja paliw Orlen" : "Czersk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.71543,  53.88003 ] }, "properties" : { "Stacja paliw Orlen" : "Brusy" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.96404,  54.11651 ] }, "properties" : { "Stacja paliw Orlen" : "Kościerzyna" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.31618,  53.92955 ] }, "properties" : { "Stacja paliw Orlen" : "Zblewo" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.51451,  53.791886 ] }, "properties" : { "Stacja paliw Orlen" : "Skórcz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.540909,  53.958207 ] }, "properties" : { "Stacja paliw Orlen" : "Starogard Gdański" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.5441,  53.9705 ] }, "properties" : { "Stacja paliw Orlen" : "Starogard Gdański" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.81892,  53.83276 ] }, "properties" : { "Stacja paliw Orlen" : "Gniew" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.04468,  53.9144 ] }, "properties" : { "Stacja paliw Orlen" : "Sztum" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.94309,  53.71649 ] }, "properties" : { "Stacja paliw Orlen" : "Kwidzyn" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.209648,  53.754585 ] }, "properties" : { "Stacja paliw Orlen" : "Prabuty" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Polygon", "coordinates" : [[[16.804190,54.821840], [19.247510,54.821840], [19.247510,53.644500], [16.804190,53.644500], [16.804190,54.821840]]] }, "properties" : { "Województwo" : "Pomorskie" } }
+]
+}
