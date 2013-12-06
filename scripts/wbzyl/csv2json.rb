@@ -34,7 +34,12 @@ def handle_csv(row)
   hash = Hash.new
 
   hash["_id"] = row[0].to_i
-  hash["title"] = Nokogiri::HTML(row[1]).text.gsub(/\s+/m, ' ').strip
+  hash["title"] = Nokogiri::HTML(row[1]).
+    text.
+    gsub(/[0-9]+/m, ' n ').
+    gsub(/\s+/m, ' ').
+    strip.
+    downcase
 
   # sanitize answers
   #   or use
@@ -46,15 +51,18 @@ def handle_csv(row)
   # node.search('img').each {|n| n.remove }
   # hash["body"] = node.to_s
 
-  text = node.text.
+  body = node.text.
     gsub(/https?:[^ ]+/, ' '). # remove normal url
+    gsub(/[0-9]+/m, ' n ').    # spell numbers as n
     gsub(/\s+/m, ' ').
     strip.
     downcase
+  
+  text = hash["title"] + " " + body
   hash["body"] = text
 
   words = text.
-    scan(/[-[:word:]]+/).
+    scan(/[[:word:]]+-?[[:word:]]*/).
     reject! { |w| STOP.include?(w) }.
     to_a.sort
   hash["words"] = words
