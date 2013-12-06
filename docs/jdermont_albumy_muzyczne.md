@@ -50,6 +50,8 @@ Przykładowy wpis:
 }
 ```
 
+TODO: importowanie w ElasticSearch
+
 ### Trochę statystyk
 
 Statystyki bazy:
@@ -116,6 +118,40 @@ Wszystkie utwory we wszystkich albumach:
 ```
 10914094143 sekund czyli nieco ponad 346 lat. Z powyższych danych wynika, że utwór trwa średnio 3:56.
 
-### To be continued
+### Agregacje w Mongo
 
-ElasticSearch, agregacje, wykresy, obrazki.
+Ilość albumów o określonych gatunkach:
+```js
+db.freedb.aggregate({$group:{_id:"$genre",total:{$sum: 1}}},{$sort:{total:-1}},{$limit:10})
+```
+
+Procentowy udział gatunków muzycznych:
+
+![gatunki](../images/jdermont/gatunki.png)
+
+
+Średnia długość utworów w poszczególnych latach:
+```js
+function average(begin,end) {
+  tracks_number = 0;
+  tracks_length = 0;
+  db.freedb.find({"year":{$gte:begin,$lt:end}}).forEach( function(Doc) { tracks_number += Doc.tracks.length; tracks_length += Doc.length })
+  return tracks_length / tracks_number;
+}
+```
+```js
+> average(1920,1940)
+> average(1940,1960)
+> average(1960,1980)
+> average(1980,2000)
+> average(2000,2014)
+```
+
+Średnia długość utworów:
+
+![dlugosci](../images/jdermont/dlugosc.png)
+
+
+### Agregacje w ElasticSearch
+
+TODO: dalej
