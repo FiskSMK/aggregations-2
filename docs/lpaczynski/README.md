@@ -144,7 +144,7 @@ db.text8.aggregate(
  ```
  ![Image](../../images/lpaczynski/avg.png)
 <h3><b>e)</b></h3>
-<p>Do rozwiązania zadania użyłem danych znajdujących się pod tym linkiem(http://www.poipoint.pl).</p>
+<p>Do rozwiązania zadania użyłem danych znajdujących się pod tym linkiem (http://www.poipoint.pl).</p>
 [Baza](/data/lpaczynski/Szkolywyzsze.json) zawiera dane dotyczące szkół wyższych w Polsce.
 
 <p>Import do mongo</p>
@@ -162,4 +162,34 @@ db.text8.aggregate(
   <b>Warszawa 52.259, 21.020</b>
   
 ## Zapytania
- 
+
+#### Szkoły wyższe w odległości do 10km od Gdańska:
+ ```js
+ db.schools.find( { loc : { $near :
+                         { $geometry :
+                             { type : "Point" ,
+                               coordinates: [ 18.639, 54.360 ] } },
+                           $maxDistance : 10000
+              } }, { _id: 0 } )
+ ```
+#### Rezultat: [JSON](../../data/lpaczynski/zapytanie_Gdansk.json)
+#### Szkoły wyższe w odległości do 10km od Łodzi:
+ ```js
+ db.schools.find( { loc : { $near :
+                         { $geometry :
+                             { type : "Point" ,
+                               coordinates: [ 19.466, 51.783 ] } },
+                           $maxDistance : 10000
+              } }, { _id: 0 } )
+ ```
+#### Rezultat: [JSON](../../data/lpaczynski/zapytanie_Lodz.json)
+#### Szkoły wyższe w odległości do 10km od Warszawy:
+ ```js
+ db.schools.find( { loc : { $near :
+                         { $geometry :
+                             { type : "Point" ,
+                               coordinates: [ 21.020, 52.259 ] } },
+                           $maxDistance : 10000
+              } }, { _id: 0 } )
+ ```
+#### Rezultat: [JSON](../../data/lpaczynski/zapytanie_Warszawa.json)
