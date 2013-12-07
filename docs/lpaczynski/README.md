@@ -149,17 +149,20 @@ db.text8.aggregate(
 
 <p>Import do mongo</p>
  ```bash
- mongoimport -d geo -c schools --type csv --headerline --file Szkolywyzsze.csv
+ mongoimport -d geo -c schools < Szkolywyzsze.json
  ```
  <p>Rekordy:</p>
  ```js
  db.schools.count()
  
- Rezultat: 235
+ Rezultat: 133
  ```
+ 
+ ![Image](../../images/lpaczynski/zadanie1e.png)
+ 
  <p>Wszystkie szkoły wyższe znajdujące się w Gdańsku</p>
  ```js
- db.schools.find({miasto: /Gda/}, {_id: 0}).count()
+ db.schools.find({city: /Gda/}, {_id: 0}).count()
  
  Rezultat: 10
  ```
