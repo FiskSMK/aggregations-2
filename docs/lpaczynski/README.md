@@ -145,24 +145,21 @@ db.text8.aggregate(
  ![Image](../../images/lpaczynski/avg.png)
 <h3><b>e)</b></h3>
 <p>Do rozwiązania zadania użyłem danych znajdujących się pod tym linkiem(http://www.poipoint.pl).</p>
-[Baza](/data/lpaczynski/Szkolywyzsze.csv) zawiera dane dotyczące szkół wyższych w Polsce.
+[Baza](/data/lpaczynski/Szkolywyzsze.json) zawiera dane dotyczące szkół wyższych w Polsce.
 
 <p>Import do mongo</p>
  ```bash
  mongoimport -d geo -c schools < Szkolywyzsze.json
  ```
- <p>Rekordy:</p>
- ```js
- db.schools.count()
- 
- Rezultat: 133
- ```
  
  ![Image](../../images/lpaczynski/zadanie1e.png)
  
- <p>Wszystkie szkoły wyższe znajdujące się w Gdańsku</p>
- ```js
- db.schools.find({city: /Gda/}, {_id: 0}).count()
+## Koordynaty miast:
+  <b>Gdańsk 54.360, 18.639</b>
+  
+  <b>Łódź 51.783, 19.466</b>
+  
+  <b>Warszawa 52.259, 21.020</b>
+  
+## Zapytania
  
- Rezultat: 10
- ```
