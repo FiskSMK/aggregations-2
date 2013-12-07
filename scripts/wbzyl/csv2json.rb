@@ -62,8 +62,8 @@ def handle_csv(row)
   hash["body"] = text
 
   words = text.
-    scan(/[[:word:]]+-?[[:word:]]*/).
-    reject! { |w| STOP.include?(w) }.
+    scan(/\.?[[:word:]]+[-#]?[[:word:]]*/).
+    reject! { |w| STOP.include?(w) && w != "r" }. # but include R language
     to_a.sort
   hash["words"] = words
 
