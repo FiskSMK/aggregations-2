@@ -1,0 +1,32 @@
+{
+
+"type": "FeatureCollection",
+                                                                                
+
+"features": [
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.003112,  52.246511 ] }, "name" : "Szkoly wyzsze" : "Warszawa" }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.981735,  52.243953 ] }, "name" : "Szkoly wyzsze" : "Warszawa" }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.012912,  52.222383 ] }, "name" : "Szkoly wyzsze" : "Warszawa" }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.007984,  52.222374 ] }, "name" : "Szkoly wyzsze" : "Warszawa" }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.007198,  52.221449 ] }, "name" : "Szkoly wyzsze" : "Warszawa" }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.006234,  52.221386 ] }, "name" : "Szkoly wyzsze" : "Warszawa" }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.01064,  52.22047 ] }, "name" : "Szkoly wyzsze" : "Warszawa" }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.007454,  52.220718 ] }, "name" : "Szkoly wyzsze" : "Warszawa" }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.005423,  52.220938 ] }, "name" : "Szkoly wyzsze" : "Warszawa" }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.009581,  52.219785 ] }, "name" : "Szkoly wyzsze" : "Warszawa" }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.003486,  52.220499 ] }, "name" : "Szkoly wyzsze" : "Warszawa" }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.89982,  52.25311 ] }, "name" : "Szkoly wyzsze" : "Warszawa" }
+]
+
+}
