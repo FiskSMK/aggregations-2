@@ -10,14 +10,13 @@ db.so.find().forEach(function (doc) {
 
   for (word in freq) { 
     var n = db.idf.find({_id: word}).count();
-    var tdidf = freq[word]/max * Math.LOG2E * Math.log(N/n);
-
-    doc.tdidf[word] = tdidf;
+    // skip infrequent words
+    if (n > 40) {
+      doc.tdidf[word] = freq[word]/max * Math.LOG2E * Math.log(N/n);;
+    }
   }
   delete doc.freq;
   delete doc.max;
-
   // printjson(doc);
   db.tdidf.insert(doc);
-
 });
