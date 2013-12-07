@@ -172,7 +172,7 @@ db.text8.aggregate(
                            $maxDistance : 10000
               } }, { _id: 0 } )
  ```
-#### Rezultat: [JSON](../../data/lpaczynski/zapytanie_Gdansk.json)
+#### Rezultat: [JSON](../../data/lpaczynski/zapytanie_Gdansk.json), [GeoJson](../../data/lpaczynski/zapytanie_Gdansk.geojson)
 #### Szkoły wyższe w odległości do 10km od Łodzi:
  ```js
  db.schools.find( { loc : { $near :
@@ -182,7 +182,7 @@ db.text8.aggregate(
                            $maxDistance : 10000
               } }, { _id: 0 } )
  ```
-#### Rezultat: [JSON](../../data/lpaczynski/zapytanie_Lodz.json)
+#### Rezultat: [JSON](../../data/lpaczynski/zapytanie_Lodz.json), [GeoJson](../../data/lpaczynski/zapytanie_Lodz.geojson)
 #### Szkoły wyższe w odległości do 10km od Warszawy:
  ```js
  db.schools.find( { loc : { $near :
@@ -192,4 +192,4 @@ db.text8.aggregate(
                            $maxDistance : 10000
               } }, { _id: 0 } )
  ```
-#### Rezultat: [JSON](../../data/lpaczynski/zapytanie_Warszawa.json)
+#### Rezultat: [JSON](../../data/lpaczynski/zapytanie_Warszawa.json), [GeoJson](../../data/lpaczynski/zapytanie_Warszawa.geojson)
