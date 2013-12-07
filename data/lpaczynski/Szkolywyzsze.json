@@ -130,5 +130,5 @@
 { "loc" : {"type" : "Point", "coordinates" : [19.906540,50.070328] }, "name" : "Szkoly wyzsze", "city" : "Krakow" }
 { "loc" : {"type" : "Point", "coordinates" : [19.026389,50.261309] }, "name" : "Szkoly wyzsze", "city" : "Katowice" }
 { "loc" : {"type" : "Point", "coordinates" : [19.601187,49.746031] }, "name" : "Szkoly wyzsze", "city" : "Sucha Beskidzka" }
-{ "loc" : {"type" : "Point", "coordinates" : [21.987247,50.019356] }, "name" : "Szkoly wyzsze", "city" : "Rzeszo³w" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.987247,50.019356] }, "name" : "Szkoly wyzsze", "city" : "Rzeszow" }
 { "loc" : {"type" : "Point", "coordinates" : [14.558638,52.348558] }, "name" : "Szkoly wyzsze", "city" : "Slubice" }
