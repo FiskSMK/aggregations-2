@@ -1,0 +1,25 @@
+{
+"type": "FeatureCollection",
+
+"features": [
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.64655,  54.35888 ] }, "properties" : { "Szkoly wyzsze" : "Gdansk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.641363,  54.344544 ] }, "properties" : { "Szkoly wyzsze" : "Gdansk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.61928,  54.37175 ] }, "properties" : { "Szkoly wyzsze" : "Gdansk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.64828,  54.34317 ] }, "properties" : { "Szkoly wyzsze" : "Gdansk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.61508,  54.37724 ] }, "properties" : { "Szkoly wyzsze" : "Gdansk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.623429,  54.38202 ] }, "properties" : { "Szkoly wyzsze" : "Gdansk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.63293,  54.331577 ] }, "properties" : { "Szkoly wyzsze" : "Gdansk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.57193,  54.3999 ] }, "properties" : { "Szkoly wyzsze" : "Gdansk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.73328,  54.37166 ] }, "properties" : { "Szkoly wyzsze" : "Gdansk" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  18.571399,  54.416719 ] }, "properties" : { "Szkoly wyzsze" : "Gdansk" } }
+]
+}

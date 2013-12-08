@@ -86,7 +86,7 @@ db.text8.aggregate(
  ```js
  Rezultat: 1061396
  Stanowi: 6,24%
- Czas: 23 sekund
+ Czas: 23 sekundy
  ```
 <p>10 najczęściej występujących słów</p>
  ```js
@@ -149,17 +149,45 @@ db.text8.aggregate(
 
 <p>Import do mongo</p>
  ```bash
- mongoimport -d geo -c schools --type csv --headerline --file Szkolywyzsze.csv
+ mongoimport -d geo -c schools < Szkolywyzsze.json
  ```
- <p>Rekordy:</p>
- ```js
- db.schools.count()
  
- Rezultat: 235
- ```
- <p>Wszystkie szkoły wyższe znajdujące się w Gdańsku</p>
+## Koordynaty miast:
+  <b>Gdańsk 54.360, 18.639</b>
+  
+  <b>Łódź 51.783, 19.466</b>
+  
+  <b>Warszawa 52.259, 21.020</b>
+  
+## Zapytania
+
+#### Szkoły wyższe w odległości do 10km od Gdańska:
  ```js
- db.schools.find({miasto: /Gda/}, {_id: 0}).count()
- 
- Rezultat: 10
+ db.schools.find( { loc : { $near :
+                         { $geometry :
+                             { type : "Point" ,
+                               coordinates: [ 18.639, 54.360 ] } },
+                           $maxDistance : 10000
+              } }, { _id: 0 } )
  ```
+#### Rezultat: [JSON](../../data/ppuchalski/zapytanie_Gdansk.json), [GeoJson](../../data/ppuchalski/zapytanie_Gdansk.geojson)
+#### Szkoły wyższe w odległości do 10km od Łodzi:
+ ```js
+ db.schools.find( { loc : { $near :
+                         { $geometry :
+                             { type : "Point" ,
+                               coordinates: [ 19.466, 51.783 ] } },
+                           $maxDistance : 10000
+              } }, { _id: 0 } )
+ ```
+#### Rezultat: [JSON](../../data/ppuchalski/zapytanie_Lodz.json), [GeoJson](../../data/ppuchalski/zapytanie_Lodz.geojson)
+#### Szkoły wyższe w odległości do 10km od Warszawy:
+ ```js
+ db.schools.find( { loc : { $near :
+                         { $geometry :
+                             { type : "Point" ,
+                               coordinates: [ 21.020, 52.259 ] } },
+                           $maxDistance : 10000
+              } }, { _id: 0 } )
+ ```
+#### Rezultat: [JSON](../../data/ppuchalski/zapytanie_Warszawa.json), [GeoJson](../../data/ppuchalski/zapytanie_Warszawa.geojson)
