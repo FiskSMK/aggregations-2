@@ -1,14 +1,21 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    mini_portile (0.5.1)
+    bson (1.9.2)
+    bson_ext (1.9.2)
+      bson (~> 1.9.2)
+    mini_portile (0.5.2)
+    mongo (1.9.2)
+      bson (~> 1.9.2)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
-    oj (2.1.6)
+    oj (2.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  bson_ext (~> 1.9.2)
+  mongo (~> 1.9.2)
   nokogiri (~> 1.6.0)
-  oj (~> 2.1.6)
+  oj (~> 2.3.0)
