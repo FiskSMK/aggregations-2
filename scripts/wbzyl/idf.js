@@ -3,7 +3,8 @@
 // Array.unique – http://api.mongodb.org/js/current/index.html
 
 m = function() {
-  Array.unique(this.words).forEach(function(word) {
+  // Array.unique(this.words).forEach(function(word) {
+  this.words.forEach(function(word) {
     emit(word, 1);
   });
 };
