@@ -66,8 +66,7 @@ def handle_csv(row)
     # but include R and C languages
     reject! { |w| STOP.include?(w) && w != "r" && w != "c" }.
     to_a.sort
-  hash["words"] = words
-
+ 
   max = 0
   hash["freq"] = words.inject(Hash.new(0)) do |h,v| 
     h[v] += 1
@@ -80,6 +79,8 @@ def handle_csv(row)
   #     max = ws.size if ws.size > max
   #     [w, ws.size]
   #   end
+
+  hash["words"] = words.uniq!
 
   hash["tags"] = row[3].split(/\s+/).map(&:downcase) if row[3]
   hash["rnd"] = Random.rand
