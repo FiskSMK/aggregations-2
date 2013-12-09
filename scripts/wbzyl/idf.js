@@ -1,10 +1,10 @@
 // for each word compute inverse document frequencies
 
 // Array.unique – http://api.mongodb.org/js/current/index.html
+// Array.unique(this.words).forEach(function(word) {
 
 m = function() {
-  // Array.unique(this.words).forEach(function(word) {
-  this.words.forEach(function(word) {
+  Array(this.words).forEach(function(word) {
     emit(word, 1);
   });
 };

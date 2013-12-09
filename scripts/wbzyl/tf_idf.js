@@ -1,4 +1,3 @@
-
 db.tfidf.drop();
 
 var N = db.so.count();
@@ -9,10 +8,10 @@ db.so.find().forEach(function (doc) {
   doc.tfidf = {};
 
   for (word in freq) { 
-    var n = db.idf.find({_id: word}).count();
+    var n = db.idf.find({_id: word});
     // skip infrequent words
-    if (n > 40) {
-      doc.tfidf[word] = freq[word]/max * Math.LOG2E * Math.log(N/n);;
+    if (n.value > 44) {
+      doc.tfidf[word] = freq[word]/max * Math.LOG2E * Math.log(N/n.value);;
     }
   }
   delete doc.freq;
