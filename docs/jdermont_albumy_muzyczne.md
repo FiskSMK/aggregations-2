@@ -4,6 +4,7 @@
 
 ### Przeróbka bazy danych i import
 
+##### Mongodb
 Bazę danych albumów muzycznych ściągnąłem z [freedb](http://ftp.freedb.org/pub/freedb/). (plik freedb-complete-20131101.tar.bz2). W środku znajduje się kilkanaście GB. Są to ponad 3 miliony małych plików, [przykład](../data/jdermont/0009e012).
 
 Za pomocą [skryptu](../scripts/jdermont/albumy_muzyczne/) przerobiłem te pliki na jeden json (można znaleźć u mnie na sigmie freedb_json.7z w public_html). Operacja trochę trwała i nie mogłem jej za bardzo przyspieszyć, bo to było dużo małych plików... Skrypt odrzucił ok. 3000 plików ze względu na wadliwe kodowanie.
@@ -50,7 +51,36 @@ Przykładowy wpis:
 }
 ```
 
-### Trochę statystyk
+##### ElasticSearch
+Przygotowanie przeplatanego jsona:
+```sh
+jq --compact-output '{ "index" : { "_type" : "album" } }, .' freedb.json > freedb_es.json
+```
+Próba zaimportowania, zakończona fiaskiem. Program się wykrzaczył, prawdopodobnie za mało RAMu.
+```sh
+curl -s -XPOST localhost:9200/albums/_bulk --data-binary @freedb_es.json; echo
+```
+Podzielenie pliku na 100000 linii czyli 50000 wpisów na każdy plik:
+```sh
+split -l 100000 freedb_es.json
+```
+I import, zakończony sukcesem:
+```sh
+for i in x*; do curl -s -XPOST   localhost:9200/albums/_bulk --data-binary @$i; done
+```
+Sprawdzenie ile wpisów zostało zaimportowanyh:
+```sh
+curl -XGET 'http://localhost:9200/albums/album/_count'; echo
+```
+```json
+{"count":3346273,"_shards":{"total":5,"successful":5,"failed":0}}
+```
+
+Sprawdzenie w przeglądarce, czy wszystko OK (zainstalowany plugin ElasticSearch-Head):
+
+![elasticSearch](../images/jdermont/elastic.png)
+
+### Trochę statystyk (Mongodb)
 
 Statystyki bazy:
 ```js
@@ -116,6 +146,40 @@ Wszystkie utwory we wszystkich albumach:
 ```
 10914094143 sekund czyli nieco ponad 346 lat. Z powyższych danych wynika, że utwór trwa średnio 3:56.
 
-### To be continued
+### Agregacje w Mongodb
 
-ElasticSearch, agregacje, wykresy, obrazki.
+Ilość albumów o określonych gatunkach:
+```js
+db.freedb.aggregate({$group:{_id:"$genre",total:{$sum: 1}}},{$sort:{total:-1}},{$limit:10})
+```
+
+Procentowy udział gatunków muzycznych:
+
+![gatunki](../images/jdermont/gatunki.png)
+
+
+Średnia długość utworów w poszczególnych latach:
+```js
+function average(begin,end) {
+  tracks_number = 0;
+  tracks_length = 0;
+  db.freedb.find({"year":{$gte:begin,$lt:end}}).forEach( function(Doc) { tracks_number += Doc.tracks.length; tracks_length += Doc.length })
+  return tracks_length / tracks_number;
+}
+```
+```js
+> average(1920,1940)
+> average(1940,1960)
+> average(1960,1980)
+> average(1980,2000)
+> average(2000,2014)
+```
+
+Średnia długość utworów:
+
+![dlugosci](../images/jdermont/dlugosc.png)
+
+
+### Agregacje w ElasticSearch
+
+To be continued.
