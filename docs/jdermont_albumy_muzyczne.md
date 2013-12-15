@@ -4,6 +4,7 @@
 
 ### Przeróbka bazy danych i import
 
+##### Mongodb
 Bazę danych albumów muzycznych ściągnąłem z [freedb](http://ftp.freedb.org/pub/freedb/). (plik freedb-complete-20131101.tar.bz2). W środku znajduje się kilkanaście GB. Są to ponad 3 miliony małych plików, [przykład](../data/jdermont/0009e012).
 
 Za pomocą [skryptu](../scripts/jdermont/albumy_muzyczne/) przerobiłem te pliki na jeden json (można znaleźć u mnie na sigmie freedb_json.7z w public_html). Operacja trochę trwała i nie mogłem jej za bardzo przyspieszyć, bo to było dużo małych plików... Skrypt odrzucił ok. 3000 plików ze względu na wadliwe kodowanie.
@@ -50,9 +51,36 @@ Przykładowy wpis:
 }
 ```
 
-TODO: importowanie w ElasticSearch
+##### ElasticSearch
+Przygotowanie przeplatanego jsona:
+```sh
+jq --compact-output '{ "index" : { "_type" : "album" } }, .' freedb.json > freedb_es.json
+```
+Próba zaimportowania, zakończona fiaskiem. Program się wykrzaczył, prawdopodobnie za mało RAMu.
+```sh
+curl -s -XPOST localhost:9200/albums/_bulk --data-binary @freedb_es.json; echo
+```
+Podzielenie pliku na 100000 linii czyli 50000 wpisów na każdy plik:
+```sh
+split -l 100000 freedb_es.json
+```
+I import, zakończony sukcesem:
+```sh
+for i in x*; do curl -s -XPOST   localhost:9200/albums/_bulk --data-binary @$i; done
+```
+Sprawdzenie ile wpisów zostało zaimportowanyh:
+```sh
+curl -XGET 'http://localhost:9200/albums/album/_count'; echo
+```
+```json
+{"count":3346273,"_shards":{"total":5,"successful":5,"failed":0}}
+```
 
-### Trochę statystyk
+Sprawdzenie w przeglądarce, czy wszystko OK (zainstalowany plugin ElasticSearch-Head):
+
+![elasticSearch](../images/jdermont/elastic.png)
+
+### Trochę statystyk (Mongodb)
 
 Statystyki bazy:
 ```js
@@ -118,7 +146,7 @@ Wszystkie utwory we wszystkich albumach:
 ```
 10914094143 sekund czyli nieco ponad 346 lat. Z powyższych danych wynika, że utwór trwa średnio 3:56.
 
-### Agregacje w Mongo
+### Agregacje w Mongodb
 
 Ilość albumów o określonych gatunkach:
 ```js
@@ -154,4 +182,4 @@ function average(begin,end) {
 
 ### Agregacje w ElasticSearch
 
-TODO: dalej
+To be continued.
