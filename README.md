@@ -1,4 +1,4 @@
-﻿# Agregacje 2
+# Agregacje 2
 
 ![Data Wranglers](/images/data-wrangler.jpg)
 
@@ -62,6 +62,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Skiba, Marek](/docs/mskiba/README.md).
 1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md).
 1. [Smykowski, Adrian](/docs/asmykowski/README.md).
+1. [Sott, Tomasz](/docs/tsott/README.md).
 1. [Stefanowicz, Michał](/docs/mstefanowicz.md).
 1. [Szygenda, Mateusz](/docs/mszygenda.md).
 1. [Tomczak, Robert](/docs/rtomczak/README.md).
@@ -85,7 +86,6 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Ostrowski, Michał.
 1. Pietraszuk, Bartłomiej.
 1. Rogaszewski, Piotr.
-1. Sott, Tomasz.
 1. Wiśniewski, Piotr.
 1. Żarkowski, Mateusz.
 
