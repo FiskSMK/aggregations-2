@@ -13,15 +13,15 @@ require "oj"
 require "csv"
 
 # http://www.ruby-doc.org/ruby-1.9/classes/Logger.html
-require 'logger'
-logger = Logger.new(STDERR)
-logger.level = Logger::INFO  # set the default level: INFO, WARN
+# require 'logger'
+# logger = Logger.new(STDERR)
+# logger.level = Logger::INFO  # set the default level: INFO, WARN
 
 # English stopwords from Tracker, http://projects.gnome.org/tracker/
 # GitHub: git clone git://git.gnome.org/tracker ; cd data/languages/
 
-STOP = IO.read('stopwords.en').split("\n")
-logger.info "liczba wczytanych stopwords: #{STOP.length}"
+# STOP = IO.read('stopwords.en').split("\n")
+# logger.info "liczba wczytanych stopwords: #{STOP.length}"
 
 unless ARGV.any?
   puts "Usage: ./csv2json.rb CSV_FILE > FILE"
@@ -34,56 +34,39 @@ def handle_csv(row)
   hash = Hash.new
 
   hash["_id"] = row[0].to_i
-  hash["title"] = Nokogiri::HTML(row[1]).
+
+  title = Nokogiri::HTML(row[1]).
     text.
-    gsub(/[0-9]+/m, ' n ').
-    gsub(/\s+/m, ' ').
+    gsub(/[[:space:]]+/m, ' ').
     strip.
     downcase
 
-  # sanitize answers
-  #   or use
-  # https://github.com/rgrove/sanitize
-
-  node = Nokogiri::HTML(row[2])
-  node.search('pre').each {|n| n.remove }
-  node.search('code').each {|n| n.remove }
-  # node.search('img').each {|n| n.remove }
-  # hash["body"] = node.to_s
-
-  body = node.text.
-    gsub(/https?:[^ ]+/, ' '). # remove normal url
-    gsub(/[0-9]+/m, ' n ').    # spell numbers as n
-    gsub(/\s+/m, ' ').
+  body = Nokogiri::HTML(row[2]).text.
+    # gsub(/https?:[^ ]+/, ' '). # remove normal url
+    # gsub(/[0-9]+/m, ' n ').    # spell numbers as n
+    gsub(/[[:space:]]+/m, ' ').
     strip.
     downcase
   
-  text = hash["title"] + " " + body
-  hash["body"] = text
+  hash["title"] = title
+  hash["body"] = body
 
-  words = text.
-    scan(/\.?[[:word:]]+[-#]?[[:word:]]*/).
-    # but include R and C languages
-    reject! { |w| STOP.include?(w) && w != "r" && w != "c" }.
-    to_a.sort
+  words = (body + " " + title).split(" ").to_a.sort
  
-  max = 0
-  hash["freq"] = words.inject(Hash.new(0)) do |h,v| 
-    h[v] += 1
-    max = h[v] if h[v] > max
-    h
+  tf = Hash.new(0)
+  words.each do |word| 
+    tf[word] += 1
   end
-  hash["max"] = max
-  # words.group_by{ |w| w }.
-  #   map do |w, ws| 
-  #     max = ws.size if ws.size > max
-  #     [w, ws.size]
-  #   end
+  max = tf.values.max.to_f
 
-  hash["words"] = words.uniq!
+  tf.each do |k,v| 
+    tf[k] = v/max
+  end
+  
+  hash["tf"] = tf
 
-  hash["tags"] = row[3].split(/\s+/).map(&:downcase) if row[3]
-  hash["rnd"] = Random.rand
+  # hash["tags"] = row[3].split(/\s+/).map(&:downcase) if row[3]
+  hash["tags"] = row[3].split(" ") if row[3]
 
   return Oj.dump(hash)
 end
