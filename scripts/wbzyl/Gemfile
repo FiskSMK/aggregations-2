@@ -1,10 +1,6 @@
 source "https://rubygems.org"
 
 gem "nokogiri", "~> 1.6.1"
-<<<<<<< HEAD
-gem "oj",       "~> 2.4.3"
-=======
 gem "oj",       "~> 2.5.1"
->>>>>>> 0369c1fcbbf32c465ecfde123b896a5d01903902
 gem "mongo",    "~> 1.9.2"
 gem "bson_ext", "~> 1.9.2"
