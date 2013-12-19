@@ -9,7 +9,11 @@ GEM
       bson (~> 1.9.2)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+<<<<<<< HEAD
     oj (2.4.3)
+=======
+    oj (2.5.1)
+>>>>>>> 0369c1fcbbf32c465ecfde123b896a5d01903902
 
 PLATFORMS
   ruby
@@ -18,4 +22,8 @@ DEPENDENCIES
   bson_ext (~> 1.9.2)
   mongo (~> 1.9.2)
   nokogiri (~> 1.6.1)
+<<<<<<< HEAD
   oj (~> 2.4.3)
+=======
+  oj (~> 2.5.1)
+>>>>>>> 0369c1fcbbf32c465ecfde123b896a5d01903902
