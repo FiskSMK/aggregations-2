@@ -6,11 +6,11 @@
 
 * [Dane](#dane)
 * [MongoDB](#mongodb)
-    * [Import](#import)
-    * [Aggregacje](#aggregacje)
-        * [Aggregacja 1](#aggregacja-1)
-        * [Aggregacja 2](#aggregacja-2)
-    * [Wyniki z MMS](#wyniki-z-mongodb-management-service)
+    * [Import](#mongodb-import)
+    * [Aggregacje](#mongodb-aggregacje)
+        * [Aggregacja 1](#mongodb-aggregacja-1)
+        * [Aggregacja 2](#mongodb-aggregacja-2)
+    * [Wyniki z MMS](#mongodb-wyniki-z-mongodb-management-service)
 * Elasticsearch
     * Przygotowanie danych
     * Import
@@ -52,7 +52,7 @@ Przykładowy dokument `json`:
 
 #MongoDB
 
-##Import
+##MongoDB: Import
 
 Po ściągnięciu danych rozkapowujemy je:
 
@@ -103,9 +103,9 @@ switched to db imdb
 
 ***
 
-##Aggregacje
+##MongoDB: Aggregacje
 
-###Aggregacja 1
+###MongoDB: Aggregacja 1
 
 ***Ile jest różnych akcji?***
 
@@ -163,7 +163,7 @@ sys   0m0.012s
 
 ***
 
-###Aggregacja 2
+###MongoDB: Aggregacja 2
 
 ***Jakie jest 10 najpopularniejszych filmów i przedstawień TV?***
 
@@ -221,7 +221,7 @@ sys   0m0.016s
 
 ***
 
-##Wyniki z MongoDB Management Service
+##MongoDB: Wyniki z MongoDB Management Service
 
 ####Import
 
