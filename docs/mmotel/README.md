@@ -2,8 +2,8 @@
 
 ###Rozwiązania:
 
-* [Zadanie 2 - MongoDB](./zadanie2.md)
-* [Zadanie 2 - Elasticsearch](./zadanie2.md)
+* [Zadanie 2 - MongoDB](./zadanie2.md#mongodb)
+* [Zadanie 2 - Elasticsearch](./zadanie2.md#elasticsearch)
 
 ***
 
