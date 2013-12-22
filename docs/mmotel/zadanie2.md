@@ -4,7 +4,7 @@
 
 ###Spis treści:
 
-* Dane
+* [Dane](#dane)
 * MongoDB
     * Import
     * Aggregacje
@@ -20,7 +20,7 @@
 
 ***
 
-##Dane
+#Dane
 
 [GetGlue and Timestamped Event Data](http://getglue-data.s3.amazonaws.com/getglue_sample.tar.gz) (ok. `11 GB`, `19 831 300` json-ów, próbka 100 jsonów [getglue101](https://github.com/nosql/aggregations-2/blob/master/data/wbzyl/getglue101.json)). Są to dane z [IMDB](http://www.imdb.com/) z lat 2007–2012, tylko filmy i przedstawienia TV. 
 
