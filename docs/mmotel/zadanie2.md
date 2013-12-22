@@ -1,5 +1,7 @@
 #*Mateusz Motel*
 
+##***Zadanie 2***
+
 ###Spis treści:
 
 * Dane
@@ -8,7 +10,7 @@
     * Aggregacje
         * Aggregacja 1
         * Aggregacja 2
-    * #Wyniki z MMS
+    * Wyniki z MMS
 * Elasticsearch
     * Przygotowanie danych
     * Import
