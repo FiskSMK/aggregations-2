@@ -384,7 +384,7 @@ Aggregacja ma policzyć ile akcji wykonał każdy z użytkowników i zwrócić d
 }
 ```
 
-Skrypt: [tutaj](../../scripts/mmote/2-es/facets-1.sh).
+Skrypt: [tutaj](../../scripts/mmotel/2-es/facets-1.sh).
 
 ####Wynik
 
