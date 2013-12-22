@@ -225,14 +225,14 @@ sys   0m0.016s
 
 ####Import
 
-![mms-results](./images/2-mongo-import-mms.png)
+![mms-results](../../images/mmotel/2-mongo-import-mms.png)
 
 ####Aggregacja 1
 
-![mms-results](./images/2-mongo-agg-1-mms.png)
+![mms-results](../../images/mmotel/2-mongo-agg-1-mms.png)
 
 ####Aggregacja 2
 
-![mms-results](./images/2-mongo-agg-2-mms.png)
+![mms-results](../../images/mmotel/2-mongo-agg-2-mms.png)
 
 ***
