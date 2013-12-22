@@ -14,8 +14,8 @@
 * [Elasticsearch](#elasticsearch)
     * [Przygotowanie danych](#es-przygotowanie-danych-do-importu)
     * [Import](#es-import)
-    * Aggregacje
-        * Aggregacja 1
+    * [Aggregacje](#es-aggregacje)
+        * [Aggregacja 1](#es-aggregacja-1)
         * Aggregacja 2
 
 ***
@@ -350,3 +350,93 @@ W czasie `232m8.668s` (`~3h52m`) zaimportowało `19 766 542` obiektów. Co daje 
 
 ***
 
+##ES: Aggregacje
+
+Do wykonania aggregacji w Elasticsearch użyjemy [`wyszukiwania fasetowego`](http://en.wikipedia.org/wiki/Faceted_search) - [`facets search w ES`](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/search-facets.html).
+
+Do wykonywania zapytań użyjemy programu [`curl`](http://pl.wikipedia.org/wiki/CURL):
+
+```sh
+curl -X POST "http://localhost:9200/data/_search?pretty=true" -d '{ "query": { } }'
+```
+
+###ES: Aggregacja 1
+
+***Dziesięciu najaktywniejszych użytkowików***
+
+Aggregacja ma policzyć ile akcji wykonał każdy z użytkowników i zwrócić dziesięciu najaktywniejszych.
+
+####Kod aggregacji
+
+```json
+{
+    "query" : {
+        "match_all" : {  }
+    },
+    "facets" : {
+        "userId" : {
+            "terms" : {
+                "field" : "userId",
+                "size" : 10
+            }
+        }
+    }
+}
+```
+
+Skrypt: [tutaj](../../scripts/mmote/2-es/facets-1.sh).
+
+####Wynik
+
+```json
+{
+  "facets": {
+    "userId": {
+      "terms": [
+        { "count": 696750, "term": "lukewilliamss" },
+        { "count": 68131,  "term": "demi_konti"    },
+        { "count": 59257,  "term": "bangwid"       },
+        { "count": 56044,  "term": "zenofmac"      },
+        { "count": 55736,  "term": "agentdunham"   },
+        { "count": 43153,  "term": "cillax"        },
+        { "count": 42299,  "term": "tamtomo"       },
+        { "count": 32824,  "term": "hblackwood"    },
+        { "count": 32237,  "term": "ellen_turner"  },
+        { "count": 32133,  "term": "husainholic"   }
+      ],
+      "other": 18648036,
+      "total": 19766600,
+      "missing": 0,
+      "_type": "terms"
+    }
+  },
+  "hits": {
+    //...
+  },
+  "_shards": {
+    "failed": 0,
+    "successful": 1,
+    "total": 1
+  },
+  "timed_out": false,
+  "took": 6391
+}
+```
+
+Pełny wynik aggregacji: [tutaj](../../data/mmotel/2-es/facets-result-1.json).
+
+####Czas
+
+```sh
+real  0m6.027s
+user  0m0.009s
+sys   0m0.012s
+```
+
+####Wykresy
+
+![facets search 1 chart 1](.../../images/mmotel/2-es-facets-1-chart-1.png)
+
+![facets search 1 chart 2](.../../images/mmotel/2-es-facets-1-chart-2.png)
+
+***
