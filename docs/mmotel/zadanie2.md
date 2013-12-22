@@ -11,8 +11,8 @@
         * [Aggregacja 1](#mongodb-aggregacja-1)
         * [Aggregacja 2](#mongodb-aggregacja-2)
     * [Wyniki z MMS](#mongodb-wyniki-z-mongodb-management-service)
-* Elasticsearch
-    * Przygotowanie danych
+* [Elasticsearch](#elasticsearch)
+    * [Przygotowanie danych](#es-przygotowanie-danych-do-importu)
     * Import
     * Aggregacje
         * Aggregacja 1
@@ -234,5 +234,70 @@ sys   0m0.016s
 ####Aggregacja 2
 
 ![mms-results](../../images/mmotel/2-mongo-agg-2-mms.png)
+
+***
+
+#Elasticsearch
+
+##ES: Przygotowanie danych do importu
+
+Do masowego importu danych do Elasticsearch'a użyjemy [`Bulk API`](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/docs-bulk.html).  
+
+Bulk API wymaga "przeplatanych" JSON'ów o następującej strukturze:
+
+```js
+{ "index": { "_type": "type name" } } //nazwa typu, do którego chcemy dodać dokument
+{ "field": "content" ... } //dokument
+```
+
+Do wygenerowania "przeplatanych" JSON'ów użyjemy programu [`jq`](http://stedolan.github.io/jq/).
+
+```sh
+time cat getglue_sample.json | jq --compact-output '{ "index": { "_type": "imdb" } }, .' 
+  > getglue_sample.bulk
+```
+
+####Wynik
+
+Otrzymujemy "przeplatane" JSON'y:
+
+```json
+{
+  "index": {
+    "_type": "imdb"
+  }
+}
+{
+  "objectKey": "tv_shows/criminal_minds",
+  "hideVisits": "false",
+  "modelName": "tv_shows",
+  "displayName": "",
+  "title": "Criminal Minds",
+  "timestamp": "2008-08-01T06:58:14Z",
+  "image": "http://cdn-1.nflximg.com/us/boxshots/large/70056671.jpg",
+  "userId": "areilly",
+  "visitCount": "1",
+  "comment": "",
+  "private": "false",
+  "source": "http://www.netflix.com/Movie/Criminal_Minds_Season_1/70056671",
+  "version": "2",
+  "link": "http://www.netflix.com/Movie/Criminal_Minds_Season_1/70056671",
+  "lastModified": "2011-12-16T19:41:19Z",
+  "action": "Liked",
+  "lctitle": "criminal minds"
+}
+```
+
+Plik `getglue_sample.bulk` zawiera łącznie `39 662 600` dokumentów JSON.
+
+####Czas
+
+```sh
+real  30m34.117s
+user  26m9.324s
+sys   1m24.807s
+```
+
+W ciągu `30m34.117s` wygenerowało się `39 662 600` dokumentów JSON. Co średnio daje `~21 626` wygenerowanych dokumentów JSON na sekundę.
 
 ***
