@@ -16,7 +16,7 @@
     * [Import](#es-import)
     * [Aggregacje](#es-aggregacje)
         * [Aggregacja 1](#es-aggregacja-1)
-        * Aggregacja 2
+        * [Aggregacja 2](#es-aggregacja-2)
 
 ***
 
@@ -360,6 +360,8 @@ Do wykonywania zapytań użyjemy programu [`curl`](http://pl.wikipedia.org/wiki/
 curl -X POST "http://localhost:9200/data/_search?pretty=true" -d '{ "query": { } }'
 ```
 
+***
+
 ###ES: Aggregacja 1
 
 ***Dziesięciu najaktywniejszych użytkowików***
@@ -441,7 +443,7 @@ sys   0m0.012s
 
 ***
 
-###Aggregacja 2
+###ES: Aggregacja 2
 
 ***Aktywność użytkowników według miesięcy***
 
