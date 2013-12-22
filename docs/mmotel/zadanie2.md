@@ -8,9 +8,9 @@
 * [MongoDB](#mongodb)
     * [Import](#import)
     * [Aggregacje](#aggregacje)
-        * Aggregacja 1
-        * Aggregacja 2
-    * Wyniki z MMS
+        * [Aggregacja 1](#aggregacja-1)
+        * [Aggregacja 2](#aggregacja-2)
+    * [Wyniki z MMS](#wyniki-z-mongodb-management-service)
 * Elasticsearch
     * Przygotowanie danych
     * Import
@@ -161,6 +161,8 @@ sys   0m0.012s
 
 ![aggregation-1-chart](../../images/mmotel/2-mongo-agg-1-chart.png)
 
+***
+
 ###Aggregacja 2
 
 ***Jakie jest 10 najpopularniejszych filmów i przedstawień TV?***
@@ -216,3 +218,21 @@ sys   0m0.016s
 ####Wykres
 
 ![aggregation-2-chart](../../images/mmotel/2-mongo-agg-2-chart.png)
+
+***
+
+##Wyniki z MongoDB Management Service
+
+####Import
+
+![mms-results](./images/2-mongo-import-mms.png)
+
+####Aggregacja 1
+
+![mms-results](./images/2-mongo-agg-1-mms.png)
+
+####Aggregacja 2
+
+![mms-results](./images/2-mongo-agg-2-mms.png)
+
+***
