@@ -1,12 +1,24 @@
 # Wypadki drogowe #
 
+###Mateusz Szygenda###
+
+
+----------
+
+
 ## Spis treści ##
 1. [Dane](#dane)
 2. [Transformacje danych](#transformacje-danych)
 3. [MongoDB](#mongodb)
- 1. [Import](#mongodb-import)
- 1. [Agregacje](#mongodb-agregacje)
-4. [ElasticSearch](#ElasticSearch)
+ 1. [Import](#import-w-mongo)
+ 1. [Agregacje](#agregacje-w-mongodb)
+4. [ElasticSearch](#elastic-search)
+ 1. [Import](#import-w-elasticsearch)
+ 1. [Agregacje](#agregacje-w-elasticsearch)
+
+
+----------
+
 
 # Dane #
 
@@ -33,6 +45,10 @@ Wygląda on dość kryptycznie jednak poszczególne liczby kodują informację o
  - Lokalizacji
  - Ograniczeniu prędkości
  - Numerach dróg na których miało miejsce zdarzenie
+
+
+----------
+
 
 # Transformacje danych #
 
@@ -108,7 +124,7 @@ value + " " + row.cells["Time"].value
 
 ####Kolumna Time została usunięta####
 
-####Kolumna DayOfWeek została przesunięte o 1 do tyłu####
+####Wartości kolumny DayOfWeek zostały przesunięte o 1 do tyłu####
  
  W danych wejściowych dni tygodnia liczone były zaczynając od niedzieli. W wyniku transformacji poniedziałek stał się pierwszym dniem tygodnia.
 
@@ -123,12 +139,63 @@ Poza wymienionymi krokami zostały usunięte mało znaczące kolumny i pozmienia
 ####Eksport####
 Dane zostały wyeksportowane z powrotem do formatu csv.
 
+####Przykładowe rekordy po transformacjach#####
+
+```
+{
+	"_id" : ObjectId("52a472d10ef5171b420be52f"),
+	"Accident_Index" : "197901A7PGV47",
+	"PoliceForce" : 1,
+	"AccidentSeverity" : 2,
+	"NumberOfVehicles" : 1,
+	"NumberOfCasualties" : 1,
+	"Date" : "1979-07-01T15:30:00Z",
+	"DayOfWeek" : 7,
+	"RoadType" : 6,
+	"SpeedLimit" : 30,
+	"TimeOfDay" : "Day",
+	"LightsPresent" : 0,
+	"Weather" : "Rain",
+	"Wind" : 0,
+	"Road_Surface_Conditions" : 2,
+	"Special_Conditions_at_Site" : -1,
+	"Carriageway_Hazards" : 0,
+	"Urban_or_Rural_Area" : -1,
+	"Did_Police_Officer_Attend_Scene_of_Accident" : -1,
+	"LSOA_of_Accident_Location" : ""
+}
+{
+	"_id" : ObjectId("52a472d10ef5171b420be531"),
+	"Accident_Index" : "197901A7PKE99",
+	"PoliceForce" : 1,
+	"AccidentSeverity" : 3,
+	"NumberOfVehicles" : 1,
+	"NumberOfCasualties" : 1,
+	"Date" : "1979-07-01T15:50:00Z",
+	"DayOfWeek" : 7,
+	"RoadType" : 9,
+	"SpeedLimit" : 30,
+	"TimeOfDay" : "Day",
+	"LightsPresent" : 0,
+	"Weather" : "Rain",
+	"Wind" : 0,
+	"Road_Surface_Conditions" : 2,
+	"Special_Conditions_at_Site" : -1,
+	"Carriageway_Hazards" : 0,
+	"Urban_or_Rural_Area" : -1,
+	"Did_Police_Officer_Attend_Scene_of_Accident" : -1,
+	"LSOA_of_Accident_Location" : ""
+}
+```
+
 ----------
+
+
 # MongoDB #
 
-##Import##
+##Import w Mongo##
 
-Zostały zaimportowane do MongoDB następującymi poleceniami
+Dane zostały zaimportowane do MongoDB następującymi poleceniami
 
 ```
 time mongoimport --headerline --collection accidents --type csv Accidents7904-csv.csv --drop --db nosql
@@ -144,7 +211,7 @@ sys 0m0.764s
 time mongoimport --headerline --collection accidents --type csv Accidents7904-csv-part2.csv --db nosql
 ```
 
-##Agregacje##
+##Agregacje w MongoDB##
 
 ###Dni tygodnia a wypadki###
 
@@ -243,9 +310,9 @@ var badWeatherAggregation = db.accidents.aggregate({
 Do przeformatowania wyników również został wykorzystany odpowiedni skrypt ([weather.js](../scripts/mszygenda/weather.js))
 
 ```
-mongo nosql scripts/weather.js --quiet
+$ mongo nosql ./scripts/mszygenda/weather.js --quiet
 
-Fog,Snow,Rain,BadWeather,TotalAccidentsWithKnownWeather
+Fog,Rain,Snow,BadWeather,TotalAccidentsWithKnownWeather
 8326,158410,13707,180443,836607
 ```
 
@@ -257,9 +324,13 @@ Fog,Snow,Rain,BadWeather,TotalAccidentsWithKnownWeather
 
 Większość wypadków odbywa się przy dobrych warunkach atmosferycznych. Drugą najczęstszą sytuacją są opady deszczu.
 
+
+----------
+
+
 #Elastic Search#
 
-##Import##
+##Import w ElasticSearch##
 
 Do zaimportowania danych z plików CSV zostało wykorzystane rozszerzenie [elasticsearch-river-csv](https://github.com/xxBedy/elasticsearch-river-csv)
 
@@ -308,7 +379,7 @@ curl -XPUT localhost:9200/_river/accidents/_meta -d "
 }"
 ```
 
-##Agregacje##
+##Agregacje w ElasticSearch##
 
 ###Dni tygodnia a wypadki###
 
@@ -341,6 +412,36 @@ Otrzymany wynik jest oczywiście identyczny z wynikami uzyskanymi z MongoDB
 ###Dni tygodnia a warunki pogodowe###
 
 Ponownie został przygotowany skrypt w języku JS  ([weatherElastic.js](../scripts/mszygenda/weatherElastic.js))
+
+**Fragmenty skryptu**
+
+Facet agregacji
+```
+weatherFacet = {
+    facets: {
+      weather: { 
+        terms: { 
+          field: "Weather",
+          order: "term"
+        } 
+      }
+    }
+}
+```
+Parametry do akcji _count do policzenia ilości wypadków dla których znane były warunki pogodowe
+```
+countOfKnownWeather = {
+  filtered: {
+  filter: {
+    not: {
+      term: {
+        Weather: "unknown"
+      }
+    }
+  }
+  }
+}
+```
 
 ```
 $ node weatherElastic.js 
