@@ -435,8 +435,8 @@ sys   0m0.012s
 
 ####Wykresy
 
-![facets search 1 chart 1](.../../images/mmotel/2-es-facets-1-chart-1.png)
+![facets search 1 chart 1](../../images/mmotel/2-es-facets-1-chart-1.png)
 
-![facets search 1 chart 2](.../../images/mmotel/2-es-facets-1-chart-2.png)
+![facets search 1 chart 2](../../images/mmotel/2-es-facets-1-chart-2.png)
 
 ***
