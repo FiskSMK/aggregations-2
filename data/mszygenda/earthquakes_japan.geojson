@@ -1,13 +1,13 @@
 { "type": "FeatureCollection",
   "features": [ 
 {
-	"_id" : ObjectId("526bc441a04005b8d34e69ce"),
+	"_id" : "526bc441a04005b8d34e69ce",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "Kyushu, Japan",
-		"time" : NumberLong("1351184056050"),
-		"updated" : NumberLong("1363392509778"),
+		"time" : "1351184056050",
+		"updated" : "1363392509778",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121025165416050_34",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121025165416050_34&format=geojson",
@@ -41,13 +41,13 @@
 	"id" : "pde20121025165416050_34"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e58e5"),
+	"_id" : "526bc441a04005b8d34e58e5",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.3,
 		"place" : "14km NE of Nichinan, Japan",
-		"time" : NumberLong("1362994492000"),
-		"updated" : NumberLong("1379966585000"),
+		"time" : "1362994492000",
+		"updated" : "1379966585000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fiqa",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fiqa&format=geojson",
@@ -81,13 +81,13 @@
 	"id" : "usb000fiqa"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e58e4"),
+	"_id" : "526bc441a04005b8d34e58e4",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "24km E of Nichinan, Japan",
-		"time" : NumberLong("1362995983900"),
-		"updated" : NumberLong("1370899945602"),
+		"time" : "1362995983900",
+		"updated" : "1370899945602",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fiqj",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fiqj&format=geojson",
@@ -121,13 +121,13 @@
 	"id" : "usb000fiqj"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e43f1"),
+	"_id" : "526bc440a04005b8d34e43f1",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "35km ENE of Nichinan, Japan",
-		"time" : NumberLong("1381232719280"),
-		"updated" : NumberLong("1381261673016"),
+		"time" : "1381232719280",
+		"updated" : "1381261673016",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000k8i6",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000k8i6&format=geojson",
@@ -161,13 +161,13 @@
 	"id" : "usb000k8i6"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e44b8"),
+	"_id" : "526bc440a04005b8d34e44b8",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "17km SE of Kushima, Japan",
-		"time" : NumberLong("1380310669240"),
-		"updated" : NumberLong("1380390759000"),
+		"time" : "1380310669240",
+		"updated" : "1380390759000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000k189",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000k189&format=geojson",
@@ -201,13 +201,13 @@
 	"id" : "usb000k189"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5726"),
+	"_id" : "526bc441a04005b8d34e5726",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "13km SSW of Nishinoomote, Japan",
-		"time" : NumberLong("1364805916300"),
-		"updated" : NumberLong("1370900868320"),
+		"time" : "1364805916300",
+		"updated" : "1370900868320",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fx99",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fx99&format=geojson",
@@ -241,13 +241,13 @@
 	"id" : "usb000fx99"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e58ea"),
+	"_id" : "526bc441a04005b8d34e58ea",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "9km SW of Makurazaki, Japan",
-		"time" : NumberLong("1362980098300"),
-		"updated" : NumberLong("1379966582000"),
+		"time" : "1362980098300",
+		"updated" : "1379966582000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fink",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fink&format=geojson",
@@ -281,13 +281,13 @@
 	"id" : "usb000fink"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e61db"),
+	"_id" : "526bc441a04005b8d34e61db",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "Shikoku, Japan",
-		"time" : NumberLong("1356156931180"),
-		"updated" : NumberLong("1363392580601"),
+		"time" : "1356156931180",
+		"updated" : "1363392580601",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121222061531180_54",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121222061531180_54&format=geojson",
@@ -321,13 +321,13 @@
 	"id" : "pde20121222061531180_54"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e546b"),
+	"_id" : "526bc441a04005b8d34e546b",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "11km SSE of Takedamachi, Japan",
-		"time" : NumberLong("1366847241300"),
-		"updated" : NumberLong("1370902116832"),
+		"time" : "1366847241300",
+		"updated" : "1370902116832",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000gfca",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000gfca&format=geojson",
@@ -361,13 +361,13 @@
 	"id" : "usb000gfca"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e69b5"),
+	"_id" : "526bc441a04005b8d34e69b5",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "Shikoku, Japan",
-		"time" : NumberLong("1351280677130"),
-		"updated" : NumberLong("1363392510572"),
+		"time" : "1351280677130",
+		"updated" : "1363392510572",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121026194437130_27",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121026194437130_27&format=geojson",
@@ -401,13 +401,13 @@
 	"id" : "pde20121026194437130_27"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e55e5"),
+	"_id" : "526bc441a04005b8d34e55e5",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.8,
 		"place" : "6km WNW of Sumoto, Japan",
-		"time" : NumberLong("1365798797500"),
-		"updated" : NumberLong("1379966836000"),
+		"time" : "1365798797500",
+		"updated" : "1379966836000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000g5yg",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000g5yg&format=geojson",
@@ -441,13 +441,13 @@
 	"id" : "usb000g5yg"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6070"),
+	"_id" : "526bc441a04005b8d34e6070",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1357211653530"),
-		"updated" : NumberLong("1379967022000"),
+		"time" : "1357211653530",
+		"updated" : "1379967022000",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130103111413530_10",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130103111413530_10&format=geojson",
@@ -481,13 +481,13 @@
 	"id" : "pde20130103111413530_10"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5ebc"),
+	"_id" : "526bc441a04005b8d34e5ebc",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.4,
 		"place" : "eastern Sea of Japan",
-		"time" : NumberLong("1358861362940"),
-		"updated" : NumberLong("1379967243000"),
+		"time" : "1358861362940",
+		"updated" : "1379967243000",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130122132922940_234",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130122132922940_234&format=geojson",
@@ -521,13 +521,13 @@
 	"id" : "pde20130122132922940_234"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5195"),
+	"_id" : "526bc441a04005b8d34e5195",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.1,
 		"place" : "83km ESE of Makubetsu, Japan",
-		"time" : NumberLong("1369147907800"),
-		"updated" : NumberLong("1370903363863"),
+		"time" : "1369147907800",
+		"updated" : "1370903363863",
 		"tz" : 600,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h0wc",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000h0wc&format=geojson",
@@ -561,13 +561,13 @@
 	"id" : "usb000h0wc"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4c18"),
+	"_id" : "526bc440a04005b8d34e4c18",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "50km NNW of Mombetsu, Japan",
-		"time" : NumberLong("1375288393450"),
-		"updated" : NumberLong("1380133136778"),
+		"time" : "1375288393450",
+		"updated" : "1380133136778",
 		"tz" : 600,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000itje",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000itje&format=geojson",
@@ -601,13 +601,13 @@
 	"id" : "usc000itje"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e591a"),
+	"_id" : "526bc441a04005b8d34e591a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "35km NE of Kushiro, Japan",
-		"time" : NumberLong("1362831393500"),
-		"updated" : NumberLong("1379966561000"),
+		"time" : "1362831393500",
+		"updated" : "1379966561000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fhwr",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fhwr&format=geojson",
@@ -641,13 +641,13 @@
 	"id" : "usb000fhwr"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5e34"),
+	"_id" : "526bc441a04005b8d34e5e34",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "53km SSW of Kushiro, Japan",
-		"time" : NumberLong("1359465442700"),
-		"updated" : NumberLong("1363392608268"),
+		"time" : "1359465442700",
+		"updated" : "1363392608268",
 		"tz" : 600,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013kzal",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013kzal&format=geojson",
@@ -681,13 +681,13 @@
 	"id" : "us2013kzal"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5035"),
+	"_id" : "526bc441a04005b8d34e5035",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "47km NW of Kushiro, Japan",
-		"time" : NumberLong("1370535333600"),
-		"updated" : NumberLong("1371813495390"),
+		"time" : "1370535333600",
+		"updated" : "1371813495390",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000hh9r",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000hh9r&format=geojson",
@@ -721,13 +721,13 @@
 	"id" : "usc000hh9r"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4a80"),
+	"_id" : "526bc440a04005b8d34e4a80",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.1,
 		"place" : "35km WSW of Kitami, Japan",
-		"time" : NumberLong("1376352584980"),
-		"updated" : NumberLong("1382150566658"),
+		"time" : "1376352584980",
+		"updated" : "1382150566658",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j1u9",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j1u9&format=geojson",
@@ -761,13 +761,13 @@
 	"id" : "usb000j1u9"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e50b2"),
+	"_id" : "526bc441a04005b8d34e50b2",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "50km NW of Kushiro, Japan",
-		"time" : NumberLong("1370073247000"),
-		"updated" : NumberLong("1372418278857"),
+		"time" : "1370073247000",
+		"updated" : "1372418278857",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000hb9x",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000hb9x&format=geojson",
@@ -801,13 +801,13 @@
 	"id" : "usb000hb9x"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e69b8"),
+	"_id" : "526bc441a04005b8d34e69b8",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1351248778710"),
-		"updated" : NumberLong("1363392510393"),
+		"time" : "1351248778710",
+		"updated" : "1363392510393",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121026105258710_128",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121026105258710_128&format=geojson",
@@ -841,13 +841,13 @@
 	"id" : "pde20121026105258710_128"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4a79"),
+	"_id" : "526bc440a04005b8d34e4a79",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "17km WNW of Otofuke, Japan",
-		"time" : NumberLong("1376360324060"),
-		"updated" : NumberLong("1382150655634"),
+		"time" : "1376360324060",
+		"updated" : "1382150655634",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j1w0",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j1w0&format=geojson",
@@ -881,13 +881,13 @@
 	"id" : "usb000j1w0"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5dc1"),
+	"_id" : "526bc441a04005b8d34e5dc1",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 6.9,
 		"place" : "19km SSW of Obihiro, Japan",
-		"time" : NumberLong("1359814655100"),
-		"updated" : NumberLong("1379966125000"),
+		"time" : "1359814655100",
+		"updated" : "1379966125000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000f03a",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000f03a&format=geojson",
@@ -921,13 +921,13 @@
 	"id" : "usc000f03a"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e42f0"),
+	"_id" : "526bc440a04005b8d34e42f0",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "49km E of Shizunai, Japan",
-		"time" : NumberLong("1382326415430"),
-		"updated" : NumberLong("1382355361135"),
+		"time" : "1382326415430",
+		"updated" : "1382355361135",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000khrb",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000khrb&format=geojson",
@@ -961,13 +961,13 @@
 	"id" : "usb000khrb"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4928"),
+	"_id" : "526bc440a04005b8d34e4928",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "47km E of Shizunai, Japan",
-		"time" : NumberLong("1377154385470"),
-		"updated" : NumberLong("1382734288398"),
+		"time" : "1377154385470",
+		"updated" : "1382734288398",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j968",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j968&format=geojson",
@@ -1001,13 +1001,13 @@
 	"id" : "usb000j968"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5de2"),
+	"_id" : "526bc441a04005b8d34e5de2",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "33km W of Obihiro, Japan",
-		"time" : NumberLong("1359742986000"),
-		"updated" : NumberLong("1363392610242"),
+		"time" : "1359742986000",
+		"updated" : "1363392610242",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000ezq1",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000ezq1&format=geojson",
@@ -1041,13 +1041,13 @@
 	"id" : "usc000ezq1"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e49e1"),
+	"_id" : "526bc440a04005b8d34e49e1",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "38km W of Obihiro, Japan",
-		"time" : NumberLong("1376691651710"),
-		"updated" : NumberLong("1382155293890"),
+		"time" : "1376691651710",
+		"updated" : "1382155293890",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j5bv",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j5bv&format=geojson",
@@ -1081,13 +1081,13 @@
 	"id" : "usb000j5bv"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e49ee"),
+	"_id" : "526bc440a04005b8d34e49ee",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "14km WSW of Shizunai, Japan",
-		"time" : NumberLong("1376671291160"),
-		"updated" : NumberLong("1382155093973"),
+		"time" : "1376671291160",
+		"updated" : "1382155093973",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j4yv",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j4yv&format=geojson",
@@ -1121,13 +1121,13 @@
 	"id" : "usb000j4yv"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6203"),
+	"_id" : "526bc441a04005b8d34e6203",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1356000866870"),
-		"updated" : NumberLong("1363392579207"),
+		"time" : "1356000866870",
+		"updated" : "1363392579207",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121220105426870_10",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121220105426870_10&format=geojson",
@@ -1161,13 +1161,13 @@
 	"id" : "pde20121220105426870_10"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5f24"),
+	"_id" : "526bc441a04005b8d34e5f24",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1358399604720"),
-		"updated" : NumberLong("1363392602289"),
+		"time" : "1358399604720",
+		"updated" : "1363392602289",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130117051324720_47",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130117051324720_47&format=geojson",
@@ -1201,13 +1201,13 @@
 	"id" : "pde20130117051324720_47"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4aa1"),
+	"_id" : "526bc440a04005b8d34e4aa1",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "40km S of Shizunai, Japan",
-		"time" : NumberLong("1376268670800"),
-		"updated" : NumberLong("1381618895156"),
+		"time" : "1376268670800",
+		"updated" : "1381618895156",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j0vn",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j0vn&format=geojson",
@@ -1241,13 +1241,13 @@
 	"id" : "usb000j0vn"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e642a"),
+	"_id" : "526bc441a04005b8d34e642a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1354657928270"),
-		"updated" : NumberLong("1363392562307"),
+		"time" : "1354657928270",
+		"updated" : "1363392562307",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121204215208270_71",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121204215208270_71&format=geojson",
@@ -1281,13 +1281,13 @@
 	"id" : "pde20121204215208270_71"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e549e"),
+	"_id" : "526bc441a04005b8d34e549e",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "52km S of Shizunai, Japan",
-		"time" : NumberLong("1366653057200"),
-		"updated" : NumberLong("1370902034046"),
+		"time" : "1366653057200",
+		"updated" : "1370902034046",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000gdms",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000gdms&format=geojson",
@@ -1321,13 +1321,13 @@
 	"id" : "usb000gdms"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4c29"),
+	"_id" : "526bc440a04005b8d34e4c29",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "81km SSE of Shizunai, Japan",
-		"time" : NumberLong("1375259759120"),
-		"updated" : NumberLong("1380132663311"),
+		"time" : "1375259759120",
+		"updated" : "1380132663311",
 		"tz" : 600,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000it9a",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000it9a&format=geojson",
@@ -1361,13 +1361,13 @@
 	"id" : "usc000it9a"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e64bc"),
+	"_id" : "526bc441a04005b8d34e64bc",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1354193589510"),
-		"updated" : NumberLong("1363392557720"),
+		"time" : "1354193589510",
+		"updated" : "1363392557720",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121129125309510_35",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121129125309510_35&format=geojson",
@@ -1401,13 +1401,13 @@
 	"id" : "pde20121129125309510_35"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6349"),
+	"_id" : "526bc441a04005b8d34e6349",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1355063924510"),
-		"updated" : NumberLong("1363392568032"),
+		"time" : "1355063924510",
+		"updated" : "1363392568032",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121209143844510_61",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121209143844510_61&format=geojson",
@@ -1441,13 +1441,13 @@
 	"id" : "pde20121209143844510_61"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6090"),
+	"_id" : "526bc441a04005b8d34e6090",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1357128011300"),
-		"updated" : NumberLong("1363392592565"),
+		"time" : "1357128011300",
+		"updated" : "1363392592565",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130102120011300_76",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130102120011300_76&format=geojson",
@@ -1481,13 +1481,13 @@
 	"id" : "pde20130102120011300_76"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e64d7"),
+	"_id" : "526bc441a04005b8d34e64d7",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1354098185490"),
-		"updated" : NumberLong("1363392555315"),
+		"time" : "1354098185490",
+		"updated" : "1363392555315",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121128102305490_21",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121128102305490_21&format=geojson",
@@ -1521,13 +1521,13 @@
 	"id" : "pde20121128102305490_21"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5911"),
+	"_id" : "526bc441a04005b8d34e5911",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "164km SE of Shizunai, Japan",
-		"time" : NumberLong("1362878381400"),
-		"updated" : NumberLong("1370899843883"),
+		"time" : "1362878381400",
+		"updated" : "1370899843883",
 		"tz" : 600,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fi5p",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fi5p&format=geojson",
@@ -1561,13 +1561,13 @@
 	"id" : "usb000fi5p"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e63a1"),
+	"_id" : "526bc441a04005b8d34e63a1",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1354908300080"),
-		"updated" : NumberLong("1363392566499"),
+		"time" : "1354908300080",
+		"updated" : "1363392566499",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121207192500080_35",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121207192500080_35&format=geojson",
@@ -1601,13 +1601,13 @@
 	"id" : "pde20121207192500080_35"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e59c8"),
+	"_id" : "526bc441a04005b8d34e59c8",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.1,
 		"place" : "51km E of Hachinohe, Japan",
-		"time" : NumberLong("1362140529400"),
-		"updated" : NumberLong("1370899341317"),
+		"time" : "1362140529400",
+		"updated" : "1370899341317",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000fewd",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000fewd&format=geojson",
@@ -1641,13 +1641,13 @@
 	"id" : "usc000fewd"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e56a3"),
+	"_id" : "526bc441a04005b8d34e56a3",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "83km ESE of Hachinohe, Japan",
-		"time" : NumberLong("1365212383700"),
-		"updated" : NumberLong("1370901505980"),
+		"time" : "1365212383700",
+		"updated" : "1370901505980",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013nrah",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013nrah&format=geojson",
@@ -1681,13 +1681,13 @@
 	"id" : "us2013nrah"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4cd5"),
+	"_id" : "526bc440a04005b8d34e4cd5",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "76km NE of Miyako, Japan",
-		"time" : NumberLong("1374779107140"),
-		"updated" : NumberLong("1379976358985"),
+		"time" : "1374779107140",
+		"updated" : "1379976358985",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000ip1y",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000ip1y&format=geojson",
@@ -1721,13 +1721,13 @@
 	"id" : "usc000ip1y"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e552f"),
+	"_id" : "526bc441a04005b8d34e552f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "66km NE of Miyako, Japan",
-		"time" : NumberLong("1366361166100"),
-		"updated" : NumberLong("1370901777910"),
+		"time" : "1366361166100",
+		"updated" : "1370901777910",
 		"tz" : 600,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000gbqc",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000gbqc&format=geojson",
@@ -1761,13 +1761,13 @@
 	"id" : "usb000gbqc"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6074"),
+	"_id" : "526bc441a04005b8d34e6074",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "off the east coast of Honshu, Japan",
-		"time" : NumberLong("1357190865360"),
-		"updated" : NumberLong("1363392593130"),
+		"time" : "1357190865360",
+		"updated" : "1363392593130",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130103052745360_35",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130103052745360_35&format=geojson",
@@ -1801,13 +1801,13 @@
 	"id" : "pde20130103052745360_35"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e553b"),
+	"_id" : "526bc441a04005b8d34e553b",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "82km ENE of Miyako, Japan",
-		"time" : NumberLong("1366326487100"),
-		"updated" : NumberLong("1370902173616"),
+		"time" : "1366326487100",
+		"updated" : "1370902173616",
 		"tz" : 600,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013pda6",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013pda6&format=geojson",
@@ -1841,13 +1841,13 @@
 	"id" : "us2013pda6"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e553a"),
+	"_id" : "526bc441a04005b8d34e553a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "74km ENE of Miyako, Japan",
-		"time" : NumberLong("1366326487550"),
-		"updated" : NumberLong("1370901771882"),
+		"time" : "1366326487550",
+		"updated" : "1370901771882",
 		"tz" : 600,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000gbbx",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000gbbx&format=geojson",
@@ -1881,13 +1881,13 @@
 	"id" : "usb000gbbx"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5222"),
+	"_id" : "526bc441a04005b8d34e5222",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "29km E of Miyako, Japan",
-		"time" : NumberLong("1368892261700"),
-		"updated" : NumberLong("1370903300795"),
+		"time" : "1368892261700",
+		"updated" : "1370903300795",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000gycj",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000gycj&format=geojson",
@@ -1921,13 +1921,13 @@
 	"id" : "usb000gycj"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4d9d"),
+	"_id" : "526bc440a04005b8d34e4d9d",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.3,
 		"place" : "20km E of Miyako, Japan",
-		"time" : NumberLong("1373928359110"),
-		"updated" : NumberLong("1373967740875"),
+		"time" : "1373928359110",
+		"updated" : "1373967740875",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ieyu",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ieyu&format=geojson",
@@ -1961,13 +1961,13 @@
 	"id" : "usb000ieyu"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e587f"),
+	"_id" : "526bc441a04005b8d34e587f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "14km E of Miyako, Japan",
-		"time" : NumberLong("1363389112400"),
-		"updated" : NumberLong("1370900146756"),
+		"time" : "1363389112400",
+		"updated" : "1370900146756",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000flpt",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000flpt&format=geojson",
@@ -2001,13 +2001,13 @@
 	"id" : "usb000flpt"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e59fb"),
+	"_id" : "526bc441a04005b8d34e59fb",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "55km NE of Miyako, Japan",
-		"time" : NumberLong("1361899880000"),
-		"updated" : NumberLong("1370899244250"),
+		"time" : "1361899880000",
+		"updated" : "1370899244250",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000fdln",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000fdln&format=geojson",
@@ -2041,13 +2041,13 @@
 	"id" : "usc000fdln"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6002"),
+	"_id" : "526bc441a04005b8d34e6002",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.4,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1357631490230"),
-		"updated" : NumberLong("1379967069000"),
+		"time" : "1357631490230",
+		"updated" : "1379967069000",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130108075130230_35",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130108075130230_35&format=geojson",
@@ -2081,13 +2081,13 @@
 	"id" : "pde20130108075130230_35"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e50e2"),
+	"_id" : "526bc441a04005b8d34e50e2",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "62km ESE of Hachinohe, Japan",
-		"time" : NumberLong("1369794929800"),
-		"updated" : NumberLong("1372346150109"),
+		"time" : "1369794929800",
+		"updated" : "1372346150109",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013quct",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013quct&format=geojson",
@@ -2121,13 +2121,13 @@
 	"id" : "us2013quct"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e616e"),
+	"_id" : "526bc441a04005b8d34e616e",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1356465547290"),
-		"updated" : NumberLong("1363392584022"),
+		"time" : "1356465547290",
+		"updated" : "1363392584022",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121225195907290_95",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121225195907290_95&format=geojson",
@@ -2161,13 +2161,13 @@
 	"id" : "pde20121225195907290_95"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e43da"),
+	"_id" : "526bc440a04005b8d34e43da",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "49km N of Miyako, Japan",
-		"time" : NumberLong("1381358799030"),
-		"updated" : NumberLong("1381387754905"),
+		"time" : "1381358799030",
+		"updated" : "1381387754905",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000k9vs",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000k9vs&format=geojson",
@@ -2201,13 +2201,13 @@
 	"id" : "usb000k9vs"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e526f"),
+	"_id" : "526bc441a04005b8d34e526f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "29km ESE of Hachinohe, Japan",
-		"time" : NumberLong("1368661592600"),
-		"updated" : NumberLong("1371036256960"),
+		"time" : "1368661592600",
+		"updated" : "1371036256960",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000gwrr",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000gwrr&format=geojson",
@@ -2241,13 +2241,13 @@
 	"id" : "usb000gwrr"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e60a9"),
+	"_id" : "526bc441a04005b8d34e60a9",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1357011132440"),
-		"updated" : NumberLong("1363392591913"),
+		"time" : "1357011132440",
+		"updated" : "1363392591913",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130101033212440_100",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130101033212440_100&format=geojson",
@@ -2281,13 +2281,13 @@
 	"id" : "pde20130101033212440_100"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4926"),
+	"_id" : "526bc440a04005b8d34e4926",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "10km NNE of Morioka-shi, Japan",
-		"time" : NumberLong("1377158572860"),
-		"updated" : NumberLong("1382733421653"),
+		"time" : "1377158572860",
+		"updated" : "1382733421653",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j970",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j970&format=geojson",
@@ -2321,13 +2321,13 @@
 	"id" : "usb000j970"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4df5"),
+	"_id" : "526bc440a04005b8d34e4df5",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.3,
 		"place" : "26km W of Miyako, Japan",
-		"time" : NumberLong("1373433735140"),
-		"updated" : NumberLong("1373435163457"),
+		"time" : "1373433735140",
+		"updated" : "1373435163457",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000iauw",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000iauw&format=geojson",
@@ -2361,13 +2361,13 @@
 	"id" : "usb000iauw"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e65a0"),
+	"_id" : "526bc441a04005b8d34e65a0",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1353456140270"),
-		"updated" : NumberLong("1363392548323"),
+		"time" : "1353456140270",
+		"updated" : "1363392548323",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121121000220270_62",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121121000220270_62&format=geojson",
@@ -2401,13 +2401,13 @@
 	"id" : "pde20121121000220270_62"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5100"),
+	"_id" : "526bc441a04005b8d34e5100",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "13km NNW of Ofunato, Japan",
-		"time" : NumberLong("1369646196900"),
-		"updated" : NumberLong("1370903685469"),
+		"time" : "1369646196900",
+		"updated" : "1370903685469",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h6zu",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000h6zu&format=geojson",
@@ -2441,13 +2441,13 @@
 	"id" : "usb000h6zu"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e58c0"),
+	"_id" : "526bc441a04005b8d34e58c0",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "5km NW of Kamaishi, Japan",
-		"time" : NumberLong("1363123948200"),
-		"updated" : NumberLong("1379966597000"),
+		"time" : "1363123948200",
+		"updated" : "1379966597000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fjx1",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fjx1&format=geojson",
@@ -2481,13 +2481,13 @@
 	"id" : "usb000fjx1"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4d73"),
+	"_id" : "526bc440a04005b8d34e4d73",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "30km SSE of Kamaishi, Japan",
-		"time" : NumberLong("1374191053230"),
-		"updated" : NumberLong("1374202606285"),
+		"time" : "1374191053230",
+		"updated" : "1374202606285",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ihix",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ihix&format=geojson",
@@ -2521,13 +2521,13 @@
 	"id" : "usb000ihix"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6a31"),
+	"_id" : "526bc441a04005b8d34e6a31",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1350870201200"),
-		"updated" : NumberLong("1363392505276"),
+		"time" : "1350870201200",
+		"updated" : "1363392505276",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121022014321200_70",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121022014321200_70&format=geojson",
@@ -2561,13 +2561,13 @@
 	"id" : "pde20121022014321200_70"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5717"),
+	"_id" : "526bc441a04005b8d34e5717",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "28km SE of Kamaishi, Japan",
-		"time" : NumberLong("1364843376550"),
-		"updated" : NumberLong("1367865328117"),
+		"time" : "1364843376550",
+		"updated" : "1367865328117",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fxii",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fxii&format=geojson",
@@ -2601,13 +2601,13 @@
 	"id" : "usb000fxii"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6567"),
+	"_id" : "526bc441a04005b8d34e6567",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1353626809780"),
-		"updated" : NumberLong("1363392550057"),
+		"time" : "1353626809780",
+		"updated" : "1363392550057",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121122232649780_60",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121122232649780_60&format=geojson",
@@ -2641,13 +2641,13 @@
 	"id" : "pde20121122232649780_60"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5f7d"),
+	"_id" : "526bc441a04005b8d34e5f7d",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1358047062820"),
-		"updated" : NumberLong("1363392599715"),
+		"time" : "1358047062820",
+		"updated" : "1363392599715",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130113031742820_51",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130113031742820_51&format=geojson",
@@ -2681,13 +2681,13 @@
 	"id" : "pde20130113031742820_51"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6a82"),
+	"_id" : "526bc441a04005b8d34e6a82",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1350637977180"),
-		"updated" : NumberLong("1363392502519"),
+		"time" : "1350637977180",
+		"updated" : "1363392502519",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121019091257180_43",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121019091257180_43&format=geojson",
@@ -2721,13 +2721,13 @@
 	"id" : "pde20121019091257180_43"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e54de"),
+	"_id" : "526bc441a04005b8d34e54de",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4,
 		"place" : "73km SE of Ofunato, Japan",
-		"time" : NumberLong("1366486909100"),
-		"updated" : NumberLong("1370902696593"),
+		"time" : "1366486909100",
+		"updated" : "1370902696593",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013pfgh",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013pfgh&format=geojson",
@@ -2761,13 +2761,13 @@
 	"id" : "us2013pfgh"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5df5"),
+	"_id" : "526bc441a04005b8d34e5df5",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "70km SSE of Ofunato, Japan",
-		"time" : NumberLong("1359682021800"),
-		"updated" : NumberLong("1370899050956"),
+		"time" : "1359682021800",
+		"updated" : "1370899050956",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013lcdp",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013lcdp&format=geojson",
@@ -2801,13 +2801,13 @@
 	"id" : "us2013lcdp"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5b95"),
+	"_id" : "526bc441a04005b8d34e5b95",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "66km SE of Ofunato, Japan",
-		"time" : NumberLong("1360554342140"),
-		"updated" : NumberLong("1360555703621"),
+		"time" : "1360554342140",
+		"updated" : "1360555703621",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usa000g3px",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usa000g3px&format=geojson",
@@ -2841,13 +2841,13 @@
 	"id" : "usa000g3px"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e61ec"),
+	"_id" : "526bc441a04005b8d34e61ec",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1356094352700"),
-		"updated" : NumberLong("1363392579905"),
+		"time" : "1356094352700",
+		"updated" : "1363392579905",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121221125232700_52",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121221125232700_52&format=geojson",
@@ -2881,13 +2881,13 @@
 	"id" : "pde20121221125232700_52"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4dd7"),
+	"_id" : "526bc440a04005b8d34e4dd7",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "68km E of Ishinomaki, Japan",
-		"time" : NumberLong("1373653884050"),
-		"updated" : NumberLong("1373682837170"),
+		"time" : "1373653884050",
+		"updated" : "1373682837170",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000id81",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000id81&format=geojson",
@@ -2921,13 +2921,13 @@
 	"id" : "usb000id81"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e481f"),
+	"_id" : "526bc440a04005b8d34e481f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "63km E of Ishinomaki, Japan",
-		"time" : NumberLong("1377912891940"),
-		"updated" : NumberLong("1380412722000"),
+		"time" : "1377912891940",
+		"updated" : "1380412722000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000jqse",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000jqse&format=geojson",
@@ -2961,13 +2961,13 @@
 	"id" : "usc000jqse"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5b69"),
+	"_id" : "526bc441a04005b8d34e5b69",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "43km ENE of Ishinomaki, Japan",
-		"time" : NumberLong("1360722097640"),
-		"updated" : NumberLong("1370898573860"),
+		"time" : "1360722097640",
+		"updated" : "1370898573860",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000f6e8",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000f6e8&format=geojson",
@@ -3001,13 +3001,13 @@
 	"id" : "usc000f6e8"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6587"),
+	"_id" : "526bc441a04005b8d34e6587",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1353519756660"),
-		"updated" : NumberLong("1363392548893"),
+		"time" : "1353519756660",
+		"updated" : "1363392548893",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121121174236660_34",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121121174236660_34&format=geojson",
@@ -3041,13 +3041,13 @@
 	"id" : "pde20121121174236660_34"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e61ef"),
+	"_id" : "526bc441a04005b8d34e61ef",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1356077240270"),
-		"updated" : NumberLong("1363392579848"),
+		"time" : "1356077240270",
+		"updated" : "1363392579848",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121221080720270_50",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121221080720270_50&format=geojson",
@@ -3081,13 +3081,13 @@
 	"id" : "pde20121221080720270_50"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4de3"),
+	"_id" : "526bc440a04005b8d34e4de3",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "40km SSE of Ofunato, Japan",
-		"time" : NumberLong("1373550266930"),
-		"updated" : NumberLong("1373579224777"),
+		"time" : "1373550266930",
+		"updated" : "1373579224777",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ic5c",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ic5c&format=geojson",
@@ -3121,13 +3121,13 @@
 	"id" : "usb000ic5c"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e60ee"),
+	"_id" : "526bc441a04005b8d34e60ee",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.4,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1356793178910"),
-		"updated" : NumberLong("1363392589636"),
+		"time" : "1356793178910",
+		"updated" : "1363392589636",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121229145938910_55",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121229145938910_55&format=geojson",
@@ -3161,13 +3161,13 @@
 	"id" : "pde20121229145938910_55"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e69b9"),
+	"_id" : "526bc441a04005b8d34e69b9",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1351247791900"),
-		"updated" : NumberLong("1363392510357"),
+		"time" : "1351247791900",
+		"updated" : "1363392510357",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121026103631900_53",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121026103631900_53&format=geojson",
@@ -3201,13 +3201,13 @@
 	"id" : "pde20121026103631900_53"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5b94"),
+	"_id" : "526bc441a04005b8d34e5b94",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "65km SE of Ofunato, Japan",
-		"time" : NumberLong("1360554343800"),
-		"updated" : NumberLong("1370899975774"),
+		"time" : "1360554343800",
+		"updated" : "1370899975774",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013lmbg",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013lmbg&format=geojson",
@@ -3241,13 +3241,13 @@
 	"id" : "us2013lmbg"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5a02"),
+	"_id" : "526bc441a04005b8d34e5a02",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "59km SE of Ofunato, Japan",
-		"time" : NumberLong("1361882773850"),
-		"updated" : NumberLong("1379966489000"),
+		"time" : "1361882773850",
+		"updated" : "1379966489000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000fdje",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000fdje&format=geojson",
@@ -3281,13 +3281,13 @@
 	"id" : "usc000fdje"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5d7a"),
+	"_id" : "526bc441a04005b8d34e5d7a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "50km SSE of Ofunato, Japan",
-		"time" : NumberLong("1360071063700"),
-		"updated" : NumberLong("1363392612310"),
+		"time" : "1360071063700",
+		"updated" : "1363392612310",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013lgah",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013lgah&format=geojson",
@@ -3321,13 +3321,13 @@
 	"id" : "us2013lgah"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4d6a"),
+	"_id" : "526bc440a04005b8d34e4d6a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "51km SSE of Ofunato, Japan",
-		"time" : NumberLong("1374224709380"),
-		"updated" : NumberLong("1374253663282"),
+		"time" : "1374224709380",
+		"updated" : "1374253663282",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ihp5",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ihp5&format=geojson",
@@ -3361,13 +3361,13 @@
 	"id" : "usb000ihp5"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e62a1"),
+	"_id" : "526bc441a04005b8d34e62a1",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1355517438910"),
-		"updated" : NumberLong("1363392572735"),
+		"time" : "1355517438910",
+		"updated" : "1363392572735",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121214203718910_53",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121214203718910_53&format=geojson",
@@ -3401,13 +3401,13 @@
 	"id" : "pde20121214203718910_53"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4838"),
+	"_id" : "526bc440a04005b8d34e4838",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "71km SE of Ofunato, Japan",
-		"time" : NumberLong("1377881793750"),
-		"updated" : NumberLong("1380986617000"),
+		"time" : "1377881793750",
+		"updated" : "1380986617000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000jqrg",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000jqrg&format=geojson",
@@ -3441,13 +3441,13 @@
 	"id" : "usc000jqrg"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e45c2"),
+	"_id" : "526bc440a04005b8d34e45c2",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "65km SE of Ofunato, Japan",
-		"time" : NumberLong("1379464066170"),
-		"updated" : NumberLong("1381537322925"),
+		"time" : "1379464066170",
+		"updated" : "1381537322925",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000jwn2",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000jwn2&format=geojson",
@@ -3481,13 +3481,13 @@
 	"id" : "usc000jwn2"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4a7e"),
+	"_id" : "526bc440a04005b8d34e4a7e",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "63km SE of Ofunato, Japan",
-		"time" : NumberLong("1376355702080"),
-		"updated" : NumberLong("1382150545708"),
+		"time" : "1376355702080",
+		"updated" : "1382150545708",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j1vb",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j1vb&format=geojson",
@@ -3521,13 +3521,13 @@
 	"id" : "usb000j1vb"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e69fa"),
+	"_id" : "526bc441a04005b8d34e69fa",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1351029318560"),
-		"updated" : NumberLong("1363392508190"),
+		"time" : "1351029318560",
+		"updated" : "1363392508190",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121023215518560_57",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121023215518560_57&format=geojson",
@@ -3561,13 +3561,13 @@
 	"id" : "pde20121023215518560_57"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5adc"),
+	"_id" : "526bc441a04005b8d34e5adc",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "60km SE of Ofunato, Japan",
-		"time" : NumberLong("1361185849500"),
-		"updated" : NumberLong("1370898804374"),
+		"time" : "1361185849500",
+		"updated" : "1370898804374",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000f9ng",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000f9ng&format=geojson",
@@ -3601,13 +3601,13 @@
 	"id" : "usc000f9ng"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5add"),
+	"_id" : "526bc441a04005b8d34e5add",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "49km SE of Ofunato, Japan",
-		"time" : NumberLong("1361185604600"),
-		"updated" : NumberLong("1370898802896"),
+		"time" : "1361185604600",
+		"updated" : "1370898802896",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000f9nc",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000f9nc&format=geojson",
@@ -3641,13 +3641,13 @@
 	"id" : "usc000f9nc"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e48b3"),
+	"_id" : "526bc440a04005b8d34e48b3",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "25km SE of Ofunato, Japan",
-		"time" : NumberLong("1377494668790"),
-		"updated" : NumberLong("1382735652768"),
+		"time" : "1377494668790",
+		"updated" : "1382735652768",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000jgnm",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000jgnm&format=geojson",
@@ -3681,13 +3681,13 @@
 	"id" : "usb000jgnm"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5735"),
+	"_id" : "526bc441a04005b8d34e5735",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.3,
 		"place" : "23km SE of Ofunato, Japan",
-		"time" : NumberLong("1364715978100"),
-		"updated" : NumberLong("1379966711000"),
+		"time" : "1364715978100",
+		"updated" : "1379966711000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fwxu",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fwxu&format=geojson",
@@ -3721,13 +3721,13 @@
 	"id" : "usb000fwxu"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e507f"),
+	"_id" : "526bc441a04005b8d34e507f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "29km S of Ofunato, Japan",
-		"time" : NumberLong("1370289686200"),
-		"updated" : NumberLong("1370949799302"),
+		"time" : "1370289686200",
+		"updated" : "1370949799302",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000hchj",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000hchj&format=geojson",
@@ -3761,13 +3761,13 @@
 	"id" : "usb000hchj"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e673f"),
+	"_id" : "526bc441a04005b8d34e673f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1352500515940"),
-		"updated" : NumberLong("1363392532516"),
+		"time" : "1352500515940",
+		"updated" : "1363392532516",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121109223515940_89",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121109223515940_89&format=geojson",
@@ -3801,13 +3801,13 @@
 	"id" : "pde20121109223515940_89"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6242"),
+	"_id" : "526bc441a04005b8d34e6242",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "eastern Honshu, Japan",
-		"time" : NumberLong("1355826348480"),
-		"updated" : NumberLong("1363392576315"),
+		"time" : "1355826348480",
+		"updated" : "1363392576315",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121218102548480_74",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121218102548480_74&format=geojson",
@@ -3841,13 +3841,13 @@
 	"id" : "pde20121218102548480_74"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4d77"),
+	"_id" : "526bc440a04005b8d34e4d77",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "24km NE of Ishinomaki, Japan",
-		"time" : NumberLong("1374167106540"),
-		"updated" : NumberLong("1374196054572"),
+		"time" : "1374167106540",
+		"updated" : "1374196054572",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000igyj",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000igyj&format=geojson",
@@ -3881,13 +3881,13 @@
 	"id" : "usb000igyj"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e556c"),
+	"_id" : "526bc441a04005b8d34e556c",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.9,
 		"place" : "15km ENE of Ishinomaki, Japan",
-		"time" : NumberLong("1366200214100"),
-		"updated" : NumberLong("1379966886000"),
+		"time" : "1366200214100",
+		"updated" : "1379966886000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000g940",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000g940&format=geojson",
@@ -3921,13 +3921,13 @@
 	"id" : "usb000g940"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4387"),
+	"_id" : "526bc440a04005b8d34e4387",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "25km E of Ishinomaki, Japan",
-		"time" : NumberLong("1381784575460"),
-		"updated" : NumberLong("1381813524972"),
+		"time" : "1381784575460",
+		"updated" : "1381813524972",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000kd81",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000kd81&format=geojson",
@@ -3961,13 +3961,13 @@
 	"id" : "usb000kd81"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e431a"),
+	"_id" : "526bc440a04005b8d34e431a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "34km ESE of Ishinomaki, Japan",
-		"time" : NumberLong("1382195665890"),
-		"updated" : NumberLong("1382198881000"),
+		"time" : "1382195665890",
+		"updated" : "1382198881000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000kh94",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000kh94&format=geojson",
@@ -4001,13 +4001,13 @@
 	"id" : "usb000kh94"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5a90"),
+	"_id" : "526bc441a04005b8d34e5a90",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "48km E of Ishinomaki, Japan",
-		"time" : NumberLong("1361460850700"),
-		"updated" : NumberLong("1370899007789"),
+		"time" : "1361460850700",
+		"updated" : "1370899007789",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000fb16",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000fb16&format=geojson",
@@ -4041,13 +4041,13 @@
 	"id" : "usc000fb16"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5a13"),
+	"_id" : "526bc441a04005b8d34e5a13",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "36km ESE of Ishinomaki, Japan",
-		"time" : NumberLong("1361809167900"),
-		"updated" : NumberLong("1370899193612"),
+		"time" : "1361809167900",
+		"updated" : "1370899193612",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013mba6",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013mba6&format=geojson",
@@ -4081,13 +4081,13 @@
 	"id" : "us2013mba6"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e69d5"),
+	"_id" : "526bc441a04005b8d34e69d5",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1351161148190"),
-		"updated" : NumberLong("1363392509316"),
+		"time" : "1351161148190",
+		"updated" : "1363392509316",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121025103228190_55",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121025103228190_55&format=geojson",
@@ -4121,13 +4121,13 @@
 	"id" : "pde20121025103228190_55"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e48c8"),
+	"_id" : "526bc440a04005b8d34e48c8",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "45km ESE of Ishinomaki, Japan",
-		"time" : NumberLong("1377422311390"),
-		"updated" : NumberLong("1382733302282"),
+		"time" : "1377422311390",
+		"updated" : "1382733302282",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000jbmc",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000jbmc&format=geojson",
@@ -4161,13 +4161,13 @@
 	"id" : "usb000jbmc"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5b1c"),
+	"_id" : "526bc441a04005b8d34e5b1c",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "51km ESE of Ishinomaki, Japan",
-		"time" : NumberLong("1360978207400"),
-		"updated" : NumberLong("1370898722855"),
+		"time" : "1360978207400",
+		"updated" : "1370898722855",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000f89z",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000f89z&format=geojson",
@@ -4201,13 +4201,13 @@
 	"id" : "usc000f89z"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4bac"),
+	"_id" : "526bc440a04005b8d34e4bac",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.8,
 		"place" : "54km ESE of Ishinomaki, Japan",
-		"time" : NumberLong("1375586930810"),
-		"updated" : NumberLong("1380136140993"),
+		"time" : "1375586930810",
+		"updated" : "1380136140993",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000iv4w",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000iv4w&format=geojson",
@@ -4241,13 +4241,13 @@
 	"id" : "usb000iv4w"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6551"),
+	"_id" : "526bc441a04005b8d34e6551",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.1,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1353720600630"),
-		"updated" : NumberLong("1363392550912"),
+		"time" : "1353720600630",
+		"updated" : "1363392550912",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121124013000630_59",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121124013000630_59&format=geojson",
@@ -4281,13 +4281,13 @@
 	"id" : "pde20121124013000630_59"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6557"),
+	"_id" : "526bc441a04005b8d34e6557",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.3,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1353702090450"),
-		"updated" : NumberLong("1363392550666"),
+		"time" : "1353702090450",
+		"updated" : "1363392550666",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121123202130450_68",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121123202130450_68&format=geojson",
@@ -4321,13 +4321,13 @@
 	"id" : "pde20121123202130450_68"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e517a"),
+	"_id" : "526bc441a04005b8d34e517a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "28km E of Shibata, Japan",
-		"time" : NumberLong("1369220404700"),
-		"updated" : NumberLong("1370903390447"),
+		"time" : "1369220404700",
+		"updated" : "1370903390447",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h1sv",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000h1sv&format=geojson",
@@ -4361,13 +4361,13 @@
 	"id" : "usb000h1sv"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5981"),
+	"_id" : "526bc441a04005b8d34e5981",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "29km NNW of Nagai, Japan",
-		"time" : NumberLong("1362429783960"),
-		"updated" : NumberLong("1370899595049"),
+		"time" : "1362429783960",
+		"updated" : "1370899595049",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000fg2x",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000fg2x&format=geojson",
@@ -4401,13 +4401,13 @@
 	"id" : "usc000fg2x"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e434c"),
+	"_id" : "526bc440a04005b8d34e434c",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "69km WSW of Akita-shi, Japan",
-		"time" : NumberLong("1381940089760"),
-		"updated" : NumberLong("1381969039880"),
+		"time" : "1381940089760",
+		"updated" : "1381969039880",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ketz",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ketz&format=geojson",
@@ -4441,13 +4441,13 @@
 	"id" : "usb000ketz"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e49ef"),
+	"_id" : "526bc440a04005b8d34e49ef",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "9km W of Kakudate, Japan",
-		"time" : NumberLong("1376670502070"),
-		"updated" : NumberLong("1382155614571"),
+		"time" : "1376670502070",
+		"updated" : "1382155614571",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j4y5",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j4y5&format=geojson",
@@ -4481,13 +4481,13 @@
 	"id" : "usb000j4y5"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e482e"),
+	"_id" : "526bc440a04005b8d34e482e",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "12km W of Akita-shi, Japan",
-		"time" : NumberLong("1377894731680"),
-		"updated" : NumberLong("1380747027541"),
+		"time" : "1377894731680",
+		"updated" : "1380747027541",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000je0s",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000je0s&format=geojson",
@@ -4521,13 +4521,13 @@
 	"id" : "usb000je0s"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6220"),
+	"_id" : "526bc441a04005b8d34e6220",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "near the west coast of Honshu, Japan",
-		"time" : NumberLong("1355933288260"),
-		"updated" : NumberLong("1363392577145"),
+		"time" : "1355933288260",
+		"updated" : "1363392577145",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121219160808260_32",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121219160808260_32&format=geojson",
@@ -4561,13 +4561,13 @@
 	"id" : "pde20121219160808260_32"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5164"),
+	"_id" : "526bc441a04005b8d34e5164",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "10km NNW of Kazuno, Japan",
-		"time" : NumberLong("1369306074300"),
-		"updated" : NumberLong("1370903452429"),
+		"time" : "1369306074300",
+		"updated" : "1370903452429",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h376",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000h376&format=geojson",
@@ -4601,13 +4601,13 @@
 	"id" : "usb000h376"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e42c2"),
+	"_id" : "526bc440a04005b8d34e42c2",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "15km N of Mutsu, Japan",
-		"time" : NumberLong("1382587459170"),
-		"updated" : NumberLong("1382592219323"),
+		"time" : "1382587459170",
+		"updated" : "1382592219323",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000km32",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000km32&format=geojson",
@@ -4641,13 +4641,13 @@
 	"id" : "usc000km32"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e67b9"),
+	"_id" : "526bc441a04005b8d34e67b9",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1352251059930"),
-		"updated" : NumberLong("1363392529266"),
+		"time" : "1352251059930",
+		"updated" : "1363392529266",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121107011739930_98",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121107011739930_98&format=geojson",
@@ -4681,13 +4681,13 @@
 	"id" : "pde20121107011739930_98"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4f21"),
+	"_id" : "526bc440a04005b8d34e4f21",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "85km ENE of Hachinohe, Japan",
-		"time" : NumberLong("1371692984300"),
-		"updated" : NumberLong("1380614317000"),
+		"time" : "1371692984300",
+		"updated" : "1380614317000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000hvsp",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000hvsp&format=geojson",
@@ -4721,13 +4721,13 @@
 	"id" : "usc000hvsp"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4b44"),
+	"_id" : "526bc440a04005b8d34e4b44",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "100km E of Mutsu, Japan",
-		"time" : NumberLong("1375861891930"),
-		"updated" : NumberLong("1381614016625"),
+		"time" : "1375861891930",
+		"updated" : "1381614016625",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ixaj",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ixaj&format=geojson",
@@ -4761,13 +4761,13 @@
 	"id" : "usb000ixaj"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e69c4"),
+	"_id" : "526bc441a04005b8d34e69c4",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1351211594380"),
-		"updated" : NumberLong("1363392510157"),
+		"time" : "1351211594380",
+		"updated" : "1363392510157",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121026003314380_66",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121026003314380_66&format=geojson",
@@ -4801,13 +4801,13 @@
 	"id" : "pde20121026003314380_66"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6626"),
+	"_id" : "526bc441a04005b8d34e6626",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1353090290790"),
-		"updated" : NumberLong("1363392544029"),
+		"time" : "1353090290790",
+		"updated" : "1363392544029",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121116182450790_50",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121116182450790_50&format=geojson",
@@ -4841,13 +4841,13 @@
 	"id" : "pde20121116182450790_50"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e4fce"),
+	"_id" : "526bc441a04005b8d34e4fce",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "114km E of Mutsu, Japan",
-		"time" : NumberLong("1370978878700"),
-		"updated" : NumberLong("1371813593037"),
+		"time" : "1370978878700",
+		"updated" : "1371813593037",
 		"tz" : 600,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000hlzv",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000hlzv&format=geojson",
@@ -4881,13 +4881,13 @@
 	"id" : "usc000hlzv"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e61da"),
+	"_id" : "526bc441a04005b8d34e61da",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "Hokkaido, Japan region",
-		"time" : NumberLong("1356157227040"),
-		"updated" : NumberLong("1363392580629"),
+		"time" : "1356157227040",
+		"updated" : "1363392580629",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121222062027040_68",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121222062027040_68&format=geojson",
@@ -4921,13 +4921,13 @@
 	"id" : "pde20121222062027040_68"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e59f1"),
+	"_id" : "526bc441a04005b8d34e59f1",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "75km ENE of Mutsu, Japan",
-		"time" : NumberLong("1361960652600"),
-		"updated" : NumberLong("1370899263151"),
+		"time" : "1361960652600",
+		"updated" : "1370899263151",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000fdwl",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000fdwl&format=geojson",
@@ -4961,13 +4961,13 @@
 	"id" : "usc000fdwl"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4ecd"),
+	"_id" : "526bc440a04005b8d34e4ecd",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "73km ENE of Mutsu, Japan",
-		"time" : NumberLong("1372115545000"),
-		"updated" : NumberLong("1373196531528"),
+		"time" : "1372115545000",
+		"updated" : "1373196531528",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000hzgx",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000hzgx&format=geojson",
@@ -5001,13 +5001,13 @@
 	"id" : "usc000hzgx"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4e6f"),
+	"_id" : "526bc440a04005b8d34e4e6f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "65km E of Mutsu, Japan",
-		"time" : NumberLong("1372668056940"),
-		"updated" : NumberLong("1372697010632"),
+		"time" : "1372668056940",
+		"updated" : "1372697010632",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000i42l",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000i42l&format=geojson",
@@ -5041,13 +5041,13 @@
 	"id" : "usb000i42l"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5611"),
+	"_id" : "526bc441a04005b8d34e5611",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "74km ENE of Mutsu, Japan",
-		"time" : NumberLong("1365649555800"),
-		"updated" : NumberLong("1370901332439"),
+		"time" : "1365649555800",
+		"updated" : "1370901332439",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000g4ni",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000g4ni&format=geojson",
@@ -5081,13 +5081,13 @@
 	"id" : "usb000g4ni"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e4fa5"),
+	"_id" : "526bc441a04005b8d34e4fa5",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4,
 		"place" : "14km NNE of Nanae, Japan",
-		"time" : NumberLong("1371281573300"),
-		"updated" : NumberLong("1372521364862"),
+		"time" : "1371281573300",
+		"updated" : "1372521364862",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013rlep",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013rlep&format=geojson",
@@ -5121,13 +5121,13 @@
 	"id" : "us2013rlep"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4881"),
+	"_id" : "526bc440a04005b8d34e4881",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "54km W of Kamiiso, Japan",
-		"time" : NumberLong("1377676638380"),
-		"updated" : NumberLong("1381317930000"),
+		"time" : "1377676638380",
+		"updated" : "1381317930000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000jciu",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000jciu&format=geojson",
@@ -5161,13 +5161,13 @@
 	"id" : "usb000jciu"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e43b3"),
+	"_id" : "526bc440a04005b8d34e43b3",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "192km NW of Nanao, Japan",
-		"time" : NumberLong("1381534880680"),
-		"updated" : NumberLong("1382316947368"),
+		"time" : "1381534880680",
+		"updated" : "1382316947368",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000kbgf",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000kbgf&format=geojson",
@@ -5201,13 +5201,13 @@
 	"id" : "usb000kbgf"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e67b0"),
+	"_id" : "526bc441a04005b8d34e67b0",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "Sea of Japan",
-		"time" : NumberLong("1352279253710"),
-		"updated" : NumberLong("1363392529534"),
+		"time" : "1352279253710",
+		"updated" : "1363392529534",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121107090733710_350",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121107090733710_350&format=geojson",
@@ -5241,13 +5241,13 @@
 	"id" : "pde20121107090733710_350"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e621a"),
+	"_id" : "526bc441a04005b8d34e621a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "eastern Honshu, Japan",
-		"time" : NumberLong("1355945215770"),
-		"updated" : NumberLong("1363392577239"),
+		"time" : "1355945215770",
+		"updated" : "1363392577239",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121219192655770_89",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121219192655770_89&format=geojson",
@@ -5281,13 +5281,13 @@
 	"id" : "pde20121219192655770_89"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e54c5"),
+	"_id" : "526bc441a04005b8d34e54c5",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "19km SW of Inawashiro, Japan",
-		"time" : NumberLong("1366540056500"),
-		"updated" : NumberLong("1370901915798"),
+		"time" : "1366540056500",
+		"updated" : "1370901915798",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000gd4d",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000gd4d&format=geojson",
@@ -5321,13 +5321,13 @@
 	"id" : "usb000gd4d"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6429"),
+	"_id" : "526bc441a04005b8d34e6429",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "near the west coast of Honshu, Japan",
-		"time" : NumberLong("1354662174070"),
-		"updated" : NumberLong("1363392562350"),
+		"time" : "1354662174070",
+		"updated" : "1363392562350",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121204230254070_28",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121204230254070_28&format=geojson",
@@ -5361,13 +5361,13 @@
 	"id" : "pde20121204230254070_28"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e647a"),
+	"_id" : "526bc441a04005b8d34e647a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "near the west coast of Honshu, Japan",
-		"time" : NumberLong("1354412505700"),
-		"updated" : NumberLong("1363392559924"),
+		"time" : "1354412505700",
+		"updated" : "1363392559924",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121202014145700_172",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121202014145700_172&format=geojson",
@@ -5401,13 +5401,13 @@
 	"id" : "pde20121202014145700_172"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4467"),
+	"_id" : "526bc440a04005b8d34e4467",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "11km SW of Shiozawa, Japan",
-		"time" : NumberLong("1380643704680"),
-		"updated" : NumberLong("1381674830000"),
+		"time" : "1380643704680",
+		"updated" : "1381674830000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000k3tw",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000k3tw&format=geojson",
@@ -5441,13 +5441,13 @@
 	"id" : "usb000k3tw"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e56e3"),
+	"_id" : "526bc441a04005b8d34e56e3",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "11km NNE of Tsubata, Japan",
-		"time" : NumberLong("1365008293100"),
-		"updated" : NumberLong("1370901032097"),
+		"time" : "1365008293100",
+		"updated" : "1370901032097",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013nna3",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013nna3&format=geojson",
@@ -5481,13 +5481,13 @@
 	"id" : "us2013nna3"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e53fb"),
+	"_id" : "526bc441a04005b8d34e53fb",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "137km NW of Mikuni, Japan",
-		"time" : NumberLong("1367262968880"),
-		"updated" : NumberLong("1370382596030"),
+		"time" : "1367262968880",
+		"updated" : "1370382596030",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ghva",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ghva&format=geojson",
@@ -5521,13 +5521,13 @@
 	"id" : "usb000ghva"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5a9e"),
+	"_id" : "526bc441a04005b8d34e5a9e",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "29km N of Miyazu, Japan",
-		"time" : NumberLong("1361386507400"),
-		"updated" : NumberLong("1370898892785"),
+		"time" : "1361386507400",
+		"updated" : "1370898892785",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000fan7",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000fan7&format=geojson",
@@ -5561,13 +5561,13 @@
 	"id" : "usc000fan7"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5f55"),
+	"_id" : "526bc441a04005b8d34e5f55",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "near the west coast of Honshu, Japan",
-		"time" : NumberLong("1358180404770"),
-		"updated" : NumberLong("1363392601272"),
+		"time" : "1358180404770",
+		"updated" : "1363392601272",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130114162004770_266",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130114162004770_266&format=geojson",
@@ -5601,13 +5601,13 @@
 	"id" : "pde20130114162004770_266"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4d89"),
+	"_id" : "526bc440a04005b8d34e4d89",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "3km SE of Kasugai, Japan",
-		"time" : NumberLong("1374060723440"),
-		"updated" : NumberLong("1374068938051"),
+		"time" : "1374060723440",
+		"updated" : "1374068938051",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ifyk",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ifyk&format=geojson",
@@ -5641,13 +5641,13 @@
 	"id" : "usb000ifyk"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4650"),
+	"_id" : "526bc440a04005b8d34e4650",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "24km ENE of Owase, Japan",
-		"time" : NumberLong("1379032702370"),
-		"updated" : NumberLong("1381026630000"),
+		"time" : "1379032702370",
+		"updated" : "1381026630000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000jw06",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000jw06&format=geojson",
@@ -5681,13 +5681,13 @@
 	"id" : "usb000jw06"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4845"),
+	"_id" : "526bc440a04005b8d34e4845",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "7km WSW of Shingu, Japan",
-		"time" : NumberLong("1377851547750"),
-		"updated" : NumberLong("1377880506418"),
+		"time" : "1377851547750",
+		"updated" : "1377880506418",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000jdnq",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000jdnq&format=geojson",
@@ -5721,13 +5721,13 @@
 	"id" : "usb000jdnq"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4400"),
+	"_id" : "526bc440a04005b8d34e4400",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "29km SE of Haibara, Japan",
-		"time" : NumberLong("1381155660580"),
-		"updated" : NumberLong("1381933279000"),
+		"time" : "1381155660580",
+		"updated" : "1381933279000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000k7yf",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000k7yf&format=geojson",
@@ -5761,13 +5761,13 @@
 	"id" : "usb000k7yf"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6459"),
+	"_id" : "526bc441a04005b8d34e6459",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "near the south coast of western Honshu, Japan",
-		"time" : NumberLong("1354524393400"),
-		"updated" : NumberLong("1363392560900"),
+		"time" : "1354524393400",
+		"updated" : "1363392560900",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121203084633400_59",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121203084633400_59&format=geojson",
@@ -5801,13 +5801,13 @@
 	"id" : "pde20121203084633400_59"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5858"),
+	"_id" : "526bc441a04005b8d34e5858",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "17km SW of Koya, Japan",
-		"time" : NumberLong("1363533714400"),
-		"updated" : NumberLong("1370900205935"),
+		"time" : "1363533714400",
+		"updated" : "1370900205935",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013mwal",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013mwal&format=geojson",
@@ -5841,13 +5841,13 @@
 	"id" : "us2013mwal"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e47bb"),
+	"_id" : "526bc440a04005b8d34e47bb",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "20km SE of Kainan, Japan",
-		"time" : NumberLong("1378142563380"),
-		"updated" : NumberLong("1381266508000"),
+		"time" : "1378142563380",
+		"updated" : "1381266508000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000jf7r",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000jf7r&format=geojson",
@@ -5881,13 +5881,13 @@
 	"id" : "usb000jf7r"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5012"),
+	"_id" : "526bc441a04005b8d34e5012",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "16km NE of Gobo, Japan",
-		"time" : NumberLong("1370675875700"),
-		"updated" : NumberLong("1372418278686"),
+		"time" : "1370675875700",
+		"updated" : "1372418278686",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000hj0r",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000hj0r&format=geojson",
@@ -5921,13 +5921,13 @@
 	"id" : "usc000hj0r"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e500b"),
+	"_id" : "526bc441a04005b8d34e500b",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "13km ESE of Gobo, Japan",
-		"time" : NumberLong("1370691540500"),
-		"updated" : NumberLong("1372521429138"),
+		"time" : "1370691540500",
+		"updated" : "1372521429138",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013reds",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013reds&format=geojson",
@@ -5961,13 +5961,13 @@
 	"id" : "us2013reds"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e654e"),
+	"_id" : "526bc441a04005b8d34e654e",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "near the south coast of Honshu, Japan",
-		"time" : NumberLong("1353747588970"),
-		"updated" : NumberLong("1363392551147"),
+		"time" : "1353747588970",
+		"updated" : "1363392551147",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121124085948970_83",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121124085948970_83&format=geojson",
@@ -6001,13 +6001,13 @@
 	"id" : "pde20121124085948970_83"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e58a6"),
+	"_id" : "526bc441a04005b8d34e58a6",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "7km WSW of Ichihara, Japan",
-		"time" : NumberLong("1363204978660"),
-		"updated" : NumberLong("1379966610000"),
+		"time" : "1363204978660",
+		"updated" : "1379966610000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fkh0",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fkh0&format=geojson",
@@ -6041,13 +6041,13 @@
 	"id" : "usb000fkh0"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5de6"),
+	"_id" : "526bc441a04005b8d34e5de6",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "11km WNW of Ichihara, Japan",
-		"time" : NumberLong("1359727608200"),
-		"updated" : NumberLong("1363392610100"),
+		"time" : "1359727608200",
+		"updated" : "1363392610100",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000ezlw",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000ezlw&format=geojson",
@@ -6081,13 +6081,13 @@
 	"id" : "usc000ezlw"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5e01"),
+	"_id" : "526bc441a04005b8d34e5e01",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "1km N of Kasukabe, Japan",
-		"time" : NumberLong("1359648285100"),
-		"updated" : NumberLong("1363392609586"),
+		"time" : "1359648285100",
+		"updated" : "1363392609586",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000ez7y",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000ez7y&format=geojson",
@@ -6121,13 +6121,13 @@
 	"id" : "usc000ez7y"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6889"),
+	"_id" : "526bc441a04005b8d34e6889",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "near the south coast of Honshu, Japan",
-		"time" : NumberLong("1351666202600"),
-		"updated" : NumberLong("1363392521230"),
+		"time" : "1351666202600",
+		"updated" : "1363392521230",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121031065002600_58",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121031065002600_58&format=geojson",
@@ -6161,13 +6161,13 @@
 	"id" : "pde20121031065002600_58"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e655b"),
+	"_id" : "526bc441a04005b8d34e655b",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "eastern Honshu, Japan",
-		"time" : NumberLong("1353685907730"),
-		"updated" : NumberLong("1363392550555"),
+		"time" : "1353685907730",
+		"updated" : "1363392550555",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121123155147730_57",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121123155147730_57&format=geojson",
@@ -6201,13 +6201,13 @@
 	"id" : "pde20121123155147730_57"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e55c4"),
+	"_id" : "526bc441a04005b8d34e55c4",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "2km ENE of Morohongo, Japan",
-		"time" : NumberLong("1365902525500"),
-		"updated" : NumberLong("1370901474360"),
+		"time" : "1365902525500",
+		"updated" : "1370901474360",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000g6l6",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000g6l6&format=geojson",
@@ -6241,13 +6241,13 @@
 	"id" : "usb000g6l6"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4bca"),
+	"_id" : "526bc440a04005b8d34e4bca",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.1,
 		"place" : "19km S of Kosai-shi, Japan",
-		"time" : NumberLong("1375491375280"),
-		"updated" : NumberLong("1380135992891"),
+		"time" : "1375491375280",
+		"updated" : "1380135992891",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000iul2",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000iul2&format=geojson",
@@ -6281,13 +6281,13 @@
 	"id" : "usb000iul2"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5a25"),
+	"_id" : "526bc441a04005b8d34e5a25",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.8,
 		"place" : "31km NNE of Numata, Japan",
-		"time" : NumberLong("1361777035700"),
-		"updated" : NumberLong("1379966475000"),
+		"time" : "1361777035700",
+		"updated" : "1379966475000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000fd56",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000fd56&format=geojson",
@@ -6321,13 +6321,13 @@
 	"id" : "usc000fd56"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5a24"),
+	"_id" : "526bc441a04005b8d34e5a24",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "30km NNE of Numata, Japan",
-		"time" : NumberLong("1361777522800"),
-		"updated" : NumberLong("1370899153454"),
+		"time" : "1361777522800",
+		"updated" : "1370899153454",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000fd58",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000fd58&format=geojson",
@@ -6361,13 +6361,13 @@
 	"id" : "usc000fd58"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e519f"),
+	"_id" : "526bc441a04005b8d34e519f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "29km NW of Nikko, Japan",
-		"time" : NumberLong("1369135551100"),
-		"updated" : NumberLong("1370903349322"),
+		"time" : "1369135551100",
+		"updated" : "1370903349322",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h0qa",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000h0qa&format=geojson",
@@ -6401,13 +6401,13 @@
 	"id" : "usb000h0qa"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e53cd"),
+	"_id" : "526bc441a04005b8d34e53cd",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "10km NE of Maebashi-shi, Japan",
-		"time" : NumberLong("1367499877300"),
-		"updated" : NumberLong("1370902351498"),
+		"time" : "1367499877300",
+		"updated" : "1370902351498",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000gmii",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000gmii&format=geojson",
@@ -6441,13 +6441,13 @@
 	"id" : "usc000gmii"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e53ea"),
+	"_id" : "526bc441a04005b8d34e53ea",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "10km NW of Omama, Japan",
-		"time" : NumberLong("1367327359900"),
-		"updated" : NumberLong("1370903025630"),
+		"time" : "1367327359900",
+		"updated" : "1370903025630",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013pqdc",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013pqdc&format=geojson",
@@ -6481,13 +6481,13 @@
 	"id" : "us2013pqdc"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5e78"),
+	"_id" : "526bc441a04005b8d34e5e78",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "1km ESE of Tochigi, Japan",
-		"time" : NumberLong("1359159279000"),
-		"updated" : NumberLong("1370898936854"),
+		"time" : "1359159279000",
+		"updated" : "1370898936854",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013kwaq",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013kwaq&format=geojson",
@@ -6521,13 +6521,13 @@
 	"id" : "us2013kwaq"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5a23"),
+	"_id" : "526bc441a04005b8d34e5a23",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "24km WNW of Nikko, Japan",
-		"time" : NumberLong("1361777684500"),
-		"updated" : NumberLong("1370899152017"),
+		"time" : "1361777684500",
+		"updated" : "1370899152017",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000fd59",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000fd59&format=geojson",
@@ -6561,13 +6561,13 @@
 	"id" : "usc000fd59"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4d29"),
+	"_id" : "526bc440a04005b8d34e4d29",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.3,
 		"place" : "17km E of Ishikawa, Japan",
-		"time" : NumberLong("1374548533800"),
-		"updated" : NumberLong("1379971781020"),
+		"time" : "1374548533800",
+		"updated" : "1379971781020",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ikh7",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ikh7&format=geojson",
@@ -6601,13 +6601,13 @@
 	"id" : "usb000ikh7"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e512e"),
+	"_id" : "526bc441a04005b8d34e512e",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "28km NNE of Namie, Japan",
-		"time" : NumberLong("1369447903270"),
-		"updated" : NumberLong("1370903564272"),
+		"time" : "1369447903270",
+		"updated" : "1370903564272",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h5w2",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000h5w2&format=geojson",
@@ -6641,13 +6641,13 @@
 	"id" : "usb000h5w2"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5fb2"),
+	"_id" : "526bc441a04005b8d34e5fb2",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1357822101540"),
-		"updated" : NumberLong("1379967133000"),
+		"time" : "1357822101540",
+		"updated" : "1379967133000",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130110124821540_53",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130110124821540_53&format=geojson",
@@ -6681,13 +6681,13 @@
 	"id" : "pde20130110124821540_53"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e55b8"),
+	"_id" : "526bc441a04005b8d34e55b8",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.3,
 		"place" : "28km ENE of Namie, Japan",
-		"time" : NumberLong("1365945902200"),
-		"updated" : NumberLong("1379966856000"),
+		"time" : "1365945902200",
+		"updated" : "1379966856000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000g6nx",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000g6nx&format=geojson",
@@ -6721,13 +6721,13 @@
 	"id" : "usb000g6nx"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e678c"),
+	"_id" : "526bc441a04005b8d34e678c",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1352332471830"),
-		"updated" : NumberLong("1363392530546"),
+		"time" : "1352332471830",
+		"updated" : "1363392530546",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121107235431830_23",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121107235431830_23&format=geojson",
@@ -6761,13 +6761,13 @@
 	"id" : "pde20121107235431830_23"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6299"),
+	"_id" : "526bc441a04005b8d34e6299",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.2,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1355545622330"),
-		"updated" : NumberLong("1363392572969"),
+		"time" : "1355545622330",
+		"updated" : "1363392572969",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121215042702330_62",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121215042702330_62&format=geojson",
@@ -6801,13 +6801,13 @@
 	"id" : "pde20121215042702330_62"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e51c4"),
+	"_id" : "526bc441a04005b8d34e51c4",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "25km SE of Namie, Japan",
-		"time" : NumberLong("1369075700300"),
-		"updated" : NumberLong("1370903305105"),
+		"time" : "1369075700300",
+		"updated" : "1370903305105",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h03g",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000h03g&format=geojson",
@@ -6841,13 +6841,13 @@
 	"id" : "usb000h03g"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5264"),
+	"_id" : "526bc441a04005b8d34e5264",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "32km ENE of Iwaki, Japan",
-		"time" : NumberLong("1368689991700"),
-		"updated" : NumberLong("1370903011804"),
+		"time" : "1368689991700",
+		"updated" : "1370903011804",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000gwvq",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000gwvq&format=geojson",
@@ -6881,13 +6881,13 @@
 	"id" : "usb000gwvq"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e69a9"),
+	"_id" : "526bc441a04005b8d34e69a9",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.1,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1351311166750"),
-		"updated" : NumberLong("1363392510782"),
+		"time" : "1351311166750",
+		"updated" : "1363392510782",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121027041246750_55",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121027041246750_55&format=geojson",
@@ -6921,13 +6921,13 @@
 	"id" : "pde20121027041246750_55"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e60fb"),
+	"_id" : "526bc441a04005b8d34e60fb",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1356765575320"),
-		"updated" : NumberLong("1363392589153"),
+		"time" : "1356765575320",
+		"updated" : "1363392589153",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121229071935320_66",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121229071935320_66&format=geojson",
@@ -6961,13 +6961,13 @@
 	"id" : "pde20121229071935320_66"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e43c3"),
+	"_id" : "526bc440a04005b8d34e43c3",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "14km E of Iwaki, Japan",
-		"time" : NumberLong("1381479723070"),
-		"updated" : NumberLong("1381508670496"),
+		"time" : "1381479723070",
+		"updated" : "1381508670496",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000kama",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000kama&format=geojson",
@@ -7001,13 +7001,13 @@
 	"id" : "usb000kama"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4ae1"),
+	"_id" : "526bc440a04005b8d34e4ae1",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "21km SE of Iwaki, Japan",
-		"time" : NumberLong("1376088963670"),
-		"updated" : NumberLong("1381619060421"),
+		"time" : "1376088963670",
+		"updated" : "1381619060421",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j04d",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j04d&format=geojson",
@@ -7041,13 +7041,13 @@
 	"id" : "usb000j04d"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e46a7"),
+	"_id" : "526bc440a04005b8d34e46a7",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "24km SE of Iwaki, Japan",
-		"time" : NumberLong("1378782931000"),
-		"updated" : NumberLong("1380491092000"),
+		"time" : "1378782931000",
+		"updated" : "1380491092000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000jmyq",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000jmyq&format=geojson",
@@ -7081,13 +7081,13 @@
 	"id" : "usb000jmyq"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5bf7"),
+	"_id" : "526bc441a04005b8d34e5bf7",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "26km SE of Iwaki, Japan",
-		"time" : NumberLong("1360384987900"),
-		"updated" : NumberLong("1379966257000"),
+		"time" : "1360384987900",
+		"updated" : "1379966257000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000f4du",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000f4du&format=geojson",
@@ -7121,13 +7121,13 @@
 	"id" : "usc000f4du"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e60e0"),
+	"_id" : "526bc441a04005b8d34e60e0",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.2,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1356822324200"),
-		"updated" : NumberLong("1363392590170"),
+		"time" : "1356822324200",
+		"updated" : "1363392590170",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121229230524200_39",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121229230524200_39&format=geojson",
@@ -7161,13 +7161,13 @@
 	"id" : "pde20121229230524200_39"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4ea2"),
+	"_id" : "526bc440a04005b8d34e4ea2",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "28km E of Iwaki, Japan",
-		"time" : NumberLong("1372394181100"),
-		"updated" : NumberLong("1373109350564"),
+		"time" : "1372394181100",
+		"updated" : "1373109350564",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000i2bg",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000i2bg&format=geojson",
@@ -7201,13 +7201,13 @@
 	"id" : "usb000i2bg"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e61fe"),
+	"_id" : "526bc441a04005b8d34e61fe",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1356017474420"),
-		"updated" : NumberLong("1363392579479"),
+		"time" : "1356017474420",
+		"updated" : "1363392579479",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121220153114420_54",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121220153114420_54&format=geojson",
@@ -7241,13 +7241,13 @@
 	"id" : "pde20121220153114420_54"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e62ed"),
+	"_id" : "526bc441a04005b8d34e62ed",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1355271577800"),
-		"updated" : NumberLong("1363392570423"),
+		"time" : "1355271577800",
+		"updated" : "1363392570423",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121212001937800_21",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121212001937800_21&format=geojson",
@@ -7281,13 +7281,13 @@
 	"id" : "pde20121212001937800_21"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6057"),
+	"_id" : "526bc441a04005b8d34e6057",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1357307579980"),
-		"updated" : NumberLong("1363392593548"),
+		"time" : "1357307579980",
+		"updated" : "1363392593548",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130104135259980_75",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130104135259980_75&format=geojson",
@@ -7321,13 +7321,13 @@
 	"id" : "pde20130104135259980_75"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4935"),
+	"_id" : "526bc440a04005b8d34e4935",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "35km ESE of Iwaki, Japan",
-		"time" : NumberLong("1377105603890"),
-		"updated" : NumberLong("1382732195397"),
+		"time" : "1377105603890",
+		"updated" : "1382732195397",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j8g8",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j8g8&format=geojson",
@@ -7361,13 +7361,13 @@
 	"id" : "usb000j8g8"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4a8f"),
+	"_id" : "526bc440a04005b8d34e4a8f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "31km ESE of Iwaki, Japan",
-		"time" : NumberLong("1376312373520"),
-		"updated" : NumberLong("1381618854763"),
+		"time" : "1376312373520",
+		"updated" : "1381618854763",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j13i",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j13i&format=geojson",
@@ -7401,13 +7401,13 @@
 	"id" : "usb000j13i"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6250"),
+	"_id" : "526bc441a04005b8d34e6250",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1355769972740"),
-		"updated" : NumberLong("1363392575930"),
+		"time" : "1355769972740",
+		"updated" : "1363392575930",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121217184612740_27",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121217184612740_27&format=geojson",
@@ -7441,13 +7441,13 @@
 	"id" : "pde20121217184612740_27"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e67ba"),
+	"_id" : "526bc441a04005b8d34e67ba",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1352249691840"),
-		"updated" : NumberLong("1363392529258"),
+		"time" : "1352249691840",
+		"updated" : "1363392529258",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121107005451840_35",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121107005451840_35&format=geojson",
@@ -7481,13 +7481,13 @@
 	"id" : "pde20121107005451840_35"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5652"),
+	"_id" : "526bc441a04005b8d34e5652",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "44km ESE of Iwaki, Japan",
-		"time" : NumberLong("1365512816400"),
-		"updated" : NumberLong("1370901981553"),
+		"time" : "1365512816400",
+		"updated" : "1370901981553",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013nue1",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013nue1&format=geojson",
@@ -7521,13 +7521,13 @@
 	"id" : "us2013nue1"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6762"),
+	"_id" : "526bc441a04005b8d34e6762",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.2,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1352433117870"),
-		"updated" : NumberLong("1363392531601"),
+		"time" : "1352433117870",
+		"updated" : "1363392531601",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121109035157870_37",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121109035157870_37&format=geojson",
@@ -7561,13 +7561,13 @@
 	"id" : "pde20121109035157870_37"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e63c5"),
+	"_id" : "526bc441a04005b8d34e63c5",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1354876829520"),
-		"updated" : NumberLong("1363392565416"),
+		"time" : "1354876829520",
+		"updated" : "1363392565416",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121207104029520_35",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121207104029520_35&format=geojson",
@@ -7601,13 +7601,13 @@
 	"id" : "pde20121207104029520_35"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e675f"),
+	"_id" : "526bc441a04005b8d34e675f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.1,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1352436586080"),
-		"updated" : NumberLong("1363392531848"),
+		"time" : "1352436586080",
+		"updated" : "1363392531848",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121109044946080_40",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121109044946080_40&format=geojson",
@@ -7641,13 +7641,13 @@
 	"id" : "pde20121109044946080_40"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6761"),
+	"_id" : "526bc441a04005b8d34e6761",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1352433970310"),
-		"updated" : NumberLong("1363392531741"),
+		"time" : "1352433970310",
+		"updated" : "1363392531741",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121109040610310_44",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121109040610310_44&format=geojson",
@@ -7681,13 +7681,13 @@
 	"id" : "pde20121109040610310_44"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4c98"),
+	"_id" : "526bc440a04005b8d34e4c98",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "32km SE of Iwaki, Japan",
-		"time" : NumberLong("1374947266430"),
-		"updated" : NumberLong("1379974254782"),
+		"time" : "1374947266430",
+		"updated" : "1379974254782",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000iqpm",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000iqpm&format=geojson",
@@ -7721,13 +7721,13 @@
 	"id" : "usc000iqpm"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6296"),
+	"_id" : "526bc441a04005b8d34e6296",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1355550373870"),
-		"updated" : NumberLong("1363392573150"),
+		"time" : "1355550373870",
+		"updated" : "1363392573150",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121215054613870_35",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121215054613870_35&format=geojson",
@@ -7761,13 +7761,13 @@
 	"id" : "pde20121215054613870_35"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4658"),
+	"_id" : "526bc440a04005b8d34e4658",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "20km ESE of Kitaibaraki, Japan",
-		"time" : NumberLong("1379015373690"),
-		"updated" : NumberLong("1382539460000"),
+		"time" : "1379015373690",
+		"updated" : "1382539460000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000jszf",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000jszf&format=geojson",
@@ -7801,13 +7801,13 @@
 	"id" : "usc000jszf"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e447b"),
+	"_id" : "526bc440a04005b8d34e447b",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "19km ESE of Takahagi, Japan",
-		"time" : NumberLong("1380548258760"),
-		"updated" : NumberLong("1381430670000"),
+		"time" : "1380548258760",
+		"updated" : "1381430670000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000k2mg",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000k2mg&format=geojson",
@@ -7841,13 +7841,13 @@
 	"id" : "usb000k2mg"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e46ce"),
+	"_id" : "526bc440a04005b8d34e46ce",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "8km WNW of Hitachi, Japan",
-		"time" : NumberLong("1378685060730"),
-		"updated" : NumberLong("1380253187000"),
+		"time" : "1378685060730",
+		"updated" : "1380253187000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000jltp",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000jltp&format=geojson",
@@ -7881,13 +7881,13 @@
 	"id" : "usb000jltp"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5e59"),
+	"_id" : "526bc441a04005b8d34e5e59",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.1,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1359312108640"),
-		"updated" : NumberLong("1379967295000"),
+		"time" : "1359312108640",
+		"updated" : "1379967295000",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130127184148640_70",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130127184148640_70&format=geojson",
@@ -7921,13 +7921,13 @@
 	"id" : "pde20130127184148640_70"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5e02"),
+	"_id" : "526bc441a04005b8d34e5e02",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "12km E of Daigo, Japan",
-		"time" : NumberLong("1359644021900"),
-		"updated" : NumberLong("1363392609552"),
+		"time" : "1359644021900",
+		"updated" : "1363392609552",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000ez7n",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000ez7n&format=geojson",
@@ -7961,13 +7961,13 @@
 	"id" : "usc000ez7n"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5289"),
+	"_id" : "526bc441a04005b8d34e5289",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "14km WNW of Kitaibaraki, Japan",
-		"time" : NumberLong("1368610504290"),
-		"updated" : NumberLong("1370902923962"),
+		"time" : "1368610504290",
+		"updated" : "1370902923962",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000gx62",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000gx62&format=geojson",
@@ -8001,13 +8001,13 @@
 	"id" : "usc000gx62"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5b43"),
+	"_id" : "526bc441a04005b8d34e5b43",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "13km W of Takahagi, Japan",
-		"time" : NumberLong("1360860217800"),
-		"updated" : NumberLong("1370898662833"),
+		"time" : "1360860217800",
+		"updated" : "1370898662833",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000f7b6",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000f7b6&format=geojson",
@@ -8041,13 +8041,13 @@
 	"id" : "usc000f7b6"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e52b3"),
+	"_id" : "526bc441a04005b8d34e52b3",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "14km ENE of Daigo, Japan",
-		"time" : NumberLong("1368453569100"),
-		"updated" : NumberLong("1370902871669"),
+		"time" : "1368453569100",
+		"updated" : "1370902871669",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013qdak",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013qdak&format=geojson",
@@ -8081,13 +8081,13 @@
 	"id" : "us2013qdak"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5a4b"),
+	"_id" : "526bc441a04005b8d34e5a4b",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "21km W of Iwaki, Japan",
-		"time" : NumberLong("1361681718900"),
-		"updated" : NumberLong("1370899079265"),
+		"time" : "1361681718900",
+		"updated" : "1370899079265",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000fcep",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000fcep&format=geojson",
@@ -8121,13 +8121,13 @@
 	"id" : "usc000fcep"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4755"),
+	"_id" : "526bc440a04005b8d34e4755",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "20km SE of Ishikawa, Japan",
-		"time" : NumberLong("1378325976700"),
-		"updated" : NumberLong("1381946261000"),
+		"time" : "1378325976700",
+		"updated" : "1381946261000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000jqy2",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000jqy2&format=geojson",
@@ -8161,13 +8161,13 @@
 	"id" : "usc000jqy2"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e459c"),
+	"_id" : "526bc440a04005b8d34e459c",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.3,
 		"place" : "19km ESE of Ishikawa, Japan",
-		"time" : NumberLong("1379611509350"),
-		"updated" : NumberLong("1380207783770"),
+		"time" : "1379611509350",
+		"updated" : "1380207783770",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000jw8u",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000jw8u&format=geojson",
@@ -8201,13 +8201,13 @@
 	"id" : "usb000jw8u"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e45a8"),
+	"_id" : "526bc440a04005b8d34e45a8",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "15km SSE of Ishikawa, Japan",
-		"time" : NumberLong("1379544297030"),
-		"updated" : NumberLong("1382571304000"),
+		"time" : "1379544297030",
+		"updated" : "1382571304000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000jvx0",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000jvx0&format=geojson",
@@ -8241,13 +8241,13 @@
 	"id" : "usb000jvx0"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5806"),
+	"_id" : "526bc441a04005b8d34e5806",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "4km ESE of Daigo, Japan",
-		"time" : NumberLong("1363844074850"),
-		"updated" : NumberLong("1370900365629"),
+		"time" : "1363844074850",
+		"updated" : "1370900365629",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fq2v",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fq2v&format=geojson",
@@ -8281,13 +8281,13 @@
 	"id" : "usb000fq2v"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6215"),
+	"_id" : "526bc441a04005b8d34e6215",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1355948188310"),
-		"updated" : NumberLong("1363392577288"),
+		"time" : "1355948188310",
+		"updated" : "1363392577288",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121219201628310_75",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121219201628310_75&format=geojson",
@@ -8321,13 +8321,13 @@
 	"id" : "pde20121219201628310_75"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4afd"),
+	"_id" : "526bc440a04005b8d34e4afd",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "8km NNE of Ishioka, Japan",
-		"time" : NumberLong("1376017444800"),
-		"updated" : NumberLong("1381617603418"),
+		"time" : "1376017444800",
+		"updated" : "1381617603418",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j4fy",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j4fy&format=geojson",
@@ -8361,13 +8361,13 @@
 	"id" : "usb000j4fy"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5854"),
+	"_id" : "526bc441a04005b8d34e5854",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "8km W of Funaishikawa, Japan",
-		"time" : NumberLong("1363557220000"),
-		"updated" : NumberLong("1370900210654"),
+		"time" : "1363557220000",
+		"updated" : "1370900210654",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fmhh",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fmhh&format=geojson",
@@ -8401,13 +8401,13 @@
 	"id" : "usb000fmhh"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6405"),
+	"_id" : "526bc441a04005b8d34e6405",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1354789056130"),
-		"updated" : NumberLong("1363392563457"),
+		"time" : "1354789056130",
+		"updated" : "1363392563457",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121206101736130_63",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121206101736130_63&format=geojson",
@@ -8441,13 +8441,13 @@
 	"id" : "pde20121206101736130_63"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5d2f"),
+	"_id" : "526bc441a04005b8d34e5d2f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "3km NE of Narashino, Japan",
-		"time" : NumberLong("1360143108800"),
-		"updated" : NumberLong("1370898996688"),
+		"time" : "1360143108800",
+		"updated" : "1370898996688",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013lhyx",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013lhyx&format=geojson",
@@ -8481,13 +8481,13 @@
 	"id" : "us2013lhyx"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4d86"),
+	"_id" : "526bc440a04005b8d34e4d86",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "2km SSE of Yotsukaido, Japan",
-		"time" : NumberLong("1374069384890"),
-		"updated" : NumberLong("1374074998664"),
+		"time" : "1374069384890",
+		"updated" : "1374074998664",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ig01",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ig01&format=geojson",
@@ -8521,13 +8521,13 @@
 	"id" : "usb000ig01"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5ace"),
+	"_id" : "526bc441a04005b8d34e5ace",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "7km SSE of Yotsukaido, Japan",
-		"time" : NumberLong("1361207407650"),
-		"updated" : NumberLong("1363706792403"),
+		"time" : "1361207407650",
+		"updated" : "1363706792403",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000ffq0",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000ffq0&format=geojson",
@@ -8561,13 +8561,13 @@
 	"id" : "usc000ffq0"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e62cf"),
+	"_id" : "526bc441a04005b8d34e62cf",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1355399767220"),
-		"updated" : NumberLong("1363392571270"),
+		"time" : "1355399767220",
+		"updated" : "1363392571270",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121213115607220_71",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121213115607220_71&format=geojson",
@@ -8601,13 +8601,13 @@
 	"id" : "pde20121213115607220_71"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e63f6"),
+	"_id" : "526bc441a04005b8d34e63f6",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1354825923840"),
-		"updated" : NumberLong("1363392563771"),
+		"time" : "1354825923840",
+		"updated" : "1363392563771",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121206203203840_54",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121206203203840_54&format=geojson",
@@ -8641,13 +8641,13 @@
 	"id" : "pde20121206203203840_54"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e48c5"),
+	"_id" : "526bc440a04005b8d34e48c5",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "11km SSE of Ichihara, Japan",
-		"time" : NumberLong("1377440723420"),
-		"updated" : NumberLong("1382733717774"),
+		"time" : "1377440723420",
+		"updated" : "1382733717774",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000jbn1",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000jbn1&format=geojson",
@@ -8681,13 +8681,13 @@
 	"id" : "usb000jbn1"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5042"),
+	"_id" : "526bc441a04005b8d34e5042",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "6km SSE of Naruto, Japan",
-		"time" : NumberLong("1370489338100"),
-		"updated" : NumberLong("1380614220000"),
+		"time" : "1370489338100",
+		"updated" : "1380614220000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000hgvm",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000hgvm&format=geojson",
@@ -8721,13 +8721,13 @@
 	"id" : "usc000hgvm"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e534d"),
+	"_id" : "526bc441a04005b8d34e534d",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "4km S of Asahi, Japan",
-		"time" : NumberLong("1368011893500"),
-		"updated" : NumberLong("1370902602054"),
+		"time" : "1368011893500",
+		"updated" : "1370902602054",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000gqwf",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000gqwf&format=geojson",
@@ -8761,13 +8761,13 @@
 	"id" : "usc000gqwf"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6060"),
+	"_id" : "526bc441a04005b8d34e6060",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1357274567840"),
-		"updated" : NumberLong("1363392593408"),
+		"time" : "1357274567840",
+		"updated" : "1363392593408",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130104044247840_39",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130104044247840_39&format=geojson",
@@ -8801,13 +8801,13 @@
 	"id" : "pde20130104044247840_39"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4d4d"),
+	"_id" : "526bc440a04005b8d34e4d4d",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "4km SE of Yokaichiba, Japan",
-		"time" : NumberLong("1374390200730"),
-		"updated" : NumberLong("1374494300764"),
+		"time" : "1374390200730",
+		"updated" : "1374494300764",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000iiya",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000iiya&format=geojson",
@@ -8841,13 +8841,13 @@
 	"id" : "usb000iiya"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e503f"),
+	"_id" : "526bc441a04005b8d34e503f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "7km SSE of Yokaichiba, Japan",
-		"time" : NumberLong("1370492741200"),
-		"updated" : NumberLong("1372763866364"),
+		"time" : "1370492741200",
+		"updated" : "1372763866364",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000hgw5",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000hgw5&format=geojson",
@@ -8881,13 +8881,13 @@
 	"id" : "usc000hgw5"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5ecb"),
+	"_id" : "526bc441a04005b8d34e5ecb",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "13km N of Hasaki, Japan",
-		"time" : NumberLong("1358797616950"),
-		"updated" : NumberLong("1379967233000"),
+		"time" : "1358797616950",
+		"updated" : "1379967233000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000esbl",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000esbl&format=geojson",
@@ -8921,13 +8921,13 @@
 	"id" : "usb000esbl"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e552a"),
+	"_id" : "526bc441a04005b8d34e552a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "6km NE of Hasaki, Japan",
-		"time" : NumberLong("1366380673500"),
-		"updated" : NumberLong("1370901798199"),
+		"time" : "1366380673500",
+		"updated" : "1370901798199",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000gbvr",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000gbvr&format=geojson",
@@ -8961,13 +8961,13 @@
 	"id" : "usb000gbvr"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e579a"),
+	"_id" : "526bc441a04005b8d34e579a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "2km NNE of Hasaki, Japan",
-		"time" : NumberLong("1364298915800"),
-		"updated" : NumberLong("1370900616036"),
+		"time" : "1364298915800",
+		"updated" : "1370900616036",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fsrq",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fsrq&format=geojson",
@@ -9001,13 +9001,13 @@
 	"id" : "usb000fsrq"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e579b"),
+	"_id" : "526bc441a04005b8d34e579b",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "5km NW of Hasaki, Japan",
-		"time" : NumberLong("1364298504500"),
-		"updated" : NumberLong("1370900613075"),
+		"time" : "1364298504500",
+		"updated" : "1370900613075",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fsrp",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fsrp&format=geojson",
@@ -9041,13 +9041,13 @@
 	"id" : "usb000fsrp"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e599e"),
+	"_id" : "526bc441a04005b8d34e599e",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "10km N of Hasaki, Japan",
-		"time" : NumberLong("1362309280400"),
-		"updated" : NumberLong("1370899467460"),
+		"time" : "1362309280400",
+		"updated" : "1370899467460",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000fffs",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000fffs&format=geojson",
@@ -9081,13 +9081,13 @@
 	"id" : "usc000fffs"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e56da"),
+	"_id" : "526bc441a04005b8d34e56da",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "4km SW of Hasaki, Japan",
-		"time" : NumberLong("1365050556700"),
-		"updated" : NumberLong("1379966749000"),
+		"time" : "1365050556700",
+		"updated" : "1379966749000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fzi6",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fzi6&format=geojson",
@@ -9121,13 +9121,13 @@
 	"id" : "usb000fzi6"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5405"),
+	"_id" : "526bc441a04005b8d34e5405",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.6,
 		"place" : "11km ESE of Hasaki, Japan",
-		"time" : NumberLong("1367240506700"),
-		"updated" : NumberLong("1379965795000"),
+		"time" : "1367240506700",
+		"updated" : "1379965795000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ghg0",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ghg0&format=geojson",
@@ -9161,13 +9161,13 @@
 	"id" : "usb000ghg0"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4e36"),
+	"_id" : "526bc440a04005b8d34e4e36",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "9km ENE of Hasaki, Japan",
-		"time" : NumberLong("1373061648080"),
-		"updated" : NumberLong("1373063525388"),
+		"time" : "1373061648080",
+		"updated" : "1373063525388",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000i7j5",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000i7j5&format=geojson",
@@ -9201,13 +9201,13 @@
 	"id" : "usb000i7j5"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e67c4"),
+	"_id" : "526bc441a04005b8d34e67c4",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1352214104750"),
-		"updated" : NumberLong("1363392529094"),
+		"time" : "1352214104750",
+		"updated" : "1363392529094",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121106150144750_20",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121106150144750_20&format=geojson",
@@ -9241,13 +9241,13 @@
 	"id" : "pde20121106150144750_20"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e68a3"),
+	"_id" : "526bc441a04005b8d34e68a3",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1351592021230"),
-		"updated" : NumberLong("1363392520644"),
+		"time" : "1351592021230",
+		"updated" : "1363392520644",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121030101341230_35",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121030101341230_35&format=geojson",
@@ -9281,13 +9281,13 @@
 	"id" : "pde20121030101341230_35"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e68a5"),
+	"_id" : "526bc441a04005b8d34e68a5",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1351591846310"),
-		"updated" : NumberLong("1363392520489"),
+		"time" : "1351591846310",
+		"updated" : "1363392520489",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121030101046310_35",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121030101046310_35&format=geojson",
@@ -9321,13 +9321,13 @@
 	"id" : "pde20121030101046310_35"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e645c"),
+	"_id" : "526bc441a04005b8d34e645c",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1354510634790"),
-		"updated" : NumberLong("1363392560738"),
+		"time" : "1354510634790",
+		"updated" : "1363392560738",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121203045714790_92",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121203045714790_92&format=geojson",
@@ -9361,13 +9361,13 @@
 	"id" : "pde20121203045714790_92"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e67fe"),
+	"_id" : "526bc441a04005b8d34e67fe",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1352062193340"),
-		"updated" : NumberLong("1363392527341"),
+		"time" : "1352062193340",
+		"updated" : "1363392527341",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121104204953340_35",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121104204953340_35&format=geojson",
@@ -9401,13 +9401,13 @@
 	"id" : "pde20121104204953340_35"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e46f7"),
+	"_id" : "526bc440a04005b8d34e46f7",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.1,
 		"place" : "29km E of Oarai, Japan",
-		"time" : NumberLong("1378564683820"),
-		"updated" : NumberLong("1381671501000"),
+		"time" : "1378564683820",
+		"updated" : "1381671501000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000jwvf",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000jwvf&format=geojson",
@@ -9441,13 +9441,13 @@
 	"id" : "usc000jwvf"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6673"),
+	"_id" : "526bc441a04005b8d34e6673",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1352913571030"),
-		"updated" : NumberLong("1363392540767"),
+		"time" : "1352913571030",
+		"updated" : "1363392540767",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121114171931030_53",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121114171931030_53&format=geojson",
@@ -9481,13 +9481,13 @@
 	"id" : "pde20121114171931030_53"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4c5a"),
+	"_id" : "526bc440a04005b8d34e4c5a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "17km E of Funaishikawa, Japan",
-		"time" : NumberLong("1375113949160"),
-		"updated" : NumberLong("1379974355224"),
+		"time" : "1375113949160",
+		"updated" : "1379974355224",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000iztv",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000iztv&format=geojson",
@@ -9521,13 +9521,13 @@
 	"id" : "usb000iztv"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e43bb"),
+	"_id" : "526bc440a04005b8d34e43bb",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "17km E of Funaishikawa, Japan",
-		"time" : NumberLong("1381513392460"),
-		"updated" : NumberLong("1381591144850"),
+		"time" : "1381513392460",
+		"updated" : "1381591144850",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000kb0t",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000kb0t&format=geojson",
@@ -9561,13 +9561,13 @@
 	"id" : "usb000kb0t"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e69ee"),
+	"_id" : "526bc441a04005b8d34e69ee",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1351062343320"),
-		"updated" : NumberLong("1363392508745"),
+		"time" : "1351062343320",
+		"updated" : "1363392508745",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121024070543320_77",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121024070543320_77&format=geojson",
@@ -9601,13 +9601,13 @@
 	"id" : "pde20121024070543320_77"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e451e"),
+	"_id" : "526bc440a04005b8d34e451e",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "25km ESE of Hitachi, Japan",
-		"time" : NumberLong("1379976452630"),
-		"updated" : NumberLong("1382571432000"),
+		"time" : "1379976452630",
+		"updated" : "1382571432000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000k2bn",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000k2bn&format=geojson",
@@ -9641,13 +9641,13 @@
 	"id" : "usb000k2bn"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6937"),
+	"_id" : "526bc441a04005b8d34e6937",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1351417444650"),
-		"updated" : NumberLong("1363392515618"),
+		"time" : "1351417444650",
+		"updated" : "1363392515618",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121028094404650_35",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121028094404650_35&format=geojson",
@@ -9681,13 +9681,13 @@
 	"id" : "pde20121028094404650_35"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e593f"),
+	"_id" : "526bc441a04005b8d34e593f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4,
 		"place" : "32km ESE of Kitaibaraki, Japan",
-		"time" : NumberLong("1362607467200"),
-		"updated" : NumberLong("1370900690627"),
+		"time" : "1362607467200",
+		"updated" : "1370900690627",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013mkd4",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013mkd4&format=geojson",
@@ -9721,13 +9721,13 @@
 	"id" : "us2013mkd4"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5127"),
+	"_id" : "526bc441a04005b8d34e5127",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "39km ESE of Hitachi, Japan",
-		"time" : NumberLong("1369465104000"),
-		"updated" : NumberLong("1370903611840"),
+		"time" : "1369465104000",
+		"updated" : "1370903611840",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h6kz",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000h6kz&format=geojson",
@@ -9761,13 +9761,13 @@
 	"id" : "usb000h6kz"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e488f"),
+	"_id" : "526bc440a04005b8d34e488f",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "47km ESE of Kitaibaraki, Japan",
-		"time" : NumberLong("1377639651860"),
-		"updated" : NumberLong("1381354245000"),
+		"time" : "1377639651860",
+		"updated" : "1381354245000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000jgpx",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000jgpx&format=geojson",
@@ -9801,13 +9801,13 @@
 	"id" : "usb000jgpx"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4a44"),
+	"_id" : "526bc440a04005b8d34e4a44",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "38km E of Kitaibaraki, Japan",
-		"time" : NumberLong("1376520832570"),
-		"updated" : NumberLong("1382152464685"),
+		"time" : "1376520832570",
+		"updated" : "1382152464685",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j7ss",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j7ss&format=geojson",
@@ -9841,13 +9841,13 @@
 	"id" : "usb000j7ss"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6731"),
+	"_id" : "526bc441a04005b8d34e6731",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1352550952060"),
-		"updated" : NumberLong("1363392532905"),
+		"time" : "1352550952060",
+		"updated" : "1363392532905",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121110123552060_44",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121110123552060_44&format=geojson",
@@ -9881,13 +9881,13 @@
 	"id" : "pde20121110123552060_44"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e56b1"),
+	"_id" : "526bc441a04005b8d34e56b1",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.4,
 		"place" : "52km SE of Iwaki, Japan",
-		"time" : NumberLong("1365192052500"),
-		"updated" : NumberLong("1379966769000"),
+		"time" : "1365192052500",
+		"updated" : "1379966769000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000g0tx",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000g0tx&format=geojson",
@@ -9921,13 +9921,13 @@
 	"id" : "usb000g0tx"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e548b"),
+	"_id" : "526bc441a04005b8d34e548b",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.2,
 		"place" : "51km ESE of Iwaki, Japan",
-		"time" : NumberLong("1366744497400"),
-		"updated" : NumberLong("1370903207487"),
+		"time" : "1366744497400",
+		"updated" : "1370903207487",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013pidz",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013pidz&format=geojson",
@@ -9961,13 +9961,13 @@
 	"id" : "us2013pidz"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5f60"),
+	"_id" : "526bc441a04005b8d34e5f60",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1358146431720"),
-		"updated" : NumberLong("1379967173000"),
+		"time" : "1358146431720",
+		"updated" : "1379967173000",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20130114065351720_56",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20130114065351720_56&format=geojson",
@@ -10001,13 +10001,13 @@
 	"id" : "pde20130114065351720_56"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5073"),
+	"_id" : "526bc441a04005b8d34e5073",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "47km SE of Namie, Japan",
-		"time" : NumberLong("1370334802200"),
-		"updated" : NumberLong("1372590988754"),
+		"time" : "1370334802200",
+		"updated" : "1372590988754",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000hctk",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000hctk&format=geojson",
@@ -10041,13 +10041,13 @@
 	"id" : "usb000hctk"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5b1b"),
+	"_id" : "526bc441a04005b8d34e5b1b",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "47km ESE of Namie, Japan",
-		"time" : NumberLong("1360978369600"),
-		"updated" : NumberLong("1370898720026"),
+		"time" : "1360978369600",
+		"updated" : "1370898720026",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000f89y",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000f89y&format=geojson",
@@ -10081,13 +10081,13 @@
 	"id" : "usc000f89y"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4dcf"),
+	"_id" : "526bc440a04005b8d34e4dcf",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "36km ESE of Namie, Japan",
-		"time" : NumberLong("1373693474490"),
-		"updated" : NumberLong("1373722429528"),
+		"time" : "1373693474490",
+		"updated" : "1373722429528",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000idl9",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000idl9&format=geojson",
@@ -10121,13 +10121,13 @@
 	"id" : "usb000idl9"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4e51"),
+	"_id" : "526bc440a04005b8d34e4e51",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5,
 		"place" : "36km ESE of Namie, Japan",
-		"time" : NumberLong("1372863972000"),
-		"updated" : NumberLong("1373541987813"),
+		"time" : "1372863972000",
+		"updated" : "1373541987813",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000i5wm",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000i5wm&format=geojson",
@@ -10161,13 +10161,13 @@
 	"id" : "usb000i5wm"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e4fe3"),
+	"_id" : "526bc441a04005b8d34e4fe3",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.3,
 		"place" : "51km ESE of Namie, Japan",
-		"time" : NumberLong("1370901968700"),
-		"updated" : NumberLong("1373109350685"),
+		"time" : "1370901968700",
+		"updated" : "1373109350685",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013rgbe",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013rgbe&format=geojson",
@@ -10201,13 +10201,13 @@
 	"id" : "us2013rgbe"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4333"),
+	"_id" : "526bc440a04005b8d34e4333",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "54km E of Namie, Japan",
-		"time" : NumberLong("1382089247610"),
-		"updated" : NumberLong("1382118201866"),
+		"time" : "1382089247610",
+		"updated" : "1382118201866",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000kgah",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000kgah&format=geojson",
@@ -10241,13 +10241,13 @@
 	"id" : "usb000kgah"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4d2b"),
+	"_id" : "526bc440a04005b8d34e4d2b",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "61km E of Namie, Japan",
-		"time" : NumberLong("1374545027470"),
-		"updated" : NumberLong("1379972487595"),
+		"time" : "1374545027470",
+		"updated" : "1379972487595",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ikgr",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ikgr&format=geojson",
@@ -10281,13 +10281,13 @@
 	"id" : "usb000ikgr"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e59aa"),
+	"_id" : "526bc441a04005b8d34e59aa",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "85km SE of Ishinomaki, Japan",
-		"time" : NumberLong("1362257893300"),
-		"updated" : NumberLong("1370900855562"),
+		"time" : "1362257893300",
+		"updated" : "1370900855562",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013mge1",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013mge1&format=geojson",
@@ -10321,13 +10321,13 @@
 	"id" : "us2013mge1"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4938"),
+	"_id" : "526bc440a04005b8d34e4938",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.5,
 		"place" : "57km E of Namie, Japan",
-		"time" : NumberLong("1377098883420"),
-		"updated" : NumberLong("1382732132507"),
+		"time" : "1377098883420",
+		"updated" : "1382732132507",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000j896",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000j896&format=geojson",
@@ -10361,13 +10361,13 @@
 	"id" : "usb000j896"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5800"),
+	"_id" : "526bc441a04005b8d34e5800",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "61km ENE of Namie, Japan",
-		"time" : NumberLong("1363904437200"),
-		"updated" : NumberLong("1370900933030"),
+		"time" : "1363904437200",
+		"updated" : "1370900933030",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013nab4",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013nab4&format=geojson",
@@ -10401,13 +10401,13 @@
 	"id" : "us2013nab4"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e69b6"),
+	"_id" : "526bc441a04005b8d34e69b6",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1351279992940"),
-		"updated" : NumberLong("1363392510562"),
+		"time" : "1351279992940",
+		"updated" : "1363392510562",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121026193312940_80",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121026193312940_80&format=geojson",
@@ -10441,13 +10441,13 @@
 	"id" : "pde20121026193312940_80"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4d64"),
+	"_id" : "526bc440a04005b8d34e4d64",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 5.2,
 		"place" : "34km E of Namie, Japan",
-		"time" : NumberLong("1374251959670"),
-		"updated" : NumberLong("1374497061883"),
+		"time" : "1374251959670",
+		"updated" : "1374497061883",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ihw9",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ihw9&format=geojson",
@@ -10481,13 +10481,13 @@
 	"id" : "usb000ihw9"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e522e"),
+	"_id" : "526bc441a04005b8d34e522e",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 6,
 		"place" : "50km NE of Namie, Japan",
-		"time" : NumberLong("1368856079500"),
-		"updated" : NumberLong("1380614530000"),
+		"time" : "1368856079500",
+		"updated" : "1380614530000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000gy67",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000gy67&format=geojson",
@@ -10521,13 +10521,13 @@
 	"id" : "usb000gy67"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5143"),
+	"_id" : "526bc441a04005b8d34e5143",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "51km ENE of Namie, Japan",
-		"time" : NumberLong("1369384397700"),
-		"updated" : NumberLong("1370903498353"),
+		"time" : "1369384397700",
+		"updated" : "1370903498353",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h4w9",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000h4w9&format=geojson",
@@ -10561,13 +10561,13 @@
 	"id" : "usb000h4w9"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e683d"),
+	"_id" : "526bc441a04005b8d34e683d",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1351895661480"),
-		"updated" : NumberLong("1363392524398"),
+		"time" : "1351895661480",
+		"updated" : "1363392524398",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121102223421480_46",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121102223421480_46&format=geojson",
@@ -10601,13 +10601,13 @@
 	"id" : "pde20121102223421480_46"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e670a"),
+	"_id" : "526bc441a04005b8d34e670a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.7,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1352610953540"),
-		"updated" : NumberLong("1363392534496"),
+		"time" : "1352610953540",
+		"updated" : "1363392534496",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121111051553540_76",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121111051553540_76&format=geojson",
@@ -10641,13 +10641,13 @@
 	"id" : "pde20121111051553540_76"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e5e9a"),
+	"_id" : "526bc441a04005b8d34e5e9a",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.8,
 		"place" : "57km NE of Namie, Japan",
-		"time" : NumberLong("1358976669700"),
-		"updated" : NumberLong("1363392605416"),
+		"time" : "1358976669700",
+		"updated" : "1363392605416",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000euhy",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000euhy&format=geojson",
@@ -10681,13 +10681,13 @@
 	"id" : "usc000euhy"
 },
 {
-	"_id" : ObjectId("526bc441a04005b8d34e6a28"),
+	"_id" : "526bc441a04005b8d34e6a28",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.6,
 		"place" : "near the east coast of Honshu, Japan",
-		"time" : NumberLong("1350898031010"),
-		"updated" : NumberLong("1363392506466"),
+		"time" : "1350898031010",
+		"updated" : "1363392506466",
 		"tz" : null,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121022092711010_65",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121022092711010_65&format=geojson",
@@ -10721,13 +10721,13 @@
 	"id" : "pde20121022092711010_65"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4c31"),
+	"_id" : "526bc440a04005b8d34e4c31",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.9,
 		"place" : "69km ESE of Ishinomaki, Japan",
-		"time" : NumberLong("1375229656990"),
-		"updated" : NumberLong("1380133419089"),
+		"time" : "1375229656990",
+		"updated" : "1380133419089",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000it4v",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000it4v&format=geojson",
@@ -10761,13 +10761,13 @@
 	"id" : "usc000it4v"
 },
 {
-	"_id" : ObjectId("526bc440a04005b8d34e4468"),
+	"_id" : "526bc440a04005b8d34e4468",
 	"type" : "Feature",
 	"properties" : {
 		"mag" : 4.4,
 		"place" : "66km ESE of Ishinomaki, Japan",
-		"time" : NumberLong("1380643445040"),
-		"updated" : NumberLong("1381674366000"),
+		"time" : "1380643445040",
+		"updated" : "1381674366000",
 		"tz" : 540,
 		"url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000k3tf",
 		"detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000k3tf&format=geojson",

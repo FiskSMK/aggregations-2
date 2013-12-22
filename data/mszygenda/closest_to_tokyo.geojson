@@ -1,404 +1,375 @@
-{ "type": "FeatureCollection",
-  "features": [
 {
-  "_id" : ObjectId("526bc441a04005b8d34e654e"),
-  "type" : "Feature",
-  "properties" : {
-    "mag" : 4.8,
-    "place" : "near the south coast of Honshu, Japan",
-    "time" : NumberLong("1353747588970"),
-    "updated" : NumberLong("1363392551147"),
-    "tz" : null,
-    "url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121124085948970_83",
-    "detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121124085948970_83&format=geojson",
-    "felt" : 178,
-    "cdi" : 5.3,
-    "mmi" : null,
-    "alert" : null,
-    "status" : "reviewed",
-    "tsunami" : null,
-    "sig" : 449,
-    "net" : "pde",
-    "code" : "20121124085948970_83",
-    "ids" : ",usc000dxm5,pde20121124085948970_83,",
-    "sources" : ",us,pde,",
-    "types" : ",dyfi,origin,phase-data,",
-    "nst" : 302,
-    "dmin" : null,
-    "rms" : 0.57,
-    "gap" : 67.5,
-    "magType" : "mb",
-    "type" : "earthquake",
-    "title" : "M 4.8 - near the south coast of Honshu, Japan"
-  },
-  "geometry" : {
-    "type" : "Point",
-    "coordinates" : [
-      139.852,
-      35.53
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.8,
+                "place": "near the south coast of Honshu, Japan",
+                "tz": null,
+                "url": "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121124085948970_83",
+                "detail": "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121124085948970_83&format=geojson",
+                "felt": 178,
+                "cdi": 5.3,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": null,
+                "sig": 449,
+                "net": "pde",
+                "code": "20121124085948970_83",
+                "ids": ",usc000dxm5,pde20121124085948970_83,",
+                "sources": ",us,pde,",
+                "types": ",dyfi,origin,phase-data,",
+                "nst": 302,
+                "dmin": null,
+                "rms": 0.57,
+                "gap": 67.5,
+                "magType": "mb",
+                "type": "earthquake",
+                "title": "M 4.8 - near the south coast of Honshu, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.852,
+                    35.53
+                ]
+            },
+            "id": "pde20121124085948970_83"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.8,
+                "place": "11km WNW of Ichihara, Japan",
+                "tz": 540,
+                "url": "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000ezlw",
+                "detail": "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000ezlw&format=geojson",
+                "felt": 70,
+                "cdi": 3.6,
+                "mmi": null,
+                "alert": null,
+                "status": "REVIEWED",
+                "tsunami": null,
+                "sig": 380,
+                "net": "us",
+                "code": "c000ezlw",
+                "ids": ",usc000ezlw,pde20130201140648240_71,",
+                "sources": ",us,pde,",
+                "types": ",cap,dyfi,general-link,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+                "nst": 40,
+                "dmin": 1.72835861,
+                "rms": 0.76,
+                "gap": 90,
+                "magType": "Mb",
+                "type": "earthquake",
+                "title": "M 4.8 - 11km WNW of Ichihara, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.958,
+                    35.551
+                ]
+            },
+            "id": "usc000ezlw"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.8,
+                "place": "3km NE of Narashino, Japan",
+                "tz": 540,
+                "url": "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013lhyx",
+                "detail": "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013lhyx&format=geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": null,
+                "alert": null,
+                "status": "REVIEWED",
+                "tsunami": null,
+                "sig": 354,
+                "net": "us",
+                "code": "2013lhyx",
+                "ids": ",us2013lhyx,",
+                "sources": ",us,",
+                "types": ",eq-location-map,general-link,geoserve,historical-moment-tensor-map,historical-seismicity-map,nearby-cities,origin,p-wave-travel-times,scitech-link,tectonic-summary,",
+                "nst": 36,
+                "dmin": 1.71757882,
+                "rms": 1.01,
+                "gap": 133.2,
+                "magType": "Mb",
+                "type": "earthquake",
+                "title": "M 4.8 - 3km NE of Narashino, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.064,
+                    35.7
+                ]
+            },
+            "id": "us2013lhyx"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.9,
+                "place": "1km N of Kasukabe, Japan",
+                "tz": 540,
+                "url": "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000ez7y",
+                "detail": "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000ez7y&format=geojson",
+                "felt": 67,
+                "cdi": 3.8,
+                "mmi": null,
+                "alert": null,
+                "status": "REVIEWED",
+                "tsunami": null,
+                "sig": 395,
+                "net": "us",
+                "code": "c000ez7y",
+                "ids": ",usc000ez7y,pde20130131160445180_29,",
+                "sources": ",us,pde,",
+                "types": ",cap,dyfi,general-link,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+                "nst": 142,
+                "dmin": 1.36813418,
+                "rms": 0.83,
+                "gap": 50.4,
+                "magType": "Mb",
+                "type": "earthquake",
+                "title": "M 4.9 - 1km N of Kasukabe, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.752,
+                    35.989
+                ]
+            },
+            "id": "usc000ez7y"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.5,
+                "place": "near the south coast of Honshu, Japan",
+                "tz": null,
+                "url": "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121031065002600_58",
+                "detail": "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121031065002600_58&format=geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": null,
+                "sig": 312,
+                "net": "pde",
+                "code": "20121031065002600_58",
+                "ids": ",pde20121031065002600_58,",
+                "sources": ",pde,",
+                "types": ",origin,phase-data,",
+                "nst": 73,
+                "dmin": null,
+                "rms": 0.58,
+                "gap": 120.9,
+                "magType": "mb",
+                "type": "earthquake",
+                "title": "M 4.5 - near the south coast of Honshu, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.808,
+                    35.994
+                ]
+            },
+            "id": "pde20121031065002600_58"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.8,
+                "place": "7km WSW of Ichihara, Japan",
+                "tz": 540,
+                "url": "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fkh0",
+                "detail": "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fkh0&format=geojson",
+                "felt": 61,
+                "cdi": 3.8,
+                "mmi": null,
+                "alert": null,
+                "status": "REVIEWED",
+                "tsunami": null,
+                "sig": 378,
+                "net": "us",
+                "code": "b000fkh0",
+                "ids": ",usb000fkh0,gcmt20130313200258,",
+                "sources": ",us,gcmt,",
+                "types": ",cap,dyfi,eq-location-map,general-link,geoserve,historical-moment-tensor-map,historical-seismicity-map,moment-tensor,nearby-cities,origin,p-wave-travel-times,phase-data,scitech-link,tectonic-summary,",
+                "nst": 238,
+                "dmin": 1.81,
+                "rms": 0.81,
+                "gap": 108,
+                "magType": "mb",
+                "type": "earthquake",
+                "title": "M 4.8 - 7km WSW of Ichihara, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.0151,
+                    35.4834
+                ]
+            },
+            "id": "usb000fkh0"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.9,
+                "place": "eastern Honshu, Japan",
+                "tz": null,
+                "url": "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121123155147730_57",
+                "detail": "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121123155147730_57&format=geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": null,
+                "sig": 369,
+                "net": "pde",
+                "code": "20121123155147730_57",
+                "ids": ",pde20121123155147730_57,",
+                "sources": ",pde,",
+                "types": ",origin,phase-data,",
+                "nst": 64,
+                "dmin": null,
+                "rms": 0.83,
+                "gap": 107.6,
+                "magType": "mb",
+                "type": "earthquake",
+                "title": "M 4.9 - eastern Honshu, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.832,
+                    36.002
+                ]
+            },
+            "id": "pde20121123155147730_57"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.8,
+                "place": "near the east coast of Honshu, Japan",
+                "tz": null,
+                "url": "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121206203203840_54",
+                "detail": "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121206203203840_54&format=geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": null,
+                "sig": 354,
+                "net": "pde",
+                "code": "20121206203203840_54",
+                "ids": ",pde20121206203203840_54,",
+                "sources": ",pde,",
+                "types": ",origin,phase-data,",
+                "nst": 148,
+                "dmin": null,
+                "rms": 0.97,
+                "gap": 120.7,
+                "magType": "mb",
+                "type": "earthquake",
+                "title": "M 4.8 - near the east coast of Honshu, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.09,
+                    35.544
+                ]
+            },
+            "id": "pde20121206203203840_54"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.6,
+                "place": "near the east coast of Honshu, Japan",
+                "tz": null,
+                "url": "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121213115607220_71",
+                "detail": "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121213115607220_71&format=geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": null,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": null,
+                "sig": 326,
+                "net": "pde",
+                "code": "20121213115607220_71",
+                "ids": ",pde20121213115607220_71,",
+                "sources": ",pde,",
+                "types": ",origin,phase-data,",
+                "nst": 121,
+                "dmin": null,
+                "rms": 0.75,
+                "gap": 107.6,
+                "magType": "mb",
+                "type": "earthquake",
+                "title": "M 4.6 - near the east coast of Honshu, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.108,
+                    35.575
+                ]
+            },
+            "id": "pde20121213115607220_71"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.6,
+                "place": "2km SSE of Yotsukaido, Japan",
+                "tz": 540,
+                "url": "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ig01",
+                "detail": "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ig01&format=geojson",
+                "felt": 3,
+                "cdi": 4.8,
+                "mmi": null,
+                "alert": null,
+                "status": "REVIEWED",
+                "tsunami": null,
+                "sig": 327,
+                "net": "us",
+                "code": "b000ig01",
+                "ids": ",usb000ig01,",
+                "sources": ",us,",
+                "types": ",cap,dyfi,general-link,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,",
+                "nst": 31,
+                "dmin": 1.84,
+                "rms": 0.81,
+                "gap": 136,
+                "magType": "mb",
+                "type": "earthquake",
+                "title": "M 4.6 - 2km SSE of Yotsukaido, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.1773,
+                    35.6317
+                ]
+            },
+            "id": "usb000ig01"
+        }
     ]
-  },
-  "id" : "pde20121124085948970_83"
-},
-{
-  "_id" : ObjectId("526bc441a04005b8d34e5de6"),
-  "type" : "Feature",
-  "properties" : {
-    "mag" : 4.8,
-    "place" : "11km WNW of Ichihara, Japan",
-    "time" : NumberLong("1359727608200"),
-    "updated" : NumberLong("1363392610100"),
-    "tz" : 540,
-    "url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000ezlw",
-    "detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000ezlw&format=geojson",
-    "felt" : 70,
-    "cdi" : 3.6,
-    "mmi" : null,
-    "alert" : null,
-    "status" : "REVIEWED",
-    "tsunami" : null,
-    "sig" : 380,
-    "net" : "us",
-    "code" : "c000ezlw",
-    "ids" : ",usc000ezlw,pde20130201140648240_71,",
-    "sources" : ",us,pde,",
-    "types" : ",cap,dyfi,general-link,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
-    "nst" : 40,
-    "dmin" : 1.72835861,
-    "rms" : 0.76,
-    "gap" : 90,
-    "magType" : "Mb",
-    "type" : "earthquake",
-    "title" : "M 4.8 - 11km WNW of Ichihara, Japan"
-  },
-  "geometry" : {
-    "type" : "Point",
-    "coordinates" : [
-      139.958,
-      35.551
-    ]
-  },
-  "id" : "usc000ezlw"
-},
-{
-  "_id" : ObjectId("526bc441a04005b8d34e5d2f"),
-  "type" : "Feature",
-  "properties" : {
-    "mag" : 4.8,
-    "place" : "3km NE of Narashino, Japan",
-    "time" : NumberLong("1360143108800"),
-    "updated" : NumberLong("1370898996688"),
-    "tz" : 540,
-    "url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/us2013lhyx",
-    "detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=us2013lhyx&format=geojson",
-    "felt" : null,
-    "cdi" : null,
-    "mmi" : null,
-    "alert" : null,
-    "status" : "REVIEWED",
-    "tsunami" : null,
-    "sig" : 354,
-    "net" : "us",
-    "code" : "2013lhyx",
-    "ids" : ",us2013lhyx,",
-    "sources" : ",us,",
-    "types" : ",eq-location-map,general-link,geoserve,historical-moment-tensor-map,historical-seismicity-map,nearby-cities,origin,p-wave-travel-times,scitech-link,tectonic-summary,",
-    "nst" : 36,
-    "dmin" : 1.71757882,
-    "rms" : 1.01,
-    "gap" : 133.2,
-    "magType" : "Mb",
-    "type" : "earthquake",
-    "title" : "M 4.8 - 3km NE of Narashino, Japan"
-  },
-  "geometry" : {
-    "type" : "Point",
-    "coordinates" : [
-      140.064,
-      35.7
-    ]
-  },
-  "id" : "us2013lhyx"
-},
-{
-  "_id" : ObjectId("526bc441a04005b8d34e5e01"),
-  "type" : "Feature",
-  "properties" : {
-    "mag" : 4.9,
-    "place" : "1km N of Kasukabe, Japan",
-    "time" : NumberLong("1359648285100"),
-    "updated" : NumberLong("1363392609586"),
-    "tz" : 540,
-    "url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000ez7y",
-    "detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000ez7y&format=geojson",
-    "felt" : 67,
-    "cdi" : 3.8,
-    "mmi" : null,
-    "alert" : null,
-    "status" : "REVIEWED",
-    "tsunami" : null,
-    "sig" : 395,
-    "net" : "us",
-    "code" : "c000ez7y",
-    "ids" : ",usc000ez7y,pde20130131160445180_29,",
-    "sources" : ",us,pde,",
-    "types" : ",cap,dyfi,general-link,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
-    "nst" : 142,
-    "dmin" : 1.36813418,
-    "rms" : 0.83,
-    "gap" : 50.4,
-    "magType" : "Mb",
-    "type" : "earthquake",
-    "title" : "M 4.9 - 1km N of Kasukabe, Japan"
-  },
-  "geometry" : {
-    "type" : "Point",
-    "coordinates" : [
-      139.752,
-      35.989
-    ]
-  },
-  "id" : "usc000ez7y"
-},
-{
-  "_id" : ObjectId("526bc441a04005b8d34e6889"),
-  "type" : "Feature",
-  "properties" : {
-    "mag" : 4.5,
-    "place" : "near the south coast of Honshu, Japan",
-    "time" : NumberLong("1351666202600"),
-    "updated" : NumberLong("1363392521230"),
-    "tz" : null,
-    "url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121031065002600_58",
-    "detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121031065002600_58&format=geojson",
-    "felt" : null,
-    "cdi" : null,
-    "mmi" : null,
-    "alert" : null,
-    "status" : "reviewed",
-    "tsunami" : null,
-    "sig" : 312,
-    "net" : "pde",
-    "code" : "20121031065002600_58",
-    "ids" : ",pde20121031065002600_58,",
-    "sources" : ",pde,",
-    "types" : ",origin,phase-data,",
-    "nst" : 73,
-    "dmin" : null,
-    "rms" : 0.58,
-    "gap" : 120.9,
-    "magType" : "mb",
-    "type" : "earthquake",
-    "title" : "M 4.5 - near the south coast of Honshu, Japan"
-  },
-  "geometry" : {
-    "type" : "Point",
-    "coordinates" : [
-      139.808,
-      35.994
-    ]
-  },
-  "id" : "pde20121031065002600_58"
-},
-{
-  "_id" : ObjectId("526bc441a04005b8d34e58a6"),
-  "type" : "Feature",
-  "properties" : {
-    "mag" : 4.8,
-    "place" : "7km WSW of Ichihara, Japan",
-    "time" : NumberLong("1363204978660"),
-    "updated" : NumberLong("1379966610000"),
-    "tz" : 540,
-    "url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000fkh0",
-    "detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000fkh0&format=geojson",
-    "felt" : 61,
-    "cdi" : 3.8,
-    "mmi" : null,
-    "alert" : null,
-    "status" : "REVIEWED",
-    "tsunami" : null,
-    "sig" : 378,
-    "net" : "us",
-    "code" : "b000fkh0",
-    "ids" : ",usb000fkh0,gcmt20130313200258,",
-    "sources" : ",us,gcmt,",
-    "types" : ",cap,dyfi,eq-location-map,general-link,geoserve,historical-moment-tensor-map,historical-seismicity-map,moment-tensor,nearby-cities,origin,p-wave-travel-times,phase-data,scitech-link,tectonic-summary,",
-    "nst" : 238,
-    "dmin" : 1.81,
-    "rms" : 0.81,
-    "gap" : 108,
-    "magType" : "mb",
-    "type" : "earthquake",
-    "title" : "M 4.8 - 7km WSW of Ichihara, Japan"
-  },
-  "geometry" : {
-    "type" : "Point",
-    "coordinates" : [
-      140.0151,
-      35.4834
-    ]
-  },
-  "id" : "usb000fkh0"
-},
-{
-  "_id" : ObjectId("526bc441a04005b8d34e655b"),
-  "type" : "Feature",
-  "properties" : {
-    "mag" : 4.9,
-    "place" : "eastern Honshu, Japan",
-    "time" : NumberLong("1353685907730"),
-    "updated" : NumberLong("1363392550555"),
-    "tz" : null,
-    "url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121123155147730_57",
-    "detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121123155147730_57&format=geojson",
-    "felt" : null,
-    "cdi" : null,
-    "mmi" : null,
-    "alert" : null,
-    "status" : "reviewed",
-    "tsunami" : null,
-    "sig" : 369,
-    "net" : "pde",
-    "code" : "20121123155147730_57",
-    "ids" : ",pde20121123155147730_57,",
-    "sources" : ",pde,",
-    "types" : ",origin,phase-data,",
-    "nst" : 64,
-    "dmin" : null,
-    "rms" : 0.83,
-    "gap" : 107.6,
-    "magType" : "mb",
-    "type" : "earthquake",
-    "title" : "M 4.9 - eastern Honshu, Japan"
-  },
-  "geometry" : {
-    "type" : "Point",
-    "coordinates" : [
-      139.832,
-      36.002
-    ]
-  },
-  "id" : "pde20121123155147730_57"
-},
-{
-  "_id" : ObjectId("526bc441a04005b8d34e63f6"),
-  "type" : "Feature",
-  "properties" : {
-    "mag" : 4.8,
-    "place" : "near the east coast of Honshu, Japan",
-    "time" : NumberLong("1354825923840"),
-    "updated" : NumberLong("1363392563771"),
-    "tz" : null,
-    "url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121206203203840_54",
-    "detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121206203203840_54&format=geojson",
-    "felt" : null,
-    "cdi" : null,
-    "mmi" : null,
-    "alert" : null,
-    "status" : "reviewed",
-    "tsunami" : null,
-    "sig" : 354,
-    "net" : "pde",
-    "code" : "20121206203203840_54",
-    "ids" : ",pde20121206203203840_54,",
-    "sources" : ",pde,",
-    "types" : ",origin,phase-data,",
-    "nst" : 148,
-    "dmin" : null,
-    "rms" : 0.97,
-    "gap" : 120.7,
-    "magType" : "mb",
-    "type" : "earthquake",
-    "title" : "M 4.8 - near the east coast of Honshu, Japan"
-  },
-  "geometry" : {
-    "type" : "Point",
-    "coordinates" : [
-      140.09,
-      35.544
-    ]
-  },
-  "id" : "pde20121206203203840_54"
-},
-{
-  "_id" : ObjectId("526bc441a04005b8d34e62cf"),
-  "type" : "Feature",
-  "properties" : {
-    "mag" : 4.6,
-    "place" : "near the east coast of Honshu, Japan",
-    "time" : NumberLong("1355399767220"),
-    "updated" : NumberLong("1363392571270"),
-    "tz" : null,
-    "url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20121213115607220_71",
-    "detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20121213115607220_71&format=geojson",
-    "felt" : null,
-    "cdi" : null,
-    "mmi" : null,
-    "alert" : null,
-    "status" : "reviewed",
-    "tsunami" : null,
-    "sig" : 326,
-    "net" : "pde",
-    "code" : "20121213115607220_71",
-    "ids" : ",pde20121213115607220_71,",
-    "sources" : ",pde,",
-    "types" : ",origin,phase-data,",
-    "nst" : 121,
-    "dmin" : null,
-    "rms" : 0.75,
-    "gap" : 107.6,
-    "magType" : "mb",
-    "type" : "earthquake",
-    "title" : "M 4.6 - near the east coast of Honshu, Japan"
-  },
-  "geometry" : {
-    "type" : "Point",
-    "coordinates" : [
-      140.108,
-      35.575
-    ]
-  },
-  "id" : "pde20121213115607220_71"
-},
-{
-  "_id" : ObjectId("526bc440a04005b8d34e4d86"),
-  "type" : "Feature",
-  "properties" : {
-    "mag" : 4.6,
-    "place" : "2km SSE of Yotsukaido, Japan",
-    "time" : NumberLong("1374069384890"),
-    "updated" : NumberLong("1374074998664"),
-    "tz" : 540,
-    "url" : "http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000ig01",
-    "detail" : "http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000ig01&format=geojson",
-    "felt" : 3,
-    "cdi" : 4.8,
-    "mmi" : null,
-    "alert" : null,
-    "status" : "REVIEWED",
-    "tsunami" : null,
-    "sig" : 327,
-    "net" : "us",
-    "code" : "b000ig01",
-    "ids" : ",usb000ig01,",
-    "sources" : ",us,",
-    "types" : ",cap,dyfi,general-link,geoserve,nearby-cities,origin,p-wave-travel-times,phase-data,tectonic-summary,",
-    "nst" : 31,
-    "dmin" : 1.84,
-    "rms" : 0.81,
-    "gap" : 136,
-    "magType" : "mb",
-    "type" : "earthquake",
-    "title" : "M 4.6 - 2km SSE of Yotsukaido, Japan"
-  },
-  "geometry" : {
-    "type" : "Point",
-    "coordinates" : [
-      140.1773,
-      35.6317
-    ]
-  },
-  "id" : "usb000ig01"
 }
-]}
-
