@@ -3,9 +3,6 @@
 ###Mateusz Szygenda###
 
 
-----------
-
-
 ## Spis treści ##
 1. [Dane](#dane)
 2. [Transformacje danych](#transformacje-danych)
@@ -15,9 +12,6 @@
 4. [ElasticSearch](#elastic-search)
  1. [Import](#import-w-elasticsearch)
  1. [Agregacje](#agregacje-w-elasticsearch)
-
-
-----------
 
 
 # Dane #
@@ -45,9 +39,6 @@ Wygląda on dość kryptycznie jednak poszczególne liczby kodują informację o
  - Lokalizacji
  - Ograniczeniu prędkości
  - Numerach dróg na których miało miejsce zdarzenie
-
-
-----------
 
 
 # Transformacje danych #
@@ -188,9 +179,6 @@ Dane zostały wyeksportowane z powrotem do formatu csv.
 }
 ```
 
-----------
-
-
 # MongoDB #
 
 ##Import w Mongo##
@@ -323,9 +311,6 @@ Fog,Rain,Snow,BadWeather,TotalAccidentsWithKnownWeather
 **Wnioski**
 
 Większość wypadków odbywa się przy dobrych warunkach atmosferycznych. Drugą najczęstszą sytuacją są opady deszczu.
-
-
-----------
 
 
 #Elastic Search#
