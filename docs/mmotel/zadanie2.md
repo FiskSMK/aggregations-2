@@ -13,7 +13,7 @@
     * [Wyniki z MMS](#mongodb-wyniki-z-mongodb-management-service)
 * [Elasticsearch](#elasticsearch)
     * [Przygotowanie danych](#es-przygotowanie-danych-do-importu)
-    * Import
+    * [Import](#es-import)
     * Aggregacje
         * Aggregacja 1
         * Aggregacja 2
@@ -301,3 +301,52 @@ sys   1m24.807s
 W ciągu `30m34.117s` wygenerowało się `39 662 600` dokumentów JSON. Co średnio daje `~21 626` wygenerowanych dokumentów JSON na sekundę.
 
 ***
+
+##ES: Import
+
+Próba wykonania importu całego pliku `getglue_sample.bulk` (`39 662 600` JSON'ów, `11,3 GB`) konczy się niepowodzeniem.
+
+```sh
+curl -s -XPOST localhost:9200/data/_bulk --data-binary @getglue_sample.bulk
+```
+
+Po pierwsze polecenie `curl` próbuje wczytać cały plik do pamięci. Po drugie baza danych najprawdopodobniej nie jest w stanie przyjąć tak dużej ilości danych na raz, rzuca `TooLongFrameException`.
+
+Aby rozwiązać oba te problemy dzielimy plik na części po `200 000` linii czyli `100 000` dokumnetów do dodoania.
+
+```sh
+split -l 200000 getglue_sample.bulk
+```
+
+A następnie dokonujemy importu w pętli:
+
+```sh
+time for i in x*; do curl -s -XPOST   localhost:9200/data/_bulk --data-binary @$i; done
+```
+
+####Wynik
+
+Sprawdzamy ile obiektów zostało zapisanych w bazie.
+
+```sh
+curl -XGET 'http://localhost:9200/data/imdb/_count' ; echo
+```
+
+```json
+{"count":19766542,"_shards":{"total":1,"successful":1,"failed":0}}
+```
+
+Zaimportowało się `19 766 542`. Brakuje `64 758` obiektów. Jak wynika z logu importu spowodowane jest to niepoprawnym formatem daty, co skutkowało odrzuceniem obiektu.
+
+####Czas
+
+```sh
+real  232m8.668s
+user  0m14.270s
+sys   1m10.368s
+```
+
+W czasie `232m8.668s` (`~3h52m`) zaimportowało `19 766 542` obiektów. Co daje średnio `1 419` insertów na sekundę. ***Czemu tak wolno?***
+
+***
+
