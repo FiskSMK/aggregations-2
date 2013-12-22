@@ -1,3 +1,6 @@
+{ 
+  "type": "FeatureCollection",
+  "features": [
 {
   "_id" : ObjectId("526bc441a04005b8d34e64d0"),
   "type" : "Feature",
@@ -37,7 +40,7 @@
     ]
   },
   "id" : "pde20121128223519060_10"
-}
+},
 {
   "_id" : ObjectId("526bc441a04005b8d34e4ff8"),
   "type" : "Feature",
@@ -78,4 +81,4 @@
   },
   "id" : "usc000hjry"
 }
-
+]}

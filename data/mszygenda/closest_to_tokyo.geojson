@@ -1,3 +1,5 @@
+{ "type": "FeatureCollection",
+  "features": [
 {
   "_id" : ObjectId("526bc441a04005b8d34e654e"),
   "type" : "Feature",
@@ -37,7 +39,7 @@
     ]
   },
   "id" : "pde20121124085948970_83"
-}
+},
 {
   "_id" : ObjectId("526bc441a04005b8d34e5de6"),
   "type" : "Feature",
@@ -77,7 +79,7 @@
     ]
   },
   "id" : "usc000ezlw"
-}
+},
 {
   "_id" : ObjectId("526bc441a04005b8d34e5d2f"),
   "type" : "Feature",
@@ -117,7 +119,7 @@
     ]
   },
   "id" : "us2013lhyx"
-}
+},
 {
   "_id" : ObjectId("526bc441a04005b8d34e5e01"),
   "type" : "Feature",
@@ -157,7 +159,7 @@
     ]
   },
   "id" : "usc000ez7y"
-}
+},
 {
   "_id" : ObjectId("526bc441a04005b8d34e6889"),
   "type" : "Feature",
@@ -197,7 +199,7 @@
     ]
   },
   "id" : "pde20121031065002600_58"
-}
+},
 {
   "_id" : ObjectId("526bc441a04005b8d34e58a6"),
   "type" : "Feature",
@@ -237,7 +239,7 @@
     ]
   },
   "id" : "usb000fkh0"
-}
+},
 {
   "_id" : ObjectId("526bc441a04005b8d34e655b"),
   "type" : "Feature",
@@ -277,7 +279,7 @@
     ]
   },
   "id" : "pde20121123155147730_57"
-}
+},
 {
   "_id" : ObjectId("526bc441a04005b8d34e63f6"),
   "type" : "Feature",
@@ -317,7 +319,7 @@
     ]
   },
   "id" : "pde20121206203203840_54"
-}
+},
 {
   "_id" : ObjectId("526bc441a04005b8d34e62cf"),
   "type" : "Feature",
@@ -357,7 +359,7 @@
     ]
   },
   "id" : "pde20121213115607220_71"
-}
+},
 {
   "_id" : ObjectId("526bc440a04005b8d34e4d86"),
   "type" : "Feature",
@@ -398,4 +400,5 @@
   },
   "id" : "usb000ig01"
 }
+]}
 
