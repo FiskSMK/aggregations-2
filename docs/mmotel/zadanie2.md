@@ -6,8 +6,8 @@
 
 * [Dane](#dane)
 * [MongoDB](#mongodb)
-    * Import
-    * Aggregacje
+    * [Import](#import)
+    * [Aggregacje](#aggregacje)
         * Aggregacja 1
         * Aggregacja 2
     * Wyniki z MMS
@@ -102,3 +102,117 @@ switched to db imdb
 ```
 
 ***
+
+##Aggregacje
+
+###Aggregacja 1
+
+***Ile jest różnych akcji?***
+
+Aggregacja ma policzyć ile jest różnych akcji oraz ile razy każda z nich wystąpiła.
+
+####Kod aggregacji
+
+```js
+coll.aggregate(
+  { $group: {_id: "$action", count: {$sum: 1}} },
+  { $sort: {count: -1} }
+);
+```
+Kod skryptu: [tutaj](../..//scripts/mmotel/2-mongo/agg-1.js).
+
+####Wynik
+
+```sh
+MongoDB shell version: 2.4.8
+connecting to: imdb
+actions: 12
+```
+
+```json
+{
+  "result" : [
+    { "_id" : "Checkin",      "count" : 10958039 },
+    { "_id" : "Liked",        "count" : 7664733  },
+    { "_id" : "Disliked",     "count" : 469093   },
+    { "_id" : "Favorited",    "count" : 288096   },
+    { "_id" : "Unwanted",     "count" : 270330   },
+    { "_id" : "Saved",        "count" : 101944   },
+    { "_id" : "Said",         "count" : 73887    },
+    { "_id" : "Looked",       "count" : 2972     },
+    { "_id" : "Comment",      "count" : 2150     },
+    { "_id" : null,           "count" : 40       },
+    { "_id" : "Reply",        "count" : 15       },
+    { "_id" : "LikedComment", "count" : 1        }
+  ],
+  "ok" : 1
+}
+```
+
+####Czasy
+
+```sh
+real  4m21.954s
+user  0m0.048s
+sys   0m0.012s
+```
+
+####Wykres
+
+![aggregation-1-chart](../../images/mmotel/2-mongo-agg-1-chart.png)
+
+###Aggregacja 2
+
+***Jakie jest 10 najpopularniejszych filmów i przedstawień TV?***
+
+Aggregacja powinna wybrać filmy i przedstawienia TV a następnie policzyć ile razy każde z nich wystąpiło.
+
+####Kod aggregacji
+
+```js
+coll.aggregate(
+  { $match: { "modelName": "movies" || "tv_shows"  } },
+  { $group: {_id: "$title", count: {$sum: 1} } },
+  { $sort: {count: -1} },
+  { $limit: 10}
+);
+```
+
+Kod skryptu: [tutaj](../..//scripts/mmotel/2-mongo/agg-2.js).
+
+####Wynik
+
+```sh
+MongoDB shell version: 2.4.8
+connecting to: imdb
+```
+
+```json
+{
+  "result" : [
+    { "_id" : "The Twilight Saga: Breaking Dawn Part 1",       "count" : 87521 },
+    { "_id" : "The Hunger Games",                              "count" : 79340 },
+    { "_id" : "Marvel's The Avengers",                         "count" : 64356 },
+    { "_id" : "Harry Potter and the Deathly Hallows: Part II", "count" : 33680 },
+    { "_id" : "The Muppets",                                   "count" : 29002 },
+    { "_id" : "Captain America: The First Avenger",            "count" : 28406 },
+    { "_id" : "Avatar",                                        "count" : 23238 },
+    { "_id" : "Thor",                                          "count" : 23207 },
+    { "_id" : "The Hangover",                                  "count" : 22709 },
+    { "_id" : "Titanic",                                       "count" : 20791 }
+  ],
+  "ok" : 1
+}
+```
+
+####Czasy
+
+```sh
+real  4m9.687s
+user  0m0.048s
+sys   0m0.016s
+```
+
+####Wykres
+
+![aggregation-2-chart](../../images/mmotel/2-mongo-agg-2-chart.png)
