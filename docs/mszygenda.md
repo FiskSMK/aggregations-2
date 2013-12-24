@@ -316,7 +316,7 @@ var australiaBox = [ [116.617676, -34.957995], [153.619629,-16.383391] ]
 db.earthquakes.find({ geometry: { $near: {$geometry: tokyo} } }).limit(10)
 ```
 
-[Tokyo](../data/mszygenda/closest_to_tokyo.json)
+[Tokyo](../data/mszygenda/closest_to_tokyo.geojson)
 
 **Trzesienia ziemi na terytorium Japonii (polygon)**
 
@@ -324,7 +324,7 @@ db.earthquakes.find({ geometry: { $near: {$geometry: tokyo} } }).limit(10)
 db.earthquakes.find({ geometry: { $geoWithin: { $geometry: japan } } })
 ```
 
-[Japonia](../data/mszygenda/earthquakes_japan.json)
+[Japonia](../data/mszygenda/earthquakes_japan.geojson)
 
 **Obiekty które przecinają terytorium Japonii**
 
@@ -334,7 +334,7 @@ W tym przypadku jest to ten sam zbiór danych co powyższy (Mamy tylko punkty)
 db.earthquakes.find({ geometry: { $geoIntersects: { $geometry: japan } } })
 ```
 
-[Japonia](../data/mszygenda/earthquakes_japan.json)
+[Japonia](../data/mszygenda/earthquakes_japan.geojson)
 
 **Trzęsienia ziemi na terytorium Australii (circle)**
 
@@ -342,7 +342,7 @@ db.earthquakes.find({ geometry: { $geoIntersects: { $geometry: japan } } })
 db.earthquakes.find( { geometry: { $geoWithin: { $centerSphere: australiaCircle } } })
 ```
 
-[Australia](../data/mszygenda/australia.json)
+[Australia](../data/mszygenda/australia.geojson)
 
 **Trzęsienia ziemi na terytorium Australii (box)**
 
@@ -350,4 +350,4 @@ db.earthquakes.find( { geometry: { $geoWithin: { $centerSphere: australiaCircle 
 db.earthquakes.find( { geometry: { $geoWithin: { $box: australiaBox} } })
 ```
 
-[Australia](../data/mszygenda/australia.json)
+[Australia](../data/mszygenda/australia.geojson)
