@@ -2,9 +2,17 @@
 
 ----
 
-### Przeróbka bazy danych i import
+## Spis treści
+* [Przeróbka bazy danych i import](#przeróbka)
+  * [Mongodb](#mongodb)
+  * [ElasticSearch](#elasticSearch)
+* [Statystyki (Mongodb)](#statystyki)
+* [Agregacje](#agregacje)
+  * [Mongodb](#mongodb2)
+  * [ElasticSearch](#elasticSearch2)
 
-##### Mongodb
+# Przeróbka bazy danych i import
+## Mongodb
 Bazę danych albumów muzycznych ściągnąłem z [freedb](http://ftp.freedb.org/pub/freedb/). (plik freedb-complete-20131101.tar.bz2). W środku znajduje się kilkanaście GB. Są to ponad 3 miliony małych plików, [przykład](../data/jdermont/0009e012).
 
 Za pomocą [skryptu](../scripts/jdermont/albumy_muzyczne/) przerobiłem te pliki na jeden json (można znaleźć u mnie na sigmie freedb_json.7z w public_html). Operacja trochę trwała i nie mogłem jej za bardzo przyspieszyć, bo to było dużo małych plików... Skrypt odrzucił ok. 3000 plików ze względu na wadliwe kodowanie.
@@ -51,7 +59,7 @@ Przykładowy wpis:
 }
 ```
 
-##### ElasticSearch
+## ElasticSearch
 Przygotowanie przeplatanego jsona:
 ```sh
 jq --compact-output '{ "index" : { "_type" : "album" } }, .' freedb.json > freedb_es.json
@@ -68,7 +76,7 @@ I import, zakończony sukcesem:
 ```sh
 for i in x*; do curl -s -XPOST   localhost:9200/albums/_bulk --data-binary @$i; done
 ```
-Sprawdzenie ile wpisów zostało zaimportowanyh:
+Sprawdzenie ile wpisów zostało zaimportowanych:
 ```sh
 curl -XGET 'http://localhost:9200/albums/album/_count'; echo
 ```
@@ -80,7 +88,7 @@ Sprawdzenie w przeglądarce, czy wszystko OK (zainstalowany plugin ElasticSearch
 
 ![elasticSearch](../images/jdermont/elastic.png)
 
-### Trochę statystyk (Mongodb)
+# Statystyki (Mongodb)
 
 Statystyki bazy:
 ```js
@@ -146,7 +154,9 @@ Wszystkie utwory we wszystkich albumach:
 ```
 10914094143 sekund czyli nieco ponad 346 lat. Z powyższych danych wynika, że utwór trwa średnio 3:56.
 
-### Agregacje w Mongodb
+# Agregacje
+
+## Mongodb
 
 Ilość albumów o określonych gatunkach:
 ```js
@@ -180,6 +190,37 @@ function average(begin,end) {
 ![dlugosci](../images/jdermont/dlugosc.png)
 
 
-### Agregacje w ElasticSearch
+## ElasticSearch
 
-To be continued.
+10 najczęstszych słów w artystach:
+
+```json
+{
+  "query" : {
+    "match_all" : { }
+  },
+  "facets" : {
+    "artist" : {
+      "terms" : {
+        "field" : "artist",
+        "size" : 10
+      }
+    }
+  }
+}
+```
+
+![slowaArtysci](../images/jdermont/wykres_es1.png)
+
+10 najczęstszych słów w utworach:
+
+```json
+{
+  "query" : { "query_string" : {"query" : "*"} },
+  "facets" : {
+    "tracks" : { "terms" : {"field" : "tracks"} }
+  }
+}
+```
+
+![slowaUtwory](../images/jdermont/wykres_es2.png)
