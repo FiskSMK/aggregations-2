@@ -9,7 +9,7 @@
 * [Statystyki (Mongodb)](#statystyki)
 * [Agregacje](#agregacje)
   * [Mongodb](#mongodb2)
-  * [ElastichSearch](#elasticSearch2)
+  * [ElasticSearch](#elasticSearch2)
 
 # Przeróbka bazy danych i import
 ## Mongodb
@@ -192,4 +192,35 @@ function average(begin,end) {
 
 ## ElasticSearch
 
-To be continued.
+10 najczęstszych słów w artystach:
+
+```json
+{
+  "query" : {
+    "match_all" : { }
+  },
+  "facets" : {
+    "artist" : {
+      "terms" : {
+        "field" : "artist",
+        "size" : 10
+      }
+    }
+  }
+}
+```
+
+![slowaArtysci](../images/jdermont/wykres_es1.png)
+
+10 najczęstszych słów w utworach:
+
+```json
+{
+  "query" : { "query_string" : {"query" : "*"} },
+  "facets" : {
+    "tracks" : { "terms" : {"field" : "tracks"} }
+  }
+}
+```
+
+![slowaUtwory](../images/jdermont/wykres_es2.png)
