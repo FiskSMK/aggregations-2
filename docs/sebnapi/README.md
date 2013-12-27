@@ -810,6 +810,126 @@ The chart interestingly suggests that vintage planes (especially 1956, 1972, 197
 
 > Though some safety experts once fretted about them, most now say that, with careful maintenance, older jets can fly safely. According to data compiled by Boeing, only 12 of 36 commercial jetliner accidents in 2011 that destroyed planes or caused substantial damage involved aircraft 20 years or older. 
 
+## Flight Data import into Elasticsearch
+
+### How are the Manufacture Years distributed?
+
+```
+GET _search
+{   "facets" : {
+        "histo1" : {
+            "histogram" : {
+                "field" : "PLANE.YEAR MFR",
+                "interval" : 19
+            }
+        }
+    }
+}
+```
+
+Results are:
+
+```js
+"facets": {
+      "histo1": {
+         "_type": "histogram",
+         "entries": [
+            {
+               "key": 0,
+               "count": 756
+            },
+            {
+               "key": 1938,
+               "count": 53
+            },
+            {
+               "key": 1957,
+               "count": 3988
+            },
+            {
+               "key": 1976,
+               "count": 221176
+            },
+            {
+               "key": 1995,
+               "count": 1066508
+            }
+         ]
+      }
+```
+
+### Delays by Carrier
+
+```
+GET _search
+{
+    "query" :{"range": {
+       "DEP_DELAY": {
+          "from": 10,
+          "to": 999999
+       }
+    }},
+    "facets": {
+       "CARRIER_DELAY": {
+          "terms": {
+             "field": "UNIQUE_CARRIER"
+          }
+       }
+    }
+}    
+```
+
+```
+"facets": {
+      "CARRIER_DELAY": {
+         "_type": "terms",
+         "missing": 3996,
+         "total": 267916,
+         "other": 13526,
+         "terms": [
+            {
+               "term": "wn",
+               "count": 65532
+            },
+            {
+               "term": "ev",
+               "count": 48372
+            },
+            {
+               "term": "oo",
+               "count": 28893
+            },
+            {
+               "term": "ua",
+               "count": 27347
+            },
+            {
+               "term": "dl",
+               "count": 25654
+            },
+            {
+               "term": "b6",
+               "count": 15338
+            },
+            {
+               "term": "us",
+               "count": 13950
+            },
+            {
+               "term": "9e",
+               "count": 12436
+            },
+            {
+               "term": "aa",
+               "count": 9735
+            },
+            {
+               "term": "fl",
+               "count": 7133
+            }
+         ]
+      }
+```
 
 
 
