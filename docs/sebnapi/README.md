@@ -8,7 +8,7 @@
 	- [First mongoimport](#first-mongoimport)
 	- [Second import by python script](#second-import-by-python-script)
 	- [Changing Tags-String to a Tag-List](#changing-tags-string-to-a-tag-list)
-		- [Processor, memory, IO while changing](#processor-memory-io-while-changing)
+				- [Processor, memory, IO while changing](#processor-memory-io-while-changing)
 - [Words](#words)
 	- [Count Tags](#count-tags)
 - [Geo-Stuff](#geo-stuff)
@@ -21,7 +21,18 @@
 		- [5. Points of Interest on one Line](#5-points-of-interest-on-one-line)
 		- [6. How many military places are there in North Carolina](#6-how-many-military-places-are-there-in-north-carolina)
 		- [7. Dams around Las Vegas in 50km radius](#7-dams-around-las-vegas-in-50km-radius)
-
+- [Aggregations 2](#aggregations-2)
+	- [Flights and Plane Data](#flights-and-plane-data)
+	- [Exploring the dataset](#exploring-the-dataset)
+		- [How many flight records do we have:](#how-many-flight-records-do-we-have)
+		- [How many delayed flights are there:](#how-many-delayed-flights-are-there)
+		- [How many +10min delayed flights are there:](#how-many-10min-delayed-flights-are-there)
+		- [On which flight was the oldest plane used on flights in 2013 (Jan-Mar)](#on-which-flight-was-the-oldest-plane-used-on-flights-in-2013-jan-mar)
+	- [Are older planes more involved in +10min departure delayed flights?](#are-older-planes-more-involved-in-10min-departure-delayed-flights)
+	- [Are older planes used for short distances and newer for long distances?](#are-older-planes-used-for-short-distances-and-newer-for-long-distances)
+	- [Flight Data import into Elasticsearch](#flight-data-import-into-elasticsearch)
+		- [How are the Manufacture Years distributed?](#how-are-the-manufacture-years-distributed)
+		- [Delays by Carrier](#delays-by-carrier)
 # Train
 
 ## Preparing Raw Data
