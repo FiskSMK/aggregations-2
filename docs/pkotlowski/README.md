@@ -249,7 +249,7 @@ Mine
 -----------
 
 ```
-<script src="https://embed.github.com/view/geojson/pkotlowski/aggregations-2/master/docs/pkotlowski/1.5.geojson>"></script>
+<script src="https://embed.github.com/view/geojson/pkotlowski/aggregations-2/blob/master/docs/pkotlowski/1.5.geojson"></script>
 
 Zapytanie 6: Ilość szkoł leżących 3000m od centrum Chicago.
 ```
