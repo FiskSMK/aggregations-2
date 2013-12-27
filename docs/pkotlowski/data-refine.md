@@ -6,7 +6,7 @@ Następnie oczyściełem je za pomocą narzędza google refine.
 #### Usunąłem niepotrzebne kolumny
 #### Wybrałem dane dla lotnisk, usunąłem lądowiska 
 
-Przykładowe 3708 lokalizacji na mapie google (wszystkie lotniska z regularnymi połączeniami):
+
 
 #MongoDB
 
