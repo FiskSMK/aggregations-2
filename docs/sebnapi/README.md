@@ -8,7 +8,7 @@
 	- [First mongoimport](#first-mongoimport)
 	- [Second import by python script](#second-import-by-python-script)
 	- [Changing Tags-String to a Tag-List](#changing-tags-string-to-a-tag-list)
-		- [Processor, memory, IO while changing](#processor-memory-io-while-changing)
+				- [Processor, memory, IO while changing](#processor-memory-io-while-changing)
 - [Words](#words)
 	- [Count Tags](#count-tags)
 - [Geo-Stuff](#geo-stuff)
@@ -21,6 +21,18 @@
 		- [5. Points of Interest on one Line](#5-points-of-interest-on-one-line)
 		- [6. How many military places are there in North Carolina](#6-how-many-military-places-are-there-in-north-carolina)
 		- [7. Dams around Las Vegas in 50km radius](#7-dams-around-las-vegas-in-50km-radius)
+- [Aggregations 2](#aggregations-2)
+	- [Flights and Plane Data](#flights-and-plane-data)
+	- [Exploring the dataset](#exploring-the-dataset)
+		- [How many flight records do we have:](#how-many-flight-records-do-we-have)
+		- [How many delayed flights are there:](#how-many-delayed-flights-are-there)
+		- [How many +10min delayed flights are there:](#how-many-10min-delayed-flights-are-there)
+		- [On which flight was the oldest plane used on flights in 2013 (Jan-Mar)](#on-which-flight-was-the-oldest-plane-used-on-flights-in-2013-jan-mar)
+	- [Are older planes more involved in +10min departure delayed flights?](#are-older-planes-more-involved-in-10min-departure-delayed-flights)
+	- [Are older planes used for short distances and newer for long distances?](#are-older-planes-used-for-short-distances-and-newer-for-long-distances)
+	- [Flight Data import into Elasticsearch](#flight-data-import-into-elasticsearch)
+		- [How are the Manufacture Years distributed?](#how-are-the-manufacture-years-distributed)
+		- [Delays by Carrier](#delays-by-carrier)
 
 # Train
 
@@ -577,6 +589,370 @@ db.geo_usa2.find({
 { "_id" : ObjectId("527730f100d0b0afd0017cb5"), "ELEV_IN_M" : 506, "loc" : { "type" : "Point", "coordinates" : [  -114.9841601,  36.0666426 ] }, "FEATURE_CLASS" : "Dam", "FEATURE_ID" : 863572, "FEATURE_NAME" : "Spent Caustic Liquor Pond Dam", "COUNTY_NAME" : "Clark", "STATE_ALPHA" : "NV" }
 { "_id" : ObjectId("52772fc900d0b0afd0f5ca72"), "ELEV_IN_M" : 350, "loc" : { "type" : "Point", "coordinates" : [  -114.7375177,  36.0159558 ] }, "FEATURE_CLASS" : "Dam", "FEATURE_ID" : 5928, "FEATURE_NAME" : "Hoover Dam", "COUNTY_NAME" : "Mohave", "STATE_ALPHA" : "AZ" }
 ```
+
+
+
+# Aggregations 2
+
+##Flights and Plane Data
+
+I downloaded 3 months (Jan-Mar) of flightdata for 2013 from the [Research and Innovative Technology Administration (RITA)](http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236) and plane data from the [Federal Aviation Administration](http://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/). By combining the `TAIL_NUM` with the `N-Number` from the aircraft registry, we get detailed informations about the plane used on the flight. I imported both datasets by this [script](../../data/sebnapi/import_rita.py) to mongodb resulting in Datasets like this:
+
+```js
+{
+	"_id" : ObjectId("52bb4e7700d0b007a5977fc4"),
+	"ORIGIN_CITY_NAME" : "Dallas/Fort Worth, TX",
+	"FL_NUM" : "3324",
+	"NAS_DELAY" : 0,
+	"CANCELLED" : true,
+	"ARR_DELAY" : -14,
+	"DIVERTED" : true,
+	"CRS_ELAPSED_TIME" : 200,
+	"ORIGIN_CITY_MARKET_ID" : "30194",
+	"WHEELS_ON" : "14:43",
+	"AIR_TIME" : 175,
+	"WHEELS_OFF" : "10:48",
+	"PLANE" : {
+		"N-NUMBER" : "923XJ",
+		"UNIQUE ID" : "01007732",
+		"ENG MFR MDL" : "30050",
+		"ZIP CODE" : "303543743",
+		"CERT ISSUE DATE" : "20091231",
+		"STREET" : "1775 M H JACKSON SERVICE RD",
+		"REGION" : "7",
+		"OTHER NAMES(2)" : "",
+		" KIT MODEL" : "",
+		"FRACT OWNER" : "",
+		"STATUS CODE" : "V",
+		"MODE S CODE HEX" : "ACCB65",
+		"SERIAL NUMBER" : "15177",
+		"AIR WORTH DATE" : "20080514",
+		"COUNTRY" : "US",
+		"EXPIRATION DATE" : "20160531",
+		"TYPE AIRCRAFT" : "5",
+		"MODE S CODE" : "53145545",
+		"STREET2" : "DEPT 595",
+		"LAST ACTION DATE" : "20130501",
+		"COUNTY" : "121",
+		"STATE" : "GA",
+		"TYPE ENGINE" : "5",
+		"OTHER NAMES(4)" : "",
+		"OTHER NAMES(3)" : "",
+		"CITY" : "ATLANTA",
+		"NAME" : "DELTA AIR LINES INC",
+		"OTHER NAMES(5)" : "",
+		"CERTIFICATION" : "1T",
+		"OTHER NAMES(1)" : "",
+		"TYPE REGISTRANT" : "3",
+		"MFR MDL CODE" : "1390016",
+		"KIT MFR" : "",
+		"YEAR MFR" : 2008
+	},
+	"CARRIER_DELAY" : 0,
+	"DEST_CITY_MARKET_ID" : "31703",
+	"DEST_CITY_NAME" : "New York, NY",
+	"ORIGIN" : "DFW",
+	"DEP_TIME" : "10:38",
+	"ACTUAL_ELAPSED_TIME" : 193,
+	"ORIGIN_AIRPORT_SEQ_ID" : "1129803",
+	"DEST" : "JFK",
+	"ARR_DELAY_NEW" : 0,
+	"FLIGHTS" : 1,
+	"DEST_AIRPORT_SEQ_ID" : "1247802",
+	"YEAR" : "2013",
+	"AIRLINE_ID" : "20363",
+	"DEP_DELAY_NEW" : 0,
+	"FL_DATE" : "2013-01-17",
+	"DISTANCE" : 1391,
+	"DEST_AIRPORT_ID" : "12478",
+	"DEP_DELAY" : -7,
+	"WEATHER_DELAY" : 0,
+	"CANCELLATION_CODE" : "",
+	"ARR_TIME" : "14:51",
+	"SECURITY_DELAY" : 0,
+	"UNIQUE_CARRIER" : "9E",
+	"CARRIER" : "9E",
+	"ORIGIN_AIRPORT_ID" : "11298",
+	"LATE_AIRCRAFT_DELAY" : 0,
+	"TAIL_NUM" : "N923XJ"
+}
+```
+
+##Exploring the dataset
+
+### How many flight records do we have:
+```js
+> db.flights.find().size()
+1288818
+```
+
+### How many delayed flights are there:
+```js
+/* Departue Delay */
+db.flights.find({"DEP_DELAY": {"$gt": 0}}).size()
+480607
+
+/* Arrival Delay */
+> db.flights.find({"ARR_DELAY": {"$gt": 0}}).size()
+479971
+```
+
+### How many +10min delayed flights are there:
+```js
+/* Departue Delay */
+> db.flights.find({"DEP_DELAY": {"$gt": 10}}).size()
+264786
+
+/* Arrival Delay */
+> db.flights.find({"ARR_DELAY": {"$gt": 10}}).size()
+279203
+```
+
+### On which flight was the oldest plane used on flights in 2013 (Jan-Mar)
+
+```js
+{
+    "_id": ObjectId("52bb4e7f00d0b007a597d285"),
+    "ORIGIN_CITY_NAME": "New York, NY",
+    "CARRIER_DELAY": 0,
+    "YEAR": "2013",
+    "AIRLINE_ID": "19805",
+    "ARR_DELAY": -26,
+    "DIVERTED": true,
+    "CRS_ELAPSED_TIME": 400,
+    "ORIGIN_CITY_MARKET_ID": "31703",
+    "WHEELS_ON": "10:54",
+    "AIR_TIME": 350,
+    "WHEELS_OFF": "08:04",
+    "FL_NUM": "59",
+    "DEST_CITY_MARKET_ID": "32457",
+    "DEST_CITY_NAME": "San Francisco, CA",
+    "ORIGIN": "JFK",
+    "DEP_TIME": "07:41",
+    "ACTUAL_ELAPSED_TIME": 378,
+    "ARR_DELAY_NEW": 0,
+    "ORIGIN_AIRPORT_SEQ_ID": "1247802",
+    "DEST": "SFO",
+    "ORIGIN_AIRPORT_ID": "12478",
+    "FLIGHTS": 1,
+    "DEST_AIRPORT_SEQ_ID": "1477101",
+    "NAS_DELAY": 0,
+    "CANCELLED": true,
+    "DEP_DELAY_NEW": 0,
+    "FL_DATE": "2013-01-30",
+    "DISTANCE": 2586,
+    "DEST_AIRPORT_ID": "14771",
+    "DEP_DELAY": -4,
+    "WEATHER_DELAY": 0,
+    "CANCELLATION_CODE": "",
+    "CARRIER": "AA",
+    "ARR_TIME": "10:59",
+    "SECURITY_DELAY": 0,
+    "UNIQUE_CARRIER": "AA",
+    "PLANE": {
+        "N-NUMBER": "381AA",
+        "UNIQUE ID": "00633771",
+        "ENG MFR MDL": "67037",
+        "ZIP CODE": "33166",
+        "CERT ISSUE DATE": "19981221",
+        "STREET": "6111 NW 72 AVE",
+        "OTHER NAMES(2)": "",
+        " KIT MODEL": "",
+        "FRACT OWNER": "",
+        "STATUS CODE": "24",
+        "MODE S CODE HEX": "A45F02",
+        "SERIAL NUMBER": "44921",
+        "MODE S CODE": "51057402",
+        "COUNTRY": "US",
+        "EXPIRATION DATE": "20130630",
+        "TYPE AIRCRAFT": "5",
+        "AIR WORTH DATE": "19650604",
+        "STREET2": "",
+        "LAST ACTION DATE": "20071218",
+        "COUNTY": "025",
+        "STATE": "FL",
+        "TYPE ENGINE": "1 ",
+        "OTHER NAMES(4)": "",
+        "OTHER NAMES(3)": "",
+        "CITY": "MIAMI",
+        "NAME": "TURKS AIR INC",
+        "OTHER NAMES(5)": "",
+        "CERTIFICATION": "1T",
+        "OTHER NAMES(1)": "",
+        "TYPE REGISTRANT": "3",
+        "YEAR MFR": 1956,
+        "MFR MDL CODE": "3021805",
+        "KIT MFR": "",
+        "REGION": "7"
+    },
+    "LATE_AIRCRAFT_DELAY": 0,
+    "TAIL_NUM": "N381AA"
+}
+```
+
+## Are older planes more involved in +10min departure delayed flights?
+
+```python
+for flight in coll.find({"PLANE.YEAR MFR": {"$gt": 0}, "DEP_DELAY": {"$gt": 10}}):
+    try:
+        flights_delayed[flight["PLANE"]["YEAR MFR"]] += 1 
+        flights_delayed_time[flight["PLANE"]["YEAR MFR"]] += flight["DEP_DELAY"]
+    except KeyError:
+        flights_delayed[flight["PLANE"]["YEAR MFR"]] = 1
+        flights_delayed_time[flight["PLANE"]["YEAR MFR"]] = flight["DEP_DELAY"]
+...
+for k in flights_delayed.keys():
+    flights_avg_delay[k] = float(flights_delayed_time[k])/flights_delayed[k]
+```
+
+[Full script](../../data/sebnapi/delayed_flights.py)
+
+![flights_avg_delay_per_mfr_year](../../images/sebnapi/flights_avg_delay_per_mfr_year.png)
+
+There is no correlation between the manufacture date and timdelayed flights.
+
+## Are older planes used for short distances and newer for long distances?
+As we have seen flights on older planes do not suffer from additional delay, maybe older planes are used for short distances and newer planes for long distances? [Used script.](../../data/sebnapi/distance_flights.py)
+
+![flights_avg_distance_per_mfr_year](../../images/sebnapi/flights_avg_distance_per_mfr_year.png)
+
+The chart interestingly suggests that vintage planes (especially 1956, 1972, 1973, 1984, 1986) do average longer flights than "young" planes. What made me curious. The article focused on the US-Airline Delta Air Lines ["Delta Flies New Route to Profits: Older Jets"](http://online.wsj.com/news/articles/SB10001424052970203406404578072960852910072) in The Wall Street Journal is proving the same:
+
+> For its customers, meanwhile, "older" hasn't meant "later" in terms of flight performance: the carrier ran 86.3% of its domestic flights on time through the first three quarters of this year, ...
+
+> Though some safety experts once fretted about them, most now say that, with careful maintenance, older jets can fly safely. According to data compiled by Boeing, only 12 of 36 commercial jetliner accidents in 2011 that destroyed planes or caused substantial damage involved aircraft 20 years or older. 
+
+## Flight Data import into Elasticsearch
+
+I imported the same data as desribed above into elasticsearch using an to elasticsearch adapted [python script](../../data/sebnapi/import_rita_es.py)
+
+### How are the Manufacture Years distributed?
+
+```
+GET _search
+{   "facets" : {
+        "histo1" : {
+            "histogram" : {
+                "field" : "PLANE.YEAR MFR",
+                "interval" : 19
+            }
+        }
+    }
+}
+```
+
+Results are:
+
+```js
+"facets": {
+      "histo1": {
+         "_type": "histogram",
+         "entries": [
+            {
+               "key": 0,
+               "count": 756
+            },
+            {
+               "key": 1938,
+               "count": 53
+            },
+            {
+               "key": 1957,
+               "count": 3988
+            },
+            {
+               "key": 1976,
+               "count": 221176
+            },
+            {
+               "key": 1995,
+               "count": 1066508
+            }
+         ]
+      }
+```
+
+![plane_mfr_years](../../images/sebnapi/plane_mfr_years.png)
+
+
+
+### Delays by Carrier
+
+```
+GET _search
+{
+    "query" :{"range": {
+       "DEP_DELAY": {
+          "from": 10,
+          "to": 999999
+       }
+    }},
+    "facets": {
+       "CARRIER_DELAY": {
+          "terms": {
+             "field": "UNIQUE_CARRIER"
+          }
+       }
+    }
+}    
+```
+
+```
+"facets": {
+      "CARRIER_DELAY": {
+         "_type": "terms",
+         "missing": 3996,
+         "total": 267916,
+         "other": 13526,
+         "terms": [
+            {
+               "term": "wn",
+               "count": 65532
+            },
+            {
+               "term": "ev",
+               "count": 48372
+            },
+            {
+               "term": "oo",
+               "count": 28893
+            },
+            {
+               "term": "ua",
+               "count": 27347
+            },
+            {
+               "term": "dl",
+               "count": 25654
+            },
+            {
+               "term": "b6",
+               "count": 15338
+            },
+            {
+               "term": "us",
+               "count": 13950
+            },
+            {
+               "term": "9e",
+               "count": 12436
+            },
+            {
+               "term": "aa",
+               "count": 9735
+            },
+            {
+               "term": "fl",
+               "count": 7133
+            }
+         ]
+      }
+```
+
+![delays_by_carrier](../../images/sebnapi/delays_by_carrier.png)
+
+
+
 
 
 
