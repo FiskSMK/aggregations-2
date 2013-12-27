@@ -812,6 +812,8 @@ The chart interestingly suggests that vintage planes (especially 1956, 1972, 197
 
 ## Flight Data import into Elasticsearch
 
+I imported the same data as desribed above into elasticsearch using an to elasticsearch adapted [python script](../../data/sebnapi/import_rita_es.py)
+
 ### How are the Manufacture Years distributed?
 
 ```
@@ -857,6 +859,10 @@ Results are:
          ]
       }
 ```
+
+![plane_mfr_years](../../images/sebnapi/plane_mfr_years.png)
+
+
 
 ### Delays by Carrier
 
@@ -930,6 +936,9 @@ GET _search
          ]
       }
 ```
+
+![delays_by_carrier](../../images/sebnapi/delays_by_carrier.png)
+
 
 
 
