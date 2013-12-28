@@ -197,5 +197,93 @@ W pierwszym kwartale 2013 roku najwięcej minut w powietrzu spędziły samoloty:
 ![wykres2](../../images/tsott/wykres2.png)
 
 
+<h2>Elastic Search</h2>
 
+<h3>Import danych</h3>
+Dane na stronie www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&DB_Short_Name=On-Time dostępne są w formacie CSV. W celu otrzymania ich w formacie json wykonano eksport z bazy mongodb.
+```sh
+mongoexport -d traffic -c air -o flights.json
+```
+
+Zamiana danych na typ bulk za pomocą programu jq
+```sh
+time cat flights.json | jq --compact-output '{ "index": { "_type": "flight" } }, .'  > flights.bulk
+
+real	5m20.949s
+user	3m38.996s
+sys	0m32.340s
+```
+
+Próba importu danych w całości
+```sh
+time curl -s -XPOST localhost:9200/data/_bulk --data-binary @flights.bulk
+
+real	0m21.192s
+user	0m0.224s
+sys	0m1.144s
+```
+Próba zakończyła się niepowodzeniem
+```sh
+org.elasticsearch.common.netty.handler.codec.frame.TooLongFrameException: HTTP content length exceeded 104857600 bytes.
+```
+
+Podział danych na części i import po podziale:
+```sh
+split -l 200000 flights.bulk
+time for i in x*; do curl -s -XPOST   localhost:9200/data/_bulk --data-binary @$i; done
+
+real	14m4.265s
+user	0m1.208s
+sys	0m3.860s
+```
+
+Sprawdzenie danych po imporcie
+```sh
+curl -XGET 'http://localhost:9200/data/flight/_count' ; echo
+{"count":2231577,"_shards":{"total":5,"successful":5,"failed":0}}
+``` 
+
+<h3>Pierwsza agregacja</h3>
+
+Liczba lotów według przewoźnika. Lista 5 przewoźników z największą liczbą lotów.
+
+```sh
+  "facets" : {
+    "CARRIER" : {
+      "_type" : "terms",
+      "missing" : 58528,
+      "total" : 2173049,
+      "other" : 822008,
+      "terms" : [ {
+        "term" : "wn",
+        "count" : 360595
+      }, {
+        "term" : "ev",
+        "count" : 283788
+      }, {
+        "term" : "dl",
+        "count" : 282846
+      }, {
+        "term" : "aa",
+        "count" : 216882
+      }, {
+        "term" : "oo",
+        "count" : 206930
+      } ]
+    }
+  }
+}
+```
+Sprawdzając po kodzie przewoźnika, największą liczbę lotów wykonali:
+```sh
+Southwest Airlines Co. - 360595 lotów
+Atlantic Southeast Airlines, Inc. - 283788 lotów
+Delta Air Lines Inc. - 282846 lotów
+American Airlines Inc. - 216882 lotów
+SkyWest  Airlines - 206930 lotów
+```
+
+![wykres3](../../images/tsott/wykres3.png)
+
+<h3>Druga agregacja</h3>
 
