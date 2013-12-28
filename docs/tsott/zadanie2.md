@@ -204,8 +204,8 @@ Dane na stronie www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&DB_Short_
 ```sh
 mongoexport -d traffic -c air -o flights.json
 ```
-
-Zamiana danych na typ bulk za pomocą programu jq
+Do importu danych uzyto Bulk API. Bulk API wymaga danych typu bulk.
+Zamiana danych na typ bulk za pomocą programu jq:
 ```sh
 time cat flights.json | jq --compact-output '{ "index": { "_type": "flight" } }, .'  > flights.bulk
 
@@ -214,7 +214,7 @@ user	3m38.996s
 sys	0m32.340s
 ```
 
-Próba importu danych w całości
+Próba importu danych w całości:
 ```sh
 time curl -s -XPOST localhost:9200/data/_bulk --data-binary @flights.bulk
 
@@ -222,7 +222,7 @@ real	0m21.192s
 user	0m0.224s
 sys	0m1.144s
 ```
-Próba zakończyła się niepowodzeniem
+Próba zakończyła się niepowodzeniem:
 ```sh
 org.elasticsearch.common.netty.handler.codec.frame.TooLongFrameException: HTTP content length exceeded 104857600 bytes.
 ```
@@ -237,7 +237,7 @@ user	0m1.208s
 sys	0m3.860s
 ```
 
-Sprawdzenie danych po imporcie
+Sprawdzenie danych po imporcie:
 ```sh
 curl -XGET 'http://localhost:9200/data/flight/_count' ; echo
 {"count":2231577,"_shards":{"total":5,"successful":5,"failed":0}}
@@ -245,7 +245,7 @@ curl -XGET 'http://localhost:9200/data/flight/_count' ; echo
 
 <h3>Pierwsza agregacja</h3>
 
-Liczba lotów według przewoźnika. Lista 5 przewoźników z największą liczbą lotów.
+Liczba lotów według przewoźnika. Lista 5 przewoźników z największą liczbą lotów:
 
 ```sh
   "facets" : {
