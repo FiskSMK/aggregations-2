@@ -308,3 +308,75 @@ SkyWest  Airlines - 206930 lotów
 
 <h3>Druga agregacja</h3>
 
+Liczba lotów do 500 mil, od 500 do 1000 mil oraz powyżej 1200 mil:
+
+```sh
+curl -X POST "http://localhost:9200/data/_search?pretty=true" -d '
+{
+    "query" : {
+        "match_all" : {}
+    },
+    "facets" : {
+        "range1" : {
+            "range" : {
+                "field" : "DISTANCE",
+                "ranges" : [
+{ "to" : 500 },
+{ "from" : 500, "to" : 1000 },
+{ "from" : 1000 }
+                ]
+            }
+        }
+    }
+}
+'
+```
+Wynik:
+
+```sh
+ "facets" : {
+    "range1" : {
+      "_type" : "range",
+      "ranges" : [ {
+        "to" : 500.0,
+        "count" : 911027,
+        "min" : 31.0,
+        "max" : 496.0,
+        "total_count" : 911027,
+        "total" : 2.7104437E8,
+        "mean" : 297.515188902195
+      }, {
+        "from" : 500.0,
+        "to" : 1000.0,
+        "count" : 768252,
+        "min" : 500.0,
+        "max" : 999.0,
+        "total_count" : 768252,
+        "total" : 5.54641138E8,
+        "mean" : 721.9520912408949
+      }, {
+        "from" : 1000.0,
+        "count" : 552298,
+        "min" : 1005.0,
+        "max" : 4983.0,
+        "total_count" : 552298,
+        "total" : 8.62742221E8,
+        "mean" : 1562.0955009795437
+      } ]
+    }
+  }
+}
+
+```
+
+Dane na temat lotów:
+
+```sh
+Najdłuższy lot -4980 mil
+Najkrótszy lot - 31 mil
+
+loty ponizej 500 mil - 41%
+loty od 500 do 1000 mil - 34%
+loty powyzej 1000 mil - 25%
+```
+![wykres4](../../images/tsott/wykres4.png)
