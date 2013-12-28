@@ -248,6 +248,25 @@ curl -XGET 'http://localhost:9200/data/flight/_count' ; echo
 Liczba lotów według przewoźnika. Lista 5 przewoźników z największą liczbą lotów:
 
 ```sh
+curl -X POST "http://localhost:9200/data/_search?pretty=true" -d '
+{
+    "query" : {
+        "match_all" : {  }
+    },
+    "facets" : {
+        "CARRIER" : {
+            "terms" : {
+                "field" : "CARRIER",
+                "size" : 5
+            }
+        }
+    }
+}
+```
+
+Wynik:
+
+```sh
   "facets" : {
     "CARRIER" : {
       "_type" : "terms",
@@ -275,6 +294,7 @@ Liczba lotów według przewoźnika. Lista 5 przewoźników z największą liczb�
 }
 ```
 Sprawdzając po kodzie przewoźnika, największą liczbę lotów wykonali:
+
 ```sh
 Southwest Airlines Co. - 360595 lotów
 Atlantic Southeast Airlines, Inc. - 283788 lotów
