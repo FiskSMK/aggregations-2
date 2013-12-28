@@ -308,7 +308,7 @@ SkyWest  Airlines - 206930 lotów
 
 <h3>Druga agregacja</h3>
 
-Liczba lotów do 500 mil, od 500 do 1000 mil oraz powyżej 1200 mil:
+Liczba lotów do 500 mil, od 500 do 1000 mil oraz powyżej 1000 mil:
 
 ```sh
 curl -X POST "http://localhost:9200/data/_search?pretty=true" -d '
