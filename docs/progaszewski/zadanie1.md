@@ -40,7 +40,7 @@ dzięki temu am właśniwą ilość rekordów:
 
 ## **1c)** ##
 
-Program napisany w języku Java, znajduje się tutaj [tutaj](tutaj "/docs/progaszewski/NoSql.java").
+Program napisany w języku Java, znajduje się [tutaj]("/docs/progaszewski/NoSql.java").
 
 Wykonywał się: **1870.518s** czyli około **32 minut**
 
