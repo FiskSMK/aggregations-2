@@ -18,7 +18,7 @@ Dane zaimportowałem do bazy MongoDB poleceniem:
 
 Czas trwania importu:
 
-    real3m53.282s
-    user0m0.015s
-    sys 0m0.016s
+    real 3m53.282s
+    user 0m0.015s
+    sys  0m0.016s
 
