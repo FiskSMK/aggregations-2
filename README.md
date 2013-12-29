@@ -27,7 +27,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md).
 1. [Dermont, Jacek](/docs/jdermont.md). [Albumy muzyczne](/docs/jdermont_albumy_muzyczne.md).
 1. [Detlaf, Krzysztof](/docs/kdetlaf.md).
-1. [Dępczyk, Michał](/docs/mdepczyk.md).
+1. [Dępczyk, Michał](/docs/mdepczyk.md). [Broadband coverage](/docs/mdepczyk/zadanie2.md).
 1. [Domurat, Szymon](/docs/sdomurat.md).
 1. [Duwe, Oskar](/docs/oduwe.md).
 1. [Gałka, Jacek](/docs/jgalka/README.md).
