@@ -5,9 +5,9 @@ Przygotowanie pliku do Tran.csv do zaimportowania do bazy mongoDB:
 
     time cat Train.csv | tr "\n" " " | tr "\r" "\n" > Train_unix.csv
     
-    real3m5.988s
-    user0m20.295s
-    sys 0m22.091s
+    real 3m5.988s
+    user 0m20.295s
+    sys  0m22.091s
 
     cat Train_unix.csv | wc -l
     
@@ -17,9 +17,9 @@ Importowanie do bazy danych z pliku Train.unix.csv:
 
     time ./bin/mongoimport.exe -d nosql --type csv -c Train --file ./Train_unix.csv --headerline
     
-    real20m35.478s
-    user0m0.000s
-    sys 0m0.015s
+    real 20m35.478s
+    user 0m0.000s
+    sys  0m0.015s
 
 ## **1b)** ##
 
@@ -49,9 +49,9 @@ Plik text8.txt przygotowałem według treści zadania.
 
     time bin/mongoimport.exe -d nosql -type csv -f word -c text8 --file ./text8.txt
     
-    real19m16.996s
-    user0m0.000s
-    sys 0m0.015s
+    real 19m16.996s
+    user 0m0.000s
+    sys  0m0.015s
 
     db.text8.count()
     17005207
