@@ -6,9 +6,9 @@ Najpierw z pliku
 
 wybrałem 2 000 000 pierwszych linii i zapisałem je do pliku 
 
-> getglue_sample_cat.json
+> getglue_sample_cut.json
 
 użyłem do tego polecania: 
 
-    head -n 2000000 getglue_sample.json > getglue_sample_cat.json
+    head -n 2000000 getglue_sample.json > getglue_sample_cut.json
 
