@@ -23,7 +23,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 ## Nasze agregacje
 
 1. Bzyl, Włodzimierz. [Imieniny](/docs/wbzyl.md).
-1. [Bełcik, Jakub](/docs/jbelcik/README.md). [Uliczne przestępstwa](/docs/jbelcik/READMEzad2.md).
+1. [Bełcik, Jakub](/docs/jbelcik/README.md). [Przestępstwa uliczne](/docs/jbelcik/READMEzad2.md).
 1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md).
 1. [Dermont, Jacek](/docs/jdermont.md). [Albumy muzyczne](/docs/jdermont_albumy_muzyczne.md).
 1. [Detlaf, Krzysztof](/docs/kdetlaf.md).
