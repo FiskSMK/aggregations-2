@@ -88,7 +88,7 @@ switched to db imdb
 
 ####Kod aggregacji
 
-Kod skryptu: [tutaj](../..//scripts/oplichta/2-mongo/aggregation1.js).
+Kod skryptu: [tutaj](/scripts/oplichta/2-mongo/aggregation1.js).
 
 ####Wynik
 
@@ -160,7 +160,7 @@ sys	0m0.024s
 ####Kod aggregacji
 
 
-Kod skryptu: [tutaj](../..//scripts/oplichta/2-mongo/aggregation2.js).
+Kod skryptu: [tutaj](../../scripts/oplichta/2-mongo/aggregation2.js).
 
 ####Wynik
 
@@ -485,7 +485,7 @@ count: 74670
 }
 ```
 
-Pełen wynik [tutaj](../..//scripts/oplichta/2-es/wynik1).
+Pełen wynik [tutaj](../../scripts/oplichta/2-es/wynik1).
 
 
 ## Zapytanie 2
@@ -559,4 +559,4 @@ count: 391928
 }
 ```
 
-Pełen wynik [tutaj](../..//scripts/oplichta/2-es/wynik2).
+Pełen wynik [tutaj](../../scripts/oplichta/2-es/wynik2).
