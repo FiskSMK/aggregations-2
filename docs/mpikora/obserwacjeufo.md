@@ -2,7 +2,7 @@
 
 # Dane
 
-Baza danych użyta do ćwiczenia zawiera obserwacje UFO, została ona zasugerowana przez prowadzącego jako jedna z baz możliwych do wykorzystania. Jesst ona zapisana w formacie csv, razem z linią nagłówka.
+Baza danych użyta do ćwiczenia zawiera obserwacje UFO, została ona zasugerowana przez prowadzącego jako jedna z baz możliwych do wykorzystania. Jest ona zapisana w formacie csv, razem z linią nagłówka.
 
 # Mongodb
 
@@ -26,7 +26,7 @@ db.Ufo.aggregate(
 ```
 
 Wyniki zapytania przedstawia poniższy wykres:
-![wykres liczby obserwacji od miesiaca](../images/mpikora/wykresmiesiace.png)
+![wykres liczby obserwacji od miesiaca](../../images/mpikora/wykresmiesiace.png)
 Zwiększona liczba obserwacji w miesiącach letnich wynika prawdopodobnie z tego, że ludzie więcej czasu spędzają na zewnątrz.
 
 Dla każdego stanu - w którym roku bylo najwięcej i najmniej obserwacji.
@@ -40,7 +40,7 @@ db.Ufo.aggregate(
 ```
 
 Wyniki zapytania przedstawia poniższy wykres:
-![tabela liczby obserwacji](../images/mpikora/tabela.png)
+![tabela liczby obserwacji](../../images/mpikora/tabela.png)
 Wyniki pokazują, że generalnie najmniejszą liczbę obserwacji zanotowano na początku lat 90., a najwyższą w ostatnich latach. Niektórzy antropologowie utożsamiają wzrost obserwacji w połowie lat 90, trwający do dziś zwiększoną obecnością tematyki UFO w serialach telewizyjnych, a zwłaszcza popularności "Z archiwum X" w drugiej połowie lat 90.
 
 # Elasticsearch
@@ -105,7 +105,7 @@ Ile było obserwacji obiektów w kształcie trójkąta w poszczególnych stanach
 ```
 
 Wyniki zapytania przedstawia poniższy wykres:
-![wykres liczby obserwacji trojkatow od stanu](../images/mpikora/wykrestrojkat.png)
+![wykres liczby obserwacji trojkatow od stanu](../../images/mpikora/wykrestrojkat.png)
 
 20 najpopularniejszych zaobserwowanych kształtów
 
@@ -115,6 +115,6 @@ Wyniki zapytania przedstawia poniższy wykres:
 ```
 
 Wyniki zapytania przedstawia poniższy wykres:
-![wykres 20 najczestszych ksztaltow](../images/mpikora/wykresksztalty.png)
+![wykres 20 najczestszych ksztaltow](../../images/mpikora/wykresksztalty.png)
 
 Kształty nieznane (na, unknown) oznaczają obserwacje dziwnych zjawisk bez udziału UFO.

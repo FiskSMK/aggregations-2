@@ -119,7 +119,7 @@ db.text8.aggregate([
 1000 najczęściej występujących słów stanowi około 67% jego zawartości.
 
 Wyniki te przedstawia poniższy wykres:
-![zawartosc najpopularniejszych slow w tekscie](../images/mpikora/wykresslowa.png)
+![zawartosc najpopularniejszych slow w tekscie](../../images/mpikora/wykresslowa.png)
 
 ### e) Dane geograficzne
 Do zadania użyłem danych dotyczących hrabstw w USA.Dostępne są one pod adresem (http://eric.clst.org/Stuff/USGeoJSON). Kilku Jsonów mongo nie był w stanie poprawnie sparsować, więc usunąłem je. Dane wczytałem do bazy poleceniem:
