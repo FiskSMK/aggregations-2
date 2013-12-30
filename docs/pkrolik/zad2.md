@@ -25,8 +25,13 @@ jednakże ElasticSearch ma problem z importem niektórych rekordów
 
 ####Agregacja 1: 20 najczęściej występujących reżyserów
 
+Zapytanie:
 ```js
 db.imdb.aggregate({$group:{_id: "$director", count:{$sum: 1}}},{$sort:{count: -1}},{$limit: 20});
+```
+
+Wynik:
+```js
 {
 	"result" : [
 		{
@@ -113,5 +118,302 @@ db.imdb.aggregate({$group:{_id: "$director", count:{$sum: 1}}},{$sort:{count: -1
 	"ok" : 1
 }
 ```
+
 Oczywiście pan "null" nie był reżyserem jednakże oznacza to, że tyle wpisów nie miało jakkolwiek podanego reżysera (w prezentacji graficznej jest on pominięty).
-![mms1d](../../images/pkrolik/mms1d.png)
+
+####Wynik graficznie
+![zad21](../../images/pkrolik/zad21.png)
+
+####Agregacja 2: 10 najbardziej aktywnych użytkowników
+
+Zapytanie:
+```js
+db.imdb.aggregate({$group:{_id: "$userId", count:{$sum: 1}}},{$sort:{count: -1}},{$limit: 10});
+```
+
+Wynik:
+```js
+{
+	"result" : [
+		{
+			"_id" : "LukeWilliamss",
+			"count" : 696782
+		},
+		{
+			"_id" : "demi_konti",
+			"count" : 68137
+		},
+		{
+			"_id" : "bangwid",
+			"count" : 59261
+		},
+		{
+			"_id" : "zenofmac",
+			"count" : 56233
+		},
+		{
+			"_id" : "agentdunham",
+			"count" : 55740
+		},
+		{
+			"_id" : "cillax",
+			"count" : 43161
+		},
+		{
+			"_id" : "tamtomo",
+			"count" : 42378
+		},
+		{
+			"_id" : "hblackwood",
+			"count" : 32832
+		},
+		{
+			"_id" : "ellen_turner",
+			"count" : 32239
+		},
+		{
+			"_id" : "husainholic",
+			"count" : 32135
+		}
+	],
+	"ok" : 1
+}
+```
+####Wynik graficznie
+![zad22](../../images/pkrolik/zad22.png)
+
+####Agregacja 3: 10 największych hater'ów
+
+Zapytanie fasetowe w ES:
+```js
+{
+    "query" : {
+        "query_string" : {
+          "query" : "action:Disliked"
+      }
+    },
+    "facets" : {
+        "userId" : {
+            "terms" : {
+                "field" : "userId",
+                "size" : 10
+            }
+        }
+    }
+}
+```
+
+Wynik:
+```js
+{
+    "took": 131,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "failed": 0
+    },
+    "hits": {
+        "total": 468969,
+        "max_score": 4.7487235,
+        "hits": [
+            //...
+        ]
+    },
+    "facets": {
+        "userId": {
+            "_type": "terms",
+            "missing": 0,
+            "total": 468975,
+            "other": 447555,
+            "terms": [
+                {
+                    "term": "xendeus",
+                    "count": 3678
+                },
+                {
+                    "term": "brownbagcomics",
+                    "count": 3281
+                },
+                {
+                    "term": "ang",
+                    "count": 2278
+                },
+                {
+                    "term": "kevinjloria",
+                    "count": 2180
+                },
+                {
+                    "term": "carlson1931",
+                    "count": 2144
+                },
+                {
+                    "term": "amanda_hauser",
+                    "count": 1987
+                },
+                {
+                    "term": "zeus1661ou",
+                    "count": 1688
+                },
+                {
+                    "term": "vunderhill1",
+                    "count": 1555
+                },
+                {
+                    "term": "s34rchnd3str0y",
+                    "count": 1462
+                },
+                {
+                    "term": "furchterregend",
+                    "count": 1167
+                }
+            ]
+        }
+    }
+}
+```
+
+Pełen wynik dostępny [tutaj](/docs/pkrolik/zad23.txt)
+
+####Wynik graficznie
+![zad23](../../images/pkrolik/zad23.png)
+####Zrzut z programu Postman
+![postman23](../../images/pkrolik/fac1.png)
+
+####Agregacja 4: 20 najmniej komentowanych tytułów
+
+Zapytanie fasetowe w ES:
+```js
+{
+    "query" : {
+        "query_string" : {
+          "query" : "_missing_:comment"
+      }
+    },
+    "facets" : {
+        "title" : {
+            "terms" : {
+                "field" : "title",
+                "size" : 20
+            }
+        }
+    }
+}
+```
+
+Wynik:
+```js
+{
+    "took": 4980,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "failed": 0
+    },
+    "hits": {
+        "total": 17307177,
+        "max_score": 1,
+        "hits": [
+            //...
+        ]
+    },
+    "facets": {
+        "title": {
+            "_type": "terms",
+            "missing": 856,
+            "total": 38040119,
+            "other": 34264760,
+            "terms": [
+                {
+                    "term": "big",
+                    "count": 308486
+                },
+                {
+                    "term": "show",
+                    "count": 307796
+                },
+                {
+                    "term": "american",
+                    "count": 257620
+                },
+                {
+                    "term": "bang",
+                    "count": 226009
+                },
+                {
+                    "term": "theory",
+                    "count": 222012
+                },
+                {
+                    "term": "man",
+                    "count": 197926
+                },
+                {
+                    "term": "men",
+                    "count": 191821
+                },
+                {
+                    "term": "2",
+                    "count": 177058
+                },
+                {
+                    "term": "who",
+                    "count": 174620
+                },
+                {
+                    "term": "family",
+                    "count": 169645
+                },
+                {
+                    "term": "dead",
+                    "count": 169421
+                },
+                {
+                    "term": "night",
+                    "count": 167793
+                },
+                {
+                    "term": "part",
+                    "count": 166494
+                },
+                {
+                    "term": "i",
+                    "count": 162720
+                },
+                {
+                    "term": "girl",
+                    "count": 160303
+                },
+                {
+                    "term": "nikita",
+                    "count": 147502
+                },
+                {
+                    "term": "doctor",
+                    "count": 146100
+                },
+                {
+                    "term": "game",
+                    "count": 144407
+                },
+                {
+                    "term": "time",
+                    "count": 140757
+                },
+                {
+                    "term": "fringe",
+                    "count": 136869
+                }
+            ]
+        }
+    }
+}
+```
+
+Pełen wynik dostępny [tutaj](/docs/pkrolik/zad24.txt)
+
+####Wynik graficznie
+![zad24](../../images/pkrolik/zad24.png)
+####Zrzut z programu Postman
+![postman24](../../images/pkrolik/fac2.png)

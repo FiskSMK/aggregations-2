@@ -1,0 +1,400 @@
+20 najmniej komentowanych tytułów
+
+{
+    "query" : {
+        "query_string" : {
+          "query" : "_missing_:comment"
+      }
+    },
+    "facets" : {
+        "title" : {
+            "terms" : {
+                "field" : "title",
+                "size" : 20
+            }
+        }
+    }
+}
+
+{
+    "took": 4980,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "failed": 0
+    },
+    "hits": {
+        "total": 17307177,
+        "max_score": 1,
+        "hits": [
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "RG63i3zYSriYFW_fLPLaVw",
+                "_score": 1,
+                "_source": {
+                    "numReplies": "0",
+                    "type": "diehard",
+                    "lastCheckinTimestamp": "2012-04-03T00:47:56Z",
+                    "app": "GetGlue",
+                    "friendCheckedIn": "2012-04-03T01:02:59Z",
+                    "image": "http://thetvdb.com/banners/posters/248880-3.jpg",
+                    "timestamp": "2012-04-03T01:01:02Z",
+                    "lastModified": "2012-04-03T01:03:04Z",
+                    "title": "Hart of Dixie",
+                    "objectKey": "tv_shows/hart_of_dixie",
+                    "displayName": "Tedi31 (PH) (GGAC)",
+                    "modelName": "tv_shows",
+                    "comment": "",
+                    "userId": "tedi31",
+                    "private": "false",
+                    "numCheckins": "59",
+                    "source": "http://getglue.com/tv_shows/hart_of_dixie",
+                    "verb": "watching",
+                    "key": "tedi31/2012-04-03T01:01:02Z",
+                    "others": "685",
+                    "action": "Checkin"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "fxhakp6tQGmZMFXv6KbMdw",
+                "_score": 1,
+                "_source": {
+                    "numReplies": "0",
+                    "app": "GetGlue",
+                    "action": "Liked",
+                    "lastModified": "2012-04-03T01:01:09Z",
+                    "objectKey": "tv_shows/cougar_town",
+                    "source": "http://getglue.com/tv_shows/cougar_town",
+                    "comment": "",
+                    "modelName": "tv_shows",
+                    "displayName": "Johnny Rivers-Fans",
+                    "title": "Cougar Town",
+                    "timestamp": "2012-04-03T01:01:09Z",
+                    "image": "http://sphotos.xx.fbcdn.net/hphotos-ash4/393972_10150758245239988_153298469987_12484101_147681030_n.jpg",
+                    "userId": "johnny_riversfans",
+                    "private": "false"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "_FEMIqqWTsqjrbgj1XWrgQ",
+                "_score": 1,
+                "_source": {
+                    "image": "http://thetvdb.com/banners/posters/79590-5.jpg",
+                    "app": "GetGlue",
+                    "action": "Checkin",
+                    "timestamp": "2012-04-03T01:01:19Z",
+                    "lastModified": "2012-04-03T01:01:23Z",
+                    "title": "Dancing with the Stars",
+                    "objectKey": "tv_shows/dancing_with_stars",
+                    "displayName": "Kelly O'Donnell",
+                    "modelName": "tv_shows",
+                    "verb": "watching",
+                    "comment": "",
+                    "numReplies": "0",
+                    "userId": "kellyoes",
+                    "private": "false",
+                    "numCheckins": "2",
+                    "source": "http://getglue.com/tv_shows/dancing_with_stars",
+                    "lastCheckinTimestamp": "2012-03-27T23:35:37Z",
+                    "key": "kellyoes/2012-04-03T01:01:19Z",
+                    "others": "5542"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "Ku53CgFBQZ-gwawV1kKxbw",
+                "_score": 1,
+                "_source": {
+                    "image": "http://adaptiveblue.s3.amazonaws.com/tv_shows/smash/SMASH_getGlue_400x563.jpg",
+                    "type": "fan",
+                    "lastCheckinTimestamp": "2012-03-27T06:26:42Z",
+                    "app": "GetGlue",
+                    "friendCheckedIn": "2012-04-03T01:03:17Z",
+                    "numReplies": "0",
+                    "timestamp": "2012-04-03T01:01:26Z",
+                    "lastModified": "2012-04-03T01:03:25Z",
+                    "title": "Smash",
+                    "objectKey": "tv_shows/smash",
+                    "displayName": "Tedi31 (PH) (GGAC)",
+                    "modelName": "tv_shows",
+                    "comment": "",
+                    "userId": "tedi31",
+                    "private": "false",
+                    "numCheckins": "11",
+                    "source": "http://getglue.com/tv_shows/smash",
+                    "verb": "watching",
+                    "key": "tedi31/2012-04-03T01:01:26Z",
+                    "others": "413",
+                    "action": "Checkin"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "DcqXMeARQ2ie0TK18y0b6Q",
+                "_score": 1,
+                "_source": {
+                    "image": "http://thetvdb.com/banners/posters/196921-3.jpg",
+                    "type": "superfan",
+                    "lastCheckinTimestamp": "2012-03-27T00:58:56Z",
+                    "app": "MobileSite",
+                    "friendCheckedIn": "2012-04-03T01:45:24Z",
+                    "numReplies": "0",
+                    "timestamp": "2012-04-03T01:01:32Z",
+                    "lastModified": "2012-04-03T01:45:28Z",
+                    "title": "Being Human (U.S.)",
+                    "objectKey": "tv_shows/being_human_us",
+                    "displayName": "Heather Ross",
+                    "modelName": "tv_shows",
+                    "comment": "",
+                    "userId": "heatherross",
+                    "private": "false",
+                    "numCheckins": "17",
+                    "source": "http://m.getglue.com/checkin/tv_shows/being_human_us",
+                    "verb": "watching",
+                    "key": "heatherross/2012-04-03T01:01:32Z",
+                    "others": "2657",
+                    "action": "Checkin"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "b0nIAYQrRNm4u2BXSxEBmA",
+                "_score": 1,
+                "_source": {
+                    "image": "http://thetvdb.com/banners/posters/248646-1.jpg",
+                    "lastCheckinTimestamp": "2012-03-20T05:52:40Z",
+                    "app": "GetGlue",
+                    "friendCheckedIn": "2012-04-03T01:27:02Z",
+                    "action": "Checkin",
+                    "numReplies": "0",
+                    "timestamp": "2012-04-03T01:01:33Z",
+                    "lastModified": "2012-04-03T01:27:12Z",
+                    "title": "Alcatraz",
+                    "lastCheckin": "true",
+                    "displayName": "Angel Lomeda",
+                    "modelName": "tv_shows",
+                    "comment": "",
+                    "userId": "angel_lomeda",
+                    "objectKey": "tv_shows/alcatraz",
+                    "private": "false",
+                    "numCheckins": "10",
+                    "source": "http://getglue.com/tv_shows/alcatraz",
+                    "verb": "watching",
+                    "key": "angel_lomeda/2012-04-03T01:01:33Z",
+                    "others": "223"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "dds3eBihRla2bWuB5myweg",
+                "_score": 1,
+                "_source": {
+                    "image": "http://thetvdb.com/banners/posters/196921-3.jpg",
+                    "app": "iPhone",
+                    "action": "Checkin",
+                    "timestamp": "2012-04-03T01:01:36Z",
+                    "lastModified": "2012-04-03T01:01:40Z",
+                    "title": "Being Human (U.S.)",
+                    "objectKey": "tv_shows/being_human_us",
+                    "displayName": "Jeanette Rousseau-Taylor",
+                    "modelName": "tv_shows",
+                    "verb": "watching",
+                    "comment": "",
+                    "numReplies": "0",
+                    "userId": "Jeanette71",
+                    "private": "false",
+                    "numCheckins": "3",
+                    "source": "iPhone",
+                    "lastCheckinTimestamp": "2012-03-31T17:03:10Z",
+                    "key": "Jeanette71/2012-04-03T01:01:36Z",
+                    "others": "2657"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "EzireFIWQFq29fncfvc-8w",
+                "_score": 1,
+                "_source": {
+                    "image": "http://geektyrant.com/storage/2011-post-images/threestooges.jpeg?__SQUARESPACE_CACHEVERSION=1318614808464",
+                    "lastCheckinTimestamp": "2012-03-22T16:42:06Z",
+                    "app": "GetGlue",
+                    "action": "Checkin",
+                    "others": "292",
+                    "numReplies": "0",
+                    "timestamp": "2012-04-03T01:01:41Z",
+                    "lastModified": "2012-04-03T01:01:44Z",
+                    "title": "The Three Stooges",
+                    "lastCheckin": "true",
+                    "displayName": "heyitsjared",
+                    "modelName": "movies",
+                    "comment": "",
+                    "userId": "heyitsjared",
+                    "objectKey": "movies/three_stooges/peter_farrelly",
+                    "private": "false",
+                    "numCheckins": "2",
+                    "director": "peter farrelly",
+                    "source": "http://getglue.com/home",
+                    "verb": "watching",
+                    "key": "heyitsjared/2012-04-03T01:01:41Z"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "ntD2IAn9QdeUty8hP8sJWQ",
+                "_score": 1,
+                "_source": {
+                    "image": "http://adaptiveblue.s3.amazonaws.com/tv_shows/bones/bones-fox.jpg",
+                    "app": "GetGlue",
+                    "action": "Checkin",
+                    "timestamp": "2012-04-03T01:01:45Z",
+                    "lastModified": "2012-04-03T01:01:48Z",
+                    "title": "Bones",
+                    "lastCheckin": "true",
+                    "displayName": "Margaret Massey",
+                    "modelName": "tv_shows",
+                    "verb": "watching",
+                    "comment": "",
+                    "numReplies": "0",
+                    "userId": "margaret_massey",
+                    "private": "false",
+                    "numCheckins": "1",
+                    "source": "http://getglue.com/tv_shows/bones?s=ecr&ref=margaret_massey",
+                    "objectKey": "tv_shows/bones",
+                    "key": "margaret_massey/2012-04-03T01:01:45Z",
+                    "others": "8681"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "ORoGA_jZR2m6HXDE1zDk3Q",
+                "_score": 1,
+                "_source": {
+                    "image": "http://adaptiveblue.s3.amazonaws.com/tv_shows/voice/the_voice_getGlue_420x540.jpg",
+                    "type": "fan",
+                    "lastCheckinTimestamp": "2012-03-27T00:12:45Z",
+                    "app": "GetGlue",
+                    "friendCheckedIn": "2012-04-03T01:13:36Z",
+                    "numReplies": "0",
+                    "timestamp": "2012-04-03T01:01:48Z",
+                    "lastModified": "2012-04-03T01:13:44Z",
+                    "title": "The Voice",
+                    "objectKey": "tv_shows/voice",
+                    "displayName": "Amanda",
+                    "modelName": "tv_shows",
+                    "comment": "",
+                    "userId": "theselovenotes",
+                    "private": "false",
+                    "numCheckins": "11",
+                    "source": "http://getglue.com/home",
+                    "verb": "watching",
+                    "key": "theselovenotes/2012-04-03T01:01:48Z",
+                    "others": "8061",
+                    "action": "Checkin"
+                }
+            }
+        ]
+    },
+    "facets": {
+        "title": {
+            "_type": "terms",
+            "missing": 856,
+            "total": 38040119,
+            "other": 34264760,
+            "terms": [
+                {
+                    "term": "big",
+                    "count": 308486
+                },
+                {
+                    "term": "show",
+                    "count": 307796
+                },
+                {
+                    "term": "american",
+                    "count": 257620
+                },
+                {
+                    "term": "bang",
+                    "count": 226009
+                },
+                {
+                    "term": "theory",
+                    "count": 222012
+                },
+                {
+                    "term": "man",
+                    "count": 197926
+                },
+                {
+                    "term": "men",
+                    "count": 191821
+                },
+                {
+                    "term": "2",
+                    "count": 177058
+                },
+                {
+                    "term": "who",
+                    "count": 174620
+                },
+                {
+                    "term": "family",
+                    "count": 169645
+                },
+                {
+                    "term": "dead",
+                    "count": 169421
+                },
+                {
+                    "term": "night",
+                    "count": 167793
+                },
+                {
+                    "term": "part",
+                    "count": 166494
+                },
+                {
+                    "term": "i",
+                    "count": 162720
+                },
+                {
+                    "term": "girl",
+                    "count": 160303
+                },
+                {
+                    "term": "nikita",
+                    "count": 147502
+                },
+                {
+                    "term": "doctor",
+                    "count": 146100
+                },
+                {
+                    "term": "game",
+                    "count": 144407
+                },
+                {
+                    "term": "time",
+                    "count": 140757
+                },
+                {
+                    "term": "fringe",
+                    "count": 136869
+                }
+            ]
+        }
+    }
+}
