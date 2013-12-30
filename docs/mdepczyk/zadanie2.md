@@ -2,8 +2,8 @@
 
 ----
 
-MongoDB shell version: 2.4.7,
-Elasticsearch version: 0.90.8
+<p>MongoDB shell version: 2.4.7</p>
+<p>Elasticsearch version: 0.90.8</p>
 
 # Zadanie 2
 
@@ -57,7 +57,7 @@ db.broadband.aggregate({$group:{_id:"$Postcode Data Status",total:{$sum: 1}}},{$
 }
 ```
 ###Wykres:
-![broadband](../images/mdepczyk/ag1.png)
+![broadband](../../images/mdepczyk/ag1.png)
 
 ##Agregacja 2
 ```
@@ -117,7 +117,7 @@ db.broadband.aggregate(
 }
 ```
 ###Wykres:
-![broadband](../images/mdepczyk/ag2.png)
+![broadband](../../images/mdepczyk/ag2.png)
 ----
 ##Elasticsearch
 
@@ -187,7 +187,7 @@ curl -X POST "http://localhost:9200/data/_search?pretty=true" -d '{
 }
 ```
 ###Wykres:
-![broadband](../images/mdepczyk/ag3.png)
+![broadband](../../images/mdepczyk/ag3.png)
 
 ##Agregacja 2
 ```
@@ -250,4 +250,4 @@ curl -X POST "http://localhost:9200/data/_search?pretty=true" -d '{
 }
 ```
 ###Wykres:
-![broadband](../images/mdepczyk/ag4.png)
+![broadband](../../images/mdepczyk/ag4.png)
