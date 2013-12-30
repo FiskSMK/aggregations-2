@@ -107,7 +107,7 @@ sys	0m8.909s
 ```
 
 ```js
-`the` występuje 1061396 razy co stanowi 6.241594118789616% wszystkich słów
+`the` występuje 1061396 razy co stanowi 6% wszystkich słów
 ```
 ###Czas
 
@@ -232,7 +232,7 @@ sys	0m0.012s
 ```
 
 ```js
-te słowa występują w sumie 7998978 razy co stanowi 47.03840417820259% wszystkich słów
+te słowa występują w sumie 7998978 razy co stanowi 47% wszystkich słów
 ```
 ###Czas
 
@@ -296,7 +296,7 @@ sys	    0m0.016s
 ```
 
 ```js
-te słowa występują w sumie 11433354 razy co stanowi 67.23443001899359% wszystkich słów
+te słowa występują w sumie 11433354 razy co stanowi 67% wszystkich słów
 ```
 ###Czas
 
