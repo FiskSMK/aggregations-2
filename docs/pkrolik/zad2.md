@@ -114,4 +114,4 @@ db.imdb.aggregate({$group:{_id: "$director", count:{$sum: 1}}},{$sort:{count: -1
 }
 ```
 Oczywiście pan "null" nie był reżyserem jednakże oznacza to, że tyle wpisów nie miało jakkolwiek podanego reżysera (w prezentacji graficznej jest on pominięty).
-![mms1d](/images/pkrolik/mms1d.png)
+![mms1d](../../images/pkrolik/mms1d.png)

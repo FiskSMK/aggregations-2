@@ -40,8 +40,8 @@ switched to db trainz
 6034195
 ```
 ###Wynik z MMS
-![mms1aa](/images/pkrolik/mms1aa.png)
-![mms1ab](/images/pkrolik/mms1ab.png)
+![mms1aa](../../images/pkrolik/mms1aa.png)
+![mms1ab](../../images/pkrolik/mms1ab.png)
 ###Zadanie 1c
 Wynik czasowy i ilość elementów dla zmiany z stringów na tagi przy pomocy [skryptu](../scripts/pkrolik/mongoscript.js) napisanego w shell'u MongoDB:
 ```sh
@@ -53,8 +53,8 @@ user	3m37.546s
 sys	0m33.099s
 ```
 ###Wynik z MMS
-![mms1ca](/images/pkrolik/mms1ca.png)
-![mms1cb](/images/pkrolik/mms1cb.png)
+![mms1ca](../../images/pkrolik/mms1ca.png)
+![mms1cb](../../images/pkrolik/mms1cb.png)
 ###Zadanie 1d
 Po sprawdzeniu i przygotowaniu pliku zgodnie z podpowiedzią po imporcie otrzymałem następujący wynik czasowy:
 ```sh
@@ -66,7 +66,7 @@ user	0m32.765s
 sys	0m8.688s
 ```
 ###Wynik z MMS
-![mms1d](/images/pkrolik/mms1d.png)
+![mms1d](../../images/pkrolik/mms1d.png)
 ####Ilość wszystkich słów
 ```js
 > db.text.aggregate({$group:{_id: "$word", count:{$sum:1}}},{$group:{_id:"sumaAll",count:{$sum:1}}})
