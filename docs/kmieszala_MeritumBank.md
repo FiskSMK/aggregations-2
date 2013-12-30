@@ -10,14 +10,14 @@ connecting to: test
 {
 	"_id" : ObjectId("52c0a38b938b72a6fc3885bd"),
 	"data_pisma" : "21-11-2013",
-	"imie_ azwisko" : "Nikka Griffi",
+	"imie_nazwisko" : "Nikka Griffi",
 	"azwa_ulicy" : "Krucza",
 	"kod_pocztowy" : "67-740",
 	"miejscowosc" : "Tylewice",
-	"syg atura" : "Z/282256",
+	"sygnatura" : "Z/282256",
 	"data_wplywu_pisma" : "26-01-2012",
-	"zadluze ie" : 300000,
-	"ast_rata" : 30367.34,
+	"zadluzenie" : 300000,
+	"nast_rata" : 30367.34,
 	"ile_rat" : 245,
 	"imie_matki" : "Edie"
 }
@@ -61,11 +61,11 @@ mongoimport --type csv -c Drugi --file DrugiPrzerobiony.csv --headerline
 			"count" : 14500
 		},
 		{
-			"_id" : "Poz ań",
+			"_id" : "Poznań",
 			"count" : 13000
 		},
 		{
-			"_id" : "Gdy ia",
+			"_id" : "Gdynia",
 			"count" : 11800
 		},
 		{
@@ -84,6 +84,8 @@ mongoimport --type csv -c Drugi --file DrugiPrzerobiony.csv --headerline
 	"ok" : 1
 }
 ```
+![](../images/kmieszala/drugie2.JPG)
+
 Ilość osób którym zostało od 1 do 10 rat:
 ```sh
 > db.Drugi.aggregate( [ { $match : { 'ile_rat' : { $gt :1 , $lte : 10 } } }, { $group: { _id: null, count: { $sum: 1 } } } ] );
@@ -109,6 +111,7 @@ Ilość osób którym zostało od 41 do 50 rat:
 > db.Drugi.aggregate( [ { $match : { 'ile_rat' : { $gt :41 , $lte : 50 } } }, { $group: { _id: null, count: { $sum: 1 } } } ] );
 { "result" : [ { "_id" : null, "count" : 100 } ], "ok" : 1 }
 ```
+![](../images/kmieszala/drugie3.JPG)
 
 
 
