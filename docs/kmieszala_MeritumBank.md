@@ -37,7 +37,7 @@ mongoimport --type csv -c Drugi --file DrugiPrzerobiony.csv --headerline
 ### Agragacje MongoDB
 10 najczęściej występujących miejscowości:
 ```sh
-> db.Drugi.aggregate(         { $group: { _id: "$miejscowosc", count: { $sum: 1 } } } ,         { $sort: { count: -1 } },         { $limit: 10 })
+> db.Drugi.aggregate( { $group: { _id: "$miejscowosc", count: { $sum: 1 } } } , { $sort: { count: -1 } }, { $limit: 10 })
 {
 	"result" : [
 		{
@@ -84,7 +84,31 @@ mongoimport --type csv -c Drugi --file DrugiPrzerobiony.csv --headerline
 	"ok" : 1
 }
 ```
-
+Ilość osób którym zostało od 1 do 10 rat:
+```sh
+> db.Drugi.aggregate( [ { $match : { 'ile_rat' : { $gt :1 , $lte : 10 } } }, { $group: { _id: null, count: { $sum: 1 } } } ] );
+{ "result" : [ { "_id" : null, "count" : 400 } ], "ok" : 1 }
+```
+Ilość osób którym zostało od 11 do 20 rat:
+```sh
+> db.Drugi.aggregate( [ { $match : { 'ile_rat' : { $gt :11 , $lte : 20 } } }, { $group: { _id: null, count: { $sum: 1 } } } ] );
+{ "result" : [ { "_id" : null, "count" : 400 } ], "ok" : 1 }
+```
+Ilość osób którym zostało od 21 do 30 rat:
+```sh
+> db.Drugi.aggregate( [ { $match : { 'ile_rat' : { $gt :21 , $lte : 30 } } }, { $group: { _id: null, count: { $sum: 1 } } } ] );
+{ "result" : [ { "_id" : null, "count" : 300 } ], "ok" : 1 }
+```
+Ilość osób którym zostało od 31 do 40 rat:
+```sh
+> db.Drugi.aggregate( [ { $match : { 'ile_rat' : { $gt :31 , $lte : 40 } } }, { $group: { _id: null, count: { $sum: 1 } } } ] );
+{ "result" : [ { "_id" : null, "count" : 200 } ], "ok" : 1 }
+```
+Ilość osób którym zostało od 41 do 50 rat:
+```sh
+> db.Drugi.aggregate( [ { $match : { 'ile_rat' : { $gt :41 , $lte : 50 } } }, { $group: { _id: null, count: { $sum: 1 } } } ] );
+{ "result" : [ { "_id" : null, "count" : 100 } ], "ok" : 1 }
+```
 
 
 
