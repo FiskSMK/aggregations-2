@@ -60,7 +60,7 @@ Przykładowy rekord:
 }
 ```
 
-```json
+```js
 > db.streetLevelCrime.aggregate(
 > 	{ $group: {
 > 		_id: "$reported_by",
@@ -121,7 +121,7 @@ Przykładowy rekord:
 
 ![1](../../images/jbelcik/wykres1.jpg)
 
-```json
+```js
 > db.streetLevelCrime.aggregate(
 >	{ $group: {
 >		_id: "$lsoa_name",
