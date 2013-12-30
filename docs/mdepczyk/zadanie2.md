@@ -2,8 +2,7 @@
 
 ----
 
-MongoDB shell version: 2.4.7
-
+MongoDB shell version: 2.4.7,
 Elasticsearch version: 0.90.8
 
 # Zadanie 2
