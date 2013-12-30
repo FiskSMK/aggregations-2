@@ -3,10 +3,11 @@
 ----
 
 MongoDB shell version: 2.4.7
+Elasticsearch version: 0.90.8
 
 # Zadanie 2
 
-Baza: [Broadband coverage](http://data.gov.uk/dataset/broadband-coverage)
+Baza: [Broadband coverage](http://data.gov.uk/dataset/broadband-coverage).
 Dane przedstawiają dokładne informacje na temat usług szerokopasmowych w zakresie prędkości i dostępności.
 
 ##Mongodb
@@ -15,7 +16,6 @@ Dane przedstawiają dokładne informacje na temat usług szerokopasmowych w zakr
 
 ```
 time mongoimport --type csv -c broadband --file Postcode.csv --headerline
-```
 
 Sun Dec 22 21:48:17.078 check 9 1899574
 Sun Dec 22 21:48:17.178 imported 1899573 objects
@@ -23,7 +23,7 @@ Sun Dec 22 21:48:17.178 imported 1899573 objects
 real	1m6.203s
 user	0m14.413s
 sys	0m1.228s
-
+```
 ##Agregacja 1
 ```
 db.broadband.aggregate({$group:{_id:"$Postcode Data Status",total:{$sum: 1}}},{$sort:{total:-1}},{$limit:10})
