@@ -3,11 +3,35 @@
 ```bash
 MongoDB version: 2.5.2
 ```
+## Menu
+- [Train](#Train)
+    - [Przygotowanie pliku](#przygotowanie-pliku)
+    - [Import do bazy](#import)
+    - [Zliczenie rekordów](#zliczenie)
+    - [Zamiana tagów na tablice](#tagi-na-tablice)
+- [Text8](#text8)
+    - [Przygotowanie pliku](#przygotowanie-pliku)
+    - [Import do MongoDB](#import-do-bazy)
+    - [Zliczanie słów](#zliczanie-słów)
+- [Geo Json](#geo-json)
+    - [Import do MongoDB](#import-do-db)
+    - [Dodanie index-u](#dodanie-indexu)
+    - [Koordynaty kilku miast w Polsce](#koordynaty-kilku-miast-w-polsce)
+    - [Zapytania](#zapytania)
+        - [Stacje w odległości 10 km od Warszawy](#stacje-w-odległości-100-km-od-warszawy)
+        - [Stacje w odległości 10 km od Gdańska](#stacje-w-odległości-100-km-od-gdanska)
+        - [Stacje w odległości 10 km od Poznania](#stacje-w-odległości-100-km-od-poznania)
+        - [Stacje na Pomorzu](#stacje-na-pomorzu)
 
-## Zadanie 1
+
+
+
+
+# Zadanie 1
 
 * 1a 
-#### przygotowanie pliku
+# Train
+## przygotowanie pliku
   użyłem skryptu wykładowcy [z tąd](https://github.com/nosql/aggregations-2/blob/master/scripts/wbzyl/2unix.sh)
 
   ```bash
@@ -17,7 +41,7 @@ MongoDB version: 2.5.2
   user  10m32.572s
   sys   8m12.063s
   ```
-#### import
+## import
 
   ```bash
   $ time mongoimport --type csv -c Train --file ./Train2.csv --headerline
@@ -31,7 +55,7 @@ MongoDB version: 2.5.2
   ```  
 
 * 1b
-
+## zliczenie
   ```js
   db.Train.count()
   6034195
@@ -39,7 +63,7 @@ MongoDB version: 2.5.2
   Wynik: 6034195 czyli się zgadza
 
 * 1c
-  
+##  tagi na tablice
   Do zamiany tagów na tablice użyłem skryptu który napisałem w ruby [tutaj](../../scripts/mosinski/stringToarray.rb)
   ```bash
   $ ruby stringToarray.rb nosql Train
@@ -49,7 +73,8 @@ MongoDB version: 2.5.2
   ```
 
 * 1d 
-#### przygotowanie
+# Text8
+## przygotowanie pliku
   przygotowałem plik do jsona za pomocą tego skryptu [z tąd](../../scripts/mosinski/stringTojson.sh)
 
   ```bash
@@ -59,7 +84,7 @@ MongoDB version: 2.5.2
   user	0m34.022s
   sys	2m3.248s
   ```
-#### import
+## import do bazy
   ```bash
   $ time mongoimport --db Text --collection text8 --type json --file text8.json
   
@@ -73,7 +98,10 @@ MongoDB version: 2.5.2
   Zawsze jeden z dwóch rdzeni przy imporcie działał na 100% ilość wątków wachała się pomiędzy 2-6 wątków.
   ![htop](../../images/mosinski/screen2.png)
   ![htop](../../images/mosinski/screen3.png)
-#### zliczanie słów
+
+  <b>Screen z mms-a</b>
+  ![htop](../../images/mosinski/screen.png)
+## zliczanie słów
   Ogółem:
   ```js
   db.text8.count()
@@ -144,14 +172,16 @@ MongoDB version: 2.5.2
 
   ```
 * 1e
-#### import
-  Do obróbki użyłem bazy listy [Stacji Orlen](../../data/mosinski/Stacje_paliw_Orlen.csv) tutaj zaimportowałem poleceniem:
+# Geo Json
+  Do obróbki użyłem bazy listy <b>Stacji Paliw Orlen</b> [Mapka](../../data/mosinski/Stacje_paliw_Orlen.geojson)
+## import do db
+   Zaimportowałem baze w formacie [JSON](../../data/mosinski/Stacje_paliw_Orlen.json) poleceniem:
   ```bash
-  $ time mongoimport -d GeoOrlen -c stacje --type csv --file Stacje_paliw_Orlen.csv --headerline
+  $ time mongoimport -d GeoOrlen -c stacje  < Stacje_paliw_Orlen.json
   
   connected to: 127.0.0.1
-  Sun Nov  3 23:25:53.503 check 9 1246
-  Sun Nov  3 23:25:53.558 imported 1245 objects
+  Mon Nov  4 22:56:14.360 check 9 1245
+  Mon Nov  4 22:56:14.360 imported 1245 objects
 
   real	  0m0.284s
   user	  0m0.024s
@@ -159,14 +189,69 @@ MongoDB version: 2.5.2
   ```
   przykładowy rekord:
   ```js
-  db.stacje.findOne()
+  db.geoJson.findOne()
   {
-	"_id" : ObjectId("5276cc3097c07e417dc6a3b6"),
-	"x" : 20.021194,
-	"y" : 49.453218,
-	"nazwa" : "Stacje paliw Orlen",
-	"miasto" : "Nowy Targ"
+	"_id" : ObjectId("527817fe644839d19fd136b5"),
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			20.021194,
+			49.453218
+		]
+	},
+	"name" : "Stacje paliw Orlen",
+	"city" : "Nowy Targ"
   }
   ```
-  reszta wkrótce..
+## Dodanie indexu
+  ```js
+  db.geoJson.ensureIndex({"loc" : "2dsphere"});
+  ```
+## Koordynaty kilku miast w Polsce:
+  <b>Warszawa 52.259, 21.020</b>
   
+  <b>Gdańsk 54.360, 18.639</b>
+  
+  <b>Poznań 52.399, 16.900</b>
+## Zapytania
+#### Stacje w odległości do 10km od Warszawy:
+  ```js
+  db.geoJson.find( { loc : { $near :
+                           { $geometry :
+                               { type : "Point" ,
+                                 coordinates: [ 21.020, 52.259 ] } },
+                             $maxDistance : 10000
+                } } )
+  ```
+#### wyniki: [JSON](../../data/mosinski/near_Warszawa.json), [Mapka](../../data/mosinski/near_Warszawa.geojson)
+#### Stacje w odległości do 10km od Gdanska:
+  ```js
+  db.geoJson.find( { loc : { $near :
+                           { $geometry :
+                               { type : "Point" ,
+                                 coordinates: [ 18.639, 54.360 ] } },
+                             $maxDistance : 10000
+                } } )
+  ```
+#### wyniki: [JSON](../../data/mosinski/near_Gdansk.json), [Mapka](../../data/mosinski/near_Gdansk.geojson)
+#### Stacje w odległości do 10km od Poznania:
+  ```js
+  db.geoJson.find( { loc : { $near :
+                           { $geometry :
+                               { type : "Point" ,
+                                 coordinates: [ 16.900, 52.399 ] } },
+                             $maxDistance : 10000
+                } } )
+  ```
+#### wyniki: [JSON](../../data/mosinski/near_Poznan.json), [Mapka](../../data/mosinski/near_Poznan.geojson)
+#### Stacje na Pomorzu
+  ```js
+  db.geoJson.find( { loc : { $geoWithin :
+                           { $geometry :
+                               { type : "Polygon" ,
+                                 coordinates: [[[16.804190,54.821840], [19.247510,54.821840], [19.247510,53.644500], [16.804190,53.644500], [16.804190,54.821840]]] } }
+                } } )
+  ```
+#### wyniki: [JSON](../../data/mosinski/in_pomorskie.json), [Mapka](../../data/mosinski/in_pomorskie.geojson)
+
+# Zadanie 2

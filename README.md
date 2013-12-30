@@ -1,4 +1,4 @@
-﻿# Agregacje 2
+# Agregacje 2
 
 ![Data Wranglers](/images/data-wrangler.jpg)
 
@@ -23,67 +23,70 @@ mongo --username student --password sesja2013 153.19.1.202/test
 ## Nasze agregacje
 
 1. Bzyl, Włodzimierz. [Imieniny](/docs/wbzyl.md).
-1. Bełcik, Jakub.
-1. Białkowski, Dominik.
-1. Brzeziński, Damian.
-1. Cała, Mariusz.
-1. [Dermont, Jacek](/docs/jdermont.md).
+1. [Bełcik, Jakub](/docs/jbelcik/README.md).
+1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md).
+1. [Dermont, Jacek](/docs/jdermont.md). [Albumy muzyczne](/docs/jdermont_albumy_muzyczne.md).
 1. [Detlaf, Krzysztof](/docs/kdetlaf.md).
-1. [Dępczyk, Michał](/docs/mdepczyk.md).
-1. Dobrzycki, Wojciech.
-1. Dolata, Jędrzej.
+1. [Dępczyk, Michał](/docs/mdepczyk.md). [Broadband coverage](/docs/mdepczyk/zadanie2.md).
 1. [Domurat, Szymon](/docs/sdomurat.md).
 1. [Duwe, Oskar](/docs/oduwe.md).
-1. Elszkowski, Adrian.
-1. Gałka, Jacek.
-1. Głowacki, Michał.
-1. Gniado, Bartosz.
-1. Groszek, Rafał.
-1. Januszewski, Tomasz.
-1. Jaźwiński, Robert.
-1. Karczewski, Kamil.
+1. [Gałka, Jacek](/docs/jgalka/README.md).
+1. [Gniado, Bartosz](/docs/bgniado/README.md).
+1. [Groszek, Rafał](/docs/rgroszek/README.md).
+1. [Karczewski, Kamil](/docs/kkarczewski.md).
 1. [Karwowski, Kamil](/docs/kkarwowski.md).
-1. Kłeczek, Piotr.
+1. [Kłeczek, Piotr](/docs/pkleczek/README.md).
 1. [Kotłowski, Piotr](docs/pkotlowski/README.md).
-1. Koźmiński, Marcin.
+1. [Koźmiński, Marcin](docs/mkozminski/README.md).
 1. [Królik, Przemysław](/docs/pkrolik.md).
 1. [Kubacki, Konrad](/docs/kkubacki/README.md).
 1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md).
 1. [Lewandowska, Marta](/docs/mlewandowska.md).
 1. [Łuczun, Rafał](/docs/rluczun/README.md).
-1. Malinowski, Piotr.
 1. [Małecki, Maciej](/docs/mmalecki/README.md).
-1. Matulewski, Damian.
-1. Melzer, Grzegorz.
-1. Mieszała, Konrad.
-1. [Motel, Mateusz](/docs/mmotel/zadanie1.md).
+1. [Matulewski, Damian](/docs/dmatulewski.md).
+1. [Melzer, Grzegorz](/docs/gmelzer.md).
+1. [Mieszała, Konrad](/docs/kmieszala.md).
+1. [Motel, Mateusz](/docs/mmotel/zadanie1.md). [The Internet Movie Database](/docs/mmotel/zadanie2.md).
 1. [Motławski, Mateusz](/docs/mmotlawski/README.md).
-1. Napiórkowski, Sebastain.
-1. Osękowski, Dominik.
+1. [Napiórkowski, Sebastian](/docs/sebnapi/README.md)
 1. [Osiński, Miłosz](/docs/mosinski/README.md).
-1. Ostrowski, Michał.
 1. [Paczyński, Łukasz](/docs/lpaczynski/README.md).
-1. Piasecka, Aleksandra.
-1. Pietraszuk, Bartłomiej.
+1. [Piasecka, Aleksandra](/docs/apiasecka.md).
 1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
 1. [Plichta, Oskar](/docs/oplichta.md).[The Internet Movie Database](/docs/oplichta-imdb.md).
 1. [Puchalski, Paweł](/docs/ppuchalski/README.md).
-1. Rogaszewski, Piotr.
-1. Rybarczyk, Karolina.
-1. Sawicki, Paweł.
+1. [Rybarczyk, Karolina](/docs/apiasecka.md).
+1. [Sawicki, Paweł](/docs/psawicki.md).
 1. [Siora, Kacper](/docs/ksiora/README.md).
 1. [Skiba, Marek](/docs/mskiba/README.md).
 1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md).
-1. Smykowski, Adrian.
-1. Sott, Tomasz.
-1. Stefanowicz, Michał.
-1. [Szygenda, Mateusz](/docs/mszygenda.md).
-1. Tomczak, Robert.
+1. [Smykowski, Adrian](/docs/asmykowski/README.md).
+1. [Sott, Tomasz](/docs/tsott/README.md).
+1. [Stefanowicz, Michał](/docs/mstefanowicz.md).
+1. [Szygenda, Mateusz](/docs/mszygenda.md). [Wypadki drogowe](/docs/mszygenda-accidents.md).
+1. [Tomczak, Robert](/docs/rtomczak/README.md).
 1. [Wąsowicz, Michał](/docs/mwasowicz.md).
 1. [Winsławski, Bartłomiej](/docs/bwinslawski.md).
-1. Wiśniewski, Konrad.(/docs/kwisniewski/kwisniewski.md).
+1. [Wiśniewski, Konrad](/docs/kwisniewski/kwisniewski.md).
+1. [Zdunek, Kamil](/docs/kzdunek/README.md).
+
+----
+
+1. Białkowski, Dominik.
+1. Cała, Mariusz.
+1. Dobrzycki, Wojciech.
+1. Dolata, Jędrzej.
+1. Elszkowski, Adrian.
+1. Głowacki, Michał.
+1. Januszewski, Tomasz.
+1. Jaźwiński, Robert.
+1. Malinowski, Piotr.
+1. Osękowski, Dominik.
+1. Ostrowski, Michał.
+1. Pietraszuk, Bartłomiej.
+1. Rogaszewski, Piotr.
 1. Wiśniewski, Piotr.
-1. Zdunek, Kamil.
 1. Żarkowski, Mateusz.
 
 

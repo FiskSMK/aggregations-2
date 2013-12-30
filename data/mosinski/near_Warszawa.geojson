@@ -1,0 +1,95 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.01927,  52.24746 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.038173,  52.262398 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.01322,  52.27747 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.05509,  52.26194 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.020263,  52.235722 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.023001,  52.283626 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.98001,  52.25149 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.03625,  52.23461 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.066118,  52.250524 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.98279,  52.23852 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.9851,  52.23399 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.96717,  52.24431 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.98931,  52.22723 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.95964,  52.25926 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.98824,  52.22185 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.0596,  52.22387 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.99887,  52.21648 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.006214,  52.215256 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.020242,  52.214279 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.081461,  52.286287 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.0874,  52.23655 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.04642,  52.21297 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.09613,  52.24419 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.07918,  52.29273 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.9584,  52.22522 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.957438,  52.224241 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.09512,  52.23457 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.94883,  52.29073 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.93275,  52.27067 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.119233,  52.268527 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.932508,  52.305136 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.92081,  52.22091 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.00247,  52.18726 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.05015,  52.18801 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.959456,  52.191261 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.89721,  52.239 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.13771,  52.22927 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.97101,  52.18624 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.949312,  52.192603 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  20.99791,  52.18062 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.116959,  52.316501 ] }, "properties" : { "Stacja paliw Orlen" : "Marki" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.0455,  52.17677 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.15727,  52.25763 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa-Rembertów" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.07084,  52.18079 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  21.14872,  52.225856 ] }, "properties" : { "Stacja paliw Orlen" : "Warszawa" } }
+]
+}

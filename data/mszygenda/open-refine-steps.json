@@ -1,0 +1,420 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Local_Authority_(District)",
+    "columnName": "Local_Authority_(District)"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Local_Authority_(Highway)",
+    "columnName": "Local_Authority_(Highway)"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column 1st_Road_Class",
+    "columnName": "1st_Road_Class"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column 1st_Road_Number",
+    "columnName": "1st_Road_Number"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Junction_Detail",
+    "columnName": "Junction_Detail"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Junction_Control",
+    "columnName": "Junction_Control"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column 2nd_Road_Class",
+    "columnName": "2nd_Road_Class"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column 2nd_Road_Number",
+    "columnName": "2nd_Road_Number"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Weather_Conditions using expression grel:if(value == \"8\", \"Unknown\",\nif(value == \"-1\", \"Unknown\",\nif(value == \"7\", \"Fog\",\nif(value == \"6\", \"Snow,Wind\",\nif(value == \"5\", \"Rain,Wind\",\nif(value == \"4\", \"Fine,Wind\",\nif(value == \"3\", \"Snow\",\nif(value == \"2\", \"Rain\",\nif(value == \"1\", \"Fine\", \"Unknown\"\n)))))))))",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Weather_Conditions",
+    "expression": "grel:if(value == \"8\", \"Unknown\",\nif(value == \"-1\", \"Unknown\",\nif(value == \"7\", \"Fog\",\nif(value == \"6\", \"Snow,Wind\",\nif(value == \"5\", \"Rain,Wind\",\nif(value == \"4\", \"Fine,Wind\",\nif(value == \"3\", \"Snow\",\nif(value == \"2\", \"Rain\",\nif(value == \"1\", \"Fine\", \"Unknown\"\n)))))))))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Weather_Conditions by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Weather_Conditions",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 2
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Weather_Conditions 2 to Wind",
+    "oldColumnName": "Weather_Conditions 2",
+    "newColumnName": "Wind"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Weather_Conditions 1 to Weather",
+    "oldColumnName": "Weather_Conditions 1",
+    "newColumnName": "Weather"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Wind using expression grel:if(value == \"Wind\", 1, 0)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Wind",
+    "expression": "grel:if(value == \"Wind\", 1, 0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Location_Easting_OSGR",
+    "columnName": "Location_Easting_OSGR"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Location_Northing_OSGR",
+    "columnName": "Location_Northing_OSGR"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Longitude",
+    "columnName": "Longitude"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Latitude",
+    "columnName": "Latitude"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Light_Conditions using expression grel:if(value == \"1\", \"Day\",\nif(value == \"4\", \"Night,1\",\nif(value == \"5\", \"Night\",\nif(value == \"6\", \"Night\",\nif(value == \"7\", \"Night\",\n\"Unknown\")))))",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Light_Conditions",
+    "expression": "grel:if(value == \"1\", \"Day\",\nif(value == \"4\", \"Night,1\",\nif(value == \"5\", \"Night\",\nif(value == \"6\", \"Night\",\nif(value == \"7\", \"Night\",\n\"Unknown\")))))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Light_Conditions by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Light_Conditions",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 2
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Light_Conditions 2 to LightsPresent",
+    "oldColumnName": "Light_Conditions 2",
+    "newColumnName": "LightsPresent"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Light_Conditions 1 to TimeOfDay",
+    "oldColumnName": "Light_Conditions 1",
+    "newColumnName": "TimeOfDay"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LightsPresent using expression grel:if(value == 1, 1, 0)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightsPresent",
+    "expression": "grel:if(value == 1, 1, 0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Day_of_Week to DayOfWeek",
+    "oldColumnName": "Day_of_Week",
+    "newColumnName": "DayOfWeek"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Police_Force to PoliceForce",
+    "oldColumnName": "Police_Force",
+    "newColumnName": "PoliceForce"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Accident_Severity to AccidentSeverity",
+    "oldColumnName": "Accident_Severity",
+    "newColumnName": "AccidentSeverity"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Number_of_Vehicles to NumberOfVehicles",
+    "oldColumnName": "Number_of_Vehicles",
+    "newColumnName": "NumberOfVehicles"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Number_of_Casualties to NumberOfCasualties",
+    "oldColumnName": "Number_of_Casualties",
+    "newColumnName": "NumberOfCasualties"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Road_Type to RoadType",
+    "oldColumnName": "Road_Type",
+    "newColumnName": "RoadType"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Pedestrian_Crossing-Human_Control",
+    "columnName": "Pedestrian_Crossing-Human_Control"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Speed_limit to SpeedLimit",
+    "oldColumnName": "Speed_limit",
+    "newColumnName": "SpeedLimit"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Pedestrian_Crossing-Physical_Facilities",
+    "columnName": "Pedestrian_Crossing-Physical_Facilities"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column SpeedLimit using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SpeedLimit",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column RoadType using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RoadType",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Road_Surface_Conditions using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Road_Surface_Conditions",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Urban_or_Rural_Area using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Urban_or_Rural_Area",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Did_Police_Officer_Attend_Scene_of_Accident using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Did_Police_Officer_Attend_Scene_of_Accident",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column NumberOfVehicles using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NumberOfVehicles",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column PoliceForce using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PoliceForce",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column DayOfWeek using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DayOfWeek",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column NumberOfCasualties using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NumberOfCasualties",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Carriageway_Hazards using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Carriageway_Hazards",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Special_Conditions_at_Site using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Special_Conditions_at_Site",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column AccidentSeverity using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "AccidentSeverity",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Date using expression grel:value + \" \" + row.cells[\"Time\"].value",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Date",
+    "expression": "grel:value + \" \" + row.cells[\"Time\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Date using expression value.toDate()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Date",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Time",
+    "columnName": "Time"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column DayOfWeek using expression grel:if(value == 1, 7, value - 1)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DayOfWeek",
+    "expression": "grel:if(value == 1, 7, value - 1)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]

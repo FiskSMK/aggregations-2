@@ -1,0 +1,2207 @@
+MongoDB shell version: 2.4.7
+connecting to: geo
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c352ca"),
+	"id" : 845742,
+	"name" : "Whitney Mesa",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 584,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.0702736,
+			36.0758075
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a36d9d0a3eb646d4a543"),
+	"id" : 2062945,
+	"name" : "Exploration Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 870,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.258727,
+			36.017188
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c37b72"),
+	"id" : 856248,
+	"name" : "Frenchman Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1205,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.9980535,
+			36.1788619
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c35112"),
+	"id" : 845295,
+	"name" : "Black Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1470,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.0427683,
+			35.9308116
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c342ac"),
+	"id" : 841586,
+	"name" : "Lava Butte",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 863,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.9372165,
+			36.1485859
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c33857"),
+	"id" : 838922,
+	"name" : "Blue Diamond Hill",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1503,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.3952827,
+			36.1024693
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34c70"),
+	"id" : 844104,
+	"name" : "Sunrise Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1010,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.9772209,
+			36.2246945
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34360"),
+	"id" : 841766,
+	"name" : "Lone Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 971,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.3163961,
+			36.2382996
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c376a7"),
+	"id" : 855018,
+	"name" : "Black Hill",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1245,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.9444329,
+			35.956368
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c35172"),
+	"id" : 845394,
+	"name" : "Calico Hills",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1505,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.442786,
+			36.1660785
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c3380b"),
+	"id" : 838845,
+	"name" : "Black Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1099,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.8522087,
+			36.0066459
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34dd2"),
+	"id" : 844462,
+	"name" : "Turtlehead Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1856,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.4463977,
+			36.1802449
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34fdc"),
+	"id" : 844985,
+	"name" : "Mount Wilson",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2121,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.4844519,
+			36.09358
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c35247"),
+	"id" : 845609,
+	"name" : "Rainbow Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2075,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.4902857,
+			36.1080241
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c338de"),
+	"id" : 839059,
+	"name" : "Bridge Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1968,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.4905643,
+			36.1355235
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f69d0a3eb646c38aff"),
+	"id" : 860283,
+	"name" : "La Madre Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2467,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.4597323,
+			36.212744
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34f1f"),
+	"id" : 844796,
+	"name" : "White Rock Hills",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1967,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.4955653,
+			36.1685782
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c35392"),
+	"id" : 845942,
+	"name" : "Potosi Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2562,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5011159,
+			35.9658054
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c37b73"),
+	"id" : 856250,
+	"name" : "Gass Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2109,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.1802852,
+			36.4005222
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c33809"),
+	"id" : 838843,
+	"name" : "Black Mesa",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 671,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7655427,
+			36.1563665
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c339f8"),
+	"id" : 839343,
+	"name" : "Castle Rock",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1316,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.2511197,
+			36.3974657
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c36a98"),
+	"id" : 851926,
+	"name" : "Fortification Hill (historical)",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 415,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7449838,
+			36.0566465
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a3589d0a3eb646d04e51"),
+	"id" : 1738074,
+	"name" : "The Knoll",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 680,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7760933,
+			35.9369262
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34815"),
+	"id" : 842985,
+	"name" : "Promontory Point",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 678,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7383162,
+			36.0297026
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34a9d"),
+	"id" : 843636,
+	"name" : "Sheep Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1264,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.2961034,
+			35.7608133
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b7b712"),
+	"id" : 11920,
+	"name" : "Sugarloaf Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 554,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7374823,
+			36.0077586
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a3589d0a3eb646d04e50"),
+	"id" : 1738073,
+	"name" : "Camp Knob",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 763,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7663704,
+			35.9180379
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a3589d0a3eb646d04e52"),
+	"id" : 1738075,
+	"name" : "Pilot Cone",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 928,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.8058149,
+			35.857761
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b7ac22"),
+	"id" : 9113,
+	"name" : "Paint Pots",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 547,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.702482,
+			36.0455362
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c3690b"),
+	"id" : 851527,
+	"name" : "Lookout Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1217,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.4483326,
+			35.8008108
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34ab3"),
+	"id" : 843658,
+	"name" : "Shenandoah Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1782,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5094471,
+			35.8502532
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c35683"),
+	"id" : 846720,
+	"name" : "Rattler Hill",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1583,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5005577,
+			35.8377537
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b79b36"),
+	"id" : 4758,
+	"name" : "Fortification Hill",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1114,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.6813702,
+			36.0441476
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34ca1"),
+	"id" : 844154,
+	"name" : "Table Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1565,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.486112,
+			35.8058103
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c37cf0"),
+	"id" : 856636,
+	"name" : "Corn Creek Dunes",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 901,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.3566779,
+			36.4402427
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c368ff"),
+	"id" : 851515,
+	"name" : "Ragged Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1533,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5841723,
+			35.8730293
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c37188"),
+	"id" : 853704,
+	"name" : "Cairn East of Shenandoah Mine",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1200,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5458366,
+			35.819698
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c384f6"),
+	"id" : 858718,
+	"name" : "Angel Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2682,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5744597,
+			36.3191304
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c33fe4"),
+	"id" : 840869,
+	"name" : "Hamblin Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 983,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.6474831,
+			36.1785899
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34842"),
+	"id" : 843031,
+	"name" : "Quartzite Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2146,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.0872306,
+			36.5016332
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34596"),
+	"id" : 842339,
+	"name" : "Muddy Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1590,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.6938771,
+			36.2983091
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c33759"),
+	"id" : 838664,
+	"name" : "Bearing Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 660,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.6222039,
+			36.1616462
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c3430f"),
+	"id" : 841685,
+	"name" : "Little Devil Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1638,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.4908331,
+			35.737201
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b7a89e"),
+	"id" : 8207,
+	"name" : "Monkey Rock",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 259,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.6983111,
+			35.8391514
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c3586b"),
+	"id" : 847252,
+	"name" : "Bonanza Hill",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1140,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5444468,
+			35.7749771
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b7beb9"),
+	"id" : 13890,
+	"name" : "Mount Wilson",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1663,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.6119222,
+			35.9966493
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c3511a"),
+	"id" : 845303,
+	"name" : "Devil Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1785,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.4530531,
+			35.697202
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c360c8"),
+	"id" : 849406,
+	"name" : "Lead Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1401,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.4986109,
+			35.7183123
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c3563a"),
+	"id" : 846647,
+	"name" : "Mount Duncan",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 831,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.8049786,
+			35.7055422
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c338ab"),
+	"id" : 839007,
+	"name" : "Boulder Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 841,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.5819247,
+			36.172202
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c3564a"),
+	"id" : 846663,
+	"name" : "Bald Knob",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2018,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.1202864,
+			36.555522
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c3444b"),
+	"id" : 842003,
+	"name" : "McCullough Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2125,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.179431,
+			35.6030405
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2b99d0a3eb646b78bac"),
+	"id" : 758,
+	"name" : "Arch Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1001,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.5608121,
+			36.135814
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b7a657"),
+	"id" : 7622,
+	"name" : "Malpais Flattop Mesa",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 836,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.6749761,
+			35.7927636
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34be3"),
+	"id" : 843963,
+	"name" : "Squaw Peaks",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 368,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.706921,
+			35.7608195
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c35353"),
+	"id" : 845879,
+	"name" : "Knob Hill",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1348,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.8508126,
+			35.6624871
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c33fc7"),
+	"id" : 840839,
+	"name" : "Guardian Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 813,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.5602569,
+			36.1594247
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34ddc"),
+	"id" : 844472,
+	"name" : "Twin Buttes",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2193,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.1438979,
+			36.5796884
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c35269"),
+	"id" : 845644,
+	"name" : "Saddle Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 703,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.5452568,
+			36.1819245
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c35155"),
+	"id" : 845365,
+	"name" : "Black Butte",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1012,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.7208437,
+			35.8821939
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b78e76"),
+	"id" : 1477,
+	"name" : "Black Butte",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 738,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.5588636,
+			35.9258178
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c3482e"),
+	"id" : 843011,
+	"name" : "Pyramid Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 886,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.5416456,
+			36.1869245
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34aa4"),
+	"id" : 843643,
+	"name" : "Sheep Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2940,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.2494552,
+			36.5830209
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c347ad"),
+	"id" : 842879,
+	"name" : "Piute Point",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 817,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.6572131,
+			36.4402511
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c351a7"),
+	"id" : 845447,
+	"name" : "Echo Hills",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 840,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.5088678,
+			36.2513683
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34190"),
+	"id" : 841300,
+	"name" : "Ireteba Peaks",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1528,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.8288667,
+			35.5944333
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b79aa1"),
+	"id" : 4608,
+	"name" : "Fire Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 750,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.6463625,
+			35.6830439
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f69d0a3eb646c3962a"),
+	"id" : 863163,
+	"name" : "Negrohead Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2574,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.1577869,
+			36.6519106
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c3401c"),
+	"id" : 840925,
+	"name" : "Hayford Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2997,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.2005656,
+			36.657188
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c36062"),
+	"id" : 849303,
+	"name" : "Beehive Rock",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 783,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.5502615,
+			36.4091423
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c37d7a"),
+	"id" : 856776,
+	"name" : "Johns Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2866,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.1877876,
+			36.6832993
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c3530d"),
+	"id" : 845809,
+	"name" : "Crescent Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1775,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.128317,
+			35.4760993
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c360b5"),
+	"id" : 849387,
+	"name" : "Dupont Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 742,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7660868,
+			35.5597125
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b7b662"),
+	"id" : 11744,
+	"name" : "Squaw Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 974,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.4266365,
+			35.895542
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c346b2"),
+	"id" : 842625,
+	"name" : "Opal Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 534,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.703863,
+			35.5783236
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f69d0a3eb646c398d5"),
+	"id" : 863860,
+	"name" : "Seven Sisters",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 591,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.5041481,
+			36.4283092
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c33b49"),
+	"id" : 839681,
+	"name" : "Copper Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 967,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7638641,
+			35.5305466
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c35645"),
+	"id" : 846658,
+	"name" : "Doherty Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1183,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.9197006,
+			35.470824
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2bc9d0a3eb646b81b15"),
+	"id" : 42784,
+	"name" : "Elephant Hill",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 221,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.6605282,
+			35.5797127
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c35277"),
+	"id" : 845659,
+	"name" : "Silica Dome",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 681,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.4991482,
+			36.4524755
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c35646"),
+	"id" : 846659,
+	"name" : "Duplex Hill",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1136,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.9219227,
+			35.4588797
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c33867"),
+	"id" : 838938,
+	"name" : "Blue Point",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 639,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.4408115,
+			36.3905331
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c33738"),
+	"id" : 838631,
+	"name" : "Baseline Mesa",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 720,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.4774805,
+			36.4483092
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c3833d"),
+	"id" : 858272,
+	"name" : "Elephant Rock",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 566,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.4599795,
+			36.4283098
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2c89d0a3eb646baa29d"),
+	"id" : 240662,
+	"name" : "Clark Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2390,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5891664,
+			35.5252588
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c351b9"),
+	"id" : 845465,
+	"name" : "Fourth of July Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1161,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.8594211,
+			35.4591582
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c33816"),
+	"id" : 838856,
+	"name" : "Black Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 613,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7510855,
+			35.4897142
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2c99d0a3eb646bab7ac"),
+	"id" : 246058,
+	"name" : "Mohawk Hill",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1783,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5591648,
+			35.4908151
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b79739"),
+	"id" : 3735,
+	"name" : "Mount Davis",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 611,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.6291378,
+			35.5377694
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f69d0a3eb646c396e6"),
+	"id" : 863360,
+	"name" : "Dugway Hill (historical)",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 380,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.3841423,
+			36.3877561
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c352a1"),
+	"id" : 845701,
+	"name" : "The Haystacks",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 405,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.2960798,
+			36.086929
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a3519d0a3eb646cf3718"),
+	"id" : 1661033,
+	"name" : "Mineral Hill",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1680,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.4761058,
+			35.4344281
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c33c86"),
+	"id" : 839998,
+	"name" : "Delmar Butte",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 469,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.2877458,
+			36.0652628
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c35153"),
+	"id" : 845362,
+	"name" : "Bill Gays Butte",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 566,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.761363,
+			35.4519371
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c346d2"),
+	"id" : 842657,
+	"name" : "Overton Mesa",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 487,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.466092,
+			36.5219192
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c38391"),
+	"id" : 858356,
+	"name" : "Saint Thomas Salt",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 380,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.3735866,
+			36.4077558
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2c89d0a3eb646baa158"),
+	"id" : 240337,
+	"name" : "Castle Peaks",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1712,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.1610949,
+			35.3691561
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2c99d0a3eb646bab0eb"),
+	"id" : 244327,
+	"name" : "Kingston Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2171,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.9177908,
+			35.7269176
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34d1d"),
+	"id" : 844279,
+	"name" : "The Temple",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 379,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.2696894,
+			36.0472077
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2c99d0a3eb646bab10b"),
+	"id" : 244359,
+	"name" : "Kokoweef Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1827,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.4938841,
+			35.4197059
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b7b3c9"),
+	"id" : 11078,
+	"name" : "Senator Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1562,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.3177429,
+			35.8363773
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c3747a"),
+	"id" : 854458,
+	"name" : "Garrett Butte",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1164,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.2708028,
+			36.2074831
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c3518f"),
+	"id" : 845423,
+	"name" : "Dead Man Hill",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 651,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.8361105,
+			36.7591357
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2c99d0a3eb646bac46e"),
+	"id" : 249328,
+	"name" : "Shadow Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1249,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.7922294,
+			35.5694225
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f69d0a3eb646c398b9"),
+	"id" : 863831,
+	"name" : "Mineral Buttes",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1078,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.2677473,
+			36.2252607
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b7acfd"),
+	"id" : 9333,
+	"name" : "Mount Perkins",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1660,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.5085789,
+			35.5699915
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34ca2"),
+	"id" : 844155,
+	"name" : "Table Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 696,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.8286102,
+			36.7627469
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c33884"),
+	"id" : 838967,
+	"name" : "Bonelli Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1601,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.2496901,
+			36.1488731
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34cd5"),
+	"id" : 844206,
+	"name" : "Temple Mesa",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 486,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.2477441,
+			36.0358192
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c349c5"),
+	"id" : 843420,
+	"name" : "Saddle Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2126,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.2575127,
+			36.8127425
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2c99d0a3eb646baacc0"),
+	"id" : 243260,
+	"name" : "Hart Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1651,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.0791478,
+			35.3430465
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b79cb0"),
+	"id" : 5138,
+	"name" : "Golden Rule Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1174,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.261631,
+			35.8905437
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2c99d0a3eb646bac701"),
+	"id" : 249989,
+	"name" : "Striped Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1811,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5305517,
+			35.3927615
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a3889d0a3eb646d999d2"),
+	"id" : 2722884,
+	"name" : "Nopah Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1943,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-116.0842896,
+			36.0175178
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34557"),
+	"id" : 842276,
+	"name" : "Mount Stirling",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2469,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.9683613,
+			36.4538462
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34540"),
+	"id" : 842253,
+	"name" : "Mormon Mesa",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 577,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.3758099,
+			36.5121982
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c3524c"),
+	"id" : 845614,
+	"name" : "Rattlesnake Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1473,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.2158006,
+			36.1949838
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f69d0a3eb646c398b6"),
+	"id" : 863828,
+	"name" : "Gold Cross Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1030,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.1730198,
+			36.0719301
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c351d7"),
+	"id" : 845495,
+	"name" : "Gregg Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 754,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.173298,
+			36.1110963
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34217"),
+	"id" : 841436,
+	"name" : "Jumbo Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1736,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.1807993,
+			36.2060951
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c33f29"),
+	"id" : 840678,
+	"name" : "Gold Butte",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1529,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.184689,
+			36.2730385
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34a31"),
+	"id" : 843528,
+	"name" : "Scanlon Hill",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 428,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.1496859,
+			36.0899856
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34055"),
+	"id" : 840983,
+	"name" : "High Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1223,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-116.1341983,
+			36.2510702
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34801"),
+	"id" : 842965,
+	"name" : "Powell Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 777,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.1366302,
+			36.1227631
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c37515"),
+	"id" : 854613,
+	"name" : "Mount Schader",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1309,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-116.0572535,
+			36.461901
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2c99d0a3eb646bab0be"),
+	"id" : 244282,
+	"name" : "Kessler Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1876,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5294397,
+			35.3152628
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c3448a"),
+	"id" : 842068,
+	"name" : "Mica Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1719,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.1560767,
+			36.2658167
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c3451c"),
+	"id" : 842217,
+	"name" : "Mount Montgomery",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1301,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-116.0936433,
+			36.4135682
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34663"),
+	"id" : 842546,
+	"name" : "North Ridge",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1688,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.8747491,
+			36.6791232
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34b94"),
+	"id" : 843884,
+	"name" : "South Ridge",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1505,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.9280836,
+			36.6346783
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2c99d0a3eb646bac66b"),
+	"id" : 249839,
+	"name" : "Squaw Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1474,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.8666746,
+			35.4702573
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2c99d0a3eb646bac874"),
+	"id" : 250360,
+	"name" : "Teutonia Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1715,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5638852,
+			35.2997072
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a3529d0a3eb646cf4cfa"),
+	"id" : 1667056,
+	"name" : "Drum Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 2123,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.3205431,
+			35.2308224
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a3519d0a3eb646cf38c9"),
+	"id" : 1661467,
+	"name" : "Solomons Knob",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1354,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.8430623,
+			35.4252583
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a3529d0a3eb646cf4ccd"),
+	"id" : 1667011,
+	"name" : "Cima Dome",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1751,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.5852746,
+			35.2894294
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c36941"),
+	"id" : 851581,
+	"name" : "Devils Thumb",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1574,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7146929,
+			35.2908294
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c337e4"),
+	"id" : 838806,
+	"name" : "Black Butte",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 820,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.1977465,
+			36.4977562
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c382f2"),
+	"id" : 858196,
+	"name" : "Spirit Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1687,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7238596,
+			35.2749964
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a3519d0a3eb646cf3755"),
+	"id" : 1661094,
+	"name" : "Negro Head",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1276,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.831395,
+			35.397481
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c368fd"),
+	"id" : 851513,
+	"name" : "Mount Newberry",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1092,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.6624691,
+			35.293052
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a3519d0a3eb646cf388f"),
+	"id" : 1661409,
+	"name" : "Sawtooth",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1237,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.8044494,
+			35.370815
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2ba9d0a3eb646b79d39"),
+	"id" : 5275,
+	"name" : "Grapevine Mesa",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 948,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.0641263,
+			35.9744317
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c36904"),
+	"id" : 851520,
+	"name" : "North Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1497,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7471933,
+			35.2511077
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a3509d0a3eb646cf262c"),
+	"id" : 1656647,
+	"name" : "Valjean Dunes",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 358,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-116.1341849,
+			35.6666386
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f59d0a3eb646c3693e"),
+	"id" : 851578,
+	"name" : "Little Peak",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1466,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.7433043,
+			35.2469411
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2f49d0a3eb646c34563"),
+	"id" : 842288,
+	"name" : "Mud Hills",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 726,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-114.1257991,
+			36.426925
+		]
+	}
+}
+{
+	"_id" : ObjectId("5276a2c99d0a3eb646bac9d9"),
+	"id" : 250718,
+	"name" : "Turquoise Mountain",
+	"type" : "Summit",
+	"country_name" : null,
+	"height" : 1360,
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-115.9233426,
+			35.4355353
+		]
+	}
+}
