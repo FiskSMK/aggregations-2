@@ -34,7 +34,56 @@ mongoimport --type csv -c Drugi --file DrugiPrzerobiony.csv --headerline
 ```
 ![](../images/kmieszala/drugie1.JPG)
 
-
+### Agragacje MongoDB
+10 najczęściej występujących miejscowości:
+```sh
+> db.Drugi.aggregate(         { $group: { _id: "$miejscowosc", count: { $sum: 1 } } } ,         { $sort: { count: -1 } },         { $limit: 10 })
+{
+	"result" : [
+		{
+			"_id" : "Gdańsk",
+			"count" : 170800
+		},
+		{
+			"_id" : "Warszawa",
+			"count" : 66700
+		},
+		{
+			"_id" : "Kraków",
+			"count" : 23800
+		},
+		{
+			"_id" : "Wrocław",
+			"count" : 21500
+		},
+		{
+			"_id" : "Łódź",
+			"count" : 14500
+		},
+		{
+			"_id" : "Poz ań",
+			"count" : 13000
+		},
+		{
+			"_id" : "Gdy ia",
+			"count" : 11800
+		},
+		{
+			"_id" : "Katowice",
+			"count" : 10100
+		},
+		{
+			"_id" : "Bydgoszcz",
+			"count" : 9500
+		},
+		{
+			"_id" : "Częstochowa",
+			"count" : 8900
+		}
+	],
+	"ok" : 1
+}
+```
 
 
 
