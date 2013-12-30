@@ -1,20 +1,4 @@
 {
-    "query" : {
-        "query_string" : {
-          "query" : "action:Disliked"
-      }
-    },
-    "facets" : {
-        "userId" : {
-            "terms" : {
-                "field" : "userId",
-                "size" : 10
-            }
-        }
-    }
-}
-
-{
     "took": 131,
     "timed_out": false,
     "_shards": {

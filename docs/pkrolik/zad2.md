@@ -273,7 +273,7 @@ Wynik:
 }
 ```
 
-Pełen wynik dostępny [tutaj](/docs/pkrolik/zad23.txt)
+Pełen wynik dostępny [tutaj](/docs/pkrolik/zad23.json)
 
 ####Wynik graficznie
 ![zad23](../../images/pkrolik/zad23.png)
@@ -411,7 +411,7 @@ Wynik:
 }
 ```
 
-Pełen wynik dostępny [tutaj](/docs/pkrolik/zad24.txt)
+Pełen wynik dostępny [tutaj](/docs/pkrolik/zad24.json)
 
 ####Wynik graficznie
 ![zad24](../../images/pkrolik/zad24.png)
