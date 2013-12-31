@@ -1,30 +1,8 @@
-# *Jakub Bełcik*
+# *Zadanie 2*
 
-* [Dane techniczne](#dane-techniczne)
+plik z danymi został pobrany ze strony data.police.uk i zawiera dane dotyczące interwencji policyjnych w wybranych posterunkach na przestrzeni 2013-07 - 2013-10
 
----
-
-## Dane Techniczne
-
-Procesor:
-	AMD Phenom II x4 955 3.2GHz
-
-RAM:
-	Kingston HyperX 2x2GB 1333MHz DDR3
-
-Dysk Twardy:
-	Samsung Spin Point F1 320GB SATA II, NCQ, 16MB
-
-System operacyjny:
-	Windows 7 Professional x64
-
-Środowisko:
-	Cygwin 1.7.25 x64
-
-Baza Danych:
-	MongoDB 2.4.7 x64
-
----
+#MongoDB
 
 ```sh
 $ time mongoimport -d dataBase -c streetLevelCrime --type csv --file data.police.uk-cps-2013.07=2013.10-street.csv --headerline
@@ -59,6 +37,10 @@ Przykładowy rekord:
         "context" : ""
 }
 ```
+
+#Agregacja 1
+
+Podział procentowy interwencji poszczególnych posterunków:
 
 ```js
 > db.streetLevelCrime.aggregate(
@@ -120,6 +102,10 @@ Przykładowy rekord:
 ```
 
 ![1](../../images/jbelcik/wykres1.jpg)
+
+#Agregacja 2
+
+3 najbardziej popularne stany postępowań w 5 regionach LSOA o największej liczbie interwencji:
 
 ```js
 > db.streetLevelCrime.aggregate(
@@ -295,10 +281,92 @@ Przykładowy rekord:
 
 ![2](../../images/jbelcik/wykres2.jpg)
 
+#Elasticsearch
+
+Exportujemy baze do pliki .json, potem przerabiamy ten plik tak aby wpasować go do standardów Elasticsearch. Nastepnie dzielimy plik na mniejsze paczki, gdyż Elasticsearch nie poradzi sobie z taka duża ilościa danych. Na końcu importujemy dane i sprawdzamy czy operacja przebiegła pomyślnie.
+
+```sh
+$ time mongoexport -d dataBase -c streetLevelCrime -o slc.json
+connected to: 127.0.0.1
+exported 1004952 records
+
+real    0m32.530s
+user    0m0.000s
+sys     0m0.015s
+
+$ time jq --compact-output '{ "index" : { "_type" : "intervention" } }, .' slc.json > properESslc.json
+
+real    0m59.200s
+user    0m0.015s
+sys     0m0.015s
+
+$ time split -l 100000 properESslc.json
+
+real    0m0.670s
+user    0m0.046s
+sys     0m0.623s
+
+$ time for i in x*; do curl -s -XPOST   localhost:9200/interventions/_bulk --data-binary @$i; done
+
+real    1m30.226s
+user    0m1.705s
+sys     0m3.579s
+
+$ curl -XGET 'http://localhost:9200/interventions/intervention/_count'; echo
+{"count":1004952,"_shards":{"total":5,"successful":5,"failed":0}}
+```
+
+Przykladowy rekord:
+
+```js
+{		"index" :
+				{
+						"_type" : "intervention"
+				}
+}
+{
+		"context" : "",
+		"last_outcome_category" : "",
+		"crime_type" : "Anti-social behaviour",
+		"lsoa_name" : "Bath and North East Somerset 001A",
+		"lsoa_code" : "E01014399",
+		"_id" : ObjectId("52c1b350ed50916ae256fcd6"),
+		"crime_id" : "",
+		"month":"2013-07",
+		"reported_by" : "Avon and Somerset Constabulary",
+		"falls_within" : "Avon and Somerset Constabulary",
+		"longitude" : -2.515072,
+		"latitude" : 51.419357,
+		"location" : "On or near Stockwood Hill"
+}
+```
+
+#Agregacja 3
+
+Najczęstsze powody zatrzymań:
+
+```js
+{
+   "query" : {
+       "match_all" : {  }
+   },
+   "facets" : {
+       "crime_type" : {
+           "terms" : {
+               "field" : "crime_type"
+           }
+       }
+   }
+}
+```
 
 ![3](../../images/jbelcik/wykres3.jpg)
 
-TEMP:
+#Agregacja 4
+
+Miejsce o największej i najmniejszej liczbie interwencji w skali miesięcznej:
+
+MongoDB:
 
 ```js
 > db.streetLevelCrime.aggregate(
@@ -352,19 +420,10 @@ TEMP:
 
 ![4](../../images/jbelcik/wykres4.jpg)
 
-TEMP:
+Elasticsearch:
 
-db.streetLevelCrime.aggregate(
-	{ $match: { lsoa_name: { $ne: "" }, last_outcome_category: { $ne: "" } } },
-	{ $group: {
-		_id: { lsoa_name: "$lsoa_name", last_outcome_category: "$last_outcome_category" },
-		total: { $sum: 1 },
-	} },
-	{ $sort: { total: -1 } },
-	{ $limit: 24 },
-	{ $group: {
-		_id: "$_id.last_outcome_category",
-		total2: { $sum: 1 },
-	} },
-	{ $sort: { total2: -1 } }
-)
+```js
+a
+```
+
+![5](../../images/jbelcik/wykres5.jpg)
