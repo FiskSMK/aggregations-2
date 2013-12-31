@@ -44,7 +44,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Lewandowska, Marta](/docs/mlewandowska.md).
 1. [Łuczun, Rafał](/docs/rluczun/README.md).
 1. [Małecki, Maciej](/docs/mmalecki/README.md).
-1. [Matulewski, Damian](/docs/dmatulewski.md).
+1. [Matulewski, Damian](/docs/dmatulewski.md). [Głosowanie](/docs/dmatulewski_glosowanie.md).
 1. [Melzer, Grzegorz](/docs/gmelzer.md). [GetGlue - TIMDB](/docs/gmelzer/gmelzer2.md).
 1. [Mieszała, Konrad](/docs/kmieszala.md).[Bankowość](/docs/kmieszala_MeritumBank.md).
 1. [Motel, Mateusz](/docs/mmotel/zadanie1.md). [The Internet Movie Database](/docs/mmotel/zadanie2.md).
