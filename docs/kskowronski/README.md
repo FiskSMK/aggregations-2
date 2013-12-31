@@ -124,7 +124,7 @@ Date,Temperature
 
 **Wykres**
 
-![Maksymalne temperatury - wykres](../images/kskowronski/temperatury.png)
+![Maksymalne temperatury - wykres](http://s8.postimg.org/gq4xigocl/temperatury.png)
 
 **Wnioski**
 
