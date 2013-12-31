@@ -87,7 +87,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Pietraszuk, Bartłomiej.
 1. Rogaszewski, Piotr.
 1. Wiśniewski, Piotr.
-1. Żarkowski, Mateusz.
+1. Żarkowski, Mateusz. [PAMAP - Physical Activity Monitoring](/docs/mzarkowski-pamap.md).
 
 
 ## BigData (+1M)
