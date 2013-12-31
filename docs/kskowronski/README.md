@@ -9,9 +9,6 @@
 3. [MongoDB](#mongodb)
  1. [Import](#import-w-mongo)
  1. [Agregacje](#agregacje-w-mongodb)
-4. [ElasticSearch](#elastic-search)
- 1. [Import](#import-w-elasticsearch)
- 1. [Agregacje](#agregacje-w-elasticsearch)
 
 
 # Dane #
