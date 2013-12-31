@@ -38,7 +38,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Kłeczek, Piotr](/docs/pkleczek/README.md).
 1. [Kotłowski, Piotr](docs/pkotlowski/README.md).
 1. [Koźmiński, Marcin](docs/mkozminski/README.md).
-1. [Królik, Przemysław](/docs/pkrolik.md).
+1. [Królik, Przemysław](/docs/pkrolik/zad1.md). [GetGlue IMDB](/docs/pkrolik/zad2.md).
 1. [Kubacki, Konrad](/docs/kkubacki/README.md).
 1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md).
 1. [Lewandowska, Marta](/docs/mlewandowska.md).
