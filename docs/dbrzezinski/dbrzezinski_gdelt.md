@@ -40,5 +40,13 @@ Dane są zapisane w plikach txt. Do importu musiałem przygotować pliki w forma
 Google Refine. Dwa pliki zostały zimportowane do bazy, a nastepnie zliczone.
 
 ![img](../../images/dbrzezinski/refine.png)
+
+```
+time mongoimport --db gdelt --collection events--type json --file reduced_data_1993.json
+```
+
+###Czas importu ok. 1min 20sek.
+###Przykładowy rekord, oraz zliczenie kolekcji.
 ![img](../../images/dbrzezinski/przyk_json_count.png)
 
+####AGREGACJE JUŻ WKRÓTCE!....
