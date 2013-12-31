@@ -99,7 +99,7 @@ tar -xf getglue_sample.tar.gz
 
 Tak przygotowany plik json gotowy jest do importu
 ```sh
-time mongoimport -d imdb -c imdb --type json --file getglue_sample.json
+time mongoimport -d test -c movies --type json --file getglue_sample.json
 ```
 
 ##Wynik i czasy
@@ -112,10 +112,10 @@ time mongoimport -d imdb -c imdb --type json --file getglue_sample.json
 #Agregacja 1
 Agregacja ta ma za zadanie policzyć ilość komentarzy przypadającej każdej z osób.
 
-Kod skryptu: [mongoaggr1.js](../../scripts/rluczun/mongo_aggr1.js)
+Kod skryptu: [skrypt](../../scripts/rluczun/mongo_aggr1.js)
 
 ##Wynik i czasy
-![mongod-aggr1](../../images/rluczun/mongo_aggr1.png)
+![mongod-aggr1](../../images/rluczun/mongo_aggr1.PNG)
 
 ##Wykres
 
@@ -124,10 +124,10 @@ Kod skryptu: [mongoaggr1.js](../../scripts/rluczun/mongo_aggr1.js)
 #Agregacja 2
 Agregacja ta ma za zadanie policzyć ilość filmów wyreżyserowanych przez każdego reżysera.
 
-Kod skryptu: [mongoaggr1.js](../../scripts/rluczun/mongo_aggr2.js)
+Kod skryptu: [skrypt](../../scripts/rluczun/mongo_aggr2.js)
 
 ##Wynik i czasy
-![mongod-aggr2](../../images/rluczun/mongo_aggr2.png)
+![mongod-aggr2](../../images/rluczun/mongo_aggr2.PNG)
 
 ##Wykres
 
