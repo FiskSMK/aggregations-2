@@ -164,7 +164,7 @@ Wynik:
 "facets" : {
     "artist" : {
       "_type" : "terms",
-      "missing" : 9159,
+      "missing" : 0,
       "total" : 1000000,
       "other" : 982912,
       "terms" : [ {
@@ -223,8 +223,39 @@ Ilość ludzi z zadłużeniem do 100 000, od 100 001 do 200 000 i od 200 001:
 }
 ```
 Wynik:
-
-
+```sh
+"facets" : {
+    "range1" : {
+      "_type" : "range",
+      "ranges" : [ {
+        "to" : 100000.0,
+        "count" : 985200,
+        "min" : 910.36,
+        "max" : 99941.8,
+        "total_count" : 985200,
+        "total" : 1.3588765370999865E10,
+        "mean" : 13792.90029537136
+      }, {
+        "from" : 100001.0,
+        "to" : 200000.0,
+        "count" : 9900,
+        "min" : 101111.12,
+        "max" : 183076.67,
+        "total_count" : 9900,
+        "total" : 1.3408540639999986E9,
+        "mean" : 135439.8044444443
+      }, {
+        "from" : 200001.0,
+        "count" : 4700,
+        "min" : 210000.0,
+        "max" : 8306941.67,
+        "total_count" : 4700,
+        "total" : 8.612908153999994E9,
+        "mean" : 1832533.6497872327
+      } ]
+    }
+  }
+```
 
 
 
