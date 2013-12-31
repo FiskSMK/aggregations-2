@@ -95,7 +95,27 @@ Niestety nie zaimportowały się wszystkie rekordy zamiast 2 000 000 jest 1 999 
     	at org.elasticsearch.index.mapper.core.DateFieldMapper.parseStringValue(DateFieldMapper.java:481)
     	... 15 more
 
+
+Aby wgrać błędne rekordy najpierw utworzyłem plik z logami z kodowanie dla systemów unix'owych poleceniem
+
+    cat elasticsearch.log | tr "\n" " " | tr "\r" "\n" > elasticsearch_unix.log
+
+następnie przy pomocy polecenia
+
+    sed -n '/source\[/,/^]}/p' elasticsearch_unix.log | awk -F", source" '{print $2}' | sed 's/^.//'| sed '/^$/d' > bledne_rekordy.json
+
+wyciągnąłem rekordy które się nie dodały i na koniec przygotowałem plik do importu do bazy EA który nie zawiera pustych pól **"replies_reply2_timestamp":""/** i **"replies_reply3_timestamp":""/**:
+
+    sed -e 's/,"replies_reply3_timestamp":""//g;s/,"replies_reply2_timestamp":""//g' bledne_rekordy.json > bledne_rekordy_poprawione.json
+    
+    sed 's/^./{"index":{"_type":"bigdata"}}\n&/g' bledne_rekordy_poprawione.json > nosql_2.bulk
+
+Następnie dokonałem import z poprawionymi rekordami
+
+    curl -s -XPOST localhost:9200/nosql/_bulk --data-binary @nosql_2.bulk ; echo
+
+
 Zrzut z ElasticSearch (plugin):
 
-![zrzut](../../images/progaszewski/es.png) 
+![zrzu](/images/progaszewski/es.png)
 
