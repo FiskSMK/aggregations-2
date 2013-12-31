@@ -24,6 +24,7 @@ Zestaw danych zawierał pomiary, gdy badany nie wykonywał żadnych z analizowan
 
 Zamieniłem również ActivityID na odpowiednik słowny.
 
+```
 if(value==1,"lying",
 if(value==2,"sitting",
 if(value==3,"standing",
@@ -42,6 +43,7 @@ if(value==18,"folding laundry",
 if(value==19,"house cleaning",
 if(value==20,"playing soccer",
 if(value==24,"rope jumping","Other"))))))))))))))))))
+```
 
 Na koniec do zestawu dodałem kolumnę z ID użytkownika, który wykonywał dane czynności (każdy plik był zestawem danych od jednego badanego, łącznie 9 plików)
 
@@ -90,6 +92,7 @@ db.activities.aggregate(
 { $sort: {Avarage: -1} } );
 ```
 
+```
 {
 	"result" : [
 		{
@@ -143,6 +146,10 @@ db.activities.aggregate(
 	],
 	"ok" : 1
 }
+```
+**Wykres**
+
+![Agregacja 1 - wykres](../images/mzarkowski/ag1.png)
 
 http://savedbythegoog.appspot.com/?id=1353d78e9116e42ce61ad82634554fb942e5ce4f
 
