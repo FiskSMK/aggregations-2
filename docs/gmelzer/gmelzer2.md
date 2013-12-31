@@ -243,7 +243,7 @@ Wynik:
   "took": 301
 }
 ```
-Pełen wynik [tutaj](/docs/gmelzer/fasets-1.json)
+Pełen wynik [tutaj](/docs/gmelzer/facets-1.json)
 
 ![faset1](../../images/gmelzer/faset1.png)
 
@@ -346,6 +346,6 @@ Wynik:
   "took": 307
 }
 ```
-Pełen wynik [tutaj](/docs/gmelzer/fasets-2.json)
+Pełen wynik [tutaj](/docs/gmelzer/facets-2.json)
 
 ![faset2](../../images/gmelzer/faset2.png)
