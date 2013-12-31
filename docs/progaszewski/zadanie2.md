@@ -104,7 +104,7 @@ następnie przy pomocy polecenia
 
     sed -n '/source\[/,/^]}/p' elasticsearch_unix.log | awk -F", source" '{print $2}' | sed 's/^.//'| sed '/^$/d' > bledne_rekordy.json
 
-wyciągnąłem rekordy które się nie dodały i na koniec przygotowałem plik do importu do bazy EA który nie zawiera pustych pól **"replies_reply2_timestamp":""/** i **"replies_reply3_timestamp":""/**:
+wyciągnąłem rekordy które się nie dodały i na koniec przygotowałem plik do importu do bazy ES który nie zawiera pustych pól **"replies_reply2_timestamp":""/** i **"replies_reply3_timestamp":""/**:
 
     sed -e 's/,"replies_reply3_timestamp":""//g;s/,"replies_reply2_timestamp":""//g' bledne_rekordy.json > bledne_rekordy_poprawione.json
     
