@@ -117,5 +117,5 @@ Następnie dokonałem import z poprawionymi rekordami
 
 Zrzut z ElasticSearch (plugin):
 
-![zrzu](/images/progaszewski/es.png)
+![zrzu](../../images/progaszewski/es.png)
 
