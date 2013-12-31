@@ -1,5 +1,7 @@
 # Zadanie 2 #
 
+### MongoDB ###
+
 Najpierw z pliku
 
 > getglue_sample.json
@@ -23,6 +25,8 @@ Czas trwania importu:
     sys  0m0.016s
 
 
+### ElasticSearch ###
+
 Aby załadować te same dane do Elasticseatch przygotowałem plik 
 
 > getglue_sample\_cut.bulk
@@ -44,7 +48,7 @@ Przy pomocy polecenia:
 
 wykonałem import danych.
 
-## Problemy podczas importu do ES: ##
+#### Problemy podczas importu do ES: ####
 
 Na samym początku miałem problem z importem do Elasticsearch. Było to spowodowany tym, że plik których chciałem zaimportować był za duży - miął ponad 1 gb. A by móc ładować takie pliki musiałem w pliku konfiguracyjnym
 
