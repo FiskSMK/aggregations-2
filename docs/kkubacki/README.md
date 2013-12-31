@@ -141,6 +141,15 @@ Wynik zapytania: [tutaj](/docs/kkubacki/zapytania/zap6)
 ####Druga agregacja dla mongodb, policz ile jest lotnisc w poszczególnych krajach.
 ####Wyniki mogą być zaskoczeniem, w Polsce jest niby 170 lotnisk! [Oto one](/docs/kkubacki/zapytania/LotniskaPolskie.txt)
 
+####Pierwsza agregacja dla elasticSeach.
+#### pokaż 5 krajów które mają największą ilośc lotnisk. [zapytanie](/docs/kkubacki/zapytania/zapytanieES1.js)
+[wynik](/docs/kkubacki/zapytania/agqWyniki1.js)
+
+#### pokaż 5 krajów które mają największą ilośc lotnisk. [zapytanie](/docs/kkubacki/zapytania/zapytanieES1.js)
+[wynik](/docs/kkubacki/zapytania/agqWyniki1.js)
+
+#### pokaż 10 jednostek terytorialnych które mają największą ilośc lotnisk. [zapytanie](/docs/kkubacki/zapytania/zapytanieES2.js)
+[wynik](/docs/kkubacki/zapytania/agqWyniki2.js)
 
 
 
