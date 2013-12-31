@@ -133,3 +133,8 @@ db.geo_points.find({ loc:
 ```
 Wynik zapytania: [tutaj](/docs/kkubacki/zapytania/zap6)
 
+## Zadanie 2 
+####Znalazłem bazę która przechowuję dane o lotniskach na świecie, bazę można pobrać z http://www.ourairports.com/data/airports.csv
+####Pierwsza agregacja mongodb , policz ile jest różnych typów lotnisk. [zapytanie](/docs/kkubacki/zapytania/mongoQuery1.js)
+####[Wynik zapytania ](/docs/kkubacki/zapytania/WynikMongo1.txt)
+
