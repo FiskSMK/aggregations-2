@@ -31,18 +31,18 @@ Przykładowy dokument `json`:
 
 ##Import
 
-Po ściągnieciu danych musimy je rozpakować poleceniem:
+Po ściągnięciu rozpakowujemy:
 ```sh
 tar -xvf getglue_sample.tar.gz
 ```
 
-Plik ten od razu nadaje się do importu. Polecenie `time` mierzymy ile czasu zajął import.
+Od razu nadaje się do importu. Polecenie `time` mierzymy ile czasu zajął import.
 
 ```sh
 time mongoimport -d imdb -c imdb --type json --file getglue_sample.json
 ```
 
-###Wyniki i Czasy
+###Czas
 
 ```sh
 
