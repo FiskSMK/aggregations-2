@@ -242,6 +242,10 @@ db.activities.aggregate(
 	"ok" : 1
 }
 ```
+**Wykres**
+
+![Agregacja 2 - wykres](../images/mzarkowski/ag2.png)
+
 
 http://savedbythegoog.appspot.com/?id=20cfc6fa53da0d9b745707d00e108511323ee5e6
 
@@ -327,6 +331,11 @@ curl -X POST "http://localhost:9200/pamap/pamap/_search?pretty=true" -d '
 ' | jq . > agg3.js
 ```
 
+**Wykres**
+
+![Agregacja 3 - wykres](../images/mzarkowski/ag3.png)
+
+
 http://savedbythegoog.appspot.com/?id=1b5885f6cd90e9894e8a1c54f432c3ea8cba019b
 
 
@@ -350,6 +359,11 @@ curl -X POST "http://localhost:9200/pamap/pamap/_search?pretty=true" -d '
 }
 ' | jq . > agg4.js
 ```
+
+**Wykres**
+
+![Agregacja 4 - wykres](../images/mzarkowski/ag4.png)
+
 
 http://savedbythegoog.appspot.com/?id=88ba631a18fa54773e00a8d29291ae1b5d77587a
 
