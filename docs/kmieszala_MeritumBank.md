@@ -1,4 +1,4 @@
- *Konrad Mieszała*
+# *Konrad Mieszała*
 
 Do rozwiązania problemu użyłem pliku xls z wymyślonymi danymi, który otrzymałem od Meritum Banku, w ramach zajęć z innego przedmiotu. Zapisałem plik xls jako plik csv. 
 
@@ -35,6 +35,7 @@ connecting to: test
         "imie_matki" : "Edie"
 }
 >
+```
 ### Agragacje MongoDB
 10 najczęściej występujących miejscowości:
 ```sh
@@ -138,10 +139,90 @@ konrad@Konrad:~/Pobrane/zad2NoSql$ curl -XGET 'http://localhost:9200/Banki/Merit
 {"count":1000000,"_shards":{"total":5,"successful":5,"failed":0}}
 ```
 Pełen sukces!!!
-![](../images/kmieszala/drugie3.JPG)
 
+![](../images/kmieszala/drugie4.JPG)
 
-
+### Agregacje Elasticsearch
+10 najczęstrzych imion matki:
+```sh
+{
+  "query" : {
+    "match_all" : { }
+  },
+  "facets" : {
+    "artist" : {
+      "terms" : {
+        "field" : "imie_matki",
+        "size" : 10
+      }
+    }
+  }
+}
+```
+Wynik:
+```sh
+"facets" : {
+    "artist" : {
+      "_type" : "terms",
+      "missing" : 9159,
+      "total" : 1000000,
+      "other" : 982912,
+      "terms" : [ {
+        "term" : "mary",
+        "count" : 3600
+      }, {
+        "term" : "jean",
+        "count" : 3000
+      }, {
+        "term" : "louise",
+        "count" : 2900
+      }, {
+        "term" : "jonny",
+        "count" : 2800
+      }, {
+        "term" : "lee",
+        "count" : 2500
+      }, {
+        "term" : "carrie",
+        "count" : 2400
+      }, {
+        "term" : "anne",
+        "count" : 2400
+      }, {
+        "term" : "delbert",
+        "count" : 1781
+      }, {
+        "term" : "cary",
+        "count" : 1315
+      }, {
+        "term" : "ben",
+        "count" : 1292
+      } ]
+    }
+  }
+}
+```
+Ilość ludzi z zadłużeniem do 100 000, od 100 001 do 200 000 i od 200 001:
+```sh
+{
+    "query" : {
+        "match_all" : {}
+    },
+    "facets" : {
+        "range1" : {
+            "range" : {
+                "field" : "zadluzenie",
+                "ranges" : [
+{ "to" : 100000 },
+{ "from" : 100001, "to" : 200000 },
+{ "from" : 200001 }
+                ]
+            }
+        }
+    }
+}
+```
+Wynik:
 
 
 
