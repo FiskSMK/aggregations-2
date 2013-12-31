@@ -1,0 +1,336 @@
+{
+    "took": 131,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "failed": 0
+    },
+    "hits": {
+        "total": 468969,
+        "max_score": 4.7487235,
+        "hits": [
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "xNcYYp7fR1KWbXQlVowCNA",
+                "_score": 4.7487235,
+                "_source": {
+                    "app": "iPhone_2.4.3",
+                    "visitCount": "1",
+                    "objectKey": "movies/conspirator/robert_redford",
+                    "userId": "NadieStals",
+                    "image": "http://www.daemonsmovies.com/wp-content/uploads/2011/02/the-conspirator-movie-poster-550x814.jpg",
+                    "timestamp": "2011-07-18T22:53:55Z",
+                    "title": "The Conspirator",
+                    "displayName": "Nadie Stals",
+                    "modelName": "movies",
+                    "hideVisits": "false",
+                    "comment": "",
+                    "private": "false",
+                    "director": "robert redford",
+                    "source": "iPhone",
+                    "version": "2",
+                    "link": "http://www.imdb.com/title/tt0968264",
+                    "lastModified": "2011-07-18T22:53:55Z",
+                    "action": "Disliked",
+                    "lctitle": "the conspirator"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "7YzdsjfERMCY5JJAlp_Txg",
+                "_score": 4.7487235,
+                "_source": {
+                    "app": "GetGlue",
+                    "visitCount": "1",
+                    "objectKey": "movies/sound_of_music/robert_wise",
+                    "userId": "Orchid21",
+                    "image": "http://img.photobucket.com/albums/v685/caz87/Movie%20Posters/oscar_posters_65.jpg",
+                    "timestamp": "2011-07-18T23:01:54Z",
+                    "title": "The Sound of Music",
+                    "displayName": "Anna Willow",
+                    "modelName": "movies",
+                    "hideVisits": "false",
+                    "comment": "",
+                    "private": "false",
+                    "director": "robert wise",
+                    "source": "http://getglue.com/quickrate/lists/movies/musicals",
+                    "version": "2",
+                    "link": "http://movies2.nytimes.com/gst/movies/movie.html",
+                    "lastModified": "2011-08-05T08:51:10Z",
+                    "action": "Disliked",
+                    "lctitle": "the sound of music"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "8T04wsSYTWy7KFYfiRJMew",
+                "_score": 4.7487235,
+                "_source": {
+                    "app": "GetGlue",
+                    "visitCount": "1",
+                    "objectKey": "movies/texas_chainsaw_massacre/tobe_hooper",
+                    "userId": "Orchid21",
+                    "image": "http://cdn-3.nflximg.com/us/boxshots/large/15815343.jpg",
+                    "timestamp": "2011-07-18T23:04:51Z",
+                    "title": "The Texas Chainsaw Massacre",
+                    "displayName": "Anna Willow",
+                    "modelName": "movies",
+                    "hideVisits": "false",
+                    "comment": "",
+                    "private": "false",
+                    "director": "tobe hooper",
+                    "source": "http://getglue.com/quickrate/lists/movies/horrors",
+                    "version": "2",
+                    "link": "http://www.netflix.com/Movie/15815343",
+                    "lastModified": "2011-08-05T08:51:09Z",
+                    "action": "Disliked",
+                    "lctitle": "the texas chainsaw massacre"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "99AWB_qZQ5Wco3ioOcKrIQ",
+                "_score": 4.7487235,
+                "_source": {
+                    "app": "GetGlue",
+                    "visitCount": "1",
+                    "objectKey": "movies/omen/richard_donner",
+                    "userId": "Orchid21",
+                    "image": "http://cdn-0.nflximg.com/us/boxshots/large/60002150.jpg",
+                    "timestamp": "2011-07-18T23:04:53Z",
+                    "title": "The Omen",
+                    "displayName": "Anna Willow",
+                    "modelName": "movies",
+                    "hideVisits": "false",
+                    "comment": "",
+                    "private": "false",
+                    "director": "richard donner",
+                    "source": "http://getglue.com/quickrate/lists/movies/horrors",
+                    "version": "2",
+                    "link": "http://www.netflix.com/Movie/60002150",
+                    "lastModified": "2011-08-05T08:51:09Z",
+                    "action": "Disliked",
+                    "lctitle": "the omen"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "tP4w3JuqT0iPMeLFLTJhgw",
+                "_score": 4.7487235,
+                "_source": {
+                    "app": "GetGlue",
+                    "visitCount": "1",
+                    "objectKey": "movies/night_of_living_dead/george_romero",
+                    "userId": "Orchid21",
+                    "image": "http://www.moviesonline.ca/movie-gallery/albums/userpics//poster_14067_night_of_the_living_dead_box_art_2d.jpg",
+                    "timestamp": "2011-07-18T23:04:57Z",
+                    "title": "Night of the Living Dead",
+                    "displayName": "Anna Willow",
+                    "modelName": "movies",
+                    "hideVisits": "false",
+                    "comment": "",
+                    "private": "false",
+                    "director": "george a. romero",
+                    "source": "http://getglue.com/quickrate/lists/movies/horrors",
+                    "version": "2",
+                    "link": "http://www.netflix.com/Movie/17017662",
+                    "lastModified": "2011-08-05T08:51:09Z",
+                    "action": "Disliked",
+                    "lctitle": "night of the living dead"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "POls5pBmRay0dkk4GLWHDQ",
+                "_score": 4.7487235,
+                "_source": {
+                    "app": "GetGlue",
+                    "visitCount": "1",
+                    "objectKey": "movies/drag_me_to_hell/sam_raimi",
+                    "userId": "Orchid21",
+                    "image": "http://cdn-5.nflximg.com/us/boxshots/large/70104315.jpg",
+                    "timestamp": "2011-07-18T23:05:02Z",
+                    "title": "Drag Me to Hell",
+                    "displayName": "Anna Willow",
+                    "modelName": "movies",
+                    "hideVisits": "false",
+                    "comment": "",
+                    "private": "false",
+                    "director": "sam raimi",
+                    "source": "http://getglue.com/quickrate/lists/movies/horrors",
+                    "version": "2",
+                    "link": "http://www.netflix.com/Movie/70104315",
+                    "lastModified": "2011-08-05T08:51:09Z",
+                    "action": "Disliked",
+                    "lctitle": "drag me to hell"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "xzAnuEyqQ2aP0jJ-VRaW-A",
+                "_score": 4.7487235,
+                "_source": {
+                    "app": "GetGlue",
+                    "visitCount": "1",
+                    "objectKey": "movies/frankenstein/james_whale",
+                    "userId": "Orchid21",
+                    "image": "http://graphics8.nytimes.com//images/section/movies/amg/dvd/cov150/drt000/t033/t03350pcnsp.jpg",
+                    "timestamp": "2011-07-18T23:05:20Z",
+                    "title": "Frankenstein",
+                    "displayName": "Anna Willow",
+                    "modelName": "movies",
+                    "hideVisits": "false",
+                    "comment": "",
+                    "private": "false",
+                    "director": "james whale",
+                    "source": "http://getglue.com/quickrate/lists/movies/horrors",
+                    "version": "2",
+                    "link": "http://movies2.nytimes.com/gst/movies/movie.html",
+                    "lastModified": "2011-08-05T08:51:09Z",
+                    "action": "Disliked",
+                    "lctitle": "frankenstein"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "R8KieT8dSFydctMv88ZZcQ",
+                "_score": 4.7487235,
+                "_source": {
+                    "app": "Glue_4.5.24",
+                    "visitCount": "1",
+                    "objectKey": "movies/oldboy/chanwook_park",
+                    "lctitle": "oldboy",
+                    "image": "http://cdn-1.nflximg.com/us/boxshots/large/70024111.jpg",
+                    "timestamp": "2011-07-19T01:47:43Z",
+                    "title": "Oldboy",
+                    "visitCountUpdated": "2011-07-19T01:47:38Z",
+                    "displayName": "Paul Raised",
+                    "modelName": "movies",
+                    "hideVisits": "false",
+                    "comment": "",
+                    "userId": "paulraised",
+                    "private": "false",
+                    "director": "chan-wook park",
+                    "source": "http://www.amazon.com/Oldboy-Min-sik-Choi/dp/B0009S2T0M",
+                    "version": "2",
+                    "link": "http://www.netflix.com/Movie/70024111",
+                    "lastModified": "2011-07-23T16:40:55Z",
+                    "action": "Disliked"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "GhSYytAjQg-_INE02BOeBA",
+                "_score": 4.7487235,
+                "_source": {
+                    "app": "iPad_2.3.2",
+                    "visitCount": "1",
+                    "userId": "stephanie_duell_mcclung",
+                    "image": "http://thetvdb.com/banners/posters/72449-3.jpg",
+                    "timestamp": "2011-07-19T04:47:21Z",
+                    "title": "Stargate SG-1",
+                    "displayName": "Stephanie Duell McClung",
+                    "modelName": "tv_shows",
+                    "hideVisits": "false",
+                    "comment": "",
+                    "private": "false",
+                    "source": "iPad",
+                    "version": "2",
+                    "link": "http://en.wikipedia.org/wiki/Stargate_SG-1",
+                    "lastModified": "2011-07-19T04:47:21Z",
+                    "action": "Disliked",
+                    "lctitle": "stargate sg-1",
+                    "objectKey": "tv_shows/stargate_sg_1"
+                }
+            },
+            {
+                "_index": "data",
+                "_type": "tldr",
+                "_id": "6fvslTbGSDi6qTxQiVACiw",
+                "_score": 4.7487235,
+                "_source": {
+                    "app": "GetGlue",
+                    "visitCount": "1",
+                    "objectKey": "movies/saw_vi/kevin_greutert",
+                    "lctitle": "saw vi",
+                    "image": "http://cdn-6.nflximg.com/us/boxshots/large/70119356.jpg",
+                    "timestamp": "2011-07-19T06:47:00Z",
+                    "title": "Saw VI",
+                    "visitCountUpdated": "2011-07-19T04:46:46Z",
+                    "displayName": "Brittany B.",
+                    "modelName": "movies",
+                    "hideVisits": "false",
+                    "comment": "",
+                    "userId": "BAB711",
+                    "private": "false",
+                    "director": "kevin greutert",
+                    "source": "http://getglue.com/movies/saw_vi/kevin_greutert?checkin=true",
+                    "version": "2",
+                    "link": "http://www.netflix.com/Movie/70119356",
+                    "lastModified": "2011-07-20T09:45:40Z",
+                    "action": "Disliked"
+                }
+            }
+        ]
+    },
+    "facets": {
+        "userId": {
+            "_type": "terms",
+            "missing": 0,
+            "total": 468975,
+            "other": 447555,
+            "terms": [
+                {
+                    "term": "xendeus",
+                    "count": 3678
+                },
+                {
+                    "term": "brownbagcomics",
+                    "count": 3281
+                },
+                {
+                    "term": "ang",
+                    "count": 2278
+                },
+                {
+                    "term": "kevinjloria",
+                    "count": 2180
+                },
+                {
+                    "term": "carlson1931",
+                    "count": 2144
+                },
+                {
+                    "term": "amanda_hauser",
+                    "count": 1987
+                },
+                {
+                    "term": "zeus1661ou",
+                    "count": 1688
+                },
+                {
+                    "term": "vunderhill1",
+                    "count": 1555
+                },
+                {
+                    "term": "s34rchnd3str0y",
+                    "count": 1462
+                },
+                {
+                    "term": "furchterregend",
+                    "count": 1167
+                }
+            ]
+        }
+    }
+}

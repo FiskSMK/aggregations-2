@@ -38,20 +38,16 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Kłeczek, Piotr](/docs/pkleczek/README.md).
 1. [Kotłowski, Piotr](docs/pkotlowski/README.md).
 1. [Koźmiński, Marcin](docs/mkozminski/README.md).
-1. [Królik, Przemysław](/docs/pkrolik.md).
+1. [Królik, Przemysław](/docs/pkrolik/zad1.md). [GetGlue IMDB](/docs/pkrolik/zad2.md).
 1. [Kubacki, Konrad](/docs/kkubacki/README.md).
 1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md).
 1. [Lewandowska, Marta](/docs/mlewandowska.md).
 1. [Łuczun, Rafał](/docs/rluczun/README.md).
 1. [Małecki, Maciej](/docs/mmalecki/README.md).
 1. [Matulewski, Damian](/docs/dmatulewski.md).
-1. [Melzer, Grzegorz](/docs/gmelzer.md).
+1. [Melzer, Grzegorz](/docs/gmelzer.md). [GetGlue - TIMDB](/docs/gmelzer/gmelzer2.md).
 1. [Mieszała, Konrad](/docs/kmieszala.md).[Bankowość](/docs/kmieszala_MeritumBank.md).
-<<<<<<< HEAD
-1. [Motel, Mateusz](/docs/mmotel/zadanie1.md).
-=======
 1. [Motel, Mateusz](/docs/mmotel/zadanie1.md). [The Internet Movie Database](/docs/mmotel/zadanie2.md).
->>>>>>> c0b5b7501effba9934b4eedfda68436a80ea8dca
 1. [Motławski, Mateusz](/docs/mmotlawski/README.md).
 1. [Napiórkowski, Sebastian](/docs/sebnapi/README.md)
 1. [Osiński, Miłosz](/docs/mosinski/README.md). [Lista słów do gier](/docs/mosinski/zadanie2.md).

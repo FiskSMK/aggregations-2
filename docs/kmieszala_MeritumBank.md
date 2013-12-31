@@ -202,6 +202,7 @@ Wynik:
   }
 }
 ```
+![](../images/kmieszala/drugie5.JPG)
 Ilość ludzi z zadłużeniem do 100 000, od 100 001 do 200 000 i od 200 001:
 ```sh
 {
@@ -256,6 +257,7 @@ Wynik:
     }
   }
 ```
+![](../images/kmieszala/drugie6.JPG)
 
 
 
