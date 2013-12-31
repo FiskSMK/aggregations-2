@@ -7,8 +7,8 @@
 * [Zadanie 1c](#zadanie-1c)
 * [Zadanie 1d](#zadanie-1d)
 * [Zadanie 1e](#zadanie-1e)
-* [Zadanie 2 Mongo](#zadanie-2a)
-* [Zadanie 2 Elasticsearch](#zadanie-2b)
+* [Zadanie 2 Mongo](#Zadanie 2 Mongo)
+* [Zadanie 2 Elasticsearch](#Zadanie 2 Elasticsearch)
 
 #Zadanie 1a
 
