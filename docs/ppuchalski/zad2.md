@@ -12,19 +12,19 @@ mongoimport -d noSql -c lista --type csv --file "/home/durand/zad_NoSql/data_per
 Przykładowy rekord z bazy danych
 ```json
 {
-  "_id" : ObjectId("52beeb30521d74f5229ef602"),
-  "nazwa" : "Abel Booth",
-  "miasto_zam" : "Gorinchem",
-  "data_ur" : "09/01/1963",
-  "zatrudnienie" : "Sem Company",
-  "zarobki" : "46 522",
-  "stan_cywilny" : "Common-Law",
-  "region" : "Zuid Holland"
+	"_id" : ObjectId("52beeb30521d74f5229ef603"),
+	"nazwa" : "Dane Garner",
+	"miasto_zam" : "Assen",
+	"data_ur" : "01/29/1983",
+	"zatrudnienie" : "Semper Dui Lectus Consulting",
+	"zarobki" : "178 857",
+	"stan_cywilny" : "Common-Law",
+	"region" : "Dr"
 }
 ```
 #### Tak wyglądało w MMS importowanie bazy danych.
 
-![import_bazy_MMS](../../images/jgalka/do_bazy.png)
+![import_bazy_MMS](../../images/ppuchalski/do_bazy.png)
 
 ### Przygotowane agregacje
 
@@ -53,7 +53,7 @@ wynik
 { "_id" : "Sed Industries", "zatrudnionych" : 572 }
 ```
 
-![agregacja_01](../../images/jgalka/agregacja01.png)
+![agregacja_01](../../images/ppuchalski/agregacja01.png)
 
 *10 miast z największą liczbą osób rozwiedzionych posortowana malejąco.
 
@@ -81,11 +81,11 @@ wynik
 { "_id" : "Hengelo", "liczba_rozwodnikow" : 4691 }
 ```
 
-![agregacja_02](../../images/jgalka/agregacja02.png)
+![agregacja_02](../../images/ppuchalski/agregacja02.png)
 
 #### Stan MMS po wykonanych działaniach
 
-![MMS_po_agregacjach](../../images/jgalka/po_agregacji.png)
+![MMS_po_agregacjach](../../images/ppuchalski/po_agregacji.png)
 
 ## ElasticSearch
 
@@ -100,7 +100,7 @@ Następnym krokiem była konwersja uzyskanego pliku na tzw. "json przeplatany".
 time cat lista.json |./jq --compact-output '{ "index": { "_type": "holandia" } }, .' > lista.bulk
 ```
 
-![screen_z_terminala](../../images/jgalka/Tworzenie_jsona_przeplatanego.png)
+![screen_z_terminala](../../images/ppuchalski/Tworzenie_jsona_przeplatanego.png)
 
 Ponieważ import całego pliku się nie powiódł podzieliłem go na mniejsze części.
 
@@ -112,7 +112,7 @@ A następnie już bez problemów dokonałem importu.
 ```sh
 time for i in x*; do curl -s -XPOST   localhost:9200/data/_bulk --data-binary @$i; done
 ```
-![screen_z_terminala](../../images/jgalka/Import_do_ES.png)
+![screen_z_terminala](../../images/ppuchalski/Import_do_ES.png)
 
 * Wyświetla regiony z największą ilością osób urodzonych pomiędzy rokiem 1955 a 1965
 
@@ -197,7 +197,7 @@ wynik
       }
 ```
 
-![elasticsearch_01](../../images/jgalka/ES_agr_01.png)
+![elasticsearch_01](../../images/ppuchalski/ES_agr_01.png)
 
 * Wyświetlenie 10 firm z najwiekszą ilością zatrudnionych osób o stanie cywilnym tzw. "singiel".
 
@@ -246,10 +246,10 @@ wynik
       }
 ```
 
-![elasticsearch_02](../../images/jgalka/ES_agr_02.png)
+![elasticsearch_02](../../images/ppuchalski/ES_agr_02.png)
 
 Przykładowe screeny z pracy z ElasticSearch w przeglądarce przy użyciu wtyczki ElasticSearch-Head. 
 
-![elasticsearch_02](../../images/jgalka/screen_ES2.png)
-![elasticsearch_02](../../images/jgalka/screen_ES.png)
+![elasticsearch_02](../../images/ppuchalski/screen_ES2.png)
+![elasticsearch_02](../../images/ppuchalski/screen_ES.png)
 
