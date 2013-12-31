@@ -422,8 +422,22 @@ MongoDB:
 
 Elasticsearch:
 
+10 najpopularniejszych kodowań lsoa wykorzystywanych do identyfikacji:
+
 ```js
-a
+{
+   "query" : {
+       "query_string" : {"query" : "*"}
+   },
+   "facets" : {
+       "lsoa_code" : {
+           "terms" : {
+               "field" : "lsoa_code",
+			   "size" : 10
+           }
+       }
+   }
+}
 ```
 
 ![5](../../images/jbelcik/wykres5.jpg)
