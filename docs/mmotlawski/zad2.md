@@ -39,7 +39,7 @@ tar -xvf getglue_sample.tar.gz
 Od razu nadaje się do importu. Polecenie `time` mierzymy ile czasu zajął import.
 
 ```sh
-time mongoimport -d imdb -c imdb --type json --file getglue_sample.json
+time mongoimport -d movedb -c movedb --type json --file getglue_sample.json
 ```
 
 ###Czas
