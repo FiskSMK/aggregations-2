@@ -83,7 +83,7 @@ Baza po oczyszczeniu zawiera 1 942 872 rekordów.
 mongoimport --db nosql --headerline --collection activities --type csv subjects.csv
 ```
 
-###Agregacja 1### 
+### Agregacja 1 ###
 Jaki jest średni puls podczas wykonywania danej aktywności?
 
 ```
