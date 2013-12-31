@@ -28,7 +28,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Dermont, Jacek](/docs/jdermont.md). [Albumy muzyczne](/docs/jdermont_albumy_muzyczne.md).
 1. [Detlaf, Krzysztof](/docs/kdetlaf.md).
 1. [Dępczyk, Michał](/docs/mdepczyk.md). [Broadband coverage](/docs/mdepczyk/zadanie2.md).
-1. [Domurat, Szymon](/docs/sdomurat.md).
+1. [Domurat, Szymon](/docs/sdomurat.md). [Youtube](/docs/sdomurat_youtube.md).
 1. [Duwe, Oskar](/docs/oduwe.md).
 1. [Gałka, Jacek](/docs/jgalka/README.md).
 1. [Gniado, Bartosz](/docs/bgniado/README.md).
@@ -54,11 +54,11 @@ mongo --username student --password sesja2013 153.19.1.202/test
 >>>>>>> c0b5b7501effba9934b4eedfda68436a80ea8dca
 1. [Motławski, Mateusz](/docs/mmotlawski/README.md).
 1. [Napiórkowski, Sebastian](/docs/sebnapi/README.md)
-1. [Osiński, Miłosz](/docs/mosinski/README.md).
+1. [Osiński, Miłosz](/docs/mosinski/README.md). [Lista słów do gier](/docs/mosinski/zadanie2.md).
 1. [Paczyński, Łukasz](/docs/lpaczynski/README.md).
 1. [Piasecka, Aleksandra](/docs/apiasecka.md).
 1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
-1. [Plichta, Oskar](/docs/oplichta.md)
+1. [Plichta, Oskar](/docs/oplichta.md).[The Internet Movie Database](/docs/oplichta-imdb.md).
 1. [Puchalski, Paweł](/docs/ppuchalski/README.md).
 1. [Rybarczyk, Karolina](/docs/apiasecka.md).
 1. [Sawicki, Paweł](/docs/psawicki.md).

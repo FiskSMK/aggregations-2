@@ -253,5 +253,3 @@ MongoDB version: 2.5.2
                 } } )
   ```
 #### wyniki: [JSON](../../data/mosinski/in_pomorskie.json), [Mapka](../../data/mosinski/in_pomorskie.geojson)
-
-# Zadanie 2
