@@ -1,6 +1,19 @@
-# *Konrad Mieszała*
+ *Konrad Mieszała*
 
 Do rozwiązania problemu użyłem pliku xls z wymyślonymi danymi, który otrzymałem od Meritum Banku, w ramach zajęć z innego przedmiotu. Zapisałem plik xls jako plik csv. 
+
+#MongoDb
+### Zapisanie danych w bazie MongoDB:
+```sh
+cat Drugi.csv | replace "\n" " " | replace "\r" "\n" > DrugiPrzerobiony.csv
+```
+
+Po pozbyciu się białych znaków przeszedłem do importowania danych:
+```sh
+mongoimport --type csv -c Drugi --file DrugiPrzerobiony.csv --headerline
+```
+![](../images/kmieszala/drugie1.JPG)
+
 ### Przykładowy rekord:
 ```sh
 konrad@Konrad:~$ mongo
@@ -8,32 +21,20 @@ MongoDB shell version: 2.4.8
 connecting to: test
 > db.Drugi.findOne()
 {
-	"_id" : ObjectId("52c0a38b938b72a6fc3885bd"),
-	"data_pisma" : "21-11-2013",
-	"imie_nazwisko" : "Nikka Griffi",
-	"azwa_ulicy" : "Krucza",
-	"kod_pocztowy" : "67-740",
-	"miejscowosc" : "Tylewice",
-	"sygnatura" : "Z/282256",
-	"data_wplywu_pisma" : "26-01-2012",
-	"zadluzenie" : 300000,
-	"nast_rata" : 30367.34,
-	"ile_rat" : 245,
-	"imie_matki" : "Edie"
+        "_id" : ObjectId("52c0a38b938b72a6fc3885bd"),
+        "data_pisma" : "21-11-2013",
+        "imie_nazwisko" : "Nikka Griffi",
+        "nazwa_ulicy" : "Krucza",
+        "kod_pocztowy" : "67-740",
+        "miejscowosc" : "Tylewice",
+        "sygnatura" : "Z/282256",
+        "data_wplywu_pisma" : "26-01-2012",
+        "zadluzenie" : 300000,
+        "nast_rata" : 30367.34,
+        "ile_rat" : 245,
+        "imie_matki" : "Edie"
 }
-> 
-
-```
-### Zapisanie danych w bazach MongoDB:
-```sh
-cat Drugi.csv | replace "\n" " " | replace "\r" "\n" > DrugiPrzerobiony.csv
-```
-Po pozbyciu się białych znaków przeszedłem do importowania danych:
-```sh
-mongoimport --type csv -c Drugi --file DrugiPrzerobiony.csv --headerline
-```
-![](../images/kmieszala/drugie1.JPG)
-
+>
 ### Agragacje MongoDB
 10 najczęściej występujących miejscowości:
 ```sh
@@ -112,6 +113,46 @@ Ilość osób którym zostało od 41 do 50 rat:
 { "result" : [ { "_id" : null, "count" : 100 } ], "ok" : 1 }
 ```
 ![](../images/kmieszala/drugie3.JPG)
+
+#Elasticsearch
+### Import do Elasticsearch
+Eksport danych z Mongo
+```sh
+mongoexport -d test -c Drugi -o Drugi.json
+```
+Przygotowanie danych:
+```sh
+jq --compact-output '{ "index" : { "_type" : "Meritum" } }, .' Drugi.json > Drugi2.json
+```
+Podzielenie pliku na 100000 linii:
+```sh
+split -l 100000 Drugi2.json
+```
+Import do bazy:
+```sh
+for i in x*; do curl -s -XPOST   localhost:9200/Banki/_bulk --data-binary @$i; done
+```
+Sprawdzenie:
+```sh
+konrad@Konrad:~/Pobrane/zad2NoSql$ curl -XGET 'http://localhost:9200/Banki/Meritum/_count' ; echo
+{"count":1000000,"_shards":{"total":5,"successful":5,"failed":0}}
+```
+Pełen sukces!!!
+![](../images/kmieszala/drugie3.JPG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
