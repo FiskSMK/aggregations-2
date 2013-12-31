@@ -54,7 +54,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Paczyński, Łukasz](/docs/lpaczynski/README.md).
 1. [Piasecka, Aleksandra](/docs/apiasecka.md).
 1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
-1. [Plichta, Oskar](/docs/oplichta.md)
+1. [Plichta, Oskar](/docs/oplichta.md).[The Internet Movie Database](/docs/oplichta-imdb.md).
 1. [Puchalski, Paweł](/docs/ppuchalski/README.md).
 1. [Rybarczyk, Karolina](/docs/apiasecka.md).
 1. [Sawicki, Paweł](/docs/psawicki.md).
