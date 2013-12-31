@@ -41,7 +41,7 @@ sys     0m0.031s
 
 Przykładowy rekord:
 
-```json
+```js
 > db.streetLevelCrime.findOne()
 {
         "_id" : ObjectId("52c1b350ed50916ae256fcd6"),
@@ -123,13 +123,13 @@ Przykładowy rekord:
 
 ```js
 > db.streetLevelCrime.aggregate(
+>	{ $match: { lsoa_name: { $ne: "" } } },
 >	{ $group: {
 >		_id: "$lsoa_name",
 >		total: { $sum: 1 },
 >	} },
 >	{ $sort: { total: -1 } },
->	{ $limit: 6 },
->	{ $skip: 1 }
+>	{ $limit: 5 }
 > )
 {
         "result" : [
@@ -158,23 +158,19 @@ Przykładowy rekord:
 }
 
 > db.streetLevelCrime.aggregate(
->	{ $match : { lsoa_name : "Leeds 111B" } },
+>	{ $match : { lsoa_name : "Leeds 111B", last_outcome_category: { $ne: "" } } },
 >	{ $group: {
 >		_id: "$last_outcome_category",
 >		total: { $sum: 1 },
 >	} },
 >	{ $sort: { total: -1 } },
->	{ $limit: 4 }
+>	{ $limit: 3 }
 > )
 {
         "result" : [
                 {
                         "_id" : "No further action at this time",
                         "total" : 1175
-                },
-                {
-                        "_id" : "",
-                        "total" : 555
                 },
                 {
                         "_id" : "Under investigation",
@@ -189,13 +185,13 @@ Przykładowy rekord:
 }
 
 > db.streetLevelCrime.aggregate(
->	{ $match : { lsoa_name : "Westminster 018A" } },
+>	{ $match : { lsoa_name : "Westminster 018A", last_outcome_category: { $ne: "" } } },
 >	{ $group: {
 >		_id: "$last_outcome_category",
 >		total: { $sum: 1 },
 >	} },
 >	{ $sort: { total: -1 } },
->	{ $limit: 4 }
+>	{ $limit: 3 }
 > )
 {
         "result" : [
@@ -208,10 +204,6 @@ Przykładowy rekord:
                         "total" : 684
                 },
                 {
-                        "_id" : "",
-                        "total" : 311
-                },
-                {
                         "_id" : "Offender given a caution",
                         "total" : 174
                 }
@@ -220,13 +212,13 @@ Przykładowy rekord:
 }
 
 > db.streetLevelCrime.aggregate(
->	{ $match : { lsoa_name : "Westminster 013E" } },
+>	{ $match : { lsoa_name : "Westminster 013E", last_outcome_category: { $ne: "" } } },
 >	{ $group: {
 >		_id: "$last_outcome_category",
 >		total: { $sum: 1 },
 >	} },
 >	{ $sort: { total: -1 } },
->	{ $limit: 4 }
+>	{ $limit: 3 }
 > )
 {
         "result" : [
@@ -239,10 +231,6 @@ Przykładowy rekord:
                         "total" : 668
                 },
                 {
-                        "_id" : "",
-                        "total" : 252
-                },
-                {
                         "_id" : "Offender given a caution",
                         "total" : 66
                 }
@@ -251,13 +239,13 @@ Przykładowy rekord:
 }
 
 > db.streetLevelCrime.aggregate(
->	{ $match : { lsoa_name : "Westminster 013B" } },
+>	{ $match : { lsoa_name : "Westminster 013B", last_outcome_category: { $ne: "" } } },
 >	{ $group: {
 >		_id: "$last_outcome_category",
 >		total: { $sum: 1 },
 >	} },
 >	{ $sort: { total: -1 } },
->	{ $limit: 4 }
+>	{ $limit: 3 }
 > )
 {
         "result" : [
@@ -270,10 +258,6 @@ Przykładowy rekord:
                         "total" : 522
                 },
                 {
-                        "_id" : "",
-                        "total" : 212
-                },
-                {
                         "_id" : "Offender given a caution",
                         "total" : 128
                 }
@@ -282,23 +266,19 @@ Przykładowy rekord:
 }
 
 > db.streetLevelCrime.aggregate(
->	{ $match : { lsoa_name : "Manchester 054C" } },
+>	{ $match : { lsoa_name : "Manchester 054C", last_outcome_category: { $ne: "" } } },
 >	{ $group: {
 >		_id: "$last_outcome_category",
 >		total: { $sum: 1 },
 >	} },
 >	{ $sort: { total: -1 } },
->	{ $limit: 4 }
+>	{ $limit: 3 }
 > )
 {
         "result" : [
                 {
                         "_id" : "No further action at this time",
                         "total" : 735
-                },
-                {
-                        "_id" : "",
-                        "total" : 407
                 },
                 {
                         "_id" : "Under investigation",
@@ -314,3 +294,77 @@ Przykładowy rekord:
 ```
 
 ![2](../../images/jbelcik/wykres2.jpg)
+
+
+![3](../../images/jbelcik/wykres3.jpg)
+
+TEMP:
+
+```js
+> db.streetLevelCrime.aggregate(
+>	{ $group: {
+>		_id: { month: "$month", location: "$location"},
+>		total: { $sum: 1 }
+>	} },
+> 	{ $sort: { total: -1 } },
+>	{ $group: {
+>		_id: "$_id.month",
+>		safe: { $first: "$_id.location" },
+>		safeCount: { $first: "$total" },
+>		notsafe: { $last: "$_id.location" },
+>		notSafeCount: { $last: "$total" },
+>	} }
+> )
+{
+        "result" : [
+                {
+                        "_id" : "2013-10",
+                        "safe" : "On or near Supermarket",
+                        "safeCount" : 7974,
+                        "notsafe" : "On or near Shakespeare Terrace",
+                        "notSafeCount" : 1
+                },
+                {
+                        "_id" : "2013-09",
+                        "safe" : "On or near Supermarket",
+                        "safeCount" : 7982,
+                        "notsafe" : "On or near Tansley Drive",
+                        "notSafeCount" : 1
+                },
+                {
+                        "_id" : "2013-08",
+                        "safe" : "On or near Supermarket",
+                        "safeCount" : 8451,
+                        "notsafe" : "On or near May Pole Knap",
+                        "notSafeCount" : 1
+                },
+                {
+                        "_id" : "2013-07",
+                        "safe" : "On or near Supermarket",
+                        "safeCount" : 8592,
+                        "notsafe" : "On or near Catterick Avenue",
+                        "notSafeCount" : 1
+                }
+        ],
+        "ok" : 1
+}
+```
+
+![4](../../images/jbelcik/wykres4.jpg)
+
+TEMP:
+
+db.streetLevelCrime.aggregate(
+	{ $match: { lsoa_name: { $ne: "" }, last_outcome_category: { $ne: "" } } },
+	{ $group: {
+		_id: { lsoa_name: "$lsoa_name", last_outcome_category: "$last_outcome_category" },
+		total: { $sum: 1 },
+	} },
+	{ $sort: { total: -1 } },
+	{ $limit: 24 },
+	{ $group: {
+		_id: "$_id.last_outcome_category",
+		total2: { $sum: 1 },
+	} },
+	{ $sort: { total2: -1 } }
+)
