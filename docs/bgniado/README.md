@@ -137,7 +137,7 @@ Tak jak w zadaniu nr jeden, początkowe duże zapotrzebowanie na zasoby:
 ![img](../../images/bgniado/zad2_mongo_import_start.png)
 
 Zmalało z czasem:
-![img](../../images/bgniado/zad2_mongo_import_40p.png)
+![img](../../images/bgniado/zad2_import_mongo_40p.png)
 
 Sprawdzenie czy ilość się zgadza:
 
