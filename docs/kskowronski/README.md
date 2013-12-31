@@ -128,7 +128,7 @@ Date,Temperature
 
 **Wnioski**
 
-W Edenburgu we wszystkie dni (małym wyjątkiem) temperatura jest powyżej zera.
+W Edenburgu we wszystkie dni (z małym wyjątkiem) temperatura maksymalna jest powyżej zera.
 
 ### Ilość opadów w miesiącach ###
 
