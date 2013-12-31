@@ -97,5 +97,5 @@ Niestety nie zaimportowały się wszystkie rekordy zamiast 2 000 000 jest 1 999 
 
 Zrzut z ElasticSearch (plugin):
 
-![zrzut](/images/progaszewski/es.png) 
+![zrzut](../../images/progaszewski/es.png) 
 
