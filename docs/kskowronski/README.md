@@ -159,7 +159,7 @@ Month,Rainfall
 
 **Wykres**
 
-![Pogoda - wykres](../images/kskowronski/opady.png)
+![Pogoda - wykres](http://s18.postimg.org/41rasvc89/opady.png)
 
 **Wnioski**
 
