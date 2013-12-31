@@ -6,12 +6,12 @@ Procesor Intel Core i3-2350M @ 2x2.30GHz
 
 "ogarnięcie" pliku Train.csv:
 ```
->cat Train.csv | tr -d '\n' | sed 's/\r/\r\n/g' > Train2.csv
+$: cat Train.csv | tr -d '\n' | sed 's/\r/\r\n/g' > Train2.csv
 ```
 
 po wykonaniu powyższego, zaimportowałem dane z pliku csv do bazy:
 ```
->time mongoimport --collection Train --type csv --file Train2.csv --headerline
+$: time mongoimport --collection Train --type csv --file Train2.csv --headerline
 ```
 
 ###Czasy wykonania:
@@ -110,3 +110,57 @@ gdzie xx to odpowiednia liczba, w tym wypadku 1, 10, 100, 1000
 
 Wyniki na konsoli:
 ![img](../../images/bgniado/procenty_slow_zad1d.png)
+
+
+
+##Zadanie 2
+
+Przygotowanie pliku z jsonami (ograniczenie do 3 000 000 rekordów):
+
+```
+$: time head -n 3000000 getglue_sample.json | prepared.json
+
+real	1m29.378s
+user	0m2.752s
+sys		0m10.844s
+```
+![img](../../images/bgniado/zad2_preparedjson.png)
+
+###MongoDB:
+
+Import do bazy danych:
+
+```
+$: mongoimport --collection glue --type json --file prepared.json
+```
+Tak jak w zadaniu nr jeden, początkowe duże zapotrzebowanie na zasoby:
+![img](../../images/bgniado/zad2_mongo_import_start.png)
+
+Zmalało z czasem:
+![img](../../images/bgniado/zad2_mongo_import_40p.png)
+
+Sprawdzenie czy ilość się zgadza:
+
+```
+>db.glue.count()
+>3000000
+```
+![img](../../images/bgniado/zad2_dbcount.png)
+
+Mam spore (bardzo) problemy ze swoim systemem, które postaram się wyeliminować jak najszybciej. Nie mogę zainstalować odpowiedniej wersji mongodb obsługującej metodę db.collection.aggregate(). Poprzednie zadania robiłem na uprzednio przygotowanych maszynach wirtualnych, przez co nie było z tym problemu. Zapotrzebowanie natomiast na dużo więcej miejsca skutecznie zredukowało możliwość pracy z VirtualBoxem. Agregacje dotyczyć będą ilości użytkowników, oraz wypisania kilku użytkowników z największą liczbą komentarzy (najbardziej aktywnych). 
+
+Lista użytkowników:
+```
+coll.aggregate(
+  { $group: {_id: "$userId" }
+);
+```
+
+Lista 10 użytkowników z największą ilością komentarzy:
+```
+coll.aggregate(
+  { $group: {_id: "$userId", count: {$sum: 1}} },
+  { $sort: {count: -1} },
+  { $limit: 10}
+);
+```
