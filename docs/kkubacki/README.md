@@ -138,3 +138,9 @@ Wynik zapytania: [tutaj](/docs/kkubacki/zapytania/zap6)
 ####Pierwsza agregacja mongodb , policz ile jest różnych typów lotnisk. [zapytanie](/docs/kkubacki/zapytania/mongoQuery1.js)
 ####[Wynik zapytania ](/docs/kkubacki/zapytania/WynikMongo1.txt)
 
+####Druga agregacja dla mongodb, policz ile jest lotnisc w poszczególnych krajach.
+####Wyniki mogą być zaskoczeniem, w Polsce jest niby 170 lotnisk! [Oto one](/docs/kkubacki/zapytania/LotniskaPolskie.txt)
+
+
+
+
