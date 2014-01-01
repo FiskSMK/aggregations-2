@@ -60,7 +60,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Sawicki, Paweł](/docs/psawicki.md).
 1. [Siora, Kacper](/docs/ksiora/README.md).
 1. [Skiba, Marek](/docs/mskiba/README.md).
-1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md).
+1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md). [Pogoda w Edenburgu](/docs/kskowronski/README.md).
 1. [Smykowski, Adrian](/docs/asmykowski/README.md).
 1. [Sott, Tomasz](/docs/tsott/README.md).
 1. [Stefanowicz, Michał](/docs/mstefanowicz.md).
