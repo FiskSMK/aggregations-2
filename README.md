@@ -65,7 +65,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Sott, Tomasz](/docs/tsott/README.md).
 1. [Stefanowicz, Michał](/docs/mstefanowicz.md).
 1. [Szygenda, Mateusz](/docs/mszygenda.md). [Wypadki drogowe](/docs/mszygenda-accidents.md).
-1. [Tomczak, Robert](/docs/rtomczak/README.md).
+1. [Tomczak, Robert](/docs/rtomczak/README.md). [The Internet Movie Database](/docs/rtomczak/zadanie2.md).
 1. [Wąsowicz, Michał](/docs/mwasowicz.md).
 1. [Winsławski, Bartłomiej](/docs/bwinslawski.md). [Zadanie 2.](/docs/bwinslawski2.md).
 1. [Wiśniewski, Konrad](/docs/kwisniewski/kwisniewski.md).
