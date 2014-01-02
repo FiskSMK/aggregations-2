@@ -13,7 +13,7 @@ GDELT is designed to help support new theories and descriptive understandings of
 - See more at: http://gdelt.utdallas.edu/about.html#sthash.9j8Oyn6K.dpuf
 
 --------------------------------------------------------------------------------------------------------------------------
-
+##MongoDB
 ### Przygotowanie danych do importu.
 
 Powyżej opisana baza danych posiada dane z kilku lat i zatem miliony rekordów. Ja dla przykładu przygotowałem katalog z danymi z rocznika 1991 oraz 1993. 
@@ -46,7 +46,126 @@ time mongoimport --db gdelt --collection events--type json --file reduced_data_1
 ```
 
 ###Czas importu ok. 1min 20sek.
+![img](../../images/dbrzezinski/procesorr.png)
 ###Przykładowy rekord, oraz zliczenie kolekcji.
 ![img](../../images/dbrzezinski/przyk_json_count.png)
 
-####AGREGACJE JUŻ WKRÓTCE!....
+##AGREGACJE 
+Za pomocą [skryptu](../../scripts/dbrzezinski/agre1_mdb.rb) policzyłem ile jest wszystkich eventów a w szczególności ile jest różnych eventów.
+
+```
+$ time ruby skrypt1.rb 
+Wszystkie eventy: 1168616
+Różne eventy: 250
+
+real	0m1.636s
+user	0m0.154s
+sys	0m0.100s
+
+```
+###a) 10 najczęściej odbywających się wydarzeń
+
+```
+ db.events.aggregate({$group:{_id: "$EventCode", count:{$sum: 1}}},{$sort:{count: -1}},{$limit: 10});
+
+{
+	"result" : [
+		{
+			"_id" : 40,
+			"count" : 96643
+		},
+		{
+			"_id" : 42,
+			"count" : 92531
+		},
+		{
+			"_id" : 43,
+			"count" : 90844
+		},
+		{
+			"_id" : 10,
+			"count" : 75939
+		},
+		{
+			"_id" : 46,
+			"count" : 71750
+		},
+		{
+			"_id" : 36,
+			"count" : 55415
+		},
+		{
+			"_id" : 20,
+			"count" : 53006
+		},
+		{
+			"_id" : 190,
+			"count" : 51970
+		},
+		{
+			"_id" : 51,
+			"count" : 41819
+		},
+		{
+			"_id" : 173,
+			"count" : 28314
+		}
+	],
+	"ok" : 1
+}
+
+```
+![img](../../images/dbrzezinski/eventy_wykr.png)
+
+###b) 10 Państw które najczęściej uczestniczyły w jakichkolwiek eventach.
+
+```
+> db.events.aggregate({$group:{_id: "$Actor2Code", count:{$sum: 1}}},{$sort:{count: -1}},{$limit: 10});
+{
+	"result" : [
+		{
+			"_id" : "GOV",
+			"count" : 93666
+		},
+		{
+			"_id" : "USA",
+			"count" : 61407
+		},
+		{
+			"_id" : "RUS",
+			"count" : 35844
+		},
+		{
+			"_id" : "MIL",
+			"count" : 31564
+		},
+		{
+			"_id" : "ISR",
+			"count" : 30724
+		},
+		{
+			"_id" : "IRQ",
+			"count" : 27450
+		},
+		{
+			"_id" : "LEG",
+			"count" : 22820
+		},
+		{
+			"_id" : "MED",
+			"count" : 21299
+		},
+		{
+			"_id" : "CVL",
+			"count" : 20717
+		},
+		{
+			"_id" : "COP",
+			"count" : 19419
+		}
+	],
+	"ok" : 1
+}
+
+```
+![img](../../images/dbrzezinski/panstwa_2.png)
