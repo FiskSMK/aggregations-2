@@ -49,3 +49,8 @@ time mongoimport -d movedb -c movedb --type json --file getglue_sample.json
 real  57m58.013s
 
 ```
+
+
+##Agregacje
+
+###Agregacja 1
