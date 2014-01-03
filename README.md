@@ -73,7 +73,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 
 ----
 
-1. Białkowski, Dominik.
+1. [Białkowski, Dominik](/docs/dbialkowski.md).
 1. Cała, Mariusz.
 1. Dobrzycki, Wojciech.
 1. Dolata, Jędrzej.
