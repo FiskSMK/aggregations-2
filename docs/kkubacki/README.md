@@ -131,7 +131,7 @@ db.geo_points.find({ loc:
     type: "Summit",
     height: {$lt:3000} })
 ```
-Wynik zapytania: [tutaj](/docs/kkubacki/zapytania/zap6.json)
+Wynik zapytania: [tutaj](/docs/kkubacki/zapytania/zap6.geojson)
 
 ## Zadanie 2 
 ####Znalazłem bazę która przechowuję dane o lotniskach na świecie, bazę można pobrać z http://www.ourairports.com/data/airports.csv
