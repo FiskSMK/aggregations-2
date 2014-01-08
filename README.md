@@ -47,7 +47,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Małecki, Maciej](/docs/mmalecki/README.md).
 1. [Matulewski, Damian](/docs/dmatulewski.md). [Głosowanie](/docs/dmatulewski_glosowanie.md).
 1. [Melzer, Grzegorz](/docs/gmelzer.md). [GetGlue – TIMDB](/docs/gmelzer/gmelzer2.md).
-1. [Mieszała, Konrad](/docs/kmieszala.md).[Bankowość](/docs/kmieszala_MeritumBank.md).
+1. [Mieszała, Konrad](/docs/kmieszala.md). [Bankowość](/docs/kmieszala_MeritumBank.md).
 1. [Motel, Mateusz](/docs/mmotel/zadanie1.md). [The Internet Movie Database](/docs/mmotel/zadanie2.md).
 1. [Motławski, Mateusz](/docs/mmotlawski/README.md).
 1. [Napiórkowski, Sebastian](/docs/sebnapi/README.md)
@@ -61,7 +61,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Sawicki, Paweł](/docs/psawicki.md).
 1. [Siora, Kacper](/docs/ksiora/README.md).
 1. [Skiba, Marek](/docs/mskiba/Zadanie1.md). [Apache Logs](/docs/mskiba/Zadanie2.md).
-1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md). [Pogoda w Edenburgu](/docs/kskowronski/README.md).
+1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md). [Pogoda w Edynburgu](/docs/kskowronski/README.md).
 1. [Smykowski, Adrian](/docs/asmykowski/README.md).
 1. [Sott, Tomasz](/docs/tsott/README.md). [BTS – On-Time Performance](/docs/tsott/zadanie2.md).
 1. [Stefanowicz, Michał](/docs/mstefanowicz.md).
