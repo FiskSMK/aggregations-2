@@ -1,4 +1,4 @@
-﻿# UFO w USA #
+# UFO w USA #
 
 ###Bartłomiej Pietraszuk###
 
