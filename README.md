@@ -230,7 +230,7 @@ Zobacz też:
 * Scott Chacon, [6.4 Git Tools - Rewriting History](http://git-scm.com/book/en/Git-Tools-Rewriting-History)
 
 
-## 5 Simple Rules for Reproducible Computations
+## 3 Simple Rules for Reproducible Computations
 
 Provide public access to scripts, runs, and results:
 
@@ -244,10 +244,14 @@ Provide public access to scripts, runs, and results:
   - if it’s not automated, it’s not part of the project,
     i.e. have an idea for a graph or an analysis?
     automate its generation
-1. Use a markup, for example [**Markdown**](http://daringfireball.net/projects/markdown/syntax),
+1. Use a markup, for example
+   [**Markdown**](http://daringfireball.net/projects/markdown/syntax),
    to create reports for analysis and presentation output products.
-1. Connect textual statements to underlying results.
+
+And two more rules:
+
 1. Record all intermediate results, when possible in standardized formats.
+1. Connect textual statements to underlying results.
 
 
 ## Generowanie spisu treści
