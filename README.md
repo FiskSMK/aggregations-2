@@ -24,6 +24,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 
 1. Bzyl, Włodzimierz. [Imieniny](/docs/wbzyl.md).
 1. [Bełcik, Jakub](/docs/jbelcik/README.md).
+1. [Białkowski, Dominik](/docs/dbialkowski.md). [Current Census Blocks for McKinley County](/docs/dbialkowski2.md).
 1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md).
 1. [Dermont, Jacek](/docs/jdermont.md). [Albumy muzyczne](/docs/jdermont_albumy_muzyczne.md).
 1. [Detlaf, Krzysztof](/docs/kdetlaf.md).
@@ -70,10 +71,10 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Winsławski, Bartłomiej](/docs/bwinslawski.md). [Zadanie 2.](/docs/bwinslawski2.md).
 1. [Wiśniewski, Konrad](/docs/kwisniewski/kwisniewski.md).
 1. [Zdunek, Kamil](/docs/kzdunek/README.md).
+1. Żarkowski, Mateusz. [PAMAP - Physical Activity Monitoring](/docs/mzarkowski-pamap.md).
 
 ----
 
-1. [Białkowski, Dominik](/docs/dbialkowski.md). [Current Census Blocks for McKinley County](/docs/dbialkowski2.md).
 1. Cała, Mariusz.
 1. Dobrzycki, Wojciech.
 1. Dolata, Jędrzej.
@@ -87,7 +88,6 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Pietraszuk, Bartłomiej.
 1. Rogaszewski, Piotr.
 1. Wiśniewski, Piotr.
-1. Żarkowski, Mateusz. [PAMAP - Physical Activity Monitoring](/docs/mzarkowski-pamap.md).
 
 
 ## BigData (+1M)
