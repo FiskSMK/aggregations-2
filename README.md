@@ -46,7 +46,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Łuczun, Rafał](/docs/rluczun/README.md).
 1. [Małecki, Maciej](/docs/mmalecki/README.md).
 1. [Matulewski, Damian](/docs/dmatulewski.md). [Głosowanie](/docs/dmatulewski_glosowanie.md).
-1. [Melzer, Grzegorz](/docs/gmelzer.md). [GetGlue — TIMDB](/docs/gmelzer/gmelzer2.md).
+1. [Melzer, Grzegorz](/docs/gmelzer.md). [GetGlue – TIMDB](/docs/gmelzer/gmelzer2.md).
 1. [Mieszała, Konrad](/docs/kmieszala.md).[Bankowość](/docs/kmieszala_MeritumBank.md).
 1. [Motel, Mateusz](/docs/mmotel/zadanie1.md). [The Internet Movie Database](/docs/mmotel/zadanie2.md).
 1. [Motławski, Mateusz](/docs/mmotlawski/README.md).
@@ -55,7 +55,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Paczyński, Łukasz](/docs/lpaczynski/README.md).
 1. [Piasecka, Aleksandra](/docs/apiasecka.md).
 1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
-1. [Plichta, Oskar](/docs/oplichta.md).[The Internet Movie Database](/docs/oplichta-imdb.md).
+1. [Plichta, Oskar](/docs/oplichta.md). [The Internet Movie Database](/docs/oplichta-imdb.md).
 1. [Puchalski, Paweł](/docs/ppuchalski/README.md).
 1. [Rybarczyk, Karolina](/docs/apiasecka.md).
 1. [Sawicki, Paweł](/docs/psawicki.md).
@@ -63,7 +63,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Skiba, Marek](/docs/mskiba/Zadanie1.md). [Apache Logs](/docs/mskiba/Zadanie2.md).
 1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md). [Pogoda w Edenburgu](/docs/kskowronski/README.md).
 1. [Smykowski, Adrian](/docs/asmykowski/README.md).
-1. [Sott, Tomasz](/docs/tsott/README.md). [BTS — On-Time Performance](/docs/tsott/zadanie2.md).
+1. [Sott, Tomasz](/docs/tsott/README.md). [BTS – On-Time Performance](/docs/tsott/zadanie2.md).
 1. [Stefanowicz, Michał](/docs/mstefanowicz.md).
 1. [Szygenda, Mateusz](/docs/mszygenda.md). [Wypadki drogowe](/docs/mszygenda-accidents.md).
 1. [Tomczak, Robert](/docs/rtomczak/README.md). [The Internet Movie Database](/docs/rtomczak/zadanie2.md).
@@ -71,7 +71,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Winsławski, Bartłomiej](/docs/bwinslawski.md). [Zadanie 2](/docs/bwinslawski2.md).
 1. [Wiśniewski, Konrad](/docs/kwisniewski/kwisniewski.md).
 1. [Zdunek, Kamil](/docs/kzdunek/README.md).
-1. Żarkowski, Mateusz. [PAMAP — Physical Activity Monitoring](/docs/mzarkowski-pamap.md).
+1. Żarkowski, Mateusz. [PAMAP – Physical Activity Monitoring](/docs/mzarkowski-pamap.md).
 
 ----
 
