@@ -54,3 +54,78 @@ real  57m58.013s
 ##Agregacje
 
 ###Agregacja 1
+
+#Elasticsearch
+
+##Import
+
+Próba zaimportowania całego pliku do bazy zakończyła się otrzymaniem komunikatu `out of memory`.
+
+Aby zaimportować plik do bazy podzielimy go na mniejsze części.
+
+```sh
+split -l 200000 getglue_sample.bulk
+```
+A nastepnie importujemy pliki w pętli:
+
+```sh
+for i in x*; do curl -s -XPOST localhost:9200/data/_bulk --data-binary @$i > /dev/null; echo $i; done
+```
+####Wynik
+
+Sprawdzamy ile obiektów zostało zapisanych w bazie.
+
+```sh
+curl -XGET 'http://localhost:9200/data/imdb/_count' ; echo
+```
+
+```json
+{"count":19766542,"_shards":{"total":1,"successful":1,"failed":0}}
+```
+
+Zaimportowało się `19 766 542`. `64 758` obiektów zostało odrzuconych z powodu złego formatu daty.
+
+###Agregacja 1
+
+Agregacja miała policzyc ile razy wystepuje "tv_shows"
+
+####Kod agregacji
+
+```json
+{
+    "query": {
+        "match_all": {}
+    },
+    "facets": {
+        "modelName": {
+            "terms": {
+                "field" : "modelName",
+                "size" : "10"
+            },
+        "facet_filter" : {
+        "term" : { "modelName" : "tv_shows"}
+
+}
+        }
+    }
+}
+```
+
+####Wynik
+```json
+{
+  "facets": {
+    "modelName": {
+      "terms": [
+        {
+          "count": 12208046,
+          "term": "tv_shows"
+        }
+      ],
+      "other": 0,
+      "total": 12208046,
+      "missing": 0,
+      "_type": "terms"
+    }
+  }
+```
