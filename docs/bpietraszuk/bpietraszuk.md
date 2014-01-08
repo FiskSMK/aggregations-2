@@ -58,7 +58,7 @@ Zliczanie ilości zaimportowanych rekordów
 
 Do zamiany posłużyła mi prosta aplikacja napisana w języku JAVA, z odpowiednim sterownikiem do mongo.
 
-[Test.java](../scripts/bpietraszuk/Test.java)
+[Test.java](../../scripts/bpietraszuk/Test.java)
 
 Czas wykonania: 2m
  
@@ -86,7 +86,7 @@ db.words.aggregate(
 ```
 **Top 10**
 
-![graph](../images/bpietraszuk/top10.png)
+![graph](../../images/bpietraszuk/top10.png)
 
 ```
 db.words.aggregate(
