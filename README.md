@@ -230,7 +230,7 @@ Zobacz też:
 * Scott Chacon, [6.4 Git Tools - Rewriting History](http://git-scm.com/book/en/Git-Tools-Rewriting-History)
 
 
-## Simple Rules for Reproducible Computations
+## 5 Simple Rules for Reproducible Computations
 
 Provide public access to scripts, runs, and results:
 
