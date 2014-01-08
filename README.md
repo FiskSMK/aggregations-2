@@ -73,7 +73,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 
 ----
 
-1. [Białkowski, Dominik](/docs/dbialkowski.md). [Current Census Blocks for McKinley County](/docs/dbialkowski2.md). 
+1. [Białkowski, Dominik](/docs/dbialkowski.md). [Current Census Blocks for McKinley County](/docs/dbialkowski2.md).
 1. Cała, Mariusz.
 1. Dobrzycki, Wojciech.
 1. Dolata, Jędrzej.
@@ -229,7 +229,28 @@ Zobacz też:
 * Chris Wanstrath, [hub makes git better with GitHub](http://defunkt.io/hub/)
 * Scott Chacon, [6.4 Git Tools - Rewriting History](http://git-scm.com/book/en/Git-Tools-Rewriting-History)
 
-# Generowanie spisu treści
+
+## Simple Rules for Reproducible Computations
+
+Provide public access to scripts, runs, and results:
+
+1. Version control all custom scripts:
+  - avoid writing code
+  - **write thin scripts** and use standard tools and use standard UNIX
+    commands to chain things together.
+1. Avoid manual data manipulation steps:
+  - use a build system, for example [**make**](http://bost.ocks.org/mike/make/),
+    and have all results produced automatically by build targets
+  - if it’s not automated, it’s not part of the project,
+    i.e. have an idea for a graph or an analysis?
+    automate its generation
+1. Use a markup, for example [**Markdown**](http://daringfireball.net/projects/markdown/syntax),
+   to create reports for analysis and presentation output products.
+1. Connect textual statements to underlying results.
+1. Record all intermediate results, when possible in standardized formats.
+
+
+## Generowanie spisu treści
 
 Do automatycznego wygenerowania spisu treści możemy użyć narzędzia o
 nazwie [table-of-contents-preprocessor](https://github.com/aslushnikov/table-of-contents-preprocessor).
