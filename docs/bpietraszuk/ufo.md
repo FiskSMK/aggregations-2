@@ -1,19 +1,19 @@
-# UFO w USA #
+ï»¿# UFO w USA #
 
-###Bart³omiej Pietraszuk###
+###BartÅ‚omiej Pietraszuk###
 
 
-## Spis treœci ##
+## Spis treÅ›ci ##
 1. [Dane](#dane)
 2. [Transformacje danych](#transformacje)
-3. [Zadanie 2](#zadanie)
+3. [Zadanie 2](#zadanie-2)
  1. [Import](#import)
  1. [Agregacje](#agregacje)
 
 
 # Dane #
 
-Dane wykorzystane do zadania to informacje o przypadkach zauwa¿enia UFO w USA pochodz¹ce ze strony http://infochimps.com
+Dane wykorzystane do zadania to informacje o przypadkach zauwaÅ¼enia UFO w USA pochodzÄ…ce ze strony http://infochimps.com
 
 infochimps_schema:
   title: Infochimps Simple Schema (ICSS)
@@ -88,24 +88,24 @@ dataset:
       
   fields:
 
- Przyk³adowy rekord
+ Rekord - przykÅ‚ad
 ```
 {"sighted_at": "19950826", "reported_at": "19950828", "location": " Williston, ND", "shape": "", "duration": "10 min.", "description": "Man, wife, and 2 adults witness peculiar, bright white light pacing their car on highway.  Two other lights appear, move around sky."}
 ```
 
-Nazwy pól s¹ jednoznaczne i nie wymagaj¹ opisu.
+Nazwy pÃ³l sÄ… jednoznaczne i nie wymagajÄ… opisu.
 
 
 # Transformacje #
 
-Dane maj¹ doœæ czyst¹ postaæ, nie wymaga³y transformacji.
+Dane majÄ… doÅ›Ä‡ czystÄ… postaÄ‡; nie wymagaÅ‚y transformacji.
 
 
 # Zadanie 2 #
 
 ##Import##
 
-Dane zosta³y zaimportowane do MongoDB nastêpuj¹cymi poleceniami
+Dane zostaÅ‚y zaimportowane do MongoDB nastÄ™pujÄ…cym poleceniem:
 
 ```
 time mongoimport --headerline --collection ufo --type json --file ufo.json
@@ -131,9 +131,7 @@ db.ufo.aggregate({ $group { _id: "$location", total: {$sum 1 }}})
 
 ### Ilosc przypadkow zauwazenia UFO w USA z podzialem na konkretne lata ###
 
-W poleceniu grupowania u¿yto równie¿ funkcji na danych - wyci¹ganie samego roku z daty.
-
-**Polecenie agregacji**
+W poleceniu grupowania uÅ¼yto rÃ³wnieÅ¼ funkcji na danych - wyciÄ…ganie samego roku z daty.
 
 ```
 db.ufo.aggregate(
