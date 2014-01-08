@@ -34,19 +34,19 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Gniado, Bartosz](/docs/bgniado/README.md).
 1. [Groszek, Rafał](/docs/rgroszek/README.md).
 1. [Karczewski, Kamil](/docs/kkarczewski.md).
-1. [Karwowski, Kamil](/docs/kkarwowski.md).
+1. [Karwowski, Kamil](/docs/kkarwowski.MD). [Strony internetowe](/docs/kkarwowski-2.md).
 1. [Kłeczek, Piotr](/docs/pkleczek/README.md).
 1. [Kotłowski, Piotr](docs/pkotlowski/README.md).
 1. [Koźmiński, Marcin](docs/mkozminski/README.md).
 1. [Królik, Przemysław](/docs/pkrolik/zad1.md). [GetGlue IMDB](/docs/pkrolik/zad2.md).
 1. [Kubacki, Konrad](/docs/kkubacki/README.md).
-1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md).
+1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md). [The Internet Movie Database](/docs/mkwiatkowski/zadanie2.md).
 1. [Lewandowska, Marta](/docs/mlewandowska.md).
 1. [Łuczun, Rafał](/docs/rluczun/README.md).
 1. [Małecki, Maciej](/docs/mmalecki/README.md).
-1. [Matulewski, Damian](/docs/dmatulewski.md).
+1. [Matulewski, Damian](/docs/dmatulewski.md). [Głosowanie](/docs/dmatulewski_glosowanie.md).
 1. [Melzer, Grzegorz](/docs/gmelzer.md). [GetGlue - TIMDB](/docs/gmelzer/gmelzer2.md).
-1. [Mieszała, Konrad](/docs/kmieszala.md).
+1. [Mieszała, Konrad](/docs/kmieszala.md).[Bankowość](/docs/kmieszala_MeritumBank.md).
 1. [Motel, Mateusz](/docs/mmotel/zadanie1.md). [The Internet Movie Database](/docs/mmotel/zadanie2.md).
 1. [Motławski, Mateusz](/docs/mmotlawski/README.md).
 1. [Napiórkowski, Sebastian](/docs/sebnapi/README.md)
@@ -59,21 +59,21 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Rybarczyk, Karolina](/docs/apiasecka.md).
 1. [Sawicki, Paweł](/docs/psawicki.md).
 1. [Siora, Kacper](/docs/ksiora/README.md).
-1. [Skiba, Marek](/docs/mskiba/README.md).
-1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md).
+1. [Skiba, Marek](/docs/mskiba/Zadanie1.md). [Apache Logs](/docs/mskiba/Zadanie2.md).
+1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md). [Pogoda w Edenburgu](/docs/kskowronski/README.md).
 1. [Smykowski, Adrian](/docs/asmykowski/README.md).
-1. [Sott, Tomasz](/docs/tsott/README.md).
+1. [Sott, Tomasz](/docs/tsott/README.md). [BTS - On-Time Performance](/docs/tsott/zadanie2.md).
 1. [Stefanowicz, Michał](/docs/mstefanowicz.md).
 1. [Szygenda, Mateusz](/docs/mszygenda.md). [Wypadki drogowe](/docs/mszygenda-accidents.md).
-1. [Tomczak, Robert](/docs/rtomczak/README.md).
+1. [Tomczak, Robert](/docs/rtomczak/README.md). [The Internet Movie Database](/docs/rtomczak/zadanie2.md).
 1. [Wąsowicz, Michał](/docs/mwasowicz.md).
-1. [Winsławski, Bartłomiej](/docs/bwinslawski.md).
+1. [Winsławski, Bartłomiej](/docs/bwinslawski.md). [Zadanie 2.](/docs/bwinslawski2.md).
 1. [Wiśniewski, Konrad](/docs/kwisniewski/kwisniewski.md).
 1. [Zdunek, Kamil](/docs/kzdunek/README.md).
 
 ----
 
-1. Białkowski, Dominik.
+1. [Białkowski, Dominik](/docs/dbialkowski.md). [Current Census Blocks for McKinley County](/docs/dbialkowski2.md). 
 1. Cała, Mariusz.
 1. Dobrzycki, Wojciech.
 1. Dolata, Jędrzej.
@@ -87,7 +87,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Pietraszuk, Bartłomiej.
 1. Rogaszewski, Piotr.
 1. Wiśniewski, Piotr.
-1. Żarkowski, Mateusz.
+1. Żarkowski, Mateusz. [PAMAP - Physical Activity Monitoring](/docs/mzarkowski-pamap.md).
 
 
 ## BigData (+1M)

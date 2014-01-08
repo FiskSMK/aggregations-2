@@ -1,0 +1,35 @@
+MongoDB shell version: 2.4.8
+connecting to: airports
+{
+	"result" : [
+		{
+			"_id" : "small_airport",
+			"count" : 29296
+		},
+		{
+			"_id" : "heliport",
+			"count" : 8910
+		},
+		{
+			"_id" : "medium_airport",
+			"count" : 4531
+		},
+		{
+			"_id" : "closed",
+			"count" : 1259
+		},
+		{
+			"_id" : "seaplane_base",
+			"count" : 905
+		},
+		{
+			"_id" : "large_airport",
+			"count" : 572
+		},
+		{
+			"_id" : "balloonport",
+			"count" : 17
+		}
+	],
+	"ok" : 1
+}

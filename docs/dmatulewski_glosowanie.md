@@ -1,26 +1,24 @@
 ### *Głosowanie - Damian Matulewski*
-### 
+###
 ----
 
 ## Zadanie 2
-* [Zadanie 2](#zadanie-2)
     * [Opis bazy](#opis-bazy)
     * [MongoDB](#mongodb)
-    	* [Import bazy do mongo](#import-bazy-do-mongo)
-    	* [Liczba i przykład](#liczba-i-przykład)
-    	* [Pierwsza aggregacja](#pierwsza-aggregacja)
-    	* [Druga aggregacja](#druga-aggregacja)
+        * [Import bazy do mongo](#import-bazy-do-mongo)
+        * [Pierwsza agregacja](#pierwsza-aggregacja)
+        * [Druga agregacja](#druga-aggregacja)
     * [Elasticsearch](#elasticsearch)
-    	* [Import elasticsearch](#import-elasticsearch)
-    	* [Pierwsza aggregacja elasticsearch](#pierwsza-aggregacja-elasticsearch)
-    	* [Druga aggregacja elasticsearch](#druga-aggregacja-elasticsearch)
+        * [Import elasticsearch](#import-elasticsearch)
+        * [Pierwsza agregacja](#pierwsza-aggregacja-elasticsearch)
+        * [Druga agregacja](#druga-aggregacja-elasticsearch)
 
-	
+   
 
 ## Opis bazy
 
-Baza została pobrana w formacie CSV. Bazę oczyściłem za pomocą google refine.
-Baze danych pobralem z ...
+Baza została pobrana w formacie CSV i została oczyszczona za pomocą google refine.
+Baze danych pobralem ze strony: http://openstates.org/downloads/ dla miasta NY w USA.
 
 ## MongoDB
 
@@ -31,49 +29,88 @@ MongoDB shell version: 2.4.7
 ## Import bazy do mongo
 
 ```bash
-mongoimport --type csv --db vote --collection vote --file vote.csv --headerline
+mongoimport --db vote --collection votes --type csv --file C:/votes.csv
 ```
 ## Liczba i przykład
 ```bash
-> db.vote.count();
-	 wynik=869166
+> db.vote.count()
+     
+    Ilosc rekordów : 886182
 
-> db.video.findOne();
+> db.vote.findOne()
 {
-
-
-
+        "_id" : ObjectId("52b349e1093c8062d690c84d"),
+        "vote_id" : "NYV00004655",
+        "leg_id" : "NYL000025",
+        "name" : "Johnson",
+        "vote" : "yes"
 }
 ```
+
 ## Pierwsza aggregacja:
-Wyświetlenie ile zostało oddano pozytywnych, negatywnych bądz ile osób powstrzymało sie od głosu.
+Wyświetlenie ile zostało oddanych pozytywnych, negatywnych głosów bądź ile osób powstrzymało sie od niego.
 
 ```bash
-> db.video.aggregate
-
+> db.vote.aggregate({ $group: { _id: "$vote", sumka: {$sum: 1}}})
+{
+        "result" : [
+                {
+                        "_id" : "other",
+                        "sumka" : 34590
+                },
+                {
+                        "_id" : "no",
+                        "sumka" : 41807
+                },
+                {
+                        "_id" : "yes",
+                        "sumka" : 809785
+                }
+        ],
+        "ok" : 1
+}
 
 
 ```
 
 Wykres:
-![Wykres1](../images/dmatulewski/Wykres1.png)
+![Diagram](../images/dmatulewski/diagram1.png)
 
 ## Druga aggregacja:
 Top 5 osób które oddały najwięcej głosów.
-	
+   
 ```bash
-db.video.aggregate
+> db.vote.aggregate( [ { $match : { vote : "yes"}}, {$group: { _id: "$name", suma : {$sum: 1 }}}, { $limit: 5 }, { $sort : { suma : -1, posts: 1 } }])
+{
+        "result" : [
+                {
+                        "_id" : "Duprey",
+                        "suma" : 2877
+                },
+                {
+                        "_id" : "Meng",
+                        "suma" : 1222
+                },
+                {
+                        "_id" : "Fahy",
+                        "suma" : 1074
+                },
+                {
+                        "_id" : "Santaba",
+                        "suma" : 1046
+                },
+                {
+                        "_id" : "DiPietr",
+                        "suma" : 762
+                }
+        ],
+        "ok" : 1
+}
 ```
 
 
-```bash
-
-
-
-
-```
 Wykres:
-![Wykres2](../images/dmatulewski/Wykres2.png)
+![Diagram2](../images/dmatulewski/diagram2.png)
 
 ## Elasticsearch
 
@@ -81,34 +118,67 @@ Elasticsearch version : 0.90.9
 
 ### Import elasticsearch
 Wrzuciłem bazę w częściach, ze względu na duży rozmiar danych.
-  
+ 
 ```bash
 curl localhost:9200/vote/_bulk --data-binary @vote1.bulk
 ```
 ## Pierwsza aggregacja elasticsearch:
 
-Wyświetlenie ile zostało oddano pozytywnych, negatywnych bądz ile osób powstrzymało sie od głosu:
+Wyświetlenie ile zostało oddanych pozytywnych, negatywnych głosów bądź ile osób powstrzymało się od niego:
 
-```bash	
-curl -XGET 
+```bash   
 
+ 
+{
+	"query":{
+		"match_all":{}
+		},
+	"facets":
+		{
+		"tags":
+			{"terms":
+				{"field":"vote"}
+		}
+	}
+}
+		
+		
 
 
 
 ```
 Wykres:
-![Wykres3](../images/dmatulewski/Wykres3.png)
+![Diagram](../images/dmatulewski/diagram1.png)
 
 ## Druga aggregacja elasticsearch:
 
 Top 5 osób które oddały najwięcej głosów.
 
 ```bash
-curl -XGET 
+
+{
+  "query" : {
+    "query_string" : {
+       "query" : "yes"
+     }
+  },
+  "filter" : {
+    "term" : {
+      "tag" : "vote"
+     }
+  },
+  "facets" : {
+    "format" : {
+      "terms" : {
+        "field" : "name"
+      }
+    }
+  }
+}
 
 
 
 
 ```
 Wykres:
-![Wykres4](../images/dmatulewski/Wykres4.png)
+![Diagram2](../images/dmatulewski/diagram2.png)
