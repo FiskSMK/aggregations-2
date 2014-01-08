@@ -84,7 +84,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Malinowski, Piotr.
 1. Osękowski, Dominik.
 1. Ostrowski, Michał.
-1. Pietraszuk, Bartłomiej (/docs/bpietraszuk/bpietraszuk.md)
+1. [Pietraszuk, Bartłomiej] (/docs/bpietraszuk/bpietraszuk.md)
 1. Rogaszewski, Piotr.
 1. Wiśniewski, Piotr.
 1. Żarkowski, Mateusz. [PAMAP - Physical Activity Monitoring](/docs/mzarkowski-pamap.md).
