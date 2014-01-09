@@ -130,6 +130,10 @@ Agregacja miała policzyc ile razy wystepuje "tv_shows"
   }
 ```
 
+###Wykres
+
+![aggregation-1-chart](../../images/mmotlawski/tv_shows.png)
+
 ###Agregacja 2
 
 Agregacja wylicza 10 naczęsciej wystepujących imion reżyserów.
