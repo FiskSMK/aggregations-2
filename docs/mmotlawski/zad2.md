@@ -129,3 +129,80 @@ Agregacja miała policzyc ile razy wystepuje "tv_shows"
     }
   }
 ```
+
+###Agregacja 2
+
+Agregacja wylicza 10 naczęsciej wystepujących imion reżyserów.
+
+####Kod agregacji
+
+```json
+{
+    "query": {
+        "match_all": {}
+    },
+    "facets": {
+        "action": {
+            "terms": {
+                "field" : "director",
+                "size" : "10"
+            }
+        }
+    }
+}
+```
+
+####Wynik
+```json
+{
+  "facets": {
+    "action": {
+      "terms": [
+        {
+          "count": 294079,
+          "term": "david"
+        },
+        {
+          "count": 267429,
+          "term": "john"
+        },
+        {
+          "count": 195270,
+          "term": "james"
+        },
+        {
+          "count": 169772,
+          "term": "steven"
+        },
+        {
+          "count": 169529,
+          "term": "peter"
+        },
+        {
+          "count": 164195,
+          "term": "robert"
+        },
+        {
+          "count": 146425,
+          "term": "michael"
+        },
+        {
+          "count": 129172,
+          "term": "tim"
+        },
+        {
+          "count": 125787,
+          "term": "chris"
+        },
+        {
+          "count": 125463,
+          "term": "gary"
+        }
+      ],
+      "other": 13839711,
+      "total": 15626832,
+      "missing": 12184882,
+      "_type": "terms"
+    }
+  }
+```
