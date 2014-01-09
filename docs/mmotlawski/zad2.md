@@ -210,3 +210,7 @@ Agregacja wylicza 10 naczęsciej wystepujących imion reżyserów.
     }
   }
 ```
+
+###Wykres
+
+![aggregation-1-chart](../../images/mmotlawski/rezyserzy.png)
