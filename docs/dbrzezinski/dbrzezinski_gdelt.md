@@ -210,7 +210,7 @@ curl -XGET 'http://localhost:9200/data/gdelt/_count' ; echo
 ```
 
 
-###1. Agregacja
+###Agregacje
 
 #####a) 5 Najbardziej popularnych wydarzeń w które się odbyły.
 
@@ -266,3 +266,45 @@ facets: {
 }
 ```
 ![img](../../images/dbrzezinski/wykre_elastic1.png)
+
+#####b) Wypiszemy państwo które najczęściej brało udział w spotkaniach.
+
+Zapytanie:
+
+```
+{
+    "query" : {
+        "match_all" : {  }
+    },
+    "facets" : {
+        "Actor1Code" : {
+            "terms" : {
+                "field" : "Actor1Code",
+                "size" : 1
+            }
+        }
+    }
+}
+```
+
+Wynik:
+
+```
+facets: {
+ Actor1Code: {
+  _type: terms,
+  missing: 26599,
+  total: 1168616,
+  other: 754539,
+   terms: [ {
+	term:  "GOV",
+	count: 93666
+	}
+
+    ]
+  }
+ }
+}
+```
+
+Państwo które brało najczęściej udział w spotkaniach wg. kodu GDELT to "GOV". Liczba wystąpień to 93666.
