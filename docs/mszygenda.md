@@ -47,9 +47,25 @@ perl -p -e 's/([^"\r])\r?\n|^\r?\n$|(["]{2})\n/$1 /g' Train.csv | mongoimport --
 
 Ok. 2h (Razem z przetwarzaniem)
 
+Samo przetwarzanie danych
+
+```
+$ time perl -p -e 's/([^"\r])\r?\n|^\r?\n$|(["]{2})\n/$1 /g' zad1/Train.csv > /dev/null
+
+real  55m20.506s
+user  54m27.244s
+sys 0m15.509s
+```
+
 **Wykresy**
 
+*Obciążenie procesora podczas importu (Razem z przetwarzaniem)*
+
 ![Obciążenie procesora przy imporcie](../images/mszygenda/trains_import_peak.png)
+
+*Obciążenie procesora podczas samego przetwarzania*
+
+![Obciążenie procesora przy imporcie](../images/mszygenda/trains_processing.png)
 
 ### Zadanie 1b
 
@@ -75,7 +91,11 @@ Driver dla języka scala casbah
 
 **Wykresy**
 
+*Obciążenie procesora przy zmianie formatu*
+
 ![Obciążenie procesora przy zmianie formatu](../images/mszygenda/tags_migration_1.png)
+
+*Obciążenie procesora po zakończeniu zmiany formatu*
 
 ![Obciążenie procesora po zakończeniu zmiany formatu](../images/mszygenda/tags_migration_2.png)
 
@@ -166,6 +186,10 @@ Wyniki:
 > 
 ```
 
+**Wykres**
+
+![Rozkład](../images/mszygenda/words_share.png)
+
 ### Zadanie 1e
 
 Dane jakie wykorzystałem pochodzą ze strony 
@@ -173,6 +197,10 @@ Dane jakie wykorzystałem pochodzą ze strony
 http://earthquake.usgs.gov/earthquakes/search/
 
 Jest to baza zawierająca informacje o bieżących i minionych trzęsieniach ziemi. Serwis umożliwia eksport danych do formatu GeoJSON.
+
+*Rekordy*
+
+[Earthquakes JSON](../data/mszygenda/earthquakes.json)
 
 *Ilość rekordów*
 
@@ -288,11 +316,15 @@ var australiaBox = [ [116.617676, -34.957995], [153.619629,-16.383391] ]
 db.earthquakes.find({ geometry: { $near: {$geometry: tokyo} } }).limit(10)
 ```
 
+[Tokyo](../data/mszygenda/closest_to_tokyo.geojson)
+
 **Trzesienia ziemi na terytorium Japonii (polygon)**
 
 ```
 db.earthquakes.find({ geometry: { $geoWithin: { $geometry: japan } } })
 ```
+
+[Japonia](../data/mszygenda/earthquakes_japan.geojson)
 
 **Obiekty które przecinają terytorium Japonii**
 
@@ -302,14 +334,20 @@ W tym przypadku jest to ten sam zbiór danych co powyższy (Mamy tylko punkty)
 db.earthquakes.find({ geometry: { $geoIntersects: { $geometry: japan } } })
 ```
 
+[Japonia](../data/mszygenda/earthquakes_japan.geojson)
+
 **Trzęsienia ziemi na terytorium Australii (circle)**
 
 ```
 db.earthquakes.find( { geometry: { $geoWithin: { $centerSphere: australiaCircle } } })
 ```
 
+[Australia](../data/mszygenda/australia.geojson)
+
 **Trzęsienia ziemi na terytorium Australii (box)**
 
 ```
 db.earthquakes.find( { geometry: { $geoWithin: { $box: australiaBox} } })
 ```
+
+[Australia](../data/mszygenda/australia.geojson)

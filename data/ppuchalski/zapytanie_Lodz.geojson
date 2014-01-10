@@ -1,0 +1,43 @@
+{
+"type": "FeatureCollection",
+
+"features": [
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.46449,  51.772952 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.48328,  51.77788 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.48564,  51.7759 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.45419,  51.7698 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.49241,  51.77911 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.493,  51.77975 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.49361,  51.7802 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.49121,  51.77475 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.4946,  51.78026 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.49519,  51.77985 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.49531,  51.77865 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.49619,  51.77825 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.49702,  51.77972 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.4968,  51.77832 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.49768,  51.77976 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.4974,  51.77843 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.43616,  51.76835 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.5076,  51.77557 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  19.51214,  51.77344 ] }, "properties" : { "Szkoly wyzsze" : "Lodz" } }
+]
+}

@@ -1,0 +1,830 @@
+{
+	"result" : [
+		{
+			"_id" : "Gdańsk",
+			"suma" : 31
+		},
+		{
+			"_id" : "Olsztyn",
+			"suma" : 19
+		},
+		{
+			"_id" : "Warszawa",
+			"suma" : 17
+		},
+		{
+			"_id" : "Toruń",
+			"suma" : 15
+		},
+		{
+			"_id" : "Płock",
+			"suma" : 11
+		},
+		{
+			"_id" : "Włocławek",
+			"suma" : 9
+		},
+		{
+			"_id" : "Elbląg",
+			"suma" : 8
+		},
+		{
+			"_id" : "Grudziądz",
+			"suma" : 7
+		},
+		{
+			"_id" : "Gdynia",
+			"suma" : 6
+		},
+		{
+			"_id" : "Ciechanów",
+			"suma" : 6
+		},
+		{
+			"_id" : "Nowy Dwór Mazowiecki",
+			"suma" : 4
+		},
+		{
+			"_id" : "Szczytno",
+			"suma" : 3
+		},
+		{
+			"_id" : "Legionowo",
+			"suma" : 3
+		},
+		{
+			"_id" : "Działdowo",
+			"suma" : 3
+		},
+		{
+			"_id" : "Sopot",
+			"suma" : 3
+		},
+		{
+			"_id" : "Bartoszyce",
+			"suma" : 3
+		},
+		{
+			"_id" : "Iława",
+			"suma" : 3
+		},
+		{
+			"_id" : "Tczew",
+			"suma" : 3
+		},
+		{
+			"_id" : "Biskupiec",
+			"suma" : 2
+		},
+		{
+			"_id" : "Pruszcz Gdański",
+			"suma" : 2
+		},
+		{
+			"_id" : "Płońsk",
+			"suma" : 2
+		},
+		{
+			"_id" : "Malbork",
+			"suma" : 2
+		},
+		{
+			"_id" : "Starogard Gdański",
+			"suma" : 2
+		},
+		{
+			"_id" : "Braniewo",
+			"suma" : 2
+		},
+		{
+			"_id" : "Stara Biała",
+			"suma" : 2
+		},
+		{
+			"_id" : "Brodnica",
+			"suma" : 2
+		},
+		{
+			"_id" : "Łomianki",
+			"suma" : 2
+		},
+		{
+			"_id" : "Nasielsk",
+			"suma" : 2
+		},
+		{
+			"_id" : "Przasnysz",
+			"suma" : 2
+		},
+		{
+			"_id" : "Ostróda",
+			"suma" : 2
+		},
+		{
+			"_id" : "Tolkmicko",
+			"suma" : 1
+		},
+		{
+			"_id" : "Grudusk",
+			"suma" : 1
+		},
+		{
+			"_id" : "Golub-Dobrzyń",
+			"suma" : 1
+		},
+		{
+			"_id" : "Radzyń Chełmiński",
+			"suma" : 1
+		},
+		{
+			"_id" : "Mochowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Kisielice",
+			"suma" : 1
+		},
+		{
+			"_id" : "Nowe",
+			"suma" : 1
+		},
+		{
+			"_id" : "Koneck",
+			"suma" : 1
+		},
+		{
+			"_id" : "Radzanowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Fabianki",
+			"suma" : 1
+		},
+		{
+			"_id" : "Kiernozia",
+			"suma" : 1
+		},
+		{
+			"_id" : "Stegna",
+			"suma" : 1
+		},
+		{
+			"_id" : "Dobrzyń nad Wisłą",
+			"suma" : 1
+		},
+		{
+			"_id" : "Lubowidz",
+			"suma" : 1
+		},
+		{
+			"_id" : "Górowo Iławeckie",
+			"suma" : 1
+		},
+		{
+			"_id" : "Górzno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Szreńsk",
+			"suma" : 1
+		},
+		{
+			"_id" : "Świercze",
+			"suma" : 1
+		},
+		{
+			"_id" : "Gozdowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Wąpielsk",
+			"suma" : 1
+		},
+		{
+			"_id" : "Siemiątkowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Lubień Kujawski",
+			"suma" : 1
+		},
+		{
+			"_id" : "Lubicz",
+			"suma" : 1
+		},
+		{
+			"_id" : "Jabłonna",
+			"suma" : 1
+		},
+		{
+			"_id" : "Lubanie",
+			"suma" : 1
+		},
+		{
+			"_id" : "Lisewo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Strzegowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Lipno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Lubraniec",
+			"suma" : 1
+		},
+		{
+			"_id" : "Kowal",
+			"suma" : 1
+		},
+		{
+			"_id" : "Kikół",
+			"suma" : 1
+		},
+		{
+			"_id" : "Łasin",
+			"suma" : 1
+		},
+		{
+			"_id" : "Obrowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Pomiechówek",
+			"suma" : 1
+		},
+		{
+			"_id" : "Izbica Kujawska",
+			"suma" : 1
+		},
+		{
+			"_id" : "Bisztynek",
+			"suma" : 1
+		},
+		{
+			"_id" : "Chrostkowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Dzierzgowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Olsztynek",
+			"suma" : 1
+		},
+		{
+			"_id" : "Nowy Dwór Gdański",
+			"suma" : 1
+		},
+		{
+			"_id" : "Brzozie",
+			"suma" : 1
+		},
+		{
+			"_id" : "Świecie nad Osą",
+			"suma" : 1
+		},
+		{
+			"_id" : "Bobrowniki",
+			"suma" : 1
+		},
+		{
+			"_id" : "Kuczbork-Osada",
+			"suma" : 1
+		},
+		{
+			"_id" : "Dźwierzuty",
+			"suma" : 1
+		},
+		{
+			"_id" : "Skrwilno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Bądkowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Czosnów",
+			"suma" : 1
+		},
+		{
+			"_id" : "Dragacz",
+			"suma" : 1
+		},
+		{
+			"_id" : "Wąbrzeźno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Boniewo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Bobrowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Sochocin",
+			"suma" : 1
+		},
+		{
+			"_id" : "Bartniczka",
+			"suma" : 1
+		},
+		{
+			"_id" : "Ciechocin",
+			"suma" : 1
+		},
+		{
+			"_id" : "Tłuchowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Łąck",
+			"suma" : 1
+		},
+		{
+			"_id" : "Kowalewo Pomorskie",
+			"suma" : 1
+		},
+		{
+			"_id" : "Aleksandrów Kujawski",
+			"suma" : 1
+		},
+		{
+			"_id" : "Gruta",
+			"suma" : 1
+		},
+		{
+			"_id" : "Chodecz",
+			"suma" : 1
+		},
+		{
+			"_id" : "Dobre",
+			"suma" : 1
+		},
+		{
+			"_id" : "Dąbrowa Biskupia",
+			"suma" : 1
+		},
+		{
+			"_id" : "Osięciny",
+			"suma" : 1
+		},
+		{
+			"_id" : "Czernikowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Orneta",
+			"suma" : 1
+		},
+		{
+			"_id" : "Zawidz",
+			"suma" : 1
+		},
+		{
+			"_id" : "Skępe",
+			"suma" : 1
+		},
+		{
+			"_id" : "Rychliki",
+			"suma" : 1
+		},
+		{
+			"_id" : "Szydłowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Brzuze",
+			"suma" : 1
+		},
+		{
+			"_id" : "Susz",
+			"suma" : 1
+		},
+		{
+			"_id" : "Warlubie",
+			"suma" : 1
+		},
+		{
+			"_id" : "Chorzele",
+			"suma" : 1
+		},
+		{
+			"_id" : "Grodziczno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Wielgie",
+			"suma" : 1
+		},
+		{
+			"_id" : "Choceń",
+			"suma" : 1
+		},
+		{
+			"_id" : "Załuski",
+			"suma" : 1
+		},
+		{
+			"_id" : "Chełmża",
+			"suma" : 1
+		},
+		{
+			"_id" : "Ciechocinek",
+			"suma" : 1
+		},
+		{
+			"_id" : "Jabłonowo Pomorskie",
+			"suma" : 1
+		},
+		{
+			"_id" : "Bytoń",
+			"suma" : 1
+		},
+		{
+			"_id" : "Brześć Kujawski",
+			"suma" : 1
+		},
+		{
+			"_id" : "Słupno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Słubice",
+			"suma" : 1
+		},
+		{
+			"_id" : "Krynica Morska",
+			"suma" : 1
+		},
+		{
+			"_id" : "Gniew",
+			"suma" : 1
+		},
+		{
+			"_id" : "Sępopol",
+			"suma" : 1
+		},
+		{
+			"_id" : "Dzierzgoń",
+			"suma" : 1
+		},
+		{
+			"_id" : "Żuromin",
+			"suma" : 1
+		},
+		{
+			"_id" : "Wyszogród",
+			"suma" : 1
+		},
+		{
+			"_id" : "Wieczfnia Kościelna",
+			"suma" : 1
+		},
+		{
+			"_id" : "Szczutowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Szczawin Kościelny",
+			"suma" : 1
+		},
+		{
+			"_id" : "Staroźreby",
+			"suma" : 1
+		},
+		{
+			"_id" : "Sońsk",
+			"suma" : 1
+		},
+		{
+			"_id" : "Kwidzyn",
+			"suma" : 1
+		},
+		{
+			"_id" : "Sanniki",
+			"suma" : 1
+		},
+		{
+			"_id" : "Winnica",
+			"suma" : 1
+		},
+		{
+			"_id" : "Rościszewo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Pelplin",
+			"suma" : 1
+		},
+		{
+			"_id" : "Radzanów",
+			"suma" : 1
+		},
+		{
+			"_id" : "Raciąż",
+			"suma" : 1
+		},
+		{
+			"_id" : "Purda",
+			"suma" : 1
+		},
+		{
+			"_id" : "Leszno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Sierpc",
+			"suma" : 1
+		},
+		{
+			"_id" : "Pasym",
+			"suma" : 1
+		},
+		{
+			"_id" : "Płośnica",
+			"suma" : 1
+		},
+		{
+			"_id" : "Nidzica",
+			"suma" : 1
+		},
+		{
+			"_id" : "Morąg",
+			"suma" : 1
+		},
+		{
+			"_id" : "Młynary",
+			"suma" : 1
+		},
+		{
+			"_id" : "Miłakowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Lubawa",
+			"suma" : 1
+		},
+		{
+			"_id" : "Lidzbark Warmiński",
+			"suma" : 1
+		},
+		{
+			"_id" : "Jeziorany",
+			"suma" : 1
+		},
+		{
+			"_id" : "Jedwabno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Godkowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Dywity",
+			"suma" : 1
+		},
+		{
+			"_id" : "Dobre Miasto",
+			"suma" : 1
+		},
+		{
+			"_id" : "Nowy Duninów",
+			"suma" : 1
+		},
+		{
+			"_id" : "Dąbrówno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Barczewo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Ryjewo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Sztutowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Smętowo Graniczne",
+			"suma" : 1
+		},
+		{
+			"_id" : "Pszczółki",
+			"suma" : 1
+		},
+		{
+			"_id" : "Prabuty",
+			"suma" : 1
+		},
+		{
+			"_id" : "Nowy Staw",
+			"suma" : 1
+		},
+		{
+			"_id" : "Stare Pole",
+			"suma" : 1
+		},
+		{
+			"_id" : "Lidzbark",
+			"suma" : 1
+		},
+		{
+			"_id" : "Topólka",
+			"suma" : 1
+		},
+		{
+			"_id" : "Baboszewo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Krasne",
+			"suma" : 1
+		},
+		{
+			"_id" : "Zbiczno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Waganiec",
+			"suma" : 1
+		},
+		{
+			"_id" : "Świedziebnia",
+			"suma" : 1
+		},
+		{
+			"_id" : "Zbójno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Kampinos",
+			"suma" : 1
+		},
+		{
+			"_id" : "Pasłęk",
+			"suma" : 1
+		},
+		{
+			"_id" : "Wiśniewo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Bielsk",
+			"suma" : 1
+		},
+		{
+			"_id" : "Zalewo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Rybno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Pieniężno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Nowe Miasto Lubawskie",
+			"suma" : 1
+		},
+		{
+			"_id" : "Rypin",
+			"suma" : 1
+		},
+		{
+			"_id" : "Rogóźno",
+			"suma" : 1
+		},
+		{
+			"_id" : "Rogowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Gąbin",
+			"suma" : 1
+		},
+		{
+			"_id" : "Papowo Biskupie",
+			"suma" : 1
+		},
+		{
+			"_id" : "Osiek",
+			"suma" : 1
+		},
+		{
+			"_id" : "Opinogóra Górna",
+			"suma" : 1
+		},
+		{
+			"_id" : "Nieszawa",
+			"suma" : 1
+		},
+		{
+			"_id" : "Gołymin-Ośrodek",
+			"suma" : 1
+		},
+		{
+			"_id" : "Nowe Miasto",
+			"suma" : 1
+		},
+		{
+			"_id" : "Stawiguda",
+			"suma" : 1
+		},
+		{
+			"_id" : "Naruszewo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Ojrzeń",
+			"suma" : 1
+		},
+		{
+			"_id" : "Mława",
+			"suma" : 1
+		},
+		{
+			"_id" : "Mała Wieś",
+			"suma" : 1
+		},
+		{
+			"_id" : "Lipowiec Kościelny",
+			"suma" : 1
+		},
+		{
+			"_id" : "Stupsk",
+			"suma" : 1
+		},
+		{
+			"_id" : "Izabelin",
+			"suma" : 1
+		},
+		{
+			"_id" : "Iłów",
+			"suma" : 1
+		},
+		{
+			"_id" : "Pacyna",
+			"suma" : 1
+		},
+		{
+			"_id" : "Łysomice",
+			"suma" : 1
+		},
+		{
+			"_id" : "Glinojeck",
+			"suma" : 1
+		},
+		{
+			"_id" : "Drobin",
+			"suma" : 1
+		},
+		{
+			"_id" : "Jonkowo",
+			"suma" : 1
+		},
+		{
+			"_id" : "Czerwińsk nad Wisłą",
+			"suma" : 1
+		},
+		{
+			"_id" : "Czernice Borowe",
+			"suma" : 1
+		},
+		{
+			"_id" : "Sztum",
+			"suma" : 1
+		},
+		{
+			"_id" : "Brudzeń Duży",
+			"suma" : 1
+		},
+		{
+			"_id" : "Bodzanów",
+			"suma" : 1
+		},
+		{
+			"_id" : "Gostynin",
+			"suma" : 1
+		},
+		{
+			"_id" : "Bieżuń",
+			"suma" : 1
+		}
+	],
+	"ok" : 1
+}
+

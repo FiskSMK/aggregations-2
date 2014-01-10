@@ -1,0 +1,331 @@
+{
+  "facets": {
+    "dir": {
+      "terms": [
+        {
+          "count": 1293,
+          "term": "whedon"
+        },
+        {
+          "count": 1293,
+          "term": "joss"
+        },
+        {
+          "count": 1137,
+          "term": "bill"
+        },
+        {
+          "count": 1108,
+          "term": "melendez"
+        },
+        {
+          "count": 812,
+          "term": "jones"
+        },
+        {
+          "count": 774,
+          "term": "michael"
+        },
+        {
+          "count": 757,
+          "term": "chuck"
+        },
+        {
+          "count": 691,
+          "term": "available"
+        },
+        {
+          "count": 578,
+          "term": "john"
+        },
+        {
+          "count": 332,
+          "term": "james"
+        }
+      ],
+      "other": 38342,
+      "total": 47117,
+      "missing": 12184787,
+      "_type": "terms"
+    }
+  },
+  "hits": {
+    "hits": [
+      {
+        "_source": {
+          "action": "Checkin",
+          "verb": "watching",
+          "link": "http://www.netflix.com/Movie/70020061",
+          "version": "2",
+          "title": "Scrubs",
+          "lastModified": "2011-09-23T22:20:23Z",
+          "timestamp": "2011-03-21T20:25:12Z",
+          "image": "http://cdn-1.nflximg.com/us/boxshots/large/70020061.jpg",
+          "lctitle": "scrubs",
+          "objectKey": "tv_shows/scrubs",
+          "visitCount": "1",
+          "app": "iPhone_2.3.2",
+          "displayName": "Ben MArshall",
+          "modelName": "tv_shows",
+          "hideVisits": "false",
+          "comment": "",
+          "userId": "whiteboy034",
+          "private": "false",
+          "numCheckins": "0",
+          "source": "iPhone"
+        },
+        "_score": 1.48223,
+        "_id": "HTTFvLtNSSWB736SNqEwjQ",
+        "_type": "gg",
+        "_index": "data"
+      },
+      {
+        "_source": {
+          "action": "Checkin",
+          "verb": "watching",
+          "link": "http://www.netflix.com/Movie/70117374",
+          "version": "2",
+          "title": "Californication",
+          "lastModified": "2011-07-18T19:23:05Z",
+          "timestamp": "2011-03-21T20:31:53Z",
+          "image": "http://cdn-4.nflximg.com/us/boxshots/large/70117374.jpg",
+          "lctitle": "californication",
+          "objectKey": "tv_shows/californication",
+          "visitCount": "1",
+          "app": "GetGlue",
+          "displayName": "Jonathan",
+          "modelName": "tv_shows",
+          "hideVisits": "false",
+          "comment": "Is Hank going to flee?...",
+          "userId": "4everjohnnyboy",
+          "private": "false",
+          "numCheckins": "0",
+          "source": "http://getglue.com/tv_shows/californication"
+        },
+        "_score": 1.48223,
+        "_id": "BDabzzxDS1O0mYunWEpy3Q",
+        "_type": "gg",
+        "_index": "data"
+      },
+      {
+        "_source": {
+          "objectKey": "tv_shows/castle",
+          "lctitle": "castle",
+          "modelName": "tv_shows",
+          "displayName": "",
+          "title": "Castle",
+          "timestamp": "2011-03-21T20:35:06Z",
+          "image": "http://cdn-0.nflximg.com/us/boxshots/large/70112530.jpg",
+          "userId": "dasimon1",
+          "visitCount": "1",
+          "app": "GetGlue",
+          "hideVisits": "false",
+          "comment": "",
+          "private": "false",
+          "source": "http://getglue.com/quickrate/lists/tv_shows/crime_dramas",
+          "version": "2",
+          "link": "http://www.netflix.com/Movie/70112530",
+          "lastModified": "2011-12-17T01:33:51Z",
+          "action": "Liked"
+        },
+        "_score": 1.48223,
+        "_id": "Trq_jBCCSAKGXWktgAhNSQ",
+        "_type": "gg",
+        "_index": "data"
+      },
+      {
+        "_source": {
+          "objectKey": "tv_shows/alias",
+          "lctitle": "alias",
+          "modelName": "tv_shows",
+          "displayName": "",
+          "title": "Alias",
+          "timestamp": "2011-03-21T20:35:11Z",
+          "image": "http://cdn-4.nflximg.com/us/boxshots/large/60030914.jpg",
+          "userId": "dasimon1",
+          "visitCount": "1",
+          "app": "GetGlue",
+          "hideVisits": "false",
+          "comment": "",
+          "private": "false",
+          "source": "http://getglue.com/quickrate/lists/tv_shows/crime_dramas",
+          "version": "2",
+          "link": "http://www.netflix.com/Movie/60030914",
+          "lastModified": "2011-12-17T01:33:51Z",
+          "action": "Liked"
+        },
+        "_score": 1.48223,
+        "_id": "RDshvveRRUaAhuBX36L3zg",
+        "_type": "gg",
+        "_index": "data"
+      },
+      {
+        "_source": {
+          "objectKey": "tv_shows/csi_miami",
+          "lctitle": "csi: miami",
+          "modelName": "tv_shows",
+          "displayName": "",
+          "title": "CSI: Miami",
+          "timestamp": "2011-03-21T20:35:15Z",
+          "image": "http://cdn-2.nflximg.com/us/boxshots/large/70095202.jpg",
+          "userId": "dasimon1",
+          "visitCount": "1",
+          "app": "GetGlue",
+          "hideVisits": "false",
+          "comment": "",
+          "private": "false",
+          "source": "http://getglue.com/quickrate/lists/tv_shows/crime_dramas",
+          "version": "2",
+          "link": "http://www.netflix.com/Movie/70095202",
+          "lastModified": "2011-12-17T01:33:51Z",
+          "action": "Liked"
+        },
+        "_score": 1.48223,
+        "_id": "8UjlOVKUThSVvB1UaZKaqA",
+        "_type": "gg",
+        "_index": "data"
+      },
+      {
+        "_source": {
+          "objectKey": "tv_shows/miami_vice",
+          "lctitle": "miami vice",
+          "modelName": "tv_shows",
+          "displayName": "",
+          "title": "Miami Vice",
+          "timestamp": "2011-03-21T20:36:06Z",
+          "image": "http://cdn-3.nflximg.com/us/boxshots/large/70020053.jpg",
+          "userId": "dasimon1",
+          "visitCount": "1",
+          "app": "GetGlue",
+          "hideVisits": "false",
+          "comment": "",
+          "private": "false",
+          "source": "http://getglue.com/quickrate/lists/tv_shows/crime_dramas",
+          "version": "2",
+          "link": "http://www.netflix.com/Movie/70020053",
+          "lastModified": "2011-12-17T01:33:51Z",
+          "action": "Liked"
+        },
+        "_score": 1.48223,
+        "_id": "akbWC9nuTkSq-qMTbGkncg",
+        "_type": "gg",
+        "_index": "data"
+      },
+      {
+        "_source": {
+          "objectKey": "tv_shows/shield",
+          "lctitle": "the shield",
+          "modelName": "tv_shows",
+          "displayName": "",
+          "title": "The Shield",
+          "timestamp": "2011-03-21T20:36:07Z",
+          "image": "http://cdn-1.nflximg.com/us/boxshots/large/70061391.jpg",
+          "userId": "dasimon1",
+          "visitCount": "1",
+          "app": "GetGlue",
+          "hideVisits": "false",
+          "comment": "",
+          "private": "false",
+          "source": "http://getglue.com/quickrate/lists/tv_shows/crime_dramas",
+          "version": "2",
+          "link": "http://www.netflix.com/Movie/70061391",
+          "lastModified": "2011-12-17T01:33:51Z",
+          "action": "Liked"
+        },
+        "_score": 1.48223,
+        "_id": "k3i6sEQOQg-IGpyp1C30vQ",
+        "_type": "gg",
+        "_index": "data"
+      },
+      {
+        "_source": {
+          "objectKey": "tv_shows/starsky_hutch",
+          "lctitle": "starsky & hutch",
+          "modelName": "tv_shows",
+          "displayName": "",
+          "title": "Starsky & Hutch",
+          "timestamp": "2011-03-21T20:36:39Z",
+          "image": "http://cdn-2.nflximg.com/us/boxshots/large/60034422.jpg",
+          "userId": "dasimon1",
+          "visitCount": "1",
+          "app": "GetGlue",
+          "hideVisits": "false",
+          "comment": "",
+          "private": "false",
+          "source": "http://getglue.com/quickrate/lists/tv_shows/crime_dramas",
+          "version": "2",
+          "link": "http://www.netflix.com/Movie/60034422",
+          "lastModified": "2011-12-17T01:33:52Z",
+          "action": "Liked"
+        },
+        "_score": 1.48223,
+        "_id": "AaHBvTigSHiO62ksSRtkWQ",
+        "_type": "gg",
+        "_index": "data"
+      },
+      {
+        "_source": {
+          "objectKey": "tv_shows/dragnet",
+          "lctitle": "dragnet",
+          "modelName": "tv_shows",
+          "displayName": "",
+          "title": "Dragnet",
+          "timestamp": "2011-03-21T20:37:26Z",
+          "image": "http://cdn-5.nflximg.com/us/boxshots/large/60037345.jpg",
+          "userId": "dasimon1",
+          "visitCount": "1",
+          "app": "GetGlue",
+          "hideVisits": "false",
+          "comment": "",
+          "private": "false",
+          "source": "http://getglue.com/quickrate/lists/tv_shows/crime_dramas",
+          "version": "2",
+          "link": "http://www.netflix.com/Movie/60037345",
+          "lastModified": "2011-12-17T01:33:52Z",
+          "action": "Liked"
+        },
+        "_score": 1.48223,
+        "_id": "aIy23Hm-RceDaSA8eO5dVA",
+        "_type": "gg",
+        "_index": "data"
+      },
+      {
+        "_source": {
+          "action": "Checkin",
+          "verb": "watching",
+          "link": "http://en.wikipedia.org/wiki/Game_of_Thrones_(TV_series)",
+          "version": "2",
+          "title": "Game of Thrones",
+          "lastModified": "2012-02-27T17:47:11Z",
+          "timestamp": "2011-03-21T20:38:02Z",
+          "image": "http://adaptiveblue.s3.amazonaws.com/tv_shows/game_of_thrones/got-logo-ned-4.jpg",
+          "lctitle": "game of thrones",
+          "objectKey": "tv_shows/game_of_thrones",
+          "visitCount": "1",
+          "app": "GetGlue",
+          "displayName": "Gabs",
+          "modelName": "tv_shows",
+          "hideVisits": "false",
+          "comment": " The touch of seasons gave me the fourth link on the Maester's Chain.",
+          "userId": "YoGabbaGabba",
+          "private": "false",
+          "numCheckins": "0",
+          "source": "http://www.themaesterspath.com/#/weather/reward"
+        },
+        "_score": 1.48223,
+        "_id": "GQZo05kAQteuQI95NSqzRw",
+        "_type": "gg",
+        "_index": "data"
+      }
+    ],
+    "max_score": 1.48223,
+    "total": 12208046
+  },
+  "_shards": {
+    "failed": 0,
+    "successful": 5,
+    "total": 5
+  },
+  "timed_out": false,
+  "took": 307
+}
