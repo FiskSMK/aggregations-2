@@ -210,5 +210,101 @@ curl -XGET 'http://localhost:9200/data/gdelt/_count' ; echo
 ```
 
 
-###1. Agregacja
+###Agregacje
 
+#####a) 5 Najbardziej popularnych wydarzeń w które się odbyły.
+
+Zapytanie:
+
+```
+{
+    "query" : {
+        "match_all" : {  }
+    },
+    "facets" : {
+        "EventCode" : {
+            "terms" : {
+                "field" : "EventCode",
+                "size" : 5
+            }
+        }
+    }
+}
+```
+Wynik:
+
+```
+facets: {
+ EventCode: {
+  _type: terms,
+  missing: 16599,
+  total: 1168616,
+  other: 854539,
+   terms: [ {
+	term:  40,
+	count: 96643
+	},
+{
+	term:  42,
+	count: 92531
+	},
+{
+	term:  43,
+	count: 90844
+	},
+{
+	term:  10,
+	count: 75939
+	},
+{
+	term:  46,
+	count: 71750
+	}
+    ]
+  }
+ }
+}
+```
+![img](../../images/dbrzezinski/wykre_elastic1.png)
+
+#####b) Wypiszemy państwo które najczęściej brało udział w spotkaniach.
+
+Zapytanie:
+
+```
+{
+    "query" : {
+        "match_all" : {  }
+    },
+    "facets" : {
+        "Actor1Code" : {
+            "terms" : {
+                "field" : "Actor1Code",
+                "size" : 1
+            }
+        }
+    }
+}
+```
+
+Wynik:
+
+```
+facets: {
+ Actor1Code: {
+  _type: terms,
+  missing: 26599,
+  total: 1168616,
+  other: 754539,
+   terms: [ {
+	term:  "GOV",
+	count: 93666
+	}
+
+    ]
+  }
+ }
+}
+```
+
+Państwo które brało najczęściej udział w spotkaniach wg. kodu GDELT to "GOV". Liczba wystąpień to 93666.
