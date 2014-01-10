@@ -23,12 +23,9 @@ mongo --username student --password sesja2013 153.19.1.202/test
 ## Nasze agregacje
 
 1. Bzyl, Włodzimierz. [Imieniny](/docs/wbzyl.md).
-1. Bełcik, Jakub.
-1. Białkowski, Dominik.
-1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md). [GDELT-Event Database](/docs/dbrzezinski/dbrzezinski_gdelt.md).
 1. [Bełcik, Jakub](/docs/jbelcik/README.md).
 1. [Białkowski, Dominik](/docs/dbialkowski.md). [Current Census Blocks for McKinley County](/docs/dbialkowski2.md).
-1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md).
+1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md). [GDELT-EventDatabase](/docs/dbrzezinski/dbrzezinski_gdelt.md).
 1. [Dermont, Jacek](/docs/jdermont.md). [Albumy muzyczne](/docs/jdermont_albumy_muzyczne.md).
 1. [Detlaf, Krzysztof](/docs/kdetlaf.md).
 1. [Dępczyk, Michał](/docs/mdepczyk.md). [Broadband coverage](/docs/mdepczyk/zadanie2.md).
