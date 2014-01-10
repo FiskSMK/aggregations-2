@@ -55,6 +55,66 @@ real  57m58.013s
 
 ###Agregacja 1
 
+####Kod agregacji
+
+```json
+db.movedb.aggregate(   
+{ $match: { "modelName": "movies", "action": "Disliked"}},   
+{ $group: {_id: "$userId", count: {$sum: 1}} },   
+{ $sort: {count: -1} },   
+{ $limit: 10} );
+```
+
+####Wynik
+
+```json
+{
+	"result" : [
+		{
+			"_id" : "Xendeus",
+			"count" : 2576
+		},
+		{
+			"_id" : "Carlson1931",
+			"count" : 2134
+		},
+		{
+			"_id" : "Ang",
+			"count" : 1884
+		},
+		{
+			"_id" : "brownbagcomics",
+			"count" : 1807
+		},
+		{
+			"_id" : "amanda_hauser",
+			"count" : 1497
+		},
+		{
+			"_id" : "zeus1661ou",
+			"count" : 1460
+		},
+		{
+			"_id" : "kevinjloria",
+			"count" : 1219
+		},
+		{
+			"_id" : "s34rchnd3str0y",
+			"count" : 1054
+		},
+		{
+			"_id" : "andrew_warner",
+			"count" : 1010
+		},
+		{
+			"_id" : "danceswithflowers",
+			"count" : 968
+		}
+	],
+	"ok" : 1
+}
+```
+
 #Elasticsearch
 
 ##Import
