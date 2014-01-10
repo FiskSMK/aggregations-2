@@ -169,3 +169,46 @@ sys	0m0.100s
 
 ```
 ![img](../../images/dbrzezinski/panstwa_2.png)
+
+------------------------------------------------------------------------------------------------------------------------
+##ELASTICSEARCH
+
+####1. Przygotownie pliku do importu.
+
+Z bazy mongodb wykonałem eksport do pliku gdelt_es.json:
+
+```
+mongoexport -d gdelt -c events -o gdelt_es.json
+```
+
+Następnie zamieniłem na typ bulk za pomocą programu jq:
+
+```
+time cat gdelt_es.json | jq --compact-output '{ "index": { "_type": "gdelt" } }, .'  > gdelts.bulk
+
+real	0m55.142s
+user	0m51.731s
+sys		0m3.170s
+```
+
+Import danych do bazy elasticsearch nie udał się z powodu zbyt dużego rozmiaru, więc trzeba było rozdzielić bazę na mniejsze części. 
+
+Kiedy mamy już rozdzielone następuje import:
+
+```
+time for i in x*; do curl -s -XPOST   localhost:9200/gdelt/_bulk --data-binary @$i; done
+real	9m59.174s
+user	0m0.844s
+sys		0m3.248s
+```
+
+Zliczenie:
+
+```
+curl -XGET 'http://localhost:9200/data/gdelt/_count' ; echo
+{"count":1168616,"_shards":{"total":5,"successful":5,"failed":0}}
+```
+
+
+###1. Agregacja
+
