@@ -145,22 +145,4 @@ time cat getglue_sample.json | jq --compact-output '{ "index": { "_type": "imdb"
 	
 Import calego pliku jest niemozliwe z powodu bledu `out of memory`
 
-Aby zaimportować plik do bazy podzielimy go na pliki z mniejszymi ilosciami danych.
-
-```sh
-split -l 200000 getglue_sample.bulk
-```
-Czas
-
-```sh
-Minutes           : 8
-Seconds           : 37
-Milliseconds      : 347
-Ticks             : 5173472812
-TotalDays         : 0,00598781575462963
-TotalHours        : 0,143707578111111
-TotalMinutes      : 8,62245468666667
-TotalSeconds      : 517,3472812
-TotalMilliseconds : 517347,2812
-```
-A nastepnie importujemy pliki w za pomocą skryptu w pythonie
+Aby zaimportować plik do bazy uzywamy skryptu w pythonie
