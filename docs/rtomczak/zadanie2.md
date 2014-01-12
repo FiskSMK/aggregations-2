@@ -51,7 +51,7 @@ Od razu sprawdzamy ile json'ow zaimportowalimy do bazy
 
 #### Aggregacja 1
 
-___ Aggregacja wyszukuje 10 najpopularniejszych filmow___
+__ Aggregacja wyszukuje 10 najpopularniejszych filmow__
 
 ##### Kod aggregacji
 
@@ -82,7 +82,7 @@ Wizualizacja danych pod linkiem : [Wykres](http://roberttomczak.github.io/charts
 
 #### Aggregacja 2
 
-___ Aggregacja wyszukuje 10 rezyserow mający najwiecej filmow___
+__ Aggregacja wyszukuje 10 rezyserow mający najwiecej filmow__
 
 ##### Kod aggregacji
 
@@ -145,4 +145,4 @@ time cat getglue_sample.json | jq --compact-output '{ "index": { "_type": "imdb"
 	
 Import calego pliku jest niemozliwe z powodu bledu `out of memory`
 
-Aby zaimportować plik do bazy uzywamy skryptu w pythonie
+Aby zaimportować plik do bazy uzywamy skryptu w pythonie: [skrypt](../../spripts/rtomczak/importglue.py)
