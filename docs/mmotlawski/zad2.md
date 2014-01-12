@@ -55,6 +55,8 @@ real  57m58.013s
 
 ###Agregacja 1
 
+Agregacja miała wypisac 10 najgorzej ocenianych filmów.
+
 ####Kod agregacji
 
 ```json
@@ -114,6 +116,10 @@ db.movedb.aggregate(
 	"ok" : 1
 }
 ```
+
+####Wykres
+
+![aggregation-1-chart](../../images/mmotlawski/disliked.png)
 
 #Elasticsearch
 
