@@ -123,7 +123,7 @@ db.movedb.aggregate(
 
 ##Agregacje
 
-###Agregacja 1
+###Agregacja 2
 
 Agregacja miała wypisac 10 najlepiej ocenianych reżyserów.
 
@@ -185,6 +185,10 @@ db.movedb.aggregate(
 	"ok" : 1
 }
 ```
+
+####Wykres
+
+![aggregation-1-chart](../../images/mmotlawski/ulubieni.png)
 
 #Elasticsearch
 
