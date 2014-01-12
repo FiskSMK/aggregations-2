@@ -121,6 +121,71 @@ db.movedb.aggregate(
 
 ![aggregation-1-chart](../../images/mmotlawski/disliked.png)
 
+##Agregacje
+
+###Agregacja 1
+
+Agregacja miała wypisac 10 najlepiej ocenianych reżyserów.
+
+####Kod agregacji
+
+```json
+db.movedb.aggregate( 
+{ $match: { "action": "Liked" } }, 
+{ $group: {_id: "$director", count: {$sum: 1} } }, 
+{ $sort: {count: -1} }, 
+{ $limit: 10} );
+```
+####Wynik
+
+```json
+{
+	"result" : [
+		{
+			"_id" : null,
+			"count" : 3070359
+		},
+		{
+			"_id" : "steven spielberg",
+			"count" : 85011
+		},
+		{
+			"_id" : "tim burton",
+			"count" : 69499
+		},
+		{
+			"_id" : "james cameron",
+			"count" : 56314
+		},
+		{
+			"_id" : "robert zemeckis",
+			"count" : 56278
+		},
+		{
+			"_id" : "christopher nolan",
+			"count" : 46852
+		},
+		{
+			"_id" : "quentin tarantino",
+			"count" : 44664
+		},
+		{
+			"_id" : "david fincher",
+			"count" : 41075
+		},
+		{
+			"_id" : "martin scorsese",
+			"count" : 40329
+		},
+		{
+			"_id" : "gore verbinski",
+			"count" : 38457
+		}
+	],
+	"ok" : 1
+}
+```
+
 #Elasticsearch
 
 ##Import
