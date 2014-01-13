@@ -87,19 +87,6 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Ostrowski, Michał.
 1. [Pietraszuk, Bartłomiej] (/docs/bpietraszuk/bpietraszuk.md) [Przypadki zauważenia UFO w USA](/docs/bpietraszuk/ufo.md)
 1. Rogaszewski, Piotr.
-1. Rybarczyk, Karolina.
-1. Sawicki, Paweł.
-1. [Siora, Kacper](/docs/ksiora/README.md). [Deaths](/docs/ksiora/deaths.md).
-1. [Skiba, Marek](/docs/mskiba/README.md).
-1. Skowroński, Krzysztof.
-1. Smykowski, Adrian.
-1. Sott, Tomasz.
-1. Stefanowicz, Michał.
-1. [Szygenda, Mateusz](/docs/mszygenda.md)
-1. Tomczak, Robert.
-1. [Wąsowicz, Michał](/docs/mwasowicz.md).
-1. Winsławski, Bartłomiej.
-1. Wiśniewski, Konrad.
 1. Wiśniewski, Piotr.
 
 
