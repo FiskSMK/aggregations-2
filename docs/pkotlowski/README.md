@@ -261,7 +261,9 @@ Mine
 
 ```
 <script src="https://embed.github.com/view/geojson/pkotlowski/aggregations-2/blob/master/docs/pkotlowski/1.5.geojson">Mapa</script>
-![img](http://imgur.com/ybyRAUZ)
+
+![img](http://i.imgur.com/ybyRAUZ.png)
+
 Zapytanie 6: Ilość szkoł leżących 3000m od centrum Chicago.
 ```javascript
 db.geo_points.find({ loc: {$near: {$geometry: {
