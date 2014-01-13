@@ -91,7 +91,6 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
 1. Plichta, Oskar.
 1. Puchalski, Paweł.
->>>>>>> 6eab0f05fb15fdf0a469122ece88cac4452506cb
 1. Rogaszewski, Piotr.
 1. Wiśniewski, Piotr.
 
