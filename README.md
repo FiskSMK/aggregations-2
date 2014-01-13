@@ -31,6 +31,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Dępczyk, Michał](/docs/mdepczyk.md). [Broadband coverage](/docs/mdepczyk/zadanie2.md).
 1. [Domurat, Szymon](/docs/sdomurat.md). [Youtube](/docs/sdomurat_youtube.md).
 1. [Duwe, Oskar](/docs/oduwe.md).
+<<<<<<< HEAD
 1. [Gałka, Jacek](/docs/jgalka/README.md).
 1. [Gniado, Bartosz](/docs/bgniado/README.md).
 1. [Groszek, Rafał](/docs/rgroszek/README.md).
@@ -42,6 +43,23 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Królik, Przemysław](/docs/pkrolik/zad1.md). [GetGlue IMDB](/docs/pkrolik/zad2.md).
 1. [Kubacki, Konrad](/docs/kkubacki/README.md).
 1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md). [The Internet Movie Database](/docs/mkwiatkowski/zadanie2.md).
+=======
+1. [Elszkowski, Adrian](/docs/aelszkowski.md).
+1. Gałka, Jacek.
+1. Głowacki, Michał.
+1. Gniado, Bartosz.
+1. Groszek, Rafał.
+1. Januszewski, Tomasz.
+1. Jaźwiński, Robert.
+1. Karczewski, Kamil.
+1. [Karwowski, Kamil](/docs/kkarwowski.md).
+1. Kłeczek, Piotr.
+1. Kotłowski, Piotr.
+1. Koźmiński, Marcin.
+1. [Królik, Przemysław](/docs/pkrolik.md).
+1. Kubacki, Konrad.
+1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md).
+>>>>>>> 7a43adabfbc85b4415e221d2ea48301d97c0194f
 1. [Lewandowska, Marta](/docs/mlewandowska.md).
 1. [Łuczun, Rafał](/docs/rluczun/README.md).
 1. [Małecki, Maciej](/docs/mmalecki/README.md).

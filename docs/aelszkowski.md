@@ -102,3 +102,4 @@ db.tekst.aggregate([
 Podczas importu
 [1](../images/aelszkowski/podczasimportu.png)
 [2](../images/aelszkowski/podczasimportu1.png)
+
