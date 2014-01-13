@@ -139,6 +139,8 @@ Rezultat:
 }
 ```
 
+![Image](../../images/lpaczynski/agregacja1_mongo.jpg)
+
 <h2>MMS do agregacji:</h2>
 
 ![Image](../../images/lpaczynski/agregacja1mongo.png)
@@ -248,6 +250,8 @@ Rezultat:
 104422 hits. 0.951 seconds
 ```
 
+![Image](../../images/lpaczynski/agregacja1_elastic.jpg)
+
 #Elasticsearch Agregacja 2
 <h5>Wyświetl wszystkich pracowników którzy mają na nazwisko „Johns” oraz zostali zatrudnieni w roku 2005.</h5>
 
@@ -286,3 +290,5 @@ Rezultat:
 ```js
 38 hits. 0.523 seconds
 ```
+
+![Image](../../images/lpaczynski/agregacja2_elastic.jpg)
