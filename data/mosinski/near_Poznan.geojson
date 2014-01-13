@@ -1,0 +1,39 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.92181,  52.40047 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.88284,  52.38275 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.86608,  52.39178 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.91804,  52.42666 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.9432,  52.3835 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.935266,  52.426879 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.96708,  52.38777 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.84835,  52.42964 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.96678,  52.42706 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.903972,  52.457848 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.874919,  52.339173 ] }, "properties" : { "Stacja paliw Orlen" : "Luboń" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.80917,  52.43116 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.008269,  52.410019 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  17.009814,  52.410988 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.994545,  52.361025 ] }, "properties" : { "Stacja paliw Orlen" : "Poznań" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.78904,  52.41952 ] }, "properties" : { "Stacja paliw Orlen" : "Przezmierowo" } }
+,
+{ "type": "Feature", "geometry" : { "type" : "Point", "coordinates" : [  16.88363,  52.46911 ] }, "properties" : { "Stacja paliw Orlen" : "Suchy Las" } }
+]
+}

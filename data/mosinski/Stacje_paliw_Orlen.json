@@ -1,0 +1,1245 @@
+{ "loc" : { "type" : "Point", "coordinates" : [20.021194,49.453218] }, "name" : "Stacje paliw Orlen", "city" : "Nowy Targ" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.184567,51.389297] }, "name" : "Stacje paliw Orlen", "city" : "Kurów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.695423,49.639275] }, "name" : "Stacje paliw Orlen", "city" : "Nowy Sącz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.922113,51.607584] }, "name" : "Stacje paliw Orlen", "city" : "Zduńska Wola" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.222300,52.474701] }, "name" : "Stacje paliw Orlen", "city" : "Kobylniki" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.722450,53.488820] }, "name" : "Stacje paliw Orlen", "city" : "Michale" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.498102,50.727698] }, "name" : "Stacje paliw Orlen", "city" : "Kurów" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.285380,50.944800] }, "name" : "Stacje paliw Orlen", "city" : "Oława" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.471370,52.437740] }, "name" : "Stacje paliw Orlen", "city" : "Gostynin" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.442600,51.735340] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.526112,50.558787] }, "name" : "Stacje paliw Orlen", "city" : "Łoniów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.847874,50.662710] }, "name" : "Stacje paliw Orlen", "city" : "Gorzyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.584011,53.697866] }, "name" : "Stacje paliw Orlen", "city" : "Chojnice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.440430,50.151150] }, "name" : "Stacje paliw Orlen", "city" : "Trzebinia" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.947820,50.077360] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.050282,51.185705] }, "name" : "Stacje paliw Orlen", "city" : "Zgorzelec" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.496395,53.031575] }, "name" : "Stacje paliw Orlen", "city" : "Przysiek" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.811906,50.687364] }, "name" : "Stacje paliw Orlen", "city" : "Wrzoski" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.888735,51.810014] }, "name" : "Stacje paliw Orlen", "city" : "Żelechów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.585372,50.073729] }, "name" : "Stacje paliw Orlen", "city" : "Ropczyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.224738,50.222455] }, "name" : "Stacje paliw Orlen", "city" : "Jaworzno" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.918415,52.675406] }, "name" : "Stacje paliw Orlen", "city" : "Witnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.209648,53.754585] }, "name" : "Stacje paliw Orlen", "city" : "Prabuty" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.694321,50.563204] }, "name" : "Stacje paliw Orlen", "city" : "Gromada" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.615939,52.067286] }, "name" : "Stacje paliw Orlen", "city" : "Sulechów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.102727,49.885676] }, "name" : "Stacje paliw Orlen", "city" : "Dobczyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.774742,51.890875] }, "name" : "Stacje paliw Orlen", "city" : "Pleszew" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.145700,53.445500] }, "name" : "Stacje paliw Orlen", "city" : "Gietrzwałd" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.871242,49.578205] }, "name" : "Stacje paliw Orlen", "city" : "Raba Wyżna" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.978008,52.756899] }, "name" : "Stacje paliw Orlen", "city" : "Rogozno" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.220930,53.844210] }, "name" : "Stacje paliw Orlen", "city" : "Nowe Bagienice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.121980,50.357756] }, "name" : "Stacje paliw Orlen", "city" : "Będzin" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.002343,50.719259] }, "name" : "Stacje paliw Orlen", "city" : "Zawada" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.190342,51.066131] }, "name" : "Stacje paliw Orlen", "city" : "Gajków" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.413901,51.280172] }, "name" : "Stacje paliw Orlen", "city" : "Biała" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.620278,49.755251] }, "name" : "Stacje paliw Orlen", "city" : "Moderówka" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.575794,51.951083] }, "name" : "Stacje paliw Orlen", "city" : "Zbiroża" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.998741,51.139947] }, "name" : "Stacje paliw Orlen", "city" : "Pajęczno" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.636482,53.365343] }, "name" : "Stacje paliw Orlen", "city" : "Papażyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.540909,53.958207] }, "name" : "Stacje paliw Orlen", "city" : "Starogard Gdański" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.683104,53.155559] }, "name" : "Stacje paliw Orlen", "city" : "Piła" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.156873,52.744502] }, "name" : "Stacje paliw Orlen", "city" : "Gorzów Wielkopolski" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.776364,53.292028] }, "name" : "Stacje paliw Orlen", "city" : "Płuznica" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.181171,52.312795] }, "name" : "Stacje paliw Orlen", "city" : "Kazimierz Biskupi" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.821251,49.651210] }, "name" : "Stacje paliw Orlen", "city" : "Miejsce Piastowe" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.187500,51.525833] }, "name" : "Stacje paliw Orlen", "city" : "Iłowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.427433,49.868516] }, "name" : "Stacje paliw Orlen", "city" : "Chocznia" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.953594,51.579681] }, "name" : "Stacje paliw Orlen", "city" : "Radwanice" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.320641,51.801211] }, "name" : "Stacje paliw Orlen", "city" : "Wschowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.029146,52.673728] }, "name" : "Stacje paliw Orlen", "city" : "Włocławek" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.584761,52.457781] }, "name" : "Stacje paliw Orlen", "city" : "Wola Łącka" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.423426,49.795921] }, "name" : "Stacje paliw Orlen", "city" : "Kołaczyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.781983,51.739626] }, "name" : "Stacje paliw Orlen", "city" : "Trojanów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.679789,53.037381] }, "name" : "Stacje paliw Orlen", "city" : "Toruń" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.725577,51.303494] }, "name" : "Stacje paliw Orlen", "city" : "Osła" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.930149,53.000026] }, "name" : "Stacje paliw Orlen", "city" : "Jakać Dworna" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.583438,53.167813] }, "name" : "Stacje paliw Orlen", "city" : "Chełmża" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.435008,53.065757] }, "name" : "Stacje paliw Orlen", "city" : "Rypin" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.656180,50.902387] }, "name" : "Stacje paliw Orlen", "city" : "Kielce" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.966174,51.213621] }, "name" : "Stacje paliw Orlen", "city" : "Szewce" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.006031,50.014193] }, "name" : "Stacje paliw Orlen", "city" : "Tarnów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.188553,50.558379] }, "name" : "Stacje paliw Orlen", "city" : "Izbicko" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.562383,51.843984] }, "name" : "Stacje paliw Orlen", "city" : "Leszno" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.484486,53.304313] }, "name" : "Stacje paliw Orlen", "city" : "Małe Czyste" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.836797,51.640367] }, "name" : "Stacje paliw Orlen", "city" : "Ostrów Wielkopols" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.068580,50.338969] }, "name" : "Stacje paliw Orlen", "city" : "Rataje Słupskie/Żabiec" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.580027,51.572633] }, "name" : "Stacje paliw Orlen", "city" : "Kruszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.167487,52.271722] }, "name" : "Stacje paliw Orlen", "city" : "Ruszki" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.834600,50.914100] }, "name" : "Stacje paliw Orlen", "city" : "Pokój" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.019380,49.440660] }, "name" : "Stacje paliw Orlen", "city" : "Szaflary" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.492718,52.620334] }, "name" : "Stacje paliw Orlen", "city" : "Turzyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.931184,53.160291] }, "name" : "Stacje paliw Orlen", "city" : "Chojny Młode" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.551300,53.802800] }, "name" : "Stacje paliw Orlen", "city" : "Mikołajki" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.619664,50.801568] }, "name" : "Stacje paliw Orlen", "city" : "Kielce" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.433068,52.067850] }, "name" : "Stacje paliw Orlen", "city" : "Żyrardów" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.142100,52.650200] }, "name" : "Stacje paliw Orlen", "city" : "Włocławek" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.104013,50.203859] }, "name" : "Stacje paliw Orlen", "city" : "Nienadówka" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.106329,52.242842] }, "name" : "Stacje paliw Orlen", "city" : "Golina" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.717273,50.528890] }, "name" : "Stacje paliw Orlen", "city" : "Tworóg" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.197949,50.885068] }, "name" : "Stacje paliw Orlen", "city" : "Brzezimierz" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.594682,50.046005] }, "name" : "Stacje paliw Orlen", "city" : "Ropczyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.381122,52.270416] }, "name" : "Stacje paliw Orlen", "city" : "Mostki" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.021245,50.074043] }, "name" : "Stacje paliw Orlen", "city" : "Lisia Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.121709,50.670656] }, "name" : "Stacje paliw Orlen", "city" : "Romanów" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.688563,49.716696] }, "name" : "Stacje paliw Orlen", "city" : "Maków Podhalański" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.566840,51.662747] }, "name" : "Stacje paliw Orlen", "city" : "Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.403035,51.958118] }, "name" : "Stacje paliw Orlen", "city" : "Malanów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.503170,52.142329] }, "name" : "Stacje paliw Orlen", "city" : "Maliszew" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.453149,49.926060] }, "name" : "Stacje paliw Orlen", "city" : "Nowy Wiśnicz" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.163023,52.546251] }, "name" : "Stacje paliw Orlen", "city" : "Huta Podgórna" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.271441,51.072801] }, "name" : "Stacje paliw Orlen", "city" : "Radoszyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.951459,49.385069] }, "name" : "Stacje paliw Orlen", "city" : "Krynica-Zdrój" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.033134,54.077242] }, "name" : "Stacje paliw Orlen", "city" : "Śliwin" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.121186,51.638274] }, "name" : "Stacje paliw Orlen", "city" : "Żary" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.610882,51.910390] }, "name" : "Stacje paliw Orlen", "city" : "Dobra" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.651988,49.765794] }, "name" : "Stacje paliw Orlen", "city" : "Cieszyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.512638,49.875836] }, "name" : "Stacje paliw Orlen", "city" : "Wadowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.239981,53.125449] }, "name" : "Stacje paliw Orlen", "city" : "Zaścianki" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.385500,51.509300] }, "name" : "Stacje paliw Orlen", "city" : "Zwierzyniec Duży" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.912749,50.029322] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.442850,50.744304] }, "name" : "Stacje paliw Orlen", "city" : "Dobrodzień" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.976357,49.643170] }, "name" : "Stacje paliw Orlen", "city" : "Grybów / Biała Niżna" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.231800,51.734500] }, "name" : "Stacje paliw Orlen", "city" : "Podlas" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.607105,51.850363] }, "name" : "Stacje paliw Orlen", "city" : "Leszno" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.324700,50.796000] }, "name" : "Stacje paliw Orlen", "city" : "Jałowęsy" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.724416,51.299976] }, "name" : "Stacje paliw Orlen", "city" : "Łuszczów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.976855,50.339259] }, "name" : "Stacje paliw Orlen", "city" : "PiekaryŚląskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.520100,52.071200] }, "name" : "Stacje paliw Orlen", "city" : "Stare Budy" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.116190,49.365164] }, "name" : "Stacje paliw Orlen", "city" : "Białka Tatrzańska" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.815313,49.654708] }, "name" : "Stacje paliw Orlen", "city" : "Jordanów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.643658,49.854352] }, "name" : "Stacje paliw Orlen", "city" : "Tymowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.389456,51.918420] }, "name" : "Stacje paliw Orlen", "city" : "Łuków" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.529200,50.722900] }, "name" : "Stacje paliw Orlen", "city" : "Gwozdziany" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.930157,50.842093] }, "name" : "Stacje paliw Orlen", "city" : "Wręczyca Wielka" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.301685,52.218331] }, "name" : "Stacje paliw Orlen", "city" : "Konik Nowy" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.593900,51.665091] }, "name" : "Stacje paliw Orlen", "city" : "Ostrów Wielkopolski" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.492602,50.096214] }, "name" : "Stacje paliw Orlen", "city" : "Gorliczyna" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.654007,52.458343] }, "name" : "Stacje paliw Orlen", "city" : "Tarnowo Podgórne" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.543600,52.222600] }, "name" : "Stacje paliw Orlen", "city" : "Granowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.452168,52.174169] }, "name" : "Stacje paliw Orlen", "city" : "Genowefa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.624809,50.833282] }, "name" : "Stacje paliw Orlen", "city" : "Bidziny" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.201888,51.045039] }, "name" : "Stacje paliw Orlen", "city" : "Jawor" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.949312,52.192603] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.423103,50.436547] }, "name" : "Stacje paliw Orlen", "city" : "Tomaszów Lubelski" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.704100,52.211800] }, "name" : "Stacje paliw Orlen", "city" : "Łosice" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.331600,52.474700] }, "name" : "Stacje paliw Orlen", "city" : "Skulsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.588384,53.109394] }, "name" : "Stacje paliw Orlen", "city" : "Zawady" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.119233,52.268527] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.583690,50.716397] }, "name" : "Stacje paliw Orlen", "city" : "Pieszyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.805401,50.581598] }, "name" : "Stacje paliw Orlen", "city" : "Ząbkowice śląskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.154318,52.786876] }, "name" : "Stacje paliw Orlen", "city" : "Sierakowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.081461,52.286287] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.422515,52.213087] }, "name" : "Stacje paliw Orlen", "city" : "Paprotnia" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.792400,50.861700] }, "name" : "Stacje paliw Orlen", "city" : "Górno" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.229400,51.914600] }, "name" : "Stacje paliw Orlen", "city" : "Borek Wielkopolski" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.781100,50.384100] }, "name" : "Stacje paliw Orlen", "city" : "Wolbrom" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.204100,50.317012] }, "name" : "Stacje paliw Orlen", "city" : "Dąbrowa Górnicza" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.403151,50.287554] }, "name" : "Stacje paliw Orlen", "city" : "Mielec" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.821900,51.737400] }, "name" : "Stacje paliw Orlen", "city" : "Koluszki" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.034884,49.858687] }, "name" : "Stacje paliw Orlen", "city" : "Bielsko-Biała" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.141481,50.994880] }, "name" : "Stacje paliw Orlen", "city" : "Krasnystaw" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.659433,52.563768] }, "name" : "Stacje paliw Orlen", "city" : "Płock" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.464716,52.585620] }, "name" : "Stacje paliw Orlen", "city" : "Wyszków" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.487355,53.758658] }, "name" : "Stacje paliw Orlen", "city" : "Olsztyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.323770,50.761797] }, "name" : "Stacje paliw Orlen", "city" : "Wałbrzych" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.060000,50.776900] }, "name" : "Stacje paliw Orlen", "city" : "Strzelin" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.102163,51.655703] }, "name" : "Stacje paliw Orlen", "city" : "Głogów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.875457,49.825696] }, "name" : "Stacje paliw Orlen", "city" : "Żyznów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.126838,50.369041] }, "name" : "Stacje paliw Orlen", "city" : "Jeżowe" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.368199,52.678746] }, "name" : "Stacje paliw Orlen", "city" : "Ćwiklinek" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.296675,50.869014] }, "name" : "Stacje paliw Orlen", "city" : "świebodzice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.405442,51.391817] }, "name" : "Stacje paliw Orlen", "city" : "Dobrzelów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.034600,50.328300] }, "name" : "Stacje paliw Orlen", "city" : "Miechów" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.062728,51.506964] }, "name" : "Stacje paliw Orlen", "city" : "Polkowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.437816,49.982333] }, "name" : "Stacje paliw Orlen", "city" : "Zator" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.794500,49.724500] }, "name" : "Stacje paliw Orlen", "city" : "Ustroń" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.396460,50.921401] }, "name" : "Stacje paliw Orlen", "city" : "Ostrowiec świętokrzyski" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.337214,53.413510] }, "name" : "Stacje paliw Orlen", "city" : "Nidzica" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.835500,49.796100] }, "name" : "Stacje paliw Orlen", "city" : "Pogórze" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.200010,52.851555] }, "name" : "Stacje paliw Orlen", "city" : "Lipno" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.448379,50.287857] }, "name" : "Stacje paliw Orlen", "city" : "Mielec" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.414200,53.629400] }, "name" : "Stacje paliw Orlen", "city" : "Grajewo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.068500,50.669100] }, "name" : "Stacje paliw Orlen", "city" : "Chrząstowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.899906,50.386006] }, "name" : "Stacje paliw Orlen", "city" : "Radzionków" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.436000,50.515800] }, "name" : "Stacje paliw Orlen", "city" : "Osiek" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.916797,53.160811] }, "name" : "Stacje paliw Orlen", "city" : "Frydrychowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.281581,52.766038] }, "name" : "Stacje paliw Orlen", "city" : "Gorzów Wielkopolski" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.688684,50.064714] }, "name" : "Stacje paliw Orlen", "city" : "Sędziszów Małopolski" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.934062,52.392267] }, "name" : "Stacje paliw Orlen", "city" : "Legionowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.186685,50.301809] }, "name" : "Stacje paliw Orlen", "city" : "Sosnowiec" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.333378,51.813622] }, "name" : "Stacje paliw Orlen", "city" : "Wschowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.107761,50.145784] }, "name" : "Stacje paliw Orlen", "city" : "Lędziny" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.730366,52.572583] }, "name" : "Stacje paliw Orlen", "city" : "Płock" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.166165,49.648814] }, "name" : "Stacje paliw Orlen", "city" : "Gorlice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.670850,52.845267] }, "name" : "Stacje paliw Orlen", "city" : "Sierpc" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.191413,51.679018] }, "name" : "Stacje paliw Orlen", "city" : "Czerniewice" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.141927,52.365365] }, "name" : "Stacje paliw Orlen", "city" : "Marki" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.966049,52.116941] }, "name" : "Stacje paliw Orlen", "city" : "Łowicz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.661769,49.872254] }, "name" : "Stacje paliw Orlen", "city" : "Kalwaria Zebrzydowska" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.346320,49.860618] }, "name" : "Stacje paliw Orlen", "city" : "Andrychów" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.163451,50.768839] }, "name" : "Stacje paliw Orlen", "city" : "Częstochowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.741686,49.964772] }, "name" : "Stacje paliw Orlen", "city" : "Sufczyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.052901,49.684495] }, "name" : "Stacje paliw Orlen", "city" : "Mszana Dolna" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.749751,52.416121] }, "name" : "Stacje paliw Orlen", "city" : "Nowy Dwór" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.914816,51.480186] }, "name" : "Stacje paliw Orlen", "city" : "Żmigród" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.345398,50.453278] }, "name" : "Stacje paliw Orlen", "city" : "Nysa" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.821944,51.293378] }, "name" : "Stacje paliw Orlen", "city" : "Perzów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.868097,50.443201] }, "name" : "Stacje paliw Orlen", "city" : "Tarnowskie Góry" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.983518,50.035653] }, "name" : "Stacje paliw Orlen", "city" : "Tarnów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.380745,52.416389] }, "name" : "Stacje paliw Orlen", "city" : "Chociszewo" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.861000,52.828900] }, "name" : "Stacje paliw Orlen", "city" : "Komorowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.859055,52.216386] }, "name" : "Stacje paliw Orlen", "city" : "Jawczyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.948172,52.870070] }, "name" : "Stacje paliw Orlen", "city" : "Barcin" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.368022,50.127185] }, "name" : "Stacje paliw Orlen", "city" : "Chrzanów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.115978,52.337272] }, "name" : "Stacje paliw Orlen", "city" : "Marki" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.057939,53.148122] }, "name" : "Stacje paliw Orlen", "city" : "Porosły" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.503100,50.192800] }, "name" : "Stacje paliw Orlen", "city" : "Tuszyma" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.929565,49.594153] }, "name" : "Stacje paliw Orlen", "city" : "Chabówka" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.615843,51.034126] }, "name" : "Stacje paliw Orlen", "city" : "Jaworek" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.484773,51.247583] }, "name" : "Stacje paliw Orlen", "city" : "Brzeznik" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.222299,52.107620] }, "name" : "Stacje paliw Orlen", "city" : "Józefów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.116959,52.316501] }, "name" : "Stacje paliw Orlen", "city" : "Marki" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.112027,50.787763] }, "name" : "Stacje paliw Orlen", "city" : "Częstochowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.117655,52.027343] }, "name" : "Stacje paliw Orlen", "city" : "Baniocha" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.227519,52.344475] }, "name" : "Stacje paliw Orlen", "city" : "Wołomin" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.283700,52.846600] }, "name" : "Stacje paliw Orlen", "city" : "Rzewnie" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.952500,51.480100] }, "name" : "Stacje paliw Orlen", "city" : "Przewóz" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.998600,51.639400] }, "name" : "Stacje paliw Orlen", "city" : "Lipinki Łużyckie" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.190200,50.080900] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.994700,53.997000] }, "name" : "Stacje paliw Orlen", "city" : "Kolno" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.695294,50.774644] }, "name" : "Stacje paliw Orlen", "city" : "Koniecpol" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.892100,52.802800] }, "name" : "Stacje paliw Orlen", "city" : "Ostrów Mazowiecka" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.064500,53.164400] }, "name" : "Stacje paliw Orlen", "city" : "Łomża" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.930883,53.283432] }, "name" : "Stacje paliw Orlen", "city" : "Stopka" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.103200,50.296500] }, "name" : "Stacje paliw Orlen", "city" : "Czelsdz" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.986380,49.998153] }, "name" : "Stacje paliw Orlen", "city" : "Tarnów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.406900,50.060000] }, "name" : "Stacje paliw Orlen", "city" : "Dębica" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.985302,50.258977] }, "name" : "Stacje paliw Orlen", "city" : "Katowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.772000,51.658500] }, "name" : "Stacje paliw Orlen", "city" : "Ostrów Wielkopolski" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.370241,52.614633] }, "name" : "Stacje paliw Orlen", "city" : "Płońsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.804600,52.857700] }, "name" : "Stacje paliw Orlen", "city" : "Raciążek" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.845900,50.148900] }, "name" : "Stacje paliw Orlen", "city" : "Łaziska Górne" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.633800,50.137600] }, "name" : "Stacje paliw Orlen", "city" : "Krzeszowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.937600,51.386000] }, "name" : "Stacje paliw Orlen", "city" : "Góra Puławska" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.457700,50.885200] }, "name" : "Stacje paliw Orlen", "city" : "Piekoszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.667300,50.835600] }, "name" : "Stacje paliw Orlen", "city" : "Podgórzyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.602372,51.395248] }, "name" : "Stacje paliw Orlen", "city" : "Trzebień" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.171900,51.661400] }, "name" : "Stacje paliw Orlen", "city" : "Kadłubia" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.736207,51.402286] }, "name" : "Stacje paliw Orlen", "city" : "Piotrków Trybunalski" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.171800,51.021000] }, "name" : "Stacje paliw Orlen", "city" : "Paszowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.609100,50.754100] }, "name" : "Stacje paliw Orlen", "city" : "Ciasna" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.336600,53.777100] }, "name" : "Stacje paliw Orlen", "city" : "Nowa Wieś Ełcka" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.137900,50.815300] }, "name" : "Stacje paliw Orlen", "city" : "Częstochowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.688941,52.029314] }, "name" : "Stacje paliw Orlen", "city" : "Przeszkoda" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.692700,49.624300] }, "name" : "Stacje paliw Orlen", "city" : "Nowy Sącz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.289700,49.876400] }, "name" : "Stacje paliw Orlen", "city" : "Bulowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.438600,49.556900] }, "name" : "Stacje paliw Orlen", "city" : "Łącko" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.684019,52.129610] }, "name" : "Stacje paliw Orlen", "city" : "Kawczyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.565789,51.221933] }, "name" : "Stacje paliw Orlen", "city" : "Rychłowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.289600,51.125800] }, "name" : "Stacje paliw Orlen", "city" : "Lubań" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.019409,51.151653] }, "name" : "Stacje paliw Orlen", "city" : "Zgorzelec" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.523800,52.686600] }, "name" : "Stacje paliw Orlen", "city" : "Zadobrze" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.476439,51.955112] }, "name" : "Stacje paliw Orlen", "city" : "Zielona Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.168445,54.194295] }, "name" : "Stacje paliw Orlen", "city" : "Koszalin" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.579268,53.707971] }, "name" : "Stacje paliw Orlen", "city" : "Chojnice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.920032,52.107708] }, "name" : "Stacje paliw Orlen", "city" : "Łowicz" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.309400,49.734900] }, "name" : "Stacje paliw Orlen", "city" : "Podłopień" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.333639,52.616407] }, "name" : "Stacje paliw Orlen", "city" : "Ilinko" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.816227,51.633979] }, "name" : "Stacje paliw Orlen", "city" : "Królów" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.165442,50.323485] }, "name" : "Stacje paliw Orlen", "city" : "Dąbrowa Górnicza" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.535800,52.366100] }, "name" : "Stacje paliw Orlen", "city" : "Buk" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.740300,52.194200] }, "name" : "Stacje paliw Orlen", "city" : "Jakubów" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.090900,52.117000] }, "name" : "Stacje paliw Orlen", "city" : "Niałek Wielki" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.084400,52.100200] }, "name" : "Stacje paliw Orlen", "city" : "Wolsztyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.630200,51.336900] }, "name" : "Stacje paliw Orlen", "city" : "Lipiany" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.566798,51.269896] }, "name" : "Stacje paliw Orlen", "city" : "Bolesławiec" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.718035,50.469722] }, "name" : "Stacje paliw Orlen", "city" : "Elżbiecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.372447,50.131773] }, "name" : "Stacje paliw Orlen", "city" : "Hebdów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.615549,49.753754] }, "name" : "Stacje paliw Orlen", "city" : "Łososina Dolna" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.147500,49.979000] }, "name" : "Stacje paliw Orlen", "city" : "Łukanowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.422600,50.066600] }, "name" : "Stacje paliw Orlen", "city" : "Wygiełzów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.856717,49.528557] }, "name" : "Stacje paliw Orlen", "city" : "Łabowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.160320,52.067793] }, "name" : "Stacje paliw Orlen", "city" : "Rychwał" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.323990,51.022965] }, "name" : "Stacje paliw Orlen", "city" : "Jelcz-Laskowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.438096,51.712642] }, "name" : "Stacje paliw Orlen", "city" : "Krotoszyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.119964,50.072839] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.616000,50.244800] }, "name" : "Stacje paliw Orlen", "city" : "Żernica" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.911537,49.865763] }, "name" : "Stacje paliw Orlen", "city" : "Jawornik" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.895000,49.859000] }, "name" : "Stacje paliw Orlen", "city" : "Jawornik" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.145767,52.024305] }, "name" : "Stacje paliw Orlen", "city" : "Biała Podlaska" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.093105,52.032033] }, "name" : "Stacje paliw Orlen", "city" : "Biała Podlaska" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.409400,51.203800] }, "name" : "Stacje paliw Orlen", "city" : "Końskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.298662,50.093084] }, "name" : "Stacje paliw Orlen", "city" : "Libiąż" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.483990,49.886598] }, "name" : "Stacje paliw Orlen", "city" : "Wadowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.793800,52.566900] }, "name" : "Stacje paliw Orlen", "city" : "Wierzbno" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.570800,52.461900] }, "name" : "Stacje paliw Orlen", "city" : "Międzyrzecz" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.621970,52.193837] }, "name" : "Stacje paliw Orlen", "city" : "Błonie" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.841800,49.682600] }, "name" : "Stacje paliw Orlen", "city" : "Wisła" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.772530,51.028350] }, "name" : "Stacje paliw Orlen", "city" : "Kąty Wrocławskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.574104,51.836394] }, "name" : "Stacje paliw Orlen", "city" : "Leszno" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.962120,53.137200] }, "name" : "Stacje paliw Orlen", "city" : "Bydgoszcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.734980,53.906640] }, "name" : "Stacje paliw Orlen", "city" : "Sople" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.477135,54.380675] }, "name" : "Stacje paliw Orlen", "city" : "Gdańsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.978987,52.168175] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.652843,52.324049] }, "name" : "Stacje paliw Orlen", "city" : "Słubice" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.746970,50.903250] }, "name" : "Stacje paliw Orlen", "city" : "Sobótka" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.596540,51.316920] }, "name" : "Stacje paliw Orlen", "city" : "Kraśnik" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.979290,50.068860] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.179248,51.944996] }, "name" : "Stacje paliw Orlen", "city" : "Stary Chrząstów" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.176013,51.944556] }, "name" : "Stacje paliw Orlen", "city" : "Stary Chrząstów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.162840,50.462560] }, "name" : "Stacje paliw Orlen", "city" : "Wysoka" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.676080,50.009320] }, "name" : "Stacje paliw Orlen", "city" : "Jarosław" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.584860,52.863600] }, "name" : "Stacje paliw Orlen", "city" : "Ciechanów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.013340,52.866060] }, "name" : "Stacje paliw Orlen", "city" : "Prosienica" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.569810,51.307060] }, "name" : "Stacje paliw Orlen", "city" : "Łąka" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.994789,50.130069] }, "name" : "Stacje paliw Orlen", "city" : "Tychy" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.367060,51.370270] }, "name" : "Stacje paliw Orlen", "city" : "Bełchatów" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.696100,50.702800] }, "name" : "Stacje paliw Orlen", "city" : "Karczów" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.193888,50.140881] }, "name" : "Stacje paliw Orlen", "city" : "Imielin" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.578267,51.287690] }, "name" : "Stacje paliw Orlen", "city" : "Elizówka" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.329140,52.128780] }, "name" : "Stacje paliw Orlen", "city" : "Guzów" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.659302,52.084668] }, "name" : "Stacje paliw Orlen", "city" : "Kościan" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.008380,52.450860] }, "name" : "Stacje paliw Orlen", "city" : "Bodzanów" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.652470,52.580590] }, "name" : "Stacje paliw Orlen", "city" : "Płock" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.296560,52.371160] }, "name" : "Stacje paliw Orlen", "city" : "Ślesin" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.964580,52.647780] }, "name" : "Stacje paliw Orlen", "city" : "Mogilno" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.287610,50.185420] }, "name" : "Stacje paliw Orlen", "city" : "Jaworzno" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.475130,51.370590] }, "name" : "Stacje paliw Orlen", "city" : "Twardogóra" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.184000,52.312920] }, "name" : "Stacje paliw Orlen", "city" : "Zielonka" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.774100,52.875370] }, "name" : "Stacje paliw Orlen", "city" : "Ciechocinek" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.841010,50.810740] }, "name" : "Stacje paliw Orlen", "city" : "Zawichost" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.311040,50.636920] }, "name" : "Stacje paliw Orlen", "city" : "Jędrzejów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.551680,51.220290] }, "name" : "Stacje paliw Orlen", "city" : "Lublin" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.274110,53.001090] }, "name" : "Stacje paliw Orlen", "city" : "Zambrów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.506060,53.784900] }, "name" : "Stacje paliw Orlen", "city" : "Olsztyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.920050,50.485580] }, "name" : "Stacje paliw Orlen", "city" : "Miasteczko śląskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.148720,52.225856] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.369050,52.117260] }, "name" : "Stacje paliw Orlen", "city" : "Wola Ducka" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.375140,52.114920] }, "name" : "Stacje paliw Orlen", "city" : "Wola Ducka" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.248090,52.118310] }, "name" : "Stacje paliw Orlen", "city" : "Otwock" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.240410,52.128650] }, "name" : "Stacje paliw Orlen", "city" : "Józefów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.932750,52.270670] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.028770,50.458780] }, "name" : "Stacje paliw Orlen", "city" : "Paczków" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.545520,50.508700] }, "name" : "Stacje paliw Orlen", "city" : "Pińczów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.742740,50.625490] }, "name" : "Stacje paliw Orlen", "city" : "Chmielnik" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.894610,52.593150] }, "name" : "Stacje paliw Orlen", "city" : "Międzychód" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.382920,53.109630] }, "name" : "Stacje paliw Orlen", "city" : "Mława" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.697060,50.869290] }, "name" : "Stacje paliw Orlen", "city" : "Jelenia Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.267140,52.231980] }, "name" : "Stacje paliw Orlen", "city" : "środa Wielkopolska" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.485750,54.186910] }, "name" : "Stacje paliw Orlen", "city" : "Bytów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.614840,49.954770] }, "name" : "Stacje paliw Orlen", "city" : "Jastrzębie-Zdrój" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.042700,51.157510] }, "name" : "Stacje paliw Orlen", "city" : "Łagów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.694340,49.958910] }, "name" : "Stacje paliw Orlen", "city" : "Pawłowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.819270,54.248880] }, "name" : "Stacje paliw Orlen", "city" : "Bartoszyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.876320,52.829570] }, "name" : "Stacje paliw Orlen", "city" : "Ostrów Mazowiecka" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.152140,54.186280] }, "name" : "Stacje paliw Orlen", "city" : "Koszalin" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.255610,52.737440] }, "name" : "Stacje paliw Orlen", "city" : "Gorzów Wielkopolski" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.554178,50.050124] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.217740,50.044640] }, "name" : "Stacje paliw Orlen", "city" : "Niepołomice" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.181480,54.211550] }, "name" : "Stacje paliw Orlen", "city" : "Koszalin" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.983330,54.208930] }, "name" : "Stacje paliw Orlen", "city" : "Będzino" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.314550,51.199770] }, "name" : "Stacje paliw Orlen", "city" : "Smardzów" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.109805,50.916171] }, "name" : "Stacje paliw Orlen", "city" : "Bolków" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.188390,52.313330] }, "name" : "Stacje paliw Orlen", "city" : "Zielonka" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.585290,53.034700] }, "name" : "Stacje paliw Orlen", "city" : "Toruń" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.152710,54.209410] }, "name" : "Stacje paliw Orlen", "city" : "Koszalin" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.095120,52.234570] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.474420,50.856620] }, "name" : "Stacje paliw Orlen", "city" : "Brzeg" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.228400,52.224090] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.572070,53.543220] }, "name" : "Stacje paliw Orlen", "city" : "Police" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.040610,54.465240] }, "name" : "Stacje paliw Orlen", "city" : "Słupsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.992880,54.457480] }, "name" : "Stacje paliw Orlen", "city" : "Słupsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.754510,53.160570] }, "name" : "Stacje paliw Orlen", "city" : "Piła" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.228200,50.766900] }, "name" : "Stacje paliw Orlen", "city" : "Sitaniec k.Zamościa" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.882090,53.152280] }, "name" : "Stacje paliw Orlen", "city" : "Pyrzyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.612550,53.622460] }, "name" : "Stacje paliw Orlen", "city" : "Łobez" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.711430,51.212730] }, "name" : "Stacje paliw Orlen", "city" : "świdnik" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.692080,52.852320] }, "name" : "Stacje paliw Orlen", "city" : "Sierpc" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.222090,52.407560] }, "name" : "Stacje paliw Orlen", "city" : "Sokołów Podlaski" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.987930,53.555400] }, "name" : "Stacje paliw Orlen", "city" : "Szczytno" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.142360,51.391370] }, "name" : "Stacje paliw Orlen", "city" : "Radom" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.868353,51.485641] }, "name" : "Stacje paliw Orlen", "city" : "Niedzwiedz" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.432400,51.304810] }, "name" : "Stacje paliw Orlen", "city" : "Jastków" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.633190,51.370600] }, "name" : "Stacje paliw Orlen", "city" : "Zalesie" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.368070,51.096300] }, "name" : "Stacje paliw Orlen", "city" : "Niedrzwica Kościelna" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.307080,52.148180] }, "name" : "Stacje paliw Orlen", "city" : "Siedlce" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.523524,51.018453] }, "name" : "Stacje paliw Orlen", "city" : "Bychawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.341080,50.745840] }, "name" : "Stacje paliw Orlen", "city" : "Modliborzyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.586810,51.107480] }, "name" : "Stacje paliw Orlen", "city" : "Jabłonna" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.219430,51.309000] }, "name" : "Stacje paliw Orlen", "city" : "Piotrowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.879550,50.603980] }, "name" : "Stacje paliw Orlen", "city" : "Panasówka" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.356290,51.657760] }, "name" : "Stacje paliw Orlen", "city" : "Pabianice" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.011470,50.063440] }, "name" : "Stacje paliw Orlen", "city" : "Rzeszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.483180,49.976330] }, "name" : "Stacje paliw Orlen", "city" : "Gorzków" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.795360,49.877860] }, "name" : "Stacje paliw Orlen", "city" : "Biertowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.851682,50.629202] }, "name" : "Stacje paliw Orlen", "city" : "Szczekociny" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.894220,50.190210] }, "name" : "Stacje paliw Orlen", "city" : "Widełka" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.165720,50.300850] }, "name" : "Stacje paliw Orlen", "city" : "Sosnowiec" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.782200,53.792500] }, "name" : "Stacje paliw Orlen", "city" : "widwin" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.952380,50.015880] }, "name" : "Stacje paliw Orlen", "city" : "Tarnów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.692600,49.424460] }, "name" : "Stacje paliw Orlen", "city" : "Barwinek" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.113030,50.415520] }, "name" : "Stacje paliw Orlen", "city" : "Zdzieszowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.378850,52.246160] }, "name" : "Stacje paliw Orlen", "city" : "Kutno" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.634930,50.395860] }, "name" : "Stacje paliw Orlen", "city" : "Pyskowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.485830,53.276270] }, "name" : "Stacje paliw Orlen", "city" : "Wałcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.304690,54.303950] }, "name" : "Stacje paliw Orlen", "city" : "Gołdap" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.516100,50.408910] }, "name" : "Stacje paliw Orlen", "city" : "Polanica-Zdrój" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.271980,51.527380] }, "name" : "Stacje paliw Orlen", "city" : "Milicz" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.031480,52.432297] }, "name" : "Stacje paliw Orlen", "city" : "Nieporęt" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.279020,50.820470] }, "name" : "Stacje paliw Orlen", "city" : "Małogoszcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.435530,51.055160] }, "name" : "Stacje paliw Orlen", "city" : "Praszka" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.651940,51.798000] }, "name" : "Stacje paliw Orlen", "city" : "Rydzyna" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.093040,52.908500] }, "name" : "Stacje paliw Orlen", "city" : "Szumowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.044680,53.914400] }, "name" : "Stacje paliw Orlen", "city" : "Sztum" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.091750,51.769680] }, "name" : "Stacje paliw Orlen", "city" : "Kalisz" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.593084,52.595749] }, "name" : "Stacje paliw Orlen", "city" : "Szamotuły" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.883630,52.469110] }, "name" : "Stacje paliw Orlen", "city" : "Suchy Las" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.994545,52.361025] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.250310,52.299060] }, "name" : "Stacje paliw Orlen", "city" : "Pozrzadło" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.083300,52.449400] }, "name" : "Stacje paliw Orlen", "city" : "Kobylnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.629040,50.681180] }, "name" : "Stacje paliw Orlen", "city" : "Bielawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.181890,51.206880] }, "name" : "Stacje paliw Orlen", "city" : "Legnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.986220,51.779200] }, "name" : "Stacje paliw Orlen", "city" : "Lubsko" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.939440,52.256740] }, "name" : "Stacje paliw Orlen", "city" : "Zbąszyń" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.975220,53.693820] }, "name" : "Stacje paliw Orlen", "city" : "Ostróda" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.169900,50.571470] }, "name" : "Stacje paliw Orlen", "city" : "Staszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.781160,50.374240] }, "name" : "Stacje paliw Orlen", "city" : "Wieszowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.907460,50.703130] }, "name" : "Stacje paliw Orlen", "city" : "Opole" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.229830,50.466020] }, "name" : "Stacje paliw Orlen", "city" : "Siewierz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.078330,50.319260] }, "name" : "Stacje paliw Orlen", "city" : "Czeladz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.415550,50.073880] }, "name" : "Stacje paliw Orlen", "city" : "Rydułtowy" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.899680,50.253000] }, "name" : "Stacje paliw Orlen", "city" : "RudaŚląska" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.873050,50.270460] }, "name" : "Stacje paliw Orlen", "city" : "RudaŚląska" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.142859,50.231825] }, "name" : "Stacje paliw Orlen", "city" : "Mysłowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.992380,53.998470] }, "name" : "Stacje paliw Orlen", "city" : "Białogard" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.470030,53.032597] }, "name" : "Stacje paliw Orlen", "city" : "Trzcianka" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.635530,54.333400] }, "name" : "Stacje paliw Orlen", "city" : "Gdańsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.184220,52.771340] }, "name" : "Stacje paliw Orlen", "city" : "Bielsk Podlaski" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.924050,52.252060] }, "name" : "Stacje paliw Orlen", "city" : "Kołodawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.147760,50.335590] }, "name" : "Stacje paliw Orlen", "city" : "Kędzierzyn-Kozle" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.197820,51.385290] }, "name" : "Stacje paliw Orlen", "city" : "Lubin" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.607900,54.326190] }, "name" : "Stacje paliw Orlen", "city" : "Gdańsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.120260,52.440520] }, "name" : "Stacje paliw Orlen", "city" : "Sulęcin" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.422660,54.560180] }, "name" : "Stacje paliw Orlen", "city" : "Rumia" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.845330,51.987270] }, "name" : "Stacje paliw Orlen", "city" : "Tarczyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.936433,52.170009] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.971010,52.186240] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.893700,52.200010] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.110990,52.807050] }, "name" : "Stacje paliw Orlen", "city" : "Rybitwy" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.526400,53.430260] }, "name" : "Stacje paliw Orlen", "city" : "Wiąg" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.877240,52.972930] }, "name" : "Stacje paliw Orlen", "city" : "Obrowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.082290,52.407290] }, "name" : "Stacje paliw Orlen", "city" : "Swarzędz" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.475480,52.386700] }, "name" : "Stacje paliw Orlen", "city" : "Zalesie" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.091637,52.327563] }, "name" : "Stacje paliw Orlen", "city" : "Krzyżowniki" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.379330,54.576340] }, "name" : "Stacje paliw Orlen", "city" : "Rumia" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.674190,54.364200] }, "name" : "Stacje paliw Orlen", "city" : "Sławno" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.453730,54.541530] }, "name" : "Stacje paliw Orlen", "city" : "Gdynia" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.344900,53.658400] }, "name" : "Stacje paliw Orlen", "city" : "Człuchów" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.992610,51.281510] }, "name" : "Stacje paliw Orlen", "city" : "Kępno" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.848350,52.429640] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.376600,51.936940] }, "name" : "Stacje paliw Orlen", "city" : "Łuków" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.551200,52.895900] }, "name" : "Stacje paliw Orlen", "city" : "Czarnków" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.966780,52.427060] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.062620,51.764180] }, "name" : "Stacje paliw Orlen", "city" : "Kalisz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.665960,52.206220] }, "name" : "Stacje paliw Orlen", "city" : "Koło" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.554480,52.314300] }, "name" : "Stacje paliw Orlen", "city" : "Września" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.518670,51.956010] }, "name" : "Stacje paliw Orlen", "city" : "Jarocin" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.967080,52.387770] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.958400,52.225220] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.119770,52.179680] }, "name" : "Stacje paliw Orlen", "city" : "Osiecza" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.124930,52.179750] }, "name" : "Stacje paliw Orlen", "city" : "Osiecza" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.261050,52.821550] }, "name" : "Stacje paliw Orlen", "city" : "Dreglin" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.389500,51.106770] }, "name" : "Stacje paliw Orlen", "city" : "Stobiecko Szlacheckie" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.055660,49.808270] }, "name" : "Stacje paliw Orlen", "city" : "Bielsko-Biała" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.701340,51.956690] }, "name" : "Stacje paliw Orlen", "city" : "Głowno" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.913590,50.808360] }, "name" : "Stacje paliw Orlen", "city" : "Hrubieszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.803790,53.396490] }, "name" : "Stacje paliw Orlen", "city" : "Mońki" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.556760,51.938280] }, "name" : "Stacje paliw Orlen", "city" : "Zielona Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.378380,53.452840] }, "name" : "Stacje paliw Orlen", "city" : "Lubieszyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.388040,50.320970] }, "name" : "Stacje paliw Orlen", "city" : "Głuchołazy" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.680910,52.558970] }, "name" : "Stacje paliw Orlen", "city" : "Płock" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.747790,52.538060] }, "name" : "Stacje paliw Orlen", "city" : "Płock" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.157720,51.177660] }, "name" : "Stacje paliw Orlen", "city" : "Legnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.273570,52.499330] }, "name" : "Stacje paliw Orlen", "city" : "Pniewy" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.401960,52.892920] }, "name" : "Stacje paliw Orlen", "city" : "Gniewkowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.948350,52.650030] }, "name" : "Stacje paliw Orlen", "city" : "Mogilno" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.509140,51.795980] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.071520,50.784680] }, "name" : "Stacje paliw Orlen", "city" : "Strzelin" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.932412,50.017917] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.060986,53.691305] }, "name" : "Stacje paliw Orlen", "city" : "Idzbark" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.011040,54.038090] }, "name" : "Stacje paliw Orlen", "city" : "Malbork" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.154990,50.718560] }, "name" : "Stacje paliw Orlen", "city" : "Poczesna" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.740970,53.717470] }, "name" : "Stacje paliw Orlen", "city" : "Marcelin" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.685760,54.178770] }, "name" : "Stacje paliw Orlen", "city" : "Pszczółki" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.759910,50.079340] }, "name" : "Stacje paliw Orlen", "city" : "Morawica" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.774820,50.081400] }, "name" : "Stacje paliw Orlen", "city" : "Aleksandrowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.564180,51.199590] }, "name" : "Stacje paliw Orlen", "city" : "Lublin" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.117220,52.055310] }, "name" : "Stacje paliw Orlen", "city" : "Krosno Odrzańskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.349370,51.871850] }, "name" : "Stacje paliw Orlen", "city" : "Wilga" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.910810,53.008530] }, "name" : "Stacje paliw Orlen", "city" : "Przasnysz" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.245080,52.222460] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.570290,53.088650] }, "name" : "Stacje paliw Orlen", "city" : "Ostrołęka" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.594820,53.094630] }, "name" : "Stacje paliw Orlen", "city" : "Ostrołęka" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.897210,52.239000] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.912570,51.444640] }, "name" : "Stacje paliw Orlen", "city" : "Ostrzeszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.874919,52.339173] }, "name" : "Stacje paliw Orlen", "city" : "Luboń" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.334300,50.855640] }, "name" : "Stacje paliw Orlen", "city" : "świebodzice" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.670050,50.159230] }, "name" : "Stacje paliw Orlen", "city" : "Międzylesie" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.024780,51.084640] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.475500,52.692590] }, "name" : "Stacje paliw Orlen", "city" : "Sochocin" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.045500,52.176770] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.006214,52.215256] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.812540,52.171430] }, "name" : "Stacje paliw Orlen", "city" : "Pruszków" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.580400,52.177890] }, "name" : "Stacje paliw Orlen", "city" : "Mińsk Mazowiecki" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.283480,52.164750] }, "name" : "Stacje paliw Orlen", "city" : "Siedlce" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.537930,51.550660] }, "name" : "Stacje paliw Orlen", "city" : "Włodawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.208849,50.415949] }, "name" : "Stacje paliw Orlen", "city" : "Susiec" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.597220,51.250140] }, "name" : "Stacje paliw Orlen", "city" : "Lublin" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.157360,53.159540] }, "name" : "Stacje paliw Orlen", "city" : "Bydgoszcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.036730,53.136010] }, "name" : "Stacje paliw Orlen", "city" : "Bydgoszcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.861030,53.079740] }, "name" : "Stacje paliw Orlen", "city" : "Kruszyn Krajeński" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.906953,53.150726] }, "name" : "Stacje paliw Orlen", "city" : "Bydgoszcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.888030,53.154850] }, "name" : "Stacje paliw Orlen", "city" : "Pawłówek" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.257950,52.524930] }, "name" : "Stacje paliw Orlen", "city" : "Jeziora Wielkie" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.140710,50.820450] }, "name" : "Stacje paliw Orlen", "city" : "Częstochowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.903972,52.457848] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.866080,52.391780] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.789040,52.419520] }, "name" : "Stacje paliw Orlen", "city" : "Przezmierowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.570300,53.442940] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.421980,53.336920] }, "name" : "Stacje paliw Orlen", "city" : "Barnisław" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.787100,53.464500] }, "name" : "Stacje paliw Orlen", "city" : "Kliniska Wielkie" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.537210,53.454120] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.497970,53.435780] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.732880,49.691550] }, "name" : "Stacje paliw Orlen", "city" : "Krosno" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.018660,49.705580] }, "name" : "Stacje paliw Orlen", "city" : "Brzozów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.153160,49.569860] }, "name" : "Stacje paliw Orlen", "city" : "Sanok" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.627200,49.820720] }, "name" : "Stacje paliw Orlen", "city" : "Twierdza" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.428871,51.149168] }, "name" : "Stacje paliw Orlen", "city" : "Chełm" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.766270,52.000540] }, "name" : "Stacje paliw Orlen", "city" : "Międzyrzec Podlaski" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.467180,51.130330] }, "name" : "Stacje paliw Orlen", "city" : "Chełm" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.994770,49.504320] }, "name" : "Stacje paliw Orlen", "city" : "Nowy Targ" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.669690,49.630220] }, "name" : "Stacje paliw Orlen", "city" : "Nowy Sącz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.252580,50.031410] }, "name" : "Stacje paliw Orlen", "city" : "Oświęcim" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.138650,53.102410] }, "name" : "Stacje paliw Orlen", "city" : "Białystok" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.749380,53.135800] }, "name" : "Stacje paliw Orlen", "city" : "Jeżewo Stare" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.213440,53.106790] }, "name" : "Stacje paliw Orlen", "city" : "Białystok" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.308860,52.803590] }, "name" : "Stacje paliw Orlen", "city" : "Czyżew-Osada" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.019060,53.172200] }, "name" : "Stacje paliw Orlen", "city" : "Łomża" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.601140,50.898830] }, "name" : "Stacje paliw Orlen", "city" : "Kielce" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.126359,50.673598] }, "name" : "Stacje paliw Orlen", "city" : "Nagłowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.670590,50.866260] }, "name" : "Stacje paliw Orlen", "city" : "Kielce" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.176420,51.380720] }, "name" : "Stacje paliw Orlen", "city" : "Radom" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.539459,51.571748] }, "name" : "Stacje paliw Orlen", "city" : "Aleksandrówka" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.085840,50.854550] }, "name" : "Stacje paliw Orlen", "city" : "Nowa Słupia" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.671360,50.564770] }, "name" : "Stacje paliw Orlen", "city" : "Tarnobrzeg" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.597830,51.228480] }, "name" : "Stacje paliw Orlen", "city" : "Wieluń" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.865780,51.360110] }, "name" : "Stacje paliw Orlen", "city" : "Sulejów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.885320,50.304000] }, "name" : "Stacje paliw Orlen", "city" : "RudaŚląska" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.713060,50.266270] }, "name" : "Stacje paliw Orlen", "city" : "Gliwice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.071950,50.828740] }, "name" : "Stacje paliw Orlen", "city" : "Częstochowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.087550,50.803020] }, "name" : "Stacje paliw Orlen", "city" : "Częstochowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.955450,49.987240] }, "name" : "Stacje paliw Orlen", "city" : "Pszczyna" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.227280,49.865530] }, "name" : "Stacje paliw Orlen", "city" : "Kęty" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.372640,50.028130] }, "name" : "Stacje paliw Orlen", "city" : "Latoszyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.715800,49.602530] }, "name" : "Stacje paliw Orlen", "city" : "Nowy Sącz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.902350,50.048350] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.605670,49.751280] }, "name" : "Stacje paliw Orlen", "city" : "Sucha Beskidzka" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.935266,52.426879] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.552840,52.532150] }, "name" : "Stacje paliw Orlen", "city" : "Gniezno" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.809170,52.431160] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.392900,52.088460] }, "name" : "Stacje paliw Orlen", "city" : "Nowe Miasto nad Wartą" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.288040,52.230510] }, "name" : "Stacje paliw Orlen", "city" : "Konin" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.443620,51.851050] }, "name" : "Stacje paliw Orlen", "city" : "Zgierz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.418900,51.072200] }, "name" : "Stacje paliw Orlen", "city" : "Radomsko" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.463490,51.927050] }, "name" : "Stacje paliw Orlen", "city" : "Kowiesy" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.160230,52.256480] }, "name" : "Stacje paliw Orlen", "city" : "Krośniewice" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.839940,53.901600] }, "name" : "Stacje paliw Orlen", "city" : "Biały Bór" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.778571,53.173950] }, "name" : "Stacje paliw Orlen", "city" : "Piła" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.219300,52.171400] }, "name" : "Stacje paliw Orlen", "city" : "Stare Iganie" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.002470,52.187260] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.080930,52.690590] }, "name" : "Stacje paliw Orlen", "city" : "Pułtusk" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.043020,52.401730] }, "name" : "Stacje paliw Orlen", "city" : "Węgrów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.098880,52.776340] }, "name" : "Stacje paliw Orlen", "city" : "Raciąż" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.932508,52.305136] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.374270,53.094740] }, "name" : "Stacje paliw Orlen", "city" : "Mława" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.604850,51.909780] }, "name" : "Stacje paliw Orlen", "city" : "Garwolin" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.577980,51.856140] }, "name" : "Stacje paliw Orlen", "city" : "Leszno" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.009814,52.410988] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.918040,52.426660] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.954540,50.469410] }, "name" : "Stacje paliw Orlen", "city" : "Krapkowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.875880,50.680250] }, "name" : "Stacje paliw Orlen", "city" : "Opole" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.640490,50.644630] }, "name" : "Stacje paliw Orlen", "city" : "Niemodlin" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.970941,50.078975] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.068290,49.782080] }, "name" : "Stacje paliw Orlen", "city" : "Bielsko-Biała" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.985480,49.320890] }, "name" : "Stacje paliw Orlen", "city" : "Zakopane" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.196920,54.177240] }, "name" : "Stacje paliw Orlen", "city" : "Koszalin" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.968170,54.451120] }, "name" : "Stacje paliw Orlen", "city" : "Kobylnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.285570,50.714640] }, "name" : "Stacje paliw Orlen", "city" : "Zamość" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.828170,51.037300] }, "name" : "Stacje paliw Orlen", "city" : "Józefów" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.248810,50.740230] }, "name" : "Stacje paliw Orlen", "city" : "Zamość" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.325860,51.527470] }, "name" : "Stacje paliw Orlen", "city" : "Michów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.667980,50.918290] }, "name" : "Stacje paliw Orlen", "city" : "Wysokie" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.585480,51.233620] }, "name" : "Stacje paliw Orlen", "city" : "Lublin" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.971350,50.013840] }, "name" : "Stacje paliw Orlen", "city" : "Rzeszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.723700,49.998000] }, "name" : "Stacje paliw Orlen", "city" : "Munina" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.947620,49.794790] }, "name" : "Stacje paliw Orlen", "city" : "Domaradz" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.503500,53.406420] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.675240,53.397430] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.064640,53.330480] }, "name" : "Stacje paliw Orlen", "city" : "Stargard Szczeciński" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.483410,53.426240] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.942285,50.061670] }, "name" : "Stacje paliw Orlen", "city" : "Rzeszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.398140,50.266990] }, "name" : "Stacje paliw Orlen", "city" : "Leżajsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.224080,49.536920] }, "name" : "Stacje paliw Orlen", "city" : "Sanok" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.085000,50.041080] }, "name" : "Stacje paliw Orlen", "city" : "Krasne" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.124690,50.233180] }, "name" : "Stacje paliw Orlen", "city" : "Sokołów Małopolski" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.775240,49.871570] }, "name" : "Stacje paliw Orlen", "city" : "Strzyżów" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.653820,51.308810] }, "name" : "Stacje paliw Orlen", "city" : "Rozprza" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.480850,52.069370] }, "name" : "Stacje paliw Orlen", "city" : "Piątek" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.621440,51.707430] }, "name" : "Stacje paliw Orlen", "city" : "Warta" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.261380,51.769080] }, "name" : "Stacje paliw Orlen", "city" : "Rawa Mazowiecka" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.452260,51.734680] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.966330,50.013270] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.607950,52.321940] }, "name" : "Stacje paliw Orlen", "city" : "Świecko" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.212110,52.726330] }, "name" : "Stacje paliw Orlen", "city" : "Gorzów Wielkopolski" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.831710,52.165960] }, "name" : "Stacje paliw Orlen", "city" : "Babimost" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.795350,51.525240] }, "name" : "Stacje paliw Orlen", "city" : "Przemków" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.026880,49.970770] }, "name" : "Stacje paliw Orlen", "city" : "Tyczyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.691760,49.566220] }, "name" : "Stacje paliw Orlen", "city" : "Zboiska" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.999280,50.048770] }, "name" : "Stacje paliw Orlen", "city" : "Rzeszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.138600,50.252590] }, "name" : "Stacje paliw Orlen", "city" : "Cieszanów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.038300,49.604100] }, "name" : "Stacje paliw Orlen", "city" : "Ropa" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.178300,50.965000] }, "name" : "Stacje paliw Orlen", "city" : "Kraśnik" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.348340,51.351230] }, "name" : "Stacje paliw Orlen", "city" : "Garbów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.834600,51.491850] }, "name" : "Stacje paliw Orlen", "city" : "Ostrów Lubelski" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.185960,50.951790] }, "name" : "Stacje paliw Orlen", "city" : "Krasnystaw" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.940780,51.437820] }, "name" : "Stacje paliw Orlen", "city" : "Widawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.323950,51.659570] }, "name" : "Stacje paliw Orlen", "city" : "Pabianice" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.471540,51.807550] }, "name" : "Stacje paliw Orlen", "city" : "Biała Rawska" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.303100,53.877180] }, "name" : "Stacje paliw Orlen", "city" : "Mrągowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.604230,50.862110] }, "name" : "Stacje paliw Orlen", "city" : "Kielce" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.152510,51.416860] }, "name" : "Stacje paliw Orlen", "city" : "Radom" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.867450,51.090570] }, "name" : "Stacje paliw Orlen", "city" : "Przedbórz" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.925730,50.441430] }, "name" : "Stacje paliw Orlen", "city" : "Stopnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.115040,51.305290] }, "name" : "Stacje paliw Orlen", "city" : "Paradyż" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.388380,50.723320] }, "name" : "Stacje paliw Orlen", "city" : "Brzegi" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.673440,50.776770] }, "name" : "Stacje paliw Orlen", "city" : "Koniecpol" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.192080,50.524480] }, "name" : "Stacje paliw Orlen", "city" : "Wodzisław" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.046290,50.571240] }, "name" : "Stacje paliw Orlen", "city" : "Stalowa Wola" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.219400,51.392770] }, "name" : "Stacje paliw Orlen", "city" : "Lubin" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.269940,50.764960] }, "name" : "Stacje paliw Orlen", "city" : "Wałbrzych" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.874940,50.349680] }, "name" : "Stacje paliw Orlen", "city" : "Głogówek" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.056090,51.013810] }, "name" : "Stacje paliw Orlen", "city" : "Wołczyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.081730,50.278040] }, "name" : "Stacje paliw Orlen", "city" : "Katowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.889182,54.350071] }, "name" : "Stacje paliw Orlen", "city" : "Sierakowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.203500,54.240430] }, "name" : "Stacje paliw Orlen", "city" : "Egiertowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.791383,54.291775] }, "name" : "Stacje paliw Orlen", "city" : "Koszwały" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.189590,54.610760] }, "name" : "Stacje paliw Orlen", "city" : "Wejherowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.529940,54.175540] }, "name" : "Stacje paliw Orlen", "city" : "Trąbki Wielkie" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.797210,54.551720] }, "name" : "Stacje paliw Orlen", "city" : "Lębork" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.557840,54.750840] }, "name" : "Stacje paliw Orlen", "city" : "Łeba" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.363080,54.612650] }, "name" : "Stacje paliw Orlen", "city" : "Główczyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.384730,51.752230] }, "name" : "Stacje paliw Orlen", "city" : "Magnuszew" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.810270,50.303910] }, "name" : "Stacje paliw Orlen", "city" : "Nowy Korczyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.351020,51.117720] }, "name" : "Stacje paliw Orlen", "city" : "Sielpia Wielka" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.176370,51.385310] }, "name" : "Stacje paliw Orlen", "city" : "Radom" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.624140,50.847180] }, "name" : "Stacje paliw Orlen", "city" : "Kielce" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.378956,50.941554] }, "name" : "Stacje paliw Orlen", "city" : "Ostrowiec Świętokrzyski" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.417970,50.808470] }, "name" : "Stacje paliw Orlen", "city" : "Opatów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.766040,52.425980] }, "name" : "Stacje paliw Orlen", "city" : "Izbica Augustynowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.104120,51.760510] }, "name" : "Stacje paliw Orlen", "city" : "Kalisz" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.760830,52.143040] }, "name" : "Stacje paliw Orlen", "city" : "Czempiń" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.943200,52.383500] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.084900,53.143760] }, "name" : "Stacje paliw Orlen", "city" : "Białystok" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.621480,54.180270] }, "name" : "Stacje paliw Orlen", "city" : "Filipów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.702700,52.986600] }, "name" : "Stacje paliw Orlen", "city" : "Sokoły" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.816580,52.242400] }, "name" : "Stacje paliw Orlen", "city" : "Zbąszynek" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.468160,51.939470] }, "name" : "Stacje paliw Orlen", "city" : "Zielona Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.588110,51.904660] }, "name" : "Stacje paliw Orlen", "city" : "Racula" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.865000,52.071760] }, "name" : "Stacje paliw Orlen", "city" : "Kargowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.127463,51.041774] }, "name" : "Stacje paliw Orlen", "city" : "Siechnice" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.930380,51.786210] }, "name" : "Stacje paliw Orlen", "city" : "Lubsko" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.789020,52.196750] }, "name" : "Stacje paliw Orlen", "city" : "Cybinka" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.170050,51.161100] }, "name" : "Stacje paliw Orlen", "city" : "Legnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.660310,50.737890] }, "name" : "Stacje paliw Orlen", "city" : "Dzierżoniów" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.656886,50.861164] }, "name" : "Stacje paliw Orlen", "city" : "Jelenia Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.022860,51.116420] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.612860,51.163390] }, "name" : "Stacje paliw Orlen", "city" : "Środa Śląska" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.767140,50.901950] }, "name" : "Stacje paliw Orlen", "city" : "Jelenia Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.833170,50.987760] }, "name" : "Stacje paliw Orlen", "city" : "Gniechowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.775960,50.829220] }, "name" : "Stacje paliw Orlen", "city" : "Mysłakowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.978050,53.565550] }, "name" : "Stacje paliw Orlen", "city" : "Szczytno" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.377320,54.165540] }, "name" : "Stacje paliw Orlen", "city" : "Elbląg" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.482840,53.797070] }, "name" : "Stacje paliw Orlen", "city" : "Olsztyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.816490,53.621140] }, "name" : "Stacje paliw Orlen", "city" : "Pisz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.909970,52.720550] }, "name" : "Stacje paliw Orlen", "city" : "Mikanowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.081409,52.804768] }, "name" : "Stacje paliw Orlen", "city" : "Wielowieś" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.155780,53.144470] }, "name" : "Stacje paliw Orlen", "city" : "Bydgoszcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.077190,52.986360] }, "name" : "Stacje paliw Orlen", "city" : "Januszkowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.424830,53.273080] }, "name" : "Stacje paliw Orlen", "city" : "Brodnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.941120,52.857540] }, "name" : "Stacje paliw Orlen", "city" : "Barcin" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.660480,52.730730] }, "name" : "Stacje paliw Orlen", "city" : "Rogowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.634540,52.992430] }, "name" : "Stacje paliw Orlen", "city" : "Toruń" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.375860,53.203700] }, "name" : "Stacje paliw Orlen", "city" : "Unisław" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.295724,53.343012] }, "name" : "Stacje paliw Orlen", "city" : "Gruczno" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.334750,52.674150] }, "name" : "Stacje paliw Orlen", "city" : "Kruszwica" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.499820,52.537910] }, "name" : "Stacje paliw Orlen", "city" : "Piotrków Kujawski" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.129720,54.237850] }, "name" : "Stacje paliw Orlen", "city" : "Pieniężno" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.747360,53.969250] }, "name" : "Stacje paliw Orlen", "city" : "Jeziorany" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.033690,53.449560] }, "name" : "Stacje paliw Orlen", "city" : "Dąbrówno" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.793550,53.648390] }, "name" : "Stacje paliw Orlen", "city" : "Pasym" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.747769,54.207549] }, "name" : "Stacje paliw Orlen", "city" : "Węgorzewo" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.440300,53.911120] }, "name" : "Stacje paliw Orlen", "city" : "Międzyzdroje" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.270890,53.804770] }, "name" : "Stacje paliw Orlen", "city" : "Płoty" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.065680,53.493620] }, "name" : "Stacje paliw Orlen", "city" : "Maszewo" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.247900,53.926860] }, "name" : "Stacje paliw Orlen", "city" : "Tychowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.589730,54.175440] }, "name" : "Stacje paliw Orlen", "city" : "Kołobrzeg" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.913070,53.299820] }, "name" : "Stacje paliw Orlen", "city" : "Kalisz Pomorski" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.239140,52.508840] }, "name" : "Stacje paliw Orlen", "city" : "Lubniewice" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.533870,52.261400] }, "name" : "Stacje paliw Orlen", "city" : "Świebodzin" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.731510,51.541410] }, "name" : "Stacje paliw Orlen", "city" : "Łęknica" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.079650,51.873390] }, "name" : "Stacje paliw Orlen", "city" : "Sława" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.877330,50.746950] }, "name" : "Stacje paliw Orlen", "city" : "Herby" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.320920,49.922820] }, "name" : "Stacje paliw Orlen", "city" : "Chałupki" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.827720,50.220670] }, "name" : "Stacje paliw Orlen", "city" : "Mikołów - Borowa Wieś" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.990770,50.132380] }, "name" : "Stacje paliw Orlen", "city" : "Tychy" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.691680,52.127180] }, "name" : "Stacje paliw Orlen", "city" : "Milanówek" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.706830,52.545890] }, "name" : "Stacje paliw Orlen", "city" : "Płock" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.728229,52.401188] }, "name" : "Stacje paliw Orlen", "city" : "Gąbin" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.663380,52.319720] }, "name" : "Stacje paliw Orlen", "city" : "Dobre" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.879090,52.454490] }, "name" : "Stacje paliw Orlen", "city" : "Ośno Lubuskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.256160,52.713540] }, "name" : "Stacje paliw Orlen", "city" : "Gorzów Wielkopolski" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.598470,51.745650] }, "name" : "Stacje paliw Orlen", "city" : "Kożuchów" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.000920,52.581400] }, "name" : "Stacje paliw Orlen", "city" : "Krzeszyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.092880,51.141100] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.130500,51.209510] }, "name" : "Stacje paliw Orlen", "city" : "Legnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.708220,51.275170] }, "name" : "Stacje paliw Orlen", "city" : "Brzeg Dolny" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.804980,50.908720] }, "name" : "Stacje paliw Orlen", "city" : "Jelenia Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.298740,50.927080] }, "name" : "Stacje paliw Orlen", "city" : "Oława" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.912780,51.301590] }, "name" : "Stacje paliw Orlen", "city" : "Oborniki Śląskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.542750,53.411180] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.812000,53.678360] }, "name" : "Stacje paliw Orlen", "city" : "Babigoszcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.670070,50.224340] }, "name" : "Stacje paliw Orlen", "city" : "Knurów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.379900,49.896680] }, "name" : "Stacje paliw Orlen", "city" : "Zawadka Brzostecka" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.526270,52.009630] }, "name" : "Stacje paliw Orlen", "city" : "Śmigiel" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.060360,52.645000] }, "name" : "Stacje paliw Orlen", "city" : "Sieraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.428130,53.353010] }, "name" : "Stacje paliw Orlen", "city" : "Nidzica" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.567800,53.646320] }, "name" : "Stacje paliw Orlen", "city" : "Ruciane-Nida" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.855600,53.261240] }, "name" : "Stacje paliw Orlen", "city" : "Cibórz" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.121020,52.051250] }, "name" : "Stacje paliw Orlen", "city" : "Biała Podlaska" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.274410,51.180410] }, "name" : "Stacje paliw Orlen", "city" : "Bełżyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.285610,51.368270] }, "name" : "Stacje paliw Orlen", "city" : "Przybysławice" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.112827,53.080395] }, "name" : "Stacje paliw Orlen", "city" : "Człopa" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.824710,53.427620] }, "name" : "Stacje paliw Orlen", "city" : "Jastrowie" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.632560,50.133080] }, "name" : "Stacje paliw Orlen", "city" : "Krzeszowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.187720,51.082220] }, "name" : "Stacje paliw Orlen", "city" : "Nowa Brzeznica" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.828330,51.043220] }, "name" : "Stacje paliw Orlen", "city" : "Suchedniów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.283890,50.623100] }, "name" : "Stacje paliw Orlen", "city" : "Łączyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.544100,53.970500] }, "name" : "Stacje paliw Orlen", "city" : "Starogard Gdański" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.009190,53.101300] }, "name" : "Stacje paliw Orlen", "city" : "Bydgoszcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.792540,52.561040] }, "name" : "Stacje paliw Orlen", "city" : "Rudki" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.229880,53.467400] }, "name" : "Stacje paliw Orlen", "city" : "Janów" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.155610,53.148860] }, "name" : "Stacje paliw Orlen", "city" : "Białystok" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.358900,53.812630] }, "name" : "Stacje paliw Orlen", "city" : "Ełk" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.280740,53.561730] }, "name" : "Stacje paliw Orlen", "city" : "Szczuczyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.275910,52.212840] }, "name" : "Stacje paliw Orlen", "city" : "Środa Wielkopolska" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.833800,51.563960] }, "name" : "Stacje paliw Orlen", "city" : "Dęblin" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.949600,53.717490] }, "name" : "Stacje paliw Orlen", "city" : "Ostróda" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.572450,54.122910] }, "name" : "Stacje paliw Orlen", "city" : "Lidzbark Warmiński" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.960550,51.893600] }, "name" : "Stacje paliw Orlen", "city" : "Poddębice" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.796250,51.978770] }, "name" : "Stacje paliw Orlen", "city" : "Uniejów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.017790,51.553700] }, "name" : "Stacje paliw Orlen", "city" : "Tomaszów Mazowiecki" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.655410,52.588020] }, "name" : "Stacje paliw Orlen", "city" : "Kostrzyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.735540,51.948940] }, "name" : "Stacje paliw Orlen", "city" : "Gubin" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.416780,51.035910] }, "name" : "Stacje paliw Orlen", "city" : "Gryfów Śląski" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.904170,51.417500] }, "name" : "Stacje paliw Orlen", "city" : "Chocianów" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.969750,51.050260] }, "name" : "Stacje paliw Orlen", "city" : "Bielany Wrocławskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.580440,53.962220] }, "name" : "Stacje paliw Orlen", "city" : "Bobolice" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.953700,51.283030] }, "name" : "Stacje paliw Orlen", "city" : "Kępno" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.738010,53.158250] }, "name" : "Stacje paliw Orlen", "city" : "Piła" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.594690,53.461520] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.615310,53.644520] }, "name" : "Stacje paliw Orlen", "city" : "Łobez" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.260940,53.899110] }, "name" : "Stacje paliw Orlen", "city" : "Świnoujście" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.735370,49.918160] }, "name" : "Stacje paliw Orlen", "city" : "Zbytków" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.681490,52.530240] }, "name" : "Stacje paliw Orlen", "city" : "Łochów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.180140,53.235470] }, "name" : "Stacje paliw Orlen", "city" : "Działdowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.279980,52.887660] }, "name" : "Stacje paliw Orlen", "city" : "Strzegowo-Wieś" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.997910,52.180620] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.023001,52.283626] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.868250,53.144760] }, "name" : "Stacje paliw Orlen", "city" : "Szychowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.402590,53.400570] }, "name" : "Stacje paliw Orlen", "city" : "Świecie" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.489450,53.358440] }, "name" : "Stacje paliw Orlen", "city" : "Więcbork" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.725200,53.644500] }, "name" : "Stacje paliw Orlen", "city" : "Nowe" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.527860,52.630490] }, "name" : "Stacje paliw Orlen", "city" : "Radziejów" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.843050,53.596010] }, "name" : "Stacje paliw Orlen", "city" : "Tuchola" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.265460,52.795040] }, "name" : "Stacje paliw Orlen", "city" : "Inowrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.206560,51.108230] }, "name" : "Stacje paliw Orlen", "city" : "Byczyna" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.341067,50.475307] }, "name" : "Stacje paliw Orlen", "city" : "Nysa" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.202280,50.342930] }, "name" : "Stacje paliw Orlen", "city" : "Kędzierzyn-Kozle" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.766350,49.805620] }, "name" : "Stacje paliw Orlen", "city" : "Przemyśl" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.950740,51.325960] }, "name" : "Stacje paliw Orlen", "city" : "Kazimierz Dolny" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.216270,51.287690] }, "name" : "Stacje paliw Orlen", "city" : "Nałęczów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.739420,50.366540] }, "name" : "Stacje paliw Orlen", "city" : "Tarnogród" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.818920,53.832760] }, "name" : "Stacje paliw Orlen", "city" : "Gniew" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.117510,54.326290] }, "name" : "Stacje paliw Orlen", "city" : "Stegna" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.405400,54.775920] }, "name" : "Stacje paliw Orlen", "city" : "Władysławowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.295500,51.369500] }, "name" : "Stacje paliw Orlen", "city" : "Opoczno" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.662180,50.980090] }, "name" : "Stacje paliw Orlen", "city" : "Zagnańsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.930600,50.948900] }, "name" : "Stacje paliw Orlen", "city" : "Bodzentyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.414440,50.955890] }, "name" : "Stacje paliw Orlen", "city" : "Ostrowiec Świętokrzyski" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.068490,50.560800] }, "name" : "Stacje paliw Orlen", "city" : "Stalowa Wola" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.255120,50.949660] }, "name" : "Stacje paliw Orlen", "city" : "Łopuszno" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.967170,52.244310] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.582380,50.174890] }, "name" : "Stacje paliw Orlen", "city" : "Koszyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.924920,51.630940] }, "name" : "Stacje paliw Orlen", "city" : "Ryki" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.338870,53.385200] }, "name" : "Stacje paliw Orlen", "city" : "Myszyniec" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.362010,51.215180] }, "name" : "Stacje paliw Orlen", "city" : "Oleśnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.606060,53.371850] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.961625,50.653064] }, "name" : "Stacje paliw Orlen", "city" : "Opole" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.473363,51.732548] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.243120,51.750860] }, "name" : "Stacje paliw Orlen", "city" : "Rawa Mazowiecka" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.687540,51.214000] }, "name" : "Stacje paliw Orlen", "city" : "Świdnik" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.702080,49.449180] }, "name" : "Stacje paliw Orlen", "city" : "Piwniczna" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.832560,49.651670] }, "name" : "Stacje paliw Orlen", "city" : "Jordanów" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.535820,51.126270] }, "name" : "Stacje paliw Orlen", "city" : "Bierutów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.118300,54.786740] }, "name" : "Stacje paliw Orlen", "city" : "Odargowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.054180,53.110510] }, "name" : "Stacje paliw Orlen", "city" : "Golub-Dobrzyń" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.566790,50.854700] }, "name" : "Stacje paliw Orlen", "city" : "Kielce" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.897380,53.252400] }, "name" : "Stacje paliw Orlen", "city" : "Chorzele" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.354380,50.357580] }, "name" : "Stacje paliw Orlen", "city" : "Dziekanowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.154440,53.380850] }, "name" : "Stacje paliw Orlen", "city" : "Stawiski" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.864830,51.233300] }, "name" : "Stacje paliw Orlen", "city" : "Szydłowiec" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.144470,53.135940] }, "name" : "Stacje paliw Orlen", "city" : "Białystok" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.487030,50.603480] }, "name" : "Stacje paliw Orlen", "city" : "Zawadzkie" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.236930,50.352520] }, "name" : "Stacje paliw Orlen", "city" : "Kędzierzyn-Kozle" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.870290,52.364070] }, "name" : "Stacje paliw Orlen", "city" : "Trzciel" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.610380,50.437820] }, "name" : "Stacje paliw Orlen", "city" : "Szalejów Dolny" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.780710,53.275810] }, "name" : "Stacje paliw Orlen", "city" : "Stare Czarnowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.945830,50.393230] }, "name" : "Stacje paliw Orlen", "city" : "Piekary Śląskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.211640,51.710700] }, "name" : "Stacje paliw Orlen", "city" : "Kobylin" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.848950,50.799540] }, "name" : "Stacje paliw Orlen", "city" : "Łagiewniki" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.955020,50.913960] }, "name" : "Stacje paliw Orlen", "city" : "Bogatynia" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.198180,50.431620] }, "name" : "Stacje paliw Orlen", "city" : "Kudowa Słone" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.308830,51.099690] }, "name" : "Stacje paliw Orlen", "city" : "Lubań" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.509670,50.855480] }, "name" : "Stacje paliw Orlen", "city" : "Świdnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.572280,51.264500] }, "name" : "Stacje paliw Orlen", "city" : "Lublin" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.853870,49.440740] }, "name" : "Stacje paliw Orlen", "city" : "Czarny Dunajec" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.425510,54.550450] }, "name" : "Stacje paliw Orlen", "city" : "Gdynia" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.956950,53.311450] }, "name" : "Stacje paliw Orlen", "city" : "Koronowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.172930,51.295660] }, "name" : "Stacje paliw Orlen", "city" : "Wieruszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.466810,51.785560] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.852020,51.868440] }, "name" : "Stacje paliw Orlen", "city" : "Grójec" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.918900,52.379410] }, "name" : "Stacje paliw Orlen", "city" : "Jabłonna" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.608130,52.198550] }, "name" : "Stacje paliw Orlen", "city" : "Błonie" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.516150,51.973860] }, "name" : "Stacje paliw Orlen", "city" : "Mszczonów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.840060,51.980250] }, "name" : "Stacje paliw Orlen", "city" : "Tarczyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.288350,50.439290] }, "name" : "Stacje paliw Orlen", "city" : "Połaniec" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.199530,53.121700] }, "name" : "Stacje paliw Orlen", "city" : "Białystok" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.837040,52.748960] }, "name" : "Stacje paliw Orlen", "city" : "Brańsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.166860,52.762110] }, "name" : "Stacje paliw Orlen", "city" : "Bielsk Podlaski" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.582110,52.745580] }, "name" : "Stacje paliw Orlen", "city" : "Hajnówka" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.376030,52.716760] }, "name" : "Stacje paliw Orlen", "city" : "Wronki" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.982790,52.238520] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.059600,52.223870] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.948830,52.290730] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.959456,52.191261] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.066118,52.250524] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.386160,52.614310] }, "name" : "Stacje paliw Orlen", "city" : "Płońsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.988240,52.221850] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.838340,52.172810] }, "name" : "Stacje paliw Orlen", "city" : "Pruszków" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.204531,52.167596] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.137710,52.229270] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.157270,52.257630] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa-Rembertów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.880770,52.216050] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.070840,52.180790] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.254770,50.075510] }, "name" : "Stacje paliw Orlen", "city" : "Łańcut" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.270790,52.203380] }, "name" : "Stacje paliw Orlen", "city" : "Konin" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.854370,52.252830] }, "name" : "Stacje paliw Orlen", "city" : "Mosina" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.426780,51.769910] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.420750,51.740090] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.819180,53.555120] }, "name" : "Stacje paliw Orlen", "city" : "Goleniów" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.551940,53.432520] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.741550,53.463960] }, "name" : "Stacje paliw Orlen", "city" : "Grudziądz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.296700,50.147850] }, "name" : "Stacje paliw Orlen", "city" : "Zastawie" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.933550,54.071750] }, "name" : "Stacje paliw Orlen", "city" : "Suwałki" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.753540,50.378980] }, "name" : "Stacje paliw Orlen", "city" : "Wolbrom" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.977350,50.046390] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.935480,49.991220] }, "name" : "Stacje paliw Orlen", "city" : "Tarnów" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.649260,50.710430] }, "name" : "Stacje paliw Orlen", "city" : "Dzierżoniów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.695000,53.836650] }, "name" : "Stacje paliw Orlen", "city" : "Barczewo" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.852150,52.444500] }, "name" : "Stacje paliw Orlen", "city" : "Siemiatycze" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.551170,53.446810] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.061395,50.357482] }, "name" : "Stacje paliw Orlen", "city" : "Wojkowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.932250,50.674810] }, "name" : "Stacje paliw Orlen", "city" : "Opole" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.801700,49.960120] }, "name" : "Stacje paliw Orlen", "city" : "Radymno" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.037760,53.357120] }, "name" : "Stacje paliw Orlen", "city" : "Złotów" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.444320,52.961360] }, "name" : "Stacje paliw Orlen", "city" : "Chojna" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.210290,52.988090] }, "name" : "Stacje paliw Orlen", "city" : "Barlinek" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.337520,53.468430] }, "name" : "Stacje paliw Orlen", "city" : "Chociwel" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.162500,50.558120] }, "name" : "Stacje paliw Orlen", "city" : "Staszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.565700,51.358520] }, "name" : "Stacje paliw Orlen", "city" : "Zwoleń" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.187200,51.391900] }, "name" : "Stacje paliw Orlen", "city" : "Kurów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.913170,51.462820] }, "name" : "Stacje paliw Orlen", "city" : "Przytyk" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.457360,50.302130] }, "name" : "Stacje paliw Orlen", "city" : "Mielec" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.887060,52.283440] }, "name" : "Stacje paliw Orlen", "city" : "Słupca" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.999790,52.560150] }, "name" : "Stacje paliw Orlen", "city" : "Murowana Goślina" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.882840,52.382750] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.532357,53.436889] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.450550,51.079190] }, "name" : "Stacje paliw Orlen", "city" : "Radomsko" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.628293,52.081471] }, "name" : "Stacje paliw Orlen", "city" : "Sulechów" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.522740,51.957220] }, "name" : "Stacje paliw Orlen", "city" : "Zielona Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.831940,52.843110] }, "name" : "Stacje paliw Orlen", "city" : "Drezdenko" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.687940,52.278510] }, "name" : "Stacje paliw Orlen", "city" : "Stęszew" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.450720,53.786120] }, "name" : "Stacje paliw Orlen", "city" : "Olsztyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.925158,50.055210] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.825960,49.973850] }, "name" : "Stacje paliw Orlen", "city" : "Skawina" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.043898,49.992524] }, "name" : "Stacje paliw Orlen", "city" : "Wieliczka" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.645880,53.021630] }, "name" : "Stacje paliw Orlen", "city" : "Toruń" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.107650,52.247026] }, "name" : "Stacje paliw Orlen", "city" : "Kórnik" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.959640,52.259260] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.275410,52.099810] }, "name" : "Stacje paliw Orlen", "city" : "Otwock" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.454680,52.041450] }, "name" : "Stacje paliw Orlen", "city" : "Żyrardów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.985100,52.233990] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.036250,52.234610] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.046420,52.212970] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.466550,53.227160] }, "name" : "Stacje paliw Orlen", "city" : "Kadzidło" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.013220,52.277470] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.989310,52.227230] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.147190,51.637990] }, "name" : "Stacje paliw Orlen", "city" : "Żary" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.980010,52.251490] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.297071,51.820921] }, "name" : "Stacje paliw Orlen", "city" : "Aleksandrów Łódzki" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.376560,51.668870] }, "name" : "Stacje paliw Orlen", "city" : "Pabianice" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.715430,53.880030] }, "name" : "Stacje paliw Orlen", "city" : "Brusy" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.619310,53.154850] }, "name" : "Stacje paliw Orlen", "city" : "Nakło nad Notecią" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.055470,52.664210] }, "name" : "Stacje paliw Orlen", "city" : "Włocławek" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.367740,51.803300] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.488253,51.738512] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.823170,50.607760] }, "name" : "Stacje paliw Orlen", "city" : "Ząbkowice Śląskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.281550,50.820460] }, "name" : "Stacje paliw Orlen", "city" : "Wałbrzych" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.070970,51.114250] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.046440,51.126630] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.992590,51.098040] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.972640,51.156530] }, "name" : "Stacje paliw Orlen", "city" : "Opole Lubelskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.914920,51.644470] }, "name" : "Stacje paliw Orlen", "city" : "Parczew" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.839410,51.140240] }, "name" : "Stacje paliw Orlen", "city" : "Piaski" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.374370,51.103860] }, "name" : "Stacje paliw Orlen", "city" : "Niedrzwica Duża" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.140600,50.503611] }, "name" : "Stacje paliw Orlen", "city" : "Nisko" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.179250,52.888370] }, "name" : "Stacje paliw Orlen", "city" : "Wieleń" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.433780,51.651660] }, "name" : "Stacje paliw Orlen", "city" : "Błaszki" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.628070,49.968710] }, "name" : "Stacje paliw Orlen", "city" : "Brzesko" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.476809,51.680196] }, "name" : "Stacje paliw Orlen", "city" : "Rzgów" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.312650,50.482020] }, "name" : "Stacje paliw Orlen", "city" : "Nysa" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.673270,50.304420] }, "name" : "Stacje paliw Orlen", "city" : "Gliwice" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.230320,52.978970] }, "name" : "Stacje paliw Orlen", "city" : "Zambrów" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.472320,53.394510] }, "name" : "Stacje paliw Orlen", "city" : "Sokółka" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.153870,50.835020] }, "name" : "Stacje paliw Orlen", "city" : "Częstochowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.330790,51.614410] }, "name" : "Stacje paliw Orlen", "city" : "Żagań" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.711257,51.595893] }, "name" : "Stacje paliw Orlen", "city" : "Sieradz" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.999080,53.131830] }, "name" : "Stacje paliw Orlen", "city" : "Bydgoszcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.050150,52.188010] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.096130,52.244190] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.998870,52.216480] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.405890,54.715920] }, "name" : "Stacje paliw Orlen", "city" : "Puck" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.565480,49.421730] }, "name" : "Stacje paliw Orlen", "city" : "Ustrzyki Dolne" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.099090,50.155350] }, "name" : "Stacje paliw Orlen", "city" : "Lubaczów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.540970,51.242060] }, "name" : "Stacje paliw Orlen", "city" : "Lublin" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.820102,52.345267] }, "name" : "Stacje paliw Orlen", "city" : "Rzepin" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.511840,52.907210] }, "name" : "Stacje paliw Orlen", "city" : "Wysokie Mazowieckie" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.545250,53.424880] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.893750,53.146030] }, "name" : "Stacje paliw Orlen", "city" : "Pyrzyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.149250,51.955890] }, "name" : "Stacje paliw Orlen", "city" : "Skierniewice" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.148410,51.971640] }, "name" : "Stacje paliw Orlen", "city" : "Skierniewice" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.028950,50.072800] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.459880,51.765520] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.882910,51.144160] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.117040,51.113720] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.315200,50.506320] }, "name" : "Stacje paliw Orlen", "city" : "Strzelce Opolskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.488640,51.800550] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.454890,53.653780] }, "name" : "Stacje paliw Orlen", "city" : "Grajewo" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.994270,50.057750] }, "name" : "Stacje paliw Orlen", "city" : "Rzeszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.832170,53.568570] }, "name" : "Stacje paliw Orlen", "city" : "Goleniów" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.458220,53.745700] }, "name" : "Stacje paliw Orlen", "city" : "Olsztyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.766010,50.258300] }, "name" : "Stacje paliw Orlen", "city" : "Kolbuszowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.278250,53.584090] }, "name" : "Stacje paliw Orlen", "city" : "Olsztynek" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.364780,52.216390] }, "name" : "Stacje paliw Orlen", "city" : "Grodzisk Wielkopolski" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.918420,52.397700] }, "name" : "Stacje paliw Orlen", "city" : "Legionowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.020263,52.235722] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.047516,50.254315] }, "name" : "Stacje paliw Orlen", "city" : "Katowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.406800,49.439070] }, "name" : "Stacje paliw Orlen", "city" : "Krościenko nad Dunajcem" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.474920,50.011850] }, "name" : "Stacje paliw Orlen", "city" : "Wodzisław Śląski" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.682510,54.348470] }, "name" : "Stacje paliw Orlen", "city" : "Gdańsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.921810,52.400470] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.785270,53.961110] }, "name" : "Stacje paliw Orlen", "city" : "Kamień Pomorski" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.088520,49.881710] }, "name" : "Stacje paliw Orlen", "city" : "Dobczyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.954210,50.051700] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.971740,53.837960] }, "name" : "Stacje paliw Orlen", "city" : "Augustów" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.966460,51.130190] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.057960,51.094610] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.058330,51.112190] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.748060,51.801020] }, "name" : "Stacje paliw Orlen", "city" : "Brzeziny" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.789770,49.805230] }, "name" : "Stacje paliw Orlen", "city" : "Skoczów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.657045,52.400837] }, "name" : "Stacje paliw Orlen", "city" : "Drohiczyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.662809,54.403565] }, "name" : "Stacje paliw Orlen", "city" : "Gdańsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.301120,50.149020] }, "name" : "Stacje paliw Orlen", "city" : "Jaworzno" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.111160,53.664230] }, "name" : "Stacje paliw Orlen", "city" : "Nowogard" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.418540,53.170450] }, "name" : "Stacje paliw Orlen", "city" : "Choszczno" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.314590,50.570190] }, "name" : "Stacje paliw Orlen", "city" : "Myszków" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.646420,51.407520] }, "name" : "Stacje paliw Orlen", "city" : "Piotrków Trybunalski" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.019270,52.247460] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.876960,50.295910] }, "name" : "Stacje paliw Orlen", "city" : "Stronie Śląskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.459630,49.691110] }, "name" : "Stacje paliw Orlen", "city" : "Bircza" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.184710,51.804070] }, "name" : "Stacje paliw Orlen", "city" : "Krzywda" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.651100,51.208300] }, "name" : "Stacje paliw Orlen", "city" : "Kalinówka" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.134670,51.593870] }, "name" : "Stacje paliw Orlen", "city" : "Łask" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.029400,51.145880] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.706230,50.892680] }, "name" : "Stacje paliw Orlen", "city" : "Jelenia Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.209685,50.985976] }, "name" : "Stacje paliw Orlen", "city" : "Kluczbork" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.593320,51.780670] }, "name" : "Stacje paliw Orlen", "city" : "Radzyń Podlaski" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.893170,50.089850] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.920810,52.220910] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.488780,53.256220] }, "name" : "Stacje paliw Orlen", "city" : "Gryfino" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.397200,51.186930] }, "name" : "Stacje paliw Orlen", "city" : "Końskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.420090,51.790450] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.885910,53.071780] }, "name" : "Stacje paliw Orlen", "city" : "Żuromin" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.199220,51.972160] }, "name" : "Stacje paliw Orlen", "city" : "Góra Kalwaria" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.047500,51.664090] }, "name" : "Stacje paliw Orlen", "city" : "Głogów" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.541370,51.565940] }, "name" : "Stacje paliw Orlen", "city" : "Szprotawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.100450,51.676510] }, "name" : "Stacje paliw Orlen", "city" : "Głogów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.038173,52.262398] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.633170,52.858350] }, "name" : "Stacje paliw Orlen", "city" : "Ciechanów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.055090,52.261940] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.095640,53.756050] }, "name" : "Stacje paliw Orlen", "city" : "Połczyn-Zdrój" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.203660,53.916890] }, "name" : "Stacje paliw Orlen", "city" : "Gryfice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.590100,53.433130] }, "name" : "Stacje paliw Orlen", "city" : "Nowe Miasto Lubawskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.910270,50.074750] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.087400,52.236550] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.267160,52.395570] }, "name" : "Stacje paliw Orlen", "city" : "Sokołów Podlaski" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.033030,50.790380] }, "name" : "Stacje paliw Orlen", "city" : "Kamienna Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.533110,50.808080] }, "name" : "Stacje paliw Orlen", "city" : "Zdziłowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.424300,50.293970] }, "name" : "Stacje paliw Orlen", "city" : "Mielec" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.434470,50.054990] }, "name" : "Stacje paliw Orlen", "city" : "Dębica" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.719150,52.846240] }, "name" : "Stacje paliw Orlen", "city" : "Żnin" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.813490,52.639050] }, "name" : "Stacje paliw Orlen", "city" : "Oborniki" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.037530,52.067910] }, "name" : "Stacje paliw Orlen", "city" : "Śrem" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.487820,52.011600] }, "name" : "Stacje paliw Orlen", "city" : "Turek" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.899310,52.988970] }, "name" : "Stacje paliw Orlen", "city" : "Chodzież" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.020242,52.214279] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.909420,50.651900] }, "name" : "Stacje paliw Orlen", "city" : "Opole" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.343310,50.909320] }, "name" : "Stacje paliw Orlen", "city" : "Świeradów-Zdrój" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.557930,53.940150] }, "name" : "Stacje paliw Orlen", "city" : "Ryn" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.017780,52.107740] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.361760,50.540400] }, "name" : "Stacje paliw Orlen", "city" : "Jemielnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.200850,50.466950] }, "name" : "Stacje paliw Orlen", "city" : "Wójcice" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.210690,51.055590] }, "name" : "Stacje paliw Orlen", "city" : "Jawor" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.128650,52.307020] }, "name" : "Stacje paliw Orlen", "city" : "Nowy Tomyśl" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.453000,51.691300] }, "name" : "Stacje paliw Orlen", "city" : "Krotoszyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.859420,51.618140] }, "name" : "Stacje paliw Orlen", "city" : "Rogozno" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.588650,52.443950] }, "name" : "Stacje paliw Orlen", "city" : "Międzyrzecz" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.542600,52.881560] }, "name" : "Stacje paliw Orlen", "city" : "Strzelce Krajeńskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.572960,52.348400] }, "name" : "Stacje paliw Orlen", "city" : "Słubice" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.496950,54.039740] }, "name" : "Stacje paliw Orlen", "city" : "Olecko" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.577320,51.220480] }, "name" : "Stacje paliw Orlen", "city" : "Lublin" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.349180,50.961620] }, "name" : "Stacje paliw Orlen", "city" : "Strzegom" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.924230,51.126460] }, "name" : "Stacje paliw Orlen", "city" : "Złotoryja" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.621810,52.075210] }, "name" : "Stacje paliw Orlen", "city" : "Kościan" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.605340,51.473890] }, "name" : "Stacje paliw Orlen", "city" : "Lubartów" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.118360,52.030100] }, "name" : "Stacje paliw Orlen", "city" : "Biała Podlaska" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.988630,51.414790] }, "name" : "Stacje paliw Orlen", "city" : "Puławy" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.932410,51.602790] }, "name" : "Stacje paliw Orlen", "city" : "Zduńska Wola" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.591730,51.108690] }, "name" : "Stacje paliw Orlen", "city" : "Lwówek Śląski" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.372730,50.073080] }, "name" : "Stacje paliw Orlen", "city" : "Rzuchów" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.983130,53.797000] }, "name" : "Stacje paliw Orlen", "city" : "Czersk" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.040510,50.780800] }, "name" : "Stacje paliw Orlen", "city" : "Złota Woda" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.852950,51.105920] }, "name" : "Stacje paliw Orlen", "city" : "Skarżysko-Kamienna" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.178680,52.847220] }, "name" : "Stacje paliw Orlen", "city" : "Lipno" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.772460,54.041380] }, "name" : "Stacje paliw Orlen", "city" : "Giżycko" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.043140,49.832920] }, "name" : "Stacje paliw Orlen", "city" : "Bielsko-Biała" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.856350,50.342890] }, "name" : "Stacje paliw Orlen", "city" : "Lądek-Zdrój" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.478040,52.990040] }, "name" : "Stacje paliw Orlen", "city" : "Kcynia" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.866660,50.889380] }, "name" : "Stacje paliw Orlen", "city" : "Annopol" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.868250,49.647320] }, "name" : "Stacje paliw Orlen", "city" : "Wisła" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.016060,52.165860] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.913200,50.669700] }, "name" : "Stacje paliw Orlen", "city" : "Opole" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.229970,50.088110] }, "name" : "Stacje paliw Orlen", "city" : "Racibórz" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.506240,52.598740] }, "name" : "Stacje paliw Orlen", "city" : "Skwierzyna" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.614270,53.190880] }, "name" : "Stacje paliw Orlen", "city" : "Chełmża" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.416470,50.875010] }, "name" : "Stacje paliw Orlen", "city" : "Olesno" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.496890,50.845480] }, "name" : "Stacje paliw Orlen", "city" : "Świdnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.107210,53.582930] }, "name" : "Stacje paliw Orlen", "city" : "Suchowola" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.885770,52.181600] }, "name" : "Stacje paliw Orlen", "city" : "Kolonia-Opacz" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.718280,51.798720] }, "name" : "Stacje paliw Orlen", "city" : "Nowa Sól" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.533440,50.566720] }, "name" : "Stacje paliw Orlen", "city" : "Nowa Ruda" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.201730,51.211200] }, "name" : "Stacje paliw Orlen", "city" : "Legnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.692240,49.632900] }, "name" : "Stacje paliw Orlen", "city" : "Nowy Sącz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.023320,49.858940] }, "name" : "Stacje paliw Orlen", "city" : "Bielsko-Biała" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.445020,49.976550] }, "name" : "Stacje paliw Orlen", "city" : "Bochnia" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.217770,52.815380] }, "name" : "Stacje paliw Orlen", "city" : "Wągrowiec" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.872420,50.189030] }, "name" : "Stacje paliw Orlen", "city" : "Mikołów" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.289890,50.996590] }, "name" : "Stacje paliw Orlen", "city" : "Wikłów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.663701,50.289544] }, "name" : "Stacje paliw Orlen", "city" : "Gliwice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.177820,50.271920] }, "name" : "Stacje paliw Orlen", "city" : "Sosnowiec" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.019640,51.521010] }, "name" : "Stacje paliw Orlen", "city" : "Tomaszów Mazowiecki" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.862270,54.580680] }, "name" : "Stacje paliw Orlen", "city" : "Ustka" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.923590,53.913210] }, "name" : "Stacje paliw Orlen", "city" : "Morąg" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.550530,53.551300] }, "name" : "Stacje paliw Orlen", "city" : "Police" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.657600,54.057150] }, "name" : "Stacje paliw Orlen", "city" : "Pasłęk" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.579090,53.465390] }, "name" : "Stacje paliw Orlen", "city" : "Szczecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.964040,54.116510] }, "name" : "Stacje paliw Orlen", "city" : "Kościerzyna" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.079180,52.292730] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.493760,52.787620] }, "name" : "Stacje paliw Orlen", "city" : "Mieszkowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.232090,51.166940] }, "name" : "Stacje paliw Orlen", "city" : "Iłża" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.650190,50.881430] }, "name" : "Stacje paliw Orlen", "city" : "Kielce" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.535250,50.528540] }, "name" : "Stacje paliw Orlen", "city" : "Pińczów" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.386660,50.690860] }, "name" : "Stacje paliw Orlen", "city" : "Grodków" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.059930,52.147970] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.202930,50.973540] }, "name" : "Stacje paliw Orlen", "city" : "Kluczbork" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.668320,50.670830] }, "name" : "Stacje paliw Orlen", "city" : "Lubliniec" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.043890,50.262470] }, "name" : "Stacje paliw Orlen", "city" : "Katowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.888920,50.178440] }, "name" : "Stacje paliw Orlen", "city" : "Mikołów" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.473980,50.061310] }, "name" : "Stacje paliw Orlen", "city" : "Przeworsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.490390,51.234730] }, "name" : "Stacje paliw Orlen", "city" : "Lublin" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.020750,52.157210] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.244841,50.715740] }, "name" : "Stacje paliw Orlen", "city" : "Zamość" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.249210,50.929160] }, "name" : "Stacje paliw Orlen", "city" : "Kraśnik" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.547620,50.285340] }, "name" : "Stacje paliw Orlen", "city" : "Olkusz" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.455980,49.728220] }, "name" : "Stacje paliw Orlen", "city" : "Jasło" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.171044,52.396827] }, "name" : "Stacje paliw Orlen", "city" : "Lubień Kujawski" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.100760,53.134220] }, "name" : "Stacje paliw Orlen", "city" : "Białystok" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.795770,53.526800] }, "name" : "Stacje paliw Orlen", "city" : "Drawsko Pomorskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.743150,54.532330] }, "name" : "Stacje paliw Orlen", "city" : "Lębork" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.936550,49.976970] }, "name" : "Stacje paliw Orlen", "city" : "Pszczyna" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.822300,50.208790] }, "name" : "Stacje paliw Orlen", "city" : "Głubczyce" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.976370,50.670320] }, "name" : "Stacje paliw Orlen", "city" : "Opole" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.302390,53.863550] }, "name" : "Stacje paliw Orlen", "city" : "Mrągowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.195890,54.329050] }, "name" : "Stacje paliw Orlen", "city" : "Kartuzy" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.009070,51.145030] }, "name" : "Stacje paliw Orlen", "city" : "Zgorzelec" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.549010,51.265260] }, "name" : "Stacje paliw Orlen", "city" : "Bolesławiec" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.117000,50.248810] }, "name" : "Stacje paliw Orlen", "city" : "Mysłowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.058990,51.300570] }, "name" : "Stacje paliw Orlen", "city" : "Trzebnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.444610,53.348670] }, "name" : "Stacje paliw Orlen", "city" : "Chełmno" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.383610,51.212640] }, "name" : "Stacje paliw Orlen", "city" : "Oleśnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.706020,51.084170] }, "name" : "Stacje paliw Orlen", "city" : "Namysłów" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.179840,51.789590] }, "name" : "Stacje paliw Orlen", "city" : "Warka" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.410380,54.417560] }, "name" : "Stacje paliw Orlen", "city" : "Darłowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.928450,54.109080] }, "name" : "Stacje paliw Orlen", "city" : "Suwałki" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.026330,50.559570] }, "name" : "Stacje paliw Orlen", "city" : "Sędziszów" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.420000,50.462500] }, "name" : "Stacje paliw Orlen", "city" : "Tomaszów Lubelski" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.259470,53.907790] }, "name" : "Stacje paliw Orlen", "city" : "Świnoujście" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.017740,53.339870] }, "name" : "Stacje paliw Orlen", "city" : "Stargard Szczeciński" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.026240,54.476860] }, "name" : "Stacje paliw Orlen", "city" : "Słupsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.497790,54.180720] }, "name" : "Stacje paliw Orlen", "city" : "Bytów" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.943090,53.716490] }, "name" : "Stacje paliw Orlen", "city" : "Kwidzyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.923660,54.055560] }, "name" : "Stacje paliw Orlen", "city" : "Krzywopłoty" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.754160,50.408690] }, "name" : "Stacje paliw Orlen", "city" : "Nowa Dęba" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.061530,49.800040] }, "name" : "Stacje paliw Orlen", "city" : "Bielsko-Biała" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.592970,50.327050] }, "name" : "Stacje paliw Orlen", "city" : "Prudnik" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.912510,49.984320] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.399320,49.721120] }, "name" : "Stacje paliw Orlen", "city" : "Limanowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.523000,50.827090] }, "name" : "Stacje paliw Orlen", "city" : "Szklarska Poręba" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.106350,54.212810] }, "name" : "Stacje paliw Orlen", "city" : "Nowy Dwór Gdański" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.033930,50.364620] }, "name" : "Stacje paliw Orlen", "city" : "Miechów" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.591820,51.260040] }, "name" : "Stacje paliw Orlen", "city" : "Bolesławiec" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.386260,50.405790] }, "name" : "Stacje paliw Orlen", "city" : "Duszniki-Zdrój" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.205400,54.330150] }, "name" : "Stacje paliw Orlen", "city" : "Kartuzy" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.859530,52.192880] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa-Ursus" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.118760,51.404640] }, "name" : "Stacje paliw Orlen", "city" : "Radom" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.754510,50.679190] }, "name" : "Stacje paliw Orlen", "city" : "Sandomierz" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.161510,51.424580] }, "name" : "Stacje paliw Orlen", "city" : "Radom" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.700120,50.472720] }, "name" : "Stacje paliw Orlen", "city" : "Boguszyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.658820,50.437580] }, "name" : "Stacje paliw Orlen", "city" : "Kłodzko" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.028420,51.157450] }, "name" : "Stacje paliw Orlen", "city" : "Zgorzelec" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.001800,50.843360] }, "name" : "Stacje paliw Orlen", "city" : "Włoszczowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.718790,50.476480] }, "name" : "Stacje paliw Orlen", "city" : "Busko-Zdrój" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.241640,52.810760] }, "name" : "Stacje paliw Orlen", "city" : "Inowrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.074190,53.180790] }, "name" : "Stacje paliw Orlen", "city" : "Łomża" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.495887,50.854115] }, "name" : "Stacje paliw Orlen", "city" : "Świdnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.387300,54.078160] }, "name" : "Stacje paliw Orlen", "city" : "Kętrzyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.929009,49.841868] }, "name" : "Stacje paliw Orlen", "city" : "Myślenice" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.564130,51.237720] }, "name" : "Stacje paliw Orlen", "city" : "Lublin" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.859440,52.917870] }, "name" : "Stacje paliw Orlen", "city" : "Myślibórz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.563250,51.222590] }, "name" : "Stacje paliw Orlen", "city" : "Wieluń" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.043620,52.493780] }, "name" : "Stacje paliw Orlen", "city" : "Bodzanów" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.426490,51.804010] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.535420,51.751800] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.674180,51.423320] }, "name" : "Stacje paliw Orlen", "city" : "Piotrków Trybunalski" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.721230,51.585890] }, "name" : "Stacje paliw Orlen", "city" : "Sieradz" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.790780,51.158080] }, "name" : "Stacje paliw Orlen", "city" : "Lutynia" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.583980,51.037060] }, "name" : "Stacje paliw Orlen", "city" : "Kostomłoty" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.533500,54.513390] }, "name" : "Stacje paliw Orlen", "city" : "Gdynia" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.579770,54.394510] }, "name" : "Stacje paliw Orlen", "city" : "Gdańsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.790510,54.086860] }, "name" : "Stacje paliw Orlen", "city" : "Tczew" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.783860,54.036090] }, "name" : "Stacje paliw Orlen", "city" : "Giżycko" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.519880,51.934440] }, "name" : "Stacje paliw Orlen", "city" : "Zielona Góra" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.272350,54.602350] }, "name" : "Stacje paliw Orlen", "city" : "Wejherowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.640600,54.359160] }, "name" : "Stacje paliw Orlen", "city" : "Gdańsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.488120,51.980470] }, "name" : "Stacje paliw Orlen", "city" : "Jarocin" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.251840,52.228000] }, "name" : "Stacje paliw Orlen", "city" : "Sochaczew" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.185240,50.673750] }, "name" : "Stacje paliw Orlen", "city" : "Ozimek" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.192360,50.318380] }, "name" : "Stacje paliw Orlen", "city" : "Dąbrowa Górnicza" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.950570,49.434170] }, "name" : "Stacje paliw Orlen", "city" : "Krynica-Zdrój" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.963000,50.039920] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.413770,50.919370] }, "name" : "Stacje paliw Orlen", "city" : "Ostrowiec Świętokrzyski" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.018120,51.106770] }, "name" : "Stacje paliw Orlen", "city" : "Wrocław" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.739230,50.773790] }, "name" : "Stacje paliw Orlen", "city" : "Karpacz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.732610,50.305680] }, "name" : "Stacje paliw Orlen", "city" : "Zabrze" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.072330,52.644500] }, "name" : "Stacje paliw Orlen", "city" : "Włocławek" }
+{ "loc" : { "type" : "Point", "coordinates" : [22.099850,53.201300] }, "name" : "Stacje paliw Orlen", "city" : "Piątnica" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.550870,50.132110] }, "name" : "Stacje paliw Orlen", "city" : "Rybnik" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.190220,52.739420] }, "name" : "Stacje paliw Orlen", "city" : "Gorzów Wielkopolski" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.005770,53.120990] }, "name" : "Stacje paliw Orlen", "city" : "Bydgoszcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.015410,52.081820] }, "name" : "Stacje paliw Orlen", "city" : "Piaseczno" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.119590,52.092080] }, "name" : "Stacje paliw Orlen", "city" : "Konstancin-Jeziorna" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.382320,51.747120] }, "name" : "Stacje paliw Orlen", "city" : "Łódz" }
+{ "loc" : { "type" : "Point", "coordinates" : [21.183290,51.410390] }, "name" : "Stacje paliw Orlen", "city" : "Radom" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.638675,49.756200] }, "name" : "Stacje paliw Orlen", "city" : "Cieszyn" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.542650,50.090220] }, "name" : "Stacje paliw Orlen", "city" : "Rybnik" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.620180,50.868550] }, "name" : "Stacje paliw Orlen", "city" : "Kielce" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.958920,53.114080] }, "name" : "Stacje paliw Orlen", "city" : "Bydgoszcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.360040,54.342260] }, "name" : "Stacje paliw Orlen", "city" : "Żukowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.316180,53.929550] }, "name" : "Stacje paliw Orlen", "city" : "Zblewo" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.612300,52.100680] }, "name" : "Stacje paliw Orlen", "city" : "Grodzisk Mazowiecki" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.957438,52.224241] }, "name" : "Stacje paliw Orlen", "city" : "Warszawa" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.008269,52.410019] }, "name" : "Stacje paliw Orlen", "city" : "Poznań" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.893777,50.071039] }, "name" : "Stacje paliw Orlen", "city" : "Szczyglice" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.439195,53.288956] }, "name" : "Stacje paliw Orlen", "city" : "Wałcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.640103,53.240218] }, "name" : "Stacje paliw Orlen", "city" : "Nowa Łubianka" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.489002,53.256025] }, "name" : "Stacje paliw Orlen", "city" : "Gryfino" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.024965,50.244317] }, "name" : "Stacje paliw Orlen", "city" : "Katowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.910350,52.612710] }, "name" : "Stacje paliw Orlen", "city" : "Stary Brześć" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.365982,52.632976] }, "name" : "Stacje paliw Orlen", "city" : "Płońsk" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.093264,52.329344] }, "name" : "Stacje paliw Orlen", "city" : "Krzyżowniki" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.476267,52.387647] }, "name" : "Stacje paliw Orlen", "city" : "Zalesie" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.651929,52.325104] }, "name" : "Stacje paliw Orlen", "city" : "Słubice" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.009554,50.010632] }, "name" : "Stacje paliw Orlen", "city" : "Kraków" }
+{ "loc" : { "type" : "Point", "coordinates" : [15.683677,51.798093] }, "name" : "Stacje paliw Orlen", "city" : "Nowa Sól" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.430421,52.562027] }, "name" : "Stacje paliw Orlen", "city" : "187" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.157841,50.758291] }, "name" : "Stacje paliw Orlen", "city" : "Częstochowa" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.790823,52.844116] }, "name" : "Stacje paliw Orlen", "city" : "Raciążek" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.051756,53.171563] }, "name" : "Stacje paliw Orlen", "city" : "Bydgoszcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.514510,53.791886] }, "name" : "Stacje paliw Orlen", "city" : "Skórcz" }
+{ "loc" : { "type" : "Point", "coordinates" : [14.070917,50.105521] }, "name" : "Stacje paliw Orlen", "city" : "Velká Dobrá" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.230690,51.735845] }, "name" : "Stacje paliw Orlen", "city" : "Podlas" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.306204,52.472308] }, "name" : "Stacje paliw Orlen", "city" : "Załuszkowo" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.777407,54.074322] }, "name" : "Stacje paliw Orlen", "city" : "Tczew" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.347250,50.306814] }, "name" : "Stacje paliw Orlen", "city" : "Sławków" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.589147,50.270977] }, "name" : "Stacje paliw Orlen", "city" : "Olkusz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.131363,50.576283] }, "name" : "Stacje paliw Orlen", "city" : "Nakło" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.475604,51.680516] }, "name" : "Stacje paliw Orlen", "city" : "Rzgów" }
+{ "loc" : { "type" : "Point", "coordinates" : [23.138267,52.023672] }, "name" : "Stacje paliw Orlen", "city" : "Biała Podlaska" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.949044,49.834015] }, "name" : "Stacje paliw Orlen", "city" : "Myślenice" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.734715,53.890265] }, "name" : "Stacje paliw Orlen", "city" : "Sople" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.730719,53.882856] }, "name" : "Stacje paliw Orlen", "city" : "Sople" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.251159,53.748856] }, "name" : "Stacje paliw Orlen", "city" : "Gietrzwałd" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.901486,52.138383] }, "name" : "Stacje paliw Orlen", "city" : "Janki" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.964223,52.700156] }, "name" : "Stacje paliw Orlen", "city" : "Włocławek" }
+{ "loc" : { "type" : "Point", "coordinates" : [16.753357,51.038654] }, "name" : "Stacje paliw Orlen", "city" : "Kąty Wrocławskie" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.726345,50.515126] }, "name" : "Stacje paliw Orlen", "city" : "Elżbiecin" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.414837,51.844942] }, "name" : "Stacje paliw Orlen", "city" : "Zgierz" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.510355,53.307834] }, "name" : "Stacje paliw Orlen", "city" : "Małe Czyste" }
+{ "loc" : { "type" : "Point", "coordinates" : [17.369544,51.639974] }, "name" : "Stacje paliw Orlen", "city" : "Zduny" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.613886,50.748476] }, "name" : "Stacje paliw Orlen", "city" : "Ciasna" }
+{ "loc" : { "type" : "Point", "coordinates" : [20.861392,49.966271] }, "name" : "Stacje paliw Orlen", "city" : "Łukanowice" }
+{ "loc" : { "type" : "Point", "coordinates" : [18.159978,50.461501] }, "name" : "Stacje paliw Orlen", "city" : "Góra Świętej Anny" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.911456,49.865675] }, "name" : "Stacje paliw Orlen", "city" : "Jawornik" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.909003,49.865711] }, "name" : "Stacje paliw Orlen", "city" : "Jawornik" }
+{ "loc" : { "type" : "Point", "coordinates" : [19.881155,49.921404] }, "name" : "Stacje paliw Orlen", "city" : "Głogoczów" }

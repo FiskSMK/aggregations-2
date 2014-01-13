@@ -1,6 +1,6 @@
 # Agregacje 2
 
-![Data Wranglers](/images/data-wrangler.jpg)
+![Data Wranglers](images/data-wrangler.jpg)
 
 Do aggregacji można wykorzystać te kolekcje:
 
@@ -17,57 +17,75 @@ wirtualnej. Do maszyny logujemy się w ten sposób:
 mongo --username student --password sesja2013 153.19.1.202/test
 ```
 
-*Uwaga:* Użytkownik *student* ma uprawnienia tylko do odczytu w bazie  *test*.
+*Uwaga:* Użytkownik *student* ma uprawnienia tylko do odczytu w bazie  *test*.
 
 
 ## Nasze agregacje
 
 1. Bzyl, Włodzimierz. [Imieniny](/docs/wbzyl.md).
-1. Bełcik, Jakub.
-1. Białkowski, Dominik.
-1. Brzeziński, Damian.
+1. [Bełcik, Jakub](/docs/jbelcik/README.md).
+1. [Białkowski, Dominik](/docs/dbialkowski.md). [Current Census Blocks for McKinley County](/docs/dbialkowski2.md).
+1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md). [GDELT-EventDatabase](/docs/dbrzezinski/dbrzezinski_gdelt.md).
+1. [Dermont, Jacek](/docs/jdermont.md). [Albumy muzyczne](/docs/jdermont_albumy_muzyczne.md).
+1. [Detlaf, Krzysztof](/docs/kdetlaf.md).
+1. [Dępczyk, Michał](/docs/mdepczyk.md). [Broadband coverage](/docs/mdepczyk/zadanie2.md).
+1. [Domurat, Szymon](/docs/sdomurat.md). [Youtube](/docs/sdomurat_youtube.md).
+1. [Duwe, Oskar](/docs/oduwe.md).
+1. [Gałka, Jacek](/docs/jgalka/README.md).
+1. [Gniado, Bartosz](/docs/bgniado/README.md).
+1. [Groszek, Rafał](/docs/rgroszek/README.md).
+1. [Karczewski, Kamil](/docs/kkarczewski.md).
+1. [Karwowski, Kamil](/docs/kkarwowski.MD). [Strony internetowe](/docs/kkarwowski-2.md).
+1. [Kłeczek, Piotr](/docs/pkleczek/README.md).
+1. [Kotłowski, Piotr](docs/pkotlowski/README.md).
+1. [Koźmiński, Marcin](docs/mkozminski/README.md).
+1. [Królik, Przemysław](/docs/pkrolik/zad1.md). [GetGlue IMDB](/docs/pkrolik/zad2.md).
+1. [Kubacki, Konrad](/docs/kkubacki/README.md).
+1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md). [The Internet Movie Database](/docs/mkwiatkowski/zadanie2.md).
+1. [Lewandowska, Marta](/docs/mlewandowska.md).
+1. [Łuczun, Rafał](/docs/rluczun/README.md).
+1. [Małecki, Maciej](/docs/mmalecki/README.md).
+1. [Matulewski, Damian](/docs/dmatulewski.md). [Głosowanie](/docs/dmatulewski_glosowanie.md).
+1. [Melzer, Grzegorz](/docs/gmelzer.md). [GetGlue – TIMDB](/docs/gmelzer/gmelzer2.md).
+1. [Mieszała, Konrad](/docs/kmieszala.md). [Bankowość](/docs/kmieszala_MeritumBank.md).
+1. [Motel, Mateusz](/docs/mmotel/zadanie1.md). [The Internet Movie Database](/docs/mmotel/zadanie2.md).
+1. [Motławski, Mateusz](/docs/mmotlawski/README.md). [Movies and tv shows Database](/docs/mmotlawski/zad2.md).
+1. [Napiórkowski, Sebastian](/docs/sebnapi/README.md)
+1. [Osiński, Miłosz](/docs/mosinski/README.md). [Lista słów do gier](/docs/mosinski/zadanie2.md).
+1. [Paczyński, Łukasz](/docs/lpaczynski/README.md).
+1. [Piasecka, Aleksandra](/docs/apiasecka.md).
+1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
+1. [Plichta, Oskar](/docs/oplichta.md). [The Internet Movie Database](/docs/oplichta-imdb.md).
+1. [Puchalski, Paweł](/docs/ppuchalski/README.md).
+1. [Rybarczyk, Karolina](/docs/apiasecka.md).
+1. [Sawicki, Paweł](/docs/psawicki.md).
+1. [Siora, Kacper](/docs/ksiora/README.md).
+1. [Skiba, Marek](/docs/mskiba/Zadanie1.md). [Apache Logs](/docs/mskiba/Zadanie2.md).
+1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md). [Pogoda w Edynburgu](/docs/kskowronski/README.md).
+1. [Smykowski, Adrian](/docs/asmykowski/README.md).
+1. [Sott, Tomasz](/docs/tsott/README.md). [BTS – On-Time Performance](/docs/tsott/zadanie2.md).
+1. [Stefanowicz, Michał](/docs/mstefanowicz.md).
+1. [Szygenda, Mateusz](/docs/mszygenda.md). [Wypadki drogowe](/docs/mszygenda-accidents.md).
+1. [Tomczak, Robert](/docs/rtomczak/README.md). [The Internet Movie Database](/docs/rtomczak/zadanie2.md).
+1. [Wąsowicz, Michał](/docs/mwasowicz.md).
+1. [Winsławski, Bartłomiej](/docs/bwinslawski.md). [Meritum Bank](/docs/bwinslawski2.md).
+1. [Wiśniewski, Konrad](/docs/kwisniewski/kwisniewski.md).
+1. [Zdunek, Kamil](/docs/kzdunek/README.md).
+1. [Żarkowski, Mateusz](/docs/mzarkowski.md), [PAMAP – Physical Activity Monitoring](/docs/mzarkowski-pamap.md).
+
+----
+
 1. Cała, Mariusz.
-1. [Dermont, Jacek](/docs/jdermont.md).
-1. Detlaf, Krzysztof.
-1. Dępczyk, Michał.
-1. Dobrzycki, Wojciech.
+1. [Dobrzycki, Wojciech](/docs/wdobrzycki.md) [Zadanie 2](/docs/wdobrzycki-zadanie2.md)
 1. Dolata, Jędrzej.
-1. Domurat, Szymon.
-1. Duwe, Oskar.
 1. Elszkowski, Adrian.
-1. Gałka, Jacek.
 1. Głowacki, Michał.
-1. Gniado, Bartosz.
-1. Groszek, Rafał.
 1. Januszewski, Tomasz.
 1. Jaźwiński, Robert.
-1. Karczewski, Kamil.
-1. [Karwowski, Kamil](/docs/kkarwowski.md).
-1. Kłeczek, Piotr.
-1. Kotłowski, Piotr.
-1. Koźmiński, Marcin.
-1. [Królik, Przemysław](/docs/pkrolik.md).
-1. Kubacki, Konrad.
-1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski.md)
-1. Lewandowska, Marta.
-1. Łuczun, Rafał.
 1. Malinowski, Piotr.
-1. [Małecki, Maciej](/docs/mmalecki/README.md).
-1. Matulewski, Damian.
-1. Melzer, Grzegorz.
-1. Mieszała, Konrad.
-1. [Motel, Mateusz](/docs/mmotel/zadanie1.md).
-1. Motławski, Mateusz.
-1. Napiórkowski, Sebastain.
 1. Osękowski, Dominik.
-1. [Osiński, Miłosz](/docs/mosinski/README.md).
 1. Ostrowski, Michał.
-1. [Paczyński, Łukasz](/docs/lpaczynski/README.md).
-1. Piasecka, Aleksandra.
-1. Pietraszuk, Bartłomiej.
-1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
-1. Plichta, Oskar.
-1. [Puchalski, Paweł](/docs/ppuchalski/README.md).
+1. [Pietraszuk, Bartłomiej] (/docs/bpietraszuk/bpietraszuk.md) [Przypadki zauważenia UFO w USA](/docs/bpietraszuk/ufo.md)
 1. Rogaszewski, Piotr.
 1. Rybarczyk, Karolina.
 1. Sawicki, Paweł.
@@ -83,14 +101,12 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Winsławski, Bartłomiej.
 1. Wiśniewski, Konrad.
 1. Wiśniewski, Piotr.
-1. Zdunek, Kamil.
-1. Żarkowski, Mateusz.
 
 
-## BigData
+## BigData (+1M)
 
 [GetGlue and Timestamped Event Data](http://getglue-data.s3.amazonaws.com/getglue_sample.tar.gz)
-(ok. 11 GB, 19_831_300 json-ów, próbka 100 jsonów [getglue101](/data/wbzyl/getglue101.json)):
+(ok. 11 GB, 19_831_300 json-ów, próbka 100 jsonów [getglue101](/data/wbzyl/getglue101.json)):
 
 ```json
 {
@@ -117,7 +133,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 Dane z lat 2007–2012, tylko filmy i przedstawienia TV.
 
 Przykładowe aggregacje i zliczania: ilu jest różnych użytkowników
-w danych? jakie jest 10 najpopularniejszych filmów i przedstawień TV?
+w danych? jakie jest 10 najpopularniejszych filmów i przedstawień TV?
 ile jest różnych akcji?
 
 
@@ -126,7 +142,7 @@ ile jest różnych akcji?
 * Scott Chacon, [Pro Git](http://git-scm.com/book);
   [niekompletne tłumaczenie na język polski](http://git-scm.com/book/pl).
 
-Dwa sposoby radzenia sobie z taką sytuacją:
+Trzy sposoby radzenia sobie z taką sytuacją:
 **We can’t automatically merge this pull request.**
 
 Sposób 1:
@@ -152,6 +168,23 @@ git push origin master
 
 git branch -d miotla007-master
 ```
+
+Sposób 3
+
+```sh
+# dociaganie zmian z oryginalnego repozytorium
+# https://help.github.com/articles/fork-a-repo#step-3-configure-remotes
+git pull upstream
+
+# rebasing naszego brancha
+git checkout my-branch
+git rebase upstream
+  # rozwiązywanie konfliktów jeżeli zajdzie potrzeba
+  # (instrukcje pojawią się na ekranie)
+```
+
+Dużym plusem tego sposobu jest brak commita z mergem
+(porządek w historii repozytorium).
 
 Undo różnych rzeczy:
 
@@ -208,3 +241,33 @@ Zobacz też:
 * Bert Belder, [Checkout github pull requests locally](https://gist.github.com/piscisaureus/3342247)
 * Chris Wanstrath, [hub makes git better with GitHub](http://defunkt.io/hub/)
 * Scott Chacon, [6.4 Git Tools - Rewriting History](http://git-scm.com/book/en/Git-Tools-Rewriting-History)
+
+
+## Simple Rules for Reproducible Computations
+
+Provide public access to scripts, runs, and results:
+
+1. Version control all custom scripts:
+  - avoid writing code
+  - **write thin scripts** and use standard tools and use standard UNIX
+    commands to chain things together.
+1. Avoid manual data manipulation steps:
+  - use a build system, for example [**make**](http://bost.ocks.org/mike/make/),
+    and have all results produced automatically by build targets
+  - if it’s not automated, it’s not part of the project,
+    i.e. have an idea for a graph or an analysis?
+    automate its generation
+1. Use a markup, for example
+   [**Markdown**](http://daringfireball.net/projects/markdown/syntax),
+   to create reports for analysis and presentation output products.
+
+And two more rules:
+
+1. Record all intermediate results, when possible in standardized formats.
+1. Connect textual statements to underlying results.
+
+
+## Generowanie spisu treści
+
+Do automatycznego wygenerowania spisu treści możemy użyć narzędzia o
+nazwie [table-of-contents-preprocessor](https://github.com/aslushnikov/table-of-contents-preprocessor).
