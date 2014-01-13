@@ -33,6 +33,10 @@ gcc -Wall --std=c99 -Wall -pedantic mongo1c.c -lmongoc
 
 Czas jego działania wyniósł 1 godzinę, 8 minut i 51 sekund.
 
+Sterownik do języka C można ściągnać ze strony http://docs.mongodb.org/ecosystem/drivers/c/
+Instrukcja jego instalacji: http://api.mongodb.org/c/current/building.html
+Jeśli sterownik nie działa od razu po zainstalowaniu: http://stackoverflow.com/questions/17028354/compiling-mongo-c-driver-example-program
+
 ### d)
 
 Plik przygotowałem do importu zgodnie z opisem w poleceniu. Import wykonałem przez:
@@ -56,7 +60,11 @@ db.text8.distinct("word").length
 Różnych słów jest 253854.
 
 ```
-db.text8.aggregate([ {$group:{ _id:"$word", count:{$sum:1}}}, {$sort: {count: -1}}, {$limit:1} ])
+db.text8.aggregate([ 
+	{$group:{ _id:"$word", count:{$sum:1}}}, 
+	{$sort: {count: -1}}, 
+	{$limit:1} 
+])
 
 { "result" : [ { "_id" : "the", "count" : 1061396 } ], "ok" : 1 }
 ```
@@ -66,7 +74,12 @@ db.text8.aggregate([ {$group:{ _id:"$word", count:{$sum:1}}}, {$sort: {count: -1
 Najczęściej występujące słowo w tym pliku stanowi około 6,25% jego zawartości.
 
 ```
-db.text8.aggregate([ {$group:{_id:"$word", count:{$sum:1}}}, {$sort: {count: -1}}, {$limit:10}, {$group:{_id: null, count:{$sum:"$count"}}} ])
+db.text8.aggregate([ 
+	{$group:{_id:"$word", count:{$sum:1}}}, 
+	{$sort: {count: -1}}, 
+	{$limit:10}, 
+	{$group:{_id: null, count:{$sum:"$count"}}} 
+])
 
 { "result" : [ { "_id" : null, "count" : 4205965 } ], "ok" : 1 }
 ```
@@ -76,7 +89,12 @@ db.text8.aggregate([ {$group:{_id:"$word", count:{$sum:1}}}, {$sort: {count: -1}
 10 najczęściej występujących słów stanowi około 24,73% jego zawartości.
 
 ```
-db.text8.aggregate([ {$group:{_id:"$word", count:{$sum:1}}}, {$sort: {count: -1}}, {$limit:10}, {$group:{_id: null, count:{$sum:"$count"}}} ])
+db.text8.aggregate([ 
+	{$group:{_id:"$word", count:{$sum:1}}}, 
+	{$sort: {count: -1}}, 
+	{$limit:10}, 
+	{$group:{_id: null, count:{$sum:"$count"}}} 
+])
 
 { "result" : [ { "_id" : null, "count" : 7998978 } ], "ok" : 1 }
 ```
@@ -86,7 +104,12 @@ db.text8.aggregate([ {$group:{_id:"$word", count:{$sum:1}}}, {$sort: {count: -1}
 100 najczęściej występujących słów stanowi około 47% jego zawartości.
 
 ```
-db.text8.aggregate([ {$group:{_id:"$word", count:{$sum:1}}}, {$sort: {count: -1}}, {$limit:10}, {$group:{_id: null, count:{$sum:"$count"}}} ])
+db.text8.aggregate([ 
+	{$group:{_id:"$word", count:{$sum:1}}}, 
+	{$sort: {count: -1}}, 
+	{$limit:10}, 
+	{$group:{_id: null, count:{$sum:"$count"}}} 
+])
 
 { "result" : [ { "_id" : null, "count" : 11433354 } ], "ok" : 1 }
 ```
@@ -111,32 +134,59 @@ Przykładowe zapytania:
 hrabstwo, w którym znajduje się Waszyngton:
 
 ```
-db.uscounties.findOne({ geometry: {$near: {$geometry: {type: "Point", coordinates: [-38.88,77.03]}}} })
+db.uscounties.findOne({ 
+	geometry: {$near: {
+		$geometry: {type: "Point", coordinates: [-38.88,77.03]}
+	}} 
+})
 ```
 
 10 hrabstw najbliższych Waszyngtonowi, pomijając hrabstwo w którym leży:
 
 ```
-db.uscounties.find({ geometry: {$near: {$geometry: {type: "Point", coordinates: [-77.03,38.88]}}} }).skip(1).limit(10)
+db.uscounties.find({ 
+	geometry: {$near: {
+		$geometry: {type: "Point", coordinates: [-77.03,38.88]}
+	}} 
+}).skip(1).limit(10)
 ```
 
 Wyświetl wszystkie hrabstwa leżące wewnątrz kwadratu [-100,35], [-102,35], [-102,37], [-100,37]:
+
 ```
-db.uscounties.find({geometry: {$geoWithin: {$geometry: {type: "Polygon", coordinates: [[[-100,35], [-102,35], [-102,37], [-100,37], [-100,35]]]} } } } )
+db.uscounties.find({
+	geometry: {$geoWithin: {
+		$geometry: {type: "Polygon", coordinates: [[[-100,35], [-102,35], [-102,37], [-100,37], [-100,35]]]} 
+	} } 
+} )
 ```
 
 Wyświetl wszystkie hrabstwa leżące na równoleżniku 40:
+
 ```
-db.uscounties.find( {geometry: {$geoIntersects: {$geometry: {type: "LineString", coordinates: [ [-0,40], [-90,40], [-180,40] ]}}}})
+db.uscounties.find( {
+	geometry: {$geoIntersects: {
+		$geometry: {type: "LineString", coordinates: [ [-0,40], [-90,40], [-180,40] ]}
+	}}
+})
 ```
 
 Wyświetl wszystkie hrabstwa leżące do 100km od Waszyngtonu
+
 ```
-db.uscounties.find({ geometry: {$near: {$geometry: {type: "Point", coordinates: [-77.03,38.88]}}, $maxDistance : 100000 } })
+db.uscounties.find({ 
+	geometry: {$near: {
+		$geometry: {type: "Point", coordinates: [-77.03,38.88]}},
+		$maxDistance : 100000 } 
+})
 ```
 
 Wyświetl hrabstwa leżące na drodze z Chicago do Waszyngtonu (w linii prostej)
 
 ```
-db.uscounties.find( {geometry: {$geoIntersects: {$geometry: {type: "LineString", coordinates: [ [-77.03,38.88], [-87.62,41.87] ]}}}})
+db.uscounties.find( 
+	{geometry: {$geoIntersects: {
+		$geometry: {type: "LineString", coordinates: [ [-77.03,38.88], [-87.62,41.87] ]}
+	}}
+})
 ```

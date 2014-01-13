@@ -1,0 +1,350 @@
+{
+took: 692
+timed_out: false
+_shards: {
+total: 1
+successful: 1
+failed: 0
+}
+hits: {
+total: 5187037
+max_score: 1
+hits: [
+{
+_index: data
+_type: imdb
+_id: IYhX4w2tTMekUqTxrG0ZEg
+_score: 1
+_source: {
+app: GetGlue
+visitCount: 1
+userId: dennis_kinney
+image: http://images.play.com/covers/7845393m.jpg
+timestamp: 2011-04-09T13:58:58Z
+title: The Big Bang Theory
+displayName: Dennis Kinney
+modelName: tv_shows
+hideVisits: false
+comment: 
+private: false
+source: glue://users/Jester47/tv_shows?ref=friends&displayName=Patrick
+version: 2
+link: http://www.play.com/DVD/DVD/-/55/70/-/7845393/The-Big-Bang-Theory-Complete-First-Season/Product.html
+lastModified: 2011-12-17T02:00:22Z
+action: Liked
+lctitle: the big bang theory
+objectKey: tv_shows/big_bang_theory
+}
+}
+{
+_index: data
+_type: imdb
+_id: 40V_6c8iRhqqnKXIXG0W2A
+_score: 1
+_source: {
+visitCount: 1
+action: Checkin
+lctitle: evita
+objectKey: movies/evita/alan_parker
+numCheckins: 1
+lastModified: 2012-01-14T20:00:41Z
+source: iPhone
+title: Evita
+modelName: movies
+private: false
+userId: vfevgas
+image: http://cdn-8.nflximg.com/us/boxshots/large/484608.jpg
+hideVisits: false
+comment: 
+version: 2
+app: iPhone_2.4.1
+lastCheckin: true
+timestamp: 2011-04-09T14:01:28Z
+director: alan parker
+verb: watching
+link: http://www.netflix.com/Movie/484608
+displayName: Vassilios Fevgas
+}
+}
+{
+_index: data
+_type: imdb
+_id: Cj2tXjmrSnmKu6yh3MvZQw
+_score: 1
+_source: {
+app: iPhone_2.4.1
+visitCount: 2
+objectKey: movies/evita/alan_parker
+lctitle: evita
+image: http://cdn-8.nflximg.com/us/boxshots/large/484608.jpg
+timestamp: 2011-04-09T14:01:36Z
+title: Evita
+visitCountUpdated: 2011-04-09T14:01:50Z
+displayName: Vassilios Fevgas
+modelName: movies
+hideVisits: false
+comment: 
+userId: vfevgas
+private: false
+director: alan parker
+source: iPhone
+version: 2
+link: http://www.netflix.com/Movie/484608
+lastModified: 2012-01-14T20:00:41Z
+action: Liked
+}
+}
+{
+_index: data
+_type: imdb
+_id: kRdq2J5SR1OumCcbLwCpyw
+_score: 1
+_source: {
+app: GetGlue
+visitCount: 1
+objectKey: tv_shows/celebrity_apprentice
+lctitle: the celebrity apprentice
+image: http://adaptiveblue.s3.amazonaws.com/tv_shows/celebrity_apprentice/celbAp_gglue_400x563.jpeg
+timestamp: 2011-04-09T14:01:45Z
+lastModified: 2012-04-24T02:25:55Z
+title: The Celebrity Apprentice
+displayName: Sam Naeev
+modelName: tv_shows
+hideVisits: false
+comment: 
+userId: samnaeev
+private: false
+numCheckins: 0
+source: http://getglue.com/tv_shows/celebrity_apprentice
+version: 2
+link: http://www.nbc.com/the-apprentice
+verb: watching
+action: Checkin
+}
+}
+{
+_index: data
+_type: imdb
+_id: PDQmClBkT_eSV6gInDV8lg
+_score: 1
+_source: {
+visitCount: 1
+action: Checkin
+lctitle: sucker punch
+objectKey: movies/sucker_punch/zack_snyder
+numCheckins: 1
+lastModified: 2012-01-13T02:55:39Z
+displayName: Sutae Kim
+link: http://www.imdb.com/title/tt0978764
+venueName: CGV 영등포
+title: Sucker Punch
+modelName: movies
+private: false
+foursquare_venueId: 4b305091f964a520d9f824e3
+image: http://fc07.deviantart.net/fs71/f/2010/205/8/c/Sucker_Punch_Poster_by_mademoiselle_art.png
+hideVisits: false
+comment: Get ready to fight against world
+source: iPhone
+version: 2
+app: iPhone_2.4.1
+userId: sutae_kim
+lastCheckin: true
+timestamp: 2011-04-09T14:03:13Z
+director: zack snyder
+verb: watching
+}
+}
+{
+_index: data
+_type: imdb
+_id: F9XUJb-OT82vob9Ap3tYww
+_score: 1
+_source: {
+app: iPhone_2.3.2
+visitCount: 1
+objectKey: tv_shows/justified
+lctitle: justified
+image: http://thetvdb.com/banners/posters/134241-2.jpg
+timestamp: 2011-04-09T14:03:13Z
+lastModified: 2011-10-01T01:09:49Z
+title: Justified
+displayName: Josh Muldoon
+modelName: tv_shows
+hideVisits: false
+comment: just keeps getting better.
+userId: muldydoona
+private: false
+numCheckins: 0
+source: iPhone
+version: 2
+link: http://tvlistings.zap2it.com/tv/justified/EP01236296
+verb: watching
+action: Checkin
+}
+}
+{
+_index: data
+_type: imdb
+_id: tjtBkmaUTHaIDet8c8znxQ
+_score: 1
+_source: {
+app: BlackBerry_1.0
+visitCount: 1
+objectKey: tv_shows/criminal_minds
+lctitle: criminal minds
+image: http://images4.fanpop.com/image/photos/15800000/Criminal-Minds-Season-6-criminal-minds-15886809-375-500.jpg
+timestamp: 2011-04-09T14:03:19Z
+lastModified: 2012-03-05T17:43:13Z
+title: Criminal Minds
+displayName: Bambang Priambada
+modelName: tv_shows
+hideVisits: false
+comment: 
+userId: bambang_priambada
+private: false
+numCheckins: 0
+source: Blackberry
+version: 2
+link: http://www.netflix.com/Movie/70075986
+verb: watching
+action: Checkin
+}
+}
+{
+_index: data
+_type: imdb
+_id: -5FqrfPLTN2QOwRPKQ8oJw
+_score: 1
+_source: {
+app: iPhone_2.4.1
+visitCount: 1
+objectKey: movies/sucker_punch/zack_snyder
+userId: sutae_kim
+image: http://fc07.deviantart.net/fs71/f/2010/205/8/c/Sucker_Punch_Poster_by_mademoiselle_art.png
+timestamp: 2011-04-09T14:03:20Z
+title: Sucker Punch
+displayName: Sutae Kim
+modelName: movies
+hideVisits: false
+comment: 
+private: false
+director: zack snyder
+source: iPhone
+version: 2
+link: http://www.imdb.com/title/tt0978764
+lastModified: 2011-12-17T02:00:22Z
+action: Liked
+lctitle: sucker punch
+}
+}
+{
+_index: data
+_type: imdb
+_id: ssDForr5TU68hKaIEvSscw
+_score: 1
+_source: {
+app: GetGlue
+visitCount: 1
+objectKey: tv_shows/nurse_jackie
+lctitle: nurse jackie
+image: http://adaptiveblue.s3.amazonaws.com/tv_shows/nurse_jackie/NurseJackie3_BloggerArt.jpg
+timestamp: 2011-04-09T14:04:01Z
+lastModified: 2012-04-16T20:38:29Z
+title: Nurse Jackie
+displayName: Bratinella
+modelName: tv_shows
+hideVisits: false
+comment: Episode 2
+userId: bratinella
+private: false
+numCheckins: 0
+source: http://getglue.com/tv_shows/nurse_jackie
+version: 2
+link: http://www.netflix.com/Movie/70114184
+verb: watching
+action: Checkin
+}
+}
+{
+_index: data
+_type: imdb
+_id: 9B-h1E4oRXS8GoLwjFcWSg
+_score: 1
+_source: {
+visitCount: 1
+action: Checkin
+lctitle: limitless
+objectKey: movies/limitless/neil_burger
+numCheckins: 0
+lastModified: 2012-01-13T02:55:39Z
+source: Android
+title: Limitless
+modelName: movies
+private: false
+userId: dennis_postma
+image: http://c0209902.cdn.cloudfiles.rackspacecloud.com/FIq8jxttvWt2tu_1_d.jpg
+hideVisits: false
+comment: 
+version: 2
+app: Android_2.3.2
+lastCheckin: true
+timestamp: 2011-04-09T14:04:31Z
+director: neil burger
+verb: watching
+link: http://www.comingsoon.net/films.php?id=44087
+displayName: Dennis Postma
+}
+}
+]
+}
+facets: {
+userId: {
+_type: terms
+missing: 172
+total: 17890817
+other: 5824180
+terms: [
+{
+term: http
+count: 2877010
+}
+{
+term: getglue.com
+count: 2657945
+}
+{
+term: tv_shows
+count: 1403667
+}
+{
+term: movies
+count: 1305781
+}
+{
+term: iphone
+count: 966748
+}
+{
+term: quickrate
+count: 703439
+}
+{
+term: glue
+count: 649034
+}
+{
+term: lists
+count: 637844
+}
+{
+term: suggestions
+count: 473241
+}
+{
+term: android
+count: 391928
+}
+]
+}
+}
+}
