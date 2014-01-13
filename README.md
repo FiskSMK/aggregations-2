@@ -37,7 +37,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Karczewski, Kamil](/docs/kkarczewski.md).
 1. [Karwowski, Kamil](/docs/kkarwowski.MD). [Strony internetowe](/docs/kkarwowski-2.md).
 1. [Kłeczek, Piotr](/docs/pkleczek/README.md).
-1. [Kotłowski, Piotr](docs/pkotlowski/README.md) [Lotniska](docs/pkotlowski/data-refine.md).
+1. [Kotłowski, Piotr](docs/pkotlowski/README.md). [Lotniska](docs/pkotlowski/data-refine.md).
 1. [Koźmiński, Marcin](docs/mkozminski/README.md).
 1. [Królik, Przemysław](/docs/pkrolik/zad1.md). [GetGlue IMDB](/docs/pkrolik/zad2.md).
 1. [Kubacki, Konrad](/docs/kkubacki/README.md).
@@ -79,12 +79,12 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Dobrzycki, Wojciech](/docs/wdobrzycki.md) [Zadanie 2](/docs/wdobrzycki-zadanie2.md)
 1. Dolata, Jędrzej.
 1. Elszkowski, Adrian.
-1. Głowacki, Michał.
+1. [Głowacki, Michał](/docs/mglowacki.md).
 1. Januszewski, Tomasz.
 1. Jaźwiński, Robert.
 1. Malinowski, Piotr.
 1. Osękowski, Dominik.
-1. Ostrowski, Michał.
+1. [Ostrowski, Michał](/docs/mostrowski.md).
 1. [Pietraszuk, Bartłomiej] (/docs/bpietraszuk/bpietraszuk.md) [Przypadki zauważenia UFO w USA](/docs/bpietraszuk/ufo.md)
 1. Rogaszewski, Piotr.
 1. Wiśniewski, Piotr.
