@@ -52,7 +52,9 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Motławski, Mateusz](/docs/mmotlawski/README.md). [Movies and tv shows Database](/docs/mmotlawski/zad2.md).
 1. [Napiórkowski, Sebastian](/docs/sebnapi/README.md)
 1. [Osiński, Miłosz](/docs/mosinski/README.md). [Lista słów do gier](/docs/mosinski/zadanie2.md).
-1. [Paczyński, Łukasz](/docs/lpaczynski/README.md).
+1. [Ostrowski, Michał](/docs/mostrowski.md).
+1. [Pietraszuk, Bartłomiej](/docs/bpietraszuk/bpietraszuk.md) [Przypadki zauważenia UFO w USA](/docs/bpietraszuk/ufo.md)
+1. [Paczyński, Łukasz](/docs/lpaczynski/README.md). [Lista pracowników](/docs/lpaczynski/zadanie2.md).
 1. [Piasecka, Aleksandra](/docs/apiasecka.md).
 1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
 1. [Plichta, Oskar](/docs/oplichta.md). [The Internet Movie Database](/docs/oplichta-imdb.md).
@@ -84,8 +86,12 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Jaźwiński, Robert.
 1. Malinowski, Piotr.
 1. Osękowski, Dominik.
-1. [Ostrowski, Michał](/docs/mostrowski.md).
-1. [Pietraszuk, Bartłomiej] (/docs/bpietraszuk/bpietraszuk.md) [Przypadki zauważenia UFO w USA](/docs/bpietraszuk/ufo.md)
+1. Piasecka, Aleksandra.
+1. Pietraszuk, Bartłomiej.
+1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
+1. Plichta, Oskar.
+1. Puchalski, Paweł.
+>>>>>>> 6eab0f05fb15fdf0a469122ece88cac4452506cb
 1. Rogaszewski, Piotr.
 1. Wiśniewski, Piotr.
 
