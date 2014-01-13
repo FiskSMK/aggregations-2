@@ -2,7 +2,7 @@
 
 ![Data Wranglers](images/data-wrangler.jpg)
 
-Do aggregacji można wykorzystać te kolekcje:
+Do aggregacji można wykorzystać następujące kolekcje:
 
 * *census1881*
 * *zipcodes*, [przykładowe agregacje](/Aggregation-Framework-Examples-in-Javascript.md)
@@ -23,7 +23,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 ## Nasze agregacje
 
 1. Bzyl, Włodzimierz. [Imieniny](/docs/wbzyl.md).
-1. [Bełcik, Jakub](/docs/jbelcik/README.md).
+1. [Bełcik, Jakub](/docs/jbelcik/README.md). [Przestępstwa uliczne](/docs/jbelcik/READMEzad2.md).
 1. [Białkowski, Dominik](/docs/dbialkowski.md). [Current Census Blocks for McKinley County](/docs/dbialkowski2.md).
 1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md). [GDELT-EventDatabase](/docs/dbrzezinski/dbrzezinski_gdelt.md).
 1. [Dermont, Jacek](/docs/jdermont.md). [Albumy muzyczne](/docs/jdermont_albumy_muzyczne.md).
