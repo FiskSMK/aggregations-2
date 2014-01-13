@@ -49,7 +49,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Melzer, Grzegorz](/docs/gmelzer.md). [GetGlue – TIMDB](/docs/gmelzer/gmelzer2.md).
 1. [Mieszała, Konrad](/docs/kmieszala.md). [Bankowość](/docs/kmieszala_MeritumBank.md).
 1. [Motel, Mateusz](/docs/mmotel/zadanie1.md). [The Internet Movie Database](/docs/mmotel/zadanie2.md).
-1. [Motławski, Mateusz](/docs/mmotlawski/README.md).
+1. [Motławski, Mateusz](/docs/mmotlawski/README.md). [Movies and tv shows Database](/docs/mmotlawski/zad2.md).
 1. [Napiórkowski, Sebastian](/docs/sebnapi/README.md)
 1. [Osiński, Miłosz](/docs/mosinski/README.md). [Lista słów do gier](/docs/mosinski/zadanie2.md).
 1. [Paczyński, Łukasz](/docs/lpaczynski/README.md).
