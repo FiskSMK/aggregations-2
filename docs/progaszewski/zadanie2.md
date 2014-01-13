@@ -25,6 +25,99 @@ Czas trwania importu:
     sys  0m0.016s
 
 
+### MongoDB - agregacje: ###
+
+Wyświetlenie wszystkich rodzajów  nazw modeli wraz z ich ilością wystąpień:
+
+	db.bigdata.aggregate([
+		{ $group: { _id: "$modelName", ilosc: {$sum: 1}} },
+		{ $sort: {ilosc: -1 } },
+		{ $project: { modelName: "$_id", ilosc: "$ilosc", _id: 0} }
+	])
+	
+Wynik:
+
+	{
+		"result" : [
+			{
+					"ilosc" : 1090418,
+					"modelName" : "movies"
+			},
+			{
+					"ilosc" : 909572,
+					"modelName" : "tv_shows"
+			},
+			{
+					"ilosc" : 5,
+					"modelName" : "recording_artists"
+			},
+			{
+					"ilosc" : 5,
+					"modelName" : "topics"
+			}
+		],
+		"ok" : 1
+	}
+
+Zliczenie wszystkich użytkowników, którzy mają ponad 7600 rekordów:
+	
+	db.bigdata.aggregate([
+		{ $group: { _id: "$userId", ilosc: {$sum: 1}} },
+		{ $sort: {ilosc: -1 } },
+		{ $match: { ilosc: {$gte : 7600 } } },
+		{ $project: { userId: "$_id", ilosc: "$ilosc", _id: 0 }}
+	])
+	
+Wynik:
+
+	{
+        "result" : [
+                {
+                        "ilosc" : 13585,
+                        "userId" : "jesusvarelaacosta"
+                },
+                {
+                        "ilosc" : 13141,
+                        "userId" : "LilMissCakeCups"
+                },
+                {
+                        "ilosc" : 12946,
+                        "userId" : "johnnym2001"
+                },
+                {
+                        "ilosc" : 11764,
+                        "userId" : "erwin_ali_perdana"
+                },
+                {
+                        "ilosc" : 11513,
+                        "userId" : "endika"
+                },
+                {
+                        "ilosc" : 11352,
+                        "userId" : "cathy_blessing_hughes"
+                },
+                {
+                        "ilosc" : 9737,
+                        "userId" : "khairulazmas"
+                },
+                {
+                        "ilosc" : 8778,
+                        "userId" : "maria_santana1"
+                },
+                {
+                        "ilosc" : 8683,
+                        "userId" : "samnaeev"
+                },
+                {
+                        "ilosc" : 7668,
+                        "userId" : "wididip"
+                }
+        ],
+        "ok" : 1
+	}
+
+
+
 ### ElasticSearch ###
 
 Aby załadować te same dane do Elasticseatch przygotowałem plik 
