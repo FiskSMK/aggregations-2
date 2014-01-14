@@ -62,7 +62,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Rogaszewski, Piotr](/docs/progaszewski.md).
 1. [Rybarczyk, Karolina](/docs/apiasecka.md).
 1. [Sawicki, Paweł](/docs/psawicki.md).
-1. [Siora, Kacper](/docs/ksiora/README.md).
+1. [Siora, Kacper](/docs/ksiora/README.md). [Deaths](/docs/ksiora/deaths.md). 
 1. [Skiba, Marek](/docs/mskiba/Zadanie1.md). [Apache Logs](/docs/mskiba/Zadanie2.md).
 1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md). [Pogoda w Edynburgu](/docs/kskowronski/README.md).
 1. [Smykowski, Adrian](/docs/asmykowski/README.md).
