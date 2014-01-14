@@ -1,4 +1,4 @@
-# Agregacje 2
+﻿# Agregacje 2
 
 ![Data Wranglers](images/data-wrangler.jpg)
 
@@ -61,7 +61,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Plichta, Oskar](/docs/oplichta.md). [The Internet Movie Database](/docs/oplichta-imdb.md).
 1. [Puchalski, Paweł](/docs/ppuchalski/README.md).
 1. [Rogaszewski, Piotr](/docs/progaszewski.md).
-1. [Rybarczyk, Karolina](/docs/apiasecka.md).
+1. [Rybarczyk, Karolina](/docs/apiasecka.md). [Waga i wzrost](/docs/krybarczyk/krybarczyk.md). 
 1. [Sawicki, Paweł](/docs/psawicki.md).
 1. [Siora, Kacper](/docs/ksiora/README.md). [Deaths](/docs/ksiora/deaths.md). 
 1. [Skiba, Marek](/docs/mskiba/Zadanie1.md). [Apache Logs](/docs/mskiba/Zadanie2.md).
