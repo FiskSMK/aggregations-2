@@ -31,6 +31,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Dępczyk, Michał](/docs/mdepczyk.md). [Broadband coverage](/docs/mdepczyk/zadanie2.md).
 1. [Domurat, Szymon](/docs/sdomurat.md). [Youtube](/docs/sdomurat_youtube.md).
 1. [Duwe, Oskar](/docs/oduwe.md).
+1. [Elszkowski, Adrian](/docs/aelszkowski.md). [Kody pocztowe](/docs/aelszkowski2.md).
 1. [Gałka, Jacek](/docs/jgalka/README.md).
 1. [Gniado, Bartosz](/docs/bgniado/README.md).
 1. [Groszek, Rafał](/docs/rgroszek/README.md).
@@ -81,7 +82,6 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Cała, Mariusz.
 1. [Dobrzycki, Wojciech](/docs/wdobrzycki.md) [Zadanie 2](/docs/wdobrzycki-zadanie2.md)
 1. Dolata, Jędrzej.
-1. [Elszkowski, Adrian](/docs/aelszkowski.md). [Zadanie 2](/docs/aelszkowski2.md)
 1. [Głowacki, Michał](/docs/mglowacki.md).
 1. Januszewski, Tomasz.
 1. Jaźwiński, Robert.
