@@ -47,3 +47,6 @@ db.kody.aggregate({$group: {_id:"$powiat", suma_kodow:{$sum:1}} }, {$sort: {suma
 ...
 }
 ```
+Wykresy
+[1](../images/aelszkowski/1.jpg)
+[2](../images/aelszkowski/2.jpg)
