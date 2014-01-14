@@ -100,6 +100,6 @@ db.tekst.aggregate([
 ```
 
 Podczas importu
-[1](../images/aelszkowski/podczasimportu.png)
-[2](../images/aelszkowski/podczasimportu1.png)
+[1](../images/aelszkowski/podaczasimportu.png)
+[2](../images/aelszkowski/podaczasimportu1.png)
 
