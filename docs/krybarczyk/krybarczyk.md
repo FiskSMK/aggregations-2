@@ -29,6 +29,11 @@ DX Setup Parameters: Not found
 ```
 MongoDB shell version: 2.4.8
 ```
+
+###Wersja ElasticSearch:
+```
+elasticsearch 0.90.10
+```
 ----
 
 ## Temat: Waga oraz wzrost ankietowanych.
@@ -42,8 +47,9 @@ Usunęłam również z moich jsonów wartość "_id". Każda z paczek zaczynała
 Wygląd wzorcowego jsona, wykorzystanego do generowania danych:
 ![screenshot.png](https://github.com/K-J-Rybarczyk/aggregations-2/raw/master/images/krybarczyk/Generator.jpg "Generator")
 
+##Mongo
 
-###Wgranie danych (dla Mongo):
+###Wgranie danych:
 
 Przygotowane pliki wgrywałam jedna po drugiej za pomocą mongoimport (połączenie plików w jeden niestety nie wyszło, plik wyjściowy nie chciał się importować).
 
@@ -58,7 +64,7 @@ Nie użyłam opcji "time" (ze względu na ilość plików) ale całość importu
 ![screenshot.png](https://github.com/K-J-Rybarczyk/aggregations-2/raw/master/images/krybarczyk/Count.jpg "Count")
 
 
-###Agregacje (dla Mongo):
+###Agregacje:
 
 
 Przykładowy ankietowyany (uzyskany z pomocą db.ludzie.findOne()):
@@ -272,3 +278,8 @@ wynik:
         "ok" : 1
 }
 ```
+
+----
+##ElasticSearch
+
+Uwaga: Jako, że wykonywałam zadania na Windowsie, nie posiadałam domyślnie opcji curl. Problem okazał się bardzo prosty do rozwiązania. [Tutaj](http://curl.haxx.se/) możemy znaleźć wersję, która nam będzie odpowiadać i zainstalować ją gdziekolwiek jest potrzebna. Ja skorzystałam z [tego](http://www.confusedbycode.com/curl/), wersja "With Administrator Privileges" 32bit (czemu akurat ta, nie wiem, mogłam wziąć równie dobrze 64bit, ale jakoś wzięcie tej wydało mi się pewniejsze).
