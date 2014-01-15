@@ -6,7 +6,7 @@
 Wszystkie operacje przeprowadziłem używając laptopa Packard Bell EasyNote LM86.
 
 ## Zadanie 1
-### a)
+### Import danych
 Najpierw przygotowałem plik do importu za pomocą skryptu 2unix.sh. Import do bazy wykonałem poleceniem:
 
 ```
@@ -15,7 +15,7 @@ Najpierw przygotowałem plik do importu za pomocą skryptu 2unix.sh. Import do b
 
 Czas importowania pliku wyniósł 9 minut i 10 sekund.
 
-### b)
+### Ilość rekordów
 Ilość wczytanych rekordów sprawdziłem poleceniem:
 
 ```
@@ -24,7 +24,7 @@ db.Train.count()
 
 Otrzymałem wynik 6034195, zgodny z liczbą rekordów w pliku.
 
-### c)
+### Konwersja tagów
 Program konwertujący tagi na tablicę napisów napisałem w języku C. Jego kod znajduje się [tutaj](/docs/mpikora/mongo1c.c). Należy go skompilowac poleceniem (po zainstalowaniu odpowiednich sterowników):
 
 ```
@@ -37,7 +37,7 @@ Sterownik do języka C można ściągnać ze strony http://docs.mongodb.org/ecos
 Instrukcja jego instalacji: http://api.mongodb.org/c/current/building.html
 Jeśli sterownik nie działa od razu po zainstalowaniu: http://stackoverflow.com/questions/17028354/compiling-mongo-c-driver-example-program
 
-### d)
+### Najczęstsze słowa
 
 Plik przygotowałem do importu zgodnie z opisem w poleceniu. Import wykonałem przez:
 
@@ -118,7 +118,10 @@ db.text8.aggregate([
 
 1000 najczęściej występujących słów stanowi około 67% jego zawartości.
 
-### e)
+Wyniki te przedstawia poniższy wykres:
+![zawartosc najpopularniejszych slow w tekscie](../../images/mpikora/wykresslowa.png)
+
+### e) Dane geograficzne
 Do zadania użyłem danych dotyczących hrabstw w USA.Dostępne są one pod adresem (http://eric.clst.org/Stuff/USGeoJSON). Kilku Jsonów mongo nie był w stanie poprawnie sparsować, więc usunąłem je. Dane wczytałem do bazy poleceniem:
 
 ```
