@@ -100,6 +100,9 @@ user  0m0.044s
 sys 0m0.008s
 ```
 
+####Wykres
+![aggregation-1-chart](../../images/mkwiatkowski/MONGO01.png)
+
 ###Agregacja 2
 
 Agregacja powinna policzyć ilu użytkowników wykonało akcję `Liked` i podać 10 najbardziej likeujących użytkowników.
@@ -127,6 +130,9 @@ real  1m49.286s
 user  0m0.160s
 sys   0m0.040s
 ```
+
+####Wykres
+![aggregation-2-chart](../../images/mkwiatkowski/MONGO02.png)
 
 #Elasticsearch
 
@@ -308,6 +314,9 @@ user  0m0.000s
 sys   0m0.008s
 ```
 
+####Wykres
+![aggregation-3-chart](../../images/mkwiatkowski/ES01.png)
+
 ##Agregacja 2
 
 Agregacja ma policzyć ile jakiego typu jest przedstawień.
@@ -370,3 +379,6 @@ user  0m0.000s
 sys   0m0.008s
 
 ```
+
+####Wykres
+![aggregation-4-chart](../../images/mkwiatkowski/ES02.png)
