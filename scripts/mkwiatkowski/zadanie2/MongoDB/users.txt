@@ -1,0 +1,48 @@
+MongoDB shell version: 2.4.8
+connecting to: imdb
+number of users who liked something: 10
+{
+	"result" : [
+		{
+			"_id" : "gluemanblues",
+			"count" : 9104
+		},
+		{
+			"_id" : "jesusvarelaacosta",
+			"count" : 8981
+		},
+		{
+			"_id" : "johnnym2001",
+			"count" : 7133
+		},
+		{
+			"_id" : "statejcp",
+			"count" : 6469
+		},
+		{
+			"_id" : "bangwid",
+			"count" : 5008
+		},
+		{
+			"_id" : "brownbagcomics",
+			"count" : 4933
+		},
+		{
+			"_id" : "beth_long",
+			"count" : 4819
+		},
+		{
+			"_id" : "erwin_ali_perdana",
+			"count" : 4777
+		},
+		{
+			"_id" : "kevinjloria",
+			"count" : 4744
+		},
+		{
+			"_id" : "carla_moraglia",
+			"count" : 4533
+		}
+	],
+	"ok" : 1
+}
