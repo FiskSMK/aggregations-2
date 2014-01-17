@@ -68,7 +68,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md). [Pogoda w Edynburgu](/docs/kskowronski/README.md).
 1. [Smykowski, Adrian](/docs/asmykowski/README.md).
 1. [Sott, Tomasz](/docs/tsott/README.md). [BTS – On-Time Performance](/docs/tsott/zadanie2.md).
-1. [Stefanowicz, Michał](/docs/mstefanowicz/zad1.md).[Zadanie2](/docs/mstefanowicz/zad2.md)
+1. [Stefanowicz, Michał](/docs/mstefanowicz/zad1.md).[Zadanie2](/docs/mstefanowicz/zad2.md).
 1. [Szygenda, Mateusz](/docs/mszygenda.md). [Wypadki drogowe](/docs/mszygenda-accidents.md).
 1. [Tomczak, Robert](/docs/rtomczak/README.md). [The Internet Movie Database](/docs/rtomczak/zadanie2.md).
 1. [Wąsowicz, Michał](/docs/mwasowicz.md).
