@@ -7,8 +7,8 @@ mongoimport –db loty –collection styczen –file d:\data\loty.json –jsonArray
 ```
 
 
-Zakoñczenie importu danych do bazy .
-```json
+Zakonczenie importu danych do bazy .
+```sh
 Mon Dec 30 22:34.56.341+0100                               Progress:106283565/111648203 95%
 Mon Dec 30 22:34.56.341+0100                                          485100 10780/second
 Mon Dec 30 22:34.56.341+0100             check 9 50519
@@ -17,7 +17,7 @@ Mon Dec 30 22:34.56.341+0100             imported 509515
 
 Przyk³adowy rekord. 
 ```sh
-> db.Drugi.findOne()
+> db.styczeni.findOne()
 ```
 ```json
 
@@ -60,7 +60,7 @@ Przyk³adowy rekord.
 ```
 
 ##Aggregecje mongodb
-Poka¿ piêæ numerów samolotów z najwiksz¹ liczb¹ loltów w kolejnoœci od najwikêszej do najmniejszej
+Pokaz piec numerów samolotów z najwiksza liczb¹ loltów w kolejnosci od najwiekszej do najmniejszej
 ```js
 db.styczen.aggregate(
         { $group: { _id: "Nr_samolotu", totalCount: {$sum: 1}}},
@@ -76,7 +76,7 @@ db.styczen.aggregate(
 {"_id":  "N75994", "totalCount": 357}
 {"_id":  "N479HA", "totalCount": 346}
 ```
-Poka¿ piêæ numerów samolotów lataj¹cyh na wybranym dystansie.
+Poka¿ piec numerów samolotów lataj¹cyh na wybranym dystansie.
 ```js
 db.styczen.aggregate( 
         { $match: {DistanceGroup: "4"}
