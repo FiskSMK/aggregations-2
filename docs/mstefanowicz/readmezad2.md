@@ -76,6 +76,10 @@ db.styczen.aggregate(
 {"_id":  "N75994", "totalCount": 357}
 {"_id":  "N479HA", "totalCount": 346}
 ```
+
+
+![1](../../images/jbelcik/wykres1.jpg)
+
 Pokaz piec numerów samolotów lataj¹cyh na wybranym dystansie.
 ```js
 db.styczen.aggregate( 
@@ -92,7 +96,7 @@ db.styczen.aggregate(
 {"_id":  "N218AG", "totalCount": 104}
 {"_id":  "N803FR", "totalCount":  98}
 ```
-
+![2(../../images/jbelcik/wykres2.jpg)
 
 ## Elasticsearch
 
@@ -163,7 +167,7 @@ curl -X POST "http://localhost:9200/data/_search?pretty=true" -d '
     }
   }
 ```
-
+![3](../../images/jbelcik/wykres3.jpg)
 
 ### Agergacja 2
 ```js
@@ -218,3 +222,4 @@ curl -X POST "http://localhost:9200/data/_search?pretty=true" -d '
   }
 
 ```
+![4](../../images/mstefanowicz/wykres4.jpg)
