@@ -170,6 +170,9 @@ curl -X POST "http://localhost:9200/data/_search?pretty=true" -d '
 ![3](../../images/mstefanowicz/wykres3.jpg)
 
 ### Agergacja 2
+
+Z których lotnisk jest najwiecej odlotów.
+
 ```js
 curl -X POST "http://localhost:9200/data/_search?pretty=true" -d '
                     {"query" : {
