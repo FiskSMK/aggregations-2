@@ -1,4 +1,4 @@
-#Zadanie 2 Lista lotów w miesi¹cu styczeñ 2013
+#Zadanie 2 Lista lotów w miesi¹cu styczen 2013
 
 Polecenie mongodb importujce baze danych.
 
@@ -15,9 +15,9 @@ Mon Dec 30 22:34.56.341+0100             check 9 50519
 Mon Dec 30 22:34.56.341+0100             imported 509515
 ```
 
-Przyk³adowy rekord. 
+Przykladowy rekord. 
 ```sh
-> db.styczeni.findOne()
+> db.styczen.findOne()
 ```
 ```json
 
@@ -76,7 +76,7 @@ db.styczen.aggregate(
 {"_id":  "N75994", "totalCount": 357}
 {"_id":  "N479HA", "totalCount": 346}
 ```
-Poka¿ piec numerów samolotów lataj¹cyh na wybranym dystansie.
+Pokaz piec numerów samolotów lataj¹cyh na wybranym dystansie.
 ```js
 db.styczen.aggregate( 
         { $match: {DistanceGroup: "4"}
@@ -103,7 +103,7 @@ Stworzenie przeplatanych JSONów.
 jq --compact-output '{ "index" : { "_type" : "loty" } }, .' loty.json > loty2.json
 ```
 
-Podzia³ pliku na mniejsze po 100000 linii.
+Podzial pliku na mniejsze po 100000 linii.
 ```sh
 split -l 100000 loty2.json
 ```
