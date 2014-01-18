@@ -74,7 +74,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Wąsowicz, Michał](/docs/mwasowicz.md).
 1. [Winsławski, Bartłomiej](/docs/bwinslawski.md). [Meritum Bank](/docs/bwinslawski2.md).
 1. [Wiśniewski, Konrad](/docs/kwisniewski/kwisniewski.md).
-1. [Zdunek, Kamil](/docs/kzdunek/README.md).
+1. [Zdunek, Kamil](/docs/kzdunek/README.md). [Chicago Crimes](/docs/kzdunek/zad2.md).
 1. [Żarkowski, Mateusz](/docs/mzarkowski.md), [PAMAP – Physical Activity Monitoring](/docs/mzarkowski-pamap.md).
 
 ----
