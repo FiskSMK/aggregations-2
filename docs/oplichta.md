@@ -426,6 +426,21 @@ var obszar = {     "type" : "Polygon",      "coordinates" :      [ [          [ 
 		}
 	}
 ```
+{
+type: "Feature",
+geometry: {
+type: "Point",
+coordinates: [
+-77.039882,
+38.898321
+]
+},
+properties: {
+marker-symbol: "bar",
+name: "The Exchange",
+address: "1719 G St NW"
+}
+}
 
 #przyklad 4
 var linia = {   "type": "LineString",    "coordinates":      [       [ -73 , 42 ] , [ -74 , 42.75 ]     ] };
