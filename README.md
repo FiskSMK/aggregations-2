@@ -43,7 +43,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. Jaźwiński, Robert.
 1. [Karczewski, Kamil](/docs/kkarczewski.md).
 1. [Karwowski, Kamil](/docs/kkarwowski.md).
-1. [Kłeczek, Piotr](/docs/pkleczek/README.md).
+1. [Kłeczek, Piotr](/docs/pkleczek/README.md). [The Internet Movie Database.](/docs/pkleczek/ZADANIE2.md)
 1. [Kotłowski, Piotr](docs/pkotlowski/README.md).
 1. Koźmiński, Marcin.
 1. [Królik, Przemysław](/docs/pkrolik.md).
