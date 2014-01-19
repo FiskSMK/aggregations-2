@@ -62,7 +62,7 @@ db.imdb.aggregate(
     );
 ```
 
-##### Wynik
+#### Wynik
 ```json
 {
   "result" : [
@@ -128,7 +128,7 @@ W wyniku agregacji uwzględnione zostały wartości "not available" oraz "variou
 
 
 ## Elasticsearch
-### Import
+#### Import
 
 Do masowego importu danych do Elasticsearch'a wykorzystujemy [`Bulk API`](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/docs-bulk.html), którego API wymaga "przeplatanych" JSON'ów o następującej strukturze:
 
@@ -144,7 +144,7 @@ time cat getglue_sample.json | jq --compact-output '{ "index": { "_type": "imdb"
   > getglue_sample.bulk
 ```
 
-### Wynik
+#### Wynik
 
 W wyniku działania programu otrzymujemy "przeplatane" JSON'y:
 
@@ -243,7 +243,7 @@ Agregacja ma policzyć, ile akcji wykonał każdy z użytkowników i zwrócić d
 }
 ```
 
-##### Wynik
+#### Wynik
 
 ```json
 {
@@ -287,8 +287,58 @@ Agregacja ma policzyć, ile akcji wykonał każdy z użytkowników i zwrócić d
 
 ### Agregacja 4
 
+Agregacja ma policzyć, ile jest poszczególnych typów przedstawień
+
 #### Kod agregacji
+
+```json
+{
+    "query": {
+        "match_all": {}
+    },
+    "facets": {
+        "modelName": {
+            "terms": {
+                "field" : "modelName",
+                "size": "10"
+            }
+        }
+    }
+}
+```
 
 ##### Wynik
 
+```json
+"facets": {
+    "modelName": {
+      "_type": "terms",
+      "missing": 56,
+      "total": 19766486,
+      "other": 0,
+      "terms": [
+        {
+          "term": "tv_shows",
+          "count": 12208046
+        },
+        {
+          "term": "movies",
+          "count": 7558406
+        },
+        {
+          "term": "topics",
+          "count": 23
+        },
+        {
+          "term": "recording_artists",
+          "count": 11
+        }
+      ]
+    }
+  }
+}
+```
+
 #### Wykres
+
+![Agregacja 4](../images/mwasowicz/Agregacja4.jpg "Agregacja 4")
