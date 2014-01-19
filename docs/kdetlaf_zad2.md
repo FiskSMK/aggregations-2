@@ -23,13 +23,46 @@ Przykład rekordu
 -----------
 ``` json
 {
-        "name": "Kelli Figueroa",
-        "gender": "female",
-        "balance": "$1,765.00",
-        "age": 23,
-        "weight": 83,
-        "size": 135
+	"_id" : ObjectId("52d16652bfac45ed49407813"),
+	"name" : "Chasity Wiggins",
+	"gender" : "female",
+	"balance" : "9488",
+	"liabilities" : "1155",
+	"expenses" : "1239"
 }
+```
+
+# Statystyki (Mongodb)
+
+Statystyki bazy:
+```js
+> db.society.stats()
+```
+```json
+{
+	"ns" : "test.society",
+	"count" : 1000000,
+	"size" : 124650204,
+	"avgObjSize" : 124.650204,
+	"storageSize" : 335896576,
+	"numExtents" : 14,
+	"nindexes" : 1,
+	"lastExtentSize" : 92581888,
+	"paddingFactor" : 1,
+	"systemFlags" : 1,
+	"userFlags" : 0,
+	"totalIndexSize" : 32458720,
+	"indexSizes" : {
+		"_id_" : 32458720
+	},
+	"ok" : 1
+}
+```
+
+Ilość albumów w kolekcji:
+```js
+> db.society.count()
+1000000
 ```
 
 ###Import danych dla MongoDB:
@@ -41,5 +74,115 @@ mongoimport --collection nazwa_kolekcji --type json --file plik.json --jsonArray
 --jsonArray powoduje, że mongoimport rozpoznaje konstrukcję jsona
 ```
 mongoimport --collection human --type json --file 1.json --jsonArray
+```
+####Agregacje:
+
+
+5 kobiet spośrób 1 000 000, które posiadają najwięcej środków na koncie
+
+
+```
+db.society.aggregate(
+   [
+     { $match : {gender: "female" } },
+     { $group : { _id :"$name", balance:{$sum:"$balance"}}},
+     { $sort : { balance : -1 } },
+     { $limit : 5 }
+   ]
+ )
+```
+
+
+wynik:
+
+
+
+```
+{
+	"result" : [
+		{
+			"_id" : "Maryann Carey",
+			"balance" : 9488
+		},
+		{
+			"_id" : "Staci Salinas",
+			"balance" : 9391
+		},
+		{
+			"_id" : "Nancy Monroe",
+			"balance" : 8273
+		},
+		{
+			"_id" : "Edwina Ford",
+			"balance" : 7603
+		},
+		{
+			"_id" : "Angeline Hewitt",
+			"balance" : 7092
+		}
+	],
+	"ok" : 1
+}
+
+```
+
+
+5 mężczyzn spośród 1 000 000, którzy posiadają najwięcej środków na koncie
+
+
+
+```
+db.society.aggregate(
+   [
+     { $match : {gender: "male" } },
+     { $group : { _id :"$name", balance:{$sum:"$balance"}}},
+     { $sort : { balance : -1 } },
+     { $limit : 5 }
+   ]
+ )
+```
+
+
+wynik:
+
+
+```
+{
+	"result" : [
+		{
+			"_id" : "Donaldson Rowland",
+			"balance" : 9391
+		},
+		{
+			"_id" : "Terrell Shaw",
+			"balance" : 9285
+		},
+		{
+			"_id" : "Berger Stanton",
+			"balance" : 8597
+		},
+		{
+			"_id" : "Weaver Stout",
+			"balance" : 7205
+		},
+		{
+			"_id" : "Ferrell Mooney",
+			"balance" : 6563
+		}
+	],
+	"ok" : 1
+}
+
+```
+## ElasticSearch
+
+###Wersja:
+```
+elasticsearch 0.90.10
+```
+
+Przygotowanie przeplatanego jsona:
+```sh
+jq --compact-output '{ "index" : { "_type" : "album" } }, .' society.json > societyElastic.json
 ```
 
