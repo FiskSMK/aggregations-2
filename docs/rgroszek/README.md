@@ -99,7 +99,7 @@ $ mongo
 
 Żeby zliczyć procentowe występowanie najczęstszych słów, uruchamiamy program zad1d.js w taki oto sposob:
 ```
-mongo --eval "var ilosc=10" zadanie_1d.js
+mongo --eval "var ilosc=10" zad1d.js
 ```
 
 Wynik:
