@@ -10,7 +10,7 @@ Jeśli chcemy zaimportować plik Train.csv do bazy mongodb najpierw musimy go "o
 
 następnie importujemy plik do bazy mongodb
 ```
->time mongoimport --collection train --type csv --file Train1.csv --headerline
+>time mongoimport --collection Train --type csv --file Train1.csv --headerline
 ```
 
 ###Czas:
