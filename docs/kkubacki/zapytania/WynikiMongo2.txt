@@ -1,0 +1,979 @@
+MongoDB shell version: 2.4.8
+connecting to: airports
+{
+	"result" : [
+		{
+			"_id" : "US",
+			"count" : 21441
+		},
+		{
+			"_id" : "BR",
+			"count" : 3818
+		},
+		{
+			"_id" : "CA",
+			"count" : 2414
+		},
+		{
+			"_id" : "AU",
+			"count" : 1847
+		},
+		{
+			"_id" : "RU",
+			"count" : 914
+		},
+		{
+			"_id" : "FR",
+			"count" : 788
+		},
+		{
+			"_id" : "CO",
+			"count" : 701
+		},
+		{
+			"_id" : "AR",
+			"count" : 699
+		},
+		{
+			"_id" : "DE",
+			"count" : 614
+		},
+		{
+			"_id" : "VE",
+			"count" : 592
+		},
+		{
+			"_id" : "CL",
+			"count" : 465
+		},
+		{
+			"_id" : "GB",
+			"count" : 454
+		},
+		{
+			"_id" : "ZA",
+			"count" : 433
+		},
+		{
+			"_id" : "IN",
+			"count" : 323
+		},
+		{
+			"_id" : "CN",
+			"count" : 315
+		},
+		{
+			"_id" : "ID",
+			"count" : 306
+		},
+		{
+			"_id" : "PG",
+			"count" : 300
+		},
+		{
+			"_id" : "CD",
+			"count" : 266
+		},
+		{
+			"_id" : "KE",
+			"count" : 239
+		},
+		{
+			"_id" : "NA",
+			"count" : 221
+		},
+		{
+			"_id" : "KR",
+			"count" : 213
+		},
+		{
+			"_id" : "NZ",
+			"count" : 201
+		},
+		{
+			"_id" : "MX",
+			"count" : 200
+		},
+		{
+			"_id" : "IT",
+			"count" : 200
+		},
+		{
+			"_id" : "BO",
+			"count" : 182
+		},
+		{
+			"_id" : "ES",
+			"count" : 180
+		},
+		{
+			"_id" : "SE",
+			"count" : 177
+		},
+		{
+			"_id" : "UZ",
+			"count" : 174
+		},
+		{
+			"_id" : "PL",
+			"count" : 170
+		},
+		{
+			"_id" : "PE",
+			"count" : 162
+		},
+		{
+			"_id" : "NO",
+			"count" : 161
+		},
+		{
+			"_id" : "HN",
+			"count" : 153
+		},
+		{
+			"_id" : "JP",
+			"count" : 146
+		},
+		{
+			"_id" : "CZ",
+			"count" : 144
+		},
+		{
+			"_id" : "UA",
+			"count" : 137
+		},
+		{
+			"_id" : "AT",
+			"count" : 134
+		},
+		{
+			"_id" : "CU",
+			"count" : 134
+		},
+		{
+			"_id" : "IR",
+			"count" : 134
+		},
+		{
+			"_id" : "PK",
+			"count" : 125
+		},
+		{
+			"_id" : "CR",
+			"count" : 123
+		},
+		{
+			"_id" : "BE",
+			"count" : 119
+		},
+		{
+			"_id" : "TR",
+			"count" : 118
+		},
+		{
+			"_id" : "PH",
+			"count" : 110
+		},
+		{
+			"_id" : "FI",
+			"count" : 105
+		},
+		{
+			"_id" : "KZ",
+			"count" : 104
+		},
+		{
+			"_id" : "MY",
+			"count" : 102
+		},
+		{
+			"_id" : "EC",
+			"count" : 91
+		},
+		{
+			"_id" : "IS",
+			"count" : 84
+		},
+		{
+			"_id" : "ZW",
+			"count" : 82
+		},
+		{
+			"_id" : "GL",
+			"count" : 80
+		},
+		{
+			"_id" : "NL",
+			"count" : 78
+		},
+		{
+			"_id" : "MM",
+			"count" : 76
+		},
+		{
+			"_id" : "IQ",
+			"count" : 75
+		},
+		{
+			"_id" : "CH",
+			"count" : 75
+		},
+		{
+			"_id" : "SA",
+			"count" : 75
+		},
+		{
+			"_id" : "ZM",
+			"count" : 75
+		},
+		{
+			"_id" : "BG",
+			"count" : 74
+		},
+		{
+			"_id" : "GR",
+			"count" : 73
+		},
+		{
+			"_id" : "DK",
+			"count" : 70
+		},
+		{
+			"_id" : "MG",
+			"count" : 70
+		},
+		{
+			"_id" : "EG",
+			"count" : 69
+		},
+		{
+			"_id" : "TH",
+			"count" : 68
+		},
+		{
+			"_id" : "TZ",
+			"count" : 68
+		},
+		{
+			"_id" : "PT",
+			"count" : 67
+		},
+		{
+			"_id" : "KP",
+			"count" : 65
+		},
+		{
+			"_id" : "HU",
+			"count" : 64
+		},
+		{
+			"_id" : "BS",
+			"count" : 63
+		},
+		{
+			"_id" : "PR",
+			"count" : 62
+		},
+		{
+			"_id" : "AF",
+			"count" : 62
+		},
+		{
+			"_id" : "PA",
+			"count" : 60
+		},
+		{
+			"_id" : "LY",
+			"count" : 57
+		},
+		{
+			"_id" : "DZ",
+			"count" : 56
+		},
+		{
+			"_id" : "AO",
+			"count" : 55
+		},
+		{
+			"_id" : "PY",
+			"count" : 52
+		},
+		{
+			"_id" : "KG",
+			"count" : 50
+		},
+		{
+			"_id" : "BF",
+			"count" : 50
+		},
+		{
+			"_id" : "PF",
+			"count" : 50
+		},
+		{
+			"_id" : "CG",
+			"count" : 49
+		},
+		{
+			"_id" : "GT",
+			"count" : 49
+		},
+		{
+			"_id" : "IE",
+			"count" : 47
+		},
+		{
+			"_id" : "NP",
+			"count" : 47
+		},
+		{
+			"_id" : "ET",
+			"count" : 45
+		},
+		{
+			"_id" : "LT",
+			"count" : 40
+		},
+		{
+			"_id" : "SS",
+			"count" : 40
+		},
+		{
+			"_id" : "NG",
+			"count" : 38
+		},
+		{
+			"_id" : "DO",
+			"count" : 37
+		},
+		{
+			"_id" : "SB",
+			"count" : 37
+		},
+		{
+			"_id" : "MA",
+			"count" : 36
+		},
+		{
+			"_id" : "AZ",
+			"count" : 35
+		},
+		{
+			"_id" : "CF",
+			"count" : 35
+		},
+		{
+			"_id" : "MZ",
+			"count" : 34
+		},
+		{
+			"_id" : "VN",
+			"count" : 34
+		},
+		{
+			"_id" : "BW",
+			"count" : 34
+		},
+		{
+			"_id" : "GY",
+			"count" : 33
+		},
+		{
+			"_id" : "LS",
+			"count" : 33
+		},
+		{
+			"_id" : "HR",
+			"count" : 32
+		},
+		{
+			"_id" : "VU",
+			"count" : 32
+		},
+		{
+			"_id" : "TW",
+			"count" : 31
+		},
+		{
+			"_id" : "SD",
+			"count" : 31
+		},
+		{
+			"_id" : "ML",
+			"count" : 31
+		},
+		{
+			"_id" : "BY",
+			"count" : 31
+		},
+		{
+			"_id" : "MH",
+			"count" : 31
+		},
+		{
+			"_id" : "NI",
+			"count" : 30
+		},
+		{
+			"_id" : "MN",
+			"count" : 29
+		},
+		{
+			"_id" : "AE",
+			"count" : 29
+		},
+		{
+			"_id" : "GA",
+			"count" : 29
+		},
+		{
+			"_id" : "MW",
+			"count" : 29
+		},
+		{
+			"_id" : "SR",
+			"count" : 28
+		},
+		{
+			"_id" : "IL",
+			"count" : 28
+		},
+		{
+			"_id" : "GE",
+			"count" : 27
+		},
+		{
+			"_id" : "SV",
+			"count" : 27
+		},
+		{
+			"_id" : "SY",
+			"count" : 27
+		},
+		{
+			"_id" : "FJ",
+			"count" : 26
+		},
+		{
+			"_id" : "CM",
+			"count" : 26
+		},
+		{
+			"_id" : "EE",
+			"count" : 26
+		},
+		{
+			"_id" : "RO",
+			"count" : 25
+		},
+		{
+			"_id" : "OM",
+			"count" : 25
+		},
+		{
+			"_id" : "YE",
+			"count" : 25
+		},
+		{
+			"_id" : "RS",
+			"count" : 25
+		},
+		{
+			"_id" : "LV",
+			"count" : 24
+		},
+		{
+			"_id" : "AQ",
+			"count" : 24
+		},
+		{
+			"_id" : "SI",
+			"count" : 24
+		},
+		{
+			"_id" : "NE",
+			"count" : 23
+		},
+		{
+			"_id" : "SK",
+			"count" : 23
+		},
+		{
+			"_id" : "CI",
+			"count" : 23
+		},
+		{
+			"_id" : "TD",
+			"count" : 22
+		},
+		{
+			"_id" : "KI",
+			"count" : 21
+		},
+		{
+			"_id" : "NC",
+			"count" : 21
+		},
+		{
+			"_id" : "SO",
+			"count" : 21
+		},
+		{
+			"_id" : "TM",
+			"count" : 21
+		},
+		{
+			"_id" : "BZ",
+			"count" : 20
+		},
+		{
+			"_id" : "UY",
+			"count" : 20
+		},
+		{
+			"_id" : "MR",
+			"count" : 20
+		},
+		{
+			"_id" : "LK",
+			"count" : 19
+		},
+		{
+			"_id" : "LA",
+			"count" : 19
+		},
+		{
+			"_id" : "JM",
+			"count" : 17
+		},
+		{
+			"_id" : "JO",
+			"count" : 17
+		},
+		{
+			"_id" : "SC",
+			"count" : 16
+		},
+		{
+			"_id" : "SZ",
+			"count" : 16
+		},
+		{
+			"_id" : "BD",
+			"count" : 15
+		},
+		{
+			"_id" : "UG",
+			"count" : 15
+		},
+		{
+			"_id" : "TN",
+			"count" : 15
+		},
+		{
+			"_id" : "TJ",
+			"count" : 15
+		},
+		{
+			"_id" : "SN",
+			"count" : 14
+		},
+		{
+			"_id" : "GN",
+			"count" : 14
+		},
+		{
+			"_id" : "FK",
+			"count" : 13
+		},
+		{
+			"_id" : "MK",
+			"count" : 13
+		},
+		{
+			"_id" : "AM",
+			"count" : 13
+		},
+		{
+			"_id" : "LR",
+			"count" : 12
+		},
+		{
+			"_id" : "SL",
+			"count" : 12
+		},
+		{
+			"_id" : "MP",
+			"count" : 11
+		},
+		{
+			"_id" : "CY",
+			"count" : 11
+		},
+		{
+			"_id" : "BA",
+			"count" : 11
+		},
+		{
+			"_id" : "TL",
+			"count" : 11
+		},
+		{
+			"_id" : "KH",
+			"count" : 11
+		},
+		{
+			"_id" : "TC",
+			"count" : 10
+		},
+		{
+			"_id" : "CV",
+			"count" : 10
+		},
+		{
+			"_id" : "GF",
+			"count" : 10
+		},
+		{
+			"_id" : "CK",
+			"count" : 9
+		},
+		{
+			"_id" : "VI",
+			"count" : 9
+		},
+		{
+			"_id" : "BJ",
+			"count" : 9
+		},
+		{
+			"_id" : "LU",
+			"count" : 9
+		},
+		{
+			"_id" : "MV",
+			"count" : 9
+		},
+		{
+			"_id" : "HK",
+			"count" : 9
+		},
+		{
+			"_id" : "DJ",
+			"count" : 9
+		},
+		{
+			"_id" : "MD",
+			"count" : 8
+		},
+		{
+			"_id" : "AL",
+			"count" : 8
+		},
+		{
+			"_id" : "SG",
+			"count" : 8
+		},
+		{
+			"_id" : "FO",
+			"count" : 8
+		},
+		{
+			"_id" : "KW",
+			"count" : 8
+		},
+		{
+			"_id" : "HT",
+			"count" : 8
+		},
+		{
+			"_id" : "GH",
+			"count" : 8
+		},
+		{
+			"_id" : "ME",
+			"count" : 7
+		},
+		{
+			"_id" : "TG",
+			"count" : 7
+		},
+		{
+			"_id" : "RW",
+			"count" : 7
+		},
+		{
+			"_id" : "FM",
+			"count" : 6
+		},
+		{
+			"_id" : "UM",
+			"count" : 6
+		},
+		{
+			"_id" : "GP",
+			"count" : 6
+		},
+		{
+			"_id" : "TO",
+			"count" : 6
+		},
+		{
+			"_id" : "ER",
+			"count" : 5
+		},
+		{
+			"_id" : "VC",
+			"count" : 5
+		},
+		{
+			"_id" : "PS",
+			"count" : 5
+		},
+		{
+			"_id" : "GW",
+			"count" : 5
+		},
+		{
+			"_id" : "WS",
+			"count" : 4
+		},
+		{
+			"_id" : "KM",
+			"count" : 4
+		},
+		{
+			"_id" : "AS",
+			"count" : 4
+		},
+		{
+			"_id" : "QA",
+			"count" : 4
+		},
+		{
+			"_id" : "LB",
+			"count" : 4
+		},
+		{
+			"_id" : "KS",
+			"count" : 4
+		},
+		{
+			"_id" : "MU",
+			"count" : 3
+		},
+		{
+			"_id" : "KY",
+			"count" : 3
+		},
+		{
+			"_id" : "TF",
+			"count" : 3
+		},
+		{
+			"_id" : "EH",
+			"count" : 3
+		},
+		{
+			"_id" : "BI",
+			"count" : 3
+		},
+		{
+			"_id" : "GD",
+			"count" : 3
+		},
+		{
+			"_id" : "GU",
+			"count" : 3
+		},
+		{
+			"_id" : "BT",
+			"count" : 3
+		},
+		{
+			"_id" : "BQ",
+			"count" : 3
+		},
+		{
+			"_id" : "VG",
+			"count" : 3
+		},
+		{
+			"_id" : "TT",
+			"count" : 3
+		},
+		{
+			"_id" : "BM",
+			"count" : 3
+		},
+		{
+			"_id" : "PW",
+			"count" : 3
+		},
+		{
+			"_id" : "AG",
+			"count" : 3
+		},
+		{
+			"_id" : "KN",
+			"count" : 2
+		},
+		{
+			"_id" : "GQ",
+			"count" : 2
+		},
+		{
+			"_id" : "BB",
+			"count" : 2
+		},
+		{
+			"_id" : "WF",
+			"count" : 2
+		},
+		{
+			"_id" : "IM",
+			"count" : 2
+		},
+		{
+			"_id" : "SM",
+			"count" : 2
+		},
+		{
+			"_id" : "LC",
+			"count" : 2
+		},
+		{
+			"_id" : "DM",
+			"count" : 2
+		},
+		{
+			"_id" : "BH",
+			"count" : 2
+		},
+		{
+			"_id" : "BN",
+			"count" : 2
+		},
+		{
+			"_id" : "MS",
+			"count" : 2
+		},
+		{
+			"_id" : "RE",
+			"count" : 2
+		},
+		{
+			"_id" : "PM",
+			"count" : 2
+		},
+		{
+			"_id" : "MT",
+			"count" : 2
+		},
+		{
+			"_id" : "GG",
+			"count" : 2
+		},
+		{
+			"_id" : "ST",
+			"count" : 2
+		},
+		{
+			"_id" : "MO",
+			"count" : 1
+		},
+		{
+			"_id" : "NR",
+			"count" : 1
+		},
+		{
+			"_id" : "VA",
+			"count" : 1
+		},
+		{
+			"_id" : "AI",
+			"count" : 1
+		},
+		{
+			"_id" : "NF",
+			"count" : 1
+		},
+		{
+			"_id" : "AD",
+			"count" : 1
+		},
+		{
+			"_id" : "BL",
+			"count" : 1
+		},
+		{
+			"_id" : "GM",
+			"count" : 1
+		},
+		{
+			"_id" : "GI",
+			"count" : 1
+		},
+		{
+			"_id" : "NU",
+			"count" : 1
+		},
+		{
+			"_id" : "SH",
+			"count" : 1
+		},
+		{
+			"_id" : "CC",
+			"count" : 1
+		},
+		{
+			"_id" : "SX",
+			"count" : 1
+		},
+		{
+			"_id" : "AW",
+			"count" : 1
+		},
+		{
+			"_id" : "TV",
+			"count" : 1
+		},
+		{
+			"_id" : "CX",
+			"count" : 1
+		},
+		{
+			"_id" : "CW",
+			"count" : 1
+		},
+		{
+			"_id" : "IO",
+			"count" : 1
+		},
+		{
+			"_id" : "MF",
+			"count" : 1
+		},
+		{
+			"_id" : "YT",
+			"count" : 1
+		},
+		{
+			"_id" : "MC",
+			"count" : 1
+		},
+		{
+			"_id" : "JE",
+			"count" : 1
+		},
+		{
+			"_id" : "MQ",
+			"count" : 1
+		},
+		{
+			"_id" : "LI",
+			"count" : 1
+		}
+	],
+	"ok" : 1
+}

@@ -115,7 +115,12 @@ Następnie wybrałem najbardziej interesujące mnie dane takie jak: Nazwa, typ, 
 Następnie należy oczyścić bazę z rekordów w niewłaściwym formacie. Służy do tego skrypt [JavaScript](/docs/pkotlowski/remove-geo.js)
 ```deleted 587 records```
 Zapytanie 1: Wszystkie obiekty w odległości 3000m od współżędnych -109.4784394,  36.4611122 
-```db.geo_points.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 3000} }).toArray()```
+```javascript
+db.geo_points.find({ 
+loc: {$near: {$geometry: punkt}, 
+$maxDistance: 3000} }).toArray()
+```
+
 ```json
 Agua Sal Creek
 Stream
@@ -140,7 +145,13 @@ Valley
 ```
 
 Zapytanie 2: 10 najwyższych szczytów o wysokości co najmniej 1000m najbliżej punktu -110.3795443,  33.4794988 
-```db.geo_points.find({ loc: {$near: {$geometry: punkt}}, type:"Summit", height: {$gt:1000} }).sort({height: -1}).limit(10)```
+```javascript
+db.geo_points.find({ 
+  loc: {$near: {$geometry: punkt}}, 
+    type:"Summit", height: {$gt:1000} }
+    ).sort({height: -1}).limit(10)
+```
+
 ```json
 Churchill Peaks
 Summit
@@ -195,7 +206,7 @@ Summit
 ```
 
 Zapytanie 3: Wszystkie lotniska między Nebraska, Omaha, Indianapolis oraz Chicago
-```
+```javascript
 db.geo_points.find( { loc :
                   { $geoWithin :
                     { $geometry :
@@ -208,14 +219,14 @@ db.geo_points.find( { loc :
 Rezultat: [klik!](/docs/pkotlowski/lotniska.md)
 
 Zapytanie 4: Wszystkie obiekty w linii prostej między Churchil Peaks a Mount Saint Elias
-```
+```javascript
 db.geo_points.find( {loc: 
 	{$geoIntersects: 
 		{$geometry: 
 			{type: "LineString", coordinates: [ [ -140.928976, 60.293754], [-151.0060501, 63.0693461] ]}}}})
 ```
 Zapytanie 5: Wszystkie kopalnie leżące do 50km od Las Vegas położone na wysokości co najmniej 2000m
-```
+```javascript
 db.geo_points.find({ loc: 
 	{$near: 
 		{$geometry: 
@@ -249,8 +260,12 @@ Mine
 -----------
 
 ```
+<script src="https://embed.github.com/view/geojson/pkotlowski/aggregations-2/blob/master/docs/pkotlowski/1.5.geojson">Mapa</script>
+
+![img](http://i.imgur.com/ybyRAUZ.png)
+
 Zapytanie 6: Ilość szkoł leżących 3000m od centrum Chicago.
-```
+```javascript
 db.geo_points.find({ loc: {$near: {$geometry: {
           type: "Point", coordinates: [-87.6278,41.8819]
           }}, $maxDistance: 3000},
