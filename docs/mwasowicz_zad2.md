@@ -193,7 +193,7 @@ split -l 100000 getglue_sample.bulk
 Oraz import utworzonych plików w pętli:
 
 ```sh
-time for i in x*; do curl -s -XPOST   localhost:9200/data/_bulk --data-binary @$i; done
+time for i in x*; do curl -s -XPOST localhost:9200/data/_bulk --data-binary @$i; done
 ```
 
 ### Wynik
@@ -211,40 +211,78 @@ curl -XGET 'http://localhost:9200/data/imdb/_count' ; echo
 Zaimportowało się `19 766 542`. Brakuje zatem `64 758` obiektów. Z logu importu wynika, iż spowodowane jest to niepoprawnym formatem daty, co skutkowało odrzuceniem obiektów. W w dalszej części niezaimportowane wpisy pomijamy.
 
 
+## Agregacje
 
+Do wykonania aggregacji w Elasticsearch wykorzystamy [`wyszukiwania fasetowego`](http://en.wikipedia.org/wiki/Faceted_search) - [`facets search w ES`](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/search-facets.html).
 
+Do wykonywania zapytań użyjemy biblioteki [`CURL`](http://pl.wikipedia.org/wiki/CURL):
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```sh
+curl -X POST "http://localhost:9200/data/_search?pretty=true" -d '{ "query": { } }'
+```
 
 ### Agregacja 3
 
+Agregacja ma policzyć, ile akcji wykonał każdy z użytkowników i zwrócić dziesięciu najaktywniejszych.
+
 #### Kod agregacji
+
+```json
+{
+    "query": {
+        "match_all": {}
+    },
+    "facets": {
+        "action": {
+            "terms": {
+                "field" : "director",
+                "size" : "10"
+            }
+        }
+    }
+}
+```
 
 ##### Wynik
 
+```json
+{
+  "facets": {
+    "userId": {
+      "terms": [
+        { "count": 696750, "term": "lukewilliamss" },
+        { "count": 68131,  "term": "demi_konti"    },
+        { "count": 59257,  "term": "bangwid"       },
+        { "count": 56044,  "term": "zenofmac"      },
+        { "count": 55736,  "term": "agentdunham"   },
+        { "count": 43153,  "term": "cillax"        },
+        { "count": 42299,  "term": "tamtomo"       },
+        { "count": 32824,  "term": "hblackwood"    },
+        { "count": 32237,  "term": "ellen_turner"  },
+        { "count": 32133,  "term": "husainholic"   }
+      ],
+      "other": 18648036,
+      "total": 19766600,
+      "missing": 0,
+      "_type": "terms"
+    }
+  },
+  "hits": {
+    //...
+  },
+  "_shards": {
+    "failed": 0,
+    "successful": 1,
+    "total": 1
+  },
+  "timed_out": false,
+  "took": 6391
+}
+```
+
 #### Wykres
 
-
+![Agregacja 3](../images/mwasowicz/Agregacja3.jpg "Agregacja 3")
 
 
 ### Agregacja 4
