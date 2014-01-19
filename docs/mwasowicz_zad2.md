@@ -36,7 +36,7 @@ Przykładowy dokument `json`:
 mongoimport -d imdb -c imdb --type json --file getglue_sample.json
 ```
 
-![Import wraz ze sprawdzeniem czasu](../../images/mwasowicz/Zad2_Import.jpg "Import wraz ze sprawdzenie czasu")
+![Import wraz ze sprawdzeniem czasu](../images/mwasowicz/Zad2_Import.jpg "Import wraz ze sprawdzenie czasu")
 
 Po imporcie możemy sprawdzić, ile rekordów zostało zaimportowanych do bazy:
     
@@ -82,19 +82,51 @@ db.imdb.aggregate(
 ```
 #### Wykres
 
-![Agregacja 1](../../images/mwasowicz/Agregacja1.jpg "Agregacja")
+![Agregacja 1](../images/mwasowicz/Agregacja1.jpg "Agregacja 1")
 
 
 ### Agregacja 2
 
+Agragacja ma policzyć i zwrócić 10 reżyserów, którzy mają na swoim koncie najwiekszą liczbę filmów.
+
 #### Kod agregacji
 
+``` js
+db.imdb.aggregate(
+    { $match: {"modelName": "movies" || "tv_shows"  } },
+    { $group: {_id: {"dir": "$director", id: "$title"}, count: {$sum: 1}} },
+    { $group: {_id: "$_id.dir" , count: {$sum: 1}} },
+    { $sort: {count: -1} },
+    { $limit : 10}
+    );
+```
 
 ##### Wynik
 
+```json
+{
+  "result" : [
+    { "_id" : "not available",      "count" : 1474  },
+    { "_id" : "various directors",  "count" : 54    },
+    { "_id" : "alfred hitchcock",   "count" : 50    },
+    { "_id" : "michael curtiz",     "count" : 48    },
+    { "_id" : "woody allen",        "count" : 47    },
+    { "_id" : "takashi miike",      "count" : 43    },
+    { "_id" : "jesus franco",       "count" : 43    },
+    { "_id" : "ingmar bergman",     "count" : 42    },
+    { "_id" : "john ford",          "count" : 42    },
+    { "_id" : "steven spielberg",   "count" : 41    }
+  ],
+  "ok" : 1
+}
+```
+
+
+
 #### Wykres
+W wyniku agregacji uwzględnione zostały wartości "not available" oraz "various directors", które z oczywistych względów pominąłem na wykresie.
 
-
+![Agregacja 2](../images/mwasowicz/Agregacja2.jpg "Agregacja 2")
 
 ### Agregacja 3
 
