@@ -30,7 +30,7 @@ Przykładowy dokument `json`:
 }
 ```
 
-## Import:
+### Import
 
 ```sh
 mongoimport -d imdb -c imdb --type json --file getglue_sample.json
@@ -121,12 +121,120 @@ db.imdb.aggregate(
 }
 ```
 
-
-
 #### Wykres
 W wyniku agregacji uwzględnione zostały wartości "not available" oraz "various directors", które z oczywistych względów pominąłem na wykresie.
 
 ![Agregacja 2](../images/mwasowicz/Agregacja2.jpg "Agregacja 2")
+
+
+## Elasticsearch
+### Import
+
+Do masowego importu danych do Elasticsearch'a wykorzystujemy [`Bulk API`](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/docs-bulk.html), którego API wymaga "przeplatanych" JSON'ów o następującej strukturze:
+
+```js
+{ "index": { "_type": "type name" } } //nazwa typu, do którego chcemy dodać dokument
+{ "field": "content" ... } //dokument
+```
+
+Do wygenerowania takich "przeplatanych" JSON'ów możemy wykorzystać program [`jq`](http://stedolan.github.io/jq/).
+
+```sh
+time cat getglue_sample.json | jq --compact-output '{ "index": { "_type": "imdb" } }, .' 
+  > getglue_sample.bulk
+```
+
+### Wynik
+
+W wyniku działania programu otrzymujemy "przeplatane" JSON'y:
+
+```json
+{
+  "index": {
+    "_type": "imdb"
+  }
+}
+{
+  "objectKey": "tv_shows/criminal_minds",
+  "hideVisits": "false",
+  "modelName": "tv_shows",
+  "displayName": "",
+  "title": "Criminal Minds",
+  "timestamp": "2008-08-01T06:58:14Z",
+  "image": "http://cdn-1.nflximg.com/us/boxshots/large/70056671.jpg",
+  "userId": "areilly",
+  "visitCount": "1",
+  "comment": "",
+  "private": "false",
+  "source": "http://www.netflix.com/Movie/Criminal_Minds_Season_1/70056671",
+  "version": "2",
+  "link": "http://www.netflix.com/Movie/Criminal_Minds_Season_1/70056671",
+  "lastModified": "2011-12-16T19:41:19Z",
+  "action": "Liked",
+  "lctitle": "criminal minds"
+}
+```
+
+W pliku `getglue_sample.bulk` znajduje się `39 662 600` JSON'ów (`11,3 GB`).
+Próba wykonania importu całego pliku `getglue_sample.bulk` konczy się niepowodzeniem.
+
+```sh
+curl -s -XPOST localhost:9200/data/_bulk --data-binary @getglue_sample.bulk
+```
+
+Polecenie `curl` próbuje wczytać cały plik do pamięci, a baza danych najprawdopodobniej nie jest w stanie przyjąć tak dużej ilości danych na raz. Pojawia się wyjątek `TooLongFrameException`.
+
+Rozwiązaniem jest podział pliku na kilka mniejszych części (np. po `100 000` linii - 50 000 dokumentów do dodania):
+
+```sh
+split -l 100000 getglue_sample.bulk
+```
+
+Oraz import utworzonych plików w pętli:
+
+```sh
+time for i in x*; do curl -s -XPOST   localhost:9200/data/_bulk --data-binary @$i; done
+```
+
+### Wynik
+
+Sprawdzamy, ile obiektów zostało zapisanych w bazie
+
+```sh
+curl -XGET 'http://localhost:9200/data/imdb/_count' ; echo
+```
+
+```json
+{"count":19766542,"_shards":{"total":1,"successful":1,"failed":0}}
+```
+
+Zaimportowało się `19 766 542`. Brakuje zatem `64 758` obiektów. Z logu importu wynika, iż spowodowane jest to niepoprawnym formatem daty, co skutkowało odrzuceniem obiektów. W w dalszej części niezaimportowane wpisy pomijamy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Agregacja 3
 
