@@ -75,6 +75,10 @@ mongoimport --collection nazwa_kolekcji --type json --file plik.json --jsonArray
 ```
 mongoimport --collection human --type json --file 1.json --jsonArray
 ```
+
+Import jednego z 10 plików:
+
+![img](https://raw.github.com/kdetlaf/mongoFiles/master/importToMongo.png)
 ####Agregacje:
 
 
@@ -181,8 +185,9 @@ wynik:
 elasticsearch 0.90.10
 ```
 
-Przygotowanie przeplatanego jsona:
+Export z mongoDB oraz przygotowanie przeplatanego jsona:
 ```sh
 jq --compact-output '{ "index" : { "_type" : "album" } }, .' society.json > societyElastic.json
 ```
 
+![img](https://raw.github.com/kdetlaf/mongoFiles/master/mongoExport.png)
