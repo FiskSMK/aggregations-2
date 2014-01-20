@@ -7,6 +7,8 @@
 * [Zadanie 1c](#zadanie-1c)
 * [Zadanie 1d](#zadanie-1d)
 * [Zadanie 1e](#zadanie-1e)
+* [Zadanie 2 Mongo](#zadanie-2-mongo)
+* [Zadanie 2 Elasticsearch](#zadanie-2-elasticsearch)
 
 #Zadanie 1a
 
@@ -84,3 +86,51 @@ Obciążenie serwera mongo podczas agregacji
 ![mongod-aggregate](../../images/rluczun/mongod_aggregate.png)
 
 #Zadanie 1e
+
+---
+
+#Zadanie 2 Mongo
+Zadanie wykonywane było na bazie GetGlue and Timestamped Event Data ważącej `11GB` i mającej `19831300` rekordów. Plik dostępny był w formacie json. Baza zawiera dane z IMDB z lat 2007-2012.
+
+Na początku dane trzeba było rozpakować.
+```sh
+tar -xf getglue_sample.tar.gz
+```
+
+Tak przygotowany plik json gotowy jest do importu
+```sh
+time mongoimport -d test -c movies --type json --file getglue_sample.json
+```
+
+##Wynik i czasy
+![mongod-import2](../../images/rluczun/mongoimport.png)
+
+---
+
+##Agregacje
+
+#Agregacja 1
+Agregacja ta ma za zadanie policzyć ilość komentarzy przypadającej każdej z osób.
+
+Kod skryptu: [skrypt](../../scripts/rluczun/mongo_aggr1.js)
+
+##Wynik i czasy
+![mongod-aggr1](../../images/rluczun/mongo_aggr1.PNG)
+
+##Wykres
+
+---
+
+#Agregacja 2
+Agregacja ta ma za zadanie policzyć ilość filmów wyreżyserowanych przez każdego reżysera.
+
+Kod skryptu: [skrypt](../../scripts/rluczun/mongo_aggr2.js)
+
+##Wynik i czasy
+![mongod-aggr2](../../images/rluczun/mongo_aggr2.PNG)
+
+##Wykres
+
+---
+
+#Zadanie 2 Elasticsearch

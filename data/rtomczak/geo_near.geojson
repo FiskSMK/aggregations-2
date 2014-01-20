@@ -1,0 +1,1 @@
+{ "type": "FeatureCollection","features": [{"type": "Feature","geometry": {"type": "Point","coordinates": [-118.40192, 34.0699]},"properties": {"Punkt": "Punkt Odniesienia"}},{"type": "Feature","geometry": {"type": "Point","coordinates": [-118.4033333, 34.0708333]},"properties": {"Punkt": "Museum of Television and Radio"}} ]}
