@@ -2,20 +2,20 @@
 
 ----
 
-### *Konfiguracja sprz�tu*
+### *Konfiguracja sprzętu*
 
 Procesor Intel i5-3350P 3.7Ghz
 Dysk Intel SSD 330 60 GB
-Pami�� 8GB DDR3
+Pamięć 8GB DDR3
 
 Windows 7 Professional x64 sp1
 MongoDB shell version: 2.4.9
-�rodowisko Cygwin
+Środowisko Cygwin
 
 ## Zadanie 1
 ### a) Import Train.csv do MongoDB
 
-Plik zmodyfikowany skryptem 2unix.sh naprawiaj�cym z�amane wiersze.
+Plik zmodyfikowany skryptem 2unix.sh naprawiającym złamane wiersze.
 
 import poleceniem
 ```
@@ -29,7 +29,7 @@ img count
 
 ### c) Zmiana formatu tagow i update
 
-[W�asny skrypt](../../scripts/pmalinowski/tagtotab.js) node.js przy uzyciu natywnego drivera mongodb.
+[Własny skrypt](../../scripts/pmalinowski/tagtotab.js) node.js przy uzyciu natywnego drivera mongodb.
 img tagi
 img efekt
 ### d)
@@ -44,12 +44,12 @@ mongoimport  -c words --type csv -f word text8.txt
 db.words.count()
 17005207
 ```
-####Ilosc r�nych s��w
+####Ilosc różnych słów
 ```
 db.words.distinct("word").length
 253854
 ```
-####Najcz�stsze s�owo
+####Najczęstsze słowo
 ```
 db.words.aggregate(
 		{ $group: { _id: "$word", count: { $sum: 1 } } } , 
@@ -65,9 +65,9 @@ db.words.aggregate([ {$group:{_id:"$word", count:{$sum:1}}},
 	{$group:{_id: null, count:{$sum:"$count"}}} 
 ])
 ```
-dla r�nych limit�w daje wynik
+dla różnych limitów daje wynik
 
-|Limit	| Ilo�� s��w	| Udzia� %	|      
+|Limit	| Ilość słów	| Udział %	|      
 |:-----------|------------:|:---------:|
 | 1	|1061396	| 6.24%	|      
 | 10	|4205965 	| 24.73%	|
