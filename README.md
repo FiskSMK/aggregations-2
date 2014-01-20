@@ -85,7 +85,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Głowacki, Michał](/docs/mglowacki.md).
 1. Januszewski, Tomasz.
 1. Jaźwiński, Robert.
-1. Malinowski, Piotr.
+1. [Malinowski, Piotr](/docs/pmalinowski/README.md).
 1. Osękowski, Dominik.
 1. Piasecka, Aleksandra.
 1. Pietraszuk, Bartłomiej.
