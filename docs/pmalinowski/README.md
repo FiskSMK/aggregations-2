@@ -3,7 +3,7 @@
 ----
 
 ### *Konfiguracja sprzętu*
-
+```
 Procesor Intel i5-3350P 3.7Ghz
 Dysk Intel SSD 330 60 GB
 Pamięć 8GB DDR3
@@ -11,12 +11,15 @@ Pamięć 8GB DDR3
 Windows 7 Professional x64 sp1
 MongoDB shell version: 2.4.9
 Środowisko Cygwin
+```
 
 ## Zadanie 1
 ### a) Import Train.csv do MongoDB
 
 Plik zmodyfikowany skryptem 2unix.sh naprawiającym złamane wiersze.
+
 ![img](http://puu.sh/6oiqY)
+
 import poleceniem
 ```
 time mongoimport --type csv -c Train --file ./Train2.csv --headerline
@@ -30,8 +33,15 @@ time mongoimport --type csv -c Train --file ./Train2.csv --headerline
 ### c) Zmiana formatu tagow i update
 
 [Własny skrypt](../../scripts/pmalinowski/tagtotab.js) node.js przy uzyciu natywnego drivera mongodb.
-[!img](http://puu.sh/6qNu9)
+
+(coś wolno, 1h!)
+
+![img](http://puu.sh/6qNu9)
+
+Przykladowy poprawiony rekord
+
 ![img](http://puu.sh/6qNyH)
+
 ### d)
 
 Dane przygotowane wg opisu zadania zimportowane
