@@ -18,7 +18,7 @@ Czas przetwarzania wyniósł 3 sekundy.
 
 Jak rozkładają się obserwacje w roku (na poszczególne miesiące).
 
-```
+```JSON
 db.Ufo.aggregate( 
   { $group: { _id: {$substr: ["$YearMonth", 5,2]}, count: {$sum:1} } },
   { $sort: { count: -1 } }
@@ -31,7 +31,7 @@ Zwiększona liczba obserwacji w miesiącach letnich wynika prawdopodobnie z tego
 
 Dla każdego stanu - w którym roku bylo najwięcej i najmniej obserwacji.
 
-```
+```JSON
 db.Ufo.aggregate( 
   { $group: { _id: { state: "$USState", year: {$substr: ["$YearMonth", 0,4]} }, count: {$sum:1} } },
   { $sort: { count: -1 } },
@@ -47,6 +47,36 @@ Wyniki pokazują, że generalnie najmniejszą liczbę obserwacji zanotowano na p
 
 Przy imporcie do bazy skorzystałem z wtyczki *river-csv*. Przed zaimportowaniem do bazy musiałem oczyścić plik csv usuwając wszystkie przecinki nie będące separatorami pól. Mimo czyszczenia zdołałem zaimportować jedynie około połowę danych do bazy.
 
+Skrypt w języku Perl użyty do oczyszczenia danych:
+```PERL
+#!/usr/local/bin/perl
+open (MYFILE, '<ufo.us.csv');
+open (MYFILE2, '>ufo2.us.csv');
+
+$liczbaznakow;
+while (<MYFILE>) {
+	#liczba znakow ' =0
+	$liczbaznakow=0;
+	
+	#wedruj znak po znaku i zliczaj znaki '
+	$dlugosc=length($_);
+	$i;
+	for ($i=0; $i<$dlugosc; $i++) {
+		$char=substr($_,$i,1);
+		if ($char eq '\'') {
+			$liczbaznakow++;
+		}
+		#jesli trafisz na znak , i liczba znakow jest nieparzysta zamien go na .
+		if (($char eq ',') && ($liczbaznakow%2 == 1)) {
+			substr($_,$i,1,'.');
+		}
+	}
+	print MYFILE2 $_;
+}
+close (MYFILE); 
+close (MYFILE2); 
+```
+
 Bazę zaimportowałem poleceniem
 
 ```
@@ -55,7 +85,7 @@ curl -XPUT localhost:9200/_river/my_csv_data/_meta -d @skrypt.txt
 
 plik skrypt.txt
 
-```
+```JSON
 {
     "type" : "csv",
     "csv_file" : {
@@ -91,7 +121,7 @@ plik skrypt.txt
 
 Ile było obserwacji obiektów w kształcie trójkąta w poszczególnych stanach:
 
-```
+```JSON
 {"query":{"match":{"ShortDescription": "triangle"}},
 "facets": {
     "format": {
@@ -109,7 +139,7 @@ Wyniki zapytania przedstawia poniższy wykres:
 
 20 najpopularniejszych zaobserwowanych kształtów
 
-```
+```JSON
 {"query":{"match_all":{}},
 "facets":{"format":{"terms":{"field":"ShortDescription","size":20}}}}
 ```
