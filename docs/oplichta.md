@@ -435,5 +435,5 @@ var linia = {   "type": "LineString",    "coordinates":      [       [ -73 , 42 
 ```js
 db.geoma.find({ loc : { $geoIntersects : { $geometry : linia } } }).toArray();
 ```
-Pełen wynik [tutaj](/scripts/oplichta/1e/5e.geojson).
-/scripts/oplichta/1e/5e.geojson
+Pełen wynik [tutaj](/scripts/oplichta/1e/e.geojson).
+/scripts/oplichta/1e/e.geojson
