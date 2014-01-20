@@ -348,7 +348,7 @@ sys	0m0.080s
 ```
 #Zapytania
 
-## $Near
+## Przykład 1: $Near
 ```js
 var punkt = { "type" : "Point", "coordinates" : [ -73.66054066,  42.705867 ] };
 ```
@@ -374,6 +374,8 @@ db.geoma.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 20000} }).toArray
 	}
 ]
 ```
+## Przykład 2: $geoWithin
+Mapa [tutaj](/scripts/oplichta/1e/b.geojson)
 ```js
 db.geoma.find({ loc: {$geoWithin : { $center : [ [ -73.4717792,42.666746 ] , 0.15] } }}).toArray();
 ```
@@ -406,11 +408,14 @@ db.geoma.find({ loc: {$geoWithin : { $center : [ [ -73.4717792,42.666746 ] , 0.1
 	}
 ]
 ```
-#przykład 3
+#przykład 3: $geoIntersects
 
 var obszar = {     "type" : "Polygon",      "coordinates" :      [ [          [ -74 , 42.75 ],          [ -73 , 42.75 ],          [ -73 , 42    ],          [ -74 , 42    ],          [ -74 , 42.75 ]      ] ] };
 
+Mapa [tutaj](/scripts/oplichta/1e/c.geojson)
 ##wynik
+
+db.geony.find({ loc : { $geoIntersects : { $geometry : obszar } } }).toArray();
 
 1815 elementow
 
@@ -430,7 +435,7 @@ var obszar = {     "type" : "Polygon",      "coordinates" :      [ [          [ 
 ```
 
 
-#przyklad 4
+#przyklad 4:  $geoIntersects
 var linia = {   "type": "LineString",    "coordinates":      [       [ -73 , 42 ] , [ -74 , 42.75 ]     ] };
 
 

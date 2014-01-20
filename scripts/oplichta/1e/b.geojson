@@ -5,7 +5,7 @@
       "type": "Feature",
       "goemetry": {
         "type": "Point",
-        "coordinates" : [ -73.66054066,  42.705867 ]
+        "coordinates" : [ [ -73.4717792,42.666746 ] , 0.15]
       }
     }
     ]
