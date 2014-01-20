@@ -57,7 +57,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Ostrowski, Michał](/docs/mostrowski.md).
 1. [Pietraszuk, Bartłomiej](/docs/bpietraszuk/bpietraszuk.md) [Przypadki zauważenia UFO w USA](/docs/bpietraszuk/ufo.md)
 1. [Paczyński, Łukasz](/docs/lpaczynski/README.md). [Lista pracowników](/docs/lpaczynski/zadanie2.md).
-1. [Piasecka, Aleksandra](/docs/apiasecka.md).[Zestawienie](/docs/apiasecka/apiasecka.md)
+1. [Piasecka, Aleksandra](/docs/apiasecka.md).
 1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md). [Obserwacje Ufo](/docs/mpikora/obserwacjeufo.md).
 1. [Plichta, Oskar](/docs/oplichta.md). [The Internet Movie Database](/docs/oplichta-imdb.md).
 1. [Puchalski, Paweł](/docs/ppuchalski/README.md).
