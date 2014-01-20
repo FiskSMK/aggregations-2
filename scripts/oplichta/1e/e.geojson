@@ -4,11 +4,8 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point",
-        "coordinates" : [
-                -73.459358,
-                42.0587831
-          ]
+        "type": "LineString",
+        "coordinates": [ [ -73 , 42 ] , [ -74 , 42.75 ] ]
       },
       "properties": {
         "name" : "Becker Pond"
