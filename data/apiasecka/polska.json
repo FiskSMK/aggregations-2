@@ -1,0 +1,40 @@
+{"_id": "1", "name":"Gdansk",  "loc":{"type":"Point","coordinates":[18.655128479003906,54.34815256064472]}}
+{"_id": "2", "name":"Sopot",  "loc":{"type":"Point","coordinates":[18.56586456298828,54.4448910398684]}}
+{"_id": "3", "name":"Warszawa",  "loc":{"type":"Point","coordinates":[21.000366210937496,52.231163984032676]}}
+{"_id": "4", "name":"Pabianice",  "loc":{"type":"Point","coordinates":[19.3524169921875,51.66233415804707]}}
+{"_id": "5", "name":"Poznan",  "loc":{"type":"Point","coordinates":[16.932678222656246,52.414147367821286]}}
+{"_id": "6", "name":"Krakow",  "loc":{"type":"Point","coordinates":[19.938812255859375,50.06154699791961]}}
+{"_id": "7", "name":"Opole",  "loc":{"type":"Point","coordinates":[17.91595458984375,50.67209461471226]}}
+{"_id": "8", "name":"Olsztyn",  "loc":{"type":"Point","coordinates":[20.474395751953125,53.77712346403072]}}
+{"_id": "9", "name":"Gizycko",  "loc":{"type":"Point","coordinates":[21.751556396484375,54.040038224929766]}}
+{"_id": "10", "name":"Elblag",  "loc":{"type":"Point","coordinates":[19.403228759765625,54.16162991302781]}}
+{"_id": "11", "name":"Rzeszow",  "loc":{"type":"Point","coordinates":[21.998748779296875,50.04038383847727]}}
+{"_id": "12", "name":"Kielce",  "loc":{"type":"Point","coordinates":[20.62820434570312,50.869244823452355]}}
+{"_id": "13", "name":"Szczecin",  "loc":{"type":"Point","coordinates":[14.561004638671875,53.42671912317946]}}
+{"_id": "14", "name":"Słupsk",  "loc":{"type":"Point","coordinates":[17.019195556640625,54.46804241740563]}}
+{"_id": "15", "name":"Koscierzyna",  "loc":{"type":"Point","coordinates":[17.975006103515625,54.1211054205184]}}
+{"_id": "16", "name":"Jeziorany",  "loc":{"type":"Point","coordinates":[20.74544906616211,53.97668575337776]}}
+{"_id": "17", "name":"Katowice",  "loc":{"type":"Point","coordinates":[19.010467529296875,50.26037589105958]}}
+{"_id": "18", "name":"Bytom",  "loc":{"type":"Point","coordinates":[18.91742706298828,50.34852762372797]}}
+{"_id": "19", "name":"Jaworzno",  "loc":{"type":"Point","coordinates":[19.27379608154297,50.20283580383257]}}
+{"_id": "20", "name":"Nowy Targ",  "loc":{"type":"Point","coordinates":[20.03185272216797,49.4786093734765]}}
+{"_id": "21", "name":"Chelm",  "loc":{"type":"Point","coordinates":[23.47503662109375,51.138001488062564]}}
+{"_id": "22", "name":"Lublin",  "loc":{"type":"Point","coordinates":[22.56591796875,51.24558425850245]}}
+{"_id": "23", "name":"Siedlce",  "loc":{"type":"Point","coordinates":[22.27752685546875,52.17393169256846]}}
+{"_id": "24", "name":"Torun",  "loc":{"type":"Point","coordinates":[18.6163330078125,53.019740066071975]}}
+{"_id": "25", "name":"Kalisz",  "loc":{"type":"Point","coordinates":[18.08074951171875,51.7576404113981]}}
+{"_id": "26", "name":"Jelenia Gora",  "loc":{"type":"Point","coordinates":[15.733795166015623,50.90303283111257]}}
+{"_id": "27", "name":"Zary",  "loc":{"type":"Point","coordinates":[15.139846801757812,51.63890235681918]}}
+{"_id": "28", "name":"Lomza",  "loc":{"type":"Point","coordinates":[22.075653076171875,53.171472871976334]}}
+{"_id": "29", "name":"Suwalki",  "loc":{"type":"Point","coordinates":[22.93121337890625,54.102489083122336]}}
+{"_id": "30", "name":"Ilawa",  "loc":{"type":"Point","coordinates":[19.564247131347656,53.59535749769303]}}
+{"_id": "31", "name":"Malbork",  "loc":{"type":"Point","coordinates":[19.031238555908203,54.035905098344344]}}
+{"_id": "32", "name":"Konin",  "loc":{"type":"Point","coordinates":[18.250694274902344,52.230953706180294]}}
+{"_id": "33", "name":"Slupca",  "loc":{"type":"Point","coordinates":[17.86977767944336,52.28779756662464]}}
+{"_id": "34", "name":"Chojnice",  "loc":{"type":"Point","coordinates":[17.565078735351562,53.69447047342054]}}
+{"_id": "35", "name":"Lodz",  "loc":{"type":"Point","coordinates":[19.45781707763672,51.767627421742105]}}
+{"_id": "36", "name":"Piotrkow Trybunalski",  "loc":{"type":"Point","coordinates":[19.68252182006836,51.40927174741735]}}
+{"_id": "37", "name":"Skierniewice",  "loc":{"type":"Point","coordinates":[20.14514923095703,51.9573842471927]}}
+{"_id": "38", "name":"Legionowo",  "loc":{"type":"Point","coordinates":[20.935134887695312,52.40702686846808]}}
+{"_id": "39", "name":"Zakopane",  "loc":{"type":"Point","coordinates":[19.948768615722656,49.29803885147804]}}
+{"_id": "40", "name":"Nowy Targ",  "loc":{"type":"Point","coordinates":[20.03185272216797,49.4786093734765]}}
