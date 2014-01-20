@@ -1,11 +1,11 @@
 {
-  "type" : "FeatureCollection",
+  "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
-      "goemetry": {
+      "geometry": {
         "type": "Point",
-        "coordinates" : [ -73.66054066,  42.705867 ]
+        "coordinates" : [ -73.66054066 ,  42.705867 ]
       },
       "properties": {
         "name" : "Becker Pond"
