@@ -1,10 +1,10 @@
 {
-  "type" : "Polygon",
+  "type" : "FeatureCollection",
   "features": [
     {
       "type": "Feature",
       "goemetry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates" : [ [ [ -74 , 42.75 ], [ -73 , 42.75 ], [ -73 , 42 ], [ -74 , 42 ], [ -74 , 42.75 ] ] ]
       },
       "properties": {
