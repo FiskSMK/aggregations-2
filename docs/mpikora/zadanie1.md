@@ -59,7 +59,7 @@ db.text8.distinct("word").length
 
 Różnych słów jest 253854.
 
-```
+```JSON
 db.text8.aggregate([ 
 	{$group:{ _id:"$word", count:{$sum:1}}}, 
 	{$sort: {count: -1}}, 
@@ -73,7 +73,7 @@ db.text8.aggregate([
 
 Najczęściej występujące słowo w tym pliku stanowi około 6,25% jego zawartości.
 
-```
+```JSON
 db.text8.aggregate([ 
 	{$group:{_id:"$word", count:{$sum:1}}}, 
 	{$sort: {count: -1}}, 
@@ -88,7 +88,7 @@ db.text8.aggregate([
 
 10 najczęściej występujących słów stanowi około 24,73% jego zawartości.
 
-```
+```JSON
 db.text8.aggregate([ 
 	{$group:{_id:"$word", count:{$sum:1}}}, 
 	{$sort: {count: -1}}, 
@@ -103,7 +103,7 @@ db.text8.aggregate([
 
 100 najczęściej występujących słów stanowi około 47% jego zawartości.
 
-```
+```JSON
 db.text8.aggregate([ 
 	{$group:{_id:"$word", count:{$sum:1}}}, 
 	{$sort: {count: -1}}, 
@@ -136,7 +136,7 @@ Przykładowe zapytania:
 
 hrabstwo, w którym znajduje się Waszyngton:
 
-```
+```JSON
 db.uscounties.findOne({ 
 	geometry: {$near: {
 		$geometry: {type: "Point", coordinates: [-38.88,77.03]}
@@ -146,7 +146,7 @@ db.uscounties.findOne({
 
 10 hrabstw najbliższych Waszyngtonowi, pomijając hrabstwo w którym leży:
 
-```
+```JSON
 db.uscounties.find({ 
 	geometry: {$near: {
 		$geometry: {type: "Point", coordinates: [-77.03,38.88]}
@@ -156,7 +156,7 @@ db.uscounties.find({
 
 Wyświetl wszystkie hrabstwa leżące wewnątrz kwadratu [-100,35], [-102,35], [-102,37], [-100,37]:
 
-```
+```JSON
 db.uscounties.find({
 	geometry: {$geoWithin: {
 		$geometry: {type: "Polygon", coordinates: [[[-100,35], [-102,35], [-102,37], [-100,37], [-100,35]]]} 
@@ -166,7 +166,7 @@ db.uscounties.find({
 
 Wyświetl wszystkie hrabstwa leżące na równoleżniku 40:
 
-```
+```JSON
 db.uscounties.find( {
 	geometry: {$geoIntersects: {
 		$geometry: {type: "LineString", coordinates: [ [-0,40], [-90,40], [-180,40] ]}
@@ -176,7 +176,7 @@ db.uscounties.find( {
 
 Wyświetl wszystkie hrabstwa leżące do 100km od Waszyngtonu
 
-```
+```JSON
 db.uscounties.find({ 
 	geometry: {$near: {
 		$geometry: {type: "Point", coordinates: [-77.03,38.88]}},
@@ -186,7 +186,7 @@ db.uscounties.find({
 
 Wyświetl hrabstwa leżące na drodze z Chicago do Waszyngtonu (w linii prostej)
 
-```
+```JSON
 db.uscounties.find( 
 	{geometry: {$geoIntersects: {
 		$geometry: {type: "LineString", coordinates: [ [-77.03,38.88], [-87.62,41.87] ]}
