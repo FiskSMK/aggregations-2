@@ -1,0 +1,15 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates" : [ [ [ -74 , 42.75 ], [ -73 , 42.75 ], [ -73 , 42 ], [ -74 , 42 ], [ -74 , 42.75 ] ]]
+      },
+      "properties": {
+        "name" : "Becker Pond"
+      }
+    }
+    ]
+}
