@@ -29,7 +29,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Dermont, Jacek](/docs/jdermont.md). [Albumy muzyczne](/docs/jdermont_albumy_muzyczne.md).
 1. [Detlaf, Krzysztof](/docs/kdetlaf.md)[Bilans społeczny](/docs/kdetlaf_zad2.md).
 1. [Dępczyk, Michał](/docs/mdepczyk.md). [Broadband coverage](/docs/mdepczyk/zadanie2.md).
-1. [Dobrzycki, Wojciech](/docs/wdobrzycki.md) [Lista osób](/docs/wdobrzycki-zadanie2.md).
+1. [Dobrzycki, Wojciech](/docs/wdobrzycki.md). [Lista osób](/docs/wdobrzycki-zadanie2.md).
 1. [Domurat, Szymon](/docs/sdomurat.md). [Youtube](/docs/sdomurat_youtube.md).
 1. [Duwe, Oskar](/docs/oduwe.md). [Baza IMDB](docs/oduwe/zad2.md).
 1. [Elszkowski, Adrian](/docs/aelszkowski.md). [Kody pocztowe](/docs/aelszkowski2.md).
