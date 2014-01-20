@@ -74,7 +74,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Tomczak, Robert](/docs/rtomczak/README.md). [The Internet Movie Database](/docs/rtomczak/zadanie2.md).
 1. [Wąsowicz, Michał](/docs/mwasowicz.md). [GetGlue – Movies and TV Shows Database](/docs/mwasowicz_zad2.md).
 1. [Winsławski, Bartłomiej](/docs/bwinslawski.md). [Meritum Bank](/docs/bwinslawski2.md).
-1. [Wiśniewski, Konrad] (/docs/kwisniewski/kwisniewski.md), [The Internet Movie Database]
+1. [Wiśniewski, Konrad](/docs/kwisniewski/kwisniewski.md). [The Internet Movie Database](/docs/kwisniewski/zad2.md).
 1. [Zdunek, Kamil](/docs/kzdunek/README.md). [Chicago Crimes](/docs/kzdunek/zad2.md).
 1. [Żarkowski, Mateusz](/docs/mzarkowski.md), [PAMAP – Physical Activity Monitoring](/docs/mzarkowski-pamap.md).
 
