@@ -67,7 +67,7 @@ Wynik:
         "ok" : 1
 }
 ```
-![Chart1](../images/chart0.png)
+![Chart1](../../images/apiasecka/chart0.png)
 
 Ilość wszystkich sportów:
 ```
@@ -276,6 +276,6 @@ Wynik:
         "ok" : 1
 }
 ```
-![Chart2](../images/chart1.png)
+![Chart2](../../images/apiasecka/chart1.png)
 
 
