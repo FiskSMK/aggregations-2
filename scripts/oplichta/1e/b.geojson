@@ -6,6 +6,9 @@
       "goemetry": {
         "type": "Point",
         "coordinates" : [ [ -73.4717792,42.666746 ] , 0.15]
+      },
+      "properties": {
+        "name" : "Becker Pond"
       }
     }
     ]
