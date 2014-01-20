@@ -432,7 +432,7 @@ var obszar = {     "type" : "Polygon",      "coordinates" :      [ [          [ 
 var linia = {   "type": "LineString",    "coordinates":      [       [ -73 , 42 ] , [ -74 , 42.75 ]     ] };
 
 
-
+```js
 db.geoma.find({ loc : { $geoIntersects : { $geometry : linia } } }).toArray();
 ```
 Pełen wynik [tutaj](/scripts/oplichta/1e/5e.geojson).
