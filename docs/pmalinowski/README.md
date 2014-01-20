@@ -16,22 +16,22 @@ MongoDB shell version: 2.4.9
 ### a) Import Train.csv do MongoDB
 
 Plik zmodyfikowany skryptem 2unix.sh naprawiającym złamane wiersze.
-
+![img](http://puu.sh/6oiqY)
 import poleceniem
 ```
 time mongoimport --type csv -c Train --file ./Train2.csv --headerline
 ```
-img import
+![img](http://puu.sh/6qPmR)
 
 ### b) Zliczanie rekordow
 
-img count
+![img](http://puu.sh/6ojCp)
 
 ### c) Zmiana formatu tagow i update
 
 [Własny skrypt](../../scripts/pmalinowski/tagtotab.js) node.js przy uzyciu natywnego drivera mongodb.
-img tagi
-img efekt
+[!img](http://puu.sh/6qNu9)
+![img](http://puu.sh/6qNyH)
 ### d)
 
 Dane przygotowane wg opisu zadania zimportowane
@@ -57,7 +57,7 @@ db.words.aggregate(
 		{ $limit: 1})
 "the"  1061396 
 ```
-###Procentowy udzial
+####Procentowy udzial
 ```
 db.words.aggregate([ {$group:{_id:"$word", count:{$sum:1}}},
 	{$sort: {count: -1}},
