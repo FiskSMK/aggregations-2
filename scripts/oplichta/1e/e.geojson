@@ -1,6 +1,6 @@
 {
  "name" : "Becker Pond",
-        "loc" : {
+        "geometry" : {
             "type" : "Point",
             "coordinates" : [
                 -73.459358,
