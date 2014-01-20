@@ -352,6 +352,8 @@ sys	0m0.080s
 ```js
 var punkt = { "type" : "Point", "coordinates" : [ -73.66054066,  42.705867 ] };
 ```
+Mapa [tutaj](/scripts/oplichta/1e/a.geojson)
+
 ```js
 db.geoma.find({ loc: {$near: {$geometry: punkt}, $maxDistance: 200000} }).toArray()
 ```
@@ -403,7 +405,7 @@ db.geoma.find({ loc: {$geoWithin : { $center : [ [ -73.4717792,42.666746 ] , 0.1
 		}
 	}
 ]
-
+```
 #przykład 3
 
 var obszar = {     "type" : "Polygon",      "coordinates" :      [ [          [ -74 , 42.75 ],          [ -73 , 42.75 ],          [ -73 , 42    ],          [ -74 , 42    ],          [ -74 , 42.75 ]      ] ] };
@@ -435,5 +437,4 @@ var linia = {   "type": "LineString",    "coordinates":      [       [ -73 , 42 
 ```js
 db.geoma.find({ loc : { $geoIntersects : { $geometry : linia } } }).toArray();
 ```
-Pełen wynik [tutaj](/scripts/oplichta/1e/e.geojson).
-[/scripts/oplichta/1e/e.geojson]
+Mapa [tutaj](/scripts/oplichta/1e/e.geojson).
