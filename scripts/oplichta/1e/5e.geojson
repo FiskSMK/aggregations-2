@@ -1,19 +1,10 @@
 {
-	type: "FeatureCollection",
-	features: [
-		{
-		type: "Feature",
-		geometry: {
-		type: "Point",
-		coordinates: [
-		-77.039882,
-		38.898321
-		]
-		},
-		properties: {
-		marker-symbol: "bar",
-		name: "The Exchange",
-		address: "1719 G St NW"
-		}
-	},]
+ "name" : "Becker Pond",
+        "loc" : {
+            "type" : "Point",
+            "coordinates" : [
+                -73.459358,
+                42.0587831
+            ]
+        }
 }
