@@ -27,7 +27,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Białkowski, Dominik](/docs/dbialkowski.md). [Current Census Blocks for McKinley County](/docs/dbialkowski2.md).
 1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md). [GDELT-EventDatabase](/docs/dbrzezinski/dbrzezinski_gdelt.md).
 1. [Dermont, Jacek](/docs/jdermont.md). [Albumy muzyczne](/docs/jdermont_albumy_muzyczne.md).
-1. [Detlaf, Krzysztof](/docs/kdetlaf.md)[Bilans społeczny](/docs/kdetlaf_zad2.md).
+1. [Detlaf, Krzysztof](/docs/kdetlaf.md). [Bilans społeczny](/docs/kdetlaf_zad2.md).
 1. [Dępczyk, Michał](/docs/mdepczyk.md). [Broadband coverage](/docs/mdepczyk/zadanie2.md).
 1. [Dobrzycki, Wojciech](/docs/wdobrzycki.md). [Lista osób](/docs/wdobrzycki-zadanie2.md).
 1. [Domurat, Szymon](/docs/sdomurat.md). [Youtube](/docs/sdomurat_youtube.md).
