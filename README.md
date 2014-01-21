@@ -1,4 +1,4 @@
-﻿# Agregacje 2
+# Agregacje 2
 
 ![Data Wranglers](images/data-wrangler.jpg)
 
@@ -27,7 +27,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Białkowski, Dominik](/docs/dbialkowski.md). [Current Census Blocks for McKinley County](/docs/dbialkowski2.md).
 1. [Brzeziński, Damian](/docs/dbrzezinski/dbrzezinski.md). [GDELT-EventDatabase](/docs/dbrzezinski/dbrzezinski_gdelt.md).
 1. [Dermont, Jacek](/docs/jdermont.md). [Albumy muzyczne](/docs/jdermont_albumy_muzyczne.md).
-1. [Detlaf, Krzysztof](/docs/kdetlaf.md). [Bilans społeczny](/docs/kdetlaf_zad2.md).
+1. [Detlaf, Krzysztof](/docs/kdetlaf.md)[Bilans społeczny](/docs/kdetlaf_zad2.md).
 1. [Dępczyk, Michał](/docs/mdepczyk.md). [Broadband coverage](/docs/mdepczyk/zadanie2.md).
 1. [Dobrzycki, Wojciech](/docs/wdobrzycki.md). [Lista osób](/docs/wdobrzycki-zadanie2.md).
 1. [Domurat, Szymon](/docs/sdomurat.md). [Youtube](/docs/sdomurat_youtube.md).
@@ -57,18 +57,18 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Ostrowski, Michał](/docs/mostrowski.md).
 1. [Pietraszuk, Bartłomiej](/docs/bpietraszuk/bpietraszuk.md) [Przypadki zauważenia UFO w USA](/docs/bpietraszuk/ufo.md)
 1. [Paczyński, Łukasz](/docs/lpaczynski/README.md). [Lista pracowników](/docs/lpaczynski/zadanie2.md).
-1. [Piasecka, Aleksandra](/docs/apiasecka.md). [Zestawienie](/docs/apiasecka/apiasecka.md)
+1. [Piasecka, Aleksandra](/docs/apiasecka.md).
 1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md). [Obserwacje Ufo](/docs/mpikora/obserwacjeufo.md).
 1. [Plichta, Oskar](/docs/oplichta.md). [The Internet Movie Database](/docs/oplichta-imdb.md).
 1. [Puchalski, Paweł](/docs/ppuchalski/README.md). [Lista zatrudnionych](/docs/ppuchalski/zad2.md).
 1. [Rogaszewski, Piotr](/docs/progaszewski.md).
-1. [Rybarczyk, Karolina](/docs/apiasecka.md). [Waga i wzrost](/docs/krybarczyk/krybarczyk.md). 
+1. [Rybarczyk, Karolina](/docs/apiasecka.md). [Waga i wzrost](/docs/krybarczyk/krybarczyk.md).
 1. [Sawicki, Paweł](/docs/psawicki.md).
-1. [Siora, Kacper](/docs/ksiora/README.md). [Deaths](/docs/ksiora/deaths.md). 
+1. [Siora, Kacper](/docs/ksiora/README.md). [Deaths](/docs/ksiora/deaths.md).
 1. [Skiba, Marek](/docs/mskiba/Zadanie1.md). [Apache Logs](/docs/mskiba/Zadanie2.md).
 1. [Skowroński, Krzysztof](/docs/kskowronski/kskowronski.md). [Pogoda w Edynburgu](/docs/kskowronski/README.md).
 1. [Smykowski, Adrian](/docs/asmykowski/README.md).
-1. [Sott, Tomasz](/docs/tsott/README.md). [BTS – On-Time Performance](/docs/tsott/zadanie2.md). [Zadanie3](/docs/tsott/zadanie3.md).
+1. [Sott, Tomasz](/docs/tsott/README.md). [BTS – On-Time Performance](/docs/tsott/zadanie2.md).
 1. [Stefanowicz, Michał](/docs/mstefanowicz/zad1.md). [Loty](/docs/mstefanowicz/zad2.md).
 1. [Szygenda, Mateusz](/docs/mszygenda.md). [Wypadki drogowe](/docs/mszygenda-accidents.md).
 1. [Tomczak, Robert](/docs/rtomczak/README.md). [The Internet Movie Database](/docs/rtomczak/zadanie2.md).
