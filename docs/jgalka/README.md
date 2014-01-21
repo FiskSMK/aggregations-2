@@ -93,13 +93,77 @@ db.text8.aggregate(
 wynik - "the" - 1061396
 ```
 
-Dziesięć najczęściej występujących słów
+Dziesięć, sto i tysiąc najczęściej występujących słów
 
 ```sh
- db.text8.aggregate(
-     {$group:{ _id:"$word", count:{$sum:1}}}, 
-     {$sort: {count: -1}}, 
-     {$limit:10})
+db.text8.aggregate(
+      {$group:{ _id:"$word", number:{$sum : 1}}},
+      {$sort: {number: -1}},
+      {$limit:10},
+      {$group:{ _id:"dziesiec", count:{$sum: "$number" }}}
+  )
+
+wynik - 4205965
 ```
 
+```sh
+db.text8.aggregate(
+      {$group:{ _id:"$word", number:{$sum : 1}}},
+      {$sort: {number: -1}},
+      {$limit:100},
+      {$group:{ _id:"sto", count:{$sum: "$number" }}}
+  )
+
+wynik - 7998978
+```
+
+```sh
+db.text8.aggregate(
+      {$group:{ _id:"$word", number:{$sum : 1}}},
+      {$sort: {number: -1}},
+      {$limit:1000},
+      {$group:{ _id:"tysiac", count:{$sum: "$number" }}}
+  )
+
+wynik - 11433354
+```
+
+
+
+
 * zadanie 1e
+
+Do wykonania tego zadania posłużyłem się danymi o położeniu szkół wyższych w Polsce. Zaczerpnąłem je ze strony [http://www.poipoint.pl](http://www.poipoint.pl).
+Baze na githubie umieściłem [tutaj](../../data/jgalka/szkoly_wyzsze.json).
+
+Import danych do mongo
+```sh
+mongoimport -d geo -c szkoly < szkoly_wyzsze.json
+```
+
+## Zapytania
+
+Szkoły wyższe w promieniu 15 kilometrów od Łodzi
+ ```js
+ db.schools.find( { loc : { $near :
+                         { $geometry :
+                             { type : "Point" ,
+                               coordinates: [ 19.466, 51.783 ] 
+}},
+                           $maxDistance : 150.00
+              } }, { _id: 0 } )
+ ```
+Wszystkie akademie w Polsce
+```js
+ db.schools.find( { "name" : "Akademia"} )
+ ```
+
+Wszystkie szkoły politechniczne w okolicach Warszawy
+```js
+ db.schools.find( {"name" : "Politechnika"},{ loc : { $near :
+                         { $geometry :
+                             { type : "Point" ,
+                               coordinates: [ 21.020, 52.259 ] } },
+                           $maxDistance : 10000
+              } }, { _id: 0 } )
+ ```

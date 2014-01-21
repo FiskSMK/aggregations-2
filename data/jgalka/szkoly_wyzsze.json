@@ -1,0 +1,134 @@
+{ "loc" : {"type" : "Point", "coordinates" : [19.924736,50.062731] }, "name" : "Szkoly wyzsze", "city" : "Krakow" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.922590,50.063034] }, "name" : "Szkoly wyzsze", "city" : "Krakow" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.003112,52.246511] }, "name" : "Szkoly wyzsze", "city" : "Warszawa" }
+{ "loc" : {"type" : "Point", "coordinates" : [16.950874,52.401581] }, "name" : "Szkoly wyzsze", "city" : "Poznan" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.944133,50.071677] }, "name" : "Szkoly wyzsze", "city" : "Krakow" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.997584,50.074755] }, "name" : "Szkoly wyzsze", "city" : "Krakow" }
+{ "loc" : {"type" : "Point", "coordinates" : [16.160867,52.337659] }, "name" : "Szkoly wyzsze", "city" : "Stary Tomysl" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.926267,53.729534] }, "name" : "Szkoly wyzsze", "city" : "Kwidzynl" }
+{ "loc" : {"type" : "Point", "coordinates" : [20.692856,49.601942] }, "name" : "Szkoly wyzsze", "city" : "Nowy Saczl" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.162452,51.418392] }, "name" : "Szkoly wyzsze", "city" : "Radom" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.129836,50.285760] }, "name" : "Szkoly wyzsze", "city" : "Sosnowiec" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.178888,50.268516] }, "name" : "Szkoly wyzsze", "city" : "Sosnowiec" }
+{ "loc" : {"type" : "Point", "coordinates" : [23.767290,52.730912] }, "name" : "Szkoly wyzsze", "city" : "Teremiski" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.952303,50.084098] }, "name" : "Akademia", "city" : "Krakow" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.951273,50.082859] }, "name" : "Szkoly wyzsze", "city" : "Krakow" }
+{ "loc" : {"type" : "Point", "coordinates" : [22.765367,49.784651] }, "name" : "Szkoly wyzsze", "city" : "Przemysl" }
+{ "loc" : {"type" : "Point", "coordinates" : [22.791459,49.773823] }, "name" : "Szkoly wyzsze", "city" : "Przemysl" }
+{ "loc" : {"type" : "Point", "coordinates" : [22.808775,49.762001] }, "name" : "Szkoly wyzsze", "city" : "Przemysl" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.133892,50.299044] }, "name" : "Szkoly wyzsze", "city" : "Sosnowiec" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.134310,50.287522] }, "name" : "Szkoly wyzsze", "city" : "Sosnowiec" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.128956,50.281414] }, "name" : "Szkoly wyzsze", "city" : "Sosnowiec" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.130072,50.271191] }, "name" : "Szkoly wyzsze", "city" : "Sosnowiec" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.110760,50.822936] }, "name" : "Szkoly wyzsze", "city" : "Czestochowa" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.117605,50.810070] }, "name" : "Szkoly wyzsze", "city" : "Czestochowa" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.114322,50.808687] }, "name" : "Szkoly wyzsze", "city" : "Czestochowa" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.104216,50.804985] }, "name" : "Szkoly wyzsze", "city" : "Czestochowa" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.029800,50.255258] }, "name" : "Szkoly wyzsze", "city" : "Katowice" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.003450,50.250360] }, "name" : "Szkoly wyzsze", "city" : "Katowice" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.044477,50.258263] }, "name" : "Szkoly wyzsze", "city" : "Katowice" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.010220,50.251005] }, "name" : "Szkoly wyzsze", "city" : "Katowice" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.033051,50.255437] }, "name" : "Szkoly wyzsze", "city" : "Katowice" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.028577,50.260650] }, "name" : "Akademia", "city" : "Katowice" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.130767,53.143475] }, "name" : "Szkoly wyzsze", "city" : "Bydgoszcz" }
+{ "loc" : {"type" : "Point", "coordinates" : [16.149966,51.204557] }, "name" : "Szkoly wyzsze", "city" : "Legnica" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.632930,54.331577] }, "name" : "Szkoly wyzsze", "city" : "Gdansk" }
+{ "loc" : {"type" : "Point", "coordinates" : [22.267785,52.175063] }, "name" : "Szkoly wyzsze", "city" : "Siedlce" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.464490,51.772952] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [15.745918,50.900969] }, "name" : "Szkoly wyzsze", "city" : "Jelenia Gora" }
+{ "loc" : {"type" : "Point", "coordinates" : [16.096612,51.661043] }, "name" : "Szkoly wyzsze", "city" : "Glogow" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.916973,50.067177] }, "name" : "Szkoly wyzsze", "city" : "Krakow" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.404108,50.143273] }, "name" : "Szkoly wyzsze", "city" : "Chrzanow" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.985230,50.026917] }, "name" : "Szkoly wyzsze", "city" : "Rzeszow" }
+{ "loc" : {"type" : "Point", "coordinates" : [20.981735,52.243953] }, "name" : "Szkoly wyzsze", "city" : "Warszawa" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.010640,52.220470] }, "name" : "Szkoly wyzsze", "city" : "Warszawa" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.706260,52.544170] }, "name" : "Szkoly wyzsze", "city" : "Plock" }
+{ "loc" : {"type" : "Point", "coordinates" : [20.899820,52.253110] }, "name" : "Szkoly wyzsze", "city" : "Warszawa" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.421120,54.147530] }, "name" : "Szkoly wyzsze", "city" : "Elblag" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.641363,54.344544] }, "name" : "Szkoly wyzsze", "city" : "Gdansk" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.646550,54.358880] }, "name" : "Szkoly wyzsze", "city" : "Gdansk" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.571930,54.399900] }, "name" : "Szkoly wyzsze", "city" : "Gdansk" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.619280,54.371750] }, "name" : "Szkoly wyzsze", "city" : "Gdansk" }
+{ "loc" : {"type" : "Point", "coordinates" : [16.916020,52.407880] }, "name" : "Szkoly wyzsze", "city" : "Poznan" }
+{ "loc" : {"type" : "Point", "coordinates" : [17.483900,51.970000] }, "name" : "Szkoly wyzsze", "city" : "Jarocin" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.733280,54.371660] }, "name" : "Szkoly wyzsze", "city" : "Gdansk" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.014870,53.562340] }, "name" : "Szkoly wyzsze", "city" : "Szczytno" }
+{ "loc" : {"type" : "Point", "coordinates" : [22.264900,52.191560] }, "name" : "Szkoly wyzsze", "city" : "Siedlce" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.976930,50.212470] }, "name" : "Szkoly wyzsze", "city" : "Katowice" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.680410,50.294350] }, "name" : "Szkoly wyzsze", "city" : "Gliwice" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.454190,51.769800] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.507600,51.775570] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.491210,51.774750] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [23.209630,53.108720] }, "name" : "Szkoly wyzsze", "city" : "Bialystok" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.544550,54.543700] }, "name" : "Szkoly wyzsze", "city" : "Gdynia" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.495190,51.779850] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.493610,51.780200] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.512140,51.773440] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.436160,51.768350] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.493000,51.779750] }, "name" : "Akademia", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.495310,51.778650] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.496800,51.778320] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.496190,51.778250] }, "name" : "Politechnika", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.494600,51.780260] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.497400,51.778430] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.492410,51.779110] }, "name" : "Politechnika", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.497020,51.779720] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.497680,51.779760] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.485640,51.775900] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.530380,54.507650] }, "name" : "Szkoly wyzsze", "city" : "Gdynia" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.483280,51.777880] }, "name" : "Szkoly wyzsze", "city" : "Lodz" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.020130,53.131220] }, "name" : "Szkoly wyzsze", "city" : "Bydgoszcz" }
+{ "loc" : {"type" : "Point", "coordinates" : [23.107060,52.035860] }, "name" : "Szkoly wyzsze", "city" : "Biala Podlaska" }
+{ "loc" : {"type" : "Point", "coordinates" : [23.158780,52.023770] }, "name" : "Szkoly wyzsze", "city" : "Biala Podlaska" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.573690,53.074860] }, "name" : "Szkoly wyzsze", "city" : "Ostroleka" }
+{ "loc" : {"type" : "Point", "coordinates" : [20.640230,50.879020] }, "name" : "Szkoly wyzsze", "city" : "Kielce" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.615080,54.377240] }, "name" : "Szkoly wyzsze", "city" : "Gdansk" }
+{ "loc" : {"type" : "Point", "coordinates" : [15.681940,50.865060] }, "name" : "Szkoly wyzsze", "city" : "Jelenia Gora" }
+{ "loc" : {"type" : "Point", "coordinates" : [15.582680,54.182740] }, "name" : "Szkoly wyzsze", "city" : "Kolobrzeg" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.418720,54.155660] }, "name" : "Szkoly wyzsze", "city" : "Elblag" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.431570,54.148430] }, "name" : "Szkoly wyzsze", "city" : "Elblag" }
+{ "loc" : {"type" : "Point", "coordinates" : [17.062700,51.107210] }, "name" : "Szkoly wyzsze", "city" : "Wroclaw" }
+{ "loc" : {"type" : "Point", "coordinates" : [17.068920,51.108880] }, "name" : "Szkoly wyzsze", "city" : "Wroclaw" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.923730,50.064540] }, "name" : "Szkoly wyzsze", "city" : "Krakow" }
+{ "loc" : {"type" : "Point", "coordinates" : [17.337090,50.474890] }, "name" : "Szkoly wyzsze", "city" : "Nysa" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.648280,54.343170] }, "name" : "Szkoly wyzsze", "city" : "Gdansk" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.932971,50.068492] }, "name" : "Szkoly wyzsze", "city" : "Krakow" }
+{ "loc" : {"type" : "Point", "coordinates" : [16.940300,52.410480] }, "name" : "Szkoly wyzsze", "city" : "Poznan" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.191762,50.326411] }, "name" : "Szkoly wyzsze", "city" : "Dabrowa Gornicza" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.623429,54.382020] }, "name" : "Szkoly wyzsze", "city" : "Gdansk" }
+{ "loc" : {"type" : "Point", "coordinates" : [17.943950,50.665890] }, "name" : "Szkoly wyzsze", "city" : "Opole" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.571399,54.416719] }, "name" : "Akademia", "city" : "Gdansk" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.020881,53.118949] }, "name" : "Szkoly wyzsze", "city" : "Bydgoszcz" }
+{ "loc" : {"type" : "Point", "coordinates" : [17.981991,53.122279] }, "name" : "Szkoly wyzsze", "city" : "Bydgoszcz" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.005423,52.220938] }, "name" : "Politechnika", "city" : "Warszawa" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.994299,50.034247] }, "name" : "Szkoly wyzsze", "city" : "Rzeszow" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.933567,50.061103] }, "name" : "Szkoly wyzsze", "city" : "Krakow" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.933103,50.061276] }, "name" : "Szkoly wyzsze", "city" : "Krakow" }
+{ "loc" : {"type" : "Point", "coordinates" : [23.168927,53.128701] }, "name" : "Szkoly wyzsze", "city" : "Bialystok" }
+{ "loc" : {"type" : "Point", "coordinates" : [23.154818,53.131356] }, "name" : "Szkoly wyzsze", "city" : "Bialystok" }
+{ "loc" : {"type" : "Point", "coordinates" : [22.557215,51.269652] }, "name" : "Szkoly wyzsze", "city" : "Lublin" }
+{ "loc" : {"type" : "Point", "coordinates" : [16.491038,53.280318] }, "name" : "Szkoly wyzsze", "city" : "Walcz" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.009581,52.219785] }, "name" : "Szkoly wyzsze", "city" : "Warszawa" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.012912,52.222383] }, "name" : "Akademia", "city" : "Warszawa" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.007454,52.220718] }, "name" : "Szkoly wyzsze", "city" : "Warszawa" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.007198,52.221449] }, "name" : "Politechnika", "city" : "Warszawa" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.006234,52.221386] }, "name" : "Szkoly wyzsze", "city" : "Warszawa" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.007984,52.222374] }, "name" : "Akademia", "city" : "Warszawa" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.003486,52.220499] }, "name" : "Politechnika", "city" : "Warszawa" }
+{ "loc" : {"type" : "Point", "coordinates" : [22.564398,51.256873] }, "name" : "Szkoly wyzsze", "city" : "Lublin" }
+{ "loc" : {"type" : "Point", "coordinates" : [22.544528,51.248284] }, "name" : "Szkoly wyzsze", "city" : "Lublin" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.739981,50.675103] }, "name" : "Szkoly wyzsze", "city" : "Sandomierz" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.748729,50.679216] }, "name" : "Szkoly wyzsze", "city" : "Sandomierz" }
+{ "loc" : {"type" : "Point", "coordinates" : [14.535456,53.421690] }, "name" : "Szkoly wyzsze", "city" : "Szczecin" }
+{ "loc" : {"type" : "Point", "coordinates" : [14.491682,53.447390] }, "name" : "Szkoly wyzsze", "city" : "Szczecin" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.744856,50.684496] }, "name" : "Szkoly wyzsze", "city" : "Sandomierz" }
+{ "loc" : {"type" : "Point", "coordinates" : [22.632506,51.224437] }, "name" : "Szkoly wyzsze", "city" : "Lublin" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.748714,50.683409] }, "name" : "Szkoly wyzsze", "city" : "Sandomierz" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.022570,50.272206] }, "name" : "Szkoly wyzsze", "city" : "Katowice" }
+{ "loc" : {"type" : "Point", "coordinates" : [18.556018,54.442585] }, "name" : "Szkoly wyzsze", "city" : "Sopot" }
+{ "loc" : {"type" : "Point", "coordinates" : [16.197122,54.203438] }, "name" : "Szkoly wyzsze", "city" : "Koszalin" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.906540,50.070328] }, "name" : "Szkoly wyzsze", "city" : "Krakow" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.026389,50.261309] }, "name" : "Szkoly wyzsze", "city" : "Katowice" }
+{ "loc" : {"type" : "Point", "coordinates" : [19.601187,49.746031] }, "name" : "Szkoly wyzsze", "city" : "Sucha Beskidzka" }
+{ "loc" : {"type" : "Point", "coordinates" : [21.987247,50.019356] }, "name" : "Szkoly wyzsze", "city" : "Rzeszow" }
+{ "loc" : {"type" : "Point", "coordinates" : [14.558638,52.348558] }, "name" : "Szkoly wyzsze", "city" : "Slubice" }
