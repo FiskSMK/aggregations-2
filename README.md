@@ -34,6 +34,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Duwe, Oskar](/docs/oduwe.md). [Baza IMDB](docs/oduwe/zad2.md).
 1. [Elszkowski, Adrian](/docs/aelszkowski.md). [Kody pocztowe](/docs/aelszkowski2.md).
 1. [Gałka, Jacek](/docs/jgalka/README.md).
+1. [Głowacki, Michał](/docs/mglowacki.md).
 1. [Gniado, Bartosz](/docs/bgniado/README.md).
 1. [Groszek, Rafał](/docs/rgroszek/README.md).
 1. [Karczewski, Kamil](/docs/kkarczewski.md). [Baza filmów](/docs/kkarczewski2.md).
@@ -46,6 +47,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Kwiatkowski, Mateusz](/docs/mkwiatkowski/zadanie1.md). [The Internet Movie Database](/docs/mkwiatkowski/zadanie2.md).
 1. [Lewandowska, Marta](/docs/mlewandowska.md). [Baby names](/docs/mlewandowska.md).
 1. [Łuczun, Rafał](/docs/rluczun/README.md).
+1. [Malinowski, Piotr](/docs/pmalinowski/README.md).
 1. [Małecki, Maciej](/docs/mmalecki/README.md).
 1. [Matulewski, Damian](/docs/dmatulewski.md). [Głosowanie](/docs/dmatulewski_glosowanie.md).
 1. [Melzer, Grzegorz](/docs/gmelzer.md). [GetGlue – TIMDB](/docs/gmelzer/gmelzer2.md).
@@ -58,7 +60,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Pietraszuk, Bartłomiej](/docs/bpietraszuk/bpietraszuk.md) [Przypadki zauważenia UFO w USA](/docs/bpietraszuk/ufo.md)
 1. [Paczyński, Łukasz](/docs/lpaczynski/README.md). [Lista pracowników](/docs/lpaczynski/zadanie2.md).
 1. [Piasecka, Aleksandra](/docs/apiasecka.md).
-1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md). [Obserwacje Ufo](/docs/mpikora/obserwacjeufo.md).
+1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md). [Obserwacje UFO](/docs/mpikora/obserwacjeufo.md).
 1. [Plichta, Oskar](/docs/oplichta.md). [The Internet Movie Database](/docs/oplichta-imdb.md).
 1. [Puchalski, Paweł](/docs/ppuchalski/README.md). [Lista zatrudnionych](/docs/ppuchalski/zad2.md).
 1. [Rogaszewski, Piotr](/docs/progaszewski.md).
@@ -80,19 +82,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 
 ----
 
-1. Cała, Mariusz.
 1. Dolata, Jędrzej.
-1. [Głowacki, Michał](/docs/mglowacki.md).
-1. Januszewski, Tomasz.
-1. Jaźwiński, Robert.
-1. [Malinowski, Piotr](/docs/pmalinowski/README.md).
-1. Osękowski, Dominik.
-1. Piasecka, Aleksandra.
-1. Pietraszuk, Bartłomiej.
-1. [Pikora, Mateusz](/docs/mpikora/zadanie1.md).
-1. Plichta, Oskar.
-1. Puchalski, Paweł.
-1. Wiśniewski, Piotr.
 
 
 ## BigData (+1M)
