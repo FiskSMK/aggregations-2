@@ -30,10 +30,10 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Detlaf, Krzysztof](/docs/kdetlaf.md). [Bilans społeczny](/docs/kdetlaf_zad2.md).
 1. [Dępczyk, Michał](/docs/mdepczyk.md). [Broadband coverage](/docs/mdepczyk/zadanie2.md).
 1. [Dobrzycki, Wojciech](/docs/wdobrzycki.md). [Lista osób](/docs/wdobrzycki-zadanie2.md).
-1. [Domurat, Szymon](/docs/sdomurat.md). [Youtube](/docs/sdomurat_youtube.md).
+1. [Domurat, Szymon](/docs/sdomurat.md). [YouTube](/docs/sdomurat_youtube.md).
 1. [Duwe, Oskar](/docs/oduwe.md). [Baza IMDB](docs/oduwe/zad2.md).
 1. [Elszkowski, Adrian](/docs/aelszkowski.md). [Kody pocztowe](/docs/aelszkowski2.md).
-1. [Gałka, Jacek](/docs/jgalka/README.md).
+1. [Gałka, Jacek](/docs/jgalka/README.md). [Ludzie w Holandii](/docs/jgalka/zad2.md).
 1. [Gniado, Bartosz](/docs/bgniado/README.md).
 1. [Groszek, Rafał](/docs/rgroszek/README.md).
 1. [Karczewski, Kamil](/docs/kkarczewski.md). [Baza filmów](/docs/kkarczewski2.md).
