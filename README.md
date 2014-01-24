@@ -82,7 +82,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 
 ----
 
-1. Dolata, Jędrzej.
+1. [Dolata, Jędrzej](/docs/jdolata.md).
 
 
 ## BigData (+1M)
