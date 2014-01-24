@@ -30,6 +30,7 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Detlaf, Krzysztof](/docs/kdetlaf.md)[Bilans społeczny](/docs/kdetlaf_zad2.md).
 1. [Dępczyk, Michał](/docs/mdepczyk.md). [Broadband coverage](/docs/mdepczyk/zadanie2.md).
 1. [Dobrzycki, Wojciech](/docs/wdobrzycki.md). [Lista osób](/docs/wdobrzycki-zadanie2.md).
+1. [Dolata, Jędrzej](/docs/jdolata.md).
 1. [Domurat, Szymon](/docs/sdomurat.md). [Youtube](/docs/sdomurat_youtube.md).
 1. [Duwe, Oskar](/docs/oduwe.md). [Baza IMDB](docs/oduwe/zad2.md).
 1. [Elszkowski, Adrian](/docs/aelszkowski.md). [Kody pocztowe](/docs/aelszkowski2.md).
@@ -79,10 +80,6 @@ mongo --username student --password sesja2013 153.19.1.202/test
 1. [Wiśniewski, Konrad](/docs/kwisniewski/kwisniewski.md). [The Internet Movie Database](/docs/kwisniewski/zad2.md).
 1. [Zdunek, Kamil](/docs/kzdunek/README.md). [Chicago Crimes](/docs/kzdunek/zad2.md).
 1. [Żarkowski, Mateusz](/docs/mzarkowski.md). [PAMAP – Physical Activity Monitoring](/docs/mzarkowski-pamap.md).
-
-----
-
-1. [Dolata, Jędrzej](/docs/jdolata.md).
 
 
 ## BigData (+1M)
