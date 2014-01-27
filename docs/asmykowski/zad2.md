@@ -67,8 +67,11 @@ printjson(result);
         ],
         "ok" : 1
 }
-
 ```
+![agg1](../../images/asmykowski/agregacja1.png)
+
+
+>>>>>>> Stashed changes
 ##Agregacja 2:
 
 ###Kod:
@@ -111,6 +114,9 @@ printjson(result);
         "ok" : 1
 }
 ```
+
+![agg2](../../images/asmykowski/agregacja2.png)
+     
 
 #4. Zaprogramować i wykonać wszystkie aggregacje.
 
